@@ -1,0 +1,15 @@
+---
+title: TITLE
+date: YYYY-MM-DD HH:MM:SS +/-TTTT
+categories: [TOP_CATEGORIE, SUB_CATEGORIE]
+tags: [TAG]     # TAG names should always be lowercase
+layout: post
+toc: false # toggles table of contents on/off for this page
+math: true
+mermaid: true # diagram generator
+img_path: /img/path/ # to shortcut images. allows for ![The flower](flower.png)
+image: # preview image at top of post
+  path: /path/to/image
+  alt: image alternative text
+pin: true # pins to home page
+---
