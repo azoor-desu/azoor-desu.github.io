@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: Editor::Inspector Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_editor_1_1_inspector.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle"><div class="title">Editor::Inspector Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_editor___inspector_8h_source.html">Editor_Inspector.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:adecd3e1fb5762b7bc754732db34247f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_inspector.html#adecd3e1fb5762b7bc754732db34247f3">Inspector</a> ()</td></tr>
+<tr class="memdesc:adecd3e1fb5762b7bc754732db34247f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <br /></td></tr>
+<tr class="separator:adecd3e1fb5762b7bc754732db34247f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9eee98e8162a71f005166a4d64c7127"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_inspector.html#ac9eee98e8162a71f005166a4d64c7127">InspectorInit</a> ()</td></tr>
+<tr class="memdesc:ac9eee98e8162a71f005166a4d64c7127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes instector stuff.  <br /></td></tr>
+<tr class="separator:ac9eee98e8162a71f005166a4d64c7127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33bb794bd310269a9b8d5b23b91ee6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_inspector.html#ae33bb794bd310269a9b8d5b23b91ee6c">InspectorUpdate</a> (const char *label, bool *windowOpen)</td></tr>
+<tr class="memdesc:ae33bb794bd310269a9b8d5b23b91ee6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the update loop of the <a class="el" href="namespace_editor.html">Editor</a>'s <a class="el" href="class_editor_1_1_inspector.html">Inspector</a>.  <br /></td></tr>
+<tr class="separator:ae33bb794bd310269a9b8d5b23b91ee6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a3f1ad2e8609bfce789f35a480c56490d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_inspector.html#a3f1ad2e8609bfce789f35a480c56490d">nameTag</a> [256] {}</td></tr>
+<tr class="separator:a3f1ad2e8609bfce789f35a480c56490d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c304508b7093a48663a3b1b99141ca2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_inspector.html#a7c304508b7093a48663a3b1b99141ca2">prevName</a> {}</td></tr>
+<tr class="separator:a7c304508b7093a48663a3b1b99141ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8f07e31ba27aa2baee9a182169931f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_inspector.html#a9d8f07e31ba27aa2baee9a182169931f">m_Translate</a> = false</td></tr>
+<tr class="separator:a9d8f07e31ba27aa2baee9a182169931f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f24be4f09509c475c39dec0ca7fee95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_inspector.html#a3f24be4f09509c475c39dec0ca7fee95">m_Scale</a> = false</td></tr>
+<tr class="separator:a3f24be4f09509c475c39dec0ca7fee95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b497d1d8c663c94ef50b0b0f9e0c313"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_inspector.html#a9b497d1d8c663c94ef50b0b0f9e0c313">m_Rotate</a> = false</td></tr>
+<tr class="separator:a9b497d1d8c663c94ef50b0b0f9e0c313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1b0417eafd53023fb2ca7bab2b0849"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_inspector.html#a0c1b0417eafd53023fb2ca7bab2b0849">m_HiddenFieldsVisible</a> = false</td></tr>
+<tr class="separator:a0c1b0417eafd53023fb2ca7bab2b0849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="adecd3e1fb5762b7bc754732db34247f3" name="adecd3e1fb5762b7bc754732db34247f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adecd3e1fb5762b7bc754732db34247f3">&#9670;&#160;</a></span>Inspector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Editor::Inspector::Inspector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>default constructor </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac9eee98e8162a71f005166a4d64c7127" name="ac9eee98e8162a71f005166a4d64c7127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9eee98e8162a71f005166a4d64c7127">&#9670;&#160;</a></span>InspectorInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::Inspector::InspectorInit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes instector stuff. </p>
+
+</div>
+</div>
+<a id="ae33bb794bd310269a9b8d5b23b91ee6c" name="ae33bb794bd310269a9b8d5b23b91ee6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae33bb794bd310269a9b8d5b23b91ee6c">&#9670;&#160;</a></span>InspectorUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::Inspector::InspectorUpdate </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>windowOpen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs the update loop of the <a class="el" href="namespace_editor.html">Editor</a>'s <a class="el" href="class_editor_1_1_inspector.html">Inspector</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the window </td></tr>
+    <tr><td class="paramname">windowOpen</td><td>controller of the window, when true, window will be shown </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a3f1ad2e8609bfce789f35a480c56490d" name="a3f1ad2e8609bfce789f35a480c56490d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1ad2e8609bfce789f35a480c56490d">&#9670;&#160;</a></span>nameTag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> Editor::Inspector::nameTag[256] {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c304508b7093a48663a3b1b99141ca2" name="a7c304508b7093a48663a3b1b99141ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c304508b7093a48663a3b1b99141ca2">&#9670;&#160;</a></span>prevName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a>*&gt; Editor::Inspector::prevName {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d8f07e31ba27aa2baee9a182169931f" name="a9d8f07e31ba27aa2baee9a182169931f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8f07e31ba27aa2baee9a182169931f">&#9670;&#160;</a></span>m_Translate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Editor::Inspector::m_Translate = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f24be4f09509c475c39dec0ca7fee95" name="a3f24be4f09509c475c39dec0ca7fee95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f24be4f09509c475c39dec0ca7fee95">&#9670;&#160;</a></span>m_Scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Editor::Inspector::m_Scale = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b497d1d8c663c94ef50b0b0f9e0c313" name="a9b497d1d8c663c94ef50b0b0f9e0c313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b497d1d8c663c94ef50b0b0f9e0c313">&#9670;&#160;</a></span>m_Rotate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Editor::Inspector::m_Rotate = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c1b0417eafd53023fb2ca7bab2b0849" name="a0c1b0417eafd53023fb2ca7bab2b0849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c1b0417eafd53023fb2ca7bab2b0849">&#9670;&#160;</a></span>m_HiddenFieldsVisible</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Editor::Inspector::m_HiddenFieldsVisible = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_editor___inspector_8h_source.html">Editor_Inspector.h</a></li>
+<li><a class="el" href="_editor___inspector_8cpp.html">Editor_Inspector.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_editor.html">Editor</a></li><li class="navelem"><a class="el" href="class_editor_1_1_inspector.html">Inspector</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

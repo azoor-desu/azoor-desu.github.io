@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: CameraComponent.h Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_camera_component_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CameraComponent.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_camera_component_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;Engine.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_e_c_s_manager_8h.html">Core/ECSManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><a class="code hl_define" href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;glm/glm.hpp&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><a class="code hl_define" href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_t_e.html">TE</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_t_e_1_1_camera.html">   20</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_t_e_1_1_camera.html">Camera</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_t_e_1_1_i_component.html">IComponent</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_t_e_1_1_camera.html#adf2998fad53f02f857b14e981889d7f6">   22</a></span>        <a class="code hl_function" href="class_t_e_1_1_camera.html#adf2998fad53f02f857b14e981889d7f6">Camera</a>() :</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_class" href="class_t_e_1_1_i_component.html">IComponent</a>(<a class="code hl_class" href="class_t_e_1_1_g_u_i_d_creator.html">GUIDCreator</a>::getTypeGUID&lt;<a class="code hl_class" href="class_t_e_1_1_camera.html">Camera</a>&gt;) {}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_t_e_1_1_camera.html#ad50fa4a0a284059c4b6d466c00ae3246">   25</a></span>        rttr::instance <a class="code hl_function" href="class_t_e_1_1_camera.html#ad50fa4a0a284059c4b6d466c00ae3246">GetRTTRInstance</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_t_e_1_1_camera.html#a35fcc13439883031eef72f595653fcb4">   27</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#a35fcc13439883031eef72f595653fcb4">Serialize</a>(<a class="code hl_class" href="class_t_e_1_1_serializer.html">Serializer</a>&amp; s)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            s.<a class="code hl_function" href="class_t_e_1_1_serializer.html#a4db2e02cb95d865134f885cc075e479e">Serialize</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_t_e_1_1_camera.html#ab1d7bd64bea001b229bc9806a062b7e8">   31</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#ab1d7bd64bea001b229bc9806a062b7e8">Deserialize</a>(<a class="code hl_class" href="class_t_e_1_1_serializer.html">Serializer</a>&amp; s)</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            s.<a class="code hl_function" href="class_t_e_1_1_serializer.html#ab1b02feed183f0aa4fe3fb505978b25f">Deserialize</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="struct_t_e_1_1_camera_1_1_viewport_rect.html">   35</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct_t_e_1_1_camera_1_1_viewport_rect.html">ViewportRect</a> {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_t_e_1_1_camera_1_1_viewport_rect.html#a3653c6da6b182eceafcef28ededa08d3">   36</a></span>            glm::ivec2 <a class="code hl_variable" href="struct_t_e_1_1_camera_1_1_viewport_rect.html#a3653c6da6b182eceafcef28ededa08d3">m_Center</a>{}, <a class="code hl_variable" href="struct_t_e_1_1_camera_1_1_viewport_rect.html#a30aae002861c3a11da70b5352f6d5cf1">m_HalfExtent</a>{};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        };</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#a7015b47f41e2e5722a4f9fbcfbd91fa6">SetCameraWidth</a>(<span class="keywordtype">float</span>)<span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#a7fee61b6f2d4ef33cd054962f653cfde">SetCameraHeight</a>(<span class="keywordtype">float</span>)<span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#a9c7e8f27030f3b175278411522275ced">SetCameraAspectRatio</a>(glm::ivec2)<span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">SetCameraForwardVector</a>(glm::vec3)<span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#a53fab7d0eb29f6ab2ac67961a8bb2135">SetCameraUpVector</a>(glm::vec3)<span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#af35aa9b314a73666391c5325c122e81f">SetCameraFocusDepth</a>(<span class="keywordtype">float</span>)<span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#a7eb49f83ecc539bdef8e7716f78d431a">SetWidthFOVRadian</a>(<span class="keywordtype">float</span>)<span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#a12425d808eb55ca601d13bb881f466ca">SetWidthFOVDegree</a>(<span class="keywordtype">float</span>)<span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#a4b378d88519f61a6bff9cdbebe62e35f">SetHeightFOVRadian</a>(<span class="keywordtype">float</span>)<span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#a826e363af16c47c10e088e11adb9e4b7">SetHeightFOVDegree</a>(<span class="keywordtype">float</span>)<span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#a07913b5e5ec87af2e097d2b4045fa6ce">SetViewportRect</a>(<span class="keyword">const</span> ViewportRect&amp;)<span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordtype">float</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#a5e7b656fd0b311823fe00b7821baa00e">GetCameraWidth</a>()const noexcept;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordtype">float</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#a02565cd4abeb12b732b43d7c27c72daa">GetCameraHeight</a>()const noexcept;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        glm::ivec2 <a class="code hl_function" href="class_t_e_1_1_camera.html#a9ec0cf72ae12e84a611c3dddba011ba8">GetCameraAspectRatio</a>()const noexcept;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        glm::vec3 <a class="code hl_function" href="class_t_e_1_1_camera.html#a16fa970b1365f0178811936aedb1a41c">GetCameraForwardVector</a>()const noexcept;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        glm::vec3 <a class="code hl_function" href="class_t_e_1_1_camera.html#a40d63ae777a9a10748672fb07a9e4c60">GetCameraUpVector</a>()const noexcept;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        glm::vec3 <a class="code hl_function" href="class_t_e_1_1_camera.html#a2af6972e0b25457f1c19ea790f8f07dd">GetCameraForwardMoveVector</a>()const noexcept;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        glm::vec3 <a class="code hl_function" href="class_t_e_1_1_camera.html#a0fe04e569dc7ab79000180fadfa3f22a">GetCameraUpMoveVector</a>()const noexcept;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        glm::vec3 <a class="code hl_function" href="class_t_e_1_1_camera.html#a9e17849ce4d0a0b56777ba237e0c6163">GetCameraRightMoveVector</a>()const noexcept;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordtype">float</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#aead2751d1c4ebedd2ea7c33c1459babf">GetCameraFocusDepth</a>()const noexcept;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordtype">float</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#a341453c890b0c8ccf2371a82115f814f">GetWidthFOVRadian</a>()const noexcept;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordtype">float</span> <a class="code hl_function" href="class_t_e_1_1_camera.html#af3d374902d21dcf95b7fb75d1eb2c719">GetWidthFOVDegree</a>()const noexcept;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        ViewportRect <a class="code hl_function" href="class_t_e_1_1_camera.html#a976761be647547756a367c939adb16cf">GetViewportRect</a>()const noexcept;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        glm::mat4 <a class="code hl_function" href="class_t_e_1_1_camera.html#af8891a33f89c89adea14d01c89cc3133">GetPerspectiveProjectionMatrix</a>() const noexcept;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_t_e_1_1_camera.html#ab624d0b4ae92e61a3085489270166507">   63</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="class_t_e_1_1_camera.html#ab624d0b4ae92e61a3085489270166507">m_CameraMaxDepth</a>{ 100.f };</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_t_e_1_1_camera.html#a4828be45236330695eb0a14f1ed3558e">   66</a></span>        glm::vec3 <a class="code hl_variable" href="class_t_e_1_1_camera.html#a4828be45236330695eb0a14f1ed3558e">m_CameraForwardVector</a>{ 0.f,0.f,1.f };</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_t_e_1_1_camera.html#a6c815a11c00f42f61687f43db04a164a">   67</a></span>        glm::vec3 <a class="code hl_variable" href="class_t_e_1_1_camera.html#a6c815a11c00f42f61687f43db04a164a">m_CameraUpVector</a>{ 0.f,1.f,0.f };</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_t_e_1_1_camera.html#a560550cdc95e1ff8e99ade2bb561f9c0">   68</a></span>        glm::ivec2 <a class="code hl_variable" href="class_t_e_1_1_camera.html#a560550cdc95e1ff8e99ade2bb561f9c0">m_AspectRatio</a>{ 16,9 };</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_t_e_1_1_camera.html#ad20fd9517b24b9466472874ac91a60c6">   69</a></span>        glm::vec2 <a class="code hl_variable" href="class_t_e_1_1_camera.html#ad20fd9517b24b9466472874ac91a60c6">m_CameraSize</a>{ 16.f,9.f };</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_t_e_1_1_camera.html#a75bdfc9d9067aa18b854454508d1b4f1">   70</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="class_t_e_1_1_camera.html#a75bdfc9d9067aa18b854454508d1b4f1">m_CameraFocusDepth</a>{ 11.25f };</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_t_e_1_1_camera.html#ac35a2f777690a9dc6c225c82fe4ca732">   71</a></span>        <a class="code hl_struct" href="struct_t_e_1_1_camera_1_1_viewport_rect.html">ViewportRect</a> <a class="code hl_variable" href="class_t_e_1_1_camera.html#ac35a2f777690a9dc6c225c82fe4ca732">m_Viewport</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    };</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="ttc" id="a_e_c_s_manager_8h_html"><div class="ttname"><a href="_e_c_s_manager_8h.html">ECSManager.h</a></div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html"><div class="ttname"><a href="class_t_e_1_1_camera.html">TE::Camera</a></div><div class="ttdef"><b>Definition:</b> CameraComponent.h:20</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a02565cd4abeb12b732b43d7c27c72daa"><div class="ttname"><a href="class_t_e_1_1_camera.html#a02565cd4abeb12b732b43d7c27c72daa">TE::Camera::GetCameraHeight</a></div><div class="ttdeci">float GetCameraHeight() const noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:64</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a07913b5e5ec87af2e097d2b4045fa6ce"><div class="ttname"><a href="class_t_e_1_1_camera.html#a07913b5e5ec87af2e097d2b4045fa6ce">TE::Camera::SetViewportRect</a></div><div class="ttdeci">void SetViewportRect(const ViewportRect &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:49</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a0fe04e569dc7ab79000180fadfa3f22a"><div class="ttname"><a href="class_t_e_1_1_camera.html#a0fe04e569dc7ab79000180fadfa3f22a">TE::Camera::GetCameraUpMoveVector</a></div><div class="ttdeci">glm::vec3 GetCameraUpMoveVector() const noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:85</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a12425d808eb55ca601d13bb881f466ca"><div class="ttname"><a href="class_t_e_1_1_camera.html#a12425d808eb55ca601d13bb881f466ca">TE::Camera::SetWidthFOVDegree</a></div><div class="ttdeci">void SetWidthFOVDegree(float) noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:40</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a16fa970b1365f0178811936aedb1a41c"><div class="ttname"><a href="class_t_e_1_1_camera.html#a16fa970b1365f0178811936aedb1a41c">TE::Camera::GetCameraForwardVector</a></div><div class="ttdeci">glm::vec3 GetCameraForwardVector() const noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:70</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a2af6972e0b25457f1c19ea790f8f07dd"><div class="ttname"><a href="class_t_e_1_1_camera.html#a2af6972e0b25457f1c19ea790f8f07dd">TE::Camera::GetCameraForwardMoveVector</a></div><div class="ttdeci">glm::vec3 GetCameraForwardMoveVector() const noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:82</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a341453c890b0c8ccf2371a82115f814f"><div class="ttname"><a href="class_t_e_1_1_camera.html#a341453c890b0c8ccf2371a82115f814f">TE::Camera::GetWidthFOVRadian</a></div><div class="ttdeci">float GetWidthFOVRadian() const noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:91</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a35fcc13439883031eef72f595653fcb4"><div class="ttname"><a href="class_t_e_1_1_camera.html#a35fcc13439883031eef72f595653fcb4">TE::Camera::Serialize</a></div><div class="ttdeci">void Serialize(Serializer &amp;s)</div><div class="ttdef"><b>Definition:</b> CameraComponent.h:27</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a40d63ae777a9a10748672fb07a9e4c60"><div class="ttname"><a href="class_t_e_1_1_camera.html#a40d63ae777a9a10748672fb07a9e4c60">TE::Camera::GetCameraUpVector</a></div><div class="ttdeci">glm::vec3 GetCameraUpVector() const noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:73</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a4828be45236330695eb0a14f1ed3558e"><div class="ttname"><a href="class_t_e_1_1_camera.html#a4828be45236330695eb0a14f1ed3558e">TE::Camera::m_CameraForwardVector</a></div><div class="ttdeci">glm::vec3 m_CameraForwardVector</div><div class="ttdef"><b>Definition:</b> CameraComponent.h:66</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a4b378d88519f61a6bff9cdbebe62e35f"><div class="ttname"><a href="class_t_e_1_1_camera.html#a4b378d88519f61a6bff9cdbebe62e35f">TE::Camera::SetHeightFOVRadian</a></div><div class="ttdeci">void SetHeightFOVRadian(float) noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:43</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a53fab7d0eb29f6ab2ac67961a8bb2135"><div class="ttname"><a href="class_t_e_1_1_camera.html#a53fab7d0eb29f6ab2ac67961a8bb2135">TE::Camera::SetCameraUpVector</a></div><div class="ttdeci">void SetCameraUpVector(glm::vec3) noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:30</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a560550cdc95e1ff8e99ade2bb561f9c0"><div class="ttname"><a href="class_t_e_1_1_camera.html#a560550cdc95e1ff8e99ade2bb561f9c0">TE::Camera::m_AspectRatio</a></div><div class="ttdeci">glm::ivec2 m_AspectRatio</div><div class="ttdef"><b>Definition:</b> CameraComponent.h:68</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a5e7b656fd0b311823fe00b7821baa00e"><div class="ttname"><a href="class_t_e_1_1_camera.html#a5e7b656fd0b311823fe00b7821baa00e">TE::Camera::GetCameraWidth</a></div><div class="ttdeci">float GetCameraWidth() const noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:61</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a6c815a11c00f42f61687f43db04a164a"><div class="ttname"><a href="class_t_e_1_1_camera.html#a6c815a11c00f42f61687f43db04a164a">TE::Camera::m_CameraUpVector</a></div><div class="ttdeci">glm::vec3 m_CameraUpVector</div><div class="ttdef"><b>Definition:</b> CameraComponent.h:67</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a7015b47f41e2e5722a4f9fbcfbd91fa6"><div class="ttname"><a href="class_t_e_1_1_camera.html#a7015b47f41e2e5722a4f9fbcfbd91fa6">TE::Camera::SetCameraWidth</a></div><div class="ttdeci">void SetCameraWidth(float) noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:7</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a75bdfc9d9067aa18b854454508d1b4f1"><div class="ttname"><a href="class_t_e_1_1_camera.html#a75bdfc9d9067aa18b854454508d1b4f1">TE::Camera::m_CameraFocusDepth</a></div><div class="ttdeci">float m_CameraFocusDepth</div><div class="ttdef"><b>Definition:</b> CameraComponent.h:70</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a7eb49f83ecc539bdef8e7716f78d431a"><div class="ttname"><a href="class_t_e_1_1_camera.html#a7eb49f83ecc539bdef8e7716f78d431a">TE::Camera::SetWidthFOVRadian</a></div><div class="ttdeci">void SetWidthFOVRadian(float) noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:37</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a7fee61b6f2d4ef33cd054962f653cfde"><div class="ttname"><a href="class_t_e_1_1_camera.html#a7fee61b6f2d4ef33cd054962f653cfde">TE::Camera::SetCameraHeight</a></div><div class="ttdeci">void SetCameraHeight(float) noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:15</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a826e363af16c47c10e088e11adb9e4b7"><div class="ttname"><a href="class_t_e_1_1_camera.html#a826e363af16c47c10e088e11adb9e4b7">TE::Camera::SetHeightFOVDegree</a></div><div class="ttdeci">void SetHeightFOVDegree(float) noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:46</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a976761be647547756a367c939adb16cf"><div class="ttname"><a href="class_t_e_1_1_camera.html#a976761be647547756a367c939adb16cf">TE::Camera::GetViewportRect</a></div><div class="ttdeci">ViewportRect GetViewportRect() const noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:79</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a9c7e8f27030f3b175278411522275ced"><div class="ttname"><a href="class_t_e_1_1_camera.html#a9c7e8f27030f3b175278411522275ced">TE::Camera::SetCameraAspectRatio</a></div><div class="ttdeci">void SetCameraAspectRatio(glm::ivec2) noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:23</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a9e17849ce4d0a0b56777ba237e0c6163"><div class="ttname"><a href="class_t_e_1_1_camera.html#a9e17849ce4d0a0b56777ba237e0c6163">TE::Camera::GetCameraRightMoveVector</a></div><div class="ttdeci">glm::vec3 GetCameraRightMoveVector() const noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:88</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_a9ec0cf72ae12e84a611c3dddba011ba8"><div class="ttname"><a href="class_t_e_1_1_camera.html#a9ec0cf72ae12e84a611c3dddba011ba8">TE::Camera::GetCameraAspectRatio</a></div><div class="ttdeci">glm::ivec2 GetCameraAspectRatio() const noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:67</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_ab1d7bd64bea001b229bc9806a062b7e8"><div class="ttname"><a href="class_t_e_1_1_camera.html#ab1d7bd64bea001b229bc9806a062b7e8">TE::Camera::Deserialize</a></div><div class="ttdeci">void Deserialize(Serializer &amp;s)</div><div class="ttdef"><b>Definition:</b> CameraComponent.h:31</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_ab624d0b4ae92e61a3085489270166507"><div class="ttname"><a href="class_t_e_1_1_camera.html#ab624d0b4ae92e61a3085489270166507">TE::Camera::m_CameraMaxDepth</a></div><div class="ttdeci">float m_CameraMaxDepth</div><div class="ttdef"><b>Definition:</b> CameraComponent.h:63</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_ab783ff79a23453bf7fc843b933521655"><div class="ttname"><a href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">TE::Camera::SetCameraForwardVector</a></div><div class="ttdeci">void SetCameraForwardVector(glm::vec3) noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:27</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_ac35a2f777690a9dc6c225c82fe4ca732"><div class="ttname"><a href="class_t_e_1_1_camera.html#ac35a2f777690a9dc6c225c82fe4ca732">TE::Camera::m_Viewport</a></div><div class="ttdeci">ViewportRect m_Viewport</div><div class="ttdef"><b>Definition:</b> CameraComponent.h:71</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_ad20fd9517b24b9466472874ac91a60c6"><div class="ttname"><a href="class_t_e_1_1_camera.html#ad20fd9517b24b9466472874ac91a60c6">TE::Camera::m_CameraSize</a></div><div class="ttdeci">glm::vec2 m_CameraSize</div><div class="ttdef"><b>Definition:</b> CameraComponent.h:69</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_ad50fa4a0a284059c4b6d466c00ae3246"><div class="ttname"><a href="class_t_e_1_1_camera.html#ad50fa4a0a284059c4b6d466c00ae3246">TE::Camera::GetRTTRInstance</a></div><div class="ttdeci">rttr::instance GetRTTRInstance() const</div><div class="ttdef"><b>Definition:</b> CameraComponent.h:25</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_adf2998fad53f02f857b14e981889d7f6"><div class="ttname"><a href="class_t_e_1_1_camera.html#adf2998fad53f02f857b14e981889d7f6">TE::Camera::Camera</a></div><div class="ttdeci">Camera()</div><div class="ttdef"><b>Definition:</b> CameraComponent.h:22</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_aead2751d1c4ebedd2ea7c33c1459babf"><div class="ttname"><a href="class_t_e_1_1_camera.html#aead2751d1c4ebedd2ea7c33c1459babf">TE::Camera::GetCameraFocusDepth</a></div><div class="ttdeci">float GetCameraFocusDepth() const noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:76</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_af35aa9b314a73666391c5325c122e81f"><div class="ttname"><a href="class_t_e_1_1_camera.html#af35aa9b314a73666391c5325c122e81f">TE::Camera::SetCameraFocusDepth</a></div><div class="ttdeci">void SetCameraFocusDepth(float) noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:33</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_af3d374902d21dcf95b7fb75d1eb2c719"><div class="ttname"><a href="class_t_e_1_1_camera.html#af3d374902d21dcf95b7fb75d1eb2c719">TE::Camera::GetWidthFOVDegree</a></div><div class="ttdeci">float GetWidthFOVDegree() const noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:94</div></div>
+<div class="ttc" id="aclass_t_e_1_1_camera_html_af8891a33f89c89adea14d01c89cc3133"><div class="ttname"><a href="class_t_e_1_1_camera.html#af8891a33f89c89adea14d01c89cc3133">TE::Camera::GetPerspectiveProjectionMatrix</a></div><div class="ttdeci">glm::mat4 GetPerspectiveProjectionMatrix() const noexcept</div><div class="ttdef"><b>Definition:</b> CameraComponent.cpp:97</div></div>
+<div class="ttc" id="aclass_t_e_1_1_g_u_i_d_creator_html"><div class="ttname"><a href="class_t_e_1_1_g_u_i_d_creator.html">TE::GUIDCreator</a></div><div class="ttdef"><b>Definition:</b> GUID.h:60</div></div>
+<div class="ttc" id="aclass_t_e_1_1_i_component_html"><div class="ttname"><a href="class_t_e_1_1_i_component.html">TE::IComponent</a></div><div class="ttdoc">Base class of every ECS Component. Provides some generic functions to.</div><div class="ttdef"><b>Definition:</b> ECSManager.h:476</div></div>
+<div class="ttc" id="aclass_t_e_1_1_serializer_html"><div class="ttname"><a href="class_t_e_1_1_serializer.html">TE::Serializer</a></div><div class="ttdef"><b>Definition:</b> Serializer.h:87</div></div>
+<div class="ttc" id="aclass_t_e_1_1_serializer_html_a4db2e02cb95d865134f885cc075e479e"><div class="ttname"><a href="class_t_e_1_1_serializer.html#a4db2e02cb95d865134f885cc075e479e">TE::Serializer::Serialize</a></div><div class="ttdeci">void Serialize(const EntityRef &amp;entt)</div><div class="ttdef"><b>Definition:</b> Serializer.cpp:352</div></div>
+<div class="ttc" id="aclass_t_e_1_1_serializer_html_ab1b02feed183f0aa4fe3fb505978b25f"><div class="ttname"><a href="class_t_e_1_1_serializer.html#ab1b02feed183f0aa4fe3fb505978b25f">TE::Serializer::Deserialize</a></div><div class="ttdeci">void Deserialize(EntityRef &amp;entt)</div><div class="ttdef"><b>Definition:</b> Serializer.cpp:307</div></div>
+<div class="ttc" id="anamespace_t_e_html"><div class="ttname"><a href="namespace_t_e.html">TE</a></div><div class="ttdoc">Declarations for the ECSManager class, EntityRef class, IComponent and ISystem classes   All content ...</div><div class="ttdef"><b>Definition:</b> EditorFrame.h:40</div></div>
+<div class="ttc" id="apch__engine_8h_html_ad3ee3199fb189e1047207f7a4d781868"><div class="ttname"><a href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div><div class="ttdeci">#define TE_SUPRESS_START</div><div class="ttdef"><b>Definition:</b> pch_engine.h:58</div></div>
+<div class="ttc" id="apch__engine_8h_html_afa88535cb07959a98893cd5653ca39c3"><div class="ttname"><a href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div><div class="ttdeci">#define TE_SUPRESS_END</div><div class="ttdef"><b>Definition:</b> pch_engine.h:71</div></div>
+<div class="ttc" id="astruct_t_e_1_1_camera_1_1_viewport_rect_html"><div class="ttname"><a href="struct_t_e_1_1_camera_1_1_viewport_rect.html">TE::Camera::ViewportRect</a></div><div class="ttdef"><b>Definition:</b> CameraComponent.h:35</div></div>
+<div class="ttc" id="astruct_t_e_1_1_camera_1_1_viewport_rect_html_a30aae002861c3a11da70b5352f6d5cf1"><div class="ttname"><a href="struct_t_e_1_1_camera_1_1_viewport_rect.html#a30aae002861c3a11da70b5352f6d5cf1">TE::Camera::ViewportRect::m_HalfExtent</a></div><div class="ttdeci">glm::ivec2 m_HalfExtent</div><div class="ttdef"><b>Definition:</b> CameraComponent.h:36</div></div>
+<div class="ttc" id="astruct_t_e_1_1_camera_1_1_viewport_rect_html_a3653c6da6b182eceafcef28ededa08d3"><div class="ttname"><a href="struct_t_e_1_1_camera_1_1_viewport_rect.html#a3653c6da6b182eceafcef28ededa08d3">TE::Camera::ViewportRect::m_Center</a></div><div class="ttdeci">glm::ivec2 m_Center</div><div class="ttdef"><b>Definition:</b> CameraComponent.h:36</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ff9d562b39932b7b74f54b9fb4bb00a0.html">ProjectSolution</a></li><li class="navelem"><a class="el" href="dir_0e3d5f2d56e31468daefe438e212cfbc.html">Proj_Engine</a></li><li class="navelem"><a class="el" href="dir_0d2c0b45ba4d42e3f37ae38d7482e159.html">Source</a></li><li class="navelem"><a class="el" href="dir_899dd8e7a2d2f241199d7efd6d4c7a2a.html">ECSComponents</a></li><li class="navelem"><a class="el" href="_camera_component_8h.html">CameraComponent.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: TE::MapLayer&lt; T &gt; Class Template Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_t_e_1_1_map_layer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a>  </div>
+  <div class="headertitle"><div class="title">TE::MapLayer&lt; T &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_a_i_helper_8h_source.html">AIHelper.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab9184fe131d596da615b685dab43ddfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#ab9184fe131d596da615b685dab43ddfc">MapLayer</a> (const char *<a class="el" href="class_t_e_1_1_map_layer.html#af6cc2fec4b04030d754cc38e552fc57e">name</a>, float <a class="el" href="class_t_e_1_1_map_layer.html#ac6e8acd5ef02183c60f8532efdac788d">height</a>)</td></tr>
+<tr class="separator:ab9184fe131d596da615b685dab43ddfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2ba068b4c5e489d094418d1b342598"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_map_layer.html#ac61a1afea00c2b241cf7d18da148740c">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#aaf2ba068b4c5e489d094418d1b342598">get_value</a> (int row, int col) const</td></tr>
+<tr class="separator:aaf2ba068b4c5e489d094418d1b342598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0baf206149f18d7c60e28e37abfaca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_map_layer.html#ac61a1afea00c2b241cf7d18da148740c">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#a9a0baf206149f18d7c60e28e37abfaca">get_value</a> (const <a class="el" href="struct_t_e_1_1_grid_pos.html">GridPos</a> &amp;gridPos) const</td></tr>
+<tr class="separator:a9a0baf206149f18d7c60e28e37abfaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11812abf38f393900bbd9490cdf4af8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#a11812abf38f393900bbd9490cdf4af8f">set_value</a> (int row, int col, const T &amp;<a class="el" href="_r_t_t_r___registration_8h.html#a473617892249d2d182a4e04f8ad275cd">value</a>)</td></tr>
+<tr class="separator:a11812abf38f393900bbd9490cdf4af8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d830e747dd3fb2977bcfc9417f59c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#a66d830e747dd3fb2977bcfc9417f59c6">set_value</a> (const <a class="el" href="struct_t_e_1_1_grid_pos.html">GridPos</a> &amp;gridPos, const T &amp;<a class="el" href="_r_t_t_r___registration_8h.html#a473617892249d2d182a4e04f8ad275cd">value</a>)</td></tr>
+<tr class="separator:a66d830e747dd3fb2977bcfc9417f59c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d99c4b5a50cf63b68d65f7e7333d3ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#a7d99c4b5a50cf63b68d65f7e7333d3ba">is_enabled</a> () const</td></tr>
+<tr class="separator:a7d99c4b5a50cf63b68d65f7e7333d3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accde6224e285cf2fc7045a90eb7af954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#accde6224e285cf2fc7045a90eb7af954">set_enabled</a> (bool state)</td></tr>
+<tr class="separator:accde6224e285cf2fc7045a90eb7af954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4b50ce7605b60a760357bb2abd083b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#aae4b50ce7605b60a760357bb2abd083b">toggle_enabled</a> ()</td></tr>
+<tr class="separator:aae4b50ce7605b60a760357bb2abd083b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b36a75db5a469381366048fad8926d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#a8b36a75db5a469381366048fad8926d8">for_each</a> (std::function&lt; void(T &amp;)&gt; op)</td></tr>
+<tr class="separator:a8b36a75db5a469381366048fad8926d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ab570d4f6b98179433f147ea4c0005c8a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#ab570d4f6b98179433f147ea4c0005c8a">container</a> = std::vector&lt; T &gt;</td></tr>
+<tr class="separator:ab570d4f6b98179433f147ea4c0005c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61a1afea00c2b241cf7d18da148740c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#ac61a1afea00c2b241cf7d18da148740c">const_reference</a> = typename container::const_reference</td></tr>
+<tr class="separator:ac61a1afea00c2b241cf7d18da148740c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:acbeeea2481664e2deb36973a47883296"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#acbeeea2481664e2deb36973a47883296">populate_with_value</a> (int <a class="el" href="class_t_e_1_1_map_layer.html#ac6e8acd5ef02183c60f8532efdac788d">height</a>, int <a class="el" href="class_t_e_1_1_map_layer.html#aa7dcd6989ca7eec2e42832e19acf1f7d">width</a>, const T &amp;<a class="el" href="_r_t_t_r___registration_8h.html#a473617892249d2d182a4e04f8ad275cd">value</a>)</td></tr>
+<tr class="separator:acbeeea2481664e2deb36973a47883296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dca2f67cac58e098d87ee04ea17fc46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#a4dca2f67cac58e098d87ee04ea17fc46">populate_with_data</a> (const std::vector&lt; std::vector&lt; T &gt; &gt; &amp;<a class="el" href="class_t_e_1_1_map_layer.html#a5cc981818ae5dbc8177a7c3d30708a20">data</a>)</td></tr>
+<tr class="separator:a4dca2f67cac58e098d87ee04ea17fc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a5cc981818ae5dbc8177a7c3d30708a20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_map_layer.html#ab570d4f6b98179433f147ea4c0005c8a">container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#a5cc981818ae5dbc8177a7c3d30708a20">data</a></td></tr>
+<tr class="separator:a5cc981818ae5dbc8177a7c3d30708a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f28ebc9990b6829bad34449757a3d0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#a49f28ebc9990b6829bad34449757a3d0">yHeight</a></td></tr>
+<tr class="separator:a49f28ebc9990b6829bad34449757a3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6cc2fec4b04030d754cc38e552fc57e"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#af6cc2fec4b04030d754cc38e552fc57e">name</a></td></tr>
+<tr class="separator:af6cc2fec4b04030d754cc38e552fc57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e8acd5ef02183c60f8532efdac788d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#ac6e8acd5ef02183c60f8532efdac788d">height</a></td></tr>
+<tr class="separator:ac6e8acd5ef02183c60f8532efdac788d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7dcd6989ca7eec2e42832e19acf1f7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#aa7dcd6989ca7eec2e42832e19acf1f7d">width</a></td></tr>
+<tr class="separator:aa7dcd6989ca7eec2e42832e19acf1f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af452c445acacfb10856360d4e6625784"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#af452c445acacfb10856360d4e6625784">enabled</a></td></tr>
+<tr class="separator:af452c445acacfb10856360d4e6625784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a8a16a8def173094d17ed062879646b6b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_map_layer.html#a8a16a8def173094d17ed062879646b6b">Terrain</a></td></tr>
+<tr class="separator:a8a16a8def173094d17ed062879646b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ab570d4f6b98179433f147ea4c0005c8a" name="ab570d4f6b98179433f147ea4c0005c8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab570d4f6b98179433f147ea4c0005c8a">&#9670;&#160;</a></span>container</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::container =  std::vector&lt;T&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac61a1afea00c2b241cf7d18da148740c" name="ac61a1afea00c2b241cf7d18da148740c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac61a1afea00c2b241cf7d18da148740c">&#9670;&#160;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::const_reference =  typename container::const_reference</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab9184fe131d596da615b685dab43ddfc" name="ab9184fe131d596da615b685dab43ddfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9184fe131d596da615b685dab43ddfc">&#9670;&#160;</a></span>MapLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::MapLayer </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaf2ba068b4c5e489d094418d1b342598" name="aaf2ba068b4c5e489d094418d1b342598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf2ba068b4c5e489d094418d1b342598">&#9670;&#160;</a></span>get_value() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_t_e_1_1_map_layer.html">MapLayer</a>&lt; T &gt;<a class="el" href="class_t_e_1_1_map_layer.html#ac61a1afea00c2b241cf7d18da148740c">::const_reference</a> <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::get_value </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a0baf206149f18d7c60e28e37abfaca" name="a9a0baf206149f18d7c60e28e37abfaca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a0baf206149f18d7c60e28e37abfaca">&#9670;&#160;</a></span>get_value() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_t_e_1_1_map_layer.html">MapLayer</a>&lt; T &gt;<a class="el" href="class_t_e_1_1_map_layer.html#ac61a1afea00c2b241cf7d18da148740c">::const_reference</a> <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::get_value </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_t_e_1_1_grid_pos.html">GridPos</a> &amp;&#160;</td>
+          <td class="paramname"><em>gridPos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11812abf38f393900bbd9490cdf4af8f" name="a11812abf38f393900bbd9490cdf4af8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11812abf38f393900bbd9490cdf4af8f">&#9670;&#160;</a></span>set_value() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::set_value </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66d830e747dd3fb2977bcfc9417f59c6" name="a66d830e747dd3fb2977bcfc9417f59c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66d830e747dd3fb2977bcfc9417f59c6">&#9670;&#160;</a></span>set_value() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::set_value </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_t_e_1_1_grid_pos.html">GridPos</a> &amp;&#160;</td>
+          <td class="paramname"><em>gridPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d99c4b5a50cf63b68d65f7e7333d3ba" name="a7d99c4b5a50cf63b68d65f7e7333d3ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d99c4b5a50cf63b68d65f7e7333d3ba">&#9670;&#160;</a></span>is_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::is_enabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="accde6224e285cf2fc7045a90eb7af954" name="accde6224e285cf2fc7045a90eb7af954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accde6224e285cf2fc7045a90eb7af954">&#9670;&#160;</a></span>set_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::set_enabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae4b50ce7605b60a760357bb2abd083b" name="aae4b50ce7605b60a760357bb2abd083b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4b50ce7605b60a760357bb2abd083b">&#9670;&#160;</a></span>toggle_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::toggle_enabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b36a75db5a469381366048fad8926d8" name="a8b36a75db5a469381366048fad8926d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b36a75db5a469381366048fad8926d8">&#9670;&#160;</a></span>for_each()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::for_each </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(T &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbeeea2481664e2deb36973a47883296" name="acbeeea2481664e2deb36973a47883296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbeeea2481664e2deb36973a47883296">&#9670;&#160;</a></span>populate_with_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::populate_with_value </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4dca2f67cac58e098d87ee04ea17fc46" name="a4dca2f67cac58e098d87ee04ea17fc46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dca2f67cac58e098d87ee04ea17fc46">&#9670;&#160;</a></span>populate_with_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::populate_with_data </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; T &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a8a16a8def173094d17ed062879646b6b" name="a8a16a8def173094d17ed062879646b6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a16a8def173094d17ed062879646b6b">&#9670;&#160;</a></span>Terrain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_t_e_1_1_terrain.html">Terrain</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a5cc981818ae5dbc8177a7c3d30708a20" name="a5cc981818ae5dbc8177a7c3d30708a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc981818ae5dbc8177a7c3d30708a20">&#9670;&#160;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_t_e_1_1_map_layer.html#ab570d4f6b98179433f147ea4c0005c8a">container</a> <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49f28ebc9990b6829bad34449757a3d0" name="a49f28ebc9990b6829bad34449757a3d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49f28ebc9990b6829bad34449757a3d0">&#9670;&#160;</a></span>yHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::yHeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6cc2fec4b04030d754cc38e552fc57e" name="af6cc2fec4b04030d754cc38e552fc57e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6cc2fec4b04030d754cc38e552fc57e">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6e8acd5ef02183c60f8532efdac788d" name="ac6e8acd5ef02183c60f8532efdac788d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6e8acd5ef02183c60f8532efdac788d">&#9670;&#160;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::height</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7dcd6989ca7eec2e42832e19acf1f7d" name="aa7dcd6989ca7eec2e42832e19acf1f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7dcd6989ca7eec2e42832e19acf1f7d">&#9670;&#160;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::width</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af452c445acacfb10856360d4e6625784" name="af452c445acacfb10856360d4e6625784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af452c445acacfb10856360d4e6625784">&#9670;&#160;</a></span>enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_t_e_1_1_map_layer.html">TE::MapLayer</a>&lt; T &gt;::enabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="_a_i_helper_8h_source.html">AIHelper.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_t_e.html">TE</a></li><li class="navelem"><a class="el" href="class_t_e_1_1_map_layer.html">MapLayer</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

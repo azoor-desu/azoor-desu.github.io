@@ -1,0 +1,1202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: RTTR_Registration.h File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_r_t_t_r___registration_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">RTTR_Registration.h File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Localized place to register components in RTTR. Registration does not work in a certain few CPP files so the solution was a locaized file to write registrations in. <br  />
+ All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;rttr/registration.h&gt;</code><br />
+<code>#include &quot;rttr/enumeration.h&quot;</code><br />
+</div>
+<p><a href="_r_t_t_r___registration_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a7ccaeb2e734de1f77b7dc6d6acfceaaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a7ccaeb2e734de1f77b7dc6d6acfceaaa">registration::class_&lt; TE::Transform &gt;</a> (&quot;Transform&quot;) .constructor&lt;&gt;() .<a class="el" href="_r_t_t_r___registration_8h.html#a4a7462fc6021672b56b868ee087da92d">property</a>(&quot;IsActive&quot;</td></tr>
+<tr class="separator:a7ccaeb2e734de1f77b7dc6d6acfceaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82f939608efa19a3ebfc13ea6bc5139"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#ae82f939608efa19a3ebfc13ea6bc5139">registration::class_&lt; TE::Camera &gt;</a> (&quot;Camera&quot;) .constructor&lt;&gt;() .<a class="el" href="_r_t_t_r___registration_8h.html#a4a7462fc6021672b56b868ee087da92d">property</a>(&quot;IsActive&quot;</td></tr>
+<tr class="separator:ae82f939608efa19a3ebfc13ea6bc5139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7462fc6021672b56b868ee087da92d"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">TE::Camera::SetCameraForwardVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a4a7462fc6021672b56b868ee087da92d">property</a> (&quot;Up Vector&quot;, &amp;<a class="el" href="class_t_e_1_1_camera.html#a40d63ae777a9a10748672fb07a9e4c60">TE::Camera::GetCameraUpVector</a>, &amp;<a class="el" href="class_t_e_1_1_camera.html#a53fab7d0eb29f6ab2ac67961a8bb2135">TE::Camera::SetCameraUpVector</a>) .property(&quot;Aspect Ratio&quot;</td></tr>
+<tr class="separator:a4a7462fc6021672b56b868ee087da92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8574018c7b524b606f29f2a63c5a1888"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">TE::Camera::SetCameraForwardVector</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#af35aa9b314a73666391c5325c122e81f">TE::Camera::SetCameraFocusDepth</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a8574018c7b524b606f29f2a63c5a1888">property</a> (&quot;View Max Depth&quot;, &amp;<a class="el" href="class_t_e_1_1_camera.html#ab624d0b4ae92e61a3085489270166507">TE::Camera::m_CameraMaxDepth</a>) .property(&quot;Camera Width&quot;</td></tr>
+<tr class="separator:a8574018c7b524b606f29f2a63c5a1888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9bb5b61899eba05f218a0ff2f369b42"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">TE::Camera::SetCameraForwardVector</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#af35aa9b314a73666391c5325c122e81f">TE::Camera::SetCameraFocusDepth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a7015b47f41e2e5722a4f9fbcfbd91fa6">TE::Camera::SetCameraWidth</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#ae9bb5b61899eba05f218a0ff2f369b42">property</a> (&quot;Camera Height&quot;, &amp;<a class="el" href="class_t_e_1_1_camera.html#a02565cd4abeb12b732b43d7c27c72daa">TE::Camera::GetCameraHeight</a>, &amp;<a class="el" href="class_t_e_1_1_camera.html#a7fee61b6f2d4ef33cd054962f653cfde">TE::Camera::SetCameraHeight</a>) .property(&quot;FOV&quot;</td></tr>
+<tr class="separator:ae9bb5b61899eba05f218a0ff2f369b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52a8654d042613382125793cfe4358b"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">TE::Camera::SetCameraForwardVector</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#af35aa9b314a73666391c5325c122e81f">TE::Camera::SetCameraFocusDepth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a7015b47f41e2e5722a4f9fbcfbd91fa6">TE::Camera::SetCameraWidth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a12425d808eb55ca601d13bb881f466ca">TE::Camera::SetWidthFOVDegree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#ab52a8654d042613382125793cfe4358b">property_readonly</a> (&quot;GUID&quot;, &amp;<a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">TE::Camera::GetGUID</a>)(<a class="el" href="_r_t_t_r___registration_8h.html#a162dd067367e479d1ac5afd309e89c55">metadata</a>(&quot;CHECKBOX&quot;</td></tr>
+<tr class="separator:ab52a8654d042613382125793cfe4358b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162dd067367e479d1ac5afd309e89c55"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">TE::Camera::SetCameraForwardVector</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#af35aa9b314a73666391c5325c122e81f">TE::Camera::SetCameraFocusDepth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a7015b47f41e2e5722a4f9fbcfbd91fa6">TE::Camera::SetCameraWidth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a12425d808eb55ca601d13bb881f466ca">TE::Camera::SetWidthFOVDegree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a162dd067367e479d1ac5afd309e89c55">metadata</a> (&quot;HIDDEN&quot;, <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>)) .<a class="el" href="_r_t_t_r___registration_8h.html#ab52a8654d042613382125793cfe4358b">property_readonly</a>(&quot;TypeGUID&quot;</td></tr>
+<tr class="separator:a162dd067367e479d1ac5afd309e89c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17591545899bc3b4e324498e11af021f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a17591545899bc3b4e324498e11af021f">registration::class_&lt; TE::Mesh &gt;</a> (&quot;Mesh&quot;) .constructor&lt;&gt;() .<a class="el" href="_r_t_t_r___registration_8h.html#a4a7462fc6021672b56b868ee087da92d">property</a>(&quot;IsActive&quot;</td></tr>
+<tr class="separator:a17591545899bc3b4e324498e11af021f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d768c444bb18ad9bc0f4996c2ef20a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a38d768c444bb18ad9bc0f4996c2ef20a">registration::enumeration&lt; TE::RigidbodyType &gt;</a> (&quot;RigidbodyType&quot;)(<a class="el" href="_r_t_t_r___registration_8h.html#a473617892249d2d182a4e04f8ad275cd">value</a>(&quot;Static&quot;</td></tr>
+<tr class="separator:a38d768c444bb18ad9bc0f4996c2ef20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473617892249d2d182a4e04f8ad275cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a473617892249d2d182a4e04f8ad275cd">value</a> (&quot;Kinematic&quot;, <a class="el" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a513c74bdb8fe98af0eb4adbc9e204ef3">TE::RigidbodyType::Kinematic</a>)</td></tr>
+<tr class="separator:a473617892249d2d182a4e04f8ad275cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acdf281c854c6c32ac9b70c66879ecd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a1acdf281c854c6c32ac9b70c66879ecd">value</a> (&quot;Dynamic&quot;, <a class="el" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a71f6359040d876a1509ce7a4d30b4928">TE::RigidbodyType::Dynamic</a>))</td></tr>
+<tr class="separator:a1acdf281c854c6c32ac9b70c66879ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af42c55016ae4a0eecd8eb16fa8d96acb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#af42c55016ae4a0eecd8eb16fa8d96acb">registration::class_&lt; TE::Rigidbody &gt;</a> (&quot;Rigidbody&quot;) .constructor&lt;&gt;() .<a class="el" href="_r_t_t_r___registration_8h.html#a4a7462fc6021672b56b868ee087da92d">property</a>(&quot;IsActive&quot;</td></tr>
+<tr class="separator:af42c55016ae4a0eecd8eb16fa8d96acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bcb35a694c5350ffc681aaa14a3afca"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a3bcb35a694c5350ffc681aaa14a3afca">property</a> (&quot;Drag&quot;, &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a460e7fa00ab9cb6c8a1444cfa235fa34">TE::Rigidbody::drag</a>) .property(&quot;Angular Drag&quot;</td></tr>
+<tr class="separator:a3bcb35a694c5350ffc681aaa14a3afca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5332ac5d2c97c3ac4879b95a88d0975"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#ae5332ac5d2c97c3ac4879b95a88d0975">property</a> (&quot;Velocity&quot;, &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a2c41f12e5cb80ddab82fe31872f63212">TE::Rigidbody::velocity</a>) .property(&quot;Angular Velocity&quot;</td></tr>
+<tr class="separator:ae5332ac5d2c97c3ac4879b95a88d0975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec045a7e87cfc2f426085bcfce2bac71"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#aec045a7e87cfc2f426085bcfce2bac71">property</a> (&quot;Use Gravity&quot;, &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a729864d8a6481194c6bcbe5926090f30">TE::Rigidbody::useGravity</a>)(<a class="el" href="_r_t_t_r___registration_8h.html#a162dd067367e479d1ac5afd309e89c55">metadata</a>(&quot;CHECKBOX&quot;</td></tr>
+<tr class="separator:aec045a7e87cfc2f426085bcfce2bac71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67acfa1397a310c342c84492f253bc2f"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a67acfa1397a310c342c84492f253bc2f">property</a> (&quot;Restitution&quot;, &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a89094eae56dd3d637f7fd767a89f52e4">TE::Rigidbody::restitution</a>) .property(&quot;Rigidbody Type&quot;</td></tr>
+<tr class="separator:a67acfa1397a310c342c84492f253bc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7b91bf1f55d99e5d84f8821937ebbb"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a7a7b91bf1f55d99e5d84f8821937ebbb">property</a> (&quot;Freeze Position X&quot;, &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a996cb84812c782e001199f2385271181">TE::Rigidbody::freezePositionX</a>)(<a class="el" href="_r_t_t_r___registration_8h.html#a162dd067367e479d1ac5afd309e89c55">metadata</a>(&quot;CHECKBOX&quot;</td></tr>
+<tr class="separator:a7a7b91bf1f55d99e5d84f8821937ebbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717e07cea06b627d2adb8de4e25b7642"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a717e07cea06b627d2adb8de4e25b7642">property</a> (&quot;Freeze Position Y&quot;, &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a214c398e643f9a9886c6a5d13df929a6">TE::Rigidbody::freezePositionY</a>)(<a class="el" href="_r_t_t_r___registration_8h.html#a162dd067367e479d1ac5afd309e89c55">metadata</a>(&quot;CHECKBOX&quot;</td></tr>
+<tr class="separator:a717e07cea06b627d2adb8de4e25b7642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25e33079352d25979a7e3e833302646"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#ae25e33079352d25979a7e3e833302646">property</a> (&quot;Freeze Position Z&quot;, &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a8c13112b2a89fc914d99f700414dc355">TE::Rigidbody::freezePositionZ</a>)(<a class="el" href="_r_t_t_r___registration_8h.html#a162dd067367e479d1ac5afd309e89c55">metadata</a>(&quot;CHECKBOX&quot;</td></tr>
+<tr class="separator:ae25e33079352d25979a7e3e833302646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0026f655beda5abf0d8cdc7f54545a3a"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a0026f655beda5abf0d8cdc7f54545a3a">property</a> (&quot;Freeze Rotation X&quot;, &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#acfa8de259955d66e3b2ca62fbd763efb">TE::Rigidbody::freezeRotationX</a>)(<a class="el" href="_r_t_t_r___registration_8h.html#a162dd067367e479d1ac5afd309e89c55">metadata</a>(&quot;CHECKBOX&quot;</td></tr>
+<tr class="separator:a0026f655beda5abf0d8cdc7f54545a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75489cec14f5e1146023081963600df"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#af75489cec14f5e1146023081963600df">property</a> (&quot;Freeze Rotation Y&quot;, &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a8149d1bc733c4cc998baecf483124335">TE::Rigidbody::freezeRotationY</a>)(<a class="el" href="_r_t_t_r___registration_8h.html#a162dd067367e479d1ac5afd309e89c55">metadata</a>(&quot;CHECKBOX&quot;</td></tr>
+<tr class="separator:af75489cec14f5e1146023081963600df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279f8347264c8edaeceaa9e8cf995a11"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a279f8347264c8edaeceaa9e8cf995a11">property</a> (&quot;Freeze Roatation Z&quot;, &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a76d19ad8ae2ad8a12431363c72c822d6">TE::Rigidbody::freezeRotationZ</a>)(<a class="el" href="_r_t_t_r___registration_8h.html#a162dd067367e479d1ac5afd309e89c55">metadata</a>(&quot;CHECKBOX&quot;</td></tr>
+<tr class="separator:a279f8347264c8edaeceaa9e8cf995a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a038457dad8007d6f548c80e82350ca89"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a038457dad8007d6f548c80e82350ca89">property_readonly</a> (&quot;GUID&quot;, &amp;<a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">TE::Rigidbody::GetGUID</a>)(<a class="el" href="_r_t_t_r___registration_8h.html#a162dd067367e479d1ac5afd309e89c55">metadata</a>(&quot;HIDDEN&quot;</td></tr>
+<tr class="separator:a038457dad8007d6f548c80e82350ca89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770b22d5ff391d980f110dda8c01b56c"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a770b22d5ff391d980f110dda8c01b56c">property_readonly</a> (&quot;TypeGUID&quot;, &amp;<a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">TE::Rigidbody::GetTypeGUID</a>)(<a class="el" href="_r_t_t_r___registration_8h.html#a162dd067367e479d1ac5afd309e89c55">metadata</a>(&quot;HIDDEN&quot;</td></tr>
+<tr class="separator:a770b22d5ff391d980f110dda8c01b56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2031873922523ce90ff131b89a222e"><td class="memItemLeft" align="right" valign="top">registration::class_&lt; <a class="el" href="class_t_e_1_1_box_collider.html">TE::BoxCollider</a> &gt;(&quot;BoxCollider&quot;) .constructor&lt;&gt;() .constructor&lt; glm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a9e2031873922523ce90ff131b89a222e">registration::class_&lt; TE::CapsuleCollider &gt;</a> (&quot;CapsuleCollider&quot;) .constructor&lt;&gt;() .<a class="el" href="_r_t_t_r___registration_8h.html#a4a7462fc6021672b56b868ee087da92d">property</a>(&quot;IsTrigger&quot;</td></tr>
+<tr class="separator:a9e2031873922523ce90ff131b89a222e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d93c280b8c141945af94b23abe1fab9"><td class="memItemLeft" align="right" valign="top">registration::class_&lt; <a class="el" href="class_t_e_1_1_box_collider.html">TE::BoxCollider</a> &gt;(&quot;BoxCollider&quot;) .constructor&lt;&gt;() .constructor&lt; glm &amp;<a class="el" href="class_t_e_1_1_collider.html#a9c979512f321764bdae6bd47a12d9173">TE::CapsuleCollider::SetCenter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a2d93c280b8c141945af94b23abe1fab9">property</a> (&quot;Radius&quot;, &amp;<a class="el" href="class_t_e_1_1_capsule_collider.html#a127c815126beb54711794af071d3e1a9">TE::CapsuleCollider::GetRadius</a>, &amp;<a class="el" href="class_t_e_1_1_capsule_collider.html#a42ebbd5186359696a2d9df4f2638f181">TE::CapsuleCollider::SetRadius</a>) .property(&quot;IsActive&quot;</td></tr>
+<tr class="separator:a2d93c280b8c141945af94b23abe1fab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c010acd5b5503d7c4c56ea7a310936"><td class="memItemLeft" align="right" valign="top">registration::class_&lt; <a class="el" href="class_t_e_1_1_sphere_collider.html">TE::SphereCollider</a> &gt;(&quot;SphereCollider&quot;) .constructor&lt;&gt;() .constructor&lt; glm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#ad9c010acd5b5503d7c4c56ea7a310936">registration::enumeration&lt; TE::ChannelGroupEnum &gt;</a> (&quot;ChannelGroupEnum&quot;)(<a class="el" href="_r_t_t_r___registration_8h.html#a473617892249d2d182a4e04f8ad275cd">value</a>(&quot;Master&quot;</td></tr>
+<tr class="separator:ad9c010acd5b5503d7c4c56ea7a310936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc12db6a14d9cc0d0b830c63e47f6af"><td class="memItemLeft" align="right" valign="top">registration::class_&lt; <a class="el" href="class_t_e_1_1_sphere_collider.html">TE::SphereCollider</a> &gt;(&quot;SphereCollider&quot;) .constructor&lt;&gt;() .constructor&lt; glm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#addc12db6a14d9cc0d0b830c63e47f6af">value</a> (&quot;MONO_BGM&quot;, <a class="el" href="namespace_t_e.html#a7e8a75488c7c636fc23a0d87130b8d2da0aa8eb71bda310aebd37c27b251d29b5">TE::ChannelGroupEnum::MONO_BGM</a>)</td></tr>
+<tr class="separator:addc12db6a14d9cc0d0b830c63e47f6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27738538d879fd475d4078be38b1b4e9"><td class="memItemLeft" align="right" valign="top">registration::class_&lt; <a class="el" href="class_t_e_1_1_sphere_collider.html">TE::SphereCollider</a> &gt;(&quot;SphereCollider&quot;) .constructor&lt;&gt;() .constructor&lt; glm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a27738538d879fd475d4078be38b1b4e9">value</a> (&quot;MONO_SFX&quot;, <a class="el" href="namespace_t_e.html#a7e8a75488c7c636fc23a0d87130b8d2da802a91b8c4b3144f7f2fc31fb93ad0a1">TE::ChannelGroupEnum::MONO_SFX</a>)</td></tr>
+<tr class="separator:a27738538d879fd475d4078be38b1b4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480219d05c206f01a775abae3be28979"><td class="memItemLeft" align="right" valign="top">registration::class_&lt; <a class="el" href="class_t_e_1_1_sphere_collider.html">TE::SphereCollider</a> &gt;(&quot;SphereCollider&quot;) .constructor&lt;&gt;() .constructor&lt; glm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a480219d05c206f01a775abae3be28979">value</a> (&quot;3D_SPATIAL&quot;, <a class="el" href="namespace_t_e.html#a7e8a75488c7c636fc23a0d87130b8d2da35c06fc0342500142121bd6aba8a1b76">TE::ChannelGroupEnum::SPATIAL_3D</a>))</td></tr>
+<tr class="separator:a480219d05c206f01a775abae3be28979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307c74a09273751007fee448482d0423"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a307c74a09273751007fee448482d0423">registration::class_&lt; TE::AudioSource &gt;</a> (&quot;AudioSource&quot;) .constructor&lt;&gt;() .<a class="el" href="_r_t_t_r___registration_8h.html#a4a7462fc6021672b56b868ee087da92d">property</a>(&quot;IsActive&quot;</td></tr>
+<tr class="separator:a307c74a09273751007fee448482d0423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31114aef55048874023d095f34dba75"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#ac31114aef55048874023d095f34dba75">property_readonly</a> (&quot;Filepath&quot;, &amp;<a class="el" href="class_t_e_1_1_audio_source.html#a34c4dd2064425c8f9ff523543f0a849a">TE::AudioSource::GetAudioFilepath</a>) .<a class="el" href="_r_t_t_r___registration_8h.html#a4a7462fc6021672b56b868ee087da92d">property</a>(&quot;Is3DSound&quot;</td></tr>
+<tr class="separator:ac31114aef55048874023d095f34dba75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a8b6c6f44feec72135e9a7da0f4b34"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#a211add8db073c4c3153bb9130c195fd5">TE::AudioSource::SetChannelGroupHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#ae0a8b6c6f44feec72135e9a7da0f4b34">property</a> (&quot;Channel Group Volume&quot;, &amp;<a class="el" href="class_t_e_1_1_audio_source.html#a1a6587053831bdf0a40ef11d87b91bb0">TE::AudioSource::GetChannelGroupVol</a>, &amp;<a class="el" href="class_t_e_1_1_audio_source.html#a36fd83a156058c893327e1c6e77f827f">TE::AudioSource::SetChannelGroupVol</a>) .property(&quot;isPlaying&quot;</td></tr>
+<tr class="separator:ae0a8b6c6f44feec72135e9a7da0f4b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11c307e2d74b4cc83ea49650f93c0b5"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#a211add8db073c4c3153bb9130c195fd5">TE::AudioSource::SetChannelGroupHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#aae8a0596c565c06b4039b991846139ca">TE::AudioSource::GetChannelIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#ac11c307e2d74b4cc83ea49650f93c0b5">property_readonly</a> (&quot;GUID&quot;, &amp;<a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">TE::AudioSource::GetGUID</a>)(<a class="el" href="_r_t_t_r___registration_8h.html#a162dd067367e479d1ac5afd309e89c55">metadata</a>(&quot;HIDDEN&quot;</td></tr>
+<tr class="separator:ac11c307e2d74b4cc83ea49650f93c0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414b51e33c25fc10dbc9a9f2769d4ee1"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#a211add8db073c4c3153bb9130c195fd5">TE::AudioSource::SetChannelGroupHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#aae8a0596c565c06b4039b991846139ca">TE::AudioSource::GetChannelIndex</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#a414b51e33c25fc10dbc9a9f2769d4ee1">property_readonly</a> (&quot;TypeGUID&quot;, &amp;<a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">TE::AudioSource::GetTypeGUID</a>)(<a class="el" href="_r_t_t_r___registration_8h.html#a162dd067367e479d1ac5afd309e89c55">metadata</a>(&quot;HIDDEN&quot;</td></tr>
+<tr class="separator:a414b51e33c25fc10dbc9a9f2769d4ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac1db6b146eed3beeb3d99081698b0b17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a> <a class="el" href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#ac1db6b146eed3beeb3d99081698b0b17">RTTR_REGISTRATION</a></td></tr>
+<tr class="separator:ac1db6b146eed3beeb3d99081698b0b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47838688c48ee8921c10d0ab3065713"><td class="memItemLeft" align="right" valign="top">&amp;<a class="el" href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">TE::Camera::SetCameraForwardVector</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#af35aa9b314a73666391c5325c122e81f">TE::Camera::SetCameraFocusDepth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a7015b47f41e2e5722a4f9fbcfbd91fa6">TE::Camera::SetCameraWidth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a12425d808eb55ca601d13bb881f466ca">TE::Camera::SetWidthFOVDegree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a></td></tr>
+<tr class="separator:af47838688c48ee8921c10d0ab3065713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Localized place to register components in RTTR. Registration does not work in a certain few CPP files so the solution was a locaized file to write registrations in. <br  />
+ All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved. </p>
+<pre>
+</pre><pre>  <b>File:</b>        <a class="el" href="_r_t_t_r___registration_8h.html" title="Localized place to register components in RTTR. Registration does not work in a certain few CPP files...">RTTR_Registration.h</a></pre><pre>
+
+</pre><pre>  <b>Authors:</b>     Loo Jun Yi          (100%)</pre><pre>
+
+</pre><pre>  <b>Emails:</b>      <a href="mailto:l.junyi@digipen.edu">l.junyi@digipen.edu</a></pre><pre>
+
+</pre><pre>  <b>Date:</b>        10/09/2023</pre><pre>
+</pre> </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a7ccaeb2e734de1f77b7dc6d6acfceaaa" name="a7ccaeb2e734de1f77b7dc6d6acfceaaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ccaeb2e734de1f77b7dc6d6acfceaaa">&#9670;&#160;</a></span>registration::class_&lt; TE::Transform &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">registration::class_&lt; <a class="el" href="class_t_e_1_1_transform.html">TE::Transform</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Transform&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae82f939608efa19a3ebfc13ea6bc5139" name="ae82f939608efa19a3ebfc13ea6bc5139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae82f939608efa19a3ebfc13ea6bc5139">&#9670;&#160;</a></span>registration::class_&lt; TE::Camera &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">registration::class_&lt; <a class="el" href="class_t_e_1_1_camera.html">TE::Camera</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Camera&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a7462fc6021672b56b868ee087da92d" name="a4a7462fc6021672b56b868ee087da92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a7462fc6021672b56b868ee087da92d">&#9670;&#160;</a></span>property() <span class="overload">[1/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">TE::Camera::SetCameraForwardVector</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Up Vector&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_camera.html#a40d63ae777a9a10748672fb07a9e4c60">TE::Camera::GetCameraUpVector</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_camera.html#a53fab7d0eb29f6ab2ac67961a8bb2135">TE::Camera::SetCameraUpVector</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8574018c7b524b606f29f2a63c5a1888" name="a8574018c7b524b606f29f2a63c5a1888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8574018c7b524b606f29f2a63c5a1888">&#9670;&#160;</a></span>property() <span class="overload">[2/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">TE::Camera::SetCameraForwardVector</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#af35aa9b314a73666391c5325c122e81f">TE::Camera::SetCameraFocusDepth</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;View Max Depth&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_camera.html#ab624d0b4ae92e61a3085489270166507">TE::Camera::m_CameraMaxDepth</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9bb5b61899eba05f218a0ff2f369b42" name="ae9bb5b61899eba05f218a0ff2f369b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9bb5b61899eba05f218a0ff2f369b42">&#9670;&#160;</a></span>property() <span class="overload">[3/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">TE::Camera::SetCameraForwardVector</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#af35aa9b314a73666391c5325c122e81f">TE::Camera::SetCameraFocusDepth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a7015b47f41e2e5722a4f9fbcfbd91fa6">TE::Camera::SetCameraWidth</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Camera Height&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_camera.html#a02565cd4abeb12b732b43d7c27c72daa">TE::Camera::GetCameraHeight</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_camera.html#a7fee61b6f2d4ef33cd054962f653cfde">TE::Camera::SetCameraHeight</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab52a8654d042613382125793cfe4358b" name="ab52a8654d042613382125793cfe4358b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52a8654d042613382125793cfe4358b">&#9670;&#160;</a></span>property_readonly() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">TE::Camera::SetCameraForwardVector</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#af35aa9b314a73666391c5325c122e81f">TE::Camera::SetCameraFocusDepth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a7015b47f41e2e5722a4f9fbcfbd91fa6">TE::Camera::SetCameraWidth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a12425d808eb55ca601d13bb881f466ca">TE::Camera::SetWidthFOVDegree</a> property_readonly </td>
+          <td>(</td>
+          <td class="paramtype">&quot;GUID&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">TE::Camera::GetGUID</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a162dd067367e479d1ac5afd309e89c55" name="a162dd067367e479d1ac5afd309e89c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a162dd067367e479d1ac5afd309e89c55">&#9670;&#160;</a></span>metadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">TE::Camera::SetCameraForwardVector</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#af35aa9b314a73666391c5325c122e81f">TE::Camera::SetCameraFocusDepth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a7015b47f41e2e5722a4f9fbcfbd91fa6">TE::Camera::SetCameraWidth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a12425d808eb55ca601d13bb881f466ca">TE::Camera::SetWidthFOVDegree</a> metadata </td>
+          <td>(</td>
+          <td class="paramtype">&quot;HIDDEN&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17591545899bc3b4e324498e11af021f" name="a17591545899bc3b4e324498e11af021f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17591545899bc3b4e324498e11af021f">&#9670;&#160;</a></span>registration::class_&lt; TE::Mesh &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">registration::class_&lt; <a class="el" href="class_t_e_1_1_mesh.html">TE::Mesh</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Mesh&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38d768c444bb18ad9bc0f4996c2ef20a" name="a38d768c444bb18ad9bc0f4996c2ef20a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d768c444bb18ad9bc0f4996c2ef20a">&#9670;&#160;</a></span>registration::enumeration&lt; TE::RigidbodyType &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">registration::enumeration&lt; <a class="el" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6">TE::RigidbodyType</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype">&quot;RigidbodyType&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a473617892249d2d182a4e04f8ad275cd" name="a473617892249d2d182a4e04f8ad275cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473617892249d2d182a4e04f8ad275cd">&#9670;&#160;</a></span>value() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">value </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Kinematic&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a513c74bdb8fe98af0eb4adbc9e204ef3">TE::RigidbodyType::Kinematic</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1acdf281c854c6c32ac9b70c66879ecd" name="a1acdf281c854c6c32ac9b70c66879ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acdf281c854c6c32ac9b70c66879ecd">&#9670;&#160;</a></span>value() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">value </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Dynamic&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a71f6359040d876a1509ce7a4d30b4928">TE::RigidbodyType::Dynamic</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af42c55016ae4a0eecd8eb16fa8d96acb" name="af42c55016ae4a0eecd8eb16fa8d96acb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af42c55016ae4a0eecd8eb16fa8d96acb">&#9670;&#160;</a></span>registration::class_&lt; TE::Rigidbody &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">registration::class_&lt; <a class="el" href="class_t_e_1_1_rigidbody.html">TE::Rigidbody</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Rigidbody&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3bcb35a694c5350ffc681aaa14a3afca" name="a3bcb35a694c5350ffc681aaa14a3afca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bcb35a694c5350ffc681aaa14a3afca">&#9670;&#160;</a></span>property() <span class="overload">[4/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Drag&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a460e7fa00ab9cb6c8a1444cfa235fa34">TE::Rigidbody::drag</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5332ac5d2c97c3ac4879b95a88d0975" name="ae5332ac5d2c97c3ac4879b95a88d0975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5332ac5d2c97c3ac4879b95a88d0975">&#9670;&#160;</a></span>property() <span class="overload">[5/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Velocity&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a2c41f12e5cb80ddab82fe31872f63212">TE::Rigidbody::velocity</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec045a7e87cfc2f426085bcfce2bac71" name="aec045a7e87cfc2f426085bcfce2bac71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec045a7e87cfc2f426085bcfce2bac71">&#9670;&#160;</a></span>property() <span class="overload">[6/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Use Gravity&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a729864d8a6481194c6bcbe5926090f30">TE::Rigidbody::useGravity</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67acfa1397a310c342c84492f253bc2f" name="a67acfa1397a310c342c84492f253bc2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67acfa1397a310c342c84492f253bc2f">&#9670;&#160;</a></span>property() <span class="overload">[7/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Restitution&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a89094eae56dd3d637f7fd767a89f52e4">TE::Rigidbody::restitution</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a7b91bf1f55d99e5d84f8821937ebbb" name="a7a7b91bf1f55d99e5d84f8821937ebbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7b91bf1f55d99e5d84f8821937ebbb">&#9670;&#160;</a></span>property() <span class="overload">[8/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Freeze Position X&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a996cb84812c782e001199f2385271181">TE::Rigidbody::freezePositionX</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a717e07cea06b627d2adb8de4e25b7642" name="a717e07cea06b627d2adb8de4e25b7642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717e07cea06b627d2adb8de4e25b7642">&#9670;&#160;</a></span>property() <span class="overload">[9/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Freeze Position Y&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a214c398e643f9a9886c6a5d13df929a6">TE::Rigidbody::freezePositionY</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae25e33079352d25979a7e3e833302646" name="ae25e33079352d25979a7e3e833302646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae25e33079352d25979a7e3e833302646">&#9670;&#160;</a></span>property() <span class="overload">[10/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Freeze Position Z&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a8c13112b2a89fc914d99f700414dc355">TE::Rigidbody::freezePositionZ</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0026f655beda5abf0d8cdc7f54545a3a" name="a0026f655beda5abf0d8cdc7f54545a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0026f655beda5abf0d8cdc7f54545a3a">&#9670;&#160;</a></span>property() <span class="overload">[11/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Freeze Rotation X&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#acfa8de259955d66e3b2ca62fbd763efb">TE::Rigidbody::freezeRotationX</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af75489cec14f5e1146023081963600df" name="af75489cec14f5e1146023081963600df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af75489cec14f5e1146023081963600df">&#9670;&#160;</a></span>property() <span class="overload">[12/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Freeze Rotation Y&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a8149d1bc733c4cc998baecf483124335">TE::Rigidbody::freezeRotationY</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a279f8347264c8edaeceaa9e8cf995a11" name="a279f8347264c8edaeceaa9e8cf995a11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279f8347264c8edaeceaa9e8cf995a11">&#9670;&#160;</a></span>property() <span class="overload">[13/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Freeze Roatation Z&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a76d19ad8ae2ad8a12431363c72c822d6">TE::Rigidbody::freezeRotationZ</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a038457dad8007d6f548c80e82350ca89" name="a038457dad8007d6f548c80e82350ca89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a038457dad8007d6f548c80e82350ca89">&#9670;&#160;</a></span>property_readonly() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> property_readonly </td>
+          <td>(</td>
+          <td class="paramtype">&quot;GUID&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">TE::Rigidbody::GetGUID</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a770b22d5ff391d980f110dda8c01b56c" name="a770b22d5ff391d980f110dda8c01b56c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770b22d5ff391d980f110dda8c01b56c">&#9670;&#160;</a></span>property_readonly() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> &amp;<a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> property_readonly </td>
+          <td>(</td>
+          <td class="paramtype">&quot;TypeGUID&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">TE::Rigidbody::GetTypeGUID</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e2031873922523ce90ff131b89a222e" name="a9e2031873922523ce90ff131b89a222e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2031873922523ce90ff131b89a222e">&#9670;&#160;</a></span>registration::class_&lt; TE::CapsuleCollider &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">registration::class_&lt; <a class="el" href="class_t_e_1_1_box_collider.html">TE::BoxCollider</a> &gt;(&quot;BoxCollider&quot;) .constructor&lt;&gt;() .constructor&lt; glm registration::class_&lt; <a class="el" href="class_t_e_1_1_capsule_collider.html">TE::CapsuleCollider</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype">&quot;CapsuleCollider&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d93c280b8c141945af94b23abe1fab9" name="a2d93c280b8c141945af94b23abe1fab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d93c280b8c141945af94b23abe1fab9">&#9670;&#160;</a></span>property() <span class="overload">[14/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">registration::class_&lt; <a class="el" href="class_t_e_1_1_box_collider.html">TE::BoxCollider</a> &gt;(&quot;BoxCollider&quot;) .constructor&lt;&gt;() .constructor&lt; glm &amp;<a class="el" href="class_t_e_1_1_collider.html#a9c979512f321764bdae6bd47a12d9173">TE::CapsuleCollider::SetCenter</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Radius&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_capsule_collider.html#a127c815126beb54711794af071d3e1a9">TE::CapsuleCollider::GetRadius</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_capsule_collider.html#a42ebbd5186359696a2d9df4f2638f181">TE::CapsuleCollider::SetRadius</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9c010acd5b5503d7c4c56ea7a310936" name="ad9c010acd5b5503d7c4c56ea7a310936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c010acd5b5503d7c4c56ea7a310936">&#9670;&#160;</a></span>registration::enumeration&lt; TE::ChannelGroupEnum &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">registration::class_&lt; <a class="el" href="class_t_e_1_1_sphere_collider.html">TE::SphereCollider</a> &gt;(&quot;SphereCollider&quot;) .constructor&lt;&gt;() .constructor&lt; glm registration::enumeration&lt; <a class="el" href="namespace_t_e.html#a7e8a75488c7c636fc23a0d87130b8d2d">TE::ChannelGroupEnum</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype">&quot;ChannelGroupEnum&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addc12db6a14d9cc0d0b830c63e47f6af" name="addc12db6a14d9cc0d0b830c63e47f6af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc12db6a14d9cc0d0b830c63e47f6af">&#9670;&#160;</a></span>value() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">registration::class_&lt; <a class="el" href="class_t_e_1_1_sphere_collider.html">TE::SphereCollider</a> &gt;(&quot;SphereCollider&quot;) .constructor&lt;&gt;() .constructor&lt; glm value </td>
+          <td>(</td>
+          <td class="paramtype">&quot;MONO_BGM&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a7e8a75488c7c636fc23a0d87130b8d2da0aa8eb71bda310aebd37c27b251d29b5">TE::ChannelGroupEnum::MONO_BGM</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27738538d879fd475d4078be38b1b4e9" name="a27738538d879fd475d4078be38b1b4e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27738538d879fd475d4078be38b1b4e9">&#9670;&#160;</a></span>value() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">registration::class_&lt; <a class="el" href="class_t_e_1_1_sphere_collider.html">TE::SphereCollider</a> &gt;(&quot;SphereCollider&quot;) .constructor&lt;&gt;() .constructor&lt; glm value </td>
+          <td>(</td>
+          <td class="paramtype">&quot;MONO_SFX&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a7e8a75488c7c636fc23a0d87130b8d2da802a91b8c4b3144f7f2fc31fb93ad0a1">TE::ChannelGroupEnum::MONO_SFX</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a480219d05c206f01a775abae3be28979" name="a480219d05c206f01a775abae3be28979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a480219d05c206f01a775abae3be28979">&#9670;&#160;</a></span>value() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">registration::class_&lt; <a class="el" href="class_t_e_1_1_sphere_collider.html">TE::SphereCollider</a> &gt;(&quot;SphereCollider&quot;) .constructor&lt;&gt;() .constructor&lt; glm value </td>
+          <td>(</td>
+          <td class="paramtype">&quot;3D_SPATIAL&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a7e8a75488c7c636fc23a0d87130b8d2da35c06fc0342500142121bd6aba8a1b76">TE::ChannelGroupEnum::SPATIAL_3D</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a307c74a09273751007fee448482d0423" name="a307c74a09273751007fee448482d0423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a307c74a09273751007fee448482d0423">&#9670;&#160;</a></span>registration::class_&lt; TE::AudioSource &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">registration::class_&lt; <a class="el" href="class_t_e_1_1_audio_source.html">TE::AudioSource</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype">&quot;AudioSource&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac31114aef55048874023d095f34dba75" name="ac31114aef55048874023d095f34dba75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac31114aef55048874023d095f34dba75">&#9670;&#160;</a></span>property_readonly() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a> property_readonly </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Filepath&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a34c4dd2064425c8f9ff523543f0a849a">TE::AudioSource::GetAudioFilepath</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0a8b6c6f44feec72135e9a7da0f4b34" name="ae0a8b6c6f44feec72135e9a7da0f4b34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0a8b6c6f44feec72135e9a7da0f4b34">&#9670;&#160;</a></span>property() <span class="overload">[15/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#a211add8db073c4c3153bb9130c195fd5">TE::AudioSource::SetChannelGroupHandle</a> property </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Channel Group Volume&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a1a6587053831bdf0a40ef11d87b91bb0">TE::AudioSource::GetChannelGroupVol</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a36fd83a156058c893327e1c6e77f827f">TE::AudioSource::SetChannelGroupVol</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac11c307e2d74b4cc83ea49650f93c0b5" name="ac11c307e2d74b4cc83ea49650f93c0b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac11c307e2d74b4cc83ea49650f93c0b5">&#9670;&#160;</a></span>property_readonly() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#a211add8db073c4c3153bb9130c195fd5">TE::AudioSource::SetChannelGroupHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#aae8a0596c565c06b4039b991846139ca">TE::AudioSource::GetChannelIndex</a> property_readonly </td>
+          <td>(</td>
+          <td class="paramtype">&quot;GUID&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">TE::AudioSource::GetGUID</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a414b51e33c25fc10dbc9a9f2769d4ee1" name="a414b51e33c25fc10dbc9a9f2769d4ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414b51e33c25fc10dbc9a9f2769d4ee1">&#9670;&#160;</a></span>property_readonly() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#a211add8db073c4c3153bb9130c195fd5">TE::AudioSource::SetChannelGroupHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#aae8a0596c565c06b4039b991846139ca">TE::AudioSource::GetChannelIndex</a> <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> property_readonly </td>
+          <td>(</td>
+          <td class="paramtype">&quot;TypeGUID&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;<a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">TE::AudioSource::GetTypeGUID</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ac1db6b146eed3beeb3d99081698b0b17" name="ac1db6b146eed3beeb3d99081698b0b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1db6b146eed3beeb3d99081698b0b17">&#9670;&#160;</a></span>RTTR_REGISTRATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a> <a class="el" href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a> RTTR_REGISTRATION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line"><span class="keyword">using namespace </span>rttr</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af47838688c48ee8921c10d0ab3065713" name="af47838688c48ee8921c10d0ab3065713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af47838688c48ee8921c10d0ab3065713">&#9670;&#160;</a></span>true</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#a211add8db073c4c3153bb9130c195fd5">TE::AudioSource::SetChannelGroupHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#aae8a0596c565c06b4039b991846139ca">TE::AudioSource::GetChannelIndex</a> true true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ff9d562b39932b7b74f54b9fb4bb00a0.html">ProjectSolution</a></li><li class="navelem"><a class="el" href="dir_0e3d5f2d56e31468daefe438e212cfbc.html">Proj_Engine</a></li><li class="navelem"><a class="el" href="dir_0d2c0b45ba4d42e3f37ae38d7482e159.html">Source</a></li><li class="navelem"><a class="el" href="dir_899dd8e7a2d2f241199d7efd6d4c7a2a.html">ECSComponents</a></li><li class="navelem"><a class="el" href="_r_t_t_r___registration_8h.html">RTTR_Registration.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

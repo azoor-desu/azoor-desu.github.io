@@ -1,0 +1,701 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: Debug.h File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_debug_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">Debug.h File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Contains the declarations of debugging tools: Memleak checker, Assert and Logging. <br  />
+ All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;string_view&gt;</code><br />
+<code>#include &quot;<a class="el" href="_message_base_8h_source.html">EngineSystems/MessageBase.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_g_u_i_d_8h_source.html">Helper/GUID.h</a>&quot;</code><br />
+</div>
+<p><a href="_debug_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_debug_1_1_log_event.html">Debug::LogEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message system event for log messages.  <a href="struct_debug_1_1_log_event.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespace_debug"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_debug.html">Debug</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:af9573216ed8e9b11840279144067b00e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#af9573216ed8e9b11840279144067b00e">TE_MEM_LEAK_CHECK</a>()</td></tr>
+<tr class="memdesc:af9573216ed8e9b11840279144067b00e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables mem leak check. Place this at the start of program entry point (main function) [DISABLED IN RELEASE MODE].  <br /></td></tr>
+<tr class="separator:af9573216ed8e9b11840279144067b00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae854a5eebf69e8f2355b6876df60b0cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#ae854a5eebf69e8f2355b6876df60b0cb">TE_ASSERT</a>(expression)</td></tr>
+<tr class="memdesc:ae854a5eebf69e8f2355b6876df60b0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">PROJECT IN RELEASE MODE, CODE WILL BE REMOVED!  <br /></td></tr>
+<tr class="separator:ae854a5eebf69e8f2355b6876df60b0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba339e9c4fac57c682c464d33e737ff9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#aba339e9c4fac57c682c464d33e737ff9">TE_ASSERT_MSG</a>(expression,  message, ...)</td></tr>
+<tr class="memdesc:aba339e9c4fac57c682c464d33e737ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">PROJECT IN RELEASE MODE, CODE WILL BE REMOVED!  <br /></td></tr>
+<tr class="separator:aba339e9c4fac57c682c464d33e737ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a38517827a7e9fcb197ebe842a94291"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#a0a38517827a7e9fcb197ebe842a94291">TE_VALIDATE_MSG</a>(expression,  message, ...)</td></tr>
+<tr class="memdesc:a0a38517827a7e9fcb197ebe842a94291"><td class="mdescLeft">&#160;</td><td class="mdescRight">PROJECT IN RELEASE MODE, CODE WILL BE REMOVED!  <br /></td></tr>
+<tr class="separator:a0a38517827a7e9fcb197ebe842a94291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6dd9f80014164fe6f9ca0c72bd72cd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#ae6dd9f80014164fe6f9ca0c72bd72cd3">TE_STATIC_ASSERT</a>(x)</td></tr>
+<tr class="memdesc:ae6dd9f80014164fe6f9ca0c72bd72cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">PROJECT IN RELEASE MODE, CODE WILL BE REMOVED!  <br /></td></tr>
+<tr class="separator:ae6dd9f80014164fe6f9ca0c72bd72cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4671b8568907f7c4e8042f98c36a1a9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#a4671b8568907f7c4e8042f98c36a1a9a">_TE_FATAL_ENABLED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a4671b8568907f7c4e8042f98c36a1a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0598bb06bd1c5eb3de89622daf454ab5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#a0598bb06bd1c5eb3de89622daf454ab5">_TE_ERROR_ENABLED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a0598bb06bd1c5eb3de89622daf454ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a53f61a26cf468500ea2804f9ccb35a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#a1a53f61a26cf468500ea2804f9ccb35a">_TE_WARN_ENABLED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a1a53f61a26cf468500ea2804f9ccb35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3e8c37b50993ab2bbf25851662b729"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#a0b3e8c37b50993ab2bbf25851662b729">_TE_INFO_ENABLED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a0b3e8c37b50993ab2bbf25851662b729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc292ba6d61f25ade8f7f292ef8f313"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#a5bc292ba6d61f25ade8f7f292ef8f313">_TE_DEBUG_ENABLED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a5bc292ba6d61f25ade8f7f292ef8f313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e700b27982d8f643ecb856fce94ac92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#a3e700b27982d8f643ecb856fce94ac92">_TE_TRACE_ENABLED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a3e700b27982d8f643ecb856fce94ac92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8d9537e46abc32751d47d93e5a14ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#aef8d9537e46abc32751d47d93e5a14ff">_TE_PERF_ENABLED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aef8d9537e46abc32751d47d93e5a14ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac88e6b72968fbc6eb5ecc9bdfb6682a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#aac88e6b72968fbc6eb5ecc9bdfb6682a">TE_FATAL</a>(message, ...)&#160;&#160;&#160;<a class="el" href="namespace_debug.html#a6cbd2aaeb2f68f35d1f16e8787ea972f">Debug::_LogMessage</a>(<a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27eab3a01170f5777f9867632e3e4a04e3a9">Debug::LogLevel::LOG_FATAL</a>, <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>, message, ##__VA_ARGS__)</td></tr>
+<tr class="memdesc:aac88e6b72968fbc6eb5ecc9bdfb6682a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message with the corresponding warning level. Works exactly like printf.  <br /></td></tr>
+<tr class="separator:aac88e6b72968fbc6eb5ecc9bdfb6682a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95a70a08da3377ad869bbe3f89139c9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#a95a70a08da3377ad869bbe3f89139c9c">TE_ERROR</a>(message, ...)&#160;&#160;&#160;<a class="el" href="namespace_debug.html#a6cbd2aaeb2f68f35d1f16e8787ea972f">Debug::_LogMessage</a>(<a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27ea4490aa3d29644e716440fada68f54032">Debug::LogLevel::LOG_ERROR</a>, <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>, message, ##__VA_ARGS__)</td></tr>
+<tr class="memdesc:a95a70a08da3377ad869bbe3f89139c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message with the corresponding warning level. Works exactly like printf.  <br /></td></tr>
+<tr class="separator:a95a70a08da3377ad869bbe3f89139c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3fa842141e9161d9c9844e98245d9d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#aa3fa842141e9161d9c9844e98245d9d8">TE_WARN</a>(message, ...)&#160;&#160;&#160;<a class="el" href="namespace_debug.html#a6cbd2aaeb2f68f35d1f16e8787ea972f">Debug::_LogMessage</a>(<a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27ea803a17d78b6923b90494820a5000d22b">Debug::LogLevel::LOG_WARN</a>, <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>, message, ##__VA_ARGS__)</td></tr>
+<tr class="memdesc:aa3fa842141e9161d9c9844e98245d9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message with the corresponding warning level. Works exactly like printf.  <br /></td></tr>
+<tr class="separator:aa3fa842141e9161d9c9844e98245d9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba17d78a47089e233e8bb2cb61d11740"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#aba17d78a47089e233e8bb2cb61d11740">TE_INFO</a>(message, ...)&#160;&#160;&#160;<a class="el" href="namespace_debug.html#a6cbd2aaeb2f68f35d1f16e8787ea972f">Debug::_LogMessage</a>(<a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27ea41abf3cca8cee8cdae01749df7a991c6">Debug::LogLevel::LOG_INFO</a>, <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>, message, ##__VA_ARGS__)</td></tr>
+<tr class="memdesc:aba17d78a47089e233e8bb2cb61d11740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message with the corresponding warning level. Works exactly like printf.  <br /></td></tr>
+<tr class="separator:aba17d78a47089e233e8bb2cb61d11740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6695008f15715493965b59269906d5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#ac6695008f15715493965b59269906d5e">TE_DEBUG</a>(message, ...)</td></tr>
+<tr class="memdesc:ac6695008f15715493965b59269906d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">CODE WILL BE REMOVED!  <br /></td></tr>
+<tr class="separator:ac6695008f15715493965b59269906d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4a0ef41c7952dc82215f0bf5c7d3f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#aeb4a0ef41c7952dc82215f0bf5c7d3f0">TE_TRACE</a>(message, ...)</td></tr>
+<tr class="memdesc:aeb4a0ef41c7952dc82215f0bf5c7d3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">CODE WILL BE REMOVED!  <br /></td></tr>
+<tr class="separator:aeb4a0ef41c7952dc82215f0bf5c7d3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aed7fdaf3fa67fc982c743ed5fa6f30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8h.html#a5aed7fdaf3fa67fc982c743ed5fa6f30">TE_PERF</a>(message, ...)</td></tr>
+<tr class="memdesc:a5aed7fdaf3fa67fc982c743ed5fa6f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">CODE WILL BE REMOVED!  <br /></td></tr>
+<tr class="separator:a5aed7fdaf3fa67fc982c743ed5fa6f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a8c68d97496e49ad5e586f32421d8d27e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27e">Debug::LogLevel</a> { <br />
+&#160;&#160;<a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27eab3a01170f5777f9867632e3e4a04e3a9">Debug::LOG_FATAL</a>
+, <a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27ea4490aa3d29644e716440fada68f54032">Debug::LOG_ERROR</a>
+, <a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27ea803a17d78b6923b90494820a5000d22b">Debug::LOG_WARN</a>
+, <a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27ea41abf3cca8cee8cdae01749df7a991c6">Debug::LOG_INFO</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27eaeded50d942c7c2d37d09ba8241ff017f">Debug::LOG_DEBUG</a>
+, <a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27ea969fae2ecf92dd187c85e11ee37c5a77">Debug::LOG_TRACE</a>
+, <a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27ead92588669e5cc66ed0f679bea72bd5d3">Debug::LOG_PERF</a>
+<br />
+ }</td></tr>
+<tr class="separator:a8c68d97496e49ad5e586f32421d8d27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:add86a5a8c638c837059c7a6e6d2c71ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_debug.html#add86a5a8c638c837059c7a6e6d2c71ec">Debug::InitLogging</a> ()</td></tr>
+<tr class="memdesc:add86a5a8c638c837059c7a6e6d2c71ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the logging system. Opens the log text file.  <br /></td></tr>
+<tr class="separator:add86a5a8c638c837059c7a6e6d2c71ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a2829fcb24fef94bf06a17c648aeba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_debug.html#aa6a2829fcb24fef94bf06a17c648aeba">Debug::ExitLogging</a> ()</td></tr>
+<tr class="memdesc:aa6a2829fcb24fef94bf06a17c648aeba"><td class="mdescLeft">&#160;</td><td class="mdescRight">saves and closes the log file before closing.  <br /></td></tr>
+<tr class="separator:aa6a2829fcb24fef94bf06a17c648aeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cbd2aaeb2f68f35d1f16e8787ea972f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_debug.html#a6cbd2aaeb2f68f35d1f16e8787ea972f">Debug::_LogMessage</a> (LogLevel logLevel, bool useMsgSystem, const char *format,...)</td></tr>
+<tr class="memdesc:a6cbd2aaeb2f68f35d1f16e8787ea972f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message. Message will be formatted and printed to console, written to log file, and sent to editor (if any). Not to be used directly, use TE_DEBUG or its variants.  <br /></td></tr>
+<tr class="separator:a6cbd2aaeb2f68f35d1f16e8787ea972f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains the declarations of debugging tools: Memleak checker, Assert and Logging. <br  />
+ All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved. </p>
+<pre>
+</pre><pre>  <b>File:</b>        <a class="el" href="_debug_8h.html" title="Contains the declarations of debugging tools: Memleak checker, Assert and Logging....">Debug.h</a></pre><pre>
+
+</pre><pre>  <b>Authors:</b>     Loo Jun Yi          (100%)</pre><pre>
+
+</pre><pre>  <b>Emails:</b>      <a href="mailto:l.junyi@digipen.edu">l.junyi@digipen.edu</a></pre><pre>
+
+</pre><pre>  <b>Date:</b>        21/8/2023</pre><pre>
+</pre> </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="af9573216ed8e9b11840279144067b00e" name="af9573216ed8e9b11840279144067b00e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9573216ed8e9b11840279144067b00e">&#9670;&#160;</a></span>TE_MEM_LEAK_CHECK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TE_MEM_LEAK_CHECK</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables mem leak check. Place this at the start of program entry point (main function) [DISABLED IN RELEASE MODE]. </p>
+
+</div>
+</div>
+<a id="ae854a5eebf69e8f2355b6876df60b0cb" name="ae854a5eebf69e8f2355b6876df60b0cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae854a5eebf69e8f2355b6876df60b0cb">&#9670;&#160;</a></span>TE_ASSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TE_ASSERT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expression</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PROJECT IN RELEASE MODE, CODE WILL BE REMOVED! </p>
+
+</div>
+</div>
+<a id="aba339e9c4fac57c682c464d33e737ff9" name="aba339e9c4fac57c682c464d33e737ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba339e9c4fac57c682c464d33e737ff9">&#9670;&#160;</a></span>TE_ASSERT_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TE_ASSERT_MSG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expression, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PROJECT IN RELEASE MODE, CODE WILL BE REMOVED! </p>
+
+</div>
+</div>
+<a id="a0a38517827a7e9fcb197ebe842a94291" name="a0a38517827a7e9fcb197ebe842a94291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a38517827a7e9fcb197ebe842a94291">&#9670;&#160;</a></span>TE_VALIDATE_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TE_VALIDATE_MSG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expression, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PROJECT IN RELEASE MODE, CODE WILL BE REMOVED! </p>
+
+</div>
+</div>
+<a id="ae6dd9f80014164fe6f9ca0c72bd72cd3" name="ae6dd9f80014164fe6f9ca0c72bd72cd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6dd9f80014164fe6f9ca0c72bd72cd3">&#9670;&#160;</a></span>TE_STATIC_ASSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TE_STATIC_ASSERT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PROJECT IN RELEASE MODE, CODE WILL BE REMOVED! </p>
+
+</div>
+</div>
+<a id="a4671b8568907f7c4e8042f98c36a1a9a" name="a4671b8568907f7c4e8042f98c36a1a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4671b8568907f7c4e8042f98c36a1a9a">&#9670;&#160;</a></span>_TE_FATAL_ENABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _TE_FATAL_ENABLED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0598bb06bd1c5eb3de89622daf454ab5" name="a0598bb06bd1c5eb3de89622daf454ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0598bb06bd1c5eb3de89622daf454ab5">&#9670;&#160;</a></span>_TE_ERROR_ENABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _TE_ERROR_ENABLED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a53f61a26cf468500ea2804f9ccb35a" name="a1a53f61a26cf468500ea2804f9ccb35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a53f61a26cf468500ea2804f9ccb35a">&#9670;&#160;</a></span>_TE_WARN_ENABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _TE_WARN_ENABLED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b3e8c37b50993ab2bbf25851662b729" name="a0b3e8c37b50993ab2bbf25851662b729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b3e8c37b50993ab2bbf25851662b729">&#9670;&#160;</a></span>_TE_INFO_ENABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _TE_INFO_ENABLED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bc292ba6d61f25ade8f7f292ef8f313" name="a5bc292ba6d61f25ade8f7f292ef8f313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc292ba6d61f25ade8f7f292ef8f313">&#9670;&#160;</a></span>_TE_DEBUG_ENABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _TE_DEBUG_ENABLED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e700b27982d8f643ecb856fce94ac92" name="a3e700b27982d8f643ecb856fce94ac92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e700b27982d8f643ecb856fce94ac92">&#9670;&#160;</a></span>_TE_TRACE_ENABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _TE_TRACE_ENABLED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef8d9537e46abc32751d47d93e5a14ff" name="aef8d9537e46abc32751d47d93e5a14ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8d9537e46abc32751d47d93e5a14ff">&#9670;&#160;</a></span>_TE_PERF_ENABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _TE_PERF_ENABLED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac88e6b72968fbc6eb5ecc9bdfb6682a" name="aac88e6b72968fbc6eb5ecc9bdfb6682a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac88e6b72968fbc6eb5ecc9bdfb6682a">&#9670;&#160;</a></span>TE_FATAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TE_FATAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespace_debug.html#a6cbd2aaeb2f68f35d1f16e8787ea972f">Debug::_LogMessage</a>(<a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27eab3a01170f5777f9867632e3e4a04e3a9">Debug::LogLevel::LOG_FATAL</a>, <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>, message, ##__VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs a message with the corresponding warning level. Works exactly like printf. </p>
+
+</div>
+</div>
+<a id="a95a70a08da3377ad869bbe3f89139c9c" name="a95a70a08da3377ad869bbe3f89139c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95a70a08da3377ad869bbe3f89139c9c">&#9670;&#160;</a></span>TE_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TE_ERROR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespace_debug.html#a6cbd2aaeb2f68f35d1f16e8787ea972f">Debug::_LogMessage</a>(<a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27ea4490aa3d29644e716440fada68f54032">Debug::LogLevel::LOG_ERROR</a>, <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>, message, ##__VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs a message with the corresponding warning level. Works exactly like printf. </p>
+
+</div>
+</div>
+<a id="aa3fa842141e9161d9c9844e98245d9d8" name="aa3fa842141e9161d9c9844e98245d9d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3fa842141e9161d9c9844e98245d9d8">&#9670;&#160;</a></span>TE_WARN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TE_WARN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespace_debug.html#a6cbd2aaeb2f68f35d1f16e8787ea972f">Debug::_LogMessage</a>(<a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27ea803a17d78b6923b90494820a5000d22b">Debug::LogLevel::LOG_WARN</a>, <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>, message, ##__VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs a message with the corresponding warning level. Works exactly like printf. </p>
+
+</div>
+</div>
+<a id="aba17d78a47089e233e8bb2cb61d11740" name="aba17d78a47089e233e8bb2cb61d11740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba17d78a47089e233e8bb2cb61d11740">&#9670;&#160;</a></span>TE_INFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TE_INFO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespace_debug.html#a6cbd2aaeb2f68f35d1f16e8787ea972f">Debug::_LogMessage</a>(<a class="el" href="namespace_debug.html#a8c68d97496e49ad5e586f32421d8d27ea41abf3cca8cee8cdae01749df7a991c6">Debug::LogLevel::LOG_INFO</a>, <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>, message, ##__VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs a message with the corresponding warning level. Works exactly like printf. </p>
+
+</div>
+</div>
+<a id="ac6695008f15715493965b59269906d5e" name="ac6695008f15715493965b59269906d5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6695008f15715493965b59269906d5e">&#9670;&#160;</a></span>TE_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TE_DEBUG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CODE WILL BE REMOVED! </p>
+
+</div>
+</div>
+<a id="aeb4a0ef41c7952dc82215f0bf5c7d3f0" name="aeb4a0ef41c7952dc82215f0bf5c7d3f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb4a0ef41c7952dc82215f0bf5c7d3f0">&#9670;&#160;</a></span>TE_TRACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TE_TRACE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CODE WILL BE REMOVED! </p>
+
+</div>
+</div>
+<a id="a5aed7fdaf3fa67fc982c743ed5fa6f30" name="a5aed7fdaf3fa67fc982c743ed5fa6f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aed7fdaf3fa67fc982c743ed5fa6f30">&#9670;&#160;</a></span>TE_PERF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TE_PERF</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CODE WILL BE REMOVED! </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ff9d562b39932b7b74f54b9fb4bb00a0.html">ProjectSolution</a></li><li class="navelem"><a class="el" href="dir_0e3d5f2d56e31468daefe438e212cfbc.html">Proj_Engine</a></li><li class="navelem"><a class="el" href="dir_0d2c0b45ba4d42e3f37ae38d7482e159.html">Source</a></li><li class="navelem"><a class="el" href="dir_ff6720358ac776171db54370350964ee.html">Helper</a></li><li class="navelem"><a class="el" href="_debug_8h.html">Debug.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

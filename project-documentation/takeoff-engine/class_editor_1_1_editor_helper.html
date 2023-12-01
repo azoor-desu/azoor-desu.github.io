@@ -1,0 +1,1695 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: Editor::EditorHelper Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_editor_1_1_editor_helper.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
+  <div class="headertitle"><div class="title">Editor::EditorHelper Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_editor_helper_8h_source.html">EditorHelper.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aec74a5f760ae15942173ea9c3aacf438"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a> { <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a>
+, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438ac06124d382fa89f5ce0f0948be088526">DRAGDROP</a>
+, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a9a279ed117bbe983985da53daa98e7a4">DRAGDROPOPEN</a>
+, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a763d246a22faba415ec0a3cbd40f6f84">OPENONLY</a>
+ }</td></tr>
+<tr class="separator:aec74a5f760ae15942173ea9c3aacf438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0a0bd42a3c4e4c2c62ece15064a9bb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bb">COLORPICKERSTYLE</a> { <br />
+&#160;&#160;<a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bba1d2534ddfa7cb62dbb29fbaed8e11a2c">Edit3</a>
+, <a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bba1cf61c7cd2423d2652525ef69bebf155">Edit4</a>
+, <a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bba7c891b192f618f2c1d9f4a725820e30d">Pick3</a>
+, <a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bbadd084e43087c8740d023d842ef93b404">Pick4</a>
+, <br />
+&#160;&#160;<a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bba3db642c7f7e05e0a6e29c627c9e28caa">Edit3Pallete</a>
+, <a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bbae21e610f0d9178ee376795cc53f12114">Edit4Pallete</a>
+<br />
+ }</td></tr>
+<tr class="separator:ade0a0bd42a3c4e4c2c62ece15064a9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1e2fc486cd50dc33b34fbe37837d3191"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a1e2fc486cd50dc33b34fbe37837d3191">OpenFile</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *filter)</td></tr>
+<tr class="memdesc:a1e2fc486cd50dc33b34fbe37837d3191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens Desktop Folder to select a file to open in editor.  <br /></td></tr>
+<tr class="separator:a1e2fc486cd50dc33b34fbe37837d3191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15afb547af471251f7afc1d500e65da"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ab15afb547af471251f7afc1d500e65da">SaveFileAs</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *filter)</td></tr>
+<tr class="memdesc:ab15afb547af471251f7afc1d500e65da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens Desktop Folder to select a filepath to save into.  <br /></td></tr>
+<tr class="separator:ab15afb547af471251f7afc1d500e65da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988f44ee749f164c6ba7052e04f781a1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a988f44ee749f164c6ba7052e04f781a1">Inspector_CenteredButton</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> alignment=0.5f)</td></tr>
+<tr class="memdesc:a988f44ee749f164c6ba7052e04f781a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a button aligned to the middle of the created location Ouput:| [Button] | How to use: if(Inspector_CenteredButton("Label", 0.5f)) state = !state; //example.  <br /></td></tr>
+<tr class="separator:a988f44ee749f164c6ba7052e04f781a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da7090e35d2bbd262d3a163981b06e3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a7da7090e35d2bbd262d3a163981b06e3">Inspector_ToggleButton</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText1=&quot;&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText2=&quot;&quot;, bool *state=nullptr)</td></tr>
+<tr class="memdesc:a7da7090e35d2bbd262d3a163981b06e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a formatted toggle button in the created location, Name of the button changes when clicked Ouput: Name | [Button] How to use: Inspector_ToggleButton("Label", "Not toggled", "Toggled", &amp;state)) //example.  <br /></td></tr>
+<tr class="separator:a7da7090e35d2bbd262d3a163981b06e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6aad0982fd6227c1a0e394c6766976"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a9d6aad0982fd6227c1a0e394c6766976"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a9d6aad0982fd6227c1a0e394c6766976">Inspector_FormattedCenteredButton</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText=&quot;&quot;, T *state=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> alignment=0.5f, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a> INSTATE=<a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a>, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *typeDragDrop=&quot;&quot;)</td></tr>
+<tr class="memdesc:a9d6aad0982fd6227c1a0e394c6766976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a formatted button aligned to the middle of the created location Ouput: Name | [Button] <br  />
+ How to use: if(Inspector_CenteredButton("Label", 0.5f)) state = !state; //example.  <br /></td></tr>
+<tr class="separator:a9d6aad0982fd6227c1a0e394c6766976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631e7cd9494816dbe867c3383a0d9218"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a631e7cd9494816dbe867c3383a0d9218">Inspector_SingleButton</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText=&quot;&quot;, bool *state=nullptr, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a> INSTATE=<a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a>, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *typeDragDrop=&quot;&quot;)</td></tr>
+<tr class="memdesc:a631e7cd9494816dbe867c3383a0d9218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a single formatted button in the created location Ouput: Name | [Button] How to use: Inspector_SingleButton("Label", "Button Text", &amp;state)) //example.  <br /></td></tr>
+<tr class="separator:a631e7cd9494816dbe867c3383a0d9218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd8a070dfbfbce3081faac4f8f98bc1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#abbd8a070dfbfbce3081faac4f8f98bc1">Inspector_DoubleButton</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText1=&quot;&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText2=&quot;&quot;, bool *state1=nullptr, bool *state2=nullptr, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a> INSTATE=<a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a>, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *typeDragDrop=&quot;&quot;)</td></tr>
+<tr class="memdesc:abbd8a070dfbfbce3081faac4f8f98bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a formatted double button in the created location, text of the button changes when clicked Ouput: Name | [Button1][Button2] How to use: Inspector_ToggleButton("ButtonName", "Not toggled", "Toggled", &amp;state)) //example.  <br /></td></tr>
+<tr class="separator:abbd8a070dfbfbce3081faac4f8f98bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115cd6ffe797dba580a76943eb271eba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a115cd6ffe797dba580a76943eb271eba">Inspector_Checkbox</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, bool *state=nullptr, <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> id=0)</td></tr>
+<tr class="memdesc:a115cd6ffe797dba580a76943eb271eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a checkbox in the created location.  <br /></td></tr>
+<tr class="separator:a115cd6ffe797dba580a76943eb271eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b544fb3725cacfa7f87088170ff9347"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a0b544fb3725cacfa7f87088170ff9347">Inspector_MultiCheckbox</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, std::vector&lt; bool &gt; *state=nullptr)</td></tr>
+<tr class="memdesc:a0b544fb3725cacfa7f87088170ff9347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a series of checkbox in the created location.  <br /></td></tr>
+<tr class="separator:a0b544fb3725cacfa7f87088170ff9347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af685edaaba18be589f06e4398b4354ee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#af685edaaba18be589f06e4398b4354ee">Inspector_EnumCombo</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, rttr::array_range&lt; rttr::string_view &gt; stringRange, int *state=nullptr)</td></tr>
+<tr class="memdesc:af685edaaba18be589f06e4398b4354ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a combo of enum in the created location.  <br /></td></tr>
+<tr class="separator:af685edaaba18be589f06e4398b4354ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073e7e3d1945078259151533e8541074"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a073e7e3d1945078259151533e8541074">Inspector_OneFloatSlider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> minVal=FLT_MIN, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> maxVal=FLT_MAX, bool haveResetButton=false, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText=&quot;&quot;, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> defaultVal=0.f, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
+<tr class="memdesc:a073e7e3d1945078259151533e8541074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a single float slider in the created location Ouput: Name | [Reset Button][Float Slider] How to use: Inspector_OneFloatSlider("Slider Name", &amp;state, 0.f, 100.f, true, "Reset", 1.f)) //example OR Inspector_OneFloatSlider("Slider Name", &amp;state, -100.f, 100.f)) //example.  <br /></td></tr>
+<tr class="separator:a073e7e3d1945078259151533e8541074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e017ad6433a6d198074f77ee402c9f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ad2e017ad6433a6d198074f77ee402c9f">Inspector_TwoFloatSlider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state1=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state2=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> minVal=FLT_MIN, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> maxVal=FLT_MAX, bool haveResetButton=false, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText1=&quot;X&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText2=&quot;Y&quot;, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> defaultVal=0.f, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
+<tr class="memdesc:ad2e017ad6433a6d198074f77ee402c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a double float slider in the created location Ouput: Name | [Reset Button][Float Slider][Reset Button][Float Slider] How to use: Inspector_TwoFloatSlider("Slider Name", &amp;state1, &amp;state2, 0.f, 100.f, true, "Reset X", "Reset Y", 1.f)) //example OR Inspector_TwoFloatSlider("Slider Name", &amp;state1, &amp;state2, -100.f, 100.f)) //example.  <br /></td></tr>
+<tr class="separator:ad2e017ad6433a6d198074f77ee402c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bfb8a0f692ec8e0905aac33091c2da"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ac8bfb8a0f692ec8e0905aac33091c2da">Inspector_ThreeFloatSlider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state1=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state2=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state3=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> minVal=FLT_MIN, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> maxVal=FLT_MAX, bool haveResetButton=false, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText1=&quot;X&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText2=&quot;Y&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText3=&quot;Z&quot;, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> defaultVal=0.f, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
+<tr class="memdesc:ac8bfb8a0f692ec8e0905aac33091c2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a triple float slider in the created location Ouput: Name | [Reset Button][Float Slider][Reset Button][Float Slider][Reset Button][Float Slider] How to use: Inspector_ThreeFloatSlider("Slider Name", &amp;state1, &amp;state2, &amp;state3, 0.f, 100.f, true, "Reset X", "Reset Y", "Reset Z" 1.f)) //example OR Inspector_TreeFloatSlider("Slider Name", &amp;state1, &amp;state2, &amp;state3, -100.f, 100.f)) //example.  <br /></td></tr>
+<tr class="separator:ac8bfb8a0f692ec8e0905aac33091c2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e551492727e7ec0fff1d32292b8b16"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#af0e551492727e7ec0fff1d32292b8b16">Inspector_ColorSliderPicker</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state1=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state2=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state3=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state4=nullptr, <a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bb">COLORPICKERSTYLE</a> style=<a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bba1cf61c7cd2423d2652525ef69bebf155">Edit4</a>)</td></tr>
+<tr class="memdesc:af0e551492727e7ec0fff1d32292b8b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a color picker with alpha option in the created location Ouput: Color picker with Alpha input How to use: Inspector_ColorSliderPicker("Slider Name", &amp;state1, &amp;state2, &amp;state3, &amp;state4) //example.  <br /></td></tr>
+<tr class="separator:af0e551492727e7ec0fff1d32292b8b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd066d4bcf02f708188afbde60840401"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#acd066d4bcf02f708188afbde60840401">Inspector_OneIntSlider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *state=nullptr, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> minVal=INT32_MIN, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> maxVal=INT32_MAX, bool haveResetButton=false, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText=&quot;&quot;, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> defaultVal=0, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
+<tr class="memdesc:acd066d4bcf02f708188afbde60840401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a single int slider in the created location Ouput: Name | [Reset Button][Int Slider] How to use: Inspector_OneIntSlider("Slider Name", &amp;state, 0, 100, true, "Reset", 1)) //example OR Inspector_OneIntSlider("Slider Name", &amp;state, -100, 100)) //example.  <br /></td></tr>
+<tr class="separator:acd066d4bcf02f708188afbde60840401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286962b4226af657960f8f7b52819379"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a286962b4226af657960f8f7b52819379">Inspector_TwoIntSlider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *state1=nullptr, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *state2=nullptr, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> minVal=INT32_MIN, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> maxVal=INT32_MAX, bool haveResetButton=false, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText1=&quot;X&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText2=&quot;Y&quot;, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> defaultVal=0, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
+<tr class="memdesc:a286962b4226af657960f8f7b52819379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Double int slider in the created location Ouput: Name | [Reset Button][int Slider][Reset Button][int Slider] How to use: Inspector_TwointSlider("Slider Name", &amp;state1, &amp;state2, 0, 100, true, "Reset X", "Reset Y", 1)) //example OR Inspector_TwointSlider("Slider Name", &amp;state1, &amp;state2, -100, 100)) //example.  <br /></td></tr>
+<tr class="separator:a286962b4226af657960f8f7b52819379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8139d9a5b369440ebba4ee79c72acf0d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a8139d9a5b369440ebba4ee79c72acf0d">Inspector_ThreeIntSlider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *state=nullptr, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *state2=nullptr, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *state3=nullptr, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> minVal=INT32_MIN, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> maxVal=INT32_MAX, bool haveResetButton=false, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText1=&quot;X&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText2=&quot;Y&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText3=&quot;Z&quot;, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> defaultVal=0, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
+<tr class="memdesc:a8139d9a5b369440ebba4ee79c72acf0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Triple Int slider in the created location Ouput: Name | [Reset Button][int Slider][Reset Button][int Slider][Reset Button][int Slider] How to use: Inspector_ThreeIntSlider("Slider Name", &amp;state1, &amp;state2, &amp;state3, 0, 100, true, "Reset X", "Reset Y", "Reset Z")) //example OR Inspector_ThreeIntSlider("Slider Name", &amp;state1, &amp;state2, &amp;stat, -100, 100)) //example.  <br /></td></tr>
+<tr class="separator:a8139d9a5b369440ebba4ee79c72acf0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba452ff46c7461f6253e60ea419ef62"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a7ba452ff46c7461f6253e60ea419ef62">Inspector_TextBox</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a> *state=nullptr, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a> INSTATE=<a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a>, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *typeDragDrop=&quot;&quot;)</td></tr>
+<tr class="memdesc:a7ba452ff46c7461f6253e60ea419ef62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a text box in the created location Ouput: Name | [Reset Button][int Slider][Reset Button][int Slider][Reset Button][int Slider] How to use: Inspector_TextBox("TextBox Name", &amp;state1)) //example OR Inspector_TextBox("TextBox Name", &amp;state1, INSPECTORSTATE::DRAG_DROP, "ASSET_BROWSER_ITEM")) //example, this will enable drag and drop items from asset browser into this textbox.  <br /></td></tr>
+<tr class="separator:a7ba452ff46c7461f6253e60ea419ef62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2299186c4c56c61e2f7d1ca3818c508"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ad2299186c4c56c61e2f7d1ca3818c508">Inspector_Vector3Slider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, std::vector&lt; glm::vec3 &gt; *state=nullptr)</td></tr>
+<tr class="memdesc:ad2299186c4c56c61e2f7d1ca3818c508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a series of vec3 float sliders in the created location Ouput: Name | [X][float Slider] [Y][float Slider] [Z][float Slider] How to use: Inspector_Vector3Slider("Var Name", &amp;state)) //example.  <br /></td></tr>
+<tr class="separator:ad2299186c4c56c61e2f7d1ca3818c508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f73c8f02bac47b719781c18803334d2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a0f73c8f02bac47b719781c18803334d2">Inspector_Vector2Slider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, std::vector&lt; glm::vec2 &gt; *state=nullptr)</td></tr>
+<tr class="memdesc:a0f73c8f02bac47b719781c18803334d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a series of vec2 float sliders in the created location Ouput: Name | [X][float Slider] [Y][float Slider] How to use: Inspector_Vector2Slider("Var Name", &amp;state)) //example.  <br /></td></tr>
+<tr class="separator:a0f73c8f02bac47b719781c18803334d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ace0c09061eae013291406fe712459d22"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ace0c09061eae013291406fe712459d22">m_selectedIDs</a></td></tr>
+<tr class="separator:ace0c09061eae013291406fe712459d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aec74a5f760ae15942173ea9c3aacf438" name="aec74a5f760ae15942173ea9c3aacf438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec74a5f760ae15942173ea9c3aacf438">&#9670;&#160;</a></span>INSPECTORSTATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">Editor::EditorHelper::INSPECTORSTATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9" name="aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9"></a>DEFAULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aec74a5f760ae15942173ea9c3aacf438ac06124d382fa89f5ce0f0948be088526" name="aec74a5f760ae15942173ea9c3aacf438ac06124d382fa89f5ce0f0948be088526"></a>DRAGDROP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aec74a5f760ae15942173ea9c3aacf438a9a279ed117bbe983985da53daa98e7a4" name="aec74a5f760ae15942173ea9c3aacf438a9a279ed117bbe983985da53daa98e7a4"></a>DRAGDROPOPEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aec74a5f760ae15942173ea9c3aacf438a763d246a22faba415ec0a3cbd40f6f84" name="aec74a5f760ae15942173ea9c3aacf438a763d246a22faba415ec0a3cbd40f6f84"></a>OPENONLY&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ade0a0bd42a3c4e4c2c62ece15064a9bb" name="ade0a0bd42a3c4e4c2c62ece15064a9bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0a0bd42a3c4e4c2c62ece15064a9bb">&#9670;&#160;</a></span>COLORPICKERSTYLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bb">Editor::EditorHelper::COLORPICKERSTYLE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ade0a0bd42a3c4e4c2c62ece15064a9bba1d2534ddfa7cb62dbb29fbaed8e11a2c" name="ade0a0bd42a3c4e4c2c62ece15064a9bba1d2534ddfa7cb62dbb29fbaed8e11a2c"></a>Edit3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ade0a0bd42a3c4e4c2c62ece15064a9bba1cf61c7cd2423d2652525ef69bebf155" name="ade0a0bd42a3c4e4c2c62ece15064a9bba1cf61c7cd2423d2652525ef69bebf155"></a>Edit4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ade0a0bd42a3c4e4c2c62ece15064a9bba7c891b192f618f2c1d9f4a725820e30d" name="ade0a0bd42a3c4e4c2c62ece15064a9bba7c891b192f618f2c1d9f4a725820e30d"></a>Pick3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ade0a0bd42a3c4e4c2c62ece15064a9bbadd084e43087c8740d023d842ef93b404" name="ade0a0bd42a3c4e4c2c62ece15064a9bbadd084e43087c8740d023d842ef93b404"></a>Pick4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ade0a0bd42a3c4e4c2c62ece15064a9bba3db642c7f7e05e0a6e29c627c9e28caa" name="ade0a0bd42a3c4e4c2c62ece15064a9bba3db642c7f7e05e0a6e29c627c9e28caa"></a>Edit3Pallete&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ade0a0bd42a3c4e4c2c62ece15064a9bbae21e610f0d9178ee376795cc53f12114" name="ade0a0bd42a3c4e4c2c62ece15064a9bbae21e610f0d9178ee376795cc53f12114"></a>Edit4Pallete&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1e2fc486cd50dc33b34fbe37837d3191" name="a1e2fc486cd50dc33b34fbe37837d3191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e2fc486cd50dc33b34fbe37837d3191">&#9670;&#160;</a></span>OpenFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a> Editor::EditorHelper::OpenFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opens Desktop Folder to select a file to open in editor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>the file format filter</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If no error, return file path string, else null string </dd></dl>
+
+</div>
+</div>
+<a id="ab15afb547af471251f7afc1d500e65da" name="ab15afb547af471251f7afc1d500e65da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab15afb547af471251f7afc1d500e65da">&#9670;&#160;</a></span>SaveFileAs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a> Editor::EditorHelper::SaveFileAs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opens Desktop Folder to select a filepath to save into. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>the file format filter</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If no error, return file path string, else null string </dd></dl>
+
+</div>
+</div>
+<a id="a988f44ee749f164c6ba7052e04f781a1" name="a988f44ee749f164c6ba7052e04f781a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a988f44ee749f164c6ba7052e04f781a1">&#9670;&#160;</a></span>Inspector_CenteredButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Editor::EditorHelper::Inspector_CenteredButton </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramname"><em>alignment</em> = <code>0.5f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a button aligned to the middle of the created location Ouput:| [Button] | How to use: if(Inspector_CenteredButton("Label", 0.5f)) state = !state; //example. </p>
+<p>Creates a button aligned to the middle of the created location.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">alignment</td><td>alignment value for customization purposes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returns a true when IMGUI io recieves a button click </dd></dl>
+
+</div>
+</div>
+<a id="a7da7090e35d2bbd262d3a163981b06e3" name="a7da7090e35d2bbd262d3a163981b06e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da7090e35d2bbd262d3a163981b06e3">&#9670;&#160;</a></span>Inspector_ToggleButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_ToggleButton </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText1</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText2</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>state</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a formatted toggle button in the created location, Name of the button changes when clicked Ouput: Name | [Button] How to use: Inspector_ToggleButton("Label", "Not toggled", "Toggled", &amp;state)) //example. </p>
+<p>Creates a toggle button in the created location.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">buttonText1</td><td>text that will be shown on the untoggled button </td></tr>
+    <tr><td class="paramname">buttonText2</td><td>text that will be shown on the toggled button </td></tr>
+    <tr><td class="paramname">state</td><td>Var state that will be toggled true/ false on io recieved </td></tr>
+    <tr><td class="paramname">INSTATE</td><td><a class="el" href="class_editor_1_1_inspector.html">Inspector</a> State, Default state has no drag drop and folder open feature </td></tr>
+    <tr><td class="paramname">typeDragDrop</td><td>if INSTATE == DRAG_DROP / DRAG_DROP_OPEN, this var is the item type the imgui dragdrop will accept </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9d6aad0982fd6227c1a0e394c6766976" name="a9d6aad0982fd6227c1a0e394c6766976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d6aad0982fd6227c1a0e394c6766976">&#9670;&#160;</a></span>Inspector_FormattedCenteredButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_FormattedCenteredButton </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>state</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramname"><em>alignment</em> = <code>0.5f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a>&#160;</td>
+          <td class="paramname"><em>INSTATE</em> = <code><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>typeDragDrop</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a formatted button aligned to the middle of the created location Ouput: Name | [Button] <br  />
+ How to use: if(Inspector_CenteredButton("Label", 0.5f)) state = !state; //example. </p>
+<p>Creates a formatted button aligned to the middle of the created location.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">buttonText</td><td>text that will be shown on the untoggled button </td></tr>
+    <tr><td class="paramname">state</td><td>Var state that will be toggled true/ false on io recieved </td></tr>
+    <tr><td class="paramname">alignment</td><td>alignment value for customization purposes </td></tr>
+    <tr><td class="paramname">INSTATE</td><td><a class="el" href="class_editor_1_1_inspector.html">Inspector</a> State, Default state has no drag drop and folder open feature </td></tr>
+    <tr><td class="paramname">typeDragDrop</td><td>if INSTATE == DRAG_DROP / DRAG_DROP_OPEN, this var is the item type the imgui dragdrop will accept </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a631e7cd9494816dbe867c3383a0d9218" name="a631e7cd9494816dbe867c3383a0d9218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631e7cd9494816dbe867c3383a0d9218">&#9670;&#160;</a></span>Inspector_SingleButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_SingleButton </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>state</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a>&#160;</td>
+          <td class="paramname"><em>INSTATE</em> = <code><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>typeDragDrop</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a single formatted button in the created location Ouput: Name | [Button] How to use: Inspector_SingleButton("Label", "Button Text", &amp;state)) //example. </p>
+<p>Creates a single formatted button in the created location.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">buttonText</td><td>text that will be shown on the untoggled button </td></tr>
+    <tr><td class="paramname">state</td><td>Var state that will be toggled true/ false on io recieved </td></tr>
+    <tr><td class="paramname">INSTATE</td><td><a class="el" href="class_editor_1_1_inspector.html">Inspector</a> State, Default state has no drag drop and folder open feature </td></tr>
+    <tr><td class="paramname">typeDragDrop</td><td>if INSTATE == DRAG_DROP / DRAG_DROP_OPEN, this var is the item type the imgui dragdrop will accept </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abbd8a070dfbfbce3081faac4f8f98bc1" name="abbd8a070dfbfbce3081faac4f8f98bc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd8a070dfbfbce3081faac4f8f98bc1">&#9670;&#160;</a></span>Inspector_DoubleButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_DoubleButton </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText1</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText2</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>state1</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>state2</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a>&#160;</td>
+          <td class="paramname"><em>INSTATE</em> = <code><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>typeDragDrop</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a formatted double button in the created location, text of the button changes when clicked Ouput: Name | [Button1][Button2] How to use: Inspector_ToggleButton("ButtonName", "Not toggled", "Toggled", &amp;state)) //example. </p>
+<p>Creates a formatted double button in the created location, text of the button changes when clicked.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">buttonText1</td><td>text that will be shown on the first button </td></tr>
+    <tr><td class="paramname">buttonText2</td><td>text that will be shown on the second button </td></tr>
+    <tr><td class="paramname">state1</td><td>first Var state that will be toggled true/ false on io recieved </td></tr>
+    <tr><td class="paramname">state2</td><td>second Var state that will be toggled true/ false on io recieved </td></tr>
+    <tr><td class="paramname">INSTATE</td><td><a class="el" href="class_editor_1_1_inspector.html">Inspector</a> State, Default state has no drag drop and folder open feature </td></tr>
+    <tr><td class="paramname">typeDragDrop</td><td>if INSTATE == DRAG_DROP / DRAG_DROP_OPEN, this var is the item type the imgui dragdrop will accept </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a115cd6ffe797dba580a76943eb271eba" name="a115cd6ffe797dba580a76943eb271eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115cd6ffe797dba580a76943eb271eba">&#9670;&#160;</a></span>Inspector_Checkbox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_Checkbox </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>state</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramname"><em>id</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a checkbox in the created location. </p>
+<p>Creates a checkbox in the created location Ouput: Name | [ ] Disabled Ouput: Name | [/] Active How to use: Inspector_Checkbox("Label", &amp;state)) //example</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">state</td><td>Var state that will be toggled true/ false on io recieved </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0b544fb3725cacfa7f87088170ff9347" name="a0b544fb3725cacfa7f87088170ff9347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b544fb3725cacfa7f87088170ff9347">&#9670;&#160;</a></span>Inspector_MultiCheckbox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_MultiCheckbox </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; bool &gt; *&#160;</td>
+          <td class="paramname"><em>state</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a series of checkbox in the created location. </p>
+<p>Creates a series of checkbox in the created location Ouput: Name | [ ] X [ ] Y [ ] Z How to use: Inspector_Checkbox("Label", &amp;state)) //example</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">state</td><td>Var state that will be toggled true/ false on io recieved </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af685edaaba18be589f06e4398b4354ee" name="af685edaaba18be589f06e4398b4354ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af685edaaba18be589f06e4398b4354ee">&#9670;&#160;</a></span>Inspector_EnumCombo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_EnumCombo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">rttr::array_range&lt; rttr::string_view &gt;&#160;</td>
+          <td class="paramname"><em>stringRange</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>state</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a combo of enum in the created location. </p>
+<p>Creates a combo of enum in the created location Ouput: Name | [ COMBO |v] How to use: Inspector_EnumCombo("Label", &amp;state, stringRanges)) //example</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">stringRange</td><td>array of strings from rttr registration </td></tr>
+    <tr><td class="paramname">state</td><td>Var state that will be toggled true/ false on io recieved </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a073e7e3d1945078259151533e8541074" name="a073e7e3d1945078259151533e8541074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a073e7e3d1945078259151533e8541074">&#9670;&#160;</a></span>Inspector_OneFloatSlider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_OneFloatSlider </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramname"><em>state</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramname"><em>minVal</em> = <code>FLT_MIN</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramname"><em>maxVal</em> = <code>FLT_MAX</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>haveResetButton</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramname"><em>defaultVal</em> = <code>0.f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImGuiSliderFlags&#160;</td>
+          <td class="paramname"><em>flag</em> = <code>ImGuiSliderFlags_None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a single float slider in the created location Ouput: Name | [Reset Button][Float Slider] How to use: Inspector_OneFloatSlider("Slider Name", &amp;state, 0.f, 100.f, true, "Reset", 1.f)) //example OR Inspector_OneFloatSlider("Slider Name", &amp;state, -100.f, 100.f)) //example. </p>
+<p>Creates a single float slider in the created location.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">state</td><td>Var state that will be edited </td></tr>
+    <tr><td class="paramname">minVal</td><td>minimum value allowed</td></tr>
+    <tr><td class="paramname">maxVal</td><td>maximum value allowed</td></tr>
+    <tr><td class="paramname">haveResetButton</td><td>if true, will have a reset button </td></tr>
+    <tr><td class="paramname">buttonText</td><td>text that will be shown on the reset button </td></tr>
+    <tr><td class="paramname">defaultVal</td><td>the default/initial value that can be resetted to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2e017ad6433a6d198074f77ee402c9f" name="ad2e017ad6433a6d198074f77ee402c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e017ad6433a6d198074f77ee402c9f">&#9670;&#160;</a></span>Inspector_TwoFloatSlider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_TwoFloatSlider </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramname"><em>state1</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramname"><em>state2</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramname"><em>minVal</em> = <code>FLT_MIN</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramname"><em>maxVal</em> = <code>FLT_MAX</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>haveResetButton</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText1</em> = <code>&quot;X&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText2</em> = <code>&quot;Y&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramname"><em>defaultVal</em> = <code>0.f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImGuiSliderFlags&#160;</td>
+          <td class="paramname"><em>flag</em> = <code>ImGuiSliderFlags_None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a double float slider in the created location Ouput: Name | [Reset Button][Float Slider][Reset Button][Float Slider] How to use: Inspector_TwoFloatSlider("Slider Name", &amp;state1, &amp;state2, 0.f, 100.f, true, "Reset X", "Reset Y", 1.f)) //example OR Inspector_TwoFloatSlider("Slider Name", &amp;state1, &amp;state2, -100.f, 100.f)) //example. </p>
+<p>Creates a double float slider in the created location.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">state1</td><td>First Var state that will be edited </td></tr>
+    <tr><td class="paramname">state2</td><td>Second Var state that will be edited </td></tr>
+    <tr><td class="paramname">minVal</td><td>minimum value allowed</td></tr>
+    <tr><td class="paramname">maxVal</td><td>maximum value allowed</td></tr>
+    <tr><td class="paramname">haveResetButton</td><td>if true, will have a reset button </td></tr>
+    <tr><td class="paramname">buttonText1</td><td>text that will be shown on the first reset button </td></tr>
+    <tr><td class="paramname">buttonText2</td><td>text that will be shown on the second reset button </td></tr>
+    <tr><td class="paramname">defaultVal</td><td>the default/initial value that can be resetted to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac8bfb8a0f692ec8e0905aac33091c2da" name="ac8bfb8a0f692ec8e0905aac33091c2da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8bfb8a0f692ec8e0905aac33091c2da">&#9670;&#160;</a></span>Inspector_ThreeFloatSlider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_ThreeFloatSlider </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramname"><em>state1</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramname"><em>state2</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramname"><em>state3</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramname"><em>minVal</em> = <code>FLT_MIN</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramname"><em>maxVal</em> = <code>FLT_MAX</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>haveResetButton</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText1</em> = <code>&quot;X&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText2</em> = <code>&quot;Y&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText3</em> = <code>&quot;Z&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramname"><em>defaultVal</em> = <code>0.f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImGuiSliderFlags&#160;</td>
+          <td class="paramname"><em>flag</em> = <code>ImGuiSliderFlags_None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a triple float slider in the created location Ouput: Name | [Reset Button][Float Slider][Reset Button][Float Slider][Reset Button][Float Slider] How to use: Inspector_ThreeFloatSlider("Slider Name", &amp;state1, &amp;state2, &amp;state3, 0.f, 100.f, true, "Reset X", "Reset Y", "Reset Z" 1.f)) //example OR Inspector_TreeFloatSlider("Slider Name", &amp;state1, &amp;state2, &amp;state3, -100.f, 100.f)) //example. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">state1</td><td>First Var state that will be edited </td></tr>
+    <tr><td class="paramname">state2</td><td>Second Var state that will be edited </td></tr>
+    <tr><td class="paramname">state3</td><td>Third Var state that will be edited </td></tr>
+    <tr><td class="paramname">minVal</td><td>minimum value allowed</td></tr>
+    <tr><td class="paramname">maxVal</td><td>maximum value allowed</td></tr>
+    <tr><td class="paramname">haveResetButton</td><td>if true, will have a reset button </td></tr>
+    <tr><td class="paramname">buttonText1</td><td>text that will be shown on the first reset button </td></tr>
+    <tr><td class="paramname">buttonText2</td><td>text that will be shown on the second reset button </td></tr>
+    <tr><td class="paramname">buttonText3</td><td>text that will be shown on the third reset button </td></tr>
+    <tr><td class="paramname">defaultVal</td><td>the default/initial value that can be resetted to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af0e551492727e7ec0fff1d32292b8b16" name="af0e551492727e7ec0fff1d32292b8b16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0e551492727e7ec0fff1d32292b8b16">&#9670;&#160;</a></span>Inspector_ColorSliderPicker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_ColorSliderPicker </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramname"><em>state1</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramname"><em>state2</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramname"><em>state3</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramname"><em>state4</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bb">COLORPICKERSTYLE</a>&#160;</td>
+          <td class="paramname"><em>style</em> = <code><a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bba1cf61c7cd2423d2652525ef69bebf155">Edit4</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a color picker with alpha option in the created location Ouput: Color picker with Alpha input How to use: Inspector_ColorSliderPicker("Slider Name", &amp;state1, &amp;state2, &amp;state3, &amp;state4) //example. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">state1</td><td>First Var state that will be edited </td></tr>
+    <tr><td class="paramname">state2</td><td>Second Var state that will be edited </td></tr>
+    <tr><td class="paramname">state3</td><td>Third Var state that will be edited </td></tr>
+    <tr><td class="paramname">state4</td><td>Forth Var state that will be edited </td></tr>
+    <tr><td class="paramname">style</td><td>the color picker style </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acd066d4bcf02f708188afbde60840401" name="acd066d4bcf02f708188afbde60840401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd066d4bcf02f708188afbde60840401">&#9670;&#160;</a></span>Inspector_OneIntSlider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_OneIntSlider </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *&#160;</td>
+          <td class="paramname"><em>state</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramname"><em>minVal</em> = <code>INT32_MIN</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramname"><em>maxVal</em> = <code>INT32_MAX</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>haveResetButton</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramname"><em>defaultVal</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImGuiSliderFlags&#160;</td>
+          <td class="paramname"><em>flag</em> = <code>ImGuiSliderFlags_None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a single int slider in the created location Ouput: Name | [Reset Button][Int Slider] How to use: Inspector_OneIntSlider("Slider Name", &amp;state, 0, 100, true, "Reset", 1)) //example OR Inspector_OneIntSlider("Slider Name", &amp;state, -100, 100)) //example. </p>
+<p>Creates a single int slider in the created location.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">state</td><td>Var state that will be edited </td></tr>
+    <tr><td class="paramname">minVal</td><td>minimum value allowed</td></tr>
+    <tr><td class="paramname">maxVal</td><td>maximum value allowed</td></tr>
+    <tr><td class="paramname">haveResetButton</td><td>if true, will have a reset button </td></tr>
+    <tr><td class="paramname">buttonText</td><td>text that will be shown on the reset button </td></tr>
+    <tr><td class="paramname">defaultVal</td><td>the default/initial value that can be resetted to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a286962b4226af657960f8f7b52819379" name="a286962b4226af657960f8f7b52819379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a286962b4226af657960f8f7b52819379">&#9670;&#160;</a></span>Inspector_TwoIntSlider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_TwoIntSlider </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *&#160;</td>
+          <td class="paramname"><em>state1</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *&#160;</td>
+          <td class="paramname"><em>state2</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramname"><em>minVal</em> = <code>INT32_MIN</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramname"><em>maxVal</em> = <code>INT32_MAX</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>haveResetButton</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText1</em> = <code>&quot;X&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText2</em> = <code>&quot;Y&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramname"><em>defaultVal</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImGuiSliderFlags&#160;</td>
+          <td class="paramname"><em>flag</em> = <code>ImGuiSliderFlags_None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a Double int slider in the created location Ouput: Name | [Reset Button][int Slider][Reset Button][int Slider] How to use: Inspector_TwointSlider("Slider Name", &amp;state1, &amp;state2, 0, 100, true, "Reset X", "Reset Y", 1)) //example OR Inspector_TwointSlider("Slider Name", &amp;state1, &amp;state2, -100, 100)) //example. </p>
+<p>Creates a double Int slider in the created location.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">state1</td><td>First Var state that will be edited </td></tr>
+    <tr><td class="paramname">state2</td><td>Second Var state that will be edited </td></tr>
+    <tr><td class="paramname">minVal</td><td>minimum value allowed</td></tr>
+    <tr><td class="paramname">maxVal</td><td>maximum value allowed</td></tr>
+    <tr><td class="paramname">haveResetButton</td><td>if true, will have a reset button </td></tr>
+    <tr><td class="paramname">buttonText1</td><td>text that will be shown on the first reset button </td></tr>
+    <tr><td class="paramname">buttonText2</td><td>text that will be shown on the second reset button </td></tr>
+    <tr><td class="paramname">defaultVal</td><td>the default/initial value that can be resetted to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8139d9a5b369440ebba4ee79c72acf0d" name="a8139d9a5b369440ebba4ee79c72acf0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8139d9a5b369440ebba4ee79c72acf0d">&#9670;&#160;</a></span>Inspector_ThreeIntSlider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_ThreeIntSlider </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *&#160;</td>
+          <td class="paramname"><em>state</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *&#160;</td>
+          <td class="paramname"><em>state2</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *&#160;</td>
+          <td class="paramname"><em>state3</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramname"><em>minVal</em> = <code>INT32_MIN</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramname"><em>maxVal</em> = <code>INT32_MAX</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>haveResetButton</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText1</em> = <code>&quot;X&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText2</em> = <code>&quot;Y&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>buttonText3</em> = <code>&quot;Z&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramname"><em>defaultVal</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImGuiSliderFlags&#160;</td>
+          <td class="paramname"><em>flag</em> = <code>ImGuiSliderFlags_None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a Triple Int slider in the created location Ouput: Name | [Reset Button][int Slider][Reset Button][int Slider][Reset Button][int Slider] How to use: Inspector_ThreeIntSlider("Slider Name", &amp;state1, &amp;state2, &amp;state3, 0, 100, true, "Reset X", "Reset Y", "Reset Z")) //example OR Inspector_ThreeIntSlider("Slider Name", &amp;state1, &amp;state2, &amp;stat, -100, 100)) //example. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">state1</td><td>First Var state that will be edited </td></tr>
+    <tr><td class="paramname">state2</td><td>Second Var state that will be edited </td></tr>
+    <tr><td class="paramname">state3</td><td>Third Var state that will be edited </td></tr>
+    <tr><td class="paramname">minVal</td><td>minimum value allowed</td></tr>
+    <tr><td class="paramname">maxVal</td><td>maximum value allowed</td></tr>
+    <tr><td class="paramname">haveResetButton</td><td>if true, will have a reset button </td></tr>
+    <tr><td class="paramname">buttonText1</td><td>text that will be shown on the first reset button </td></tr>
+    <tr><td class="paramname">buttonText2</td><td>text that will be shown on the second reset button </td></tr>
+    <tr><td class="paramname">buttonText3</td><td>text that will be shown on the third reset button </td></tr>
+    <tr><td class="paramname">defaultVal</td><td>the default/initial value that can be resetted to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7ba452ff46c7461f6253e60ea419ef62" name="a7ba452ff46c7461f6253e60ea419ef62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba452ff46c7461f6253e60ea419ef62">&#9670;&#160;</a></span>Inspector_TextBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_TextBox </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a> *&#160;</td>
+          <td class="paramname"><em>state</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a>&#160;</td>
+          <td class="paramname"><em>INSTATE</em> = <code><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>typeDragDrop</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a text box in the created location Ouput: Name | [Reset Button][int Slider][Reset Button][int Slider][Reset Button][int Slider] How to use: Inspector_TextBox("TextBox Name", &amp;state1)) //example OR Inspector_TextBox("TextBox Name", &amp;state1, INSPECTORSTATE::DRAG_DROP, "ASSET_BROWSER_ITEM")) //example, this will enable drag and drop items from asset browser into this textbox. </p>
+<p>Creates a text box in the created location.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">state</td><td>Var state that will be edited </td></tr>
+    <tr><td class="paramname">INSTATE</td><td><a class="el" href="class_editor_1_1_inspector.html">Inspector</a> State, Default state has no drag drop and folder open feature </td></tr>
+    <tr><td class="paramname">typeDragDrop</td><td>if INSTATE == DRAG_DROP / DRAG_DROP_OPEN, this var is the item type the imgui dragdrop will accept </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2299186c4c56c61e2f7d1ca3818c508" name="ad2299186c4c56c61e2f7d1ca3818c508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2299186c4c56c61e2f7d1ca3818c508">&#9670;&#160;</a></span>Inspector_Vector3Slider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_Vector3Slider </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; glm::vec3 &gt; *&#160;</td>
+          <td class="paramname"><em>state</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a series of vec3 float sliders in the created location Ouput: Name | [X][float Slider] [Y][float Slider] [Z][float Slider] How to use: Inspector_Vector3Slider("Var Name", &amp;state)) //example. </p>
+<p>Creates a series of vec3 float sliders in the created location.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">state</td><td>Var state that will be edited </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0f73c8f02bac47b719781c18803334d2" name="a0f73c8f02bac47b719781c18803334d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f73c8f02bac47b719781c18803334d2">&#9670;&#160;</a></span>Inspector_Vector2Slider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::EditorHelper::Inspector_Vector2Slider </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; glm::vec2 &gt; *&#160;</td>
+          <td class="paramname"><em>state</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a series of vec2 float sliders in the created location Ouput: Name | [X][float Slider] [Y][float Slider] How to use: Inspector_Vector2Slider("Var Name", &amp;state)) //example. </p>
+<p>Creates a series of vec2 float sliders in the created location.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
+    <tr><td class="paramname">state</td><td>Var state that will be edited </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ace0c09061eae013291406fe712459d22" name="ace0c09061eae013291406fe712459d22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace0c09061eae013291406fe712459d22">&#9670;&#160;</a></span>m_selectedIDs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> &gt; Editor::EditorHelper::m_selectedIDs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_editor_helper_8h_source.html">EditorHelper.h</a></li>
+<li><a class="el" href="_editor_helper_8cpp.html">EditorHelper.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_editor.html">Editor</a></li><li class="navelem"><a class="el" href="class_editor_1_1_editor_helper.html">EditorHelper</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

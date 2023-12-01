@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: ASPathfinding.h Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_a_s_pathfinding_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ASPathfinding.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_a_s_pathfinding_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="_defines_8h.html">Defines.h</a>&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_a_i_helper_8h.html">AIHelper.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><a class="code hl_define" href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;glm/glm.hpp&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><a class="code hl_define" href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_t_e.html">TE</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_t_e_1_1_a_star_pather.html">   21</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_t_e_1_1_a_star_pather.html">AStarPather</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_t_e_1_1_a_star_pather.html#a4de76cb6bc24fae5616c404bcedd0038a43381ecba06caed56bf25a44d70e231f">   24</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_t_e_1_1_a_star_pather.html#a4de76cb6bc24fae5616c404bcedd0038">List</a> :<span class="keywordtype">char</span> { <a class="code hl_enumvalue" href="class_t_e_1_1_a_star_pather.html#a4de76cb6bc24fae5616c404bcedd0038a4a98858ff9efead00ff5b8ad43359fd6">NOTONLIST</a>, <a class="code hl_enumvalue" href="class_t_e_1_1_a_star_pather.html#a4de76cb6bc24fae5616c404bcedd0038acf92dc9fd062a2e37282bd229d3c1145">OPENLIST</a>, <a class="code hl_enumvalue" href="class_t_e_1_1_a_star_pather.html#a4de76cb6bc24fae5616c404bcedd0038a43381ecba06caed56bf25a44d70e231f">CLOSELIST</a> };</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_t_e_1_1_a_star_pather_1_1_node.html">   26</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct_t_e_1_1_a_star_pather_1_1_node.html">Node</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_t_e_1_1_a_star_pather_1_1_node.html#a9eb2e955071ab22cda40d3eb5340effa">   27</a></span>            <a class="code hl_struct" href="struct_t_e_1_1_grid_pos.html">GridPos</a> <a class="code hl_variable" href="struct_t_e_1_1_a_star_pather_1_1_node.html#a9eb2e955071ab22cda40d3eb5340effa">gridPos</a>;                <span class="comment">// Nodes location </span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_t_e_1_1_a_star_pather_1_1_node.html#abfda45a0dfe5f2e0df0422ec0496ebf8">   28</a></span>            <a class="code hl_struct" href="struct_t_e_1_1_a_star_pather_1_1_node.html">Node</a>* <a class="code hl_variable" href="struct_t_e_1_1_a_star_pather_1_1_node.html#abfda45a0dfe5f2e0df0422ec0496ebf8">parent</a>;                   <span class="comment">// Parent</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_t_e_1_1_a_star_pather_1_1_node.html#ac64998e12d98bab48326e73dfb318747">   29</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_e_1_1_a_star_pather_1_1_node.html#ac64998e12d98bab48326e73dfb318747">finalCost</a>;                <span class="comment">// Final cost f(x)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_t_e_1_1_a_star_pather_1_1_node.html#a32249760889a083700bbf685410d250a">   30</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_e_1_1_a_star_pather_1_1_node.html#a32249760889a083700bbf685410d250a">givenCost</a>;                <span class="comment">// Given cost g(x)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_t_e_1_1_a_star_pather_1_1_node.html#a598515a6981be26adaff1aff622fac48">   31</a></span>            <a class="code hl_enumeration" href="class_t_e_1_1_a_star_pather.html#a4de76cb6bc24fae5616c404bcedd0038">List</a> <a class="code hl_variable" href="struct_t_e_1_1_a_star_pather_1_1_node.html#a598515a6981be26adaff1aff622fac48">onlist</a>;                    <span class="comment">// Which list the node is on currently</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_t_e_1_1_a_star_pather_1_1_node.html#ae7bd3f220a9e662f85109add190b754c">   33</a></span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_t_e_1_1_a_star_pather_1_1_node.html#ae7bd3f220a9e662f85109add190b754c">operator&gt;</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_t_e_1_1_a_star_pather_1_1_node.html">Node</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keywordflow">return</span> (<a class="code hl_variable" href="struct_t_e_1_1_a_star_pather_1_1_node.html#ac64998e12d98bab48326e73dfb318747">finalCost</a> &gt; other.<a class="code hl_variable" href="struct_t_e_1_1_a_star_pather_1_1_node.html#ac64998e12d98bab48326e73dfb318747">finalCost</a>) ? <a class="code hl_variable" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> : <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_t_e_1_1_a_star_pather_1_1_node.html#a378c8ea4a166ddf0a0bd1f27b3060d80">   36</a></span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_t_e_1_1_a_star_pather_1_1_node.html#a378c8ea4a166ddf0a0bd1f27b3060d80">operator&lt;</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_t_e_1_1_a_star_pather_1_1_node.html">Node</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keywordflow">return</span> (<a class="code hl_variable" href="struct_t_e_1_1_a_star_pather_1_1_node.html#ac64998e12d98bab48326e73dfb318747">finalCost</a> &lt; other.<a class="code hl_variable" href="struct_t_e_1_1_a_star_pather_1_1_node.html#ac64998e12d98bab48326e73dfb318747">finalCost</a>) ? <a class="code hl_variable" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a> : <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        };</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_t_e_1_1_a_star_pather_1_1_priority_queue.html">   41</a></span>        <span class="keyword">class </span><a class="code hl_class" href="class_t_e_1_1_a_star_pather_1_1_priority_queue.html">PriorityQueue</a> : <span class="keyword">public</span> std::priority_queue&lt;Node, std::vector&lt;Node&gt;, std::greater&lt;Node&gt;&gt;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_t_e_1_1_a_star_pather_1_1_priority_queue.html#a3055f65690fd198afc0494b42a24e86a">   44</a></span>            <a class="code hl_function" href="class_t_e_1_1_a_star_pather_1_1_priority_queue.html#a3055f65690fd198afc0494b42a24e86a">PriorityQueue</a>(<span class="keywordtype">size_t</span> reserve_size)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                this-&gt;c.reserve(reserve_size);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        };</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_a_star_pather.html#a5211b17f2115a260aae4c9321007dc78">ClearMap</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_a_star_pather.html#a1a50bb8f252b9ed936ce0949f6f97e7a">ClearNodes</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_a_star_pather.html#a19f3fc4c2782332b6b6868fcd208b05b">MapChange</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_enumeration" href="namespace_t_e.html#ac5c5083c24166188203ba9bc090067ea">PathResult</a> <a class="code hl_function" href="class_t_e_1_1_a_star_pather.html#a121bd20c0dd75083f74a732d190498d1">compute_path</a>(<a class="code hl_struct" href="struct_t_e_1_1_path_request.html">PathRequest</a>&amp; request);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_typedef" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> <a class="code hl_function" href="class_t_e_1_1_a_star_pather.html#af91f36914982e5197e37bdd2bc59ac82">CalHeuristicCost</a>(<a class="code hl_struct" href="struct_t_e_1_1_grid_pos.html">GridPos</a> startNode, <a class="code hl_struct" href="struct_t_e_1_1_grid_pos.html">GridPos</a> goalNode);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_a_star_pather.html#a9cd37ea3a552fce91d01d3babe1cd333">Rubberbanding</a>(<a class="code hl_typedef" href="namespace_t_e.html#adc4d952fb2f2e6aaef6f4f889d37831f">WaypointList</a>&amp; path);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_a_star_pather.html#a4d60ae40f1268c7f7302c06c7d07115c">Smoothing</a>(<a class="code hl_typedef" href="namespace_t_e.html#adc4d952fb2f2e6aaef6f4f889d37831f">WaypointList</a>&amp; path);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_a_star_pather.html#a5f578c4120aa7482007ccb4ff8337de4">RubberbandSmooth</a>(<a class="code hl_typedef" href="namespace_t_e.html#adc4d952fb2f2e6aaef6f4f889d37831f">WaypointList</a>&amp; path);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_t_e_1_1_a_star_pather.html#a3d9f7fc871c3a5c3979bed500cc7ffe9">   61</a></span>        std::priority_queue&lt;Node, std::vector&lt;Node&gt;, std::greater&lt;Node&gt;&gt; <a class="code hl_variable" href="class_t_e_1_1_a_star_pather.html#a3d9f7fc871c3a5c3979bed500cc7ffe9">openList</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="comment">//TEMP, Need to be replaced by actual generated map</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_t_e_1_1_a_star_pather.html#a7d9b2f29dec32d6f7280364464524dd8">   64</a></span>        std::array&lt;std::array&lt;Node, 40&gt;, 40&gt; <a class="code hl_variable" href="class_t_e_1_1_a_star_pather.html#a7d9b2f29dec32d6f7280364464524dd8">map</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_t_e_1_1_a_star_pather.html#ac90afbcd70580daba233a244c78602f6">   65</a></span>        std::array&lt;std::array&lt;std::vector&lt;Node*&gt;, 40&gt;, 40&gt; <a class="code hl_variable" href="class_t_e_1_1_a_star_pather.html#ac90afbcd70580daba233a244c78602f6">neighborMap</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    };</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="ttc" id="a_a_i_helper_8h_html"><div class="ttname"><a href="_a_i_helper_8h.html">AIHelper.h</a></div><div class="ttdoc">AI Helper Types for AI system   All content (c) 2023 DigiPen Institute of Technology Singapore....</div></div>
+<div class="ttc" id="a_defines_8h_html"><div class="ttname"><a href="_defines_8h.html">Defines.h</a></div><div class="ttdoc">Defines some common math constants and typedefs   All content (c) 2022 DigiPen Institute of Technolog...</div></div>
+<div class="ttc" id="a_defines_8h_html_acd4c1ca77ef20a04bd21f334e37bc639"><div class="ttname"><a href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a></div><div class="ttdeci">float TEfloat</div><div class="ttdef"><b>Definition:</b> Defines.h:93</div></div>
+<div class="ttc" id="a_r_t_t_r___registration_8h_html_af47838688c48ee8921c10d0ab3065713"><div class="ttname"><a href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a></div><div class="ttdeci">&amp;TE::Camera::SetCameraForwardVector &amp;TE::Camera::SetCameraFocusDepth &amp;TE::Camera::SetCameraWidth &amp;TE::Camera::SetWidthFOVDegree true</div><div class="ttdef"><b>Definition:</b> RTTR_Registration.h:179</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_1_1_priority_queue_html"><div class="ttname"><a href="class_t_e_1_1_a_star_pather_1_1_priority_queue.html">TE::AStarPather::PriorityQueue</a></div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:42</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_1_1_priority_queue_html_a3055f65690fd198afc0494b42a24e86a"><div class="ttname"><a href="class_t_e_1_1_a_star_pather_1_1_priority_queue.html#a3055f65690fd198afc0494b42a24e86a">TE::AStarPather::PriorityQueue::PriorityQueue</a></div><div class="ttdeci">PriorityQueue(size_t reserve_size)</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:44</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html">TE::AStarPather</a></div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:21</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_a121bd20c0dd75083f74a732d190498d1"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#a121bd20c0dd75083f74a732d190498d1">TE::AStarPather::compute_path</a></div><div class="ttdeci">PathResult compute_path(PathRequest &amp;request)</div><div class="ttdoc">Compurtes the path and returns the result of pathfind.</div><div class="ttdef"><b>Definition:</b> ASPathfinding.cpp:153</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_a19f3fc4c2782332b6b6868fcd208b05b"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#a19f3fc4c2782332b6b6868fcd208b05b">TE::AStarPather::MapChange</a></div><div class="ttdeci">void MapChange()</div><div class="ttdef"><b>Definition:</b> ASPathfinding.cpp:51</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_a1a50bb8f252b9ed936ce0949f6f97e7a"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#a1a50bb8f252b9ed936ce0949f6f97e7a">TE::AStarPather::ClearNodes</a></div><div class="ttdeci">void ClearNodes()</div><div class="ttdoc">Clears the nodes.</div><div class="ttdef"><b>Definition:</b> ASPathfinding.cpp:38</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_a3d9f7fc871c3a5c3979bed500cc7ffe9"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#a3d9f7fc871c3a5c3979bed500cc7ffe9">TE::AStarPather::openList</a></div><div class="ttdeci">std::priority_queue&lt; Node, std::vector&lt; Node &gt;, std::greater&lt; Node &gt; &gt; openList</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:61</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_a4d60ae40f1268c7f7302c06c7d07115c"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#a4d60ae40f1268c7f7302c06c7d07115c">TE::AStarPather::Smoothing</a></div><div class="ttdeci">void Smoothing(WaypointList &amp;path)</div><div class="ttdoc">smooths out the path by increasing nodes to give a smooth pathing</div><div class="ttdef"><b>Definition:</b> ASPathfinding.cpp:286</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_a4de76cb6bc24fae5616c404bcedd0038"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#a4de76cb6bc24fae5616c404bcedd0038">TE::AStarPather::List</a></div><div class="ttdeci">List</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:24</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_a4de76cb6bc24fae5616c404bcedd0038a43381ecba06caed56bf25a44d70e231f"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#a4de76cb6bc24fae5616c404bcedd0038a43381ecba06caed56bf25a44d70e231f">TE::AStarPather::CLOSELIST</a></div><div class="ttdeci">@ CLOSELIST</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:24</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_a4de76cb6bc24fae5616c404bcedd0038a4a98858ff9efead00ff5b8ad43359fd6"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#a4de76cb6bc24fae5616c404bcedd0038a4a98858ff9efead00ff5b8ad43359fd6">TE::AStarPather::NOTONLIST</a></div><div class="ttdeci">@ NOTONLIST</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:24</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_a4de76cb6bc24fae5616c404bcedd0038acf92dc9fd062a2e37282bd229d3c1145"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#a4de76cb6bc24fae5616c404bcedd0038acf92dc9fd062a2e37282bd229d3c1145">TE::AStarPather::OPENLIST</a></div><div class="ttdeci">@ OPENLIST</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:24</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_a5211b17f2115a260aae4c9321007dc78"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#a5211b17f2115a260aae4c9321007dc78">TE::AStarPather::ClearMap</a></div><div class="ttdeci">void ClearMap()</div><div class="ttdoc">Clears the map.</div><div class="ttdef"><b>Definition:</b> ASPathfinding.cpp:28</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_a5f578c4120aa7482007ccb4ff8337de4"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#a5f578c4120aa7482007ccb4ff8337de4">TE::AStarPather::RubberbandSmooth</a></div><div class="ttdeci">void RubberbandSmooth(WaypointList &amp;path)</div><div class="ttdoc">smooths out the pathfinding route</div><div class="ttdef"><b>Definition:</b> ASPathfinding.cpp:340</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_a7d9b2f29dec32d6f7280364464524dd8"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#a7d9b2f29dec32d6f7280364464524dd8">TE::AStarPather::map</a></div><div class="ttdeci">std::array&lt; std::array&lt; Node, 40 &gt;, 40 &gt; map</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:64</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_a9cd37ea3a552fce91d01d3babe1cd333"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#a9cd37ea3a552fce91d01d3babe1cd333">TE::AStarPather::Rubberbanding</a></div><div class="ttdeci">void Rubberbanding(WaypointList &amp;path)</div><div class="ttdoc">Rubberbands the path to remove redundant nodes in path.</div><div class="ttdef"><b>Definition:</b> ASPathfinding.cpp:235</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_ac90afbcd70580daba233a244c78602f6"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#ac90afbcd70580daba233a244c78602f6">TE::AStarPather::neighborMap</a></div><div class="ttdeci">std::array&lt; std::array&lt; std::vector&lt; Node * &gt;, 40 &gt;, 40 &gt; neighborMap</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:65</div></div>
+<div class="ttc" id="aclass_t_e_1_1_a_star_pather_html_af91f36914982e5197e37bdd2bc59ac82"><div class="ttname"><a href="class_t_e_1_1_a_star_pather.html#af91f36914982e5197e37bdd2bc59ac82">TE::AStarPather::CalHeuristicCost</a></div><div class="ttdeci">TEfloat CalHeuristicCost(GridPos startNode, GridPos goalNode)</div><div class="ttdoc">Calculates the hueristic cost from the start pos to the goal pos.</div><div class="ttdef"><b>Definition:</b> ASPathfinding.cpp:224</div></div>
+<div class="ttc" id="anamespace_t_e_html"><div class="ttname"><a href="namespace_t_e.html">TE</a></div><div class="ttdoc">Declarations for the ECSManager class, EntityRef class, IComponent and ISystem classes   All content ...</div><div class="ttdef"><b>Definition:</b> EditorFrame.h:40</div></div>
+<div class="ttc" id="anamespace_t_e_html_ac5c5083c24166188203ba9bc090067ea"><div class="ttname"><a href="namespace_t_e.html#ac5c5083c24166188203ba9bc090067ea">TE::PathResult</a></div><div class="ttdeci">PathResult</div><div class="ttdef"><b>Definition:</b> AIHelper.h:46</div></div>
+<div class="ttc" id="anamespace_t_e_html_adc4d952fb2f2e6aaef6f4f889d37831f"><div class="ttname"><a href="namespace_t_e.html#adc4d952fb2f2e6aaef6f4f889d37831f">TE::WaypointList</a></div><div class="ttdeci">std::list&lt; glm::vec3 &gt; WaypointList</div><div class="ttdef"><b>Definition:</b> AIHelper.h:21</div></div>
+<div class="ttc" id="apch__engine_8h_html_ad3ee3199fb189e1047207f7a4d781868"><div class="ttname"><a href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div><div class="ttdeci">#define TE_SUPRESS_START</div><div class="ttdef"><b>Definition:</b> pch_engine.h:58</div></div>
+<div class="ttc" id="apch__engine_8h_html_afa88535cb07959a98893cd5653ca39c3"><div class="ttname"><a href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div><div class="ttdeci">#define TE_SUPRESS_END</div><div class="ttdef"><b>Definition:</b> pch_engine.h:71</div></div>
+<div class="ttc" id="astruct_t_e_1_1_a_star_pather_1_1_node_html"><div class="ttname"><a href="struct_t_e_1_1_a_star_pather_1_1_node.html">TE::AStarPather::Node</a></div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:26</div></div>
+<div class="ttc" id="astruct_t_e_1_1_a_star_pather_1_1_node_html_a32249760889a083700bbf685410d250a"><div class="ttname"><a href="struct_t_e_1_1_a_star_pather_1_1_node.html#a32249760889a083700bbf685410d250a">TE::AStarPather::Node::givenCost</a></div><div class="ttdeci">float givenCost</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:30</div></div>
+<div class="ttc" id="astruct_t_e_1_1_a_star_pather_1_1_node_html_a378c8ea4a166ddf0a0bd1f27b3060d80"><div class="ttname"><a href="struct_t_e_1_1_a_star_pather_1_1_node.html#a378c8ea4a166ddf0a0bd1f27b3060d80">TE::AStarPather::Node::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Node &amp;other) const</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:36</div></div>
+<div class="ttc" id="astruct_t_e_1_1_a_star_pather_1_1_node_html_a598515a6981be26adaff1aff622fac48"><div class="ttname"><a href="struct_t_e_1_1_a_star_pather_1_1_node.html#a598515a6981be26adaff1aff622fac48">TE::AStarPather::Node::onlist</a></div><div class="ttdeci">List onlist</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:31</div></div>
+<div class="ttc" id="astruct_t_e_1_1_a_star_pather_1_1_node_html_a9eb2e955071ab22cda40d3eb5340effa"><div class="ttname"><a href="struct_t_e_1_1_a_star_pather_1_1_node.html#a9eb2e955071ab22cda40d3eb5340effa">TE::AStarPather::Node::gridPos</a></div><div class="ttdeci">GridPos gridPos</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:27</div></div>
+<div class="ttc" id="astruct_t_e_1_1_a_star_pather_1_1_node_html_abfda45a0dfe5f2e0df0422ec0496ebf8"><div class="ttname"><a href="struct_t_e_1_1_a_star_pather_1_1_node.html#abfda45a0dfe5f2e0df0422ec0496ebf8">TE::AStarPather::Node::parent</a></div><div class="ttdeci">Node * parent</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:28</div></div>
+<div class="ttc" id="astruct_t_e_1_1_a_star_pather_1_1_node_html_ac64998e12d98bab48326e73dfb318747"><div class="ttname"><a href="struct_t_e_1_1_a_star_pather_1_1_node.html#ac64998e12d98bab48326e73dfb318747">TE::AStarPather::Node::finalCost</a></div><div class="ttdeci">float finalCost</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:29</div></div>
+<div class="ttc" id="astruct_t_e_1_1_a_star_pather_1_1_node_html_ae7bd3f220a9e662f85109add190b754c"><div class="ttname"><a href="struct_t_e_1_1_a_star_pather_1_1_node.html#ae7bd3f220a9e662f85109add190b754c">TE::AStarPather::Node::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const Node &amp;other) const</div><div class="ttdef"><b>Definition:</b> ASPathfinding.h:33</div></div>
+<div class="ttc" id="astruct_t_e_1_1_grid_pos_html"><div class="ttname"><a href="struct_t_e_1_1_grid_pos.html">TE::GridPos</a></div><div class="ttdef"><b>Definition:</b> AIHelper.h:53</div></div>
+<div class="ttc" id="astruct_t_e_1_1_path_request_html"><div class="ttname"><a href="struct_t_e_1_1_path_request.html">TE::PathRequest</a></div><div class="ttdef"><b>Definition:</b> AIHelper.h:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ff9d562b39932b7b74f54b9fb4bb00a0.html">ProjectSolution</a></li><li class="navelem"><a class="el" href="dir_0e3d5f2d56e31468daefe438e212cfbc.html">Proj_Engine</a></li><li class="navelem"><a class="el" href="dir_0d2c0b45ba4d42e3f37ae38d7482e159.html">Source</a></li><li class="navelem"><a class="el" href="dir_60239975f0c7740040ee5fdc3fcb75bf.html">AI</a></li><li class="navelem"><a class="el" href="_a_s_pathfinding_8h.html">ASPathfinding.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

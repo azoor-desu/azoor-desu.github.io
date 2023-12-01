@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: Editor_Viewport.cpp File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_editor___viewport_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Editor_Viewport.cpp File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Contains functions for the viewport in the editor Shows all gameobjects that is to be present in the scene allows for mouse picking, selecting and transformation using guizmo helper <br  />
+ All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="pch__editor_8h_source.html">pch_editor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_editor_helper_8h_source.html">EditorHelper.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_editor___viewport_8h_source.html">Editor_Viewport.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_editor___console_logger_8h_source.html">Editor_ConsoleLogger.h</a>&quot;</code><br />
+<code>#include &lt;glm/gtc/type_ptr.hpp&gt;</code><br />
+<code>#include &lt;glm/gtx/string_cast.hpp&gt;</code><br />
+<code>#include &quot;ImGuizmo.h&quot;</code><br />
+<code>#include &quot;Engine.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_manager_8h_source.html">Core/ECSManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_manager_8h_source.html">Core/SceneManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_camera_component_8h_source.html">ECSComponents/CameraComponent.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespace_editor"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html">Editor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a7363b05ce64b1b43ce766eb9949cace5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a7363b05ce64b1b43ce766eb9949cace5">Editor::ViewportGizmo</a> (const ImVec2 winPos, ImVec2 sceneWindowSize, ComponentRef&lt; Transform &gt; cameraTrans, ComponentRef&lt; Camera &gt; cameraComp)</td></tr>
+<tr class="memdesc:a7363b05ce64b1b43ce766eb9949cace5"><td class="mdescLeft">&#160;</td><td class="mdescRight">*inline void GetRotation(float&amp; Yaw, float&amp; Pitch, float&amp; Roll) const  <br /></td></tr>
+<tr class="separator:a7363b05ce64b1b43ce766eb9949cace5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a88c03db1d24bcaa26a618019f81f1678"><td class="memItemLeft" align="right" valign="top">ImVec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a88c03db1d24bcaa26a618019f81f1678">Editor::prevMouseDragDelta</a></td></tr>
+<tr class="separator:a88c03db1d24bcaa26a618019f81f1678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ecb79aca61b6076a263a0a5143e2885"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a5ecb79aca61b6076a263a0a5143e2885">Editor::_translate</a> = false</td></tr>
+<tr class="separator:a5ecb79aca61b6076a263a0a5143e2885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a94bde11a49cfe1c65af5a934f8bba4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a1a94bde11a49cfe1c65af5a934f8bba4">Editor::_rotate</a> = false</td></tr>
+<tr class="separator:a1a94bde11a49cfe1c65af5a934f8bba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad16a6c374ab1668ca1008daa7752a2f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#ad16a6c374ab1668ca1008daa7752a2f0">Editor::_scale</a> = false</td></tr>
+<tr class="separator:ad16a6c374ab1668ca1008daa7752a2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5125fc8277358fc0c8e935864125b0"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a1e5125fc8277358fc0c8e935864125b0">Editor::EDITOR_MOVE_SPEED</a> = 10.f</td></tr>
+<tr class="separator:a1e5125fc8277358fc0c8e935864125b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62bbabf8b48fdf0cf82cacc6c1ca308e"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a62bbabf8b48fdf0cf82cacc6c1ca308e">Editor::EDITOR_ZOOM_AMOUNT</a> = 1.f</td></tr>
+<tr class="separator:a62bbabf8b48fdf0cf82cacc6c1ca308e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec62c6d69e11b8f1d67ded4bd0932af"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#aeec62c6d69e11b8f1d67ded4bd0932af">Editor::items</a> [] = { &quot;Default&quot;, &quot;Focused&quot;, &quot;Game view&quot;, &quot;Fullscreen&quot; }</td></tr>
+<tr class="separator:aeec62c6d69e11b8f1d67ded4bd0932af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c4338b1e5aa0e1901d9dd5bb864b3c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#af2c4338b1e5aa0e1901d9dd5bb864b3c">Editor::item_current</a> = 0</td></tr>
+<tr class="separator:af2c4338b1e5aa0e1901d9dd5bb864b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains functions for the viewport in the editor Shows all gameobjects that is to be present in the scene allows for mouse picking, selecting and transformation using guizmo helper <br  />
+ All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved. </p>
+<pre>
+</pre><pre>  <b>File:</b>        <a class="el" href="_editor___viewport_8h.html" title="Contains functions for the viewport in the editor Shows all gameobjects that is to be present in the ...">Editor_Viewport.h</a></pre><pre>
+
+</pre><pre>  <b>Authors:</b>     Noah Alastair Ng    (100%)</pre><pre>
+
+</pre><pre>  <b>Emails:</b>      <a href="mailto:noahalastair.ng@digipen.edu">noahalastair.ng@digipen.edu</a></pre><pre>
+
+</pre><pre>  <b>Date:</b>        12/09/2023</pre><pre>
+</pre> </div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ff9d562b39932b7b74f54b9fb4bb00a0.html">ProjectSolution</a></li><li class="navelem"><a class="el" href="dir_49c17524d428d5cc12669521da6ef3e9.html">Proj_Editor</a></li><li class="navelem"><a class="el" href="dir_c84b3d9b8ebc94b96888f1918258ee9b.html">Source</a></li><li class="navelem"><a class="el" href="_editor___viewport_8cpp.html">Editor_Viewport.cpp</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

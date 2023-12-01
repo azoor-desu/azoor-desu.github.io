@@ -1,0 +1,1725 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: Binding Namespace Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('namespace_binding.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Binding Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad273e92877fe29022ee50b79c26c6d31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#ad273e92877fe29022ee50b79c26c6d31">TE_GetCameraTypeGUID</a> ()</td></tr>
+<tr class="separator:ad273e92877fe29022ee50b79c26c6d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fedc4799944ccf47649db92a6f442b3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a9fedc4799944ccf47649db92a6f442b3">TE_GetCameraFOVRadians</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a9fedc4799944ccf47649db92a6f442b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e80443034bae22734cd7d502593759c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a8e80443034bae22734cd7d502593759c">TE_GetCameraFOVDegree</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a8e80443034bae22734cd7d502593759c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfcef7b148e7ff3e72e833e5468b8f93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#acfcef7b148e7ff3e72e833e5468b8f93">TE_SetCameraFocusDepth</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex, float focusDepth)</td></tr>
+<tr class="separator:acfcef7b148e7ff3e72e833e5468b8f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d100f7924fcfd026d9a48c2cd03cc05"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a6d100f7924fcfd026d9a48c2cd03cc05">TE_GetCameraFocusDepth</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a6d100f7924fcfd026d9a48c2cd03cc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a158f36aec94b1514d2df5479dcc6ba1a"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a158f36aec94b1514d2df5479dcc6ba1a">TE_GetCameraForwardMoveVector</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a158f36aec94b1514d2df5479dcc6ba1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b03cecbd49c22134dadbcc53d49a8f9"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a1b03cecbd49c22134dadbcc53d49a8f9">TE_GetCameraUpMoveVector</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a1b03cecbd49c22134dadbcc53d49a8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b99177ae9f2e32c021ac2816c15810"><td class="memItemLeft" align="right" valign="top">glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a45b99177ae9f2e32c021ac2816c15810">TE_GetPerspectiveProjectionMatrix</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a45b99177ae9f2e32c021ac2816c15810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74b0ecc903b0ef63bd710bc55ce081d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#ab74b0ecc903b0ef63bd710bc55ce081d">BindCamera</a> ()</td></tr>
+<tr class="separator:ab74b0ecc903b0ef63bd710bc55ce081d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec132dddd13a316844456eb01f3754f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#aec132dddd13a316844456eb01f3754f9">TE_LogFatal</a> (MonoString *message)</td></tr>
+<tr class="separator:aec132dddd13a316844456eb01f3754f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be9aba42bbf366e92ed7914b8019ae6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a1be9aba42bbf366e92ed7914b8019ae6">TE_LogError</a> (MonoString *message)</td></tr>
+<tr class="separator:a1be9aba42bbf366e92ed7914b8019ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d878fb590c55bb0fb5418ee97ac0d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a57d878fb590c55bb0fb5418ee97ac0d6">TE_LogWarn</a> (MonoString *message)</td></tr>
+<tr class="separator:a57d878fb590c55bb0fb5418ee97ac0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf5d59400432be034e94682d83b34b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#acbf5d59400432be034e94682d83b34b5">TE_LogDebug</a> (MonoString *message)</td></tr>
+<tr class="separator:acbf5d59400432be034e94682d83b34b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4e20c0ff654f5405201d106629f32d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#afb4e20c0ff654f5405201d106629f32d">TE_LogInfo</a> (MonoString *message)</td></tr>
+<tr class="separator:afb4e20c0ff654f5405201d106629f32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0549f6f0b2726841670db13f6d0ab9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#ac0549f6f0b2726841670db13f6d0ab9b">TE_LogTrace</a> (MonoString *message)</td></tr>
+<tr class="separator:ac0549f6f0b2726841670db13f6d0ab9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9074e919ba1ca9b066c0dbd92891139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#af9074e919ba1ca9b066c0dbd92891139">TE_Assert</a> (bool assertCondition, MonoString *message)</td></tr>
+<tr class="separator:af9074e919ba1ca9b066c0dbd92891139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d56241fd6b00096029e2bbb8e154f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a85d56241fd6b00096029e2bbb8e154f1">BindDebug</a> ()</td></tr>
+<tr class="separator:a85d56241fd6b00096029e2bbb8e154f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f389676d5aabf156b2e7cdae19acbc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a5f389676d5aabf156b2e7cdae19acbc7">TE_CompGetIsActive</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeguid, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a5f389676d5aabf156b2e7cdae19acbc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa762a31e2edc5507e2543cfcb4ad756e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#aa762a31e2edc5507e2543cfcb4ad756e">TE_CompGetIsActiveInternal</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeguid, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:aa762a31e2edc5507e2543cfcb4ad756e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d48b219d64e949a3547d36930ade0b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a8d48b219d64e949a3547d36930ade0b8">TE_CompSetIsActiveInternal</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeguid, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex, bool isactive)</td></tr>
+<tr class="separator:a8d48b219d64e949a3547d36930ade0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cf4a9265a56888fc05d0eff3a1ecb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#af5cf4a9265a56888fc05d0eff3a1ecb3">TE_CompIsNull</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeguid, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:af5cf4a9265a56888fc05d0eff3a1ecb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad99c835e835a02bb75c9f75ec6506848"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#ad99c835e835a02bb75c9f75ec6506848">TE_CompGetGUID</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeguid, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:ad99c835e835a02bb75c9f75ec6506848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad444f5897fa77d4e0875be1a702b81b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#ad444f5897fa77d4e0875be1a702b81b9">TE_FindEntity</a> (MonoString *name)</td></tr>
+<tr class="separator:ad444f5897fa77d4e0875be1a702b81b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1996aa5cae96484a640aa46ae4e33a9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a1996aa5cae96484a640aa46ae4e33a9a">TE_FindEntityGUID</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> guid)</td></tr>
+<tr class="separator:a1996aa5cae96484a640aa46ae4e33a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95900bb64c92e0d4df23a81ba4608d9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a95900bb64c92e0d4df23a81ba4608d9e">TE_EntityGetTypeGUID</a> ()</td></tr>
+<tr class="separator:a95900bb64c92e0d4df23a81ba4608d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7c0e8d0fab21077b7b33c4c7db8368"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#acb7c0e8d0fab21077b7b33c4c7db8368">TE_EntityGetIsActive</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:acb7c0e8d0fab21077b7b33c4c7db8368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0766f0a27314e57ba15e8cc12e0f188b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a0766f0a27314e57ba15e8cc12e0f188b">TE_EntityGetIsActiveInternal</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a0766f0a27314e57ba15e8cc12e0f188b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01079d2dee90b75a7b819ca8ade00dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#aa01079d2dee90b75a7b819ca8ade00dd">TE_EntitySetIsActiveInternal</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex, bool isactive)</td></tr>
+<tr class="separator:aa01079d2dee90b75a7b819ca8ade00dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a129b21ad5cfb5954d788c3fdc20721d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a129b21ad5cfb5954d788c3fdc20721d4">TE_EntityIsNull</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a129b21ad5cfb5954d788c3fdc20721d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cde596b4dd05f3bd84f4f0ef857fb2d"><td class="memItemLeft" align="right" valign="top">MonoString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a1cde596b4dd05f3bd84f4f0ef857fb2d">TE_EntityGetName</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a1cde596b4dd05f3bd84f4f0ef857fb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6e9c4fa6a55c307a85cfa9b3f6dd4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#aea6e9c4fa6a55c307a85cfa9b3f6dd4c">TE_EntitySetName</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex, MonoString *name)</td></tr>
+<tr class="separator:aea6e9c4fa6a55c307a85cfa9b3f6dd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014c4e35176967a965294b71176e3d70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a014c4e35176967a965294b71176e3d70">TE_AddComponent</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeguid, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a014c4e35176967a965294b71176e3d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad317e55f0b1f95724ac92b39472dfb28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#ad317e55f0b1f95724ac92b39472dfb28">TE_CheckComponentExists</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeguid, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:ad317e55f0b1f95724ac92b39472dfb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83fbf1195947378cbdb3216cd5bd0d26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a83fbf1195947378cbdb3216cd5bd0d26">TE_RemoveComponent</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeguid, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a83fbf1195947378cbdb3216cd5bd0d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9422d7bfa1a129a97e49b4d47f4e6fab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a9422d7bfa1a129a97e49b4d47f4e6fab">TE_AddScript</a> (<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> monoClassType, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a9422d7bfa1a129a97e49b4d47f4e6fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa19c29a94fa5fb0e5ed97a2a29a2aa"><td class="memItemLeft" align="right" valign="top">MonoObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a5aa19c29a94fa5fb0e5ed97a2a29a2aa">TE_GetScript</a> (<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> monoClassType, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a5aa19c29a94fa5fb0e5ed97a2a29a2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14364e162d0b3adaaecec70417d77f00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a14364e162d0b3adaaecec70417d77f00">TE_CheckScriptExists</a> (<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> monoClassType, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a14364e162d0b3adaaecec70417d77f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae259023a3e871598072ad1b702455bb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#ae259023a3e871598072ad1b702455bb1">TE_RemoveScript</a> (<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> monoClassType, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:ae259023a3e871598072ad1b702455bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71d25a0667d11a97958cf119f949057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#ab71d25a0667d11a97958cf119f949057">BindECS</a> ()</td></tr>
+<tr class="separator:ab71d25a0667d11a97958cf119f949057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cf319467c046a6cb20694c381d7c29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a64cf319467c046a6cb20694c381d7c29">TE_ExitEngine</a> ()</td></tr>
+<tr class="separator:a64cf319467c046a6cb20694c381d7c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff1cbb12c2a50ae173794b1428e64d5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a0ff1cbb12c2a50ae173794b1428e64d5">TE_GetFPS</a> ()</td></tr>
+<tr class="separator:a0ff1cbb12c2a50ae173794b1428e64d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0e21952e1c0ff394265efde9c0e73e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a0c0e21952e1c0ff394265efde9c0e73e">TE_GetDT</a> ()</td></tr>
+<tr class="separator:a0c0e21952e1c0ff394265efde9c0e73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198d728e9fa75e23771d7993e8acb429"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a198d728e9fa75e23771d7993e8acb429">TE_GetFixedDT</a> ()</td></tr>
+<tr class="separator:a198d728e9fa75e23771d7993e8acb429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb1f6eb0ae643bfd654ce95a8a1b241"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#aacb1f6eb0ae643bfd654ce95a8a1b241">TE_GetSimDT</a> ()</td></tr>
+<tr class="separator:aacb1f6eb0ae643bfd654ce95a8a1b241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec942faf8c271c6a85a2b0c476ad7c9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#adec942faf8c271c6a85a2b0c476ad7c9">TE_GetTimeElapsed</a> ()</td></tr>
+<tr class="separator:adec942faf8c271c6a85a2b0c476ad7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316afb298df876a06452bdd4da8c467b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a316afb298df876a06452bdd4da8c467b">TE_GetRealTimeElapsed</a> ()</td></tr>
+<tr class="separator:a316afb298df876a06452bdd4da8c467b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0f9cc68705559dd3995de3b55be01c5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#ae0f9cc68705559dd3995de3b55be01c5">TE_GetTimeScale</a> ()</td></tr>
+<tr class="separator:ae0f9cc68705559dd3995de3b55be01c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2774608c98de071afe6e0c59a2b8dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a0c2774608c98de071afe6e0c59a2b8dd">TE_SetTimeScale</a> (float timeScale)</td></tr>
+<tr class="separator:a0c2774608c98de071afe6e0c59a2b8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca4ec91f9e62e3c8b3366919dd1d915"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a3ca4ec91f9e62e3c8b3366919dd1d915">BindEngine</a> ()</td></tr>
+<tr class="separator:a3ca4ec91f9e62e3c8b3366919dd1d915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a393d36b8d206bbfb5262da0d7e2fa6"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a9a393d36b8d206bbfb5262da0d7e2fa6">TE_HashStr1</a> (MonoString *str)</td></tr>
+<tr class="separator:a9a393d36b8d206bbfb5262da0d7e2fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196b38cd9ff2c930bfc7976a5fbabddd"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a196b38cd9ff2c930bfc7976a5fbabddd">TE_HashStr2</a> (MonoString *str1, MonoString *str2)</td></tr>
+<tr class="separator:a196b38cd9ff2c930bfc7976a5fbabddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e7994be4b89dedbdb68564b7e87b2ed"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a2e7994be4b89dedbdb68564b7e87b2ed">TE_HashStr3</a> (MonoString *str1, MonoString *str2, MonoString *str3)</td></tr>
+<tr class="separator:a2e7994be4b89dedbdb68564b7e87b2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcc04649b077ddac2b49194c7f949c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#afbcc04649b077ddac2b49194c7f949c8">BindHelper</a> ()</td></tr>
+<tr class="separator:afbcc04649b077ddac2b49194c7f949c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538f1b49db2212468df35a0b907618ea"><td class="memTemplParams" colspan="2">template&lt;glm::length_t DataCount, typename DataType  = float, glm::qualifier GLMQualifier = glm::qualifier::packed_highp&gt; </td></tr>
+<tr class="memitem:a538f1b49db2212468df35a0b907618ea"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a538f1b49db2212468df35a0b907618ea">BindVectorFuncs</a> ()</td></tr>
+<tr class="separator:a538f1b49db2212468df35a0b907618ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b9125bca6dd89ae60d541d1aec9a3c"><td class="memTemplParams" colspan="2">template&lt;typename DataType  = float, glm::qualifier GLMQualifier = glm::qualifier::packed_highp&gt; </td></tr>
+<tr class="memitem:a93b9125bca6dd89ae60d541d1aec9a3c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a93b9125bca6dd89ae60d541d1aec9a3c">BindMatrixFuncs</a> ()</td></tr>
+<tr class="separator:a93b9125bca6dd89ae60d541d1aec9a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeafca1939918febe89c4b5c4ba08870f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#aeafca1939918febe89c4b5c4ba08870f">TE_MonoScriptGetTypeGUID</a> ()</td></tr>
+<tr class="separator:aeafca1939918febe89c4b5c4ba08870f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8587807ed4c53d0e5fe1185b2a3b34ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a8587807ed4c53d0e5fe1185b2a3b34ca">TE_MonoScriptGetGUID</a> (<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> classType, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a8587807ed4c53d0e5fe1185b2a3b34ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b492b3b43500ea45b34fd7bafdf1828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a7b492b3b43500ea45b34fd7bafdf1828">BindMonoScript</a> ()</td></tr>
+<tr class="separator:a7b492b3b43500ea45b34fd7bafdf1828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9029c93a444282db7cd52d4a33180015"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
+<tr class="memitem:a9029c93a444282db7cd52d4a33180015"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a9029c93a444282db7cd52d4a33180015">BindRNG</a> ()</td></tr>
+<tr class="separator:a9029c93a444282db7cd52d4a33180015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90d9c10ff7f83735ba0c4122a129707"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#af90d9c10ff7f83735ba0c4122a129707">TE_LoadSceneName</a> (MonoString *sceneName)</td></tr>
+<tr class="separator:af90d9c10ff7f83735ba0c4122a129707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d97df3b3adc856c83b6da3f2c930295"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a2d97df3b3adc856c83b6da3f2c930295">TE_LoadSceneGUID</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> sceneGUID)</td></tr>
+<tr class="separator:a2d97df3b3adc856c83b6da3f2c930295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66ae5cdc85b90a55c817c9d5a0a51da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#aa66ae5cdc85b90a55c817c9d5a0a51da">BindScene</a> ()</td></tr>
+<tr class="separator:aa66ae5cdc85b90a55c817c9d5a0a51da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef84f2c8280a4ef30701192e4c8e9929"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#aef84f2c8280a4ef30701192e4c8e9929">TE_TransformGetTypeGUID</a> ()</td></tr>
+<tr class="separator:aef84f2c8280a4ef30701192e4c8e9929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a753a47ec3ea934655eb845a259221c"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a0a753a47ec3ea934655eb845a259221c">TE_TsfmGetPos</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:a0a753a47ec3ea934655eb845a259221c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe99a6f2fb879634796c4faebea21edd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#abe99a6f2fb879634796c4faebea21edd">TE_TsfmSetPos</a> (glm::vec3 pos, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> ecsIndex)</td></tr>
+<tr class="separator:abe99a6f2fb879634796c4faebea21edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819647cc05e3138d0d982d7c00a7c494"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a819647cc05e3138d0d982d7c00a7c494">BindTransform</a> ()</td></tr>
+<tr class="separator:a819647cc05e3138d0d982d7c00a7c494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a631891eca48a38f1f79f5a1109c6a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#a9a631891eca48a38f1f79f5a1109c6a4">ScriptBindFunctions</a> ()</td></tr>
+<tr class="separator:a9a631891eca48a38f1f79f5a1109c6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aaa36147ee2c09e3d5ff826ae6f2f863e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_engine.html">Engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#aaa36147ee2c09e3d5ff826ae6f2f863e">engine</a></td></tr>
+<tr class="separator:aaa36147ee2c09e3d5ff826ae6f2f863e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a00037616752c05b71ac7f06946875"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_scene_manager.html">SceneManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_binding.html#ac8a00037616752c05b71ac7f06946875">sceneManager</a></td></tr>
+<tr class="separator:ac8a00037616752c05b71ac7f06946875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ad273e92877fe29022ee50b79c26c6d31" name="ad273e92877fe29022ee50b79c26c6d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad273e92877fe29022ee50b79c26c6d31">&#9670;&#160;</a></span>TE_GetCameraTypeGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> Binding::TE_GetCameraTypeGUID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fedc4799944ccf47649db92a6f442b3" name="a9fedc4799944ccf47649db92a6f442b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fedc4799944ccf47649db92a6f442b3">&#9670;&#160;</a></span>TE_GetCameraFOVRadians()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Binding::TE_GetCameraFOVRadians </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e80443034bae22734cd7d502593759c" name="a8e80443034bae22734cd7d502593759c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e80443034bae22734cd7d502593759c">&#9670;&#160;</a></span>TE_GetCameraFOVDegree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Binding::TE_GetCameraFOVDegree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfcef7b148e7ff3e72e833e5468b8f93" name="acfcef7b148e7ff3e72e833e5468b8f93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfcef7b148e7ff3e72e833e5468b8f93">&#9670;&#160;</a></span>TE_SetCameraFocusDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_SetCameraFocusDepth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>focusDepth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d100f7924fcfd026d9a48c2cd03cc05" name="a6d100f7924fcfd026d9a48c2cd03cc05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d100f7924fcfd026d9a48c2cd03cc05">&#9670;&#160;</a></span>TE_GetCameraFocusDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Binding::TE_GetCameraFocusDepth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a158f36aec94b1514d2df5479dcc6ba1a" name="a158f36aec94b1514d2df5479dcc6ba1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a158f36aec94b1514d2df5479dcc6ba1a">&#9670;&#160;</a></span>TE_GetCameraForwardMoveVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::vec3 Binding::TE_GetCameraForwardMoveVector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b03cecbd49c22134dadbcc53d49a8f9" name="a1b03cecbd49c22134dadbcc53d49a8f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b03cecbd49c22134dadbcc53d49a8f9">&#9670;&#160;</a></span>TE_GetCameraUpMoveVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::vec3 Binding::TE_GetCameraUpMoveVector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45b99177ae9f2e32c021ac2816c15810" name="a45b99177ae9f2e32c021ac2816c15810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b99177ae9f2e32c021ac2816c15810">&#9670;&#160;</a></span>TE_GetPerspectiveProjectionMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::mat4 Binding::TE_GetPerspectiveProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab74b0ecc903b0ef63bd710bc55ce081d" name="ab74b0ecc903b0ef63bd710bc55ce081d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74b0ecc903b0ef63bd710bc55ce081d">&#9670;&#160;</a></span>BindCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::BindCamera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec132dddd13a316844456eb01f3754f9" name="aec132dddd13a316844456eb01f3754f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec132dddd13a316844456eb01f3754f9">&#9670;&#160;</a></span>TE_LogFatal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_LogFatal </td>
+          <td>(</td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1be9aba42bbf366e92ed7914b8019ae6" name="a1be9aba42bbf366e92ed7914b8019ae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be9aba42bbf366e92ed7914b8019ae6">&#9670;&#160;</a></span>TE_LogError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_LogError </td>
+          <td>(</td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57d878fb590c55bb0fb5418ee97ac0d6" name="a57d878fb590c55bb0fb5418ee97ac0d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d878fb590c55bb0fb5418ee97ac0d6">&#9670;&#160;</a></span>TE_LogWarn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_LogWarn </td>
+          <td>(</td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbf5d59400432be034e94682d83b34b5" name="acbf5d59400432be034e94682d83b34b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf5d59400432be034e94682d83b34b5">&#9670;&#160;</a></span>TE_LogDebug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_LogDebug </td>
+          <td>(</td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb4e20c0ff654f5405201d106629f32d" name="afb4e20c0ff654f5405201d106629f32d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb4e20c0ff654f5405201d106629f32d">&#9670;&#160;</a></span>TE_LogInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_LogInfo </td>
+          <td>(</td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0549f6f0b2726841670db13f6d0ab9b" name="ac0549f6f0b2726841670db13f6d0ab9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0549f6f0b2726841670db13f6d0ab9b">&#9670;&#160;</a></span>TE_LogTrace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_LogTrace </td>
+          <td>(</td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9074e919ba1ca9b066c0dbd92891139" name="af9074e919ba1ca9b066c0dbd92891139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9074e919ba1ca9b066c0dbd92891139">&#9670;&#160;</a></span>TE_Assert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_Assert </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>assertCondition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85d56241fd6b00096029e2bbb8e154f1" name="a85d56241fd6b00096029e2bbb8e154f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85d56241fd6b00096029e2bbb8e154f1">&#9670;&#160;</a></span>BindDebug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::BindDebug </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f389676d5aabf156b2e7cdae19acbc7" name="a5f389676d5aabf156b2e7cdae19acbc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f389676d5aabf156b2e7cdae19acbc7">&#9670;&#160;</a></span>TE_CompGetIsActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Binding::TE_CompGetIsActive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td>
+          <td class="paramname"><em>typeguid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa762a31e2edc5507e2543cfcb4ad756e" name="aa762a31e2edc5507e2543cfcb4ad756e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa762a31e2edc5507e2543cfcb4ad756e">&#9670;&#160;</a></span>TE_CompGetIsActiveInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Binding::TE_CompGetIsActiveInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td>
+          <td class="paramname"><em>typeguid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d48b219d64e949a3547d36930ade0b8" name="a8d48b219d64e949a3547d36930ade0b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d48b219d64e949a3547d36930ade0b8">&#9670;&#160;</a></span>TE_CompSetIsActiveInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_CompSetIsActiveInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td>
+          <td class="paramname"><em>typeguid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isactive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5cf4a9265a56888fc05d0eff3a1ecb3" name="af5cf4a9265a56888fc05d0eff3a1ecb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5cf4a9265a56888fc05d0eff3a1ecb3">&#9670;&#160;</a></span>TE_CompIsNull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Binding::TE_CompIsNull </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td>
+          <td class="paramname"><em>typeguid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad99c835e835a02bb75c9f75ec6506848" name="ad99c835e835a02bb75c9f75ec6506848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad99c835e835a02bb75c9f75ec6506848">&#9670;&#160;</a></span>TE_CompGetGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> Binding::TE_CompGetGUID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td>
+          <td class="paramname"><em>typeguid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad444f5897fa77d4e0875be1a702b81b9" name="ad444f5897fa77d4e0875be1a702b81b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad444f5897fa77d4e0875be1a702b81b9">&#9670;&#160;</a></span>TE_FindEntity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> Binding::TE_FindEntity </td>
+          <td>(</td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1996aa5cae96484a640aa46ae4e33a9a" name="a1996aa5cae96484a640aa46ae4e33a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1996aa5cae96484a640aa46ae4e33a9a">&#9670;&#160;</a></span>TE_FindEntityGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> Binding::TE_FindEntityGUID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramname"><em>guid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a95900bb64c92e0d4df23a81ba4608d9e" name="a95900bb64c92e0d4df23a81ba4608d9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95900bb64c92e0d4df23a81ba4608d9e">&#9670;&#160;</a></span>TE_EntityGetTypeGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> Binding::TE_EntityGetTypeGUID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb7c0e8d0fab21077b7b33c4c7db8368" name="acb7c0e8d0fab21077b7b33c4c7db8368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb7c0e8d0fab21077b7b33c4c7db8368">&#9670;&#160;</a></span>TE_EntityGetIsActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Binding::TE_EntityGetIsActive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0766f0a27314e57ba15e8cc12e0f188b" name="a0766f0a27314e57ba15e8cc12e0f188b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0766f0a27314e57ba15e8cc12e0f188b">&#9670;&#160;</a></span>TE_EntityGetIsActiveInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Binding::TE_EntityGetIsActiveInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa01079d2dee90b75a7b819ca8ade00dd" name="aa01079d2dee90b75a7b819ca8ade00dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa01079d2dee90b75a7b819ca8ade00dd">&#9670;&#160;</a></span>TE_EntitySetIsActiveInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_EntitySetIsActiveInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isactive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a129b21ad5cfb5954d788c3fdc20721d4" name="a129b21ad5cfb5954d788c3fdc20721d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a129b21ad5cfb5954d788c3fdc20721d4">&#9670;&#160;</a></span>TE_EntityIsNull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_EntityIsNull </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cde596b4dd05f3bd84f4f0ef857fb2d" name="a1cde596b4dd05f3bd84f4f0ef857fb2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cde596b4dd05f3bd84f4f0ef857fb2d">&#9670;&#160;</a></span>TE_EntityGetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MonoString * Binding::TE_EntityGetName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea6e9c4fa6a55c307a85cfa9b3f6dd4c" name="aea6e9c4fa6a55c307a85cfa9b3f6dd4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea6e9c4fa6a55c307a85cfa9b3f6dd4c">&#9670;&#160;</a></span>TE_EntitySetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_EntitySetName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a014c4e35176967a965294b71176e3d70" name="a014c4e35176967a965294b71176e3d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a014c4e35176967a965294b71176e3d70">&#9670;&#160;</a></span>TE_AddComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_AddComponent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td>
+          <td class="paramname"><em>typeguid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad317e55f0b1f95724ac92b39472dfb28" name="ad317e55f0b1f95724ac92b39472dfb28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad317e55f0b1f95724ac92b39472dfb28">&#9670;&#160;</a></span>TE_CheckComponentExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Binding::TE_CheckComponentExists </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td>
+          <td class="paramname"><em>typeguid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83fbf1195947378cbdb3216cd5bd0d26" name="a83fbf1195947378cbdb3216cd5bd0d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83fbf1195947378cbdb3216cd5bd0d26">&#9670;&#160;</a></span>TE_RemoveComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_RemoveComponent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td>
+          <td class="paramname"><em>typeguid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9422d7bfa1a129a97e49b4d47f4e6fab" name="a9422d7bfa1a129a97e49b4d47f4e6fab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9422d7bfa1a129a97e49b4d47f4e6fab">&#9670;&#160;</a></span>TE_AddScript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_AddScript </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>&#160;</td>
+          <td class="paramname"><em>monoClassType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5aa19c29a94fa5fb0e5ed97a2a29a2aa" name="a5aa19c29a94fa5fb0e5ed97a2a29a2aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aa19c29a94fa5fb0e5ed97a2a29a2aa">&#9670;&#160;</a></span>TE_GetScript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MonoObject * Binding::TE_GetScript </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>&#160;</td>
+          <td class="paramname"><em>monoClassType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14364e162d0b3adaaecec70417d77f00" name="a14364e162d0b3adaaecec70417d77f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14364e162d0b3adaaecec70417d77f00">&#9670;&#160;</a></span>TE_CheckScriptExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Binding::TE_CheckScriptExists </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>&#160;</td>
+          <td class="paramname"><em>monoClassType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae259023a3e871598072ad1b702455bb1" name="ae259023a3e871598072ad1b702455bb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae259023a3e871598072ad1b702455bb1">&#9670;&#160;</a></span>TE_RemoveScript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_RemoveScript </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>&#160;</td>
+          <td class="paramname"><em>monoClassType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab71d25a0667d11a97958cf119f949057" name="ab71d25a0667d11a97958cf119f949057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab71d25a0667d11a97958cf119f949057">&#9670;&#160;</a></span>BindECS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::BindECS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64cf319467c046a6cb20694c381d7c29" name="a64cf319467c046a6cb20694c381d7c29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64cf319467c046a6cb20694c381d7c29">&#9670;&#160;</a></span>TE_ExitEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_ExitEngine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ff1cbb12c2a50ae173794b1428e64d5" name="a0ff1cbb12c2a50ae173794b1428e64d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ff1cbb12c2a50ae173794b1428e64d5">&#9670;&#160;</a></span>TE_GetFPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Binding::TE_GetFPS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c0e21952e1c0ff394265efde9c0e73e" name="a0c0e21952e1c0ff394265efde9c0e73e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c0e21952e1c0ff394265efde9c0e73e">&#9670;&#160;</a></span>TE_GetDT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Binding::TE_GetDT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a198d728e9fa75e23771d7993e8acb429" name="a198d728e9fa75e23771d7993e8acb429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198d728e9fa75e23771d7993e8acb429">&#9670;&#160;</a></span>TE_GetFixedDT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Binding::TE_GetFixedDT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacb1f6eb0ae643bfd654ce95a8a1b241" name="aacb1f6eb0ae643bfd654ce95a8a1b241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb1f6eb0ae643bfd654ce95a8a1b241">&#9670;&#160;</a></span>TE_GetSimDT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Binding::TE_GetSimDT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adec942faf8c271c6a85a2b0c476ad7c9" name="adec942faf8c271c6a85a2b0c476ad7c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adec942faf8c271c6a85a2b0c476ad7c9">&#9670;&#160;</a></span>TE_GetTimeElapsed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Binding::TE_GetTimeElapsed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a316afb298df876a06452bdd4da8c467b" name="a316afb298df876a06452bdd4da8c467b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316afb298df876a06452bdd4da8c467b">&#9670;&#160;</a></span>TE_GetRealTimeElapsed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Binding::TE_GetRealTimeElapsed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0f9cc68705559dd3995de3b55be01c5" name="ae0f9cc68705559dd3995de3b55be01c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f9cc68705559dd3995de3b55be01c5">&#9670;&#160;</a></span>TE_GetTimeScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Binding::TE_GetTimeScale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c2774608c98de071afe6e0c59a2b8dd" name="a0c2774608c98de071afe6e0c59a2b8dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c2774608c98de071afe6e0c59a2b8dd">&#9670;&#160;</a></span>TE_SetTimeScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_SetTimeScale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>timeScale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ca4ec91f9e62e3c8b3366919dd1d915" name="a3ca4ec91f9e62e3c8b3366919dd1d915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca4ec91f9e62e3c8b3366919dd1d915">&#9670;&#160;</a></span>BindEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::BindEngine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a393d36b8d206bbfb5262da0d7e2fa6" name="a9a393d36b8d206bbfb5262da0d7e2fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a393d36b8d206bbfb5262da0d7e2fa6">&#9670;&#160;</a></span>TE_HashStr1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Binding::TE_HashStr1 </td>
+          <td>(</td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a196b38cd9ff2c930bfc7976a5fbabddd" name="a196b38cd9ff2c930bfc7976a5fbabddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a196b38cd9ff2c930bfc7976a5fbabddd">&#9670;&#160;</a></span>TE_HashStr2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Binding::TE_HashStr2 </td>
+          <td>(</td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>str1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>str2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e7994be4b89dedbdb68564b7e87b2ed" name="a2e7994be4b89dedbdb68564b7e87b2ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e7994be4b89dedbdb68564b7e87b2ed">&#9670;&#160;</a></span>TE_HashStr3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Binding::TE_HashStr3 </td>
+          <td>(</td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>str1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>str2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>str3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbcc04649b077ddac2b49194c7f949c8" name="afbcc04649b077ddac2b49194c7f949c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbcc04649b077ddac2b49194c7f949c8">&#9670;&#160;</a></span>BindHelper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::BindHelper </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a538f1b49db2212468df35a0b907618ea" name="a538f1b49db2212468df35a0b907618ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538f1b49db2212468df35a0b907618ea">&#9670;&#160;</a></span>BindVectorFuncs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;glm::length_t DataCount, typename DataType  = float, glm::qualifier GLMQualifier = glm::qualifier::packed_highp&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::BindVectorFuncs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generates bindings for Vector functions from the GLM library. Use template parameter types to specify what kind of data type to generate the set of functions for. </p>
+
+</div>
+</div>
+<a id="a93b9125bca6dd89ae60d541d1aec9a3c" name="a93b9125bca6dd89ae60d541d1aec9a3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b9125bca6dd89ae60d541d1aec9a3c">&#9670;&#160;</a></span>BindMatrixFuncs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataType  = float, glm::qualifier GLMQualifier = glm::qualifier::packed_highp&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::BindMatrixFuncs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeafca1939918febe89c4b5c4ba08870f" name="aeafca1939918febe89c4b5c4ba08870f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeafca1939918febe89c4b5c4ba08870f">&#9670;&#160;</a></span>TE_MonoScriptGetTypeGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> Binding::TE_MonoScriptGetTypeGUID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8587807ed4c53d0e5fe1185b2a3b34ca" name="a8587807ed4c53d0e5fe1185b2a3b34ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8587807ed4c53d0e5fe1185b2a3b34ca">&#9670;&#160;</a></span>TE_MonoScriptGetGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> Binding::TE_MonoScriptGetGUID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>&#160;</td>
+          <td class="paramname"><em>classType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b492b3b43500ea45b34fd7bafdf1828" name="a7b492b3b43500ea45b34fd7bafdf1828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b492b3b43500ea45b34fd7bafdf1828">&#9670;&#160;</a></span>BindMonoScript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::BindMonoScript </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9029c93a444282db7cd52d4a33180015" name="a9029c93a444282db7cd52d4a33180015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9029c93a444282db7cd52d4a33180015">&#9670;&#160;</a></span>BindRNG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::BindRNG </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af90d9c10ff7f83735ba0c4122a129707" name="af90d9c10ff7f83735ba0c4122a129707"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af90d9c10ff7f83735ba0c4122a129707">&#9670;&#160;</a></span>TE_LoadSceneName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_LoadSceneName </td>
+          <td>(</td>
+          <td class="paramtype">MonoString *&#160;</td>
+          <td class="paramname"><em>sceneName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d97df3b3adc856c83b6da3f2c930295" name="a2d97df3b3adc856c83b6da3f2c930295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d97df3b3adc856c83b6da3f2c930295">&#9670;&#160;</a></span>TE_LoadSceneGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_LoadSceneGUID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramname"><em>sceneGUID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa66ae5cdc85b90a55c817c9d5a0a51da" name="aa66ae5cdc85b90a55c817c9d5a0a51da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa66ae5cdc85b90a55c817c9d5a0a51da">&#9670;&#160;</a></span>BindScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::BindScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef84f2c8280a4ef30701192e4c8e9929" name="aef84f2c8280a4ef30701192e4c8e9929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef84f2c8280a4ef30701192e4c8e9929">&#9670;&#160;</a></span>TE_TransformGetTypeGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> Binding::TE_TransformGetTypeGUID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a753a47ec3ea934655eb845a259221c" name="a0a753a47ec3ea934655eb845a259221c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a753a47ec3ea934655eb845a259221c">&#9670;&#160;</a></span>TE_TsfmGetPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::vec3 Binding::TE_TsfmGetPos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe99a6f2fb879634796c4faebea21edd" name="abe99a6f2fb879634796c4faebea21edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe99a6f2fb879634796c4faebea21edd">&#9670;&#160;</a></span>TE_TsfmSetPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::TE_TsfmSetPos </td>
+          <td>(</td>
+          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a819647cc05e3138d0d982d7c00a7c494" name="a819647cc05e3138d0d982d7c00a7c494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a819647cc05e3138d0d982d7c00a7c494">&#9670;&#160;</a></span>BindTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::BindTransform </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a631891eca48a38f1f79f5a1109c6a4" name="a9a631891eca48a38f1f79f5a1109c6a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a631891eca48a38f1f79f5a1109c6a4">&#9670;&#160;</a></span>ScriptBindFunctions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Binding::ScriptBindFunctions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aaa36147ee2c09e3d5ff826ae6f2f863e" name="aaa36147ee2c09e3d5ff826ae6f2f863e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa36147ee2c09e3d5ff826ae6f2f863e">&#9670;&#160;</a></span>engine</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_t_e_1_1_engine.html">Engine</a>* Binding::engine</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8a00037616752c05b71ac7f06946875" name="ac8a00037616752c05b71ac7f06946875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8a00037616752c05b71ac7f06946875">&#9670;&#160;</a></span>sceneManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_t_e_1_1_scene_manager.html">SceneManager</a>* Binding::sceneManager</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_binding.html">Binding</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

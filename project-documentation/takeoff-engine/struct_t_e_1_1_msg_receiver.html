@@ -1,0 +1,818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: TE::MsgReceiver Struct Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('struct_t_e_1_1_msg_receiver.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">TE::MsgReceiver Struct Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Create one receiver to act as the middleman to subscribe and unsubscribe from senders. The actual recieving of messages will be done via user-defined functions. These functions will be used to subscribe to Senders as callbacks.  
+ <a href="struct_t_e_1_1_msg_receiver.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_messenger_8h_source.html">Messenger.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver_1_1_receiver_subscription.html">ReceiverSubscription</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Small class to represent subscription for reciever.  <a href="struct_t_e_1_1_msg_receiver_1_1_receiver_subscription.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a32dbdd4ca8847a605e23fe90f1c7178f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#a32dbdd4ca8847a605e23fe90f1c7178f">MsgReceiver</a> ()</td></tr>
+<tr class="memdesc:a32dbdd4ca8847a605e23fe90f1c7178f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
+<tr class="separator:a32dbdd4ca8847a605e23fe90f1c7178f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1ca2dab6f0de69be8bee0147ec19eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#a8f1ca2dab6f0de69be8bee0147ec19eb">~MsgReceiver</a> ()</td></tr>
+<tr class="separator:a8f1ca2dab6f0de69be8bee0147ec19eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9138b0933e59c3feaef7c19c70d3c23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#ad9138b0933e59c3feaef7c19c70d3c23">GetGUID</a> ()</td></tr>
+<tr class="memdesc:ad9138b0933e59c3feaef7c19c70d3c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get this receiver's GUID.  <br /></td></tr>
+<tr class="separator:ad9138b0933e59c3feaef7c19c70d3c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5abc837f17962b311ad84ec76fcafef9"><td class="memTemplParams" colspan="2">template&lt;typename ObjectType , typename FuncParam , void(ObjectType::*)(FuncParam) MemberFunc&gt; </td></tr>
+<tr class="memitem:a5abc837f17962b311ad84ec76fcafef9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#a5abc837f17962b311ad84ec76fcafef9">SubscribeToMsg</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> senderBindedGUID, void *objectInstance)</td></tr>
+<tr class="memdesc:a5abc837f17962b311ad84ec76fcafef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses a user-defined function to subscribe to a Sender. When the Sender sends messages, the user-defined function will be triggered. This overload is for MEMBER FUNCTIONS that TAKE MESSAGE as a parameter.  <br /></td></tr>
+<tr class="separator:a5abc837f17962b311ad84ec76fcafef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5abc837f17962b311ad84ec76fcafef9"><td class="memTemplParams" colspan="2">template&lt;typename ObjectType , typename MsgType , void(ObjectType::*)(void) MemberFunc&gt; </td></tr>
+<tr class="memitem:a5abc837f17962b311ad84ec76fcafef9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#a5abc837f17962b311ad84ec76fcafef9">SubscribeToMsg</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> senderBindedGUID, void *objectInstance)</td></tr>
+<tr class="memdesc:a5abc837f17962b311ad84ec76fcafef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses a user-defined function to subscribe to a Sender. When the Sender sends messages, the user-defined function will be triggered. This overload is for MEMBER FUNCTIONS that DO NOT TAKE MESSAGES.  <br /></td></tr>
+<tr class="separator:a5abc837f17962b311ad84ec76fcafef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d029be424c223f7679e2f28d9556ef7"><td class="memTemplParams" colspan="2">template&lt;typename FuncParam , void(*)(FuncParam) FuncPtr&gt; </td></tr>
+<tr class="memitem:a9d029be424c223f7679e2f28d9556ef7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#a9d029be424c223f7679e2f28d9556ef7">SubscribeToMsg</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> senderBindedGUID)</td></tr>
+<tr class="memdesc:a9d029be424c223f7679e2f28d9556ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses a user-defined function to subscribe to a Sender. When the Sender sends messages, the user-defined function will be triggered. This overload is for STATIC/GLOBAL FUNCTIONS that TAKE MESSAGE as a parameter.  <br /></td></tr>
+<tr class="separator:a9d029be424c223f7679e2f28d9556ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d029be424c223f7679e2f28d9556ef7"><td class="memTemplParams" colspan="2">template&lt;typename MsgType , void(*)(void) FuncPtr&gt; </td></tr>
+<tr class="memitem:a9d029be424c223f7679e2f28d9556ef7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#a9d029be424c223f7679e2f28d9556ef7">SubscribeToMsg</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> senderBindedGUID)</td></tr>
+<tr class="memdesc:a9d029be424c223f7679e2f28d9556ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses a user-defined function to subscribe to a Sender. When the Sender sends messages, the user-defined function will be triggered. This overload is for STATIC/GLOBAL FUNCTIONS that DO NOT TAKE MESSAGES.  <br /></td></tr>
+<tr class="separator:a9d029be424c223f7679e2f28d9556ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a062b7c5e11732c83cb3b46a91fd18b3a"><td class="memTemplParams" colspan="2">template&lt;typename ObjectType , typename FuncParam , void(ObjectType::*)(FuncParam) MemberFunc&gt; </td></tr>
+<tr class="memitem:a062b7c5e11732c83cb3b46a91fd18b3a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#a062b7c5e11732c83cb3b46a91fd18b3a">UnsubscribeFromMsg</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> senderBindedGUID, void *objectInstance)</td></tr>
+<tr class="memdesc:a062b7c5e11732c83cb3b46a91fd18b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exact opposite of the SubscribeToMsg. Use the exact same parameters as before to unsubscribe.  <br /></td></tr>
+<tr class="separator:a062b7c5e11732c83cb3b46a91fd18b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a062b7c5e11732c83cb3b46a91fd18b3a"><td class="memTemplParams" colspan="2">template&lt;typename ObjectType , typename MsgType , void(ObjectType::*)(void) MemberFunc&gt; </td></tr>
+<tr class="memitem:a062b7c5e11732c83cb3b46a91fd18b3a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#a062b7c5e11732c83cb3b46a91fd18b3a">UnsubscribeFromMsg</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> senderBindedGUID, void *objectInstance)</td></tr>
+<tr class="memdesc:a062b7c5e11732c83cb3b46a91fd18b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exact opposite of the SubscribeToMsg. Use the exact same parameters as before to unsubscribe.  <br /></td></tr>
+<tr class="separator:a062b7c5e11732c83cb3b46a91fd18b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2367b3132dbf4ba26f5eca89995232"><td class="memTemplParams" colspan="2">template&lt;typename FuncParam , void(*)(FuncParam) FuncPtr&gt; </td></tr>
+<tr class="memitem:a1c2367b3132dbf4ba26f5eca89995232"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#a1c2367b3132dbf4ba26f5eca89995232">UnsubscribeFromMsg</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> senderBindedGUID)</td></tr>
+<tr class="memdesc:a1c2367b3132dbf4ba26f5eca89995232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exact opposite of the SubscribeToMsg. Use the exact same parameters as before to unsubscribe.  <br /></td></tr>
+<tr class="separator:a1c2367b3132dbf4ba26f5eca89995232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2367b3132dbf4ba26f5eca89995232"><td class="memTemplParams" colspan="2">template&lt;typename MsgType , void(*)(void) FuncPtr&gt; </td></tr>
+<tr class="memitem:a1c2367b3132dbf4ba26f5eca89995232"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#a1c2367b3132dbf4ba26f5eca89995232">UnsubscribeFromMsg</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> senderBindedGUID)</td></tr>
+<tr class="memdesc:a1c2367b3132dbf4ba26f5eca89995232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exact opposite of the SubscribeToMsg. Use the exact same parameters as before to unsubscribe.  <br /></td></tr>
+<tr class="separator:a1c2367b3132dbf4ba26f5eca89995232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec95e84a0c5a18eba5fdca022ff21289"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#aec95e84a0c5a18eba5fdca022ff21289">UnsubscribeAll</a> ()</td></tr>
+<tr class="memdesc:aec95e84a0c5a18eba5fdca022ff21289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribes this reciever from all of its current subscriptions.  <br /></td></tr>
+<tr class="separator:aec95e84a0c5a18eba5fdca022ff21289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed2198bd46730cd3ee88876b5c9eaf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#aaed2198bd46730cd3ee88876b5c9eaf9">SetReceiverEnabled</a> (bool isEnabled)</td></tr>
+<tr class="memdesc:aaed2198bd46730cd3ee88876b5c9eaf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this reciever to be able to recieve messages or not.  <br /></td></tr>
+<tr class="separator:aaed2198bd46730cd3ee88876b5c9eaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7ab6a84e81a996ea4d8f9d84c3631a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#add7ab6a84e81a996ea4d8f9d84c3631a">GetReceiverEnabled</a> ()</td></tr>
+<tr class="memdesc:add7ab6a84e81a996ea4d8f9d84c3631a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this reciever is enabled or not.  <br /></td></tr>
+<tr class="separator:add7ab6a84e81a996ea4d8f9d84c3631a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74ac30a5da5d25fef851186b0565c01"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#ab74ac30a5da5d25fef851186b0565c01">GetSubscriptionCount</a> ()</td></tr>
+<tr class="memdesc:ab74ac30a5da5d25fef851186b0565c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the total number of subscriptions this reciever has made.  <br /></td></tr>
+<tr class="separator:ab74ac30a5da5d25fef851186b0565c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ab6f0109ea573dcfb1cda9a30dd6d56b3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#ab6f0109ea573dcfb1cda9a30dd6d56b3">MsgTypeGUID</a> = <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a></td></tr>
+<tr class="separator:ab6f0109ea573dcfb1cda9a30dd6d56b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a407f3a695ec3a3342d04fb7e578f3693"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#a407f3a695ec3a3342d04fb7e578f3693">SenderBindedGUID</a> = <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a></td></tr>
+<tr class="separator:a407f3a695ec3a3342d04fb7e578f3693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f84d478880c5e00cf593e118e5a3fe5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#a7f84d478880c5e00cf593e118e5a3fe5">SubscriptionID</a> = <a class="el" href="_defines_8h.html#a01e3bfbad3924f907d77f33a91fde8ba">TEuint64</a></td></tr>
+<tr class="separator:a7f84d478880c5e00cf593e118e5a3fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a9e7decc8c51c8f5a492e23e8446b95c4"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="struct_t_e_1_1_msg_receiver.html#a407f3a695ec3a3342d04fb7e578f3693">SenderBindedGUID</a>, std::vector&lt; <a class="el" href="struct_t_e_1_1_msg_receiver_1_1_receiver_subscription.html">ReceiverSubscription</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#a9e7decc8c51c8f5a492e23e8446b95c4">m_RcvSubscriptions</a></td></tr>
+<tr class="separator:a9e7decc8c51c8f5a492e23e8446b95c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc508d754f9ff203519e120dadc4022"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#acfc508d754f9ff203519e120dadc4022">m_ReceiverGUID</a></td></tr>
+<tr class="separator:acfc508d754f9ff203519e120dadc4022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebe647127015ef63fa693d6f54079fd1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_receiver.html#aebe647127015ef63fa693d6f54079fd1">m_ReceiverActive</a> = <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a></td></tr>
+<tr class="separator:aebe647127015ef63fa693d6f54079fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Create one receiver to act as the middleman to subscribe and unsubscribe from senders. The actual recieving of messages will be done via user-defined functions. These functions will be used to subscribe to Senders as callbacks. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ab6f0109ea573dcfb1cda9a30dd6d56b3" name="ab6f0109ea573dcfb1cda9a30dd6d56b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f0109ea573dcfb1cda9a30dd6d56b3">&#9670;&#160;</a></span>MsgTypeGUID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="struct_t_e_1_1_msg_receiver.html#ab6f0109ea573dcfb1cda9a30dd6d56b3">TE::MsgReceiver::MsgTypeGUID</a> =  <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a407f3a695ec3a3342d04fb7e578f3693" name="a407f3a695ec3a3342d04fb7e578f3693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a407f3a695ec3a3342d04fb7e578f3693">&#9670;&#160;</a></span>SenderBindedGUID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="struct_t_e_1_1_msg_receiver.html#a407f3a695ec3a3342d04fb7e578f3693">TE::MsgReceiver::SenderBindedGUID</a> =  <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f84d478880c5e00cf593e118e5a3fe5" name="a7f84d478880c5e00cf593e118e5a3fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f84d478880c5e00cf593e118e5a3fe5">&#9670;&#160;</a></span>SubscriptionID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="struct_t_e_1_1_msg_receiver.html#a7f84d478880c5e00cf593e118e5a3fe5">TE::MsgReceiver::SubscriptionID</a> =  <a class="el" href="_defines_8h.html#a01e3bfbad3924f907d77f33a91fde8ba">TEuint64</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a32dbdd4ca8847a605e23fe90f1c7178f" name="a32dbdd4ca8847a605e23fe90f1c7178f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32dbdd4ca8847a605e23fe90f1c7178f">&#9670;&#160;</a></span>MsgReceiver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TE::MsgReceiver::MsgReceiver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+
+</div>
+</div>
+<a id="a8f1ca2dab6f0de69be8bee0147ec19eb" name="a8f1ca2dab6f0de69be8bee0147ec19eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f1ca2dab6f0de69be8bee0147ec19eb">&#9670;&#160;</a></span>~MsgReceiver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TE::MsgReceiver::~MsgReceiver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad9138b0933e59c3feaef7c19c70d3c23" name="ad9138b0933e59c3feaef7c19c70d3c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9138b0933e59c3feaef7c19c70d3c23">&#9670;&#160;</a></span>GetGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> TE::MsgReceiver::GetGUID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get this receiver's GUID. </p>
+<dl class="section return"><dt>Returns</dt><dd>GUID</dd></dl>
+
+</div>
+</div>
+<a id="a5abc837f17962b311ad84ec76fcafef9" name="a5abc837f17962b311ad84ec76fcafef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5abc837f17962b311ad84ec76fcafef9">&#9670;&#160;</a></span>SubscribeToMsg() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ObjectType , typename MsgType , void(ObjectType::*)(void) MemberFunc&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::MsgReceiver::SubscribeToMsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramname"><em>senderBindedGUID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>objectInstance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uses a user-defined function to subscribe to a Sender. When the Sender sends messages, the user-defined function will be triggered. This overload is for MEMBER FUNCTIONS that TAKE MESSAGE as a parameter. </p>
+<p>Uses a user-defined function to subscribe to a Sender. When the Sender sends messages, the user-defined function will be triggered. This overload is for MEMBER FUNCTIONS that DO NOT TAKE MESSAGES.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ObjectType</td><td>Class/Struct that this member function belongs in</td></tr>
+    <tr><td class="paramname">FuncParam</td><td>The MessageType, but as a param of the user-defined function. If it is "const XXX", include the const and ampersand too.</td></tr>
+    <tr><td class="paramname">MemberFunc</td><td>Pointer to the member function to be used as callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senderBindedGUID</td><td>The GUID the sender is binded to, to recieve messages from that sender.</td></tr>
+    <tr><td class="paramname">objectInstance</td><td>The object instance to use when calling this function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ObjectType</td><td>Class/Struct that this member function belongs in</td></tr>
+    <tr><td class="paramname">MsgType</td><td>The MessageType. including the const and ampersand does not matter.</td></tr>
+    <tr><td class="paramname">MemberFunc</td><td>Pointer to the member function to be used as callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senderBindedGUID</td><td>The GUID the sender is binded to, to recieve messages from that sender.</td></tr>
+    <tr><td class="paramname">objectInstance</td><td>The object instance to use when calling this function.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5abc837f17962b311ad84ec76fcafef9" name="a5abc837f17962b311ad84ec76fcafef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5abc837f17962b311ad84ec76fcafef9">&#9670;&#160;</a></span>SubscribeToMsg() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ObjectType , typename MsgType , void(ObjectType::*)(void) MemberFunc&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::MsgReceiver::SubscribeToMsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramname"><em>senderBindedGUID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>objectInstance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uses a user-defined function to subscribe to a Sender. When the Sender sends messages, the user-defined function will be triggered. This overload is for MEMBER FUNCTIONS that DO NOT TAKE MESSAGES. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ObjectType</td><td>Class/Struct that this member function belongs in</td></tr>
+    <tr><td class="paramname">MsgType</td><td>The MessageType. including the const and ampersand does not matter.</td></tr>
+    <tr><td class="paramname">MemberFunc</td><td>Pointer to the member function to be used as callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senderBindedGUID</td><td>The GUID the sender is binded to, to recieve messages from that sender.</td></tr>
+    <tr><td class="paramname">objectInstance</td><td>The object instance to use when calling this function.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9d029be424c223f7679e2f28d9556ef7" name="a9d029be424c223f7679e2f28d9556ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d029be424c223f7679e2f28d9556ef7">&#9670;&#160;</a></span>SubscribeToMsg() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MsgType , void(*)(void) FuncPtr&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::MsgReceiver::SubscribeToMsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramname"><em>senderBindedGUID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uses a user-defined function to subscribe to a Sender. When the Sender sends messages, the user-defined function will be triggered. This overload is for STATIC/GLOBAL FUNCTIONS that TAKE MESSAGE as a parameter. </p>
+<p>Uses a user-defined function to subscribe to a Sender. When the Sender sends messages, the user-defined function will be triggered. This overload is for STATIC/GLOBAL FUNCTIONS that DO NOT TAKE MESSAGES.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FuncParam</td><td>The MessageType, but as a param of the user-defined function. If it is "const XXX", include the const and ampersand too.</td></tr>
+    <tr><td class="paramname">MemberFunc</td><td>Pointer to the member function to be used as callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senderBindedGUID</td><td>The GUID the sender is binded to, to recieve messages from that sender.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MsgType</td><td>The MessageType. including the const and ampersand does not matter.</td></tr>
+    <tr><td class="paramname">MemberFunc</td><td>Pointer to the member function to be used as callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senderBindedGUID</td><td>The GUID the sender is binded to, to recieve messages from that sender.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9d029be424c223f7679e2f28d9556ef7" name="a9d029be424c223f7679e2f28d9556ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d029be424c223f7679e2f28d9556ef7">&#9670;&#160;</a></span>SubscribeToMsg() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MsgType , void(*)(void) FuncPtr&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::MsgReceiver::SubscribeToMsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramname"><em>senderBindedGUID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uses a user-defined function to subscribe to a Sender. When the Sender sends messages, the user-defined function will be triggered. This overload is for STATIC/GLOBAL FUNCTIONS that DO NOT TAKE MESSAGES. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MsgType</td><td>The MessageType. including the const and ampersand does not matter.</td></tr>
+    <tr><td class="paramname">MemberFunc</td><td>Pointer to the member function to be used as callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senderBindedGUID</td><td>The GUID the sender is binded to, to recieve messages from that sender.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a062b7c5e11732c83cb3b46a91fd18b3a" name="a062b7c5e11732c83cb3b46a91fd18b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a062b7c5e11732c83cb3b46a91fd18b3a">&#9670;&#160;</a></span>UnsubscribeFromMsg() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ObjectType , typename MsgType , void(ObjectType::*)(void) MemberFunc&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::MsgReceiver::UnsubscribeFromMsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramname"><em>senderBindedGUID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>objectInstance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exact opposite of the SubscribeToMsg. Use the exact same parameters as before to unsubscribe. </p>
+
+</div>
+</div>
+<a id="a062b7c5e11732c83cb3b46a91fd18b3a" name="a062b7c5e11732c83cb3b46a91fd18b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a062b7c5e11732c83cb3b46a91fd18b3a">&#9670;&#160;</a></span>UnsubscribeFromMsg() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ObjectType , typename MsgType , void(ObjectType::*)(void) MemberFunc&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::MsgReceiver::UnsubscribeFromMsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramname"><em>senderBindedGUID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>objectInstance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exact opposite of the SubscribeToMsg. Use the exact same parameters as before to unsubscribe. </p>
+
+</div>
+</div>
+<a id="a1c2367b3132dbf4ba26f5eca89995232" name="a1c2367b3132dbf4ba26f5eca89995232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2367b3132dbf4ba26f5eca89995232">&#9670;&#160;</a></span>UnsubscribeFromMsg() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MsgType , void(*)(void) FuncPtr&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::MsgReceiver::UnsubscribeFromMsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramname"><em>senderBindedGUID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exact opposite of the SubscribeToMsg. Use the exact same parameters as before to unsubscribe. </p>
+
+</div>
+</div>
+<a id="a1c2367b3132dbf4ba26f5eca89995232" name="a1c2367b3132dbf4ba26f5eca89995232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2367b3132dbf4ba26f5eca89995232">&#9670;&#160;</a></span>UnsubscribeFromMsg() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MsgType , void(*)(void) FuncPtr&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::MsgReceiver::UnsubscribeFromMsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramname"><em>senderBindedGUID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exact opposite of the SubscribeToMsg. Use the exact same parameters as before to unsubscribe. </p>
+
+</div>
+</div>
+<a id="aec95e84a0c5a18eba5fdca022ff21289" name="aec95e84a0c5a18eba5fdca022ff21289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec95e84a0c5a18eba5fdca022ff21289">&#9670;&#160;</a></span>UnsubscribeAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::MsgReceiver::UnsubscribeAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unsubscribes this reciever from all of its current subscriptions. </p>
+
+</div>
+</div>
+<a id="aaed2198bd46730cd3ee88876b5c9eaf9" name="aaed2198bd46730cd3ee88876b5c9eaf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaed2198bd46730cd3ee88876b5c9eaf9">&#9670;&#160;</a></span>SetReceiverEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::MsgReceiver::SetReceiverEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isEnabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets this reciever to be able to recieve messages or not. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isEnabled</td><td>Set reciever enabled or not</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="add7ab6a84e81a996ea4d8f9d84c3631a" name="add7ab6a84e81a996ea4d8f9d84c3631a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add7ab6a84e81a996ea4d8f9d84c3631a">&#9670;&#160;</a></span>GetReceiverEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::MsgReceiver::GetReceiverEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if this reciever is enabled or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>Is enabled or not</dd></dl>
+
+</div>
+</div>
+<a id="ab74ac30a5da5d25fef851186b0565c01" name="ab74ac30a5da5d25fef851186b0565c01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74ac30a5da5d25fef851186b0565c01">&#9670;&#160;</a></span>GetSubscriptionCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t TE::MsgReceiver::GetSubscriptionCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the total number of subscriptions this reciever has made. </p>
+<dl class="section return"><dt>Returns</dt><dd>number of subscription count</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a9e7decc8c51c8f5a492e23e8446b95c4" name="a9e7decc8c51c8f5a492e23e8446b95c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e7decc8c51c8f5a492e23e8446b95c4">&#9670;&#160;</a></span>m_RcvSubscriptions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="struct_t_e_1_1_msg_receiver.html#a407f3a695ec3a3342d04fb7e578f3693">SenderBindedGUID</a>, std::vector&lt;<a class="el" href="struct_t_e_1_1_msg_receiver_1_1_receiver_subscription.html">ReceiverSubscription</a>&gt; &gt; TE::MsgReceiver::m_RcvSubscriptions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfc508d754f9ff203519e120dadc4022" name="acfc508d754f9ff203519e120dadc4022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc508d754f9ff203519e120dadc4022">&#9670;&#160;</a></span>m_ReceiverGUID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> TE::MsgReceiver::m_ReceiverGUID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aebe647127015ef63fa693d6f54079fd1" name="aebe647127015ef63fa693d6f54079fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebe647127015ef63fa693d6f54079fd1">&#9670;&#160;</a></span>m_ReceiverActive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::MsgReceiver::m_ReceiverActive = <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li><a class="el" href="_messenger_8h_source.html">Messenger.h</a></li>
+<li><a class="el" href="_messenger_8cpp.html">Messenger.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_t_e.html">TE</a></li><li class="navelem"><a class="el" href="struct_t_e_1_1_msg_receiver.html">MsgReceiver</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

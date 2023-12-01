@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: TakeoffEngine.IComponent Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_takeoff_engine_1_1_i_component.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a>  </div>
+  <div class="headertitle"><div class="title">TakeoffEngine.IComponent Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for TakeoffEngine.IComponent:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_takeoff_engine_1_1_i_component.png" usemap="#TakeoffEngine.IComponent_map" alt=""/>
+  <map id="TakeoffEngine.IComponent_map" name="TakeoffEngine.IComponent_map">
+<area href="class_takeoff_engine_1_1_i_object.html" alt="TakeoffEngine.IObject" shape="rect" coords="200,0,390,24"/>
+<area href="class_takeoff_engine_1_1_camera.html" alt="TakeoffEngine.Camera" shape="rect" coords="0,112,190,136"/>
+<area href="class_takeoff_engine_1_1_mono_script_base.html" title="Purely for marking Game Script classes. Has no functionality otherwise." alt="TakeoffEngine.MonoScriptBase" shape="rect" coords="200,112,390,136"/>
+<area href="class_takeoff_engine_1_1_transform.html" alt="TakeoffEngine.Transform" shape="rect" coords="400,112,590,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9f5bb0081f02756f98004e4a26b4c141"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#a9f5bb0081f02756f98004e4a26b4c141">IComponent</a> (ushort ecsIndex=ushort.MaxValue)</td></tr>
+<tr class="separator:a9f5bb0081f02756f98004e4a26b4c141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f901458fb166833694e18429f9b4dfe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#a5f901458fb166833694e18429f9b4dfe">GetIsActive</a> ()</td></tr>
+<tr class="memdesc:a5f901458fb166833694e18429f9b4dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the active state of this component. If any of this component's parents is inactive, this function will return false, even if the internal active state of this component is still active.  <br /></td></tr>
+<tr class="separator:a5f901458fb166833694e18429f9b4dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afddcf7c722a810a266c773429d7ac342"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#afddcf7c722a810a266c773429d7ac342">GetIsActiveInternal</a> ()</td></tr>
+<tr class="memdesc:afddcf7c722a810a266c773429d7ac342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the internal active state of this component, ignoring the active state of component's parents.  <br /></td></tr>
+<tr class="separator:afddcf7c722a810a266c773429d7ac342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3701bbefad29e470e4f7efb037af19e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#a3701bbefad29e470e4f7efb037af19e7">SetIsActive</a> (bool isActive)</td></tr>
+<tr class="memdesc:a3701bbefad29e470e4f7efb037af19e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal active state of this component, ignoring the active state of component's parents.  <br /></td></tr>
+<tr class="separator:a3701bbefad29e470e4f7efb037af19e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5df7f7581e27996a3e9f491216eb5fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#af5df7f7581e27996a3e9f491216eb5fa">IsNull</a> ()</td></tr>
+<tr class="memdesc:af5df7f7581e27996a3e9f491216eb5fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this component in the engine level is null or not. If the Component class itself is null, this function will not work!  <br /></td></tr>
+<tr class="separator:af5df7f7581e27996a3e9f491216eb5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f667fd7fde832ebe695c27f2da8c9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_takeoff_engine_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#ab0f667fd7fde832ebe695c27f2da8c9c">GetEntity</a> ()</td></tr>
+<tr class="memdesc:ab0f667fd7fde832ebe695c27f2da8c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the entity reference this component is attached to.  <br /></td></tr>
+<tr class="separator:ab0f667fd7fde832ebe695c27f2da8c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054cfe9e01cef4e5b15bb2cc0cf323c2"><td class="memItemLeft" align="right" valign="top">override ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#a054cfe9e01cef4e5b15bb2cc0cf323c2">GetGUID</a> ()</td></tr>
+<tr class="memdesc:a054cfe9e01cef4e5b15bb2cc0cf323c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the GUID of this component.  <br /></td></tr>
+<tr class="separator:a054cfe9e01cef4e5b15bb2cc0cf323c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_takeoff_engine_1_1_i_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_takeoff_engine_1_1_i_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_takeoff_engine_1_1_i_object.html">TakeoffEngine.IObject</a></td></tr>
+<tr class="memitem:a70a3e4176b1ff20e7dd96d03cd7511f4 inherit pub_methods_class_takeoff_engine_1_1_i_object"><td class="memItemLeft" align="right" valign="top">abstract ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_object.html#a70a3e4176b1ff20e7dd96d03cd7511f4">GetGUID</a> ()</td></tr>
+<tr class="separator:a70a3e4176b1ff20e7dd96d03cd7511f4 inherit pub_methods_class_takeoff_engine_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d4331e9014b1f2c9afeedcf26f9a40 inherit pub_methods_class_takeoff_engine_1_1_i_object"><td class="memItemLeft" align="right" valign="top">abstract ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_object.html#a24d4331e9014b1f2c9afeedcf26f9a40">GetTypeGUID</a> ()</td></tr>
+<tr class="separator:a24d4331e9014b1f2c9afeedcf26f9a40 inherit pub_methods_class_takeoff_engine_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9ecbf8cbab5db6ca167cba4e479625eb"><td class="memItemLeft" align="right" valign="top">static ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#a9ecbf8cbab5db6ca167cba4e479625eb">TE_CompGetGUID</a> (ulong typeGUID, ushort m_ECSIndex)</td></tr>
+<tr class="separator:a9ecbf8cbab5db6ca167cba4e479625eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5ac57a005bcd39da72e0aa4bf8974109"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#a5ac57a005bcd39da72e0aa4bf8974109">SetECSIndex</a> (ushort ecsIndex)</td></tr>
+<tr class="memdesc:a5ac57a005bcd39da72e0aa4bf8974109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for Engine to call when instantiating new MonoScripts.  <br /></td></tr>
+<tr class="separator:a5ac57a005bcd39da72e0aa4bf8974109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:aa911d4ccd23e1b652fa808540fe5d3e1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#aa911d4ccd23e1b652fa808540fe5d3e1">TE_GetIsActive</a> (ulong typeGUID, ushort m_ECSIndex)</td></tr>
+<tr class="separator:aa911d4ccd23e1b652fa808540fe5d3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af63631bfe5629dba09c73ac100dee4c7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#af63631bfe5629dba09c73ac100dee4c7">TE_GetIsActiveInternal</a> (ulong typeGUID, ushort m_ECSIndex)</td></tr>
+<tr class="separator:af63631bfe5629dba09c73ac100dee4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2249a6ba72867142fb7fb1c89a348f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#a4c2249a6ba72867142fb7fb1c89a348f">TE_SetIsActiveInternal</a> (ulong typeGUID, ushort m_ECSIndex, bool val)</td></tr>
+<tr class="separator:a4c2249a6ba72867142fb7fb1c89a348f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9f4b3b4e331944b7b33da13ba82c79"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#a5a9f4b3b4e331944b7b33da13ba82c79">TE_CompIsNull</a> (ulong typeGUID, ushort m_ECSIndex)</td></tr>
+<tr class="separator:a5a9f4b3b4e331944b7b33da13ba82c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9f5bb0081f02756f98004e4a26b4c141" name="a9f5bb0081f02756f98004e4a26b4c141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f5bb0081f02756f98004e4a26b4c141">&#9670;&#160;</a></span>IComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TakeoffEngine.IComponent.IComponent </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>ecsIndex</em> = <code>ushort::MaxValue</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa911d4ccd23e1b652fa808540fe5d3e1" name="aa911d4ccd23e1b652fa808540fe5d3e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa911d4ccd23e1b652fa808540fe5d3e1">&#9670;&#160;</a></span>TE_GetIsActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool TakeoffEngine.IComponent.TE_GetIsActive </td>
+          <td>(</td>
+          <td class="paramtype">ulong&#160;</td>
+          <td class="paramname"><em>typeGUID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>m_ECSIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af63631bfe5629dba09c73ac100dee4c7" name="af63631bfe5629dba09c73ac100dee4c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af63631bfe5629dba09c73ac100dee4c7">&#9670;&#160;</a></span>TE_GetIsActiveInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool TakeoffEngine.IComponent.TE_GetIsActiveInternal </td>
+          <td>(</td>
+          <td class="paramtype">ulong&#160;</td>
+          <td class="paramname"><em>typeGUID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>m_ECSIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c2249a6ba72867142fb7fb1c89a348f" name="a4c2249a6ba72867142fb7fb1c89a348f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c2249a6ba72867142fb7fb1c89a348f">&#9670;&#160;</a></span>TE_SetIsActiveInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void TakeoffEngine.IComponent.TE_SetIsActiveInternal </td>
+          <td>(</td>
+          <td class="paramtype">ulong&#160;</td>
+          <td class="paramname"><em>typeGUID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>m_ECSIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a9f4b3b4e331944b7b33da13ba82c79" name="a5a9f4b3b4e331944b7b33da13ba82c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a9f4b3b4e331944b7b33da13ba82c79">&#9670;&#160;</a></span>TE_CompIsNull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool TakeoffEngine.IComponent.TE_CompIsNull </td>
+          <td>(</td>
+          <td class="paramtype">ulong&#160;</td>
+          <td class="paramname"><em>typeGUID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>m_ECSIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ecbf8cbab5db6ca167cba4e479625eb" name="a9ecbf8cbab5db6ca167cba4e479625eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ecbf8cbab5db6ca167cba4e479625eb">&#9670;&#160;</a></span>TE_CompGetGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ulong TakeoffEngine.IComponent.TE_CompGetGUID </td>
+          <td>(</td>
+          <td class="paramtype">ulong&#160;</td>
+          <td class="paramname"><em>typeGUID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>m_ECSIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f901458fb166833694e18429f9b4dfe" name="a5f901458fb166833694e18429f9b4dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f901458fb166833694e18429f9b4dfe">&#9670;&#160;</a></span>GetIsActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TakeoffEngine.IComponent.GetIsActive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the active state of this component. If any of this component's parents is inactive, this function will return false, even if the internal active state of this component is still active. </p>
+<dl class="section return"><dt>Returns</dt><dd>Active state of this component</dd></dl>
+
+</div>
+</div>
+<a id="afddcf7c722a810a266c773429d7ac342" name="afddcf7c722a810a266c773429d7ac342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afddcf7c722a810a266c773429d7ac342">&#9670;&#160;</a></span>GetIsActiveInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TakeoffEngine.IComponent.GetIsActiveInternal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the internal active state of this component, ignoring the active state of component's parents. </p>
+<dl class="section return"><dt>Returns</dt><dd>Active state of this component</dd></dl>
+
+</div>
+</div>
+<a id="a3701bbefad29e470e4f7efb037af19e7" name="a3701bbefad29e470e4f7efb037af19e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3701bbefad29e470e4f7efb037af19e7">&#9670;&#160;</a></span>SetIsActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TakeoffEngine.IComponent.SetIsActive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isActive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the internal active state of this component, ignoring the active state of component's parents. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isActive</td><td>the desired active state of the component</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af5df7f7581e27996a3e9f491216eb5fa" name="af5df7f7581e27996a3e9f491216eb5fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5df7f7581e27996a3e9f491216eb5fa">&#9670;&#160;</a></span>IsNull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TakeoffEngine.IComponent.IsNull </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if this component in the engine level is null or not. If the Component class itself is null, this function will not work! </p>
+<dl class="section return"><dt>Returns</dt><dd>Null or not</dd></dl>
+
+</div>
+</div>
+<a id="ab0f667fd7fde832ebe695c27f2da8c9c" name="ab0f667fd7fde832ebe695c27f2da8c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0f667fd7fde832ebe695c27f2da8c9c">&#9670;&#160;</a></span>GetEntity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_takeoff_engine_1_1_entity.html">Entity</a> TakeoffEngine.IComponent.GetEntity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the entity reference this component is attached to. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a054cfe9e01cef4e5b15bb2cc0cf323c2" name="a054cfe9e01cef4e5b15bb2cc0cf323c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a054cfe9e01cef4e5b15bb2cc0cf323c2">&#9670;&#160;</a></span>GetGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override ulong TakeoffEngine.IComponent.GetGUID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the GUID of this component. </p>
+<dl class="section return"><dt>Returns</dt><dd>GUID of component</dd></dl>
+
+<p>Implements <a class="el" href="class_takeoff_engine_1_1_i_object.html#a70a3e4176b1ff20e7dd96d03cd7511f4">TakeoffEngine.IObject</a>.</p>
+
+</div>
+</div>
+<a id="a5ac57a005bcd39da72e0aa4bf8974109" name="a5ac57a005bcd39da72e0aa4bf8974109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ac57a005bcd39da72e0aa4bf8974109">&#9670;&#160;</a></span>SetECSIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TakeoffEngine.IComponent.SetECSIndex </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only for Engine to call when instantiating new MonoScripts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ecsIndex</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="_e_c_s_8cs.html">ECS.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_takeoff_engine.html">TakeoffEngine</a></li><li class="navelem"><a class="el" href="class_takeoff_engine_1_1_i_component.html">IComponent</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

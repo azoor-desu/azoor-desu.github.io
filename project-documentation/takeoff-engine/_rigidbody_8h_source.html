@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: Rigidbody.h Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_rigidbody_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Rigidbody.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_rigidbody_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="_defines_8h.html">Defines.h</a>&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><a class="code hl_define" href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;glm/vec3.hpp&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;glm/gtc/quaternion.hpp&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><a class="code hl_define" href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_t_e.html">TE</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">// Type of rigidbody: Static, Kinematic, Dynamic</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6">   23</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6">RigidbodyType</a> : <a class="code hl_typedef" href="_defines_8h.html#a6365a56b2e4259d6af0bbd2880bbe708">TEuint8</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a93e9591fea7ac815ac95bf5c6a90b279">   25</a></span>        <a class="code hl_enumvalue" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a93e9591fea7ac815ac95bf5c6a90b279">Static</a> = 0, <span class="comment">// Static rigidbodies are immovable.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a513c74bdb8fe98af0eb4adbc9e204ef3">   26</a></span>        <a class="code hl_enumvalue" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a513c74bdb8fe98af0eb4adbc9e204ef3">Kinematic</a>,  <span class="comment">// Kinematic rigidbodies are movable, but not affected by forces.</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_enumvalue" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a71f6359040d876a1509ce7a4d30b4928">Dynamic</a>     <span class="comment">// Dynamic rigidbodies are movable and affected by forces.</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a71f6359040d876a1509ce7a4d30b4928">   28</a></span>    };</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_t_e_1_1_rigidbody.html">   30</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_t_e_1_1_rigidbody.html">Rigidbody</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_t_e_1_1_i_component.html">IComponent</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_function" href="class_t_e_1_1_rigidbody.html#a081ef8ceb561637870cc4b1ba312c33b">Rigidbody</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_function" href="class_t_e_1_1_rigidbody.html#a2d51c936430abe02eb8a965f73075bfe">~Rigidbody</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_t_e_1_1_rigidbody.html#afd21d97082c90370f20c0b19d9d1e3c5">   37</a></span>        rttr::instance <a class="code hl_function" href="class_t_e_1_1_rigidbody.html#afd21d97082c90370f20c0b19d9d1e3c5">GetRTTRInstance</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_t_e_1_1_rigidbody.html#aebae24a2053fcb72372fc38924a00a34">   39</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_rigidbody.html#aebae24a2053fcb72372fc38924a00a34">Serialize</a>(<a class="code hl_class" href="class_t_e_1_1_serializer.html">Serializer</a>&amp; s) { s.<a class="code hl_function" href="class_t_e_1_1_serializer.html#a4db2e02cb95d865134f885cc075e479e">Serialize</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_t_e_1_1_rigidbody.html#a6dcfd90acd4fac729d27dfc5ed8720b4">   40</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_rigidbody.html#a6dcfd90acd4fac729d27dfc5ed8720b4">Deserialize</a>(<a class="code hl_class" href="class_t_e_1_1_serializer.html">Serializer</a>&amp; s) { s.<a class="code hl_function" href="class_t_e_1_1_serializer.html#ab1b02feed183f0aa4fe3fb505978b25f">Deserialize</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_rigidbody.html#a847c0255a5e522e45b78651573ef24bf">Update</a>(<a class="code hl_typedef" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> dt);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_rigidbody.html#a0ebcd2d31b107b2e72769638c9f12642">AddForce</a>(<span class="keyword">const</span> glm::vec3&amp; force);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_rigidbody.html#a67adba8802f5c80fd9b9569774ed4645">AddForceAtPosition</a>(<span class="keyword">const</span> glm::vec3&amp; force, <span class="keyword">const</span> glm::vec3&amp; position);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_rigidbody.html#ab8552d7107f46d5a0a196e3eb3df89ba">AddTorque</a>(<span class="keyword">const</span> glm::vec3&amp; torque);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> <a class="code hl_function" href="class_t_e_1_1_rigidbody.html#a27eb605538d50c4e9de4557be69bf393">TerminalVelocity</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">mass</a>, <span class="keyword">const</span> <a class="code hl_typedef" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> gravity, <span class="keyword">const</span> <a class="code hl_typedef" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> dragCoefficient) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="comment">/*</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">            Static - Immovable</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">            Kinematic - Movable, but not affected by external forces.</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">            Dynamic - Movable and affected by all forces.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">        */</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">   82</a></span>        <a class="code hl_enumeration" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6">RigidbodyType</a> <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">type</a> = <a class="code hl_enumvalue" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a93e9591fea7ac815ac95bf5c6a90b279">RigidbodyType::Static</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="comment">// Drag affects how fast the rigidbody slows down. Friction, air resistance, etc.</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="comment">// The higher the drag, the faster the rigidbody slows down.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="comment">// Angular drag affects how fast the rigidbody&#39;s angular velocity slows down.</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="comment">// The rotational equivalent of drag.</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">   88</a></span>        <a class="code hl_typedef" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a460e7fa00ab9cb6c8a1444cfa235fa34">drag</a> = 0.0f, <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">angularDrag</a> = 0.0f;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="comment">// 0 = completely inelastic collision response, 1 = completely elastic collision response).</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="comment">// Note that it can be -ve but the combined restitution should always be &gt;= 0.</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_t_e_1_1_rigidbody.html#a89094eae56dd3d637f7fd767a89f52e4">   93</a></span>        <a class="code hl_typedef" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a89094eae56dd3d637f7fd767a89f52e4">restitution</a> = 0.0f;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="comment">// Inverse mass is the inverse of the mass.</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="comment">// Used to calculate the acceleration of the rigidbody.</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_t_e_1_1_rigidbody.html#aaabf2cd3fe9a2944d518ecb9e63026bf">   97</a></span>        <a class="code hl_typedef" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">mass</a> = 1.0f, <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#aaabf2cd3fe9a2944d518ecb9e63026bf">inverseMass</a> = 1.0f;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="comment">// Velocity of the rigidbody in world space.</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">  100</a></span>        glm::vec3 <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a2c41f12e5cb80ddab82fe31872f63212">velocity</a> = glm::vec3(0.0f), <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">angularVelocity</a> = glm::vec3(0.0f);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="comment">// Angular orientation of the rigidbody in world space.</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_t_e_1_1_rigidbody.html#a2d840e1ec1967c5b2862d9828e8bef22">  103</a></span>        glm::quat <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a2d840e1ec1967c5b2862d9828e8bef22">orientation</a> = glm::quat(1.0f, 0.0f, 0.0f, 0.0f);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="comment">// RB&#39;s will sleep if no forces are applied to them for a certain amount of time.</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="comment">// To wake them up, apply a force to them.</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="class_t_e_1_1_rigidbody.html#abd67995cf6fc0d1b84299e20b654fb72">  107</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a729864d8a6481194c6bcbe5926090f30">useGravity</a> = <span class="keyword">false</span>, <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#abd67995cf6fc0d1b84299e20b654fb72">isSleeping</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="comment">// Freezing</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="class_t_e_1_1_rigidbody.html#a996cb84812c782e001199f2385271181">  110</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a996cb84812c782e001199f2385271181">freezePositionX</a> = <span class="keyword">false</span>, <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a214c398e643f9a9886c6a5d13df929a6">freezePositionY</a> = <span class="keyword">false</span>, <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a8c13112b2a89fc914d99f700414dc355">freezePositionZ</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_t_e_1_1_rigidbody.html#acfa8de259955d66e3b2ca62fbd763efb">  111</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#acfa8de259955d66e3b2ca62fbd763efb">freezeRotationX</a> = <span class="keyword">false</span>, <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a8149d1bc733c4cc998baecf483124335">freezeRotationY</a> = <span class="keyword">false</span>, <a class="code hl_variable" href="class_t_e_1_1_rigidbody.html#a76d19ad8ae2ad8a12431363c72c822d6">freezeRotationZ</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    };</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
+<div class="ttc" id="a_defines_8h_html"><div class="ttname"><a href="_defines_8h.html">Defines.h</a></div><div class="ttdoc">Defines some common math constants and typedefs   All content (c) 2022 DigiPen Institute of Technolog...</div></div>
+<div class="ttc" id="a_defines_8h_html_a6365a56b2e4259d6af0bbd2880bbe708"><div class="ttname"><a href="_defines_8h.html#a6365a56b2e4259d6af0bbd2880bbe708">TEuint8</a></div><div class="ttdeci">uint8_t TEuint8</div><div class="ttdef"><b>Definition:</b> Defines.h:83</div></div>
+<div class="ttc" id="a_defines_8h_html_acd4c1ca77ef20a04bd21f334e37bc639"><div class="ttname"><a href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a></div><div class="ttdeci">float TEfloat</div><div class="ttdef"><b>Definition:</b> Defines.h:93</div></div>
+<div class="ttc" id="aclass_t_e_1_1_i_component_html"><div class="ttname"><a href="class_t_e_1_1_i_component.html">TE::IComponent</a></div><div class="ttdoc">Base class of every ECS Component. Provides some generic functions to.</div><div class="ttdef"><b>Definition:</b> ECSManager.h:476</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html">TE::Rigidbody</a></div><div class="ttdef"><b>Definition:</b> Rigidbody.h:31</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a081ef8ceb561637870cc4b1ba312c33b"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a081ef8ceb561637870cc4b1ba312c33b">TE::Rigidbody::Rigidbody</a></div><div class="ttdeci">Rigidbody()</div><div class="ttdef"><b>Definition:</b> Rigidbody.cpp:7</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a0ebcd2d31b107b2e72769638c9f12642"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a0ebcd2d31b107b2e72769638c9f12642">TE::Rigidbody::AddForce</a></div><div class="ttdeci">void AddForce(const glm::vec3 &amp;force)</div><div class="ttdoc">Adds a force to the linear velocity of the rigidbody.</div><div class="ttdef"><b>Definition:</b> Rigidbody.cpp:79</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a214c398e643f9a9886c6a5d13df929a6"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a214c398e643f9a9886c6a5d13df929a6">TE::Rigidbody::freezePositionY</a></div><div class="ttdeci">bool freezePositionY</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:110</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a27eb605538d50c4e9de4557be69bf393"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a27eb605538d50c4e9de4557be69bf393">TE::Rigidbody::TerminalVelocity</a></div><div class="ttdeci">const TEfloat TerminalVelocity(const TEfloat mass, const TEfloat gravity, const TEfloat dragCoefficient) const noexcept</div><div class="ttdoc">Determines the terminal velocity of the rigidbody. Terminal velocity is the maximum vertical velocity...</div><div class="ttdef"><b>Definition:</b> Rigidbody.cpp:120</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a2c41f12e5cb80ddab82fe31872f63212"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a2c41f12e5cb80ddab82fe31872f63212">TE::Rigidbody::velocity</a></div><div class="ttdeci">glm::vec3 velocity</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:100</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a2d51c936430abe02eb8a965f73075bfe"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a2d51c936430abe02eb8a965f73075bfe">TE::Rigidbody::~Rigidbody</a></div><div class="ttdeci">~Rigidbody()</div><div class="ttdef"><b>Definition:</b> Rigidbody.cpp:10</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a2d840e1ec1967c5b2862d9828e8bef22"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a2d840e1ec1967c5b2862d9828e8bef22">TE::Rigidbody::orientation</a></div><div class="ttdeci">glm::quat orientation</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:103</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a3d56dc72b490deff5469355532dd92b2"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">TE::Rigidbody::mass</a></div><div class="ttdeci">TEfloat mass</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:97</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a460e7fa00ab9cb6c8a1444cfa235fa34"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a460e7fa00ab9cb6c8a1444cfa235fa34">TE::Rigidbody::drag</a></div><div class="ttdeci">TEfloat drag</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:88</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a67adba8802f5c80fd9b9569774ed4645"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a67adba8802f5c80fd9b9569774ed4645">TE::Rigidbody::AddForceAtPosition</a></div><div class="ttdeci">void AddForceAtPosition(const glm::vec3 &amp;force, const glm::vec3 &amp;position)</div><div class="ttdoc">Adds a force to the linear velocity of the rigidbody at a specific position.</div><div class="ttdef"><b>Definition:</b> Rigidbody.cpp:91</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a6dcfd90acd4fac729d27dfc5ed8720b4"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a6dcfd90acd4fac729d27dfc5ed8720b4">TE::Rigidbody::Deserialize</a></div><div class="ttdeci">void Deserialize(Serializer &amp;s)</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:40</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a729864d8a6481194c6bcbe5926090f30"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a729864d8a6481194c6bcbe5926090f30">TE::Rigidbody::useGravity</a></div><div class="ttdeci">bool useGravity</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:107</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a7613e1391660d0c898d60c655ca10052"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">TE::Rigidbody::type</a></div><div class="ttdeci">RigidbodyType type</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:82</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a76d19ad8ae2ad8a12431363c72c822d6"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a76d19ad8ae2ad8a12431363c72c822d6">TE::Rigidbody::freezeRotationZ</a></div><div class="ttdeci">bool freezeRotationZ</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:111</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a8149d1bc733c4cc998baecf483124335"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a8149d1bc733c4cc998baecf483124335">TE::Rigidbody::freezeRotationY</a></div><div class="ttdeci">bool freezeRotationY</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:111</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a847c0255a5e522e45b78651573ef24bf"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a847c0255a5e522e45b78651573ef24bf">TE::Rigidbody::Update</a></div><div class="ttdeci">void Update(TEfloat dt)</div><div class="ttdoc">Updates the physics of this rigidbody.</div><div class="ttdef"><b>Definition:</b> Rigidbody.cpp:17</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a89094eae56dd3d637f7fd767a89f52e4"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a89094eae56dd3d637f7fd767a89f52e4">TE::Rigidbody::restitution</a></div><div class="ttdeci">TEfloat restitution</div><div class="ttdoc">Restitution (dimensionless number, usually between 0 and 1.</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:93</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a8c13112b2a89fc914d99f700414dc355"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a8c13112b2a89fc914d99f700414dc355">TE::Rigidbody::freezePositionZ</a></div><div class="ttdeci">bool freezePositionZ</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:110</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a996cb84812c782e001199f2385271181"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a996cb84812c782e001199f2385271181">TE::Rigidbody::freezePositionX</a></div><div class="ttdeci">bool freezePositionX</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:110</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_a9fb92ac06c6aca70d2665494d9a0bce7"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">TE::Rigidbody::angularVelocity</a></div><div class="ttdeci">glm::vec3 angularVelocity</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:100</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_aaabf2cd3fe9a2944d518ecb9e63026bf"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#aaabf2cd3fe9a2944d518ecb9e63026bf">TE::Rigidbody::inverseMass</a></div><div class="ttdeci">TEfloat inverseMass</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:97</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_ab8552d7107f46d5a0a196e3eb3df89ba"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#ab8552d7107f46d5a0a196e3eb3df89ba">TE::Rigidbody::AddTorque</a></div><div class="ttdeci">void AddTorque(const glm::vec3 &amp;torque)</div><div class="ttdoc">Adds a force to the angular velocity of the rigidbody.</div><div class="ttdef"><b>Definition:</b> Rigidbody.cpp:104</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_abd67995cf6fc0d1b84299e20b654fb72"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#abd67995cf6fc0d1b84299e20b654fb72">TE::Rigidbody::isSleeping</a></div><div class="ttdeci">bool isSleeping</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:107</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_acfa8de259955d66e3b2ca62fbd763efb"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#acfa8de259955d66e3b2ca62fbd763efb">TE::Rigidbody::freezeRotationX</a></div><div class="ttdeci">bool freezeRotationX</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:111</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_aebae24a2053fcb72372fc38924a00a34"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#aebae24a2053fcb72372fc38924a00a34">TE::Rigidbody::Serialize</a></div><div class="ttdeci">void Serialize(Serializer &amp;s)</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:39</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_af3b120cd0d84a7f5955c10c87c6899f7"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">TE::Rigidbody::angularDrag</a></div><div class="ttdeci">TEfloat angularDrag</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:88</div></div>
+<div class="ttc" id="aclass_t_e_1_1_rigidbody_html_afd21d97082c90370f20c0b19d9d1e3c5"><div class="ttname"><a href="class_t_e_1_1_rigidbody.html#afd21d97082c90370f20c0b19d9d1e3c5">TE::Rigidbody::GetRTTRInstance</a></div><div class="ttdeci">rttr::instance GetRTTRInstance() const</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:37</div></div>
+<div class="ttc" id="aclass_t_e_1_1_serializer_html"><div class="ttname"><a href="class_t_e_1_1_serializer.html">TE::Serializer</a></div><div class="ttdef"><b>Definition:</b> Serializer.h:87</div></div>
+<div class="ttc" id="aclass_t_e_1_1_serializer_html_a4db2e02cb95d865134f885cc075e479e"><div class="ttname"><a href="class_t_e_1_1_serializer.html#a4db2e02cb95d865134f885cc075e479e">TE::Serializer::Serialize</a></div><div class="ttdeci">void Serialize(const EntityRef &amp;entt)</div><div class="ttdef"><b>Definition:</b> Serializer.cpp:352</div></div>
+<div class="ttc" id="aclass_t_e_1_1_serializer_html_ab1b02feed183f0aa4fe3fb505978b25f"><div class="ttname"><a href="class_t_e_1_1_serializer.html#ab1b02feed183f0aa4fe3fb505978b25f">TE::Serializer::Deserialize</a></div><div class="ttdeci">void Deserialize(EntityRef &amp;entt)</div><div class="ttdef"><b>Definition:</b> Serializer.cpp:307</div></div>
+<div class="ttc" id="anamespace_t_e_html"><div class="ttname"><a href="namespace_t_e.html">TE</a></div><div class="ttdoc">Declarations for the ECSManager class, EntityRef class, IComponent and ISystem classes   All content ...</div><div class="ttdef"><b>Definition:</b> EditorFrame.h:40</div></div>
+<div class="ttc" id="anamespace_t_e_html_a4b3c112e14d24ba06ef63f84295999a6"><div class="ttname"><a href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6">TE::RigidbodyType</a></div><div class="ttdeci">RigidbodyType</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:24</div></div>
+<div class="ttc" id="anamespace_t_e_html_a4b3c112e14d24ba06ef63f84295999a6a513c74bdb8fe98af0eb4adbc9e204ef3"><div class="ttname"><a href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a513c74bdb8fe98af0eb4adbc9e204ef3">TE::Kinematic</a></div><div class="ttdeci">@ Kinematic</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:26</div></div>
+<div class="ttc" id="anamespace_t_e_html_a4b3c112e14d24ba06ef63f84295999a6a71f6359040d876a1509ce7a4d30b4928"><div class="ttname"><a href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a71f6359040d876a1509ce7a4d30b4928">TE::Dynamic</a></div><div class="ttdeci">@ Dynamic</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:27</div></div>
+<div class="ttc" id="anamespace_t_e_html_a4b3c112e14d24ba06ef63f84295999a6a93e9591fea7ac815ac95bf5c6a90b279"><div class="ttname"><a href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a93e9591fea7ac815ac95bf5c6a90b279">TE::Static</a></div><div class="ttdeci">@ Static</div><div class="ttdef"><b>Definition:</b> Rigidbody.h:25</div></div>
+<div class="ttc" id="apch__engine_8h_html_ad3ee3199fb189e1047207f7a4d781868"><div class="ttname"><a href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div><div class="ttdeci">#define TE_SUPRESS_START</div><div class="ttdef"><b>Definition:</b> pch_engine.h:58</div></div>
+<div class="ttc" id="apch__engine_8h_html_afa88535cb07959a98893cd5653ca39c3"><div class="ttname"><a href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div><div class="ttdeci">#define TE_SUPRESS_END</div><div class="ttdef"><b>Definition:</b> pch_engine.h:71</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ff9d562b39932b7b74f54b9fb4bb00a0.html">ProjectSolution</a></li><li class="navelem"><a class="el" href="dir_0e3d5f2d56e31468daefe438e212cfbc.html">Proj_Engine</a></li><li class="navelem"><a class="el" href="dir_0d2c0b45ba4d42e3f37ae38d7482e159.html">Source</a></li><li class="navelem"><a class="el" href="dir_899dd8e7a2d2f241199d7efd6d4c7a2a.html">ECSComponents</a></li><li class="navelem"><a class="el" href="_rigidbody_8h.html">Rigidbody.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

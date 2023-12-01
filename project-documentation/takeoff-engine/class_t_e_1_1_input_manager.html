@@ -1,0 +1,1649 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: TE::InputManager Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_t_e_1_1_input_manager.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a>  </div>
+  <div class="headertitle"><div class="title">TE::InputManager Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Main interface for using the <a class="el" href="class_t_e_1_1_input_manager.html" title="Main interface for using the InputManager.">InputManager</a>.  
+ <a href="class_t_e_1_1_input_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_input_manager_8h_source.html">InputManager.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for TE::InputManager:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_t_e_1_1_input_manager.png" usemap="#TE::InputManager_map" alt=""/>
+  <map id="TE::InputManager_map" name="TE::InputManager_map">
+<area href="class_t_e_1_1_i_manager.html" alt="TE::IManager" shape="rect" coords="0,56,111,80"/>
+<area href="class_t_e_1_1_i_object.html" alt="TE::IObject" shape="rect" coords="0,0,111,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3a2b21575795e607fc9aeb619b9db0c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a3a2b21575795e607fc9aeb619b9db0c7">InputManager</a> ()</td></tr>
+<tr class="memdesc:a3a2b21575795e607fc9aeb619b9db0c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="class_t_e_1_1_input_manager.html" title="Main interface for using the InputManager.">InputManager</a>, and gets a unique GUID for it upon construction.  <br /></td></tr>
+<tr class="separator:a3a2b21575795e607fc9aeb619b9db0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42021b6748634c3ac8c1b9b0d1f7c4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#ae42021b6748634c3ac8c1b9b0d1f7c4d">IsKeyPressed</a> (<a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a> <a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>)</td></tr>
+<tr class="memdesc:ae42021b6748634c3ac8c1b9b0d1f7c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that checks if a key is pressed True if key is pressed False if key is released.  <br /></td></tr>
+<tr class="separator:ae42021b6748634c3ac8c1b9b0d1f7c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292d45fa0a9bdaa2cb1ca6754e1396a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a292d45fa0a9bdaa2cb1ca6754e1396a7">IsKeyReleased</a> (<a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a> <a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>)</td></tr>
+<tr class="memdesc:a292d45fa0a9bdaa2cb1ca6754e1396a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that checks if a key is pressed True if key is released False if key is pressed.  <br /></td></tr>
+<tr class="separator:a292d45fa0a9bdaa2cb1ca6754e1396a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9602d41063a9730d334371ac55f85e0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a9602d41063a9730d334371ac55f85e0d">IsKeyTriggered</a> (<a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a> <a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>)</td></tr>
+<tr class="memdesc:a9602d41063a9730d334371ac55f85e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that checks if a key will be triggered in the current frame True if key will trigger False if key is unable to trigger or has already triggered.  <br /></td></tr>
+<tr class="separator:a9602d41063a9730d334371ac55f85e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c1a803389b0bbb10d48d2775684f8c"><td class="memTemplParams" colspan="2">template&lt;typename ... ARGS&gt; </td></tr>
+<tr class="memitem:a77c1a803389b0bbb10d48d2775684f8c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a77c1a803389b0bbb10d48d2775684f8c">IsKeyPressed</a> (<a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a> <a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>, ARGS... rest)</td></tr>
+<tr class="memdesc:a77c1a803389b0bbb10d48d2775684f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded Variadic Function that checks if a few keys will trigger in the current frame True if keys will trigger False if keys is unable to trigger or has already triggered.  <br /></td></tr>
+<tr class="separator:a77c1a803389b0bbb10d48d2775684f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154aff5ceba091a5d96dde7831ad0a9e"><td class="memTemplParams" colspan="2">template&lt;typename ... ARGS&gt; </td></tr>
+<tr class="memitem:a154aff5ceba091a5d96dde7831ad0a9e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a154aff5ceba091a5d96dde7831ad0a9e">IsKeyTriggered</a> (<a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a> <a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>, ARGS... rest)</td></tr>
+<tr class="memdesc:a154aff5ceba091a5d96dde7831ad0a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded Variadic Function that checks if a few keys will trigger in the current frame True if keys will trigger False if keys are unable to trigger or has all been triggered.  <br /></td></tr>
+<tr class="separator:a154aff5ceba091a5d96dde7831ad0a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c9b1f15208960b2bc2e7ef35e4389e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a07c9b1f15208960b2bc2e7ef35e4389e">IsMouseButtonPressed</a> (<a class="el" href="namespace_t_e.html#a7eede21e07ecc4c2b45a08d7ec576c06">MouseBtnCode</a> ButtonCode)</td></tr>
+<tr class="memdesc:a07c9b1f15208960b2bc2e7ef35e4389e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse Function that checks if a specific mouse button is pressed in the current frame True if button is pressed False if button is released.  <br /></td></tr>
+<tr class="separator:a07c9b1f15208960b2bc2e7ef35e4389e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff12239d2dcd587be33e713a0a903c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#aeff12239d2dcd587be33e713a0a903c7">IsMouseButtonReleased</a> (<a class="el" href="namespace_t_e.html#a7eede21e07ecc4c2b45a08d7ec576c06">MouseBtnCode</a> ButtonCode)</td></tr>
+<tr class="memdesc:aeff12239d2dcd587be33e713a0a903c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse Function that checks if a specific mouse button is released in the current frame True if button is released False if button is pressed.  <br /></td></tr>
+<tr class="separator:aeff12239d2dcd587be33e713a0a903c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9efe44be344cd14925f0d8083aa274b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a9efe44be344cd14925f0d8083aa274b4">IsMouseButtonTriggered</a> (<a class="el" href="namespace_t_e.html#a7eede21e07ecc4c2b45a08d7ec576c06">MouseBtnCode</a> ButtonCode)</td></tr>
+<tr class="memdesc:a9efe44be344cd14925f0d8083aa274b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse Function that checks if specific mouse button will trigger in the current frame or has already triggered True if button will trigger False if button is unable to trigger or has been triggered.  <br /></td></tr>
+<tr class="separator:a9efe44be344cd14925f0d8083aa274b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08f5a920f2219aee5e9ad7d17ca8ae3"><td class="memTemplParams" colspan="2">template&lt;typename ... ARGS&gt; </td></tr>
+<tr class="memitem:af08f5a920f2219aee5e9ad7d17ca8ae3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#af08f5a920f2219aee5e9ad7d17ca8ae3">IsMouseButtonPressed</a> (<a class="el" href="namespace_t_e.html#a7eede21e07ecc4c2b45a08d7ec576c06">MouseBtnCode</a> ButtonCode, ARGS... rest)</td></tr>
+<tr class="memdesc:af08f5a920f2219aee5e9ad7d17ca8ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded Variadic Function that checks if a few mouse buttons are pressed in the current frame True if buttons are pressed False if all buttons are not pressed.  <br /></td></tr>
+<tr class="separator:af08f5a920f2219aee5e9ad7d17ca8ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93e178e24cef291cb1d2ffd7cfafda5"><td class="memTemplParams" colspan="2">template&lt;typename ... ARGS&gt; </td></tr>
+<tr class="memitem:ab93e178e24cef291cb1d2ffd7cfafda5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#ab93e178e24cef291cb1d2ffd7cfafda5">IsMouseButtonTriggered</a> (<a class="el" href="namespace_t_e.html#a7eede21e07ecc4c2b45a08d7ec576c06">MouseBtnCode</a> ButtonCode, ARGS... rest)</td></tr>
+<tr class="memdesc:ab93e178e24cef291cb1d2ffd7cfafda5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded Variadic Function that checks if a few mouse buttons will trigger in the current frame True if mouse buttons will trigger False if mouse buttons are unable to trigger or has all already triggered.  <br /></td></tr>
+<tr class="separator:ab93e178e24cef291cb1d2ffd7cfafda5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d87847ab110fe7a8b4c72284d1ed751"><td class="memItemLeft" align="right" valign="top">glm::ivec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a9d87847ab110fe7a8b4c72284d1ed751">GetMousePosition</a> ()</td></tr>
+<tr class="memdesc:a9d87847ab110fe7a8b4c72284d1ed751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mouse position as glm integer vec2.  <br /></td></tr>
+<tr class="separator:a9d87847ab110fe7a8b4c72284d1ed751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94fb7f9e97ec1ff5c28539af53fd076"><td class="memItemLeft" align="right" valign="top">glm::ivec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#aa94fb7f9e97ec1ff5c28539af53fd076">GetMousePosDelta</a> ()</td></tr>
+<tr class="memdesc:aa94fb7f9e97ec1ff5c28539af53fd076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mouse delta for each mouse movement callback.  <br /></td></tr>
+<tr class="separator:aa94fb7f9e97ec1ff5c28539af53fd076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206f087b2bce3dd0a11893c287580f00"><td class="memItemLeft" align="right" valign="top">glm::ivec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a206f087b2bce3dd0a11893c287580f00">GetMouseScrollDelta</a> ()</td></tr>
+<tr class="memdesc:a206f087b2bce3dd0a11893c287580f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mouse scroll as glm integer vec2 Vertical mouse scroll is the y value Horizontal mouse scroll is the x value.  <br /></td></tr>
+<tr class="separator:a206f087b2bce3dd0a11893c287580f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f12b2330220d2ad7bdcd1e2473049f8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a6f12b2330220d2ad7bdcd1e2473049f8">DEBUG_GetName</a> ()</td></tr>
+<tr class="separator:a6f12b2330220d2ad7bdcd1e2473049f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab546c0d7cebf29894597f20e4af6b8e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#ab546c0d7cebf29894597f20e4af6b8e6">DEBUG_INPUT_TEST</a> ()</td></tr>
+<tr class="separator:ab546c0d7cebf29894597f20e4af6b8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ea38fcaffc946a2e945a5db853e99a"><td class="memTemplParams" colspan="2">template&lt;typename ... ARGS&gt; </td></tr>
+<tr class="memitem:aa3ea38fcaffc946a2e945a5db853e99a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#aa3ea38fcaffc946a2e945a5db853e99a">IsKeyPressed</a> (<a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a> <a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>, ARGS ... rest)</td></tr>
+<tr class="separator:aa3ea38fcaffc946a2e945a5db853e99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677dbcc90b04c80c5a3bbd00047b2109"><td class="memTemplParams" colspan="2">template&lt;typename ... ARGS&gt; </td></tr>
+<tr class="memitem:a677dbcc90b04c80c5a3bbd00047b2109"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a677dbcc90b04c80c5a3bbd00047b2109">SetTriggered</a> (bool t_f, int KeyButtonCode, ARGS ... rest)</td></tr>
+<tr class="separator:a677dbcc90b04c80c5a3bbd00047b2109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96bebaa46003f39b4b3e09bd6cf6c96d"><td class="memTemplParams" colspan="2">template&lt;typename ... ARGS&gt; </td></tr>
+<tr class="memitem:a96bebaa46003f39b4b3e09bd6cf6c96d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a96bebaa46003f39b4b3e09bd6cf6c96d">IsKeyTriggered</a> (<a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a> <a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>, ARGS ... rest)</td></tr>
+<tr class="separator:a96bebaa46003f39b4b3e09bd6cf6c96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_t_e_1_1_i_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_manager.html">TE::IManager</a></td></tr>
+<tr class="memitem:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a789acfdc8c9a177bbf1ae68e25ab0ceb">IManager</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="separator:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec0d542ae4fc92c784f908f8eed8457 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a9ec0d542ae4fc92c784f908f8eed8457">~IManager</a> ()</td></tr>
+<tr class="separator:a9ec0d542ae4fc92c784f908f8eed8457 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#ad528f9e9a304c9aa25d472b547242291">LoadManager</a> ()</td></tr>
+<tr class="separator:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5469d89d5f07a6890444e9d20636ac6d inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a5469d89d5f07a6890444e9d20636ac6d">InitManager</a> ()</td></tr>
+<tr class="separator:a5469d89d5f07a6890444e9d20636ac6d inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441c480911e78b81cf8d717dff6dcd77 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a441c480911e78b81cf8d717dff6dcd77">UpdateManager</a> ()</td></tr>
+<tr class="separator:a441c480911e78b81cf8d717dff6dcd77 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7904d7af29ec42dc55396b522b375b inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a0f7904d7af29ec42dc55396b522b375b">ExitManager</a> ()</td></tr>
+<tr class="separator:a0f7904d7af29ec42dc55396b522b375b inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#acb0ab41892caa9bed62624156d782b21">GetRunOnlyDuringSimulation</a> ()</td></tr>
+<tr class="separator:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_t_e_1_1_i_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_object.html">TE::IObject</a></td></tr>
+<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#afc331476bf6217fde06f31deb161b97e">IObject</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="separator:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#af1d390c81a0fd71b490d01b93042f81d">~IObject</a> ()</td></tr>
+<tr class="separator:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">GetGUID</a> () const noexcept</td></tr>
+<tr class="separator:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aafeae10a462729d794db5c6da61eba08">SetGUID</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> guid) noexcept</td></tr>
+<tr class="separator:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">GetTypeGUID</a> () const noexcept</td></tr>
+<tr class="separator:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae1e9f4a82b58168e25e0e664e2420454"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_t_e_1_1_input_manager.html">InputManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#ae1e9f4a82b58168e25e0e664e2420454">GetInstanceHandle</a> ()</td></tr>
+<tr class="separator:ae1e9f4a82b58168e25e0e664e2420454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a820f21c0308bbd728fde81052b5c571b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a820f21c0308bbd728fde81052b5c571b">KB_CALLBACK</a> (void *window, int key, int scancode, int action, int mods)</td></tr>
+<tr class="memdesc:a820f21c0308bbd728fde81052b5c571b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to be called when GLFW window receives a keyboard input(keys pressed, held and released)  <br /></td></tr>
+<tr class="separator:a820f21c0308bbd728fde81052b5c571b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af8977c3c1764a0e5bcfed88ab66e46"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a7af8977c3c1764a0e5bcfed88ab66e46">MOUSE_BTN_CALLBACK</a> (void *window, int button, int action, int mods)</td></tr>
+<tr class="memdesc:a7af8977c3c1764a0e5bcfed88ab66e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to be called when GLFW window receives a mouse button input(keys pressed and released)  <br /></td></tr>
+<tr class="separator:a7af8977c3c1764a0e5bcfed88ab66e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc63ebea588f2834e51657ae8d0403aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#acc63ebea588f2834e51657ae8d0403aa">MOUSE_POS_CALLBACK</a> (void *window, double xpos, double ypos)</td></tr>
+<tr class="memdesc:acc63ebea588f2834e51657ae8d0403aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to be called when GLFW window receives a mouse cursor changes position)  <br /></td></tr>
+<tr class="separator:acc63ebea588f2834e51657ae8d0403aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d42860ad413d4dade087f4072fd216a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a4d42860ad413d4dade087f4072fd216a">MOUSE_SCROLL_CALLBACK</a> (void *window, double xoffset, double yoffset)</td></tr>
+<tr class="memdesc:a4d42860ad413d4dade087f4072fd216a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to be called when GLFW window receives a scroll event on the mouse wheel)  <br /></td></tr>
+<tr class="separator:a4d42860ad413d4dade087f4072fd216a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aece6b842c28f149ca0c1bef6192435fd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_t_e_1_1_input_manager.html">InputManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#aece6b842c28f149ca0c1bef6192435fd">input_manager</a></td></tr>
+<tr class="separator:aece6b842c28f149ca0c1bef6192435fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ade9ce89237df0d5c201a47c29fcaf6a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#ade9ce89237df0d5c201a47c29fcaf6a2">InitManager</a> ()</td></tr>
+<tr class="memdesc:ade9ce89237df0d5c201a47c29fcaf6a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation Function for the <a class="el" href="class_t_e_1_1_input_manager.html" title="Main interface for using the InputManager.">InputManager</a>.  <br /></td></tr>
+<tr class="separator:ade9ce89237df0d5c201a47c29fcaf6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d6b181f078d64389820e47c8474e30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a32d6b181f078d64389820e47c8474e30">UpdateManager</a> ()</td></tr>
+<tr class="memdesc:a32d6b181f078d64389820e47c8474e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update Function for the <a class="el" href="class_t_e_1_1_input_manager.html" title="Main interface for using the InputManager.">InputManager</a> Resets the Mouse Scroll Delta inbetween frames.  <br /></td></tr>
+<tr class="separator:a32d6b181f078d64389820e47c8474e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae606db856f18cfba39f91d8063fd12af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#ae606db856f18cfba39f91d8063fd12af">ExitManager</a> ()</td></tr>
+<tr class="memdesc:ae606db856f18cfba39f91d8063fd12af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit Function for the <a class="el" href="class_t_e_1_1_input_manager.html" title="Main interface for using the InputManager.">InputManager</a>, called upon when engine is to be closed.  <br /></td></tr>
+<tr class="separator:ae606db856f18cfba39f91d8063fd12af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace2b59aa5069ae9c6b78695437a53ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#aace2b59aa5069ae9c6b78695437a53ca">SetTriggered</a> (bool t_f, int KeyButtonCode)</td></tr>
+<tr class="memdesc:aace2b59aa5069ae9c6b78695437a53ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded Function that sets the triggered variable to be true or false.  <br /></td></tr>
+<tr class="separator:aace2b59aa5069ae9c6b78695437a53ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac104e6422de07b75d84de41c7d6cb637"><td class="memTemplParams" colspan="2">template&lt;typename ... ARGS&gt; </td></tr>
+<tr class="memitem:ac104e6422de07b75d84de41c7d6cb637"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#ac104e6422de07b75d84de41c7d6cb637">SetTriggered</a> (bool t_f, int KeyButtonCode, ARGS... rest)</td></tr>
+<tr class="memdesc:ac104e6422de07b75d84de41c7d6cb637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded Function that sets the triggered variable to be true or false.  <br /></td></tr>
+<tr class="separator:ac104e6422de07b75d84de41c7d6cb637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c282aee3b6908383d51b9417d340ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a08c282aee3b6908383d51b9417d340ff">ResetMouseScrollDelta</a> ()</td></tr>
+<tr class="memdesc:a08c282aee3b6908383d51b9417d340ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the mousescroll delta to {0,0} every update loop as the callback only occurs when scroll wheel moves, which isnt every update loop.  <br /></td></tr>
+<tr class="separator:a08c282aee3b6908383d51b9417d340ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92c026bf171bf7c08b409c673aa8647"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#af92c026bf171bf7c08b409c673aa8647">ProcessKeyButtonState</a> (int <a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>, int action)</td></tr>
+<tr class="memdesc:af92c026bf171bf7c08b409c673aa8647"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called after every keyboard key callback, to set the various key's bools.  <br /></td></tr>
+<tr class="separator:af92c026bf171bf7c08b409c673aa8647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50cbf98ea5c5be4445e7bd85c1da7042"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a50cbf98ea5c5be4445e7bd85c1da7042">ProcessMouseButtonState</a> (int ButtonCode, int action)</td></tr>
+<tr class="memdesc:a50cbf98ea5c5be4445e7bd85c1da7042"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called after every mouse button callback, to set the various mouse button's bools.  <br /></td></tr>
+<tr class="separator:a50cbf98ea5c5be4445e7bd85c1da7042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fec4b3ad8cb3240efa56c2991767fb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a1fec4b3ad8cb3240efa56c2991767fb0">ProcessMousePosition</a> (int xpos, int ypos)</td></tr>
+<tr class="memdesc:a1fec4b3ad8cb3240efa56c2991767fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called after every mouse cursor position callback, to set the mouse's position.  <br /></td></tr>
+<tr class="separator:a1fec4b3ad8cb3240efa56c2991767fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d004027b2fb030f06618c95e3e20a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#ae5d004027b2fb030f06618c95e3e20a3">ProcessMouseScrollDelta</a> (int xpos, int ypos)</td></tr>
+<tr class="memdesc:ae5d004027b2fb030f06618c95e3e20a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called after every mouse scroll callback, to set the mouse's scroll movement.  <br /></td></tr>
+<tr class="separator:ae5d004027b2fb030f06618c95e3e20a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a22c8ebe3fdd4af826eaa569c24216109"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_e_1_1_keys_buttons.html">KeysButtons</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a22c8ebe3fdd4af826eaa569c24216109">KeysButtonsStates</a> [static_cast&lt; unsigned long long &gt;(<a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cba72bad44e451a58ae067d66c8756a03f1">KeyCode::TE_KEY_LAST</a>)]</td></tr>
+<tr class="separator:a22c8ebe3fdd4af826eaa569c24216109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab874246f7f7e983a7d7fe1e14d9d4220"><td class="memItemLeft" align="right" valign="top">glm::ivec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#ab874246f7f7e983a7d7fe1e14d9d4220">MousePosition</a> { -1.0,-1.0 }</td></tr>
+<tr class="separator:ab874246f7f7e983a7d7fe1e14d9d4220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93902d80b198d6e153996973821a1bf1"><td class="memItemLeft" align="right" valign="top">glm::ivec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a93902d80b198d6e153996973821a1bf1">MousePosDelta</a> { 0,0 }</td></tr>
+<tr class="separator:a93902d80b198d6e153996973821a1bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d69aeab2daec4bd600dae80a397400"><td class="memItemLeft" align="right" valign="top">glm::ivec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a14d69aeab2daec4bd600dae80a397400">MouseScrollDelta</a> { 0,0 }</td></tr>
+<tr class="separator:a14d69aeab2daec4bd600dae80a397400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_input_manager.html#a3e1914489e4bed4f9f23cdeab34a43dc">Engine</a></td></tr>
+<tr class="separator:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Main interface for using the <a class="el" href="class_t_e_1_1_input_manager.html" title="Main interface for using the InputManager.">InputManager</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3a2b21575795e607fc9aeb619b9db0c7" name="a3a2b21575795e607fc9aeb619b9db0c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2b21575795e607fc9aeb619b9db0c7">&#9670;&#160;</a></span>InputManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TE::InputManager::InputManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for the <a class="el" href="class_t_e_1_1_input_manager.html" title="Main interface for using the InputManager.">InputManager</a>, and gets a unique GUID for it upon construction. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae1e9f4a82b58168e25e0e664e2420454" name="ae1e9f4a82b58168e25e0e664e2420454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e9f4a82b58168e25e0e664e2420454">&#9670;&#160;</a></span>GetInstanceHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_t_e_1_1_input_manager.html">InputManager</a> &amp; TE::InputManager::GetInstanceHandle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade9ce89237df0d5c201a47c29fcaf6a2" name="ade9ce89237df0d5c201a47c29fcaf6a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade9ce89237df0d5c201a47c29fcaf6a2">&#9670;&#160;</a></span>InitManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::InitManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialisation Function for the <a class="el" href="class_t_e_1_1_input_manager.html" title="Main interface for using the InputManager.">InputManager</a>. </p>
+
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a5469d89d5f07a6890444e9d20636ac6d">TE::IManager</a>.</p>
+
+</div>
+</div>
+<a id="a32d6b181f078d64389820e47c8474e30" name="a32d6b181f078d64389820e47c8474e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32d6b181f078d64389820e47c8474e30">&#9670;&#160;</a></span>UpdateManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::UpdateManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update Function for the <a class="el" href="class_t_e_1_1_input_manager.html" title="Main interface for using the InputManager.">InputManager</a> Resets the Mouse Scroll Delta inbetween frames. </p>
+
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a441c480911e78b81cf8d717dff6dcd77">TE::IManager</a>.</p>
+
+</div>
+</div>
+<a id="ae606db856f18cfba39f91d8063fd12af" name="ae606db856f18cfba39f91d8063fd12af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae606db856f18cfba39f91d8063fd12af">&#9670;&#160;</a></span>ExitManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::ExitManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Exit Function for the <a class="el" href="class_t_e_1_1_input_manager.html" title="Main interface for using the InputManager.">InputManager</a>, called upon when engine is to be closed. </p>
+
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a0f7904d7af29ec42dc55396b522b375b">TE::IManager</a>.</p>
+
+</div>
+</div>
+<a id="a820f21c0308bbd728fde81052b5c571b" name="a820f21c0308bbd728fde81052b5c571b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a820f21c0308bbd728fde81052b5c571b">&#9670;&#160;</a></span>KB_CALLBACK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::KB_CALLBACK </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scancode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mods</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback function to be called when GLFW window receives a keyboard input(keys pressed, held and released) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The pointer to the GLFW window.</td></tr>
+    <tr><td class="paramname">key</td><td>The KeyCode for specific button of the event that triggered the callback.</td></tr>
+    <tr><td class="paramname">scancode</td><td>The scancode for specific button of the event that triggered the callback, UNUSED BY INPUTMANAGER</td></tr>
+    <tr><td class="paramname">action</td><td>The action (released = 0, pressed = 1, repeat =2) for specific button of the event that triggered the callback.</td></tr>
+    <tr><td class="paramname">mods</td><td>The mods for specific button of the event that triggered the callback, UNUSED BY INPUTMANAGER</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7af8977c3c1764a0e5bcfed88ab66e46" name="a7af8977c3c1764a0e5bcfed88ab66e46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af8977c3c1764a0e5bcfed88ab66e46">&#9670;&#160;</a></span>MOUSE_BTN_CALLBACK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::MOUSE_BTN_CALLBACK </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mods</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback function to be called when GLFW window receives a mouse button input(keys pressed and released) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The pointer to the GLFW window.</td></tr>
+    <tr><td class="paramname">button</td><td>The MouseButtonCode for specific button of the event that triggered the callback.</td></tr>
+    <tr><td class="paramname">action</td><td>The action (released = 0, pressed = 1) for specific button of the event that triggered the callback.</td></tr>
+    <tr><td class="paramname">mods</td><td>The modifier (e.g. LMB + Shift) for specific button of the event that triggered the callback, UNUSED BY INPUTMANAGER</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acc63ebea588f2834e51657ae8d0403aa" name="acc63ebea588f2834e51657ae8d0403aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc63ebea588f2834e51657ae8d0403aa">&#9670;&#160;</a></span>MOUSE_POS_CALLBACK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::MOUSE_POS_CALLBACK </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xpos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ypos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback function to be called when GLFW window receives a mouse cursor changes position) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The pointer to the GLFW window.</td></tr>
+    <tr><td class="paramname">xpos</td><td>The x-axis value of the cursor in the GLFW window </td></tr>
+    <tr><td class="paramname">ypos</td><td>The y-axis value of the cursor in the GLFW window, NOTE THAT IS TOP OF WINDOW IS y = 0</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4d42860ad413d4dade087f4072fd216a" name="a4d42860ad413d4dade087f4072fd216a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d42860ad413d4dade087f4072fd216a">&#9670;&#160;</a></span>MOUSE_SCROLL_CALLBACK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::MOUSE_SCROLL_CALLBACK </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xoffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>yoffset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback function to be called when GLFW window receives a scroll event on the mouse wheel) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The pointer to the GLFW window.</td></tr>
+    <tr><td class="paramname">xoffset</td><td>The x-axis value that the horizontal mouse wheel moved in that frame</td></tr>
+    <tr><td class="paramname">yoffset</td><td>The y-axis value that the vertical mouse wheel moved in that frame</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae42021b6748634c3ac8c1b9b0d1f7c4d" name="ae42021b6748634c3ac8c1b9b0d1f7c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae42021b6748634c3ac8c1b9b0d1f7c4d">&#9670;&#160;</a></span>IsKeyPressed() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::InputManager::IsKeyPressed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>KeyCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that checks if a key is pressed True if key is pressed False if key is released. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">KeyCode</td><td>The keycode value to check if pressed</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a292d45fa0a9bdaa2cb1ca6754e1396a7" name="a292d45fa0a9bdaa2cb1ca6754e1396a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a292d45fa0a9bdaa2cb1ca6754e1396a7">&#9670;&#160;</a></span>IsKeyReleased()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::InputManager::IsKeyReleased </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>KeyCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that checks if a key is pressed True if key is released False if key is pressed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">KeyCode</td><td>The keycode value to check if released</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9602d41063a9730d334371ac55f85e0d" name="a9602d41063a9730d334371ac55f85e0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9602d41063a9730d334371ac55f85e0d">&#9670;&#160;</a></span>IsKeyTriggered() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::InputManager::IsKeyTriggered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>KeyCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that checks if a key will be triggered in the current frame True if key will trigger False if key is unable to trigger or has already triggered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">KeyCode</td><td>The keycode value to check if it can be trigger</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a77c1a803389b0bbb10d48d2775684f8c" name="a77c1a803389b0bbb10d48d2775684f8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77c1a803389b0bbb10d48d2775684f8c">&#9670;&#160;</a></span>IsKeyPressed() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... ARGS&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::InputManager::IsKeyPressed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>KeyCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ARGS...&#160;</td>
+          <td class="paramname"><em>rest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overloaded Variadic Function that checks if a few keys will trigger in the current frame True if keys will trigger False if keys is unable to trigger or has already triggered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">KeyCode</td><td>The keycode value to check if it can be trigger</td></tr>
+    <tr><td class="paramname">rest</td><td>The other parameters of type KeyCode that will be checked</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a154aff5ceba091a5d96dde7831ad0a9e" name="a154aff5ceba091a5d96dde7831ad0a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a154aff5ceba091a5d96dde7831ad0a9e">&#9670;&#160;</a></span>IsKeyTriggered() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... ARGS&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::InputManager::IsKeyTriggered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>KeyCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ARGS...&#160;</td>
+          <td class="paramname"><em>rest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overloaded Variadic Function that checks if a few keys will trigger in the current frame True if keys will trigger False if keys are unable to trigger or has all been triggered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">KeyCode</td><td>The keycode value to check if it can be trigger</td></tr>
+    <tr><td class="paramname">rest</td><td>The other parameters of type KeyCode that will be checked</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a07c9b1f15208960b2bc2e7ef35e4389e" name="a07c9b1f15208960b2bc2e7ef35e4389e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07c9b1f15208960b2bc2e7ef35e4389e">&#9670;&#160;</a></span>IsMouseButtonPressed() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::InputManager::IsMouseButtonPressed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a7eede21e07ecc4c2b45a08d7ec576c06">MouseBtnCode</a>&#160;</td>
+          <td class="paramname"><em>ButtonCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mouse Function that checks if a specific mouse button is pressed in the current frame True if button is pressed False if button is released. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ButtonCode</td><td>The MouseBtnCode value to check if it can be trigger</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeff12239d2dcd587be33e713a0a903c7" name="aeff12239d2dcd587be33e713a0a903c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeff12239d2dcd587be33e713a0a903c7">&#9670;&#160;</a></span>IsMouseButtonReleased()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::InputManager::IsMouseButtonReleased </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a7eede21e07ecc4c2b45a08d7ec576c06">MouseBtnCode</a>&#160;</td>
+          <td class="paramname"><em>ButtonCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mouse Function that checks if a specific mouse button is released in the current frame True if button is released False if button is pressed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ButtonCode</td><td>The MouseBtnCode value to check if it can be trigger</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9efe44be344cd14925f0d8083aa274b4" name="a9efe44be344cd14925f0d8083aa274b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9efe44be344cd14925f0d8083aa274b4">&#9670;&#160;</a></span>IsMouseButtonTriggered() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::InputManager::IsMouseButtonTriggered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a7eede21e07ecc4c2b45a08d7ec576c06">MouseBtnCode</a>&#160;</td>
+          <td class="paramname"><em>ButtonCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mouse Function that checks if specific mouse button will trigger in the current frame or has already triggered True if button will trigger False if button is unable to trigger or has been triggered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ButtonCode</td><td>The MouseBtnCode value to check if it can be trigger</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af08f5a920f2219aee5e9ad7d17ca8ae3" name="af08f5a920f2219aee5e9ad7d17ca8ae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08f5a920f2219aee5e9ad7d17ca8ae3">&#9670;&#160;</a></span>IsMouseButtonPressed() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... ARGS&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::InputManager::IsMouseButtonPressed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a7eede21e07ecc4c2b45a08d7ec576c06">MouseBtnCode</a>&#160;</td>
+          <td class="paramname"><em>ButtonCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ARGS...&#160;</td>
+          <td class="paramname"><em>rest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overloaded Variadic Function that checks if a few mouse buttons are pressed in the current frame True if buttons are pressed False if all buttons are not pressed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ButtonCode</td><td>The button code value to check if it can be trigger</td></tr>
+    <tr><td class="paramname">rest</td><td>The other parameters of type MouseBtnCode that will be checked</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab93e178e24cef291cb1d2ffd7cfafda5" name="ab93e178e24cef291cb1d2ffd7cfafda5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab93e178e24cef291cb1d2ffd7cfafda5">&#9670;&#160;</a></span>IsMouseButtonTriggered() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... ARGS&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::InputManager::IsMouseButtonTriggered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a7eede21e07ecc4c2b45a08d7ec576c06">MouseBtnCode</a>&#160;</td>
+          <td class="paramname"><em>ButtonCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ARGS...&#160;</td>
+          <td class="paramname"><em>rest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overloaded Variadic Function that checks if a few mouse buttons will trigger in the current frame True if mouse buttons will trigger False if mouse buttons are unable to trigger or has all already triggered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ButtonCode</td><td>The ButtonCode value to check if it can be trigger</td></tr>
+    <tr><td class="paramname">rest</td><td>The other parameters of type MouseBtnCode that will be checked</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9d87847ab110fe7a8b4c72284d1ed751" name="a9d87847ab110fe7a8b4c72284d1ed751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d87847ab110fe7a8b4c72284d1ed751">&#9670;&#160;</a></span>GetMousePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::ivec2 TE::InputManager::GetMousePosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the mouse position as glm integer vec2. </p>
+
+</div>
+</div>
+<a id="aa94fb7f9e97ec1ff5c28539af53fd076" name="aa94fb7f9e97ec1ff5c28539af53fd076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa94fb7f9e97ec1ff5c28539af53fd076">&#9670;&#160;</a></span>GetMousePosDelta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::ivec2 TE::InputManager::GetMousePosDelta </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the mouse delta for each mouse movement callback. </p>
+
+</div>
+</div>
+<a id="a206f087b2bce3dd0a11893c287580f00" name="a206f087b2bce3dd0a11893c287580f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a206f087b2bce3dd0a11893c287580f00">&#9670;&#160;</a></span>GetMouseScrollDelta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::ivec2 TE::InputManager::GetMouseScrollDelta </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the mouse scroll as glm integer vec2 Vertical mouse scroll is the y value Horizontal mouse scroll is the x value. </p>
+
+</div>
+</div>
+<a id="aace2b59aa5069ae9c6b78695437a53ca" name="aace2b59aa5069ae9c6b78695437a53ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace2b59aa5069ae9c6b78695437a53ca">&#9670;&#160;</a></span>SetTriggered() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::SetTriggered </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>t_f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>KeyButtonCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overloaded Function that sets the triggered variable to be true or false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t_f</td><td>True or false value to set to.</td></tr>
+    <tr><td class="paramname">KeyButtonCode</td><td>The button or key code to set as the triggered bool to.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac104e6422de07b75d84de41c7d6cb637" name="ac104e6422de07b75d84de41c7d6cb637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac104e6422de07b75d84de41c7d6cb637">&#9670;&#160;</a></span>SetTriggered() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... ARGS&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::SetTriggered </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>t_f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>KeyButtonCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ARGS...&#160;</td>
+          <td class="paramname"><em>rest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overloaded Function that sets the triggered variable to be true or false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t_f</td><td>True or false value to set to.</td></tr>
+    <tr><td class="paramname">KeyButtonCode</td><td>The button or key code to set as the triggered bool to.</td></tr>
+    <tr><td class="paramname">rest</td><td>The other parameters to set as the triggered bool to.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a08c282aee3b6908383d51b9417d340ff" name="a08c282aee3b6908383d51b9417d340ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08c282aee3b6908383d51b9417d340ff">&#9670;&#160;</a></span>ResetMouseScrollDelta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::ResetMouseScrollDelta </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets the mousescroll delta to {0,0} every update loop as the callback only occurs when scroll wheel moves, which isnt every update loop. </p>
+
+</div>
+</div>
+<a id="af92c026bf171bf7c08b409c673aa8647" name="af92c026bf171bf7c08b409c673aa8647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92c026bf171bf7c08b409c673aa8647">&#9670;&#160;</a></span>ProcessKeyButtonState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::ProcessKeyButtonState </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>KeyCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>action</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called after every keyboard key callback, to set the various key's bools. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">KeyCode</td><td>The keycode of the key pressed/released</td></tr>
+    <tr><td class="paramname">action</td><td>The current action applied on that key.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a50cbf98ea5c5be4445e7bd85c1da7042" name="a50cbf98ea5c5be4445e7bd85c1da7042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50cbf98ea5c5be4445e7bd85c1da7042">&#9670;&#160;</a></span>ProcessMouseButtonState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::ProcessMouseButtonState </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ButtonCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>action</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called after every mouse button callback, to set the various mouse button's bools. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ButtonCode</td><td>The button code of the button pressed/released</td></tr>
+    <tr><td class="paramname">action</td><td>The current action applied on that button.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1fec4b3ad8cb3240efa56c2991767fb0" name="a1fec4b3ad8cb3240efa56c2991767fb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fec4b3ad8cb3240efa56c2991767fb0">&#9670;&#160;</a></span>ProcessMousePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::ProcessMousePosition </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xpos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ypos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called after every mouse cursor position callback, to set the mouse's position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xpos</td><td>The x-axis position of the mouse.</td></tr>
+    <tr><td class="paramname">ypos</td><td>The y-axis position of the mouse.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae5d004027b2fb030f06618c95e3e20a3" name="ae5d004027b2fb030f06618c95e3e20a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5d004027b2fb030f06618c95e3e20a3">&#9670;&#160;</a></span>ProcessMouseScrollDelta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::ProcessMouseScrollDelta </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xpos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ypos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called after every mouse scroll callback, to set the mouse's scroll movement. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xpos</td><td>The x-axis change of the vertical scroll wheel.</td></tr>
+    <tr><td class="paramname">ypos</td><td>The x-axis change of the horizontal scroll wheel.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6f12b2330220d2ad7bdcd1e2473049f8" name="a6f12b2330220d2ad7bdcd1e2473049f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f12b2330220d2ad7bdcd1e2473049f8">&#9670;&#160;</a></span>DEBUG_GetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * TE::InputManager::DEBUG_GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab546c0d7cebf29894597f20e4af6b8e6" name="ab546c0d7cebf29894597f20e4af6b8e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab546c0d7cebf29894597f20e4af6b8e6">&#9670;&#160;</a></span>DEBUG_INPUT_TEST()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::DEBUG_INPUT_TEST </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3ea38fcaffc946a2e945a5db853e99a" name="aa3ea38fcaffc946a2e945a5db853e99a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ea38fcaffc946a2e945a5db853e99a">&#9670;&#160;</a></span>IsKeyPressed() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... ARGS&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::InputManager::IsKeyPressed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>KeyCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ARGS ...&#160;</td>
+          <td class="paramname"><em>rest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a677dbcc90b04c80c5a3bbd00047b2109" name="a677dbcc90b04c80c5a3bbd00047b2109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677dbcc90b04c80c5a3bbd00047b2109">&#9670;&#160;</a></span>SetTriggered() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... ARGS&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::InputManager::SetTriggered </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>t_f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>KeyButtonCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ARGS ...&#160;</td>
+          <td class="paramname"><em>rest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96bebaa46003f39b4b3e09bd6cf6c96d" name="a96bebaa46003f39b4b3e09bd6cf6c96d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96bebaa46003f39b4b3e09bd6cf6c96d">&#9670;&#160;</a></span>IsKeyTriggered() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... ARGS&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::InputManager::IsKeyTriggered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cb">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>KeyCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ARGS ...&#160;</td>
+          <td class="paramname"><em>rest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a3e1914489e4bed4f9f23cdeab34a43dc" name="a3e1914489e4bed4f9f23cdeab34a43dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1914489e4bed4f9f23cdeab34a43dc">&#9670;&#160;</a></span>Engine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_t_e_1_1_engine.html">Engine</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="aece6b842c28f149ca0c1bef6192435fd" name="aece6b842c28f149ca0c1bef6192435fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aece6b842c28f149ca0c1bef6192435fd">&#9670;&#160;</a></span>input_manager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_t_e_1_1_input_manager.html">InputManager</a>* TE::InputManager::input_manager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22c8ebe3fdd4af826eaa569c24216109" name="a22c8ebe3fdd4af826eaa569c24216109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c8ebe3fdd4af826eaa569c24216109">&#9670;&#160;</a></span>KeysButtonsStates</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_t_e_1_1_keys_buttons.html">KeysButtons</a> TE::InputManager::KeysButtonsStates[static_cast&lt; unsigned long long &gt;(<a class="el" href="namespace_t_e.html#a8cd26b72613a1013d9a3b3efc10284cba72bad44e451a58ae067d66c8756a03f1">KeyCode::TE_KEY_LAST</a>)]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab874246f7f7e983a7d7fe1e14d9d4220" name="ab874246f7f7e983a7d7fe1e14d9d4220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab874246f7f7e983a7d7fe1e14d9d4220">&#9670;&#160;</a></span>MousePosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::ivec2 TE::InputManager::MousePosition { -1.0,-1.0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93902d80b198d6e153996973821a1bf1" name="a93902d80b198d6e153996973821a1bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93902d80b198d6e153996973821a1bf1">&#9670;&#160;</a></span>MousePosDelta</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::ivec2 TE::InputManager::MousePosDelta { 0,0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14d69aeab2daec4bd600dae80a397400" name="a14d69aeab2daec4bd600dae80a397400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d69aeab2daec4bd600dae80a397400">&#9670;&#160;</a></span>MouseScrollDelta</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::ivec2 TE::InputManager::MouseScrollDelta { 0,0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_input_manager_8h_source.html">InputManager.h</a></li>
+<li><a class="el" href="_input_manager_8cpp.html">InputManager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_t_e.html">TE</a></li><li class="navelem"><a class="el" href="class_t_e_1_1_input_manager.html">InputManager</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

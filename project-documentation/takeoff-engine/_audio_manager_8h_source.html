@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: AudioManager.h Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_audio_manager_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">AudioManager.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_audio_manager_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="_defines_8h.html">Defines.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="_i_manager_8h.html">Core/IManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;typeinfo&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><a class="code hl_define" href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;fmod.hpp&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;fmod_errors.h&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><a class="code hl_define" href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// COPY PASTE THIS AS A TEMPLATE FOR NEW CLASSES</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_t_e.html">TE</a> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html">   37</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_t_e_1_1_audio_manager.html">AudioManager</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_t_e_1_1_i_manager.html">IManager</a> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#a3e1914489e4bed4f9f23cdeab34a43dc">   38</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_t_e_1_1_engine.html">Engine</a>; <span class="comment">// allow Engine to access Init, Update, Destroy.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#a9c830f3c6bc47413ca0b8deb60f4fe6e">   43</a></span>        <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a9c830f3c6bc47413ca0b8deb60f4fe6e">AudioManager</a>() :</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_class" href="class_t_e_1_1_i_manager.html">IManager</a>(<a class="code hl_class" href="class_t_e_1_1_g_u_i_d_creator.html">GUIDCreator</a>::getTypeGUID&lt;<a class="code hl_class" href="class_t_e_1_1_audio_manager.html">AudioManager</a>&gt;) {}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="comment">// for Engine class use only</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a947ea9bc676daa51d2d5b2bf55f00162">InitManager</a>();     <span class="comment">// override only if needed</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a60b29d0f798408689a69f8cb46d7d511">UpdateManager</a>();   <span class="comment">// override only if needed</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a35e11d3fd971079cce3a1cbcfcebbd82">ExitManager</a>();     <span class="comment">// override only if needed</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#a0496363bd51f71244cadfd21e3363181">   62</a></span>        <span class="keyword">inline</span> <span class="keyword">static</span> <a class="code hl_class" href="class_t_e_1_1_audio_manager.html">AudioManager</a>* <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#a0496363bd51f71244cadfd21e3363181">audio_manager</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        std::string <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a1358352ddecab8a3a66e960071c5ffa8">GetSoundFilePath</a>(std::string sound_hdl);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        FMOD::Sound* <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a73cefcc506abd546d7df290d35cb866d">GetFMODSound</a>(std::string sound_hdl);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        FMOD::ChannelGroup* <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a96eca346977987bf208e713d06ba0525">GetFMODChannelGroup</a>(std::string channelgrp_hdl);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        FMOD::Channel* <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a1bf54bfa95dee868beea34d86cdc62fa">GetChannelByIDX</a>(<span class="keywordtype">int</span> idx);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a341685a877ecba4b09fd01c081d09acf">StopAllChannels</a>();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a0ccc0e5d0dd445039436a6734e1bf18c">PlayBGM_MONO</a>(FMOD::Sound* bgm_sounds, <span class="keywordtype">int</span>* channel_idx);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#ab3beda69884616ae0634f11b097b9519">PlaySFX_MONO</a>(FMOD::Sound* sfx_sound, <span class="keywordtype">int</span>* channel_idx);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#affe658457369381233ea91e149bd7c1e">Play3D_SPATIAL</a>(FMOD::Sound* spatial_sound, <span class="keywordtype">int</span>* channel_idx);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a21939fd128105241782466e93aca6f18">CrossfadeBGM_MONO</a>(FMOD::Sound* bgm_sound, <span class="keywordtype">float</span> seconds_duration);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="comment">/*</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">        enum MONO_Channels : int</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">        {</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">            BGM_1 = 0,</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">            BGM_2,</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment"></span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">            SFX_1,</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">            SFX_2,</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">            SFX_3,</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">            SFX_4,</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">            SFX_5,</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">            </span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">            SPATIAL_SFX_1,</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">            SPATIAL_SFX_2,</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">            SPATIAL_SFX_3,</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">            SPATIAL_SFX_4,</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">            SPATIAL_SFX_5,</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"></span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">            CHANNELS_END</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">        };</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">        */</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="comment">//UPDATE THESE VALUES IF NEW CHANNELS ADDED</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#a89c64d1da2319cfa80f01746c0ae6201">  149</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#a89c64d1da2319cfa80f01746c0ae6201">TOTAL_ChannelsCount</a> = 10;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="comment">// FMOD SYSTEM</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#a7f980dba5fd0cfb9697df28e48699d7b">  153</a></span>        FMOD::System* <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#a7f980dba5fd0cfb9697df28e48699d7b">fmod_system</a>{ <span class="keyword">nullptr</span> };</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="comment">// FMOD CHANNELGROUPS</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="comment">// MASTER , MONO_BGM, MONO_SFX, 3D_SPATIAL</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="comment">//std::map&lt;std::string, FMOD::ChannelGroup*&gt; ChannelGroup_Map;</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#afa32e6f0fc6f642ebb8700f81c256fc6">  159</a></span>        std::map&lt;std::string, FMOD::ChannelGroup*&gt; <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#afa32e6f0fc6f642ebb8700f81c256fc6">ChannelGroup_Map</a>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#ae8ba8c28b5c677b40adc456fee09ba06">  160</a></span>        std::vector&lt;std::pair&lt;std::string, FMOD::ChannelGroup* &gt;&gt; <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#ae8ba8c28b5c677b40adc456fee09ba06">ChannelGroups</a>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#af23e0f882a8e102d4432797aa0c6678c">  164</a></span>        FMOD::Channel* <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#af23e0f882a8e102d4432797aa0c6678c">Channels</a>[10]{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#a7b39a5095b508aeb25fc583a68d03e22">  167</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#a7b39a5095b508aeb25fc583a68d03e22">master_vol</a> = 0.5f;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#a8009f7ad754f177c842b6be31b82997c">  168</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#a8009f7ad754f177c842b6be31b82997c">bgm_vol</a> = 0.69f;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#add6c03ac32d9536fc7fa483eb382f9e6">  169</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#add6c03ac32d9536fc7fa483eb382f9e6">sfx_vol</a> = 0.42f;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#a6650d707a24c1b82baf4905c5684bef0">  170</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#a6650d707a24c1b82baf4905c5684bef0">spatial_vol</a> = 1.f;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a7b8e60c9c3dfba326ce83a284d047f7e">SetVolumeByChannelIndexes</a>(<span class="keywordtype">float</span> vol, <span class="keywordtype">int</span> begin, <span class="keywordtype">int</span> end);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#ad102cb83a165f0b2fdeacd51a110f3e8">  180</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#ad102cb83a165f0b2fdeacd51a110f3e8">is_crossfading</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#aba2f97b26372f5abffab3030c9772ea7">  181</a></span>        <a class="code hl_typedef" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#aba2f97b26372f5abffab3030c9772ea7">crossfade_vol_delta</a> = 0.f;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#abd0ccc626b5f330e9790db591ddbd193">  182</a></span>        std::pair&lt;int, int&gt; <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#abd0ccc626b5f330e9790db591ddbd193">channel_idx_incre_decre</a> = {0,0};</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a2911852c2e86d831d3c7299cf6594f16">Crossfade_Update</a>();</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="comment">// for testing</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#aef37b18047b48ea1e4e909245aa22308">  189</a></span>        std::map&lt;std::string, std::string&gt; <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#aef37b18047b48ea1e4e909245aa22308">Sound_Filepath_map</a>;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#a479a1f8a0f71a0a77c43c6a1d94a6bb4">  190</a></span>        std::map&lt;std::string, FMOD::Sound*&gt; <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#a479a1f8a0f71a0a77c43c6a1d94a6bb4">Sound_map</a>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#ae8945a1d6cf8302f658586b0feacee54">  193</a></span>        FMOD_VECTOR <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#ae8945a1d6cf8302f658586b0feacee54">listenerPosition</a> = { 0, 0, 0 }; <span class="comment">// Listener&#39;s position</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#ae53f0bd4b6d0d3597102170a7302a38f">  194</a></span>        FMOD_VECTOR <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#ae53f0bd4b6d0d3597102170a7302a38f">listenerVelocity</a> = { 0, 0, 0 }; <span class="comment">// Listener&#39;s velocity (optional)</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#abd49ba8cfef9fe037e341e1d47494ef0">  195</a></span>        FMOD_VECTOR <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#abd49ba8cfef9fe037e341e1d47494ef0">listenerForward</a> = { 0, 0, -1 }; <span class="comment">// Listener&#39;s forward vector</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#aa31e6d8842fd64641ffc6732320d5d49">  196</a></span>        FMOD_VECTOR <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#aa31e6d8842fd64641ffc6732320d5d49">listenerUp</a> = { 0, 1, 0 }; <span class="comment">// Listener&#39;s up vector</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#a3086ea09968430170b696e897f1131b9">  198</a></span>        FMOD_VECTOR <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#a3086ea09968430170b696e897f1131b9">emitter_position</a> = { -1, 0, 0 }; <span class="comment">// Position of the sound emitter</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="class_t_e_1_1_audio_manager.html#a00802fbd42ba4feab05399e3bd69ef19">  199</a></span>        FMOD_VECTOR <a class="code hl_variable" href="class_t_e_1_1_audio_manager.html#a00802fbd42ba4feab05399e3bd69ef19">emitter_velocity</a> = { 0, 0, 0 }; <span class="comment">// Velocity of the sound emitter</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <span class="comment">//FMOD::Channel* channel;</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#ab8b3cb54e4ea87e7c790ef356a7eaef1">SetupFMODSystem</a>();</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#a1f46c8f930a6ce26bc6b60b309df07e9">SetupChannelGroups</a>();</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_manager.html#ad5f83a9a331b869cc0a68066533b6667">TESTSetUpSpatial</a>();</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="preprocessor">#ifdef _DEBUG</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        <span class="comment">//-------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="comment">//                              Debug Functions                      //</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        <span class="comment">//-------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <span class="keyword">const</span> <span class="keywordtype">char</span>* DEBUG_GetName() { <span class="keywordflow">return</span> <span class="keyword">typeid</span>(*this).name(); }</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    };</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>}</div>
+<div class="ttc" id="a_defines_8h_html"><div class="ttname"><a href="_defines_8h.html">Defines.h</a></div><div class="ttdoc">Defines some common math constants and typedefs   All content (c) 2022 DigiPen Institute of Technolog...</div></div>
+<div class="ttc" id="a_defines_8h_html_acd4c1ca77ef20a04bd21f334e37bc639"><div class="ttname"><a href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a></div><div class="ttdeci">float TEfloat</div><div class="ttdef"><b>Definition:</b> Defines.h:93</div></div>
+<div class="ttc" id="a_i_manager_8h_html"><div class="ttname"><a href="_i_manager_8h.html">IManager.h</a></div><div class="ttdoc">Includes declarations for the abstract IManager class All engine managers created should inherit from...</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html">TE::AudioManager</a></div><div class="ttdoc">Main interface that contains the fmod_system, channel groups and channels for playback isDown whether...</div><div class="ttdef"><b>Definition:</b> AudioManager.h:37</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a00802fbd42ba4feab05399e3bd69ef19"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a00802fbd42ba4feab05399e3bd69ef19">TE::AudioManager::emitter_velocity</a></div><div class="ttdeci">FMOD_VECTOR emitter_velocity</div><div class="ttdef"><b>Definition:</b> AudioManager.h:199</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a0496363bd51f71244cadfd21e3363181"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a0496363bd51f71244cadfd21e3363181">TE::AudioManager::audio_manager</a></div><div class="ttdeci">static AudioManager * audio_manager</div><div class="ttdef"><b>Definition:</b> AudioManager.h:62</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a0ccc0e5d0dd445039436a6734e1bf18c"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a0ccc0e5d0dd445039436a6734e1bf18c">TE::AudioManager::PlayBGM_MONO</a></div><div class="ttdeci">void PlayBGM_MONO(FMOD::Sound *bgm_sounds, int *channel_idx)</div><div class="ttdoc">Plays the BGM sound via MONO_BGM Channel group and returns the index of the channel it is playing on.</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:250</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a1358352ddecab8a3a66e960071c5ffa8"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a1358352ddecab8a3a66e960071c5ffa8">TE::AudioManager::GetSoundFilePath</a></div><div class="ttdeci">std::string GetSoundFilePath(std::string sound_hdl)</div><div class="ttdoc">This is a TEMPORARY solution where the sound handle returns the file path string to the fmod::sound.</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:213</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a1bf54bfa95dee868beea34d86cdc62fa"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a1bf54bfa95dee868beea34d86cdc62fa">TE::AudioManager::GetChannelByIDX</a></div><div class="ttdeci">FMOD::Channel * GetChannelByIDX(int idx)</div><div class="ttdoc">This is a TEMPORARY solution where the idx returns the fmod::channel which is available to use for pl...</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:232</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a1f46c8f930a6ce26bc6b60b309df07e9"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a1f46c8f930a6ce26bc6b60b309df07e9">TE::AudioManager::SetupChannelGroups</a></div><div class="ttdeci">void SetupChannelGroups()</div><div class="ttdoc">This is a wrapper function to set up the channel groups upon init.</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:407</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a21939fd128105241782466e93aca6f18"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a21939fd128105241782466e93aca6f18">TE::AudioManager::CrossfadeBGM_MONO</a></div><div class="ttdeci">void CrossfadeBGM_MONO(FMOD::Sound *bgm_sound, float seconds_duration)</div><div class="ttdoc">This is a WIP function that crossfades an existing channel over a certain duration.</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:307</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a2911852c2e86d831d3c7299cf6594f16"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a2911852c2e86d831d3c7299cf6594f16">TE::AudioManager::Crossfade_Update</a></div><div class="ttdeci">void Crossfade_Update()</div><div class="ttdoc">Crossfade_Update helps to reduce and increase the channel volumes of the 2 channels that are cross fa...</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:352</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a3086ea09968430170b696e897f1131b9"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a3086ea09968430170b696e897f1131b9">TE::AudioManager::emitter_position</a></div><div class="ttdeci">FMOD_VECTOR emitter_position</div><div class="ttdef"><b>Definition:</b> AudioManager.h:198</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a341685a877ecba4b09fd01c081d09acf"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a341685a877ecba4b09fd01c081d09acf">TE::AudioManager::StopAllChannels</a></div><div class="ttdeci">void StopAllChannels()</div><div class="ttdoc">This function stops ALL channels from playing.</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:240</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a35e11d3fd971079cce3a1cbcfcebbd82"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a35e11d3fd971079cce3a1cbcfcebbd82">TE::AudioManager::ExitManager</a></div><div class="ttdeci">void ExitManager()</div><div class="ttdoc">Exit Function for the AudioManager, called upon when engine is to be closed.</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:206</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a479a1f8a0f71a0a77c43c6a1d94a6bb4"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a479a1f8a0f71a0a77c43c6a1d94a6bb4">TE::AudioManager::Sound_map</a></div><div class="ttdeci">std::map&lt; std::string, FMOD::Sound * &gt; Sound_map</div><div class="ttdef"><b>Definition:</b> AudioManager.h:190</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a60b29d0f798408689a69f8cb46d7d511"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a60b29d0f798408689a69f8cb46d7d511">TE::AudioManager::UpdateManager</a></div><div class="ttdeci">void UpdateManager()</div><div class="ttdoc">Update Function for the AudioManager.</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:106</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a6650d707a24c1b82baf4905c5684bef0"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a6650d707a24c1b82baf4905c5684bef0">TE::AudioManager::spatial_vol</a></div><div class="ttdeci">float spatial_vol</div><div class="ttdef"><b>Definition:</b> AudioManager.h:170</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a73cefcc506abd546d7df290d35cb866d"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a73cefcc506abd546d7df290d35cb866d">TE::AudioManager::GetFMODSound</a></div><div class="ttdeci">FMOD::Sound * GetFMODSound(std::string sound_hdl)</div><div class="ttdoc">This is a TEMPORARY solution where the sound handle returns the fmod::sound that has already been cre...</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:218</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a7b39a5095b508aeb25fc583a68d03e22"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a7b39a5095b508aeb25fc583a68d03e22">TE::AudioManager::master_vol</a></div><div class="ttdeci">float master_vol</div><div class="ttdef"><b>Definition:</b> AudioManager.h:167</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a7b8e60c9c3dfba326ce83a284d047f7e"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a7b8e60c9c3dfba326ce83a284d047f7e">TE::AudioManager::SetVolumeByChannelIndexes</a></div><div class="ttdeci">void SetVolumeByChannelIndexes(float vol, int begin, int end)</div><div class="ttdoc">This is a private helper function that sets all the volumes of a range channels.</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:333</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a7f980dba5fd0cfb9697df28e48699d7b"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a7f980dba5fd0cfb9697df28e48699d7b">TE::AudioManager::fmod_system</a></div><div class="ttdeci">FMOD::System * fmod_system</div><div class="ttdef"><b>Definition:</b> AudioManager.h:153</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a8009f7ad754f177c842b6be31b82997c"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a8009f7ad754f177c842b6be31b82997c">TE::AudioManager::bgm_vol</a></div><div class="ttdeci">float bgm_vol</div><div class="ttdef"><b>Definition:</b> AudioManager.h:168</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a89c64d1da2319cfa80f01746c0ae6201"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a89c64d1da2319cfa80f01746c0ae6201">TE::AudioManager::TOTAL_ChannelsCount</a></div><div class="ttdeci">int TOTAL_ChannelsCount</div><div class="ttdef"><b>Definition:</b> AudioManager.h:149</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a947ea9bc676daa51d2d5b2bf55f00162"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a947ea9bc676daa51d2d5b2bf55f00162">TE::AudioManager::InitManager</a></div><div class="ttdeci">void InitManager()</div><div class="ttdoc">Initialisation Function for the AudioManager.</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:24</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a96eca346977987bf208e713d06ba0525"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a96eca346977987bf208e713d06ba0525">TE::AudioManager::GetFMODChannelGroup</a></div><div class="ttdeci">FMOD::ChannelGroup * GetFMODChannelGroup(std::string channelgrp_hdl)</div><div class="ttdoc">This is a TEMPORARY solution where the channel group handle returns the fmod::channelgroup that has a...</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:225</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_a9c830f3c6bc47413ca0b8deb60f4fe6e"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#a9c830f3c6bc47413ca0b8deb60f4fe6e">TE::AudioManager::AudioManager</a></div><div class="ttdeci">AudioManager()</div><div class="ttdoc">Constructor for the AudioManager, and gets a unique GUID for it upon construction.</div><div class="ttdef"><b>Definition:</b> AudioManager.h:43</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_aa31e6d8842fd64641ffc6732320d5d49"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#aa31e6d8842fd64641ffc6732320d5d49">TE::AudioManager::listenerUp</a></div><div class="ttdeci">FMOD_VECTOR listenerUp</div><div class="ttdef"><b>Definition:</b> AudioManager.h:196</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_ab3beda69884616ae0634f11b097b9519"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#ab3beda69884616ae0634f11b097b9519">TE::AudioManager::PlaySFX_MONO</a></div><div class="ttdeci">void PlaySFX_MONO(FMOD::Sound *sfx_sound, int *channel_idx)</div><div class="ttdoc">Plays the BGM sound via MONO_SFX Channel group and returns the index of the channel it is playing on.</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:269</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_ab8b3cb54e4ea87e7c790ef356a7eaef1"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#ab8b3cb54e4ea87e7c790ef356a7eaef1">TE::AudioManager::SetupFMODSystem</a></div><div class="ttdeci">void SetupFMODSystem()</div><div class="ttdoc">This is a wrapper function to set up the fmod_system upon init.</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:385</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_aba2f97b26372f5abffab3030c9772ea7"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#aba2f97b26372f5abffab3030c9772ea7">TE::AudioManager::crossfade_vol_delta</a></div><div class="ttdeci">TEfloat crossfade_vol_delta</div><div class="ttdef"><b>Definition:</b> AudioManager.h:181</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_abd0ccc626b5f330e9790db591ddbd193"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#abd0ccc626b5f330e9790db591ddbd193">TE::AudioManager::channel_idx_incre_decre</a></div><div class="ttdeci">std::pair&lt; int, int &gt; channel_idx_incre_decre</div><div class="ttdef"><b>Definition:</b> AudioManager.h:182</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_abd49ba8cfef9fe037e341e1d47494ef0"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#abd49ba8cfef9fe037e341e1d47494ef0">TE::AudioManager::listenerForward</a></div><div class="ttdeci">FMOD_VECTOR listenerForward</div><div class="ttdef"><b>Definition:</b> AudioManager.h:195</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_ad102cb83a165f0b2fdeacd51a110f3e8"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#ad102cb83a165f0b2fdeacd51a110f3e8">TE::AudioManager::is_crossfading</a></div><div class="ttdeci">bool is_crossfading</div><div class="ttdef"><b>Definition:</b> AudioManager.h:180</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_ad5f83a9a331b869cc0a68066533b6667"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#ad5f83a9a331b869cc0a68066533b6667">TE::AudioManager::TESTSetUpSpatial</a></div><div class="ttdeci">void TESTSetUpSpatial()</div><div class="ttdoc">This is a WIP wrapper function to set up the various channels, sounds and channel groups for 3D spati...</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:493</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_add6c03ac32d9536fc7fa483eb382f9e6"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#add6c03ac32d9536fc7fa483eb382f9e6">TE::AudioManager::sfx_vol</a></div><div class="ttdeci">float sfx_vol</div><div class="ttdef"><b>Definition:</b> AudioManager.h:169</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_ae53f0bd4b6d0d3597102170a7302a38f"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#ae53f0bd4b6d0d3597102170a7302a38f">TE::AudioManager::listenerVelocity</a></div><div class="ttdeci">FMOD_VECTOR listenerVelocity</div><div class="ttdef"><b>Definition:</b> AudioManager.h:194</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_ae8945a1d6cf8302f658586b0feacee54"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#ae8945a1d6cf8302f658586b0feacee54">TE::AudioManager::listenerPosition</a></div><div class="ttdeci">FMOD_VECTOR listenerPosition</div><div class="ttdef"><b>Definition:</b> AudioManager.h:193</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_ae8ba8c28b5c677b40adc456fee09ba06"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#ae8ba8c28b5c677b40adc456fee09ba06">TE::AudioManager::ChannelGroups</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, FMOD::ChannelGroup * &gt; &gt; ChannelGroups</div><div class="ttdef"><b>Definition:</b> AudioManager.h:160</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_aef37b18047b48ea1e4e909245aa22308"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#aef37b18047b48ea1e4e909245aa22308">TE::AudioManager::Sound_Filepath_map</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; Sound_Filepath_map</div><div class="ttdef"><b>Definition:</b> AudioManager.h:189</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_af23e0f882a8e102d4432797aa0c6678c"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#af23e0f882a8e102d4432797aa0c6678c">TE::AudioManager::Channels</a></div><div class="ttdeci">FMOD::Channel * Channels[10]</div><div class="ttdef"><b>Definition:</b> AudioManager.h:164</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_afa32e6f0fc6f642ebb8700f81c256fc6"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#afa32e6f0fc6f642ebb8700f81c256fc6">TE::AudioManager::ChannelGroup_Map</a></div><div class="ttdeci">std::map&lt; std::string, FMOD::ChannelGroup * &gt; ChannelGroup_Map</div><div class="ttdef"><b>Definition:</b> AudioManager.h:159</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_manager_html_affe658457369381233ea91e149bd7c1e"><div class="ttname"><a href="class_t_e_1_1_audio_manager.html#affe658457369381233ea91e149bd7c1e">TE::AudioManager::Play3D_SPATIAL</a></div><div class="ttdeci">void Play3D_SPATIAL(FMOD::Sound *spatial_sound, int *channel_idx)</div><div class="ttdoc">This function stops ALL channels from playing.</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:288</div></div>
+<div class="ttc" id="aclass_t_e_1_1_engine_html"><div class="ttname"><a href="class_t_e_1_1_engine.html">TE::Engine</a></div><div class="ttdoc">Main interface for accessing Engine functionalities. Engine internally will add/remove managers....</div><div class="ttdef"><b>Definition:</b> Engine.h:30</div></div>
+<div class="ttc" id="aclass_t_e_1_1_g_u_i_d_creator_html"><div class="ttname"><a href="class_t_e_1_1_g_u_i_d_creator.html">TE::GUIDCreator</a></div><div class="ttdef"><b>Definition:</b> GUID.h:60</div></div>
+<div class="ttc" id="aclass_t_e_1_1_i_manager_html"><div class="ttname"><a href="class_t_e_1_1_i_manager.html">TE::IManager</a></div><div class="ttdef"><b>Definition:</b> IManager.h:24</div></div>
+<div class="ttc" id="anamespace_t_e_html"><div class="ttname"><a href="namespace_t_e.html">TE</a></div><div class="ttdoc">Declarations for the ECSManager class, EntityRef class, IComponent and ISystem classes   All content ...</div><div class="ttdef"><b>Definition:</b> EditorFrame.h:40</div></div>
+<div class="ttc" id="apch__engine_8h_html_ad3ee3199fb189e1047207f7a4d781868"><div class="ttname"><a href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div><div class="ttdeci">#define TE_SUPRESS_START</div><div class="ttdef"><b>Definition:</b> pch_engine.h:58</div></div>
+<div class="ttc" id="apch__engine_8h_html_afa88535cb07959a98893cd5653ca39c3"><div class="ttname"><a href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div><div class="ttdeci">#define TE_SUPRESS_END</div><div class="ttdef"><b>Definition:</b> pch_engine.h:71</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ff9d562b39932b7b74f54b9fb4bb00a0.html">ProjectSolution</a></li><li class="navelem"><a class="el" href="dir_0e3d5f2d56e31468daefe438e212cfbc.html">Proj_Engine</a></li><li class="navelem"><a class="el" href="dir_0d2c0b45ba4d42e3f37ae38d7482e159.html">Source</a></li><li class="navelem"><a class="el" href="dir_b5eeb00100d4e485739387955a26bf05.html">Audio</a></li><li class="navelem"><a class="el" href="_audio_manager_8h.html">AudioManager.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

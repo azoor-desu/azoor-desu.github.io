@@ -1,0 +1,837 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: TE::AudioSource Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_t_e_1_1_audio_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle"><div class="title">TE::AudioSource Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_t_e_1_1_audio_source.html" title="The AudioSource component is specifically for entities that has to play sounds that affect player wou...">AudioSource</a> component is specifically for entities that has to play sounds that affect player would hear.  
+ <a href="class_t_e_1_1_audio_source.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_audio_source_8h_source.html">AudioSource.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for TE::AudioSource:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_t_e_1_1_audio_source.png" usemap="#TE::AudioSource_map" alt=""/>
+  <map id="TE::AudioSource_map" name="TE::AudioSource_map">
+<area href="class_t_e_1_1_i_component.html" title="Base class of every ECS Component. Provides some generic functions to." alt="TE::IComponent" shape="rect" coords="0,56,107,80"/>
+<area href="class_t_e_1_1_i_object.html" alt="TE::IObject" shape="rect" coords="0,0,107,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1de609398328465e34b667021e98546a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a1de609398328465e34b667021e98546a">AudioSource</a> ()</td></tr>
+<tr class="memdesc:a1de609398328465e34b667021e98546a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor for the <a class="el" href="class_t_e_1_1_audio_source.html" title="The AudioSource component is specifically for entities that has to play sounds that affect player wou...">AudioSource</a>.  <br /></td></tr>
+<tr class="separator:a1de609398328465e34b667021e98546a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06b60ca91cfe27999f623297e95d1b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#ae06b60ca91cfe27999f623297e95d1b8">~AudioSource</a> ()</td></tr>
+<tr class="memdesc:ae06b60ca91cfe27999f623297e95d1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor for the <a class="el" href="class_t_e_1_1_audio_source.html" title="The AudioSource component is specifically for entities that has to play sounds that affect player wou...">AudioSource</a>.  <br /></td></tr>
+<tr class="separator:ae06b60ca91cfe27999f623297e95d1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3879c330ad9845720be8a1bdae63c01"><td class="memItemLeft" align="right" valign="top">rttr::instance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#ac3879c330ad9845720be8a1bdae63c01">GetRTTRInstance</a> () const</td></tr>
+<tr class="memdesc:ac3879c330ad9845720be8a1bdae63c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the component's instance to RTTR.  <br /></td></tr>
+<tr class="separator:ac3879c330ad9845720be8a1bdae63c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae826b6a12194507fc683d197233db1ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#ae826b6a12194507fc683d197233db1ec">Serialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
+<tr class="memdesc:ae826b6a12194507fc683d197233db1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the contents of this component onto the scene file.  <br /></td></tr>
+<tr class="separator:ae826b6a12194507fc683d197233db1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada9c06f8e5ed90795e7720968a3f81ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#ada9c06f8e5ed90795e7720968a3f81ac">Deserialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
+<tr class="memdesc:ada9c06f8e5ed90795e7720968a3f81ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes the contents of this component from the scene file.  <br /></td></tr>
+<tr class="separator:ada9c06f8e5ed90795e7720968a3f81ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9005dd4a74bf5b2dacbcaa85bd090c2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#aa9005dd4a74bf5b2dacbcaa85bd090c2">GetAudioAssetHandle</a> ()</td></tr>
+<tr class="memdesc:aa9005dd4a74bf5b2dacbcaa85bd090c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the member variable, Asset Handle.  <br /></td></tr>
+<tr class="separator:aa9005dd4a74bf5b2dacbcaa85bd090c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a687ce75cda1487a40e6fe91cd9b93a22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">SetAudioAssetHandle</a> (std::string hdl)</td></tr>
+<tr class="memdesc:a687ce75cda1487a40e6fe91cd9b93a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the member variable, Asset Handle.  <br /></td></tr>
+<tr class="separator:a687ce75cda1487a40e6fe91cd9b93a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c4dd2064425c8f9ff523543f0a849a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a34c4dd2064425c8f9ff523543f0a849a">GetAudioFilepath</a> ()</td></tr>
+<tr class="memdesc:a34c4dd2064425c8f9ff523543f0a849a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the member variable, audio filepath.  <br /></td></tr>
+<tr class="separator:a34c4dd2064425c8f9ff523543f0a849a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a58f7abac807639f4a46da710aa7747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a6a58f7abac807639f4a46da710aa7747">SetAudioFilepath</a> (std::string fp)</td></tr>
+<tr class="memdesc:a6a58f7abac807639f4a46da710aa7747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the member variable, Asset Handle.  <br /></td></tr>
+<tr class="separator:a6a58f7abac807639f4a46da710aa7747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbdde808c063f9cb418fb17119dde85d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#adbdde808c063f9cb418fb17119dde85d">GetIs3DSound</a> ()</td></tr>
+<tr class="memdesc:adbdde808c063f9cb418fb17119dde85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the member variable, is3Dsound bool.  <br /></td></tr>
+<tr class="separator:adbdde808c063f9cb418fb17119dde85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d798ccebb1ea4592cf2158ebf398b22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a5d798ccebb1ea4592cf2158ebf398b22">SetIs3DSound</a> (bool t_f)</td></tr>
+<tr class="memdesc:a5d798ccebb1ea4592cf2158ebf398b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the member variable, is3Dsound bool.  <br /></td></tr>
+<tr class="separator:a5d798ccebb1ea4592cf2158ebf398b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3e470898bbed53d7337c0a8bbbf133"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#aec3e470898bbed53d7337c0a8bbbf133">GetChannelGroupHandle</a> ()</td></tr>
+<tr class="memdesc:aec3e470898bbed53d7337c0a8bbbf133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the member variable, channelGroup handle.  <br /></td></tr>
+<tr class="separator:aec3e470898bbed53d7337c0a8bbbf133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a211add8db073c4c3153bb9130c195fd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a211add8db073c4c3153bb9130c195fd5">SetChannelGroupHandle</a> (std::string hdl)</td></tr>
+<tr class="memdesc:a211add8db073c4c3153bb9130c195fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the member variable, channelGrp_handle string.  <br /></td></tr>
+<tr class="separator:a211add8db073c4c3153bb9130c195fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba017fe613d224804e5d72b90d35bd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a6ba017fe613d224804e5d72b90d35bd2">isPlaying</a> ()</td></tr>
+<tr class="memdesc:a6ba017fe613d224804e5d72b90d35bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the member variable, isPlaying bool.  <br /></td></tr>
+<tr class="separator:a6ba017fe613d224804e5d72b90d35bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436fc572223a044d21e413be6df61a7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a436fc572223a044d21e413be6df61a7f">SetIsPlaying</a> (bool t_f)</td></tr>
+<tr class="memdesc:a436fc572223a044d21e413be6df61a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the member variable, isPlaying bool.  <br /></td></tr>
+<tr class="separator:a436fc572223a044d21e413be6df61a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6587053831bdf0a40ef11d87b91bb0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a1a6587053831bdf0a40ef11d87b91bb0">GetChannelGroupVol</a> ()</td></tr>
+<tr class="memdesc:a1a6587053831bdf0a40ef11d87b91bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the volume of the channel group.  <br /></td></tr>
+<tr class="separator:a1a6587053831bdf0a40ef11d87b91bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36fd83a156058c893327e1c6e77f827f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a36fd83a156058c893327e1c6e77f827f">SetChannelGroupVol</a> (float vol)</td></tr>
+<tr class="memdesc:a36fd83a156058c893327e1c6e77f827f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the volume of the channel group.  <br /></td></tr>
+<tr class="separator:a36fd83a156058c893327e1c6e77f827f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8a0596c565c06b4039b991846139ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#aae8a0596c565c06b4039b991846139ca">GetChannelIndex</a> ()</td></tr>
+<tr class="memdesc:aae8a0596c565c06b4039b991846139ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the index of the channel from the <a class="el" href="class_t_e_1_1_audio_manager.html" title="Main interface that contains the fmod_system, channel groups and channels for playback isDown whether...">AudioManager</a> that the current sound is playing on.  <br /></td></tr>
+<tr class="separator:aae8a0596c565c06b4039b991846139ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_t_e_1_1_i_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a></td></tr>
+<tr class="memitem:a196c19e70f9683a57c1eff01db6c07a3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a196c19e70f9683a57c1eff01db6c07a3">IComponent</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeguid)</td></tr>
+<tr class="separator:a196c19e70f9683a57c1eff01db6c07a3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ceceb6b5e92f3ad10e8e8a8ce867fe inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#ad2ceceb6b5e92f3ad10e8e8a8ce867fe">~IComponent</a> ()</td></tr>
+<tr class="separator:ad2ceceb6b5e92f3ad10e8e8a8ce867fe inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a639f8e495309c93d4e632595ea615da4">GetIsActive</a> () const</td></tr>
+<tr class="memdesc:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this component is active or not. Active state is determined by: internal Active state &amp;&amp; entity's active state.  <br /></td></tr>
+<tr class="separator:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9355bcc94eb70ec778fcaf9635d2ce7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a9355bcc94eb70ec778fcaf9635d2ce7b">GetIsActiveInternal</a> () const noexcept</td></tr>
+<tr class="memdesc:a9355bcc94eb70ec778fcaf9635d2ce7b inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the internal active state of this component. Does not check if entity is active or not. Do not use this to determine if this component is usable or not. Use <a class="el" href="class_t_e_1_1_i_component.html#a639f8e495309c93d4e632595ea615da4" title="Checks whether this component is active or not. Active state is determined by: internal Active state ...">GetIsActive()</a> instead.  <br /></td></tr>
+<tr class="separator:a9355bcc94eb70ec778fcaf9635d2ce7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a90097cf522fe29daf1fa2f5ddb148191">SetIsActiveInternal</a> (bool active) noexcept</td></tr>
+<tr class="memdesc:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal active state of this component. Does not affect the state of the parent. If entity is inactive but this component is active, the resultant state of this component will still be inactive until the entity's state is changed to active.  <br /></td></tr>
+<tr class="separator:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07865b61eaa1f8404312a287ff2cad7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a07865b61eaa1f8404312a287ff2cad7b">GetEntity</a> () const</td></tr>
+<tr class="separator:a07865b61eaa1f8404312a287ff2cad7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f805b5129eca4fddabecb7a77f42d54 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual rttr::instance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a9f805b5129eca4fddabecb7a77f42d54">GetRTTRInstance</a> () const</td></tr>
+<tr class="separator:a9f805b5129eca4fddabecb7a77f42d54 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc3a2ae05147f4f600dc2093c52d8d3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#abdc3a2ae05147f4f600dc2093c52d8d3">Serialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
+<tr class="separator:abdc3a2ae05147f4f600dc2093c52d8d3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e069570ee4f25551a590e1414d465f3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a2e069570ee4f25551a590e1414d465f3">Deserialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
+<tr class="separator:a2e069570ee4f25551a590e1414d465f3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_t_e_1_1_i_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_object.html">TE::IObject</a></td></tr>
+<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#afc331476bf6217fde06f31deb161b97e">IObject</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="separator:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#af1d390c81a0fd71b490d01b93042f81d">~IObject</a> ()</td></tr>
+<tr class="separator:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">GetGUID</a> () const noexcept</td></tr>
+<tr class="separator:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aafeae10a462729d794db5c6da61eba08">SetGUID</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> guid) noexcept</td></tr>
+<tr class="separator:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">GetTypeGUID</a> () const noexcept</td></tr>
+<tr class="separator:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:abe93b080318899363c9e2ae333286c99"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#abe93b080318899363c9e2ae333286c99">asset_handle</a> = &quot;&quot;</td></tr>
+<tr class="separator:abe93b080318899363c9e2ae333286c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f5eda23d3fbe2f58ab7503a362ea41"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#ac5f5eda23d3fbe2f58ab7503a362ea41">filepath</a> = &quot;&quot;</td></tr>
+<tr class="separator:ac5f5eda23d3fbe2f58ab7503a362ea41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc86656c2e3992ecda190deca1d7fd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a3cc86656c2e3992ecda190deca1d7fd9">is3DSound</a> = false</td></tr>
+<tr class="separator:a3cc86656c2e3992ecda190deca1d7fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c05bd294c03a1b81024fde0b15a04e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a94c05bd294c03a1b81024fde0b15a04e">isAudioPlaying</a> = false</td></tr>
+<tr class="separator:a94c05bd294c03a1b81024fde0b15a04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3146c6b4c5e894c1711a5ba26aa3c7ae"><td class="memItemLeft" align="right" valign="top">FMOD::Sound *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a3146c6b4c5e894c1711a5ba26aa3c7ae">sound_ptr</a> = nullptr</td></tr>
+<tr class="separator:a3146c6b4c5e894c1711a5ba26aa3c7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da454928f7dccca17a61af81ead0934"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a2da454928f7dccca17a61af81ead0934">channelGrp_handle</a> = &quot;&quot;</td></tr>
+<tr class="separator:a2da454928f7dccca17a61af81ead0934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6800286a1754eb71d221bcea1122ec17"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a6800286a1754eb71d221bcea1122ec17">channel_grp_vol</a> {}</td></tr>
+<tr class="separator:a6800286a1754eb71d221bcea1122ec17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c82c430c7831793a4109cf7035310e"><td class="memItemLeft" align="right" valign="top">FMOD::ChannelGroup *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#a82c82c430c7831793a4109cf7035310e">chl_grp</a> = nullptr</td></tr>
+<tr class="separator:a82c82c430c7831793a4109cf7035310e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adebc1f2eb08c0faed94e91856291429d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_source.html#adebc1f2eb08c0faed94e91856291429d">channelIndex</a> = -1</td></tr>
+<tr class="separator:adebc1f2eb08c0faed94e91856291429d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_t_e_1_1_audio_source.html" title="The AudioSource component is specifically for entities that has to play sounds that affect player wou...">AudioSource</a> component is specifically for entities that has to play sounds that affect player would hear. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1de609398328465e34b667021e98546a" name="a1de609398328465e34b667021e98546a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de609398328465e34b667021e98546a">&#9670;&#160;</a></span>AudioSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TE::AudioSource::AudioSource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The constructor for the <a class="el" href="class_t_e_1_1_audio_source.html" title="The AudioSource component is specifically for entities that has to play sounds that affect player wou...">AudioSource</a>. </p>
+
+</div>
+</div>
+<a id="ae06b60ca91cfe27999f623297e95d1b8" name="ae06b60ca91cfe27999f623297e95d1b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae06b60ca91cfe27999f623297e95d1b8">&#9670;&#160;</a></span>~AudioSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TE::AudioSource::~AudioSource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The destructor for the <a class="el" href="class_t_e_1_1_audio_source.html" title="The AudioSource component is specifically for entities that has to play sounds that affect player wou...">AudioSource</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac3879c330ad9845720be8a1bdae63c01" name="ac3879c330ad9845720be8a1bdae63c01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3879c330ad9845720be8a1bdae63c01">&#9670;&#160;</a></span>GetRTTRInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rttr::instance TE::AudioSource::GetRTTRInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gives the component's instance to RTTR. </p>
+
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#a9f805b5129eca4fddabecb7a77f42d54">TE::IComponent</a>.</p>
+
+</div>
+</div>
+<a id="ae826b6a12194507fc683d197233db1ec" name="ae826b6a12194507fc683d197233db1ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae826b6a12194507fc683d197233db1ec">&#9670;&#160;</a></span>Serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::AudioSource::Serialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Serializes the contents of this component onto the scene file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The serializer instance of the engine</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#abdc3a2ae05147f4f600dc2093c52d8d3">TE::IComponent</a>.</p>
+
+</div>
+</div>
+<a id="ada9c06f8e5ed90795e7720968a3f81ac" name="ada9c06f8e5ed90795e7720968a3f81ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada9c06f8e5ed90795e7720968a3f81ac">&#9670;&#160;</a></span>Deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::AudioSource::Deserialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deserializes the contents of this component from the scene file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The serializer instance of the engine</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#a2e069570ee4f25551a590e1414d465f3">TE::IComponent</a>.</p>
+
+</div>
+</div>
+<a id="aa9005dd4a74bf5b2dacbcaa85bd090c2" name="aa9005dd4a74bf5b2dacbcaa85bd090c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9005dd4a74bf5b2dacbcaa85bd090c2">&#9670;&#160;</a></span>GetAudioAssetHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp; TE::AudioSource::GetAudioAssetHandle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the member variable, Asset Handle. </p>
+
+</div>
+</div>
+<a id="a687ce75cda1487a40e6fe91cd9b93a22" name="a687ce75cda1487a40e6fe91cd9b93a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a687ce75cda1487a40e6fe91cd9b93a22">&#9670;&#160;</a></span>SetAudioAssetHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::AudioSource::SetAudioAssetHandle </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>hdl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the member variable, Asset Handle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hdl</td><td>The string to set the asset handle to</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a34c4dd2064425c8f9ff523543f0a849a" name="a34c4dd2064425c8f9ff523543f0a849a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c4dd2064425c8f9ff523543f0a849a">&#9670;&#160;</a></span>GetAudioFilepath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string TE::AudioSource::GetAudioFilepath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the member variable, audio filepath. </p>
+
+</div>
+</div>
+<a id="a6a58f7abac807639f4a46da710aa7747" name="a6a58f7abac807639f4a46da710aa7747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a58f7abac807639f4a46da710aa7747">&#9670;&#160;</a></span>SetAudioFilepath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::AudioSource::SetAudioFilepath </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>fp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the member variable, Asset Handle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fp</td><td>The string to set the filepath to</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adbdde808c063f9cb418fb17119dde85d" name="adbdde808c063f9cb418fb17119dde85d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbdde808c063f9cb418fb17119dde85d">&#9670;&#160;</a></span>GetIs3DSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a> &amp; TE::AudioSource::GetIs3DSound </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the member variable, is3Dsound bool. </p>
+
+</div>
+</div>
+<a id="a5d798ccebb1ea4592cf2158ebf398b22" name="a5d798ccebb1ea4592cf2158ebf398b22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d798ccebb1ea4592cf2158ebf398b22">&#9670;&#160;</a></span>SetIs3DSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a> &amp; TE::AudioSource::SetIs3DSound </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>t_f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the member variable, is3Dsound bool. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t_f</td><td>The bool to set the is3Dsound to</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aec3e470898bbed53d7337c0a8bbbf133" name="aec3e470898bbed53d7337c0a8bbbf133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec3e470898bbed53d7337c0a8bbbf133">&#9670;&#160;</a></span>GetChannelGroupHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a> &amp; TE::AudioSource::GetChannelGroupHandle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the member variable, channelGroup handle. </p>
+
+</div>
+</div>
+<a id="a211add8db073c4c3153bb9130c195fd5" name="a211add8db073c4c3153bb9130c195fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a211add8db073c4c3153bb9130c195fd5">&#9670;&#160;</a></span>SetChannelGroupHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::AudioSource::SetChannelGroupHandle </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>hdl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the member variable, channelGrp_handle string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hdl</td><td>The string to set the channelGrp_handle to</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6ba017fe613d224804e5d72b90d35bd2" name="a6ba017fe613d224804e5d72b90d35bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ba017fe613d224804e5d72b90d35bd2">&#9670;&#160;</a></span>isPlaying()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#a211add8db073c4c3153bb9130c195fd5">TE::AudioSource::SetChannelGroupHandle</a> &amp; TE::AudioSource::isPlaying </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the member variable, isPlaying bool. </p>
+
+</div>
+</div>
+<a id="a436fc572223a044d21e413be6df61a7f" name="a436fc572223a044d21e413be6df61a7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436fc572223a044d21e413be6df61a7f">&#9670;&#160;</a></span>SetIsPlaying()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_audio_source.html#a687ce75cda1487a40e6fe91cd9b93a22">TE::AudioSource::SetAudioAssetHandle</a> &amp;<a class="el" href="class_t_e_1_1_audio_source.html#a211add8db073c4c3153bb9130c195fd5">TE::AudioSource::SetChannelGroupHandle</a> &amp; TE::AudioSource::SetIsPlaying </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>t_f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the member variable, isPlaying bool. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t_f</td><td>The bool to set the isAudioPlaying to</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1a6587053831bdf0a40ef11d87b91bb0" name="a1a6587053831bdf0a40ef11d87b91bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a6587053831bdf0a40ef11d87b91bb0">&#9670;&#160;</a></span>GetChannelGroupVol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TE::AudioSource::GetChannelGroupVol </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the volume of the channel group. </p>
+
+</div>
+</div>
+<a id="a36fd83a156058c893327e1c6e77f827f" name="a36fd83a156058c893327e1c6e77f827f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36fd83a156058c893327e1c6e77f827f">&#9670;&#160;</a></span>SetChannelGroupVol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::AudioSource::SetChannelGroupVol </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vol</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the volume of the channel group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vol</td><td>The float to set the channelgroup's volume to to</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aae8a0596c565c06b4039b991846139ca" name="aae8a0596c565c06b4039b991846139ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae8a0596c565c06b4039b991846139ca">&#9670;&#160;</a></span>GetChannelIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TE::AudioSource::GetChannelIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the index of the channel from the <a class="el" href="class_t_e_1_1_audio_manager.html" title="Main interface that contains the fmod_system, channel groups and channels for playback isDown whether...">AudioManager</a> that the current sound is playing on. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="abe93b080318899363c9e2ae333286c99" name="abe93b080318899363c9e2ae333286c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe93b080318899363c9e2ae333286c99">&#9670;&#160;</a></span>asset_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string TE::AudioSource::asset_handle = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5f5eda23d3fbe2f58ab7503a362ea41" name="ac5f5eda23d3fbe2f58ab7503a362ea41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5f5eda23d3fbe2f58ab7503a362ea41">&#9670;&#160;</a></span>filepath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string TE::AudioSource::filepath = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cc86656c2e3992ecda190deca1d7fd9" name="a3cc86656c2e3992ecda190deca1d7fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cc86656c2e3992ecda190deca1d7fd9">&#9670;&#160;</a></span>is3DSound</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::AudioSource::is3DSound = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94c05bd294c03a1b81024fde0b15a04e" name="a94c05bd294c03a1b81024fde0b15a04e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94c05bd294c03a1b81024fde0b15a04e">&#9670;&#160;</a></span>isAudioPlaying</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::AudioSource::isAudioPlaying = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3146c6b4c5e894c1711a5ba26aa3c7ae" name="a3146c6b4c5e894c1711a5ba26aa3c7ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3146c6b4c5e894c1711a5ba26aa3c7ae">&#9670;&#160;</a></span>sound_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FMOD::Sound* TE::AudioSource::sound_ptr = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2da454928f7dccca17a61af81ead0934" name="a2da454928f7dccca17a61af81ead0934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da454928f7dccca17a61af81ead0934">&#9670;&#160;</a></span>channelGrp_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string TE::AudioSource::channelGrp_handle = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6800286a1754eb71d221bcea1122ec17" name="a6800286a1754eb71d221bcea1122ec17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6800286a1754eb71d221bcea1122ec17">&#9670;&#160;</a></span>channel_grp_vol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TE::AudioSource::channel_grp_vol {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82c82c430c7831793a4109cf7035310e" name="a82c82c430c7831793a4109cf7035310e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c82c430c7831793a4109cf7035310e">&#9670;&#160;</a></span>chl_grp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FMOD::ChannelGroup* TE::AudioSource::chl_grp = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adebc1f2eb08c0faed94e91856291429d" name="adebc1f2eb08c0faed94e91856291429d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adebc1f2eb08c0faed94e91856291429d">&#9670;&#160;</a></span>channelIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TE::AudioSource::channelIndex = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_audio_source_8h_source.html">AudioSource.h</a></li>
+<li><a class="el" href="_audio_source_8cpp.html">AudioSource.cpp</a></li>
+<li><a class="el" href="_r_t_t_r___registration_8h_source.html">RTTR_Registration.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_t_e.html">TE</a></li><li class="navelem"><a class="el" href="class_t_e_1_1_audio_source.html">AudioSource</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

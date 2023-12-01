@@ -1,0 +1,27 @@
+var struct_t_e_1_1_msg_sender =
+[
+    [ "SenderSubscription", "class_t_e_1_1_msg_sender_1_1_sender_subscription.html", "class_t_e_1_1_msg_sender_1_1_sender_subscription" ],
+    [ "BinderFuncPtr", "struct_t_e_1_1_msg_sender.html#a0aab2ba6e97d7b828dcc864886a58bf4", null ],
+    [ "MsgTypeGUID", "struct_t_e_1_1_msg_sender.html#aa984e1ac8fef3acfeb82cef7f0eea8a1", null ],
+    [ "SubscriptionID", "struct_t_e_1_1_msg_sender.html#a1f5a31224a7adc9ac2942b6b2164d521", null ],
+    [ "MsgSender", "struct_t_e_1_1_msg_sender.html#aa0c4962d28df1f5f713a3f725c4ee649", null ],
+    [ "~MsgSender", "struct_t_e_1_1_msg_sender.html#a14a3ff51de893d45573e600a4faf6562", null ],
+    [ "GetBindedGUID", "struct_t_e_1_1_msg_sender.html#a61fa4f5e8d8767d0179b6bf8d7607fce", null ],
+    [ "SendToSubscribers", "struct_t_e_1_1_msg_sender.html#a142b18710f8c7f8cf83706af3d09e838", null ],
+    [ "SendToSubscribers", "struct_t_e_1_1_msg_sender.html#a95644554606e565fb2eb38fcb6a580d8", null ],
+    [ "SendMessageDirect", "struct_t_e_1_1_msg_sender.html#a7559f0758bca0c16ce150ed1fbebedf7", null ],
+    [ "SendMessageDirect", "struct_t_e_1_1_msg_sender.html#a6d3c4a585bb85d557ee2edb5a5b42b22", null ],
+    [ "GetSubscriberCount", "struct_t_e_1_1_msg_sender.html#a049826daaf0db7c160870b1421dce7e8", null ],
+    [ "BinderFunc", "struct_t_e_1_1_msg_sender.html#ae11b8286203c587cab9ddc679ac5a099", null ],
+    [ "BinderFunc", "struct_t_e_1_1_msg_sender.html#af8017bfe41849bf465b36f246b995645", null ],
+    [ "BinderFunc", "struct_t_e_1_1_msg_sender.html#af8017bfe41849bf465b36f246b995645", null ],
+    [ "BinderFunc", "struct_t_e_1_1_msg_sender.html#a4caa94e80200bf851069544eb47a153c", null ],
+    [ "_SubscribeToMsg", "struct_t_e_1_1_msg_sender.html#a175c6bad626436025f4d7cbac9391815", null ],
+    [ "_UnsubscribeFromMsg", "struct_t_e_1_1_msg_sender.html#a6967fc4a6a262be516a3e7b3aed734b0", null ],
+    [ "_SetSubscriptionEnabled", "struct_t_e_1_1_msg_sender.html#a1a135e3c6e06657a226870077a7a55ac", null ],
+    [ "_CreateSubscriptionID", "struct_t_e_1_1_msg_sender.html#a3058c7ee8ab0885b452fae42e8faca46", null ],
+    [ "_GetAllSendersMap", "struct_t_e_1_1_msg_sender.html#af3253c39d58d92f3ee9fc1b924acbe18", null ],
+    [ "MsgReceiver", "struct_t_e_1_1_msg_sender.html#a73a93c84b7d39ac43d26747ef4209a63", null ],
+    [ "m_SenderBindedGUID", "struct_t_e_1_1_msg_sender.html#a08358c9722374769a065be809a21db4c", null ],
+    [ "m_SenderSubscribers", "struct_t_e_1_1_msg_sender.html#a24a44126f092d1c2ecc45751019949e7", null ]
+];

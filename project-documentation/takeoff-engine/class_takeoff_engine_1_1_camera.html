@@ -1,0 +1,684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: TakeoffEngine.Camera Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_takeoff_engine_1_1_camera.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a>  </div>
+  <div class="headertitle"><div class="title">TakeoffEngine.Camera Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for TakeoffEngine.Camera:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_takeoff_engine_1_1_camera.png" usemap="#TakeoffEngine.Camera_map" alt=""/>
+  <map id="TakeoffEngine.Camera_map" name="TakeoffEngine.Camera_map">
+<area href="class_takeoff_engine_1_1_i_component.html" alt="TakeoffEngine.IComponent" shape="rect" coords="0,56,163,80"/>
+<area href="class_takeoff_engine_1_1_i_object.html" alt="TakeoffEngine.IObject" shape="rect" coords="0,0,163,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1618c78cdb4231ca12cab7f810dca319"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#a1618c78cdb4231ca12cab7f810dca319">Camera</a> (ushort ecsIndex)</td></tr>
+<tr class="separator:a1618c78cdb4231ca12cab7f810dca319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a076ffb54df9daa072b24c6ff57c744fd"><td class="memItemLeft" align="right" valign="top">override ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#a076ffb54df9daa072b24c6ff57c744fd">GetTypeGUID</a> ()</td></tr>
+<tr class="separator:a076ffb54df9daa072b24c6ff57c744fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_takeoff_engine_1_1_i_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_takeoff_engine_1_1_i_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_takeoff_engine_1_1_i_component.html">TakeoffEngine.IComponent</a></td></tr>
+<tr class="memitem:a9f5bb0081f02756f98004e4a26b4c141 inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#a9f5bb0081f02756f98004e4a26b4c141">IComponent</a> (ushort ecsIndex=ushort.MaxValue)</td></tr>
+<tr class="separator:a9f5bb0081f02756f98004e4a26b4c141 inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f901458fb166833694e18429f9b4dfe inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#a5f901458fb166833694e18429f9b4dfe">GetIsActive</a> ()</td></tr>
+<tr class="memdesc:a5f901458fb166833694e18429f9b4dfe inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the active state of this component. If any of this component's parents is inactive, this function will return false, even if the internal active state of this component is still active.  <br /></td></tr>
+<tr class="separator:a5f901458fb166833694e18429f9b4dfe inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afddcf7c722a810a266c773429d7ac342 inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#afddcf7c722a810a266c773429d7ac342">GetIsActiveInternal</a> ()</td></tr>
+<tr class="memdesc:afddcf7c722a810a266c773429d7ac342 inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the internal active state of this component, ignoring the active state of component's parents.  <br /></td></tr>
+<tr class="separator:afddcf7c722a810a266c773429d7ac342 inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3701bbefad29e470e4f7efb037af19e7 inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#a3701bbefad29e470e4f7efb037af19e7">SetIsActive</a> (bool isActive)</td></tr>
+<tr class="memdesc:a3701bbefad29e470e4f7efb037af19e7 inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal active state of this component, ignoring the active state of component's parents.  <br /></td></tr>
+<tr class="separator:a3701bbefad29e470e4f7efb037af19e7 inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5df7f7581e27996a3e9f491216eb5fa inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#af5df7f7581e27996a3e9f491216eb5fa">IsNull</a> ()</td></tr>
+<tr class="memdesc:af5df7f7581e27996a3e9f491216eb5fa inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this component in the engine level is null or not. If the Component class itself is null, this function will not work!  <br /></td></tr>
+<tr class="separator:af5df7f7581e27996a3e9f491216eb5fa inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f667fd7fde832ebe695c27f2da8c9c inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_takeoff_engine_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#ab0f667fd7fde832ebe695c27f2da8c9c">GetEntity</a> ()</td></tr>
+<tr class="memdesc:ab0f667fd7fde832ebe695c27f2da8c9c inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the entity reference this component is attached to.  <br /></td></tr>
+<tr class="separator:ab0f667fd7fde832ebe695c27f2da8c9c inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054cfe9e01cef4e5b15bb2cc0cf323c2 inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memItemLeft" align="right" valign="top">override ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#a054cfe9e01cef4e5b15bb2cc0cf323c2">GetGUID</a> ()</td></tr>
+<tr class="memdesc:a054cfe9e01cef4e5b15bb2cc0cf323c2 inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the GUID of this component.  <br /></td></tr>
+<tr class="separator:a054cfe9e01cef4e5b15bb2cc0cf323c2 inherit pub_methods_class_takeoff_engine_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a3e4176b1ff20e7dd96d03cd7511f4"><td class="memItemLeft" align="right" valign="top">abstract ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_object.html#a70a3e4176b1ff20e7dd96d03cd7511f4">GetGUID</a> ()</td></tr>
+<tr class="separator:a70a3e4176b1ff20e7dd96d03cd7511f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d4331e9014b1f2c9afeedcf26f9a40"><td class="memItemLeft" align="right" valign="top">abstract ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_object.html#a24d4331e9014b1f2c9afeedcf26f9a40">GetTypeGUID</a> ()</td></tr>
+<tr class="separator:a24d4331e9014b1f2c9afeedcf26f9a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6e5d97c7ae58f33047b5e1d58803097f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#a6e5d97c7ae58f33047b5e1d58803097f">GetFOV</a> ()</td></tr>
+<tr class="separator:a6e5d97c7ae58f33047b5e1d58803097f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29cd339df6e7867253f1393a41d96ab"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#ab29cd339df6e7867253f1393a41d96ab">GetFOVDegree</a> ()</td></tr>
+<tr class="separator:ab29cd339df6e7867253f1393a41d96ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97e632b50ec389c086c57ff39ac7670"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#ae97e632b50ec389c086c57ff39ac7670">GetFocusDepth</a> ()</td></tr>
+<tr class="separator:ae97e632b50ec389c086c57ff39ac7670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab23a2df8c4c92fa7531e2704b7016d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#a5ab23a2df8c4c92fa7531e2704b7016d">SetFocusDepth</a> (float focusDepth)</td></tr>
+<tr class="separator:a5ab23a2df8c4c92fa7531e2704b7016d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed63b2993adabe12c1e4e13531777ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_takeoff_engine_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#a9ed63b2993adabe12c1e4e13531777ee">GetFoward</a> ()</td></tr>
+<tr class="separator:a9ed63b2993adabe12c1e4e13531777ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46462266f21f12fdc18df74422a68b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_takeoff_engine_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#ac46462266f21f12fdc18df74422a68b8">GetUp</a> ()</td></tr>
+<tr class="separator:ac46462266f21f12fdc18df74422a68b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea59a72bce8685a989a9e7439b8d87ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_takeoff_engine_1_1_mat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#aea59a72bce8685a989a9e7439b8d87ce">GetPerspectiveMtx</a> ()</td></tr>
+<tr class="separator:aea59a72bce8685a989a9e7439b8d87ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a129f2d5b9c0963bf11b97ec565b668ac"><td class="memItemLeft" align="right" valign="top">static ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#a129f2d5b9c0963bf11b97ec565b668ac">TE_GetCameraTypeGUID</a> ()</td></tr>
+<tr class="separator:a129f2d5b9c0963bf11b97ec565b668ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6d8319203fd1f12aca02d8143d0e20"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#a4d6d8319203fd1f12aca02d8143d0e20">TE_GetCameraFOVRadians</a> (ushort ecsIndex)</td></tr>
+<tr class="separator:a4d6d8319203fd1f12aca02d8143d0e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3a0f810544e5c1af07c4b5e8e2bb2d"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#ade3a0f810544e5c1af07c4b5e8e2bb2d">TE_GetCameraFOVDegree</a> (ushort ecsIndex)</td></tr>
+<tr class="separator:ade3a0f810544e5c1af07c4b5e8e2bb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae8a2667a369b9356437aab329e1e15"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#a8ae8a2667a369b9356437aab329e1e15">TE_SetCameraFocusDepth</a> (ushort ecsIndex, float focusDepth)</td></tr>
+<tr class="separator:a8ae8a2667a369b9356437aab329e1e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698cfff6b827f52d983fca4432af58f1"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#a698cfff6b827f52d983fca4432af58f1">TE_GetCameraFocusDepth</a> (ushort ecsIndex)</td></tr>
+<tr class="separator:a698cfff6b827f52d983fca4432af58f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7489b860c7154f0fe56e3606bf64967"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_takeoff_engine_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#ad7489b860c7154f0fe56e3606bf64967">TE_GetCameraForwardMoveVector</a> (ushort ecsIndex)</td></tr>
+<tr class="separator:ad7489b860c7154f0fe56e3606bf64967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80fa0fef179a89b065fa048136d8196a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_takeoff_engine_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#a80fa0fef179a89b065fa048136d8196a">TE_GetCameraUpMoveVector</a> (ushort ecsIndex)</td></tr>
+<tr class="separator:a80fa0fef179a89b065fa048136d8196a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d89373394d99df83477573c7a16a92"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_takeoff_engine_1_1_mat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_camera.html#a27d89373394d99df83477573c7a16a92">TE_GetPerspectiveProjectionMatrix</a> (ushort ecsIndex)</td></tr>
+<tr class="separator:a27d89373394d99df83477573c7a16a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_static_methods_class_takeoff_engine_1_1_i_component"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_takeoff_engine_1_1_i_component')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="class_takeoff_engine_1_1_i_component.html">TakeoffEngine.IComponent</a></td></tr>
+<tr class="memitem:a9ecbf8cbab5db6ca167cba4e479625eb inherit pro_static_methods_class_takeoff_engine_1_1_i_component"><td class="memItemLeft" align="right" valign="top">static ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_takeoff_engine_1_1_i_component.html#a9ecbf8cbab5db6ca167cba4e479625eb">TE_CompGetGUID</a> (ulong typeGUID, ushort m_ECSIndex)</td></tr>
+<tr class="separator:a9ecbf8cbab5db6ca167cba4e479625eb inherit pro_static_methods_class_takeoff_engine_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1618c78cdb4231ca12cab7f810dca319" name="a1618c78cdb4231ca12cab7f810dca319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1618c78cdb4231ca12cab7f810dca319">&#9670;&#160;</a></span>Camera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TakeoffEngine.Camera.Camera </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a129f2d5b9c0963bf11b97ec565b668ac" name="a129f2d5b9c0963bf11b97ec565b668ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a129f2d5b9c0963bf11b97ec565b668ac">&#9670;&#160;</a></span>TE_GetCameraTypeGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ulong TakeoffEngine.Camera.TE_GetCameraTypeGUID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d6d8319203fd1f12aca02d8143d0e20" name="a4d6d8319203fd1f12aca02d8143d0e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6d8319203fd1f12aca02d8143d0e20">&#9670;&#160;</a></span>TE_GetCameraFOVRadians()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float TakeoffEngine.Camera.TE_GetCameraFOVRadians </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade3a0f810544e5c1af07c4b5e8e2bb2d" name="ade3a0f810544e5c1af07c4b5e8e2bb2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade3a0f810544e5c1af07c4b5e8e2bb2d">&#9670;&#160;</a></span>TE_GetCameraFOVDegree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float TakeoffEngine.Camera.TE_GetCameraFOVDegree </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ae8a2667a369b9356437aab329e1e15" name="a8ae8a2667a369b9356437aab329e1e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ae8a2667a369b9356437aab329e1e15">&#9670;&#160;</a></span>TE_SetCameraFocusDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void TakeoffEngine.Camera.TE_SetCameraFocusDepth </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>ecsIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>focusDepth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a698cfff6b827f52d983fca4432af58f1" name="a698cfff6b827f52d983fca4432af58f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a698cfff6b827f52d983fca4432af58f1">&#9670;&#160;</a></span>TE_GetCameraFocusDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float TakeoffEngine.Camera.TE_GetCameraFocusDepth </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7489b860c7154f0fe56e3606bf64967" name="ad7489b860c7154f0fe56e3606bf64967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7489b860c7154f0fe56e3606bf64967">&#9670;&#160;</a></span>TE_GetCameraForwardMoveVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="struct_takeoff_engine_1_1_vec3.html">Vec3</a> TakeoffEngine.Camera.TE_GetCameraForwardMoveVector </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80fa0fef179a89b065fa048136d8196a" name="a80fa0fef179a89b065fa048136d8196a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80fa0fef179a89b065fa048136d8196a">&#9670;&#160;</a></span>TE_GetCameraUpMoveVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="struct_takeoff_engine_1_1_vec3.html">Vec3</a> TakeoffEngine.Camera.TE_GetCameraUpMoveVector </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27d89373394d99df83477573c7a16a92" name="a27d89373394d99df83477573c7a16a92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d89373394d99df83477573c7a16a92">&#9670;&#160;</a></span>TE_GetPerspectiveProjectionMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="struct_takeoff_engine_1_1_mat4.html">Mat4</a> TakeoffEngine.Camera.TE_GetPerspectiveProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>ecsIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a076ffb54df9daa072b24c6ff57c744fd" name="a076ffb54df9daa072b24c6ff57c744fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a076ffb54df9daa072b24c6ff57c744fd">&#9670;&#160;</a></span>GetTypeGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;<a class="el" href="class_t_e_1_1_camera.html#ab783ff79a23453bf7fc843b933521655">TE.Camera.SetCameraForwardVector</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#af35aa9b314a73666391c5325c122e81f">TE.Camera.SetCameraFocusDepth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a7015b47f41e2e5722a4f9fbcfbd91fa6">TE.Camera.SetCameraWidth</a> &amp;<a class="el" href="class_t_e_1_1_camera.html#a12425d808eb55ca601d13bb881f466ca">TE.Camera.SetWidthFOVDegree</a> &amp; TE.Camera.GetTypeGUID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_takeoff_engine_1_1_i_object.html#a24d4331e9014b1f2c9afeedcf26f9a40">TakeoffEngine.IObject</a>.</p>
+
+</div>
+</div>
+<a id="a6e5d97c7ae58f33047b5e1d58803097f" name="a6e5d97c7ae58f33047b5e1d58803097f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e5d97c7ae58f33047b5e1d58803097f">&#9670;&#160;</a></span>GetFOV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TakeoffEngine.Camera.GetFOV </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab29cd339df6e7867253f1393a41d96ab" name="ab29cd339df6e7867253f1393a41d96ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab29cd339df6e7867253f1393a41d96ab">&#9670;&#160;</a></span>GetFOVDegree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TakeoffEngine.Camera.GetFOVDegree </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae97e632b50ec389c086c57ff39ac7670" name="ae97e632b50ec389c086c57ff39ac7670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97e632b50ec389c086c57ff39ac7670">&#9670;&#160;</a></span>GetFocusDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TakeoffEngine.Camera.GetFocusDepth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ab23a2df8c4c92fa7531e2704b7016d" name="a5ab23a2df8c4c92fa7531e2704b7016d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab23a2df8c4c92fa7531e2704b7016d">&#9670;&#160;</a></span>SetFocusDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TakeoffEngine.Camera.SetFocusDepth </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>focusDepth</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ed63b2993adabe12c1e4e13531777ee" name="a9ed63b2993adabe12c1e4e13531777ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed63b2993adabe12c1e4e13531777ee">&#9670;&#160;</a></span>GetFoward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_takeoff_engine_1_1_vec3.html">Vec3</a> TakeoffEngine.Camera.GetFoward </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac46462266f21f12fdc18df74422a68b8" name="ac46462266f21f12fdc18df74422a68b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac46462266f21f12fdc18df74422a68b8">&#9670;&#160;</a></span>GetUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_takeoff_engine_1_1_vec3.html">Vec3</a> TakeoffEngine.Camera.GetUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea59a72bce8685a989a9e7439b8d87ce" name="aea59a72bce8685a989a9e7439b8d87ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea59a72bce8685a989a9e7439b8d87ce">&#9670;&#160;</a></span>GetPerspectiveMtx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_takeoff_engine_1_1_mat4.html">Mat4</a> TakeoffEngine.Camera.GetPerspectiveMtx </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_camera_8cs.html">Camera.cs</a></li>
+<li><a class="el" href="_r_t_t_r___registration_8h_source.html">RTTR_Registration.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_takeoff_engine.html">TakeoffEngine</a></li><li class="navelem"><a class="el" href="class_takeoff_engine_1_1_camera.html">Camera</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>
