@@ -9,7 +9,5 @@ var class_t_e_1_1_component_ref_3_01_collider_01_4 =
     [ "get", "class_t_e_1_1_component_ref_3_01_collider_01_4.html#a5abf1b6430b9a06cc3522e74b1b2a9a1", null ],
     [ "operator bool", "class_t_e_1_1_component_ref_3_01_collider_01_4.html#adf738b964cac9d151656c71811dcfd7e", null ],
     [ "IsNull", "class_t_e_1_1_component_ref_3_01_collider_01_4.html#a20981e8182da44728a123aede0d79662", null ],
-    [ "GetColliderType", "class_t_e_1_1_component_ref_3_01_collider_01_4.html#ac66f0312f1763bb5fa6936a4297fc0a6", null ],
-    [ "m_ColliderTypeGUID", "class_t_e_1_1_component_ref_3_01_collider_01_4.html#ab859487f3dbb5896f543b8e4e4dd4433", null ],
-    [ "m_ECSIndex", "class_t_e_1_1_component_ref_3_01_collider_01_4.html#a407113b4e50ae26f1adccabfd6359d87", null ]
+    [ "GetColliderType", "class_t_e_1_1_component_ref_3_01_collider_01_4.html#ac66f0312f1763bb5fa6936a4297fc0a6", null ]
 ];

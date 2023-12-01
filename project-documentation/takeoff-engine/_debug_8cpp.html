@@ -128,14 +128,13 @@ $(document).ready(function(){initNavTree('_debug_8cpp.html',''); initResizable()
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Debug.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Contains the definitions of <a class="el" href="namespace_debug.html">Debug</a> Logging functionality. <br  />
+<p>Contains the definitions of Debug Logging functionality. <br  />
  All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="pch__engine_8h_source.html">pch_engine.h</a>&quot;</code><br />
@@ -148,34 +147,34 @@ $(document).ready(function(){initNavTree('_debug_8cpp.html',''); initResizable()
 <code>#include &quot;<a class="el" href="_g_u_i_d_8h_source.html">Helper/GUID.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_file_sys_8h_source.html">Helper/Filesys.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_debug"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_debug.html">Debug</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6cbd2aaeb2f68f35d1f16e8787ea972f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_debug.html#a6cbd2aaeb2f68f35d1f16e8787ea972f">Debug::_LogMessage</a> (LogLevel logLevel, bool useMsgSystem, const char *format,...)</td></tr>
+<tr class="memitem:a6cbd2aaeb2f68f35d1f16e8787ea972f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_8cpp.html#a6cbd2aaeb2f68f35d1f16e8787ea972f">Debug::_LogMessage</a> (LogLevel logLevel, bool useMsgSystem, const char *format,...)</td></tr>
 <tr class="memdesc:a6cbd2aaeb2f68f35d1f16e8787ea972f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message. Message will be formatted and printed to console, written to log file, and sent to editor (if any). Not to be used directly, use TE_DEBUG or its variants.  <br /></td></tr>
 <tr class="separator:a6cbd2aaeb2f68f35d1f16e8787ea972f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add86a5a8c638c837059c7a6e6d2c71ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_debug.html#add86a5a8c638c837059c7a6e6d2c71ec">Debug::InitLogging</a> ()</td></tr>
-<tr class="memdesc:add86a5a8c638c837059c7a6e6d2c71ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the logging system. Opens the log text file.  <br /></td></tr>
+<tr class="memitem:add86a5a8c638c837059c7a6e6d2c71ec"><td class="memItemLeft" align="right" valign="top"><a id="add86a5a8c638c837059c7a6e6d2c71ec" name="add86a5a8c638c837059c7a6e6d2c71ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Debug::InitLogging</b> ()</td></tr>
+<tr class="memdesc:add86a5a8c638c837059c7a6e6d2c71ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the logging system. Opens the log text file. <br /></td></tr>
 <tr class="separator:add86a5a8c638c837059c7a6e6d2c71ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6a2829fcb24fef94bf06a17c648aeba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_debug.html#aa6a2829fcb24fef94bf06a17c648aeba">Debug::ExitLogging</a> ()</td></tr>
-<tr class="memdesc:aa6a2829fcb24fef94bf06a17c648aeba"><td class="mdescLeft">&#160;</td><td class="mdescRight">saves and closes the log file before closing.  <br /></td></tr>
+<tr class="memitem:aa6a2829fcb24fef94bf06a17c648aeba"><td class="memItemLeft" align="right" valign="top"><a id="aa6a2829fcb24fef94bf06a17c648aeba" name="aa6a2829fcb24fef94bf06a17c648aeba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Debug::ExitLogging</b> ()</td></tr>
+<tr class="memdesc:aa6a2829fcb24fef94bf06a17c648aeba"><td class="mdescLeft">&#160;</td><td class="mdescRight">saves and closes the log file before closing. <br /></td></tr>
 <tr class="separator:aa6a2829fcb24fef94bf06a17c648aeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a1539e064f1ea4a4c834b8320ecdab7a9"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_debug.html#a1539e064f1ea4a4c834b8320ecdab7a9">Debug::logFile</a> = nullptr</td></tr>
+<tr class="memitem:a1539e064f1ea4a4c834b8320ecdab7a9"><td class="memItemLeft" align="right" valign="top"><a id="a1539e064f1ea4a4c834b8320ecdab7a9" name="a1539e064f1ea4a4c834b8320ecdab7a9"></a>
+FILE *&#160;</td><td class="memItemRight" valign="bottom"><b>Debug::logFile</b> = nullptr</td></tr>
 <tr class="separator:a1539e064f1ea4a4c834b8320ecdab7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac091bd9e04fc0a40b010bcacb00b9415"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_debug.html#ac091bd9e04fc0a40b010bcacb00b9415">Debug::debuggerGUID</a> = <a class="el" href="class_t_e_1_1_g_u_i_d_creator.html#a774290fcc78926a9a00353cf74645e9c">TE::GUIDCreator::GenerateGUID</a>()</td></tr>
+<tr class="memitem:ac091bd9e04fc0a40b010bcacb00b9415"><td class="memItemLeft" align="right" valign="top"><a id="ac091bd9e04fc0a40b010bcacb00b9415" name="ac091bd9e04fc0a40b010bcacb00b9415"></a>
+const TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>Debug::debuggerGUID</b> = TE::GUIDCreator::GenerateGUID()</td></tr>
 <tr class="separator:ac091bd9e04fc0a40b010bcacb00b9415"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae33f8c4acbe000bb2641dbfd755b0ac3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_e_1_1_msg_sender.html">TE::MsgSender</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_debug.html#ae33f8c4acbe000bb2641dbfd755b0ac3">Debug::debugEventSender</a> (debuggerGUID)</td></tr>
+<tr class="memitem:ae33f8c4acbe000bb2641dbfd755b0ac3"><td class="memItemLeft" align="right" valign="top"><a id="ae33f8c4acbe000bb2641dbfd755b0ac3" name="ae33f8c4acbe000bb2641dbfd755b0ac3"></a>
+<a class="el" href="struct_t_e_1_1_msg_sender.html">TE::MsgSender</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Debug::debugEventSender</b> (debuggerGUID)</td></tr>
 <tr class="separator:ae33f8c4acbe000bb2641dbfd755b0ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains the definitions of <a class="el" href="namespace_debug.html">Debug</a> Logging functionality. <br  />
+<div class="textblock"><p>Contains the definitions of Debug Logging functionality. <br  />
  All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved. </p>
 <pre>
 </pre><pre>  <b>File:</b>        <a class="el" href="_debug_8cpp.html" title="Contains the definitions of Debug Logging functionality.   All content (c) 2023 DigiPen Institute of ...">Debug.cpp</a></pre><pre>
@@ -185,7 +184,58 @@ Variables</h2></td></tr>
 </pre><pre>  <b>Emails:</b>      <a href="mailto:l.junyi@digipen.edu">l.junyi@digipen.edu</a></pre><pre>
 
 </pre><pre>  <b>Date:</b>        21/8/2023</pre><pre>
-</pre> </div></div><!-- contents -->
+</pre> </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a6cbd2aaeb2f68f35d1f16e8787ea972f" name="a6cbd2aaeb2f68f35d1f16e8787ea972f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cbd2aaeb2f68f35d1f16e8787ea972f">&#9670;&#160;</a></span>_LogMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Debug::_LogMessage </td>
+          <td>(</td>
+          <td class="paramtype">LogLevel&#160;</td>
+          <td class="paramname"><em>logLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useMsgSystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs a message. Message will be formatted and printed to console, written to log file, and sent to editor (if any). Not to be used directly, use TE_DEBUG or its variants. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">logLevel</td><td>The level of logging to tag this message as (Trace, Fatal, Warn, etc)</td></tr>
+    <tr><td class="paramname">useMsgSystem</td><td>Send this message to the messaging system?</td></tr>
+    <tr><td class="paramname">format</td><td>The format of the message and the parameters after it. Works like printf.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

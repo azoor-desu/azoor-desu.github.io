@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('_memory_8h_source.html',''); initResiz
   <div class="headertitle"><div class="title">Memory.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_memory_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_defines_8h.html">Defines.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;typeinfo&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -142,12 +142,12 @@ $(document).ready(function(){initNavTree('_memory_8h_source.html',''); initResiz
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_t_e_1_1_memory.html">   10</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_t_e_1_1_memory.html">Memory</a> {</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">static</span> <a class="code hl_class" href="class_t_e_1_1_memory.html">Memory</a>&amp; <a class="code hl_function" href="class_t_e_1_1_memory.html#a7495611b8ff8612e03375e91b557d68f">GetInstance</a>();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_t_e_1_1_memory.html#afcfa3415fe08af372cece446edd06b8c">   14</a></span>        <span class="keywordtype">void</span>* <a class="code hl_variable" href="class_t_e_1_1_memory.html#afcfa3415fe08af372cece446edd06b8c">memchunk</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_t_e_1_1_memory.html#ab968a36a61f040ea11ee4a8174e608ed">   15</a></span>        <span class="keywordtype">char</span>* <a class="code hl_variable" href="class_t_e_1_1_memory.html#ab968a36a61f040ea11ee4a8174e608ed">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">static</span> <a class="code hl_class" href="class_t_e_1_1_memory.html">Memory</a>&amp; GetInstance();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordtype">void</span>* memchunk = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordtype">char</span>* next = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_t_e_1_1_memory.html#a9105bbd6d12ce96151b583f14b480eea">   17</a></span>        <a class="code hl_function" href="class_t_e_1_1_memory.html#a9105bbd6d12ce96151b583f14b480eea">Memory</a>() {};</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_t_e_1_1_memory.html#a44fb4c860570522665b4987eeaf69347">   18</a></span>        <a class="code hl_function" href="class_t_e_1_1_memory.html#a44fb4c860570522665b4987eeaf69347">~Memory</a>() { <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_t_e_1_1_memory.html#afcfa3415fe08af372cece446edd06b8c">memchunk</a> != <span class="keyword">nullptr</span>) free(<a class="code hl_variable" href="class_t_e_1_1_memory.html#afcfa3415fe08af372cece446edd06b8c">memchunk</a>); }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <a class="code hl_class" href="class_t_e_1_1_memory.html">Memory</a>() {};</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_class" href="class_t_e_1_1_memory.html">~Memory</a>() { <span class="keywordflow">if</span> (memchunk != <span class="keyword">nullptr</span>) free(memchunk); }</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    };</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
@@ -165,18 +165,13 @@ $(document).ready(function(){initNavTree('_memory_8h_source.html',''); initResiz
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// &gt; IDK if other systems like Asset system can use this. Make one and find out.</span></div>
 <div class="ttc" id="a_defines_8h_html"><div class="ttname"><a href="_defines_8h.html">Defines.h</a></div><div class="ttdoc">Defines some common math constants and typedefs   All content (c) 2022 DigiPen Institute of Technolog...</div></div>
 <div class="ttc" id="aclass_t_e_1_1_memory_html"><div class="ttname"><a href="class_t_e_1_1_memory.html">TE::Memory</a></div><div class="ttdef"><b>Definition:</b> Memory.h:10</div></div>
-<div class="ttc" id="aclass_t_e_1_1_memory_html_a44fb4c860570522665b4987eeaf69347"><div class="ttname"><a href="class_t_e_1_1_memory.html#a44fb4c860570522665b4987eeaf69347">TE::Memory::~Memory</a></div><div class="ttdeci">~Memory()</div><div class="ttdef"><b>Definition:</b> Memory.h:18</div></div>
-<div class="ttc" id="aclass_t_e_1_1_memory_html_a7495611b8ff8612e03375e91b557d68f"><div class="ttname"><a href="class_t_e_1_1_memory.html#a7495611b8ff8612e03375e91b557d68f">TE::Memory::GetInstance</a></div><div class="ttdeci">static Memory &amp; GetInstance()</div><div class="ttdef"><b>Definition:</b> Memory.cpp:31</div></div>
-<div class="ttc" id="aclass_t_e_1_1_memory_html_a9105bbd6d12ce96151b583f14b480eea"><div class="ttname"><a href="class_t_e_1_1_memory.html#a9105bbd6d12ce96151b583f14b480eea">TE::Memory::Memory</a></div><div class="ttdeci">Memory()</div><div class="ttdef"><b>Definition:</b> Memory.h:17</div></div>
-<div class="ttc" id="aclass_t_e_1_1_memory_html_ab968a36a61f040ea11ee4a8174e608ed"><div class="ttname"><a href="class_t_e_1_1_memory.html#ab968a36a61f040ea11ee4a8174e608ed">TE::Memory::next</a></div><div class="ttdeci">char * next</div><div class="ttdef"><b>Definition:</b> Memory.h:15</div></div>
-<div class="ttc" id="aclass_t_e_1_1_memory_html_afcfa3415fe08af372cece446edd06b8c"><div class="ttname"><a href="class_t_e_1_1_memory.html#afcfa3415fe08af372cece446edd06b8c">TE::Memory::memchunk</a></div><div class="ttdeci">void * memchunk</div><div class="ttdef"><b>Definition:</b> Memory.h:14</div></div>
 <div class="ttc" id="anamespace_t_e_html"><div class="ttname"><a href="namespace_t_e.html">TE</a></div><div class="ttdoc">Declarations for the ECSManager class, EntityRef class, IComponent and ISystem classes   All content ...</div><div class="ttdef"><b>Definition:</b> EditorFrame.h:40</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ff9d562b39932b7b74f54b9fb4bb00a0.html">ProjectSolution</a></li><li class="navelem"><a class="el" href="dir_0e3d5f2d56e31468daefe438e212cfbc.html">Proj_Engine</a></li><li class="navelem"><a class="el" href="dir_0d2c0b45ba4d42e3f37ae38d7482e159.html">Source</a></li><li class="navelem"><a class="el" href="dir_cc51bcec865dd0b7a61734fbfe0e5b5c.html">EngineSystems</a></li><li class="navelem"><a class="el" href="_memory_8h.html">Memory.h</a></li>
+    <li class="navelem"><a class="el" href="dir_ff9d562b39932b7b74f54b9fb4bb00a0.html">ProjectSolution</a></li><li class="navelem"><a class="el" href="dir_0e3d5f2d56e31468daefe438e212cfbc.html">Proj_Engine</a></li><li class="navelem"><a class="el" href="dir_0d2c0b45ba4d42e3f37ae38d7482e159.html">Source</a></li><li class="navelem"><a class="el" href="dir_cc51bcec865dd0b7a61734fbfe0e5b5c.html">EngineSystems</a></li><li class="navelem"><b>Memory.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

@@ -129,25 +129,33 @@ $(document).ready(function(){initNavTree('_physics_manager_8cpp.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">PhysicsManager.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Physics manager for handling physics &amp; rigidbody components, and their interactions with the physics system. The physics system is a wrapper around the Jolt Physics Library. <br  />
+ All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="pch__engine_8h_source.html">pch_engine.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_physics_manager_8h_source.html">PhysicsManager.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_bounding_shapes_8h_source.html">Core/BoundingShapes.h</a>&quot;</code><br />
-<code>#include &lt;Jolt/Jolt.h&gt;</code><br />
 <code>#include &lt;Jolt/RegisterTypes.h&gt;</code><br />
 <code>#include &lt;Jolt/Core/Factory.h&gt;</code><br />
-<code>#include &lt;Jolt/Core/TempAllocator.h&gt;</code><br />
-<code>#include &lt;Jolt/Core/JobSystemThreadPool.h&gt;</code><br />
-<code>#include &lt;Jolt/Physics/PhysicsSettings.h&gt;</code><br />
-<code>#include &lt;Jolt/Physics/PhysicsSystem.h&gt;</code><br />
-<code>#include &lt;Jolt/Physics/Collision/Shape/BoxShape.h&gt;</code><br />
-<code>#include &lt;Jolt/Physics/Collision/Shape/SphereShape.h&gt;</code><br />
+<code>#include &lt;Jolt/Core/IssueReporting.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/EActivation.h&gt;</code><br />
 <code>#include &lt;Jolt/Physics/Body/BodyCreationSettings.h&gt;</code><br />
 <code>#include &lt;Jolt/Physics/Body/BodyActivationListener.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="_e_c_s_manager_8h_source.html">ECSManager.h</a>&quot;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/Shape/BoxShape.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/Shape/SphereShape.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/Shape/CapsuleShape.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/Shape/CylinderShape.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/Shape/MeshShape.h&gt;</code><br />
+<code>#include &quot;ECSManager.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_box_collider_8h_source.html">ECSComponents/BoxCollider.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_capsule_collider_8h_source.html">ECSComponents/CapsuleCollider.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_sphere_collider_8h_source.html">ECSComponents/SphereCollider.h</a>&quot;</code><br />
+<code>#include &quot;ECSComponents/CylinderCollider.h&quot;</code><br />
+<code>#include &quot;ECSComponents/MeshCollider.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -156,12 +164,21 @@ Namespaces</h2></td></tr>
  All content (c) 2022 DigiPen Institute of Technology Singapore. All rights reserved. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a863020f5ea11435896dbacd84be83c14"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e.html#a863020f5ea11435896dbacd84be83c14">TE::currentEntityName</a> {}</td></tr>
-<tr class="separator:a863020f5ea11435896dbacd84be83c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a6c21a426e2c33ccb9ea151fa382dc099"><td class="memItemLeft" align="right" valign="top"><a id="a6c21a426e2c33ccb9ea151fa382dc099" name="a6c21a426e2c33ccb9ea151fa382dc099"></a>
+std::vector&lt; ComponentRef&lt; Collider &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TE::GetColliderList</b> ()</td></tr>
+<tr class="separator:a6c21a426e2c33ccb9ea151fa382dc099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Physics manager for handling physics &amp; rigidbody components, and their interactions with the physics system. The physics system is a wrapper around the Jolt Physics Library. <br  />
+ All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved. </p>
+<pre>
+</pre><pre>  <b>File:</b>    <a class="el" href="_physics_manager_8cpp.html" title="Physics manager for handling physics &amp; rigidbody components, and their interactions with the physics ...">PhysicsManager.cpp</a></pre><pre>
+</pre><pre>  <b>Authors:</b> Anderson Phua (100%)</pre><pre>
+</pre><pre>  <b>Emails:</b>  <a href="mailto:a.phua@digipen.edu">a.phua@digipen.edu</a></pre><pre>
+</pre><pre>  <b>Date:</b>    05/09/2023</pre><pre>
+</pre> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

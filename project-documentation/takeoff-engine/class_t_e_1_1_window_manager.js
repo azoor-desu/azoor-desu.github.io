@@ -1,6 +1,5 @@
 var class_t_e_1_1_window_manager =
 [
-    [ "FunctionPointer", "class_t_e_1_1_window_manager.html#ac5e8baa204748d525932297809423e3e", null ],
     [ "WindowManager", "class_t_e_1_1_window_manager.html#a99f4324b41dceccfcfb3a4da7a5ecea7", null ],
     [ "GetGlfwWindowPointer", "class_t_e_1_1_window_manager.html#acebdecc610a22939808f606004128ab1", null ],
     [ "SetGlfwKeyboardCallback", "class_t_e_1_1_window_manager.html#adc926b41ae68acb5c46fdda2cfddaec6", null ],
@@ -16,12 +15,6 @@ var class_t_e_1_1_window_manager =
     [ "IsMinimized", "class_t_e_1_1_window_manager.html#a2e31a4793ebc7c9afcf8c8f135b1874a", null ],
     [ "IsFocused", "class_t_e_1_1_window_manager.html#ad7e95fa7e80286afd36befd385ce7679", null ],
     [ "IsMaximized", "class_t_e_1_1_window_manager.html#a5e280c4f9fafaffc966834ecdda7944f", null ],
-    [ "GetWindowSettings", "class_t_e_1_1_window_manager.html#a402cb90991e9d9f26660aff1beb47951", null ],
-    [ "InitManager", "class_t_e_1_1_window_manager.html#aff0ad5b6174b2110c297d57edaad1890", null ],
-    [ "UpdateManager", "class_t_e_1_1_window_manager.html#a55f014560fe273ce2d1a8f78548c7b80", null ],
-    [ "ExitManager", "class_t_e_1_1_window_manager.html#aac36eade3d485d390586f23149c5a225", null ],
-    [ "PollEvents", "class_t_e_1_1_window_manager.html#a2a24f0d6782af7b9a3f33ba20d41fa92", null ],
-    [ "Engine", "class_t_e_1_1_window_manager.html#a3e1914489e4bed4f9f23cdeab34a43dc", null ],
-    [ "m_GlfwWindowPointer", "class_t_e_1_1_window_manager.html#a8b375302b7b256b0e22c3fff1abc2346", null ],
-    [ "m_Settings", "class_t_e_1_1_window_manager.html#ae0d0d8461b73dd1f00fe8f584d388758", null ]
+    [ "IsFullscreen", "class_t_e_1_1_window_manager.html#ad9eca09a806f093cb60b3358321baf34", null ],
+    [ "GetWindowSettings", "class_t_e_1_1_window_manager.html#a402cb90991e9d9f26660aff1beb47951", null ]
 ];

@@ -11,20 +11,7 @@ var class_t_e_1_1_audio_source =
     [ "SetAudioFilepath", "class_t_e_1_1_audio_source.html#a6a58f7abac807639f4a46da710aa7747", null ],
     [ "GetIs3DSound", "class_t_e_1_1_audio_source.html#adbdde808c063f9cb418fb17119dde85d", null ],
     [ "SetIs3DSound", "class_t_e_1_1_audio_source.html#a5d798ccebb1ea4592cf2158ebf398b22", null ],
-    [ "GetChannelGroupHandle", "class_t_e_1_1_audio_source.html#aec3e470898bbed53d7337c0a8bbbf133", null ],
-    [ "SetChannelGroupHandle", "class_t_e_1_1_audio_source.html#a211add8db073c4c3153bb9130c195fd5", null ],
-    [ "isPlaying", "class_t_e_1_1_audio_source.html#a6ba017fe613d224804e5d72b90d35bd2", null ],
-    [ "SetIsPlaying", "class_t_e_1_1_audio_source.html#a436fc572223a044d21e413be6df61a7f", null ],
-    [ "GetChannelGroupVol", "class_t_e_1_1_audio_source.html#a1a6587053831bdf0a40ef11d87b91bb0", null ],
-    [ "SetChannelGroupVol", "class_t_e_1_1_audio_source.html#a36fd83a156058c893327e1c6e77f827f", null ],
-    [ "GetChannelIndex", "class_t_e_1_1_audio_source.html#aae8a0596c565c06b4039b991846139ca", null ],
-    [ "asset_handle", "class_t_e_1_1_audio_source.html#abe93b080318899363c9e2ae333286c99", null ],
-    [ "filepath", "class_t_e_1_1_audio_source.html#ac5f5eda23d3fbe2f58ab7503a362ea41", null ],
-    [ "is3DSound", "class_t_e_1_1_audio_source.html#a3cc86656c2e3992ecda190deca1d7fd9", null ],
-    [ "isAudioPlaying", "class_t_e_1_1_audio_source.html#a94c05bd294c03a1b81024fde0b15a04e", null ],
-    [ "sound_ptr", "class_t_e_1_1_audio_source.html#a3146c6b4c5e894c1711a5ba26aa3c7ae", null ],
-    [ "channelGrp_handle", "class_t_e_1_1_audio_source.html#a2da454928f7dccca17a61af81ead0934", null ],
-    [ "channel_grp_vol", "class_t_e_1_1_audio_source.html#a6800286a1754eb71d221bcea1122ec17", null ],
-    [ "chl_grp", "class_t_e_1_1_audio_source.html#a82c82c430c7831793a4109cf7035310e", null ],
-    [ "channelIndex", "class_t_e_1_1_audio_source.html#adebc1f2eb08c0faed94e91856291429d", null ]
+    [ "isPlaying", "class_t_e_1_1_audio_source.html#a68364d502f32795bec2735805d51bc89", null ],
+    [ "SetIsPlaying", "class_t_e_1_1_audio_source.html#a4ac4a21791f913b295eec03a76284307", null ],
+    [ "GetChannelIndex", "class_t_e_1_1_audio_source.html#aae8a0596c565c06b4039b991846139ca", null ]
 ];

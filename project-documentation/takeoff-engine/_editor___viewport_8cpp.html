@@ -128,7 +128,6 @@ $(document).ready(function(){initNavTree('_editor___viewport_8cpp.html',''); ini
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Editor_Viewport.cpp File Reference</div></div>
@@ -144,41 +143,49 @@ $(document).ready(function(){initNavTree('_editor___viewport_8cpp.html',''); ini
 <code>#include &quot;<a class="el" href="_editor___console_logger_8h_source.html">Editor_ConsoleLogger.h</a>&quot;</code><br />
 <code>#include &lt;glm/gtc/type_ptr.hpp&gt;</code><br />
 <code>#include &lt;glm/gtx/string_cast.hpp&gt;</code><br />
+<code>#include &lt;glm/gtx/matrix_decompose.hpp&gt;</code><br />
+<code>#include &lt;glm/gtc/quaternion.hpp&gt;</code><br />
 <code>#include &quot;ImGuizmo.h&quot;</code><br />
 <code>#include &quot;Engine.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="_e_c_s_manager_8h_source.html">Core/ECSManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_vulkan_manager_8h_source.html">Core/VulkanManager.h</a>&quot;</code><br />
+<code>#include &quot;Core/ECSManager.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_scene_manager_8h_source.html">Core/SceneManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_camera_component_8h_source.html">ECSComponents/CameraComponent.h</a>&quot;</code><br />
+<code>#include &quot;Input/ObjectPicker.h&quot;</code><br />
+<code>#include &quot;Core/PrefabManager.h&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_editor"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html">Editor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7363b05ce64b1b43ce766eb9949cace5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a7363b05ce64b1b43ce766eb9949cace5">Editor::ViewportGizmo</a> (const ImVec2 winPos, ImVec2 sceneWindowSize, ComponentRef&lt; Transform &gt; cameraTrans, ComponentRef&lt; Camera &gt; cameraComp)</td></tr>
+<tr class="memitem:a7363b05ce64b1b43ce766eb9949cace5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_editor___viewport_8cpp.html#a7363b05ce64b1b43ce766eb9949cace5">Editor::ViewportGizmo</a> (const ImVec2 winPos, ImVec2 sceneWindowSize, ComponentRef&lt; Transform &gt; cameraTrans, ComponentRef&lt; Camera &gt; cameraComp)</td></tr>
 <tr class="memdesc:a7363b05ce64b1b43ce766eb9949cace5"><td class="mdescLeft">&#160;</td><td class="mdescRight">*inline void GetRotation(float&amp; Yaw, float&amp; Pitch, float&amp; Roll) const  <br /></td></tr>
 <tr class="separator:a7363b05ce64b1b43ce766eb9949cace5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a88c03db1d24bcaa26a618019f81f1678"><td class="memItemLeft" align="right" valign="top">ImVec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a88c03db1d24bcaa26a618019f81f1678">Editor::prevMouseDragDelta</a></td></tr>
+<tr class="memitem:a88c03db1d24bcaa26a618019f81f1678"><td class="memItemLeft" align="right" valign="top"><a id="a88c03db1d24bcaa26a618019f81f1678" name="a88c03db1d24bcaa26a618019f81f1678"></a>
+ImVec2&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::prevMouseDragDelta</b></td></tr>
 <tr class="separator:a88c03db1d24bcaa26a618019f81f1678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ecb79aca61b6076a263a0a5143e2885"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a5ecb79aca61b6076a263a0a5143e2885">Editor::_translate</a> = false</td></tr>
+<tr class="memitem:a5ecb79aca61b6076a263a0a5143e2885"><td class="memItemLeft" align="right" valign="top"><a id="a5ecb79aca61b6076a263a0a5143e2885" name="a5ecb79aca61b6076a263a0a5143e2885"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::_translate</b> = false</td></tr>
 <tr class="separator:a5ecb79aca61b6076a263a0a5143e2885"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a94bde11a49cfe1c65af5a934f8bba4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a1a94bde11a49cfe1c65af5a934f8bba4">Editor::_rotate</a> = false</td></tr>
+<tr class="memitem:a1a94bde11a49cfe1c65af5a934f8bba4"><td class="memItemLeft" align="right" valign="top"><a id="a1a94bde11a49cfe1c65af5a934f8bba4" name="a1a94bde11a49cfe1c65af5a934f8bba4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::_rotate</b> = false</td></tr>
 <tr class="separator:a1a94bde11a49cfe1c65af5a934f8bba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad16a6c374ab1668ca1008daa7752a2f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#ad16a6c374ab1668ca1008daa7752a2f0">Editor::_scale</a> = false</td></tr>
+<tr class="memitem:ad16a6c374ab1668ca1008daa7752a2f0"><td class="memItemLeft" align="right" valign="top"><a id="ad16a6c374ab1668ca1008daa7752a2f0" name="ad16a6c374ab1668ca1008daa7752a2f0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::_scale</b> = false</td></tr>
 <tr class="separator:ad16a6c374ab1668ca1008daa7752a2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e5125fc8277358fc0c8e935864125b0"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a1e5125fc8277358fc0c8e935864125b0">Editor::EDITOR_MOVE_SPEED</a> = 10.f</td></tr>
+<tr class="memitem:a1e5125fc8277358fc0c8e935864125b0"><td class="memItemLeft" align="right" valign="top"><a id="a1e5125fc8277358fc0c8e935864125b0" name="a1e5125fc8277358fc0c8e935864125b0"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::EDITOR_MOVE_SPEED</b> = 10.f</td></tr>
 <tr class="separator:a1e5125fc8277358fc0c8e935864125b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62bbabf8b48fdf0cf82cacc6c1ca308e"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a62bbabf8b48fdf0cf82cacc6c1ca308e">Editor::EDITOR_ZOOM_AMOUNT</a> = 1.f</td></tr>
+<tr class="memitem:a62bbabf8b48fdf0cf82cacc6c1ca308e"><td class="memItemLeft" align="right" valign="top"><a id="a62bbabf8b48fdf0cf82cacc6c1ca308e" name="a62bbabf8b48fdf0cf82cacc6c1ca308e"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::EDITOR_ZOOM_AMOUNT</b> = 1.f</td></tr>
 <tr class="separator:a62bbabf8b48fdf0cf82cacc6c1ca308e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeec62c6d69e11b8f1d67ded4bd0932af"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#aeec62c6d69e11b8f1d67ded4bd0932af">Editor::items</a> [] = { &quot;Default&quot;, &quot;Focused&quot;, &quot;Game view&quot;, &quot;Fullscreen&quot; }</td></tr>
+<tr class="memitem:a138054724332cb5027a777d3ce43a2ad"><td class="memItemLeft" align="right" valign="top"><a id="a138054724332cb5027a777d3ce43a2ad" name="a138054724332cb5027a777d3ce43a2ad"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::lock</b> = false</td></tr>
+<tr class="separator:a138054724332cb5027a777d3ce43a2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec62c6d69e11b8f1d67ded4bd0932af"><td class="memItemLeft" align="right" valign="top"><a id="aeec62c6d69e11b8f1d67ded4bd0932af" name="aeec62c6d69e11b8f1d67ded4bd0932af"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::items</b> [] = { &quot;Default&quot;, &quot;Focused&quot;, &quot;Game view&quot;, &quot;Fullscreen&quot; }</td></tr>
 <tr class="separator:aeec62c6d69e11b8f1d67ded4bd0932af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c4338b1e5aa0e1901d9dd5bb864b3c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#af2c4338b1e5aa0e1901d9dd5bb864b3c">Editor::item_current</a> = 0</td></tr>
-<tr class="separator:af2c4338b1e5aa0e1901d9dd5bb864b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains functions for the viewport in the editor Shows all gameobjects that is to be present in the scene allows for mouse picking, selecting and transformation using guizmo helper <br  />
@@ -191,7 +198,51 @@ Variables</h2></td></tr>
 </pre><pre>  <b>Emails:</b>      <a href="mailto:noahalastair.ng@digipen.edu">noahalastair.ng@digipen.edu</a></pre><pre>
 
 </pre><pre>  <b>Date:</b>        12/09/2023</pre><pre>
-</pre> </div></div><!-- contents -->
+</pre> </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a7363b05ce64b1b43ce766eb9949cace5" name="a7363b05ce64b1b43ce766eb9949cace5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7363b05ce64b1b43ce766eb9949cace5">&#9670;&#160;</a></span>ViewportGizmo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::ViewportGizmo </td>
+          <td>(</td>
+          <td class="paramtype">const ImVec2&#160;</td>
+          <td class="paramname"><em>winPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImVec2&#160;</td>
+          <td class="paramname"><em>sceneWindowSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_transform.html">Transform</a> &gt;&#160;</td>
+          <td class="paramname"><em>cameraTrans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_camera.html">Camera</a> &gt;&#160;</td>
+          <td class="paramname"><em>cameraComp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>*inline void GetRotation(float&amp; Yaw, float&amp; Pitch, float&amp; Roll) const </p>
+<p>Runs and handles the object picking and gizmos in the viewport </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

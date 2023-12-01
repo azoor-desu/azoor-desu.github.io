@@ -153,21 +153,17 @@ Namespaces</h2></td></tr>
  All content (c) 2022 DigiPen Institute of Technology Singapore. All rights reserved. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ac7bef5d85e3dcd73eef56ad39ffc84a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_file_sys_8cpp.html#ac7bef5d85e3dcd73eef56ad39ffc84a9">WIN32_LEAN_AND_MEAN</a></td></tr>
-<tr class="separator:ac7bef5d85e3dcd73eef56ad39ffc84a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f918755b601cf4bffca775992e6fb90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_file_sys_8cpp.html#a9f918755b601cf4bffca775992e6fb90">NOMINMAX</a></td></tr>
-<tr class="separator:a9f918755b601cf4bffca775992e6fb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab94e880038abb61328ee08fc6a202ce9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e.html#ab94e880038abb61328ee08fc6a202ce9">TE::_GetFolderPath</a> (FolderType folderType)</td></tr>
 <tr class="memdesc:ab94e880038abb61328ee08fc6a202ce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a path to the folder on disk according to the FolderType enum.  <br /></td></tr>
 <tr class="separator:ab94e880038abb61328ee08fc6a202ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28891ce785316f55bd79e978fad517b7"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e.html#a28891ce785316f55bd79e978fad517b7">TE::FileSys_GetSaveDataPath</a> ()</td></tr>
-<tr class="memdesc:a28891ce785316f55bd79e978fad517b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the save folder path. Hardcoded to C:/Users/[username]/Documents/ThomasDEngine. Use this folder to store save data, configs and anything to be written to disk.  <br /></td></tr>
+<tr class="memdesc:a28891ce785316f55bd79e978fad517b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the save folder path. Hardcoded to C:/Users/[username]/Documents/TakeoffEngine. Use this folder to store save data, configs and anything to be written to disk.  <br /></td></tr>
 <tr class="separator:a28891ce785316f55bd79e978fad517b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93ee585ea31543367618eb47f86ca59a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e.html#a93ee585ea31543367618eb47f86ca59a">TE::FileSys_GenerateValidPath</a> (std::string_view rootPath, std::string_view desiredName, std::string_view extension)</td></tr>
+<tr class="memdesc:a93ee585ea31543367618eb47f86ca59a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helps to generate a valid path name by appending a number at the end of the desired name, if there already exists a duplicate in the same folder location. If number of tries exceed a certain value, function will silently fail and return empty string.  <br /></td></tr>
+<tr class="separator:a93ee585ea31543367618eb47f86ca59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -182,36 +178,7 @@ Variables</h2></td></tr>
 </pre><pre>  <b>Authors:</b>     Loo Jun Yi (100%)</pre><pre>
 </pre><pre>  <b>Emails:</b>      <a href="mailto:l.junyi@digipen.edu">l.junyi@digipen.edu</a></pre><pre>
 </pre><pre>  <b>Date:</b>        25/4/2023</pre><pre>
-</pre> </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ac7bef5d85e3dcd73eef56ad39ffc84a9" name="ac7bef5d85e3dcd73eef56ad39ffc84a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7bef5d85e3dcd73eef56ad39ffc84a9">&#9670;&#160;</a></span>WIN32_LEAN_AND_MEAN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WIN32_LEAN_AND_MEAN</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9f918755b601cf4bffca775992e6fb90" name="a9f918755b601cf4bffca775992e6fb90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f918755b601cf4bffca775992e6fb90">&#9670;&#160;</a></span>NOMINMAX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NOMINMAX</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+</pre> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -129,9 +129,8 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_scene_manager.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#friends">Friends</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="class_t_e_1_1_scene_manager-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TE::SceneManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -140,64 +139,63 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_scene_manager.html','');
  <a href="class_t_e_1_1_scene_manager.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_scene_manager_8h_source.html">SceneManager.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for TE::SceneManager:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_t_e_1_1_scene_manager.png" usemap="#TE::SceneManager_map" alt=""/>
-  <map id="TE::SceneManager_map" name="TE::SceneManager_map">
-<area href="class_t_e_1_1_i_manager.html" alt="TE::IManager" shape="rect" coords="0,56,120,80"/>
-<area href="class_t_e_1_1_i_object.html" alt="TE::IObject" shape="rect" coords="0,0,120,24"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afaf5eff21e44cef83b3d29668a38f64f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#afaf5eff21e44cef83b3d29668a38f64f">SceneManager</a> ()</td></tr>
-<tr class="separator:afaf5eff21e44cef83b3d29668a38f64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04f842dd040f5cb8bd4ec766b35d5259"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a04f842dd040f5cb8bd4ec766b35d5259">LoadSceneOrder</a> ()</td></tr>
-<tr class="memdesc:a04f842dd040f5cb8bd4ec766b35d5259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the order of scenes from the disk. Only load once. Stores the scene order in m_SceneOrder.  <br /></td></tr>
+<tr class="memitem:a04f842dd040f5cb8bd4ec766b35d5259"><td class="memItemLeft" align="right" valign="top"><a id="a04f842dd040f5cb8bd4ec766b35d5259" name="a04f842dd040f5cb8bd4ec766b35d5259"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadSceneOrder</b> ()</td></tr>
+<tr class="memdesc:a04f842dd040f5cb8bd4ec766b35d5259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the order of scenes from the disk. Only load once. Stores the scene order in m_SceneOrder. <br /></td></tr>
 <tr class="separator:a04f842dd040f5cb8bd4ec766b35d5259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77393fd61608aee3df8de97b35ed5651"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a77393fd61608aee3df8de97b35ed5651">ShallowLoadAllScenes</a> ()</td></tr>
-<tr class="memdesc:a77393fd61608aee3df8de97b35ed5651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks into the corresponding folder (Data or Asset folder) for all scene files. Deserializes only basic information of each scene without doing a full load (of entities), and save it internally in m_Scenes. If the scenes folder is updated, this function must run once to pick up any changes to scene files.  <br /></td></tr>
+<tr class="memitem:a4f53c7dae74e550368c0187f9e2502ef"><td class="memItemLeft" align="right" valign="top"><a id="a4f53c7dae74e550368c0187f9e2502ef" name="a4f53c7dae74e550368c0187f9e2502ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveSceneOrder</b> ()</td></tr>
+<tr class="separator:a4f53c7dae74e550368c0187f9e2502ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0851ab33ff97b98591b1fe249c59e74c"><td class="memItemLeft" align="right" valign="top"><a id="a0851ab33ff97b98591b1fe249c59e74c" name="a0851ab33ff97b98591b1fe249c59e74c"></a>
+TEstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSceneOrderFirst</b> ()</td></tr>
+<tr class="separator:a0851ab33ff97b98591b1fe249c59e74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77393fd61608aee3df8de97b35ed5651"><td class="memItemLeft" align="right" valign="top"><a id="a77393fd61608aee3df8de97b35ed5651" name="a77393fd61608aee3df8de97b35ed5651"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShallowLoadAllScenes</b> ()</td></tr>
+<tr class="memdesc:a77393fd61608aee3df8de97b35ed5651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks into the corresponding folder (Data or Asset folder) for all scene files. Deserializes only basic information of each scene without doing a full load (of entities), and save it internally in m_Scenes. If the scenes folder is updated, this function must run once to pick up any changes to scene files. <br /></td></tr>
 <tr class="separator:a77393fd61608aee3df8de97b35ed5651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9167f94f0c6c827d4b8eee8f3d6ba6c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a9167f94f0c6c827d4b8eee8f3d6ba6c2">LoadSceneFull</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> sceneGUID)</td></tr>
-<tr class="memdesc:a9167f94f0c6c827d4b8eee8f3d6ba6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the specified scene at the end of this frame. Current scene will be set to this new scene after the load. If there is a scene currently loaded, it will automatically be unloaded first. Loads all entities and corresponding data into the ECS.  <br /></td></tr>
-<tr class="separator:a9167f94f0c6c827d4b8eee8f3d6ba6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68dc807dd12f84bdf5d4d6ab129d48e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a68dc807dd12f84bdf5d4d6ab129d48e4">LoadSceneFull</a> (<a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a> sceneName)</td></tr>
-<tr class="memdesc:a68dc807dd12f84bdf5d4d6ab129d48e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the specified scene at the end of this frame. Current scene will be set to this new scene after the load. If there is a scene currently loaded, it will automatically be unloaded first. Loads all entities and corresponding data into the ECS.  <br /></td></tr>
-<tr class="separator:a68dc807dd12f84bdf5d4d6ab129d48e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1da5770bb8293d2433c24a86da1e6d2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a1da5770bb8293d2433c24a86da1e6d2b">LoadSceneFull</a> (const <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &amp;scene)</td></tr>
-<tr class="memdesc:a1da5770bb8293d2433c24a86da1e6d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the specified scene at the end of this frame. Current scene will be set to this new scene after the load. If there is a scene currently loaded, it will automatically be unloaded first. Loads all entities and corresponding data into the ECS.  <br /></td></tr>
-<tr class="separator:a1da5770bb8293d2433c24a86da1e6d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a493dbef5f886588e19af6bf887b97caf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a493dbef5f886588e19af6bf887b97caf">LoadSceneFullNow</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> sceneGUID)</td></tr>
+<tr class="memitem:acbfd61641eb7d60471b9425fc4f8611e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#acbfd61641eb7d60471b9425fc4f8611e">LoadSceneFull</a> (TEguid sceneGUID, TEstringview externalPathOverride=&quot;&quot;)</td></tr>
+<tr class="memdesc:acbfd61641eb7d60471b9425fc4f8611e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the specified scene at the end of this frame. Current scene will be set to this new scene after the load. If there is a scene currently loaded, it will automatically be unloaded first. Loads all entities and corresponding data into the ECS.  <br /></td></tr>
+<tr class="separator:acbfd61641eb7d60471b9425fc4f8611e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72fa269c2df64566f2e1fa716ab658ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a72fa269c2df64566f2e1fa716ab658ed">LoadSceneFull</a> (TEstringview sceneName, TEstringview externalPathOverride=&quot;&quot;)</td></tr>
+<tr class="memdesc:a72fa269c2df64566f2e1fa716ab658ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the specified scene at the end of this frame. Current scene will be set to this new scene after the load. If there is a scene currently loaded, it will automatically be unloaded first. Loads all entities and corresponding data into the ECS.  <br /></td></tr>
+<tr class="separator:a72fa269c2df64566f2e1fa716ab658ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362fddc5c3e2e863678df9d66b6fd346"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a362fddc5c3e2e863678df9d66b6fd346">LoadSceneFull</a> (const <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &amp;scene, TEstringview externalPathOverride=&quot;&quot;)</td></tr>
+<tr class="memdesc:a362fddc5c3e2e863678df9d66b6fd346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the specified scene at the end of this frame. Current scene will be set to this new scene after the load. If there is a scene currently loaded, it will automatically be unloaded first. Loads all entities and corresponding data into the ECS.  <br /></td></tr>
+<tr class="separator:a362fddc5c3e2e863678df9d66b6fd346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493dbef5f886588e19af6bf887b97caf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a493dbef5f886588e19af6bf887b97caf">LoadSceneFullNow</a> (TEguid sceneGUID)</td></tr>
 <tr class="memdesc:a493dbef5f886588e19af6bf887b97caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the scene immediately.  <br /></td></tr>
 <tr class="separator:a493dbef5f886588e19af6bf887b97caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82560acad68087b95b342b402d56cd9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a82560acad68087b95b342b402d56cd9c">LoadSceneFullFromPath</a> (<a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a> scenePath)</td></tr>
-<tr class="memdesc:a82560acad68087b95b342b402d56cd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for <a class="el" href="namespace_editor.html">Editor</a> use. Loads the specified scene using a full file path. If file does not point to one of the scenes saved internally, the load fails. Current scene will be set to this new scene after the load. If there is a scene currently loaded, it will automatically be unloaded first. Loads all entities and corresponding data into the ECS.  <br /></td></tr>
+<tr class="memitem:a82560acad68087b95b342b402d56cd9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a82560acad68087b95b342b402d56cd9c">LoadSceneFullFromPath</a> (TEstringview scenePath)</td></tr>
+<tr class="memdesc:a82560acad68087b95b342b402d56cd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for Editor use. Loads the specified scene using a full file path. If file does not point to one of the scenes saved internally, the load fails. Current scene will be set to this new scene after the load. If there is a scene currently loaded, it will automatically be unloaded first. Loads all entities and corresponding data into the ECS.  <br /></td></tr>
 <tr class="separator:a82560acad68087b95b342b402d56cd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba66691176aea3dc1089e5b566f77458"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#aba66691176aea3dc1089e5b566f77458">UnloadCurrentScene</a> ()</td></tr>
-<tr class="memdesc:aba66691176aea3dc1089e5b566f77458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads the currently loaded scene at the end of this frame. If no scene is currently loaded, does nothing.  <br /></td></tr>
+<tr class="memitem:aba66691176aea3dc1089e5b566f77458"><td class="memItemLeft" align="right" valign="top"><a id="aba66691176aea3dc1089e5b566f77458" name="aba66691176aea3dc1089e5b566f77458"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnloadCurrentScene</b> ()</td></tr>
+<tr class="memdesc:aba66691176aea3dc1089e5b566f77458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads the currently loaded scene at the end of this frame. If no scene is currently loaded, does nothing. <br /></td></tr>
 <tr class="separator:aba66691176aea3dc1089e5b566f77458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab82ddc1eb36d625a0b78f4a32ba1494f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#ab82ddc1eb36d625a0b78f4a32ba1494f">UnloadCurrentSceneNow</a> ()</td></tr>
-<tr class="memdesc:ab82ddc1eb36d625a0b78f4a32ba1494f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads the currently loaded scene, does nothing if nothing loaded.  <br /></td></tr>
+<tr class="memitem:ab82ddc1eb36d625a0b78f4a32ba1494f"><td class="memItemLeft" align="right" valign="top"><a id="ab82ddc1eb36d625a0b78f4a32ba1494f" name="ab82ddc1eb36d625a0b78f4a32ba1494f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnloadCurrentSceneNow</b> ()</td></tr>
+<tr class="memdesc:ab82ddc1eb36d625a0b78f4a32ba1494f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads the currently loaded scene, does nothing if nothing loaded. <br /></td></tr>
 <tr class="separator:ab82ddc1eb36d625a0b78f4a32ba1494f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7ea2828bca21028e8090db4f379ba4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#ad7ea2828bca21028e8090db4f379ba4b">SaveCurrentScene</a> ()</td></tr>
-<tr class="memdesc:ad7ea2828bca21028e8090db4f379ba4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for <a class="el" href="namespace_editor.html">Editor</a> use. Saves the currently loaded scene immediately on the disk using the scene's m_RelativePath value. Asserts if called during game build.  <br /></td></tr>
+<tr class="memitem:ad7ea2828bca21028e8090db4f379ba4b"><td class="memItemLeft" align="right" valign="top"><a id="ad7ea2828bca21028e8090db4f379ba4b" name="ad7ea2828bca21028e8090db4f379ba4b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveCurrentScene</b> ()</td></tr>
+<tr class="memdesc:ad7ea2828bca21028e8090db4f379ba4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for Editor use. Saves the currently loaded scene immediately on the disk using the scene's m_RelativePath value. Asserts if called during game build. <br /></td></tr>
 <tr class="separator:ad7ea2828bca21028e8090db4f379ba4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2faea8c00a62d3f972e1ab504e30a54f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a2faea8c00a62d3f972e1ab504e30a54f">SaveCurrentSceneAsNewScene</a> (<a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a> newSceneName, <a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a> fullPath=nullptr)</td></tr>
+<tr class="memitem:a2faea8c00a62d3f972e1ab504e30a54f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a2faea8c00a62d3f972e1ab504e30a54f">SaveCurrentSceneAsNewScene</a> (TEstringview newSceneName, TEstringview fullPath=nullptr)</td></tr>
 <tr class="memdesc:a2faea8c00a62d3f972e1ab504e30a54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for editor use. Saves the current scene as a new scene, leaving the original scene unmodified. Will save the new file to the same folder that this current scene is in, under a new name provided by the user. If the name matches any existing files, a number will be appended to the new file name to avoid overwriting existing files. If the name matches any existing scenes internally (but not saved on disk), a number will be appended to the new file name to avoid overwriting existing files.  <br /></td></tr>
 <tr class="separator:a2faea8c00a62d3f972e1ab504e30a54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1fd9a7322f8c874663873cf68153f6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#ad1fd9a7322f8c874663873cf68153f6e">DeleteScene</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> sceneGUID)</td></tr>
+<tr class="memitem:ad1fd9a7322f8c874663873cf68153f6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#ad1fd9a7322f8c874663873cf68153f6e">DeleteScene</a> (TEguid sceneGUID)</td></tr>
 <tr class="memdesc:ad1fd9a7322f8c874663873cf68153f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for editor use. Deletes the specified scene immediately, both from internal scenes storage and from the disk.  <br /></td></tr>
 <tr class="separator:ad1fd9a7322f8c874663873cf68153f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54aa63c9fe0124768f8e6c078f73a18d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a54aa63c9fe0124768f8e6c078f73a18d">DeleteScene</a> (<a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a> sceneName)</td></tr>
+<tr class="memitem:a54aa63c9fe0124768f8e6c078f73a18d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a54aa63c9fe0124768f8e6c078f73a18d">DeleteScene</a> (TEstringview sceneName)</td></tr>
 <tr class="memdesc:a54aa63c9fe0124768f8e6c078f73a18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for editor use. Deletes the specified scene immediately, both from internal scenes storage and from the disk.  <br /></td></tr>
 <tr class="separator:a54aa63c9fe0124768f8e6c078f73a18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1639c5fdfe6f5686b8ca9a12c8167ab4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a1639c5fdfe6f5686b8ca9a12c8167ab4">DeleteScene</a> (const <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="memdesc:a1639c5fdfe6f5686b8ca9a12c8167ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for editor use. Deletes the specified scene immediately, both from internal scenes storage and from the disk.  <br /></td></tr>
 <tr class="separator:a1639c5fdfe6f5686b8ca9a12c8167ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57508ae38bfff169fb775eaf7eb33b16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_scene.html">Scene</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a57508ae38bfff169fb775eaf7eb33b16">CreateNewScene</a> (<a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a> newSceneName, <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> sceneGUID=<a class="el" href="_g_u_i_d_8h.html#aa34e6525eb1e2dff2f0226eab6b76c58">TEGUID_NULL</a>)</td></tr>
+<tr class="memitem:a57508ae38bfff169fb775eaf7eb33b16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_scene.html">Scene</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a57508ae38bfff169fb775eaf7eb33b16">CreateNewScene</a> (TEstringview newSceneName, TEguid sceneGUID=TEGUID_NULL)</td></tr>
 <tr class="memdesc:a57508ae38bfff169fb775eaf7eb33b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for editor use. Creates a new scene with the specified name, but is not written onto disk yet until the scene is manually saved. If the scene name conflicts with any existing names, then a number is appended to avoid conflicts If the scene name conflicts with an existing file on the disk, then a number is appended to avoid conflicts.  <br /></td></tr>
 <tr class="separator:a57508ae38bfff169fb775eaf7eb33b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad5803e69cf5fb61d7f221c352ab48e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#aad5803e69cf5fb61d7f221c352ab48e1">CheckSceneLoaded</a> () const noexcept</td></tr>
@@ -209,12 +207,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac3a20fa714b551b162fe60372f35d7aa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#ac3a20fa714b551b162fe60372f35d7aa">GetScenes</a> ()</td></tr>
 <tr class="memdesc:ac3a20fa714b551b162fe60372f35d7aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the raw array of scenes.  <br /></td></tr>
 <tr class="separator:ac3a20fa714b551b162fe60372f35d7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46b458d5b01ed59e86a11f6d72a36e0"><td class="memItemLeft" align="right" valign="top"><a id="ac46b458d5b01ed59e86a11f6d72a36e0" name="ac46b458d5b01ed59e86a11f6d72a36e0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetSceneLoadedThisFrame</b> ()</td></tr>
+<tr class="separator:ac46b458d5b01ed59e86a11f6d72a36e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_manager.html">TE::IManager</a></td></tr>
-<tr class="memitem:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a789acfdc8c9a177bbf1ae68e25ab0ceb">IManager</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="memitem:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="a789acfdc8c9a177bbf1ae68e25ab0ceb" name="a789acfdc8c9a177bbf1ae68e25ab0ceb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IManager</b> (TEtypeguid typeGUID)</td></tr>
 <tr class="separator:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec0d542ae4fc92c784f908f8eed8457 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a9ec0d542ae4fc92c784f908f8eed8457">~IManager</a> ()</td></tr>
-<tr class="separator:a9ec0d542ae4fc92c784f908f8eed8457 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#ad528f9e9a304c9aa25d472b547242291">LoadManager</a> ()</td></tr>
+<tr class="memitem:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="ad528f9e9a304c9aa25d472b547242291" name="ad528f9e9a304c9aa25d472b547242291"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadManager</b> ()</td></tr>
 <tr class="separator:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5469d89d5f07a6890444e9d20636ac6d inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a5469d89d5f07a6890444e9d20636ac6d">InitManager</a> ()</td></tr>
 <tr class="separator:a5469d89d5f07a6890444e9d20636ac6d inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,145 +223,37 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a441c480911e78b81cf8d717dff6dcd77 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f7904d7af29ec42dc55396b522b375b inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a0f7904d7af29ec42dc55396b522b375b">ExitManager</a> ()</td></tr>
 <tr class="separator:a0f7904d7af29ec42dc55396b522b375b inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#acb0ab41892caa9bed62624156d782b21">GetRunOnlyDuringSimulation</a> ()</td></tr>
+<tr class="memitem:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="acb0ab41892caa9bed62624156d782b21" name="acb0ab41892caa9bed62624156d782b21"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetRunOnlyDuringSimulation</b> ()</td></tr>
 <tr class="separator:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_object.html">TE::IObject</a></td></tr>
-<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#afc331476bf6217fde06f31deb161b97e">IObject</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="afc331476bf6217fde06f31deb161b97e" name="afc331476bf6217fde06f31deb161b97e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IObject</b> (TEtypeguid typeGUID)</td></tr>
 <tr class="separator:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#af1d390c81a0fd71b490d01b93042f81d">~IObject</a> ()</td></tr>
-<tr class="separator:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">GetGUID</a> () const noexcept</td></tr>
+<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aeb49f1d9760159d96df6dca959790745" name="aeb49f1d9760159d96df6dca959790745"></a>
+virtual TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetGUID</b> () const noexcept</td></tr>
 <tr class="separator:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aafeae10a462729d794db5c6da61eba08">SetGUID</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> guid) noexcept</td></tr>
+<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aafeae10a462729d794db5c6da61eba08" name="aafeae10a462729d794db5c6da61eba08"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGUID</b> (TEguid guid) noexcept</td></tr>
 <tr class="separator:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">GetTypeGUID</a> () const noexcept</td></tr>
+<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="a705d4f85c13ce4fc396ad38cfbda7cdf" name="a705d4f85c13ce4fc396ad38cfbda7cdf"></a>
+virtual TEtypeguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeGUID</b> () const noexcept</td></tr>
 <tr class="separator:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a9645eb6d2538c0e11e49a8c5d0c5daca"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a9645eb6d2538c0e11e49a8c5d0c5daca">_FindScene</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> sceneGUID)</td></tr>
-<tr class="memdesc:a9645eb6d2538c0e11e49a8c5d0c5daca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a scene from m_Scenes using the GUID to amtch.  <br /></td></tr>
-<tr class="separator:a9645eb6d2538c0e11e49a8c5d0c5daca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1150526b9c53f708829f7c1c7d7c065"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#ac1150526b9c53f708829f7c1c7d7c065">_FindScene</a> (<a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a> sceneName)</td></tr>
-<tr class="memdesc:ac1150526b9c53f708829f7c1c7d7c065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a scene from m_Scenes using the GUID to amtch.  <br /></td></tr>
-<tr class="separator:ac1150526b9c53f708829f7c1c7d7c065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee63504203dae5de0d0e0aee231637bf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#aee63504203dae5de0d0e0aee231637bf">_FindScene</a> (const <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &amp;scene)</td></tr>
-<tr class="memdesc:aee63504203dae5de0d0e0aee231637bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a scene from m_Scenes using the GUID to amtch.  <br /></td></tr>
-<tr class="separator:aee63504203dae5de0d0e0aee231637bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7801f4781fc4fd82818c3d4f1378993d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a7801f4781fc4fd82818c3d4f1378993d">_FindSceneIndex</a> (const <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &amp;scene)</td></tr>
-<tr class="separator:a7801f4781fc4fd82818c3d4f1378993d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83f3fee1a63950b9d864eb03ceda0b94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a83f3fee1a63950b9d864eb03ceda0b94">_DeleteScene</a> (std::vector&lt; <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &gt;::iterator iterator)</td></tr>
-<tr class="memdesc:a83f3fee1a63950b9d864eb03ceda0b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the scene immediately.  <br /></td></tr>
-<tr class="separator:a83f3fee1a63950b9d864eb03ceda0b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac69de2ce730c1c2ba3714946a12608a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#ac69de2ce730c1c2ba3714946a12608a5">_GetSceneRootFolderPath</a> ()</td></tr>
-<tr class="memdesc:ac69de2ce730c1c2ba3714946a12608a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depending on if the engine is running in editor or engine mode, returns a full path to the Assets or Data folder.  <br /></td></tr>
-<tr class="separator:ac69de2ce730c1c2ba3714946a12608a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a782b747a2c97fa117a418ec239f7700d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a782b747a2c97fa117a418ec239f7700d">_VerifySceneFilePath</a> (<a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a> fullpath)</td></tr>
-<tr class="memdesc:a782b747a2c97fa117a418ec239f7700d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies string path is OK to be used in scenemanager.  <br /></td></tr>
-<tr class="separator:a782b747a2c97fa117a418ec239f7700d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a528824e112573b06c05aeeb59aa5a460"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a528824e112573b06c05aeeb59aa5a460">_RelativeSceneFilePath</a> (<a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a> fullpath)</td></tr>
-<tr class="memdesc:a528824e112573b06c05aeeb59aa5a460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies path to give relative path. Assumes _VerifySceneFilePath is used before this func is called.  <br /></td></tr>
-<tr class="separator:a528824e112573b06c05aeeb59aa5a460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9e486282118bf547be366577d38f138"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#aa9e486282118bf547be366577d38f138">LoadManager</a> ()</td></tr>
-<tr class="separator:aa9e486282118bf547be366577d38f138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8076162a6d6f8bb99f5e94ad586905d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#ac8076162a6d6f8bb99f5e94ad586905d">InitManager</a> ()</td></tr>
-<tr class="separator:ac8076162a6d6f8bb99f5e94ad586905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dd53c758ab2ec2085acda8dbcb78d02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a8dd53c758ab2ec2085acda8dbcb78d02">UpdateManager</a> ()</td></tr>
-<tr class="separator:a8dd53c758ab2ec2085acda8dbcb78d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc867e03e7ed46920e354a5375a05e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a6bc867e03e7ed46920e354a5375a05e3">ExitManager</a> ()</td></tr>
-<tr class="separator:a6bc867e03e7ed46920e354a5375a05e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:afd2fe4e5e0bb7f75ffa7be7322d446d4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#afd2fe4e5e0bb7f75ffa7be7322d446d4">m_Scenes</a></td></tr>
-<tr class="separator:afd2fe4e5e0bb7f75ffa7be7322d446d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fcbc2eb613db095536757ad49e27f19"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a1fcbc2eb613db095536757ad49e27f19">m_SceneOrder</a></td></tr>
-<tr class="separator:a1fcbc2eb613db095536757ad49e27f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3e63a4e500324268e89a4335440df6d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#ac3e63a4e500324268e89a4335440df6d">m_CurrentEntities</a></td></tr>
-<tr class="separator:ac3e63a4e500324268e89a4335440df6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac019bd78a37ff46885e0caef7dd85312"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#ac019bd78a37ff46885e0caef7dd85312">m_CurrentSceneIndex</a> = -1</td></tr>
-<tr class="separator:ac019bd78a37ff46885e0caef7dd85312"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6765538f84cf974c7abef2977951c81f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a6765538f84cf974c7abef2977951c81f">m_LoadNextScene</a> = <a class="el" href="_g_u_i_d_8h.html#aa34e6525eb1e2dff2f0226eab6b76c58">TEGUID_NULL</a></td></tr>
-<tr class="separator:a6765538f84cf974c7abef2977951c81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad18c0476abb4541debd5954685a0d9be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#ad18c0476abb4541debd5954685a0d9be">m_UnloadCurrentScene</a> = false</td></tr>
-<tr class="separator:ad18c0476abb4541debd5954685a0d9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a3e1914489e4bed4f9f23cdeab34a43dc">Engine</a></td></tr>
+<tr class="memitem:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memItemLeft" align="right" valign="top"><a id="a3e1914489e4bed4f9f23cdeab34a43dc" name="a3e1914489e4bed4f9f23cdeab34a43dc"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Engine</b></td></tr>
 <tr class="separator:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a032858ae1fe02d2d1170981c2af2d67c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_scene_manager.html#a032858ae1fe02d2d1170981c2af2d67c">Scene</a></td></tr>
+<tr class="memitem:a032858ae1fe02d2d1170981c2af2d67c"><td class="memItemLeft" align="right" valign="top"><a id="a032858ae1fe02d2d1170981c2af2d67c" name="a032858ae1fe02d2d1170981c2af2d67c"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
 <tr class="separator:a032858ae1fe02d2d1170981c2af2d67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>stores scenes and manages scenes </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afaf5eff21e44cef83b3d29668a38f64f" name="afaf5eff21e44cef83b3d29668a38f64f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaf5eff21e44cef83b3d29668a38f64f">&#9670;&#160;</a></span>SceneManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TE::SceneManager::SceneManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a04f842dd040f5cb8bd4ec766b35d5259" name="a04f842dd040f5cb8bd4ec766b35d5259"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04f842dd040f5cb8bd4ec766b35d5259">&#9670;&#160;</a></span>LoadSceneOrder()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::SceneManager::LoadSceneOrder </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Loads the order of scenes from the disk. Only load once. Stores the scene order in m_SceneOrder. </p>
-
-</div>
-</div>
-<a id="a77393fd61608aee3df8de97b35ed5651" name="a77393fd61608aee3df8de97b35ed5651"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77393fd61608aee3df8de97b35ed5651">&#9670;&#160;</a></span>ShallowLoadAllScenes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::SceneManager::ShallowLoadAllScenes </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Looks into the corresponding folder (Data or Asset folder) for all scene files. Deserializes only basic information of each scene without doing a full load (of entities), and save it internally in m_Scenes. If the scenes folder is updated, this function must run once to pick up any changes to scene files. </p>
-
-</div>
-</div>
-<a id="a9167f94f0c6c827d4b8eee8f3d6ba6c2" name="a9167f94f0c6c827d4b8eee8f3d6ba6c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9167f94f0c6c827d4b8eee8f3d6ba6c2">&#9670;&#160;</a></span>LoadSceneFull() <span class="overload">[1/3]</span></h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="acbfd61641eb7d60471b9425fc4f8611e" name="acbfd61641eb7d60471b9425fc4f8611e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbfd61641eb7d60471b9425fc4f8611e">&#9670;&#160;</a></span>LoadSceneFull() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,9 +261,19 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void TE::SceneManager::LoadSceneFull </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
-          <td class="paramname"><em>sceneGUID</em></td><td>)</td>
+          <td class="paramtype">TEguid&#160;</td>
+          <td class="paramname"><em>sceneGUID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">TEstringview&#160;</td>
+          <td class="paramname"><em>externalPathOverride</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -379,14 +282,15 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sceneGUID</td><td>GUID of the scene to load.</td></tr>
+    <tr><td class="paramname">externalPathOverride</td><td>full path to use to load a scene from anywhere.</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a68dc807dd12f84bdf5d4d6ab129d48e4" name="a68dc807dd12f84bdf5d4d6ab129d48e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68dc807dd12f84bdf5d4d6ab129d48e4">&#9670;&#160;</a></span>LoadSceneFull() <span class="overload">[2/3]</span></h2>
+<a id="a72fa269c2df64566f2e1fa716ab658ed" name="a72fa269c2df64566f2e1fa716ab658ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72fa269c2df64566f2e1fa716ab658ed">&#9670;&#160;</a></span>LoadSceneFull() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -394,9 +298,19 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void TE::SceneManager::LoadSceneFull </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a>&#160;</td>
-          <td class="paramname"><em>sceneName</em></td><td>)</td>
+          <td class="paramtype">TEstringview&#160;</td>
+          <td class="paramname"><em>sceneName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">TEstringview&#160;</td>
+          <td class="paramname"><em>externalPathOverride</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -405,14 +319,15 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sceneName</td><td>Name of scene.</td></tr>
+    <tr><td class="paramname">externalPathOverride</td><td>full path to use to load a scene from anywhere.</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a1da5770bb8293d2433c24a86da1e6d2b" name="a1da5770bb8293d2433c24a86da1e6d2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1da5770bb8293d2433c24a86da1e6d2b">&#9670;&#160;</a></span>LoadSceneFull() <span class="overload">[3/3]</span></h2>
+<a id="a362fddc5c3e2e863678df9d66b6fd346" name="a362fddc5c3e2e863678df9d66b6fd346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362fddc5c3e2e863678df9d66b6fd346">&#9670;&#160;</a></span>LoadSceneFull() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,8 +336,18 @@ Friends</h2></td></tr>
           <td class="memname">void TE::SceneManager::LoadSceneFull </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">TEstringview&#160;</td>
+          <td class="paramname"><em>externalPathOverride</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -431,6 +356,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scene</td><td>scene to load.</td></tr>
+    <tr><td class="paramname">externalPathOverride</td><td>full path to use to load a scene from anywhere.</td></tr>
   </table>
   </dd>
 </dl>
@@ -446,7 +372,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void TE::SceneManager::LoadSceneFullNow </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramtype">TEguid&#160;</td>
           <td class="paramname"><em>sceneGUID</em></td><td>)</td>
           <td></td>
         </tr>
@@ -457,6 +383,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sceneGUID</td><td>scene to load</td></tr>
+    <tr><td class="paramname">externalPath</td><td>full path to use to load a scene from anywhere.</td></tr>
   </table>
   </dd>
 </dl>
@@ -472,77 +399,20 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void TE::SceneManager::LoadSceneFullFromPath </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a>&#160;</td>
+          <td class="paramtype">TEstringview&#160;</td>
           <td class="paramname"><em>scenePath</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Only for <a class="el" href="namespace_editor.html">Editor</a> use. Loads the specified scene using a full file path. If file does not point to one of the scenes saved internally, the load fails. Current scene will be set to this new scene after the load. If there is a scene currently loaded, it will automatically be unloaded first. Loads all entities and corresponding data into the ECS. </p>
+<p>Only for Editor use. Loads the specified scene using a full file path. If file does not point to one of the scenes saved internally, the load fails. Current scene will be set to this new scene after the load. If there is a scene currently loaded, it will automatically be unloaded first. Loads all entities and corresponding data into the ECS. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sceneGUID</td><td>GUID of the scene to load.</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="aba66691176aea3dc1089e5b566f77458" name="aba66691176aea3dc1089e5b566f77458"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba66691176aea3dc1089e5b566f77458">&#9670;&#160;</a></span>UnloadCurrentScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::SceneManager::UnloadCurrentScene </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unloads the currently loaded scene at the end of this frame. If no scene is currently loaded, does nothing. </p>
-
-</div>
-</div>
-<a id="ab82ddc1eb36d625a0b78f4a32ba1494f" name="ab82ddc1eb36d625a0b78f4a32ba1494f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab82ddc1eb36d625a0b78f4a32ba1494f">&#9670;&#160;</a></span>UnloadCurrentSceneNow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::SceneManager::UnloadCurrentSceneNow </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unloads the currently loaded scene, does nothing if nothing loaded. </p>
-
-</div>
-</div>
-<a id="ad7ea2828bca21028e8090db4f379ba4b" name="ad7ea2828bca21028e8090db4f379ba4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7ea2828bca21028e8090db4f379ba4b">&#9670;&#160;</a></span>SaveCurrentScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::SceneManager::SaveCurrentScene </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Only for <a class="el" href="namespace_editor.html">Editor</a> use. Saves the currently loaded scene immediately on the disk using the scene's m_RelativePath value. Asserts if called during game build. </p>
 
 </div>
 </div>
@@ -555,13 +425,13 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void TE::SceneManager::SaveCurrentSceneAsNewScene </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a>&#160;</td>
+          <td class="paramtype">TEstringview&#160;</td>
           <td class="paramname"><em>newSceneName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a>&#160;</td>
+          <td class="paramtype">TEstringview&#160;</td>
           <td class="paramname"><em>fullPath</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -592,7 +462,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void TE::SceneManager::DeleteScene </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramtype">TEguid&#160;</td>
           <td class="paramname"><em>sceneGUID</em></td><td>)</td>
           <td></td>
         </tr>
@@ -618,7 +488,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void TE::SceneManager::DeleteScene </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a>&#160;</td>
+          <td class="paramtype">TEstringview&#160;</td>
           <td class="paramname"><em>sceneName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -670,14 +540,14 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="class_t_e_1_1_scene.html">Scene</a> &amp; TE::SceneManager::CreateNewScene </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a>&#160;</td>
+          <td class="paramtype">TEstringview&#160;</td>
           <td class="paramname"><em>newSceneName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
-          <td class="paramname"><em>sceneGUID</em> = <code><a class="el" href="_g_u_i_d_8h.html#aa34e6525eb1e2dff2f0226eab6b76c58">TEGUID_NULL</a></code>&#160;</td>
+          <td class="paramtype">TEguid&#160;</td>
+          <td class="paramname"><em>sceneGUID</em> = <code>TEGUID_NULL</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -764,555 +634,6 @@ Friends</h2></td></tr>
 
 <p>Returns the raw array of scenes. </p>
 <dl class="section return"><dt>Returns</dt><dd>raw array of scenes</dd></dl>
-
-</div>
-</div>
-<a id="a9645eb6d2538c0e11e49a8c5d0c5daca" name="a9645eb6d2538c0e11e49a8c5d0c5daca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9645eb6d2538c0e11e49a8c5d0c5daca">&#9670;&#160;</a></span>_FindScene() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &gt;::iterator TE::SceneManager::_FindScene </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
-          <td class="paramname"><em>sceneGUID</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Finds a scene from m_Scenes using the GUID to amtch. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sceneGUID</td><td>Value to match with</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Iterator of scene found. If not found, iterator is equal to vector.end()</dd></dl>
-
-</div>
-</div>
-<a id="ac1150526b9c53f708829f7c1c7d7c065" name="ac1150526b9c53f708829f7c1c7d7c065"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1150526b9c53f708829f7c1c7d7c065">&#9670;&#160;</a></span>_FindScene() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &gt;::iterator TE::SceneManager::_FindScene </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a>&#160;</td>
-          <td class="paramname"><em>sceneName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Finds a scene from m_Scenes using the GUID to amtch. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sceneName</td><td>Value to match with</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Iterator of scene found. If not found, iterator is equal to vector.end()</dd></dl>
-
-</div>
-</div>
-<a id="aee63504203dae5de0d0e0aee231637bf" name="aee63504203dae5de0d0e0aee231637bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee63504203dae5de0d0e0aee231637bf">&#9670;&#160;</a></span>_FindScene() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &gt;::iterator TE::SceneManager::_FindScene </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Finds a scene from m_Scenes using the GUID to amtch. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">scene</td><td>Value to match with</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Iterator of scene found. If not found, iterator is equal to vector.end()</dd></dl>
-
-</div>
-</div>
-<a id="a7801f4781fc4fd82818c3d4f1378993d" name="a7801f4781fc4fd82818c3d4f1378993d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7801f4781fc4fd82818c3d4f1378993d">&#9670;&#160;</a></span>_FindSceneIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TE::SceneManager::_FindSceneIndex </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a83f3fee1a63950b9d864eb03ceda0b94" name="a83f3fee1a63950b9d864eb03ceda0b94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83f3fee1a63950b9d864eb03ceda0b94">&#9670;&#160;</a></span>_DeleteScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::SceneManager::_DeleteScene </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="class_t_e_1_1_scene.html">Scene</a> &gt;::iterator&#160;</td>
-          <td class="paramname"><em>iterator</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Deletes the scene immediately. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">iterator</td><td>scene to delete</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac69de2ce730c1c2ba3714946a12608a5" name="ac69de2ce730c1c2ba3714946a12608a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac69de2ce730c1c2ba3714946a12608a5">&#9670;&#160;</a></span>_GetSceneRootFolderPath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a> TE::SceneManager::_GetSceneRootFolderPath </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Depending on if the engine is running in editor or engine mode, returns a full path to the Assets or Data folder. </p>
-<dl class="section return"><dt>Returns</dt><dd>If engine mode, returns data folder. If editor mode, returns assets folder</dd></dl>
-
-</div>
-</div>
-<a id="a782b747a2c97fa117a418ec239f7700d" name="a782b747a2c97fa117a418ec239f7700d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a782b747a2c97fa117a418ec239f7700d">&#9670;&#160;</a></span>_VerifySceneFilePath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::SceneManager::_VerifySceneFilePath </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a>&#160;</td>
-          <td class="paramname"><em>fullpath</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Verifies string path is OK to be used in scenemanager. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fullpath</td><td>The full filepath to verify. start with C:/ and not a relative path like ./Assets</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if file path is OK to be used in scenemanager. False if out of desired folders.</dd></dl>
-
-</div>
-</div>
-<a id="a528824e112573b06c05aeeb59aa5a460" name="a528824e112573b06c05aeeb59aa5a460"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a528824e112573b06c05aeeb59aa5a460">&#9670;&#160;</a></span>_RelativeSceneFilePath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a> TE::SceneManager::_RelativeSceneFilePath </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a>&#160;</td>
-          <td class="paramname"><em>fullpath</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Modifies path to give relative path. Assumes _VerifySceneFilePath is used before this func is called. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fullpath</td><td>full path to be trimmed down into relative path</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Relative path e.g. .../Assets/Scenes/a.scene &gt;&gt; Scenes/a.scene</dd></dl>
-
-</div>
-</div>
-<a id="aa9e486282118bf547be366577d38f138" name="aa9e486282118bf547be366577d38f138"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9e486282118bf547be366577d38f138">&#9670;&#160;</a></span>LoadManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::SceneManager::LoadManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#ad528f9e9a304c9aa25d472b547242291">TE::IManager</a>.</p>
-
-</div>
-</div>
-<a id="ac8076162a6d6f8bb99f5e94ad586905d" name="ac8076162a6d6f8bb99f5e94ad586905d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8076162a6d6f8bb99f5e94ad586905d">&#9670;&#160;</a></span>InitManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::SceneManager::InitManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a5469d89d5f07a6890444e9d20636ac6d">TE::IManager</a>.</p>
-
-</div>
-</div>
-<a id="a8dd53c758ab2ec2085acda8dbcb78d02" name="a8dd53c758ab2ec2085acda8dbcb78d02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dd53c758ab2ec2085acda8dbcb78d02">&#9670;&#160;</a></span>UpdateManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::SceneManager::UpdateManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a441c480911e78b81cf8d717dff6dcd77">TE::IManager</a>.</p>
-
-</div>
-</div>
-<a id="a6bc867e03e7ed46920e354a5375a05e3" name="a6bc867e03e7ed46920e354a5375a05e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bc867e03e7ed46920e354a5375a05e3">&#9670;&#160;</a></span>ExitManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::SceneManager::ExitManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a0f7904d7af29ec42dc55396b522b375b">TE::IManager</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a3e1914489e4bed4f9f23cdeab34a43dc" name="a3e1914489e4bed4f9f23cdeab34a43dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e1914489e4bed4f9f23cdeab34a43dc">&#9670;&#160;</a></span>Engine</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_t_e_1_1_engine.html">Engine</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a032858ae1fe02d2d1170981c2af2d67c" name="a032858ae1fe02d2d1170981c2af2d67c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a032858ae1fe02d2d1170981c2af2d67c">&#9670;&#160;</a></span>Scene</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_t_e_1_1_scene.html">Scene</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="afd2fe4e5e0bb7f75ffa7be7322d446d4" name="afd2fe4e5e0bb7f75ffa7be7322d446d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd2fe4e5e0bb7f75ffa7be7322d446d4">&#9670;&#160;</a></span>m_Scenes</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="class_t_e_1_1_scene.html">Scene</a>&gt; TE::SceneManager::m_Scenes</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1fcbc2eb613db095536757ad49e27f19" name="a1fcbc2eb613db095536757ad49e27f19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fcbc2eb613db095536757ad49e27f19">&#9670;&#160;</a></span>m_SceneOrder</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&gt; TE::SceneManager::m_SceneOrder</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac3e63a4e500324268e89a4335440df6d" name="ac3e63a4e500324268e89a4335440df6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3e63a4e500324268e89a4335440df6d">&#9670;&#160;</a></span>m_CurrentEntities</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&gt; TE::SceneManager::m_CurrentEntities</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac019bd78a37ff46885e0caef7dd85312" name="ac019bd78a37ff46885e0caef7dd85312"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac019bd78a37ff46885e0caef7dd85312">&#9670;&#160;</a></span>m_CurrentSceneIndex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TE::SceneManager::m_CurrentSceneIndex = -1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6765538f84cf974c7abef2977951c81f" name="a6765538f84cf974c7abef2977951c81f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6765538f84cf974c7abef2977951c81f">&#9670;&#160;</a></span>m_LoadNextScene</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> TE::SceneManager::m_LoadNextScene = <a class="el" href="_g_u_i_d_8h.html#aa34e6525eb1e2dff2f0226eab6b76c58">TEGUID_NULL</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad18c0476abb4541debd5954685a0d9be" name="ad18c0476abb4541debd5954685a0d9be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad18c0476abb4541debd5954685a0d9be">&#9670;&#160;</a></span>m_UnloadCurrentScene</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::SceneManager::m_UnloadCurrentScene = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

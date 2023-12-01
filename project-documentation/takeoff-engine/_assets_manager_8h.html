@@ -128,8 +128,9 @@ $(document).ready(function(){initNavTree('_assets_manager_8h.html',''); initResi
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">AssetsManager.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -144,11 +145,14 @@ $(document).ready(function(){initNavTree('_assets_manager_8h.html',''); initResi
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;yaml-cpp/yaml.h&gt;</code><br />
+<code>#include &lt;glm/gtc/quaternion.hpp&gt;</code><br />
 </div>
 <p><a href="_assets_manager_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_d_d_s_header.html">TE::DDSHeader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_texture.html">TE::Texture</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_t_e_1_1_texture.html" title="Texture class that contains the width, height, channel and data of the image.">Texture</a> class that contains the width, height, channel and data of the image.  <a href="class_t_e_1_1_texture.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +161,14 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_vertex.html">TE::Vertex</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_t_e_1_1_vertex.html" title="Vertex class that contains the vertices, uv, normal and faces.">Vertex</a> class that contains the vertices, uv, normal and faces.  <a href="struct_t_e_1_1_vertex.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_sub_mesh.html">TE::SubMesh</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_bone.html">TE::Bone</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_hierarchy_node.html">TE::HierarchyNode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_font.html">TE::Font</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_assets_manager.html">TE::AssetsManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_t_e_1_1_assets_manager.html" title="AssetsManager class that contains required function for loading and keeping track of assets.">AssetsManager</a> class that contains required function for loading and keeping track of assets.  <a href="class_t_e_1_1_assets_manager.html#details">More...</a><br /></td></tr>
@@ -168,6 +180,22 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespace_t_e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declarations for the <a class="el" href="class_t_e_1_1_e_c_s_manager.html">ECSManager</a> class, <a class="el" href="class_t_e_1_1_entity_ref.html" title="Holds a reference to an entity. Does not directly contain data of the entity. To get an entity,...">EntityRef</a> class, <a class="el" href="class_t_e_1_1_i_component.html" title="Base class of every ECS Component. Provides some generic functions to.">IComponent</a> and <a class="el" href="class_t_e_1_1_i_system.html" title="Base class of every ECS Component.">ISystem</a> classes <br  />
  All content (c) 2022 DigiPen Institute of Technology Singapore. All rights reserved. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ae275b5c0c1d0feb97de0f445d5a9d4ed"><td class="memItemLeft" align="right" valign="top"><a id="ae275b5c0c1d0feb97de0f445d5a9d4ed" name="ae275b5c0c1d0feb97de0f445d5a9d4ed"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Format</b> { <br />
+&#160;&#160;<b>DefaultValue</b> = 0
+, <b>BC1</b>
+, <b>BC2</b>
+, <b>BC3</b>
+, <br />
+&#160;&#160;<b>BC4</b>
+, <b>BC5</b>
+, <b>BC6</b>
+, <b>BC7</b>
+<br />
+ }</td></tr>
+<tr class="separator:ae275b5c0c1d0feb97de0f445d5a9d4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Assets Manager for loading and providing data of assets <br  />

@@ -128,13 +128,10 @@ $(document).ready(function(){initNavTree('struct_t_e_1_1_msg_sender.html',''); i
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="struct_t_e_1_1_msg_sender-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TE::MsgSender Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -144,21 +141,16 @@ $(document).ready(function(){initNavTree('struct_t_e_1_1_msg_sender.html',''); i
 
 <p><code>#include &lt;<a class="el" href="_messenger_8h_source.html">Messenger.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_msg_sender_1_1_sender_subscription.html">SenderSubscription</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Small class to encapsulate sender's subscriptions.  <a href="class_t_e_1_1_msg_sender_1_1_sender_subscription.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa0c4962d28df1f5f713a3f725c4ee649"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#aa0c4962d28df1f5f713a3f725c4ee649">MsgSender</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> bindGUID)</td></tr>
+<tr class="memitem:aa0c4962d28df1f5f713a3f725c4ee649"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#aa0c4962d28df1f5f713a3f725c4ee649">MsgSender</a> (TEguid bindGUID)</td></tr>
 <tr class="memdesc:aa0c4962d28df1f5f713a3f725c4ee649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. GUID required to bind to. No other MsgSenders can bind to this GUID after this one, unless this <a class="el" href="struct_t_e_1_1_msg_sender.html" title="Will bind to a GUID. Sends out messages on behalf of this GUID object to any subscribers subscribed t...">MsgSender</a> is destroyed.  <br /></td></tr>
 <tr class="separator:aa0c4962d28df1f5f713a3f725c4ee649"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14a3ff51de893d45573e600a4faf6562"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a14a3ff51de893d45573e600a4faf6562">~MsgSender</a> ()</td></tr>
-<tr class="memdesc:a14a3ff51de893d45573e600a4faf6562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="memitem:a14a3ff51de893d45573e600a4faf6562"><td class="memItemLeft" align="right" valign="top"><a id="a14a3ff51de893d45573e600a4faf6562" name="a14a3ff51de893d45573e600a4faf6562"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~MsgSender</b> ()</td></tr>
+<tr class="memdesc:a14a3ff51de893d45573e600a4faf6562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a14a3ff51de893d45573e600a4faf6562"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61fa4f5e8d8767d0179b6bf8d7607fce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a61fa4f5e8d8767d0179b6bf8d7607fce">GetBindedGUID</a> ()</td></tr>
+<tr class="memitem:a61fa4f5e8d8767d0179b6bf8d7607fce"><td class="memItemLeft" align="right" valign="top">TEguid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a61fa4f5e8d8767d0179b6bf8d7607fce">GetBindedGUID</a> ()</td></tr>
 <tr class="memdesc:a61fa4f5e8d8767d0179b6bf8d7607fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the GUID this receiver is currently binded to.  <br /></td></tr>
 <tr class="separator:a61fa4f5e8d8767d0179b6bf8d7607fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a142b18710f8c7f8cf83706af3d09e838"><td class="memTemplParams" colspan="2">template&lt;typename MsgType &gt; </td></tr>
@@ -170,11 +162,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a95644554606e565fb2eb38fcb6a580d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to all subscribers. If the user-defined callback function requires a message, use the other overload. If no message is required, use this overload. WARNING: If there are multiple types of callback using the same MsgType, errors may occur. Make sure all the callbacks use the same callback signature e.g. void XXX() or void XXX(MsgType)  <br /></td></tr>
 <tr class="separator:a95644554606e565fb2eb38fcb6a580d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7559f0758bca0c16ce150ed1fbebedf7"><td class="memTemplParams" colspan="2">template&lt;typename MsgType &gt; </td></tr>
-<tr class="memitem:a7559f0758bca0c16ce150ed1fbebedf7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a7559f0758bca0c16ce150ed1fbebedf7">SendMessageDirect</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> recieverGUID, const MsgType &amp;message)</td></tr>
+<tr class="memitem:a7559f0758bca0c16ce150ed1fbebedf7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a7559f0758bca0c16ce150ed1fbebedf7">SendMessageDirect</a> (TEguid recieverGUID, const MsgType &amp;message)</td></tr>
 <tr class="memdesc:a7559f0758bca0c16ce150ed1fbebedf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to all subscriptions of a specific reciever (identified by its GUID) of this specific MsgType. If the user-defined callback function requires a message, use this overload. If no message is required, use the other overload. WARNING: If there are multiple types of callback using the same MsgType, errors may occur. Make sure all the callbacks use the same callback signature e.g. void XXX() or void XXX(MsgType)  <br /></td></tr>
 <tr class="separator:a7559f0758bca0c16ce150ed1fbebedf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d3c4a585bb85d557ee2edb5a5b42b22"><td class="memTemplParams" colspan="2">template&lt;typename MsgType &gt; </td></tr>
-<tr class="memitem:a6d3c4a585bb85d557ee2edb5a5b42b22"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a6d3c4a585bb85d557ee2edb5a5b42b22">SendMessageDirect</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> recieverGUID)</td></tr>
+<tr class="memitem:a6d3c4a585bb85d557ee2edb5a5b42b22"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a6d3c4a585bb85d557ee2edb5a5b42b22">SendMessageDirect</a> (TEguid recieverGUID)</td></tr>
 <tr class="memdesc:a6d3c4a585bb85d557ee2edb5a5b42b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to all subscriptions of a specific reciever (identified by its GUID) of this specific MsgType. If the user-defined callback function requires a message, use the other overload. If no message is required, use this overload. WARNING: If there are multiple types of callback using the same MsgType, errors may occur. Make sure all the callbacks use the same callback signature e.g. void XXX() or void XXX(MsgType)  <br /></td></tr>
 <tr class="separator:a6d3c4a585bb85d557ee2edb5a5b42b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a049826daaf0db7c160870b1421dce7e8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a049826daaf0db7c160870b1421dce7e8">GetSubscriberCount</a> ()</td></tr>
@@ -182,128 +174,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a049826daaf0db7c160870b1421dce7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a73a93c84b7d39ac43d26747ef4209a63"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a73a93c84b7d39ac43d26747ef4209a63">MsgReceiver</a></td></tr>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a73a93c84b7d39ac43d26747ef4209a63"><td class="memItemLeft" align="right" valign="top"><a id="a73a93c84b7d39ac43d26747ef4209a63" name="a73a93c84b7d39ac43d26747ef4209a63"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>MsgReceiver</b></td></tr>
 <tr class="separator:a73a93c84b7d39ac43d26747ef4209a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a0aab2ba6e97d7b828dcc864886a58bf4"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a0aab2ba6e97d7b828dcc864886a58bf4">BinderFuncPtr</a>) (void *, const <a class="el" href="struct_t_e_1_1_message_base.html">MessageBase</a> *)</td></tr>
-<tr class="separator:a0aab2ba6e97d7b828dcc864886a58bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa984e1ac8fef3acfeb82cef7f0eea8a1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#aa984e1ac8fef3acfeb82cef7f0eea8a1">MsgTypeGUID</a> = <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a></td></tr>
-<tr class="separator:aa984e1ac8fef3acfeb82cef7f0eea8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f5a31224a7adc9ac2942b6b2164d521"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a1f5a31224a7adc9ac2942b6b2164d521">SubscriptionID</a> = <a class="el" href="_defines_8h.html#a01e3bfbad3924f907d77f33a91fde8ba">TEuint64</a></td></tr>
-<tr class="separator:a1f5a31224a7adc9ac2942b6b2164d521"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a175c6bad626436025f4d7cbac9391815"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a175c6bad626436025f4d7cbac9391815">_SubscribeToMsg</a> (<a class="el" href="struct_t_e_1_1_msg_sender.html#aa984e1ac8fef3acfeb82cef7f0eea8a1">MsgTypeGUID</a> msgTypeGUID, <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> recieverGUID, <a class="el" href="struct_t_e_1_1_msg_sender.html#a0aab2ba6e97d7b828dcc864886a58bf4">BinderFuncPtr</a> ptr, void *objectInstance=nullptr)</td></tr>
-<tr class="memdesc:a175c6bad626436025f4d7cbac9391815"><td class="mdescLeft">&#160;</td><td class="mdescRight">INTERNAL USE ONLY. Adds a receiver to this sender's own subscription list.  <br /></td></tr>
-<tr class="separator:a175c6bad626436025f4d7cbac9391815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6967fc4a6a262be516a3e7b3aed734b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a6967fc4a6a262be516a3e7b3aed734b0">_UnsubscribeFromMsg</a> (<a class="el" href="struct_t_e_1_1_msg_sender.html#aa984e1ac8fef3acfeb82cef7f0eea8a1">MsgTypeGUID</a> msgTypeGUID, <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> recieverGUID, <a class="el" href="struct_t_e_1_1_msg_sender.html#a1f5a31224a7adc9ac2942b6b2164d521">SubscriptionID</a> subscriptionID)</td></tr>
-<tr class="memdesc:a6967fc4a6a262be516a3e7b3aed734b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">INTERNAL USE ONLY. Removes a receiver from this sender's own subscription list.  <br /></td></tr>
-<tr class="separator:a6967fc4a6a262be516a3e7b3aed734b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a135e3c6e06657a226870077a7a55ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a1a135e3c6e06657a226870077a7a55ac">_SetSubscriptionEnabled</a> (<a class="el" href="struct_t_e_1_1_msg_sender.html#aa984e1ac8fef3acfeb82cef7f0eea8a1">MsgTypeGUID</a> msgTypeGUID, <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> recieverGUID, <a class="el" href="struct_t_e_1_1_msg_sender.html#a1f5a31224a7adc9ac2942b6b2164d521">SubscriptionID</a> subscriptionID, bool isEnabled)</td></tr>
-<tr class="memdesc:a1a135e3c6e06657a226870077a7a55ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">INTERNAL USE ONLY. Sets a subscription to be enabled or disabled.  <br /></td></tr>
-<tr class="separator:a1a135e3c6e06657a226870077a7a55ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:ae11b8286203c587cab9ddc679ac5a099"><td class="memTemplParams" colspan="2">template&lt;typename ObjectType , typename FuncParam , void(ObjectType::*)(FuncParam) MemberFunc&gt; </td></tr>
-<tr class="memitem:ae11b8286203c587cab9ddc679ac5a099"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#ae11b8286203c587cab9ddc679ac5a099">BinderFunc</a> (void *instance, const <a class="el" href="struct_t_e_1_1_message_base.html">MessageBase</a> *msgObject)</td></tr>
-<tr class="separator:ae11b8286203c587cab9ddc679ac5a099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8017bfe41849bf465b36f246b995645"><td class="memTemplParams" colspan="2">template&lt;typename ObjectType , void(ObjectType::*)(void) MemberFunc&gt; </td></tr>
-<tr class="memitem:af8017bfe41849bf465b36f246b995645"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#af8017bfe41849bf465b36f246b995645">BinderFunc</a> (void *instance, const <a class="el" href="struct_t_e_1_1_message_base.html">MessageBase</a> *msgObject)</td></tr>
-<tr class="separator:af8017bfe41849bf465b36f246b995645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8017bfe41849bf465b36f246b995645"><td class="memTemplParams" colspan="2">template&lt;typename FuncParam , void(*)(FuncParam) FuncPtr&gt; </td></tr>
-<tr class="memitem:af8017bfe41849bf465b36f246b995645"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#af8017bfe41849bf465b36f246b995645">BinderFunc</a> (void *instance, const <a class="el" href="struct_t_e_1_1_message_base.html">MessageBase</a> *msgObject)</td></tr>
-<tr class="separator:af8017bfe41849bf465b36f246b995645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4caa94e80200bf851069544eb47a153c"><td class="memTemplParams" colspan="2">template&lt;void(*)(void) FuncPtr&gt; </td></tr>
-<tr class="memitem:a4caa94e80200bf851069544eb47a153c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a4caa94e80200bf851069544eb47a153c">BinderFunc</a> (void *instance, const <a class="el" href="struct_t_e_1_1_message_base.html">MessageBase</a> *msgObject)</td></tr>
-<tr class="separator:a4caa94e80200bf851069544eb47a153c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3058c7ee8ab0885b452fae42e8faca46"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_t_e_1_1_msg_sender.html#a1f5a31224a7adc9ac2942b6b2164d521">SubscriptionID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a3058c7ee8ab0885b452fae42e8faca46">_CreateSubscriptionID</a> (<a class="el" href="struct_t_e_1_1_msg_sender.html#a0aab2ba6e97d7b828dcc864886a58bf4">BinderFuncPtr</a> ptr, void *objectInstance=nullptr)</td></tr>
-<tr class="memdesc:a3058c7ee8ab0885b452fae42e8faca46"><td class="mdescLeft">&#160;</td><td class="mdescRight">INTERNAL USE ONLY. Creates a unique ID to identify subscriptions, identified by their unique BinderFunc and the object instance (if any).  <br /></td></tr>
-<tr class="separator:a3058c7ee8ab0885b452fae42e8faca46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3253c39d58d92f3ee9fc1b924acbe18"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>, <a class="el" href="struct_t_e_1_1_msg_sender.html">MsgSender</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#af3253c39d58d92f3ee9fc1b924acbe18">_GetAllSendersMap</a> ()</td></tr>
-<tr class="separator:af3253c39d58d92f3ee9fc1b924acbe18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a08358c9722374769a065be809a21db4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a08358c9722374769a065be809a21db4c">m_SenderBindedGUID</a></td></tr>
-<tr class="separator:a08358c9722374769a065be809a21db4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24a44126f092d1c2ecc45751019949e7"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="struct_t_e_1_1_msg_sender.html#aa984e1ac8fef3acfeb82cef7f0eea8a1">MsgTypeGUID</a>, std::vector&lt; <a class="el" href="class_t_e_1_1_msg_sender_1_1_sender_subscription.html">SenderSubscription</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_msg_sender.html#a24a44126f092d1c2ecc45751019949e7">m_SenderSubscribers</a></td></tr>
-<tr class="separator:a24a44126f092d1c2ecc45751019949e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Will bind to a GUID. Sends out messages on behalf of this GUID object to any subscribers subscribed to this <a class="el" href="struct_t_e_1_1_msg_sender.html" title="Will bind to a GUID. Sends out messages on behalf of this GUID object to any subscribers subscribed t...">MsgSender</a>. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a0aab2ba6e97d7b828dcc864886a58bf4" name="a0aab2ba6e97d7b828dcc864886a58bf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0aab2ba6e97d7b828dcc864886a58bf4">&#9670;&#160;</a></span>BinderFuncPtr</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* TE::MsgSender::BinderFuncPtr) (void *, const <a class="el" href="struct_t_e_1_1_message_base.html">MessageBase</a> *)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa984e1ac8fef3acfeb82cef7f0eea8a1" name="aa984e1ac8fef3acfeb82cef7f0eea8a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa984e1ac8fef3acfeb82cef7f0eea8a1">&#9670;&#160;</a></span>MsgTypeGUID</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="struct_t_e_1_1_msg_sender.html#aa984e1ac8fef3acfeb82cef7f0eea8a1">TE::MsgSender::MsgTypeGUID</a> =  <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1f5a31224a7adc9ac2942b6b2164d521" name="a1f5a31224a7adc9ac2942b6b2164d521"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f5a31224a7adc9ac2942b6b2164d521">&#9670;&#160;</a></span>SubscriptionID</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="struct_t_e_1_1_msg_sender.html#a1f5a31224a7adc9ac2942b6b2164d521">TE::MsgSender::SubscriptionID</a> =  <a class="el" href="_defines_8h.html#a01e3bfbad3924f907d77f33a91fde8ba">TEuint64</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa0c4962d28df1f5f713a3f725c4ee649" name="aa0c4962d28df1f5f713a3f725c4ee649"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa0c4962d28df1f5f713a3f725c4ee649">&#9670;&#160;</a></span>MsgSender()</h2>
 
@@ -313,7 +191,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">TE::MsgSender::MsgSender </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramtype">TEguid&#160;</td>
           <td class="paramname"><em>bindGUID</em></td><td>)</td>
           <td></td>
         </tr>
@@ -331,25 +209,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a14a3ff51de893d45573e600a4faf6562" name="a14a3ff51de893d45573e600a4faf6562"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14a3ff51de893d45573e600a4faf6562">&#9670;&#160;</a></span>~MsgSender()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TE::MsgSender::~MsgSender </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destructor. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a61fa4f5e8d8767d0179b6bf8d7607fce" name="a61fa4f5e8d8767d0179b6bf8d7607fce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61fa4f5e8d8767d0179b6bf8d7607fce">&#9670;&#160;</a></span>GetBindedGUID()</h2>
@@ -358,7 +217,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> TE::MsgSender::GetBindedGUID </td>
+          <td class="memname">TEguid TE::MsgSender::GetBindedGUID </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -436,7 +295,7 @@ template&lt;typename MsgType &gt; </div>
         <tr>
           <td class="memname">void TE::MsgSender::SendMessageDirect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramtype">TEguid&#160;</td>
           <td class="paramname"><em>recieverGUID</em>, </td>
         </tr>
         <tr>
@@ -476,7 +335,7 @@ template&lt;typename MsgType &gt; </div>
         <tr>
           <td class="memname">void TE::MsgSender::SendMessageDirect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramtype">TEguid&#160;</td>
           <td class="paramname"><em>recieverGUID</em></td><td>)</td>
           <td></td>
         </tr>
@@ -512,424 +371,6 @@ template&lt;typename MsgType &gt; </div>
 
 <p>Returns how many subscriptions this Sender currently has. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of subscriptions</dd></dl>
-
-</div>
-</div>
-<a id="ae11b8286203c587cab9ddc679ac5a099" name="ae11b8286203c587cab9ddc679ac5a099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae11b8286203c587cab9ddc679ac5a099">&#9670;&#160;</a></span>BinderFunc() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType , typename FuncParam , void(ObjectType::*)(FuncParam) MemberFunc&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void TE::MsgSender::BinderFunc </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>instance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_t_e_1_1_message_base.html">MessageBase</a> *&#160;</td>
-          <td class="paramname"><em>msgObject</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af8017bfe41849bf465b36f246b995645" name="af8017bfe41849bf465b36f246b995645"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8017bfe41849bf465b36f246b995645">&#9670;&#160;</a></span>BinderFunc() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType , void(ObjectType::*)(void) MemberFunc&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void TE::MsgSender::BinderFunc </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>instance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_t_e_1_1_message_base.html">MessageBase</a> *&#160;</td>
-          <td class="paramname"><em>msgObject</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af8017bfe41849bf465b36f246b995645" name="af8017bfe41849bf465b36f246b995645"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8017bfe41849bf465b36f246b995645">&#9670;&#160;</a></span>BinderFunc() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename FuncParam , void(*)(FuncParam) FuncPtr&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void TE::MsgSender::BinderFunc </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>instance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_t_e_1_1_message_base.html">MessageBase</a> *&#160;</td>
-          <td class="paramname"><em>msgObject</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4caa94e80200bf851069544eb47a153c" name="a4caa94e80200bf851069544eb47a153c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4caa94e80200bf851069544eb47a153c">&#9670;&#160;</a></span>BinderFunc() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;void(*)(void) FuncPtr&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void TE::MsgSender::BinderFunc </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>instance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_t_e_1_1_message_base.html">MessageBase</a> *&#160;</td>
-          <td class="paramname"><em>msgObject</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a175c6bad626436025f4d7cbac9391815" name="a175c6bad626436025f4d7cbac9391815"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a175c6bad626436025f4d7cbac9391815">&#9670;&#160;</a></span>_SubscribeToMsg()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::MsgSender::_SubscribeToMsg </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_t_e_1_1_msg_sender.html#aa984e1ac8fef3acfeb82cef7f0eea8a1">MsgTypeGUID</a>&#160;</td>
-          <td class="paramname"><em>msgTypeGUID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
-          <td class="paramname"><em>recieverGUID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_t_e_1_1_msg_sender.html#a0aab2ba6e97d7b828dcc864886a58bf4">BinderFuncPtr</a>&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>objectInstance</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>INTERNAL USE ONLY. Adds a receiver to this sender's own subscription list. </p>
-
-</div>
-</div>
-<a id="a6967fc4a6a262be516a3e7b3aed734b0" name="a6967fc4a6a262be516a3e7b3aed734b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6967fc4a6a262be516a3e7b3aed734b0">&#9670;&#160;</a></span>_UnsubscribeFromMsg()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::MsgSender::_UnsubscribeFromMsg </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_t_e_1_1_msg_sender.html#aa984e1ac8fef3acfeb82cef7f0eea8a1">MsgTypeGUID</a>&#160;</td>
-          <td class="paramname"><em>msgTypeGUID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
-          <td class="paramname"><em>recieverGUID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_t_e_1_1_msg_sender.html#a1f5a31224a7adc9ac2942b6b2164d521">SubscriptionID</a>&#160;</td>
-          <td class="paramname"><em>subscriptionID</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>INTERNAL USE ONLY. Removes a receiver from this sender's own subscription list. </p>
-
-</div>
-</div>
-<a id="a1a135e3c6e06657a226870077a7a55ac" name="a1a135e3c6e06657a226870077a7a55ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a135e3c6e06657a226870077a7a55ac">&#9670;&#160;</a></span>_SetSubscriptionEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::MsgSender::_SetSubscriptionEnabled </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_t_e_1_1_msg_sender.html#aa984e1ac8fef3acfeb82cef7f0eea8a1">MsgTypeGUID</a>&#160;</td>
-          <td class="paramname"><em>msgTypeGUID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
-          <td class="paramname"><em>recieverGUID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_t_e_1_1_msg_sender.html#a1f5a31224a7adc9ac2942b6b2164d521">SubscriptionID</a>&#160;</td>
-          <td class="paramname"><em>subscriptionID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isEnabled</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>INTERNAL USE ONLY. Sets a subscription to be enabled or disabled. </p>
-
-</div>
-</div>
-<a id="a3058c7ee8ab0885b452fae42e8faca46" name="a3058c7ee8ab0885b452fae42e8faca46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3058c7ee8ab0885b452fae42e8faca46">&#9670;&#160;</a></span>_CreateSubscriptionID()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_t_e_1_1_msg_sender.html#a1f5a31224a7adc9ac2942b6b2164d521">MsgSender::SubscriptionID</a> TE::MsgSender::_CreateSubscriptionID </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_t_e_1_1_msg_sender.html#a0aab2ba6e97d7b828dcc864886a58bf4">BinderFuncPtr</a>&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>objectInstance</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>INTERNAL USE ONLY. Creates a unique ID to identify subscriptions, identified by their unique BinderFunc and the object instance (if any). </p>
-
-</div>
-</div>
-<a id="af3253c39d58d92f3ee9fc1b924acbe18" name="af3253c39d58d92f3ee9fc1b924acbe18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3253c39d58d92f3ee9fc1b924acbe18">&#9670;&#160;</a></span>_GetAllSendersMap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unordered_map&lt; <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>, <a class="el" href="struct_t_e_1_1_msg_sender.html">MsgSender</a> * &gt; &amp; TE::MsgSender::_GetAllSendersMap </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a73a93c84b7d39ac43d26747ef4209a63" name="a73a93c84b7d39ac43d26747ef4209a63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73a93c84b7d39ac43d26747ef4209a63">&#9670;&#160;</a></span>MsgReceiver</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend TE::MsgSender::MsgReceiver</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a08358c9722374769a065be809a21db4c" name="a08358c9722374769a065be809a21db4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08358c9722374769a065be809a21db4c">&#9670;&#160;</a></span>m_SenderBindedGUID</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> TE::MsgSender::m_SenderBindedGUID</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a24a44126f092d1c2ecc45751019949e7" name="a24a44126f092d1c2ecc45751019949e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24a44126f092d1c2ecc45751019949e7">&#9670;&#160;</a></span>m_SenderSubscribers</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unordered_map&lt;<a class="el" href="struct_t_e_1_1_msg_sender.html#aa984e1ac8fef3acfeb82cef7f0eea8a1">MsgTypeGUID</a>, std::vector&lt;<a class="el" href="class_t_e_1_1_msg_sender_1_1_sender_subscription.html">SenderSubscription</a>&gt; &gt; TE::MsgSender::m_SenderSubscribers</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

@@ -135,10 +135,10 @@ $(document).ready(function(){initNavTree('_audio_system_8h_source.html',''); ini
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="_defines_8h.html">Defines.h</a>&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><a class="code hl_define" href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>TE_SUPRESS_START</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;glm/glm.hpp&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><a class="code hl_define" href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="_e_c_s_manager_8h.html">Core/ECSManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>TE_SUPRESS_END</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;Core/ECSManager.h&quot;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="_audio_manager_8h.html">Audio/AudioManager.h</a>&quot;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
@@ -155,34 +155,74 @@ $(document).ready(function(){initNavTree('_audio_system_8h_source.html',''); ini
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        FMOD_VECTOR <a class="code hl_function" href="class_t_e_1_1_audio_system.html#a9ce9f6f347d7441c387a2ebceabcb52c">glmVec3ToFMOD_VECTOR</a>(glm::vec3 pos);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_system.html#adf3a494475c260f709e1e748c8a515cc">UpdatePlayPauseChannels</a>(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a> &amp;comp);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_system.html#a6456ab60d37893a4a1e56c258691ff6f">StartPlayback</a>(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_system.html#ac346385f3eaf7e5eb78160b09897c954">UpdateEmitter3DPosition</a>(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_e_1_1_audio_system.html#aab2514953bb24e0c04712a9944e53ed4">StopPlayback</a>(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    };</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordtype">void</span> UpdateCrossfadeVariables(<a class="code hl_class" href="class_t_e_1_1_entity_ref.html">EntityRef</a> ent_crossfading_OUT_param, TEstring entName_crossfading_IN_param, <span class="keywordtype">float</span> crossfade_duration_param);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordtype">void</span> UpdatePlayPauseChannels(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a> &amp;comp);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordtype">void</span> StartPlayback(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">void</span> StopPlayback(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">void</span> UpdateEmitter3DPosition(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordtype">void</span> UpdateIs3DSound(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordtype">void</span> UpdatePitch(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordtype">void</span> UpdateFrequency(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordtype">void</span> Update3DMinMaxDist(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordtype">void</span> UpdateIsPaused(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordtype">void</span> Update3DRollOffMode(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordtype">void</span> UpdateVolume(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordtype">void</span> UpdateStop(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="comment">//helper funcs</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        FMOD_MODE GetRollOffMode(TEuint8 param);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordtype">bool</span> AudioSource_IsPlaying(<a class="code hl_class" href="class_t_e_1_1_audio_source.html">AudioSource</a>&amp; comp);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordtype">bool</span> audiosys_is_crossfading = <span class="keyword">false</span>; <span class="comment">// only set true by UpdateCrossfadeComponentCall, and set back to false by UpdateCrossfade(); </span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <a class="code hl_class" href="class_t_e_1_1_entity_ref.html">EntityRef</a> ent_crossfading_OUT = NULL;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordtype">float</span> crossfade_OUT_delta;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <a class="code hl_class" href="class_t_e_1_1_entity_ref.html">EntityRef</a> ent_crossfading_IN = NULL;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        TEstring entName_crossfading_IN;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordtype">float</span> crossfade_IN_delta;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordtype">float</span> crossfade_duration;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordtype">void</span> UpdateCrossfade();</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordtype">void</span> CrossfadeVariablesReset();</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    };</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
 <div class="ttc" id="a_audio_manager_8h_html"><div class="ttname"><a href="_audio_manager_8h.html">AudioManager.h</a></div><div class="ttdoc">Contains the Implementations of the AudioManager. The AudioManager is the closest object to the FMOD ...</div></div>
 <div class="ttc" id="a_defines_8h_html"><div class="ttname"><a href="_defines_8h.html">Defines.h</a></div><div class="ttdoc">Defines some common math constants and typedefs   All content (c) 2022 DigiPen Institute of Technolog...</div></div>
-<div class="ttc" id="a_e_c_s_manager_8h_html"><div class="ttname"><a href="_e_c_s_manager_8h.html">ECSManager.h</a></div></div>
-<div class="ttc" id="aclass_t_e_1_1_audio_source_html"><div class="ttname"><a href="class_t_e_1_1_audio_source.html">TE::AudioSource</a></div><div class="ttdoc">The AudioSource component is specifically for entities that has to play sounds that affect player wou...</div><div class="ttdef"><b>Definition:</b> AudioSource.h:41</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_source_html"><div class="ttname"><a href="class_t_e_1_1_audio_source.html">TE::AudioSource</a></div><div class="ttdoc">The AudioSource component is specifically for entities that has to play sounds that affect player wou...</div><div class="ttdef"><b>Definition:</b> ECSComponents/AudioSource.h:52</div></div>
 <div class="ttc" id="aclass_t_e_1_1_audio_system_html"><div class="ttname"><a href="class_t_e_1_1_audio_system.html">TE::AudioSystem</a></div><div class="ttdoc">The AudioSystem is specifically made as an intermediary for each component, and between components an...</div><div class="ttdef"><b>Definition:</b> AudioSystem.h:34</div></div>
-<div class="ttc" id="aclass_t_e_1_1_audio_system_html_a23231190f93e572024659006f8af7f28"><div class="ttname"><a href="class_t_e_1_1_audio_system.html#a23231190f93e572024659006f8af7f28">TE::AudioSystem::UpdateSystem</a></div><div class="ttdeci">void UpdateSystem()</div><div class="ttdoc">Update Function for the AudioSystem &lt;/summary.</div><div class="ttdef"><b>Definition:</b> AudioSystem.cpp:23</div></div>
-<div class="ttc" id="aclass_t_e_1_1_audio_system_html_a6456ab60d37893a4a1e56c258691ff6f"><div class="ttname"><a href="class_t_e_1_1_audio_system.html#a6456ab60d37893a4a1e56c258691ff6f">TE::AudioSystem::StartPlayback</a></div><div class="ttdeci">void StartPlayback(AudioSource &amp;comp)</div><div class="ttdoc">Plays the sound with a specific channel group, all given in the comp param.</div><div class="ttdef"><b>Definition:</b> AudioSystem.cpp:89</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_system_html_a23231190f93e572024659006f8af7f28"><div class="ttname"><a href="class_t_e_1_1_audio_system.html#a23231190f93e572024659006f8af7f28">TE::AudioSystem::UpdateSystem</a></div><div class="ttdeci">void UpdateSystem()</div><div class="ttdoc">Update Function for the AudioSystem &lt;/summary.</div><div class="ttdef"><b>Definition:</b> AudioSystem.cpp:26</div></div>
 <div class="ttc" id="aclass_t_e_1_1_audio_system_html_a6920dea75f9494cb77d0bf0199a26900"><div class="ttname"><a href="class_t_e_1_1_audio_system.html#a6920dea75f9494cb77d0bf0199a26900">TE::AudioSystem::AudioSystem</a></div><div class="ttdeci">AudioSystem()</div><div class="ttdoc">Constructor for the AudioSystem.</div><div class="ttdef"><b>Definition:</b> AudioSystem.h:39</div></div>
-<div class="ttc" id="aclass_t_e_1_1_audio_system_html_a9ce9f6f347d7441c387a2ebceabcb52c"><div class="ttname"><a href="class_t_e_1_1_audio_system.html#a9ce9f6f347d7441c387a2ebceabcb52c">TE::AudioSystem::glmVec3ToFMOD_VECTOR</a></div><div class="ttdeci">FMOD_VECTOR glmVec3ToFMOD_VECTOR(glm::vec3 pos)</div><div class="ttdoc">converts a glm::vec3 to FMOD_Vector</div><div class="ttdef"><b>Definition:</b> AudioSystem.cpp:37</div></div>
-<div class="ttc" id="aclass_t_e_1_1_audio_system_html_aab2514953bb24e0c04712a9944e53ed4"><div class="ttname"><a href="class_t_e_1_1_audio_system.html#aab2514953bb24e0c04712a9944e53ed4">TE::AudioSystem::StopPlayback</a></div><div class="ttdeci">void StopPlayback(AudioSource &amp;comp)</div><div class="ttdoc">Stops playback of the channel that the component's sound is playing on.</div><div class="ttdef"><b>Definition:</b> AudioSystem.cpp:119</div></div>
-<div class="ttc" id="aclass_t_e_1_1_audio_system_html_ac346385f3eaf7e5eb78160b09897c954"><div class="ttname"><a href="class_t_e_1_1_audio_system.html#ac346385f3eaf7e5eb78160b09897c954">TE::AudioSystem::UpdateEmitter3DPosition</a></div><div class="ttdeci">void UpdateEmitter3DPosition(AudioSource &amp;comp)</div><div class="ttdoc">Update loop function to update channel of the entity's position.</div><div class="ttdef"><b>Definition:</b> AudioSystem.cpp:103</div></div>
-<div class="ttc" id="aclass_t_e_1_1_audio_system_html_adf3a494475c260f709e1e748c8a515cc"><div class="ttname"><a href="class_t_e_1_1_audio_system.html#adf3a494475c260f709e1e748c8a515cc">TE::AudioSystem::UpdatePlayPauseChannels</a></div><div class="ttdeci">void UpdatePlayPauseChannels(AudioSource &amp;comp)</div><div class="ttdoc">Update loop function to update whethere to play a sound, or not,.</div><div class="ttdef"><b>Definition:</b> AudioSystem.cpp:42</div></div>
-<div class="ttc" id="aclass_t_e_1_1_g_u_i_d_creator_html"><div class="ttname"><a href="class_t_e_1_1_g_u_i_d_creator.html">TE::GUIDCreator</a></div><div class="ttdef"><b>Definition:</b> GUID.h:60</div></div>
-<div class="ttc" id="aclass_t_e_1_1_i_system_html"><div class="ttname"><a href="class_t_e_1_1_i_system.html">TE::ISystem</a></div><div class="ttdoc">Base class of every ECS Component.</div><div class="ttdef"><b>Definition:</b> ECSManager.h:522</div></div>
+<div class="ttc" id="aclass_t_e_1_1_audio_system_html_a9ce9f6f347d7441c387a2ebceabcb52c"><div class="ttname"><a href="class_t_e_1_1_audio_system.html#a9ce9f6f347d7441c387a2ebceabcb52c">TE::AudioSystem::glmVec3ToFMOD_VECTOR</a></div><div class="ttdeci">FMOD_VECTOR glmVec3ToFMOD_VECTOR(glm::vec3 pos)</div><div class="ttdoc">converts a glm::vec3 to FMOD_Vector</div><div class="ttdef"><b>Definition:</b> AudioSystem.cpp:95</div></div>
+<div class="ttc" id="aclass_t_e_1_1_entity_ref_html"><div class="ttname"><a href="class_t_e_1_1_entity_ref.html">TE::EntityRef</a></div><div class="ttdoc">Holds a reference to an entity. Does not directly contain data of the entity. To get an entity,...</div><div class="ttdef"><b>Definition:</b> ECSManager.h:123</div></div>
+<div class="ttc" id="aclass_t_e_1_1_g_u_i_d_creator_html"><div class="ttname"><a href="class_t_e_1_1_g_u_i_d_creator.html">TE::GUIDCreator</a></div><div class="ttdef"><b>Definition:</b> GUID.h:62</div></div>
+<div class="ttc" id="aclass_t_e_1_1_i_system_html"><div class="ttname"><a href="class_t_e_1_1_i_system.html">TE::ISystem</a></div><div class="ttdoc">Base class of every ECS Component.</div><div class="ttdef"><b>Definition:</b> ECSManager.h:536</div></div>
 <div class="ttc" id="anamespace_t_e_html"><div class="ttname"><a href="namespace_t_e.html">TE</a></div><div class="ttdoc">Declarations for the ECSManager class, EntityRef class, IComponent and ISystem classes   All content ...</div><div class="ttdef"><b>Definition:</b> EditorFrame.h:40</div></div>
-<div class="ttc" id="apch__engine_8h_html_ad3ee3199fb189e1047207f7a4d781868"><div class="ttname"><a href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div><div class="ttdeci">#define TE_SUPRESS_START</div><div class="ttdef"><b>Definition:</b> pch_engine.h:58</div></div>
-<div class="ttc" id="apch__engine_8h_html_afa88535cb07959a98893cd5653ca39c3"><div class="ttname"><a href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div><div class="ttdeci">#define TE_SUPRESS_END</div><div class="ttdef"><b>Definition:</b> pch_engine.h:71</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

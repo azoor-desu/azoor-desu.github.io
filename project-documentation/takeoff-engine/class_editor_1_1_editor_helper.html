@@ -130,146 +130,119 @@ $(document).ready(function(){initNavTree('class_editor_1_1_editor_helper.html','
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="class_editor_1_1_editor_helper-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Editor::EditorHelper Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_editor_helper_8h_source.html">EditorHelper.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aec74a5f760ae15942173ea9c3aacf438"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a> { <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a>
-, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438ac06124d382fa89f5ce0f0948be088526">DRAGDROP</a>
-, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a9a279ed117bbe983985da53daa98e7a4">DRAGDROPOPEN</a>
-, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a763d246a22faba415ec0a3cbd40f6f84">OPENONLY</a>
+<tr class="memitem:aec74a5f760ae15942173ea9c3aacf438"><td class="memItemLeft" align="right" valign="top"><a id="aec74a5f760ae15942173ea9c3aacf438" name="aec74a5f760ae15942173ea9c3aacf438"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>INSPECTORSTATE</b> { <b>DEFAULT</b>
+, <b>DRAGDROP</b>
+, <b>DRAGDROPOPEN</b>
+, <b>OPENONLY</b>
  }</td></tr>
 <tr class="separator:aec74a5f760ae15942173ea9c3aacf438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade0a0bd42a3c4e4c2c62ece15064a9bb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bb">COLORPICKERSTYLE</a> { <br />
-&#160;&#160;<a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bba1d2534ddfa7cb62dbb29fbaed8e11a2c">Edit3</a>
-, <a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bba1cf61c7cd2423d2652525ef69bebf155">Edit4</a>
-, <a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bba7c891b192f618f2c1d9f4a725820e30d">Pick3</a>
-, <a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bbadd084e43087c8740d023d842ef93b404">Pick4</a>
+<tr class="memitem:ade0a0bd42a3c4e4c2c62ece15064a9bb"><td class="memItemLeft" align="right" valign="top"><a id="ade0a0bd42a3c4e4c2c62ece15064a9bb" name="ade0a0bd42a3c4e4c2c62ece15064a9bb"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>COLORPICKERSTYLE</b> { <br />
+&#160;&#160;<b>Edit3</b>
+, <b>Edit4</b>
+, <b>Pick3</b>
+, <b>Pick4</b>
 , <br />
-&#160;&#160;<a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bba3db642c7f7e05e0a6e29c627c9e28caa">Edit3Pallete</a>
-, <a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bbae21e610f0d9178ee376795cc53f12114">Edit4Pallete</a>
+&#160;&#160;<b>Edit3Pallete</b>
+, <b>Edit4Pallete</b>
 <br />
  }</td></tr>
 <tr class="separator:ade0a0bd42a3c4e4c2c62ece15064a9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e2fc486cd50dc33b34fbe37837d3191"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a1e2fc486cd50dc33b34fbe37837d3191">OpenFile</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *filter)</td></tr>
+<tr class="memitem:a1e2fc486cd50dc33b34fbe37837d3191"><td class="memItemLeft" align="right" valign="top">static TEstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a1e2fc486cd50dc33b34fbe37837d3191">OpenFile</a> (const TEchar *filter)</td></tr>
 <tr class="memdesc:a1e2fc486cd50dc33b34fbe37837d3191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens Desktop Folder to select a file to open in editor.  <br /></td></tr>
 <tr class="separator:a1e2fc486cd50dc33b34fbe37837d3191"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab15afb547af471251f7afc1d500e65da"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ab15afb547af471251f7afc1d500e65da">SaveFileAs</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *filter)</td></tr>
-<tr class="memdesc:ab15afb547af471251f7afc1d500e65da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens Desktop Folder to select a filepath to save into.  <br /></td></tr>
-<tr class="separator:ab15afb547af471251f7afc1d500e65da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988f44ee749f164c6ba7052e04f781a1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a988f44ee749f164c6ba7052e04f781a1">Inspector_CenteredButton</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> alignment=0.5f)</td></tr>
+<tr class="memitem:a670d69938b90daa9977d09e85d9c9996"><td class="memItemLeft" align="right" valign="top">static TEstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a670d69938b90daa9977d09e85d9c9996">SaveFileAs</a> (const TEchar *filter, TEstringview defaultFullPath={})</td></tr>
+<tr class="memdesc:a670d69938b90daa9977d09e85d9c9996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens Desktop Folder to select a filepath to save into.  <br /></td></tr>
+<tr class="separator:a670d69938b90daa9977d09e85d9c9996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988f44ee749f164c6ba7052e04f781a1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a988f44ee749f164c6ba7052e04f781a1">Inspector_CenteredButton</a> (const TEchar *label, TEfloat alignment=0.5f)</td></tr>
 <tr class="memdesc:a988f44ee749f164c6ba7052e04f781a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a button aligned to the middle of the created location Ouput:| [Button] | How to use: if(Inspector_CenteredButton("Label", 0.5f)) state = !state; //example.  <br /></td></tr>
 <tr class="separator:a988f44ee749f164c6ba7052e04f781a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7da7090e35d2bbd262d3a163981b06e3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a7da7090e35d2bbd262d3a163981b06e3">Inspector_ToggleButton</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText1=&quot;&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText2=&quot;&quot;, bool *state=nullptr)</td></tr>
+<tr class="memitem:a7da7090e35d2bbd262d3a163981b06e3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a7da7090e35d2bbd262d3a163981b06e3">Inspector_ToggleButton</a> (const TEchar *label, const TEchar *buttonText1=&quot;&quot;, const TEchar *buttonText2=&quot;&quot;, bool *state=nullptr)</td></tr>
 <tr class="memdesc:a7da7090e35d2bbd262d3a163981b06e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a formatted toggle button in the created location, Name of the button changes when clicked Ouput: Name | [Button] How to use: Inspector_ToggleButton("Label", "Not toggled", "Toggled", &amp;state)) //example.  <br /></td></tr>
 <tr class="separator:a7da7090e35d2bbd262d3a163981b06e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d6aad0982fd6227c1a0e394c6766976"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a9d6aad0982fd6227c1a0e394c6766976"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a9d6aad0982fd6227c1a0e394c6766976">Inspector_FormattedCenteredButton</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText=&quot;&quot;, T *state=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> alignment=0.5f, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a> INSTATE=<a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a>, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *typeDragDrop=&quot;&quot;)</td></tr>
+<tr class="memitem:a9d6aad0982fd6227c1a0e394c6766976"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a9d6aad0982fd6227c1a0e394c6766976">Inspector_FormattedCenteredButton</a> (const TEchar *label, const TEchar *buttonText=&quot;&quot;, T *state=nullptr, TEfloat alignment=0.5f, INSPECTORSTATE INSTATE=DEFAULT, const TEchar *typeDragDrop=&quot;&quot;)</td></tr>
 <tr class="memdesc:a9d6aad0982fd6227c1a0e394c6766976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a formatted button aligned to the middle of the created location Ouput: Name | [Button] <br  />
  How to use: if(Inspector_CenteredButton("Label", 0.5f)) state = !state; //example.  <br /></td></tr>
 <tr class="separator:a9d6aad0982fd6227c1a0e394c6766976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a631e7cd9494816dbe867c3383a0d9218"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a631e7cd9494816dbe867c3383a0d9218">Inspector_SingleButton</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText=&quot;&quot;, bool *state=nullptr, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a> INSTATE=<a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a>, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *typeDragDrop=&quot;&quot;)</td></tr>
+<tr class="memitem:a631e7cd9494816dbe867c3383a0d9218"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a631e7cd9494816dbe867c3383a0d9218">Inspector_SingleButton</a> (const TEchar *label, const TEchar *buttonText=&quot;&quot;, bool *state=nullptr, INSPECTORSTATE INSTATE=DEFAULT, const TEchar *typeDragDrop=&quot;&quot;)</td></tr>
 <tr class="memdesc:a631e7cd9494816dbe867c3383a0d9218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a single formatted button in the created location Ouput: Name | [Button] How to use: Inspector_SingleButton("Label", "Button Text", &amp;state)) //example.  <br /></td></tr>
 <tr class="separator:a631e7cd9494816dbe867c3383a0d9218"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbd8a070dfbfbce3081faac4f8f98bc1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#abbd8a070dfbfbce3081faac4f8f98bc1">Inspector_DoubleButton</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText1=&quot;&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText2=&quot;&quot;, bool *state1=nullptr, bool *state2=nullptr, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a> INSTATE=<a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a>, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *typeDragDrop=&quot;&quot;)</td></tr>
+<tr class="memitem:abbd8a070dfbfbce3081faac4f8f98bc1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#abbd8a070dfbfbce3081faac4f8f98bc1">Inspector_DoubleButton</a> (const TEchar *label, const TEchar *buttonText1=&quot;&quot;, const TEchar *buttonText2=&quot;&quot;, bool *state1=nullptr, bool *state2=nullptr, INSPECTORSTATE INSTATE=DEFAULT, const TEchar *typeDragDrop=&quot;&quot;)</td></tr>
 <tr class="memdesc:abbd8a070dfbfbce3081faac4f8f98bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a formatted double button in the created location, text of the button changes when clicked Ouput: Name | [Button1][Button2] How to use: Inspector_ToggleButton("ButtonName", "Not toggled", "Toggled", &amp;state)) //example.  <br /></td></tr>
 <tr class="separator:abbd8a070dfbfbce3081faac4f8f98bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a115cd6ffe797dba580a76943eb271eba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a115cd6ffe797dba580a76943eb271eba">Inspector_Checkbox</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, bool *state=nullptr, <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> id=0)</td></tr>
+<tr class="memitem:a115cd6ffe797dba580a76943eb271eba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a115cd6ffe797dba580a76943eb271eba">Inspector_Checkbox</a> (const TEchar *label, bool *state=nullptr, TEguid id=0)</td></tr>
 <tr class="memdesc:a115cd6ffe797dba580a76943eb271eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a checkbox in the created location.  <br /></td></tr>
 <tr class="separator:a115cd6ffe797dba580a76943eb271eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b544fb3725cacfa7f87088170ff9347"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a0b544fb3725cacfa7f87088170ff9347">Inspector_MultiCheckbox</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, std::vector&lt; bool &gt; *state=nullptr)</td></tr>
+<tr class="memitem:a0b544fb3725cacfa7f87088170ff9347"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a0b544fb3725cacfa7f87088170ff9347">Inspector_MultiCheckbox</a> (const TEchar *label, std::vector&lt; bool &gt; *state=nullptr)</td></tr>
 <tr class="memdesc:a0b544fb3725cacfa7f87088170ff9347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a series of checkbox in the created location.  <br /></td></tr>
 <tr class="separator:a0b544fb3725cacfa7f87088170ff9347"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af685edaaba18be589f06e4398b4354ee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#af685edaaba18be589f06e4398b4354ee">Inspector_EnumCombo</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, rttr::array_range&lt; rttr::string_view &gt; stringRange, int *state=nullptr)</td></tr>
+<tr class="memitem:af685edaaba18be589f06e4398b4354ee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#af685edaaba18be589f06e4398b4354ee">Inspector_EnumCombo</a> (const TEchar *label, rttr::array_range&lt; rttr::string_view &gt; stringRange, int *state=nullptr)</td></tr>
 <tr class="memdesc:af685edaaba18be589f06e4398b4354ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a combo of enum in the created location.  <br /></td></tr>
 <tr class="separator:af685edaaba18be589f06e4398b4354ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a073e7e3d1945078259151533e8541074"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a073e7e3d1945078259151533e8541074">Inspector_OneFloatSlider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> minVal=FLT_MIN, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> maxVal=FLT_MAX, bool haveResetButton=false, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText=&quot;&quot;, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> defaultVal=0.f, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
-<tr class="memdesc:a073e7e3d1945078259151533e8541074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a single float slider in the created location Ouput: Name | [Reset Button][Float Slider] How to use: Inspector_OneFloatSlider("Slider Name", &amp;state, 0.f, 100.f, true, "Reset", 1.f)) //example OR Inspector_OneFloatSlider("Slider Name", &amp;state, -100.f, 100.f)) //example.  <br /></td></tr>
-<tr class="separator:a073e7e3d1945078259151533e8541074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2e017ad6433a6d198074f77ee402c9f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ad2e017ad6433a6d198074f77ee402c9f">Inspector_TwoFloatSlider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state1=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state2=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> minVal=FLT_MIN, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> maxVal=FLT_MAX, bool haveResetButton=false, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText1=&quot;X&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText2=&quot;Y&quot;, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> defaultVal=0.f, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
+<tr class="memitem:a8470429310934961af9b4eaa90234f3a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a8470429310934961af9b4eaa90234f3a">Inspector_OneFloatSlider</a> (const TEchar *label, TEfloat *state=nullptr, TEfloat minVal=FLT_MIN, TEfloat maxVal=FLT_MAX, bool haveResetButton=false, const TEchar *buttonText=&quot;&quot;, TEfloat defaultVal=0.f, uint64_t uniqueID=0, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
+<tr class="memdesc:a8470429310934961af9b4eaa90234f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a single float slider in the created location Ouput: Name | [Reset Button][Float Slider] How to use: Inspector_OneFloatSlider("Slider Name", &amp;state, 0.f, 100.f, true, "Reset", 1.f)) //example OR Inspector_OneFloatSlider("Slider Name", &amp;state, -100.f, 100.f)) //example.  <br /></td></tr>
+<tr class="separator:a8470429310934961af9b4eaa90234f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e017ad6433a6d198074f77ee402c9f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ad2e017ad6433a6d198074f77ee402c9f">Inspector_TwoFloatSlider</a> (const TEchar *label, TEfloat *state1=nullptr, TEfloat *state2=nullptr, TEfloat minVal=FLT_MIN, TEfloat maxVal=FLT_MAX, bool haveResetButton=false, const TEchar *buttonText1=&quot;X&quot;, const TEchar *buttonText2=&quot;Y&quot;, TEfloat defaultVal=0.f, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
 <tr class="memdesc:ad2e017ad6433a6d198074f77ee402c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a double float slider in the created location Ouput: Name | [Reset Button][Float Slider][Reset Button][Float Slider] How to use: Inspector_TwoFloatSlider("Slider Name", &amp;state1, &amp;state2, 0.f, 100.f, true, "Reset X", "Reset Y", 1.f)) //example OR Inspector_TwoFloatSlider("Slider Name", &amp;state1, &amp;state2, -100.f, 100.f)) //example.  <br /></td></tr>
 <tr class="separator:ad2e017ad6433a6d198074f77ee402c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8bfb8a0f692ec8e0905aac33091c2da"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ac8bfb8a0f692ec8e0905aac33091c2da">Inspector_ThreeFloatSlider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state1=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state2=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state3=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> minVal=FLT_MIN, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> maxVal=FLT_MAX, bool haveResetButton=false, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText1=&quot;X&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText2=&quot;Y&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText3=&quot;Z&quot;, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> defaultVal=0.f, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
+<tr class="memitem:ac8bfb8a0f692ec8e0905aac33091c2da"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ac8bfb8a0f692ec8e0905aac33091c2da">Inspector_ThreeFloatSlider</a> (const TEchar *label, TEfloat *state1=nullptr, TEfloat *state2=nullptr, TEfloat *state3=nullptr, TEfloat minVal=FLT_MIN, TEfloat maxVal=FLT_MAX, bool haveResetButton=false, const TEchar *buttonText1=&quot;X&quot;, const TEchar *buttonText2=&quot;Y&quot;, const TEchar *buttonText3=&quot;Z&quot;, TEfloat defaultVal=0.f, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
 <tr class="memdesc:ac8bfb8a0f692ec8e0905aac33091c2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a triple float slider in the created location Ouput: Name | [Reset Button][Float Slider][Reset Button][Float Slider][Reset Button][Float Slider] How to use: Inspector_ThreeFloatSlider("Slider Name", &amp;state1, &amp;state2, &amp;state3, 0.f, 100.f, true, "Reset X", "Reset Y", "Reset Z" 1.f)) //example OR Inspector_TreeFloatSlider("Slider Name", &amp;state1, &amp;state2, &amp;state3, -100.f, 100.f)) //example.  <br /></td></tr>
 <tr class="separator:ac8bfb8a0f692ec8e0905aac33091c2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0e551492727e7ec0fff1d32292b8b16"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#af0e551492727e7ec0fff1d32292b8b16">Inspector_ColorSliderPicker</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state1=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state2=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state3=nullptr, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *state4=nullptr, <a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bb">COLORPICKERSTYLE</a> style=<a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bba1cf61c7cd2423d2652525ef69bebf155">Edit4</a>)</td></tr>
+<tr class="memitem:af0e551492727e7ec0fff1d32292b8b16"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#af0e551492727e7ec0fff1d32292b8b16">Inspector_ColorSliderPicker</a> (const TEchar *label, TEfloat *state1=nullptr, TEfloat *state2=nullptr, TEfloat *state3=nullptr, TEfloat *state4=nullptr, COLORPICKERSTYLE style=Edit4)</td></tr>
 <tr class="memdesc:af0e551492727e7ec0fff1d32292b8b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a color picker with alpha option in the created location Ouput: Color picker with Alpha input How to use: Inspector_ColorSliderPicker("Slider Name", &amp;state1, &amp;state2, &amp;state3, &amp;state4) //example.  <br /></td></tr>
 <tr class="separator:af0e551492727e7ec0fff1d32292b8b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd066d4bcf02f708188afbde60840401"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#acd066d4bcf02f708188afbde60840401">Inspector_OneIntSlider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *state=nullptr, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> minVal=INT32_MIN, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> maxVal=INT32_MAX, bool haveResetButton=false, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText=&quot;&quot;, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> defaultVal=0, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
-<tr class="memdesc:acd066d4bcf02f708188afbde60840401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a single int slider in the created location Ouput: Name | [Reset Button][Int Slider] How to use: Inspector_OneIntSlider("Slider Name", &amp;state, 0, 100, true, "Reset", 1)) //example OR Inspector_OneIntSlider("Slider Name", &amp;state, -100, 100)) //example.  <br /></td></tr>
-<tr class="separator:acd066d4bcf02f708188afbde60840401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a286962b4226af657960f8f7b52819379"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a286962b4226af657960f8f7b52819379">Inspector_TwoIntSlider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *state1=nullptr, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *state2=nullptr, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> minVal=INT32_MIN, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> maxVal=INT32_MAX, bool haveResetButton=false, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText1=&quot;X&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText2=&quot;Y&quot;, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> defaultVal=0, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
+<tr class="memitem:a1bb86a75a5c14633f1973dc5241def57"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a1bb86a75a5c14633f1973dc5241def57">Inspector_OneIntSlider</a> (const TEchar *label, TEint *state=nullptr, TEint minVal=INT32_MIN, TEint maxVal=INT32_MAX, bool haveResetButton=false, const TEchar *buttonText=&quot;&quot;, TEint defaultVal=0, uint64_t uniqueID=0, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
+<tr class="memdesc:a1bb86a75a5c14633f1973dc5241def57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a single int slider in the created location Ouput: Name | [Reset Button][Int Slider] How to use: Inspector_OneIntSlider("Slider Name", &amp;state, 0, 100, true, "Reset", 1)) //example OR Inspector_OneIntSlider("Slider Name", &amp;state, -100, 100)) //example.  <br /></td></tr>
+<tr class="separator:a1bb86a75a5c14633f1973dc5241def57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286962b4226af657960f8f7b52819379"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a286962b4226af657960f8f7b52819379">Inspector_TwoIntSlider</a> (const TEchar *label, TEint *state1=nullptr, TEint *state2=nullptr, TEint minVal=INT32_MIN, TEint maxVal=INT32_MAX, bool haveResetButton=false, const TEchar *buttonText1=&quot;X&quot;, const TEchar *buttonText2=&quot;Y&quot;, TEint defaultVal=0, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
 <tr class="memdesc:a286962b4226af657960f8f7b52819379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Double int slider in the created location Ouput: Name | [Reset Button][int Slider][Reset Button][int Slider] How to use: Inspector_TwointSlider("Slider Name", &amp;state1, &amp;state2, 0, 100, true, "Reset X", "Reset Y", 1)) //example OR Inspector_TwointSlider("Slider Name", &amp;state1, &amp;state2, -100, 100)) //example.  <br /></td></tr>
 <tr class="separator:a286962b4226af657960f8f7b52819379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8139d9a5b369440ebba4ee79c72acf0d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a8139d9a5b369440ebba4ee79c72acf0d">Inspector_ThreeIntSlider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *state=nullptr, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *state2=nullptr, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *state3=nullptr, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> minVal=INT32_MIN, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> maxVal=INT32_MAX, bool haveResetButton=false, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText1=&quot;X&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText2=&quot;Y&quot;, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *buttonText3=&quot;Z&quot;, <a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> defaultVal=0, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
+<tr class="memitem:a8139d9a5b369440ebba4ee79c72acf0d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a8139d9a5b369440ebba4ee79c72acf0d">Inspector_ThreeIntSlider</a> (const TEchar *label, TEint *state=nullptr, TEint *state2=nullptr, TEint *state3=nullptr, TEint minVal=INT32_MIN, TEint maxVal=INT32_MAX, bool haveResetButton=false, const TEchar *buttonText1=&quot;X&quot;, const TEchar *buttonText2=&quot;Y&quot;, const TEchar *buttonText3=&quot;Z&quot;, TEint defaultVal=0, ImGuiSliderFlags flag=ImGuiSliderFlags_None)</td></tr>
 <tr class="memdesc:a8139d9a5b369440ebba4ee79c72acf0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Triple Int slider in the created location Ouput: Name | [Reset Button][int Slider][Reset Button][int Slider][Reset Button][int Slider] How to use: Inspector_ThreeIntSlider("Slider Name", &amp;state1, &amp;state2, &amp;state3, 0, 100, true, "Reset X", "Reset Y", "Reset Z")) //example OR Inspector_ThreeIntSlider("Slider Name", &amp;state1, &amp;state2, &amp;stat, -100, 100)) //example.  <br /></td></tr>
 <tr class="separator:a8139d9a5b369440ebba4ee79c72acf0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ba452ff46c7461f6253e60ea419ef62"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a7ba452ff46c7461f6253e60ea419ef62">Inspector_TextBox</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, <a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a> *state=nullptr, <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a> INSTATE=<a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a>, const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *typeDragDrop=&quot;&quot;)</td></tr>
-<tr class="memdesc:a7ba452ff46c7461f6253e60ea419ef62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a text box in the created location Ouput: Name | [Reset Button][int Slider][Reset Button][int Slider][Reset Button][int Slider] How to use: Inspector_TextBox("TextBox Name", &amp;state1)) //example OR Inspector_TextBox("TextBox Name", &amp;state1, INSPECTORSTATE::DRAG_DROP, "ASSET_BROWSER_ITEM")) //example, this will enable drag and drop items from asset browser into this textbox.  <br /></td></tr>
-<tr class="separator:a7ba452ff46c7461f6253e60ea419ef62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2299186c4c56c61e2f7d1ca3818c508"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ad2299186c4c56c61e2f7d1ca3818c508">Inspector_Vector3Slider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, std::vector&lt; glm::vec3 &gt; *state=nullptr)</td></tr>
+<tr class="memitem:af7198c0071dae44310e55ba9d091ef78"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#af7198c0071dae44310e55ba9d091ef78">Inspector_TextBox</a> (const TEchar *label, TEstring *state=nullptr, INSPECTORSTATE INSTATE=DEFAULT, const TEchar *typeDragDrop=&quot;&quot;, uint64_t uniqueID=0)</td></tr>
+<tr class="memdesc:af7198c0071dae44310e55ba9d091ef78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a text box in the created location Ouput: Name | [Reset Button][int Slider][Reset Button][int Slider][Reset Button][int Slider] How to use: Inspector_TextBox("TextBox Name", &amp;state1)) //example OR Inspector_TextBox("TextBox Name", &amp;state1, INSPECTORSTATE::DRAG_DROP, "ASSET_BROWSER_ITEM")) //example, this will enable drag and drop items from asset browser into this textbox.  <br /></td></tr>
+<tr class="separator:af7198c0071dae44310e55ba9d091ef78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2299186c4c56c61e2f7d1ca3818c508"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ad2299186c4c56c61e2f7d1ca3818c508">Inspector_Vector3Slider</a> (const TEchar *label, std::vector&lt; glm::vec3 &gt; *state=nullptr)</td></tr>
 <tr class="memdesc:ad2299186c4c56c61e2f7d1ca3818c508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a series of vec3 float sliders in the created location Ouput: Name | [X][float Slider] [Y][float Slider] [Z][float Slider] How to use: Inspector_Vector3Slider("Var Name", &amp;state)) //example.  <br /></td></tr>
 <tr class="separator:ad2299186c4c56c61e2f7d1ca3818c508"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f73c8f02bac47b719781c18803334d2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a0f73c8f02bac47b719781c18803334d2">Inspector_Vector2Slider</a> (const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *label, std::vector&lt; glm::vec2 &gt; *state=nullptr)</td></tr>
+<tr class="memitem:a0f73c8f02bac47b719781c18803334d2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#a0f73c8f02bac47b719781c18803334d2">Inspector_Vector2Slider</a> (const TEchar *label, std::vector&lt; glm::vec2 &gt; *state=nullptr)</td></tr>
 <tr class="memdesc:a0f73c8f02bac47b719781c18803334d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a series of vec2 float sliders in the created location Ouput: Name | [X][float Slider] [Y][float Slider] How to use: Inspector_Vector2Slider("Var Name", &amp;state)) //example.  <br /></td></tr>
 <tr class="separator:a0f73c8f02bac47b719781c18803334d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644abe68162a65e14c65b9849faef3b5"><td class="memItemLeft" align="right" valign="top"><a id="a644abe68162a65e14c65b9849faef3b5" name="a644abe68162a65e14c65b9849faef3b5"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Inspector_EntityRefs</b> (const TEchar *label, std::vector&lt; TEguid &gt; *state, uint64_t uniqueID, INSPECTORSTATE INSTATE, const TEchar *typeDragDrop)</td></tr>
+<tr class="memdesc:a644abe68162a65e14c65b9849faef3b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a series of entity names in the created location. <br /></td></tr>
+<tr class="separator:a644abe68162a65e14c65b9849faef3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ace0c09061eae013291406fe712459d22"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html#ace0c09061eae013291406fe712459d22">m_selectedIDs</a></td></tr>
+<tr class="memitem:ace0c09061eae013291406fe712459d22"><td class="memItemLeft" align="right" valign="top"><a id="ace0c09061eae013291406fe712459d22" name="ace0c09061eae013291406fe712459d22"></a>
+static std::vector&lt; TEguid &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectedIDs</b></td></tr>
 <tr class="separator:ace0c09061eae013291406fe712459d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2094135c44d58124d94f2d6cfc96b0da"><td class="memItemLeft" align="right" valign="top"><a id="a2094135c44d58124d94f2d6cfc96b0da" name="a2094135c44d58124d94f2d6cfc96b0da"></a>
+static std::vector&lt; TEguid &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_CopiedEntity</b></td></tr>
+<tr class="separator:a2094135c44d58124d94f2d6cfc96b0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c7b91f8d627b17df4cf85809277a3d"><td class="memItemLeft" align="right" valign="top"><a id="a90c7b91f8d627b17df4cf85809277a3d" name="a90c7b91f8d627b17df4cf85809277a3d"></a>
+static TEstring&#160;</td><td class="memItemRight" valign="bottom"><b>materialID</b></td></tr>
+<tr class="separator:a90c7b91f8d627b17df4cf85809277a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6ce826901e05dcd9a9bebf9ca5b160"><td class="memItemLeft" align="right" valign="top"><a id="aea6ce826901e05dcd9a9bebf9ca5b160" name="aea6ce826901e05dcd9a9bebf9ca5b160"></a>
+static VkDescriptorSetLayout&#160;</td><td class="memItemRight" valign="bottom"><b>descriptorSetLayout</b></td></tr>
+<tr class="separator:aea6ce826901e05dcd9a9bebf9ca5b160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92964fd4d2772fd6e3ab19179535820c"><td class="memItemLeft" align="right" valign="top"><a id="a92964fd4d2772fd6e3ab19179535820c" name="a92964fd4d2772fd6e3ab19179535820c"></a>
+static VkSampler&#160;</td><td class="memItemRight" valign="bottom"><b>vkSample</b></td></tr>
+<tr class="separator:a92964fd4d2772fd6e3ab19179535820c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="aec74a5f760ae15942173ea9c3aacf438" name="aec74a5f760ae15942173ea9c3aacf438"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec74a5f760ae15942173ea9c3aacf438">&#9670;&#160;</a></span>INSPECTORSTATE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">Editor::EditorHelper::INSPECTORSTATE</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9" name="aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9"></a>DEFAULT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aec74a5f760ae15942173ea9c3aacf438ac06124d382fa89f5ce0f0948be088526" name="aec74a5f760ae15942173ea9c3aacf438ac06124d382fa89f5ce0f0948be088526"></a>DRAGDROP&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aec74a5f760ae15942173ea9c3aacf438a9a279ed117bbe983985da53daa98e7a4" name="aec74a5f760ae15942173ea9c3aacf438a9a279ed117bbe983985da53daa98e7a4"></a>DRAGDROPOPEN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aec74a5f760ae15942173ea9c3aacf438a763d246a22faba415ec0a3cbd40f6f84" name="aec74a5f760ae15942173ea9c3aacf438a763d246a22faba415ec0a3cbd40f6f84"></a>OPENONLY&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="ade0a0bd42a3c4e4c2c62ece15064a9bb" name="ade0a0bd42a3c4e4c2c62ece15064a9bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade0a0bd42a3c4e4c2c62ece15064a9bb">&#9670;&#160;</a></span>COLORPICKERSTYLE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bb">Editor::EditorHelper::COLORPICKERSTYLE</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ade0a0bd42a3c4e4c2c62ece15064a9bba1d2534ddfa7cb62dbb29fbaed8e11a2c" name="ade0a0bd42a3c4e4c2c62ece15064a9bba1d2534ddfa7cb62dbb29fbaed8e11a2c"></a>Edit3&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ade0a0bd42a3c4e4c2c62ece15064a9bba1cf61c7cd2423d2652525ef69bebf155" name="ade0a0bd42a3c4e4c2c62ece15064a9bba1cf61c7cd2423d2652525ef69bebf155"></a>Edit4&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ade0a0bd42a3c4e4c2c62ece15064a9bba7c891b192f618f2c1d9f4a725820e30d" name="ade0a0bd42a3c4e4c2c62ece15064a9bba7c891b192f618f2c1d9f4a725820e30d"></a>Pick3&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ade0a0bd42a3c4e4c2c62ece15064a9bbadd084e43087c8740d023d842ef93b404" name="ade0a0bd42a3c4e4c2c62ece15064a9bbadd084e43087c8740d023d842ef93b404"></a>Pick4&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ade0a0bd42a3c4e4c2c62ece15064a9bba3db642c7f7e05e0a6e29c627c9e28caa" name="ade0a0bd42a3c4e4c2c62ece15064a9bba3db642c7f7e05e0a6e29c627c9e28caa"></a>Edit3Pallete&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ade0a0bd42a3c4e4c2c62ece15064a9bbae21e610f0d9178ee376795cc53f12114" name="ade0a0bd42a3c4e4c2c62ece15064a9bbae21e610f0d9178ee376795cc53f12114"></a>Edit4Pallete&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1e2fc486cd50dc33b34fbe37837d3191" name="a1e2fc486cd50dc33b34fbe37837d3191"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e2fc486cd50dc33b34fbe37837d3191">&#9670;&#160;</a></span>OpenFile()</h2>
@@ -281,9 +254,9 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a> Editor::EditorHelper::OpenFile </td>
+          <td class="memname">TEstring Editor::EditorHelper::OpenFile </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>filter</em></td><td>)</td>
           <td></td>
         </tr>
@@ -306,8 +279,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab15afb547af471251f7afc1d500e65da" name="ab15afb547af471251f7afc1d500e65da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab15afb547af471251f7afc1d500e65da">&#9670;&#160;</a></span>SaveFileAs()</h2>
+<a id="a670d69938b90daa9977d09e85d9c9996" name="a670d69938b90daa9977d09e85d9c9996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a670d69938b90daa9977d09e85d9c9996">&#9670;&#160;</a></span>SaveFileAs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,11 +289,21 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a> Editor::EditorHelper::SaveFileAs </td>
+          <td class="memname">TEstring Editor::EditorHelper::SaveFileAs </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
-          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td class="paramtype">const TEchar *&#160;</td>
+          <td class="paramname"><em>filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">TEstringview&#160;</td>
+          <td class="paramname"><em>defaultFullPath</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -353,13 +336,13 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">bool Editor::EditorHelper::Inspector_CenteredButton </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">TEfloat&#160;</td>
           <td class="paramname"><em>alignment</em> = <code>0.5f</code>&#160;</td>
         </tr>
         <tr>
@@ -400,19 +383,19 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_ToggleButton </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText1</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText2</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
@@ -464,13 +447,13 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_FormattedCenteredButton </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
@@ -482,19 +465,19 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">TEfloat&#160;</td>
           <td class="paramname"><em>alignment</em> = <code>0.5f</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a>&#160;</td>
-          <td class="paramname"><em>INSTATE</em> = <code><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a></code>, </td>
+          <td class="paramtype">INSPECTORSTATE&#160;</td>
+          <td class="paramname"><em>INSTATE</em> = <code>DEFAULT</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>typeDragDrop</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -539,13 +522,13 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_SingleButton </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
@@ -557,13 +540,13 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a>&#160;</td>
-          <td class="paramname"><em>INSTATE</em> = <code><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a></code>, </td>
+          <td class="paramtype">INSPECTORSTATE&#160;</td>
+          <td class="paramname"><em>INSTATE</em> = <code>DEFAULT</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>typeDragDrop</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -606,19 +589,19 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_DoubleButton </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText1</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText2</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
@@ -636,13 +619,13 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a>&#160;</td>
-          <td class="paramname"><em>INSTATE</em> = <code><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a></code>, </td>
+          <td class="paramtype">INSPECTORSTATE&#160;</td>
+          <td class="paramname"><em>INSTATE</em> = <code>DEFAULT</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>typeDragDrop</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -687,7 +670,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_Checkbox </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
@@ -699,7 +682,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramtype">TEguid&#160;</td>
           <td class="paramname"><em>id</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -739,7 +722,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_MultiCheckbox </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
@@ -762,7 +745,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Creates a series of checkbox in the created location. </p>
-<p>Creates a series of checkbox in the created location Ouput: Name | [ ] X [ ] Y [ ] Z How to use: Inspector_Checkbox("Label", &amp;state)) //example</p>
+<p>Creates a series of checkbox in the created location Ouput: Name | [ ] X [ ] Y [ ] Z How to use: Inspector_MultiCheckbox("Label", &amp;state)) //example</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">label</td><td>Name of the button/ What it does </td></tr>
@@ -785,7 +768,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_EnumCombo </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
@@ -826,8 +809,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a073e7e3d1945078259151533e8541074" name="a073e7e3d1945078259151533e8541074"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a073e7e3d1945078259151533e8541074">&#9670;&#160;</a></span>Inspector_OneFloatSlider()</h2>
+<a id="a8470429310934961af9b4eaa90234f3a" name="a8470429310934961af9b4eaa90234f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8470429310934961af9b4eaa90234f3a">&#9670;&#160;</a></span>Inspector_OneFloatSlider()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -838,25 +821,25 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_OneFloatSlider </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramtype">TEfloat *&#160;</td>
           <td class="paramname"><em>state</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">TEfloat&#160;</td>
           <td class="paramname"><em>minVal</em> = <code>FLT_MIN</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">TEfloat&#160;</td>
           <td class="paramname"><em>maxVal</em> = <code>FLT_MAX</code>, </td>
         </tr>
         <tr>
@@ -868,14 +851,20 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">TEfloat&#160;</td>
           <td class="paramname"><em>defaultVal</em> = <code>0.f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>uniqueID</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -925,31 +914,31 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_TwoFloatSlider </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramtype">TEfloat *&#160;</td>
           <td class="paramname"><em>state1</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramtype">TEfloat *&#160;</td>
           <td class="paramname"><em>state2</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">TEfloat&#160;</td>
           <td class="paramname"><em>minVal</em> = <code>FLT_MIN</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">TEfloat&#160;</td>
           <td class="paramname"><em>maxVal</em> = <code>FLT_MAX</code>, </td>
         </tr>
         <tr>
@@ -961,19 +950,19 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText1</em> = <code>&quot;X&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText2</em> = <code>&quot;Y&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">TEfloat&#160;</td>
           <td class="paramname"><em>defaultVal</em> = <code>0.f</code>, </td>
         </tr>
         <tr>
@@ -1026,37 +1015,37 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_ThreeFloatSlider </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramtype">TEfloat *&#160;</td>
           <td class="paramname"><em>state1</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramtype">TEfloat *&#160;</td>
           <td class="paramname"><em>state2</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramtype">TEfloat *&#160;</td>
           <td class="paramname"><em>state3</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">TEfloat&#160;</td>
           <td class="paramname"><em>minVal</em> = <code>FLT_MIN</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">TEfloat&#160;</td>
           <td class="paramname"><em>maxVal</em> = <code>FLT_MAX</code>, </td>
         </tr>
         <tr>
@@ -1068,25 +1057,25 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText1</em> = <code>&quot;X&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText2</em> = <code>&quot;Y&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText3</em> = <code>&quot;Z&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">TEfloat&#160;</td>
           <td class="paramname"><em>defaultVal</em> = <code>0.f</code>, </td>
         </tr>
         <tr>
@@ -1140,38 +1129,38 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_ColorSliderPicker </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramtype">TEfloat *&#160;</td>
           <td class="paramname"><em>state1</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramtype">TEfloat *&#160;</td>
           <td class="paramname"><em>state2</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramtype">TEfloat *&#160;</td>
           <td class="paramname"><em>state3</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> *&#160;</td>
+          <td class="paramtype">TEfloat *&#160;</td>
           <td class="paramname"><em>state4</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bb">COLORPICKERSTYLE</a>&#160;</td>
-          <td class="paramname"><em>style</em> = <code><a class="el" href="class_editor_1_1_editor_helper.html#ade0a0bd42a3c4e4c2c62ece15064a9bba1cf61c7cd2423d2652525ef69bebf155">Edit4</a></code>&#160;</td>
+          <td class="paramtype">COLORPICKERSTYLE&#160;</td>
+          <td class="paramname"><em>style</em> = <code>Edit4</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1201,8 +1190,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="acd066d4bcf02f708188afbde60840401" name="acd066d4bcf02f708188afbde60840401"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd066d4bcf02f708188afbde60840401">&#9670;&#160;</a></span>Inspector_OneIntSlider()</h2>
+<a id="a1bb86a75a5c14633f1973dc5241def57" name="a1bb86a75a5c14633f1973dc5241def57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb86a75a5c14633f1973dc5241def57">&#9670;&#160;</a></span>Inspector_OneIntSlider()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1213,25 +1202,25 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_OneIntSlider </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *&#160;</td>
+          <td class="paramtype">TEint *&#160;</td>
           <td class="paramname"><em>state</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramtype">TEint&#160;</td>
           <td class="paramname"><em>minVal</em> = <code>INT32_MIN</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramtype">TEint&#160;</td>
           <td class="paramname"><em>maxVal</em> = <code>INT32_MAX</code>, </td>
         </tr>
         <tr>
@@ -1243,14 +1232,20 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramtype">TEint&#160;</td>
           <td class="paramname"><em>defaultVal</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>uniqueID</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1300,31 +1295,31 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_TwoIntSlider </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *&#160;</td>
+          <td class="paramtype">TEint *&#160;</td>
           <td class="paramname"><em>state1</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *&#160;</td>
+          <td class="paramtype">TEint *&#160;</td>
           <td class="paramname"><em>state2</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramtype">TEint&#160;</td>
           <td class="paramname"><em>minVal</em> = <code>INT32_MIN</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramtype">TEint&#160;</td>
           <td class="paramname"><em>maxVal</em> = <code>INT32_MAX</code>, </td>
         </tr>
         <tr>
@@ -1336,19 +1331,19 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText1</em> = <code>&quot;X&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText2</em> = <code>&quot;Y&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramtype">TEint&#160;</td>
           <td class="paramname"><em>defaultVal</em> = <code>0</code>, </td>
         </tr>
         <tr>
@@ -1401,37 +1396,37 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_ThreeIntSlider </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *&#160;</td>
+          <td class="paramtype">TEint *&#160;</td>
           <td class="paramname"><em>state</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *&#160;</td>
+          <td class="paramtype">TEint *&#160;</td>
           <td class="paramname"><em>state2</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a> *&#160;</td>
+          <td class="paramtype">TEint *&#160;</td>
           <td class="paramname"><em>state3</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramtype">TEint&#160;</td>
           <td class="paramname"><em>minVal</em> = <code>INT32_MIN</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramtype">TEint&#160;</td>
           <td class="paramname"><em>maxVal</em> = <code>INT32_MAX</code>, </td>
         </tr>
         <tr>
@@ -1443,25 +1438,25 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText1</em> = <code>&quot;X&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText2</em> = <code>&quot;Y&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>buttonText3</em> = <code>&quot;Z&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1b35f7f64819c46c09830a18ddf3c1c6">TEint</a>&#160;</td>
+          <td class="paramtype">TEint&#160;</td>
           <td class="paramname"><em>defaultVal</em> = <code>0</code>, </td>
         </tr>
         <tr>
@@ -1503,8 +1498,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a7ba452ff46c7461f6253e60ea419ef62" name="a7ba452ff46c7461f6253e60ea419ef62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ba452ff46c7461f6253e60ea419ef62">&#9670;&#160;</a></span>Inspector_TextBox()</h2>
+<a id="af7198c0071dae44310e55ba9d091ef78" name="af7198c0071dae44310e55ba9d091ef78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7198c0071dae44310e55ba9d091ef78">&#9670;&#160;</a></span>Inspector_TextBox()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1515,26 +1510,32 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_TextBox </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a> *&#160;</td>
+          <td class="paramtype">TEstring *&#160;</td>
           <td class="paramname"><em>state</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438">INSPECTORSTATE</a>&#160;</td>
-          <td class="paramname"><em>INSTATE</em> = <code><a class="el" href="class_editor_1_1_editor_helper.html#aec74a5f760ae15942173ea9c3aacf438a5a9a19328af27e8d7341f9d7ec8d70d9">DEFAULT</a></code>, </td>
+          <td class="paramtype">INSPECTORSTATE&#160;</td>
+          <td class="paramname"><em>INSTATE</em> = <code>DEFAULT</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
-          <td class="paramname"><em>typeDragDrop</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
+          <td class="paramname"><em>typeDragDrop</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>uniqueID</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1575,7 +1576,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_Vector3Slider </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
@@ -1621,7 +1622,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void Editor::EditorHelper::Inspector_Vector2Slider </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#ab4fc0cbaaa9de6376938446922b7a621">TEchar</a> *&#160;</td>
+          <td class="paramtype">const TEchar *&#160;</td>
           <td class="paramname"><em>label</em>, </td>
         </tr>
         <tr>
@@ -1655,29 +1656,6 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="ace0c09061eae013291406fe712459d22" name="ace0c09061eae013291406fe712459d22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace0c09061eae013291406fe712459d22">&#9670;&#160;</a></span>m_selectedIDs</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> &gt; Editor::EditorHelper::m_selectedIDs</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_editor_helper_8h_source.html">EditorHelper.h</a></li>
 <li><a class="el" href="_editor_helper_8cpp.html">EditorHelper.cpp</a></li>
@@ -1687,7 +1665,7 @@ template&lt;class T &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_editor.html">Editor</a></li><li class="navelem"><a class="el" href="class_editor_1_1_editor_helper.html">EditorHelper</a></li>
+    <li class="navelem"><b>Editor</b></li><li class="navelem"><a class="el" href="class_editor_1_1_editor_helper.html">EditorHelper</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

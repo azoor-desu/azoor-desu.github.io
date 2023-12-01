@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('_collider_8h.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">Collider.h File Reference</div></div>
@@ -138,19 +138,24 @@ $(document).ready(function(){initNavTree('_collider_8h.html',''); initResizable(
 <p>Interface for the base Collider component class. <br  />
  All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="_defines_8h_source.html">Defines.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_bounding_shapes_8h_source.html">Core/BoundingShapes.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_rigidbody_8h_source.html">ECSComponents/Rigidbody.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="_defines_8h_source.html">Defines.h</a>&gt;</code><br />
 <code>#include &lt;glm/glm.hpp&gt;</code><br />
-<code>#include &quot;<a class="el" href="_rigidbody_8h_source.html">ECSComponents/Rigidbody.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_bounding_shapes_8h_source.html">Core/BoundingShapes.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_e_c_s_manager_8h_source.html">Core/ECSManager.h</a>&quot;</code><br />
+<code>#include &lt;Jolt/Jolt.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/EActivation.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/Shape/BoxShape.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/Shape/SphereShape.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/Shape/CapsuleShape.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/Shape/CylinderShape.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/Shape/MeshShape.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="_physics_manager_8h_source.html">Core/PhysicsManager.h</a>&gt;</code><br />
+<code>#include &quot;Core/ECSManager.h&quot;</code><br />
 </div>
 <p><a href="_collider_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_contact_listener.html">TE::ContactListener</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The role of the <a class="el" href="class_t_e_1_1_contact_listener.html" title="The role of the ContactListener (CL) is to listen for collisions and call the appropriate functions a...">ContactListener</a> (CL) is to listen for collisions and call the appropriate functions as defined by the user. Typically, the CL will be attached to a gameobject that has a collider. A rigidbody is not necessary per se, but it'll likely be needed for non-trigger collision response.  <a href="class_t_e_1_1_contact_listener.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_collider.html">TE::Collider</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_component_ref_3_01_collider_01_4.html">TE::ComponentRef&lt; Collider &gt;</a></td></tr>
@@ -166,13 +171,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aa490aa71fe6be4141ee8010c1bb55322"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e.html#aa490aa71fe6be4141ee8010c1bb55322">TE::ColliderType</a> { <br />
-&#160;&#160;<a class="el" href="namespace_t_e.html#aa490aa71fe6be4141ee8010c1bb55322a6adf97f83acf6453d4a6a4b1070f3754">TE::None</a> = 0
-, <a class="el" href="namespace_t_e.html#aa490aa71fe6be4141ee8010c1bb55322a3cfce651e667ab85486dd42a8185f98a">TE::Box</a>
-, <a class="el" href="namespace_t_e.html#aa490aa71fe6be4141ee8010c1bb55322ab7095f057db3fefa7325ad93a04e14fd">TE::Sphere</a>
-, <a class="el" href="namespace_t_e.html#aa490aa71fe6be4141ee8010c1bb55322a4880c0f12c06dd6d142e7a40b041bf1a">TE::Capsule</a>
+<tr class="memitem:aa490aa71fe6be4141ee8010c1bb55322"><td class="memItemLeft" align="right" valign="top"><a id="aa490aa71fe6be4141ee8010c1bb55322" name="aa490aa71fe6be4141ee8010c1bb55322"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>ColliderType</b> { <br />
+&#160;&#160;<b>None</b> = 0
+, <b>Box</b>
+, <b>Sphere</b>
+, <b>Capsule</b>
 , <br />
-&#160;&#160;<a class="el" href="namespace_t_e.html#aa490aa71fe6be4141ee8010c1bb55322a710fdb6adb881b408116ef95335e1961">TE::Mesh</a>
+&#160;&#160;<b>Cylinder</b>
+, <b>Mesh</b>
 <br />
  }</td></tr>
 <tr class="separator:aa490aa71fe6be4141ee8010c1bb55322"><td class="memSeparator" colspan="2">&#160;</td></tr>

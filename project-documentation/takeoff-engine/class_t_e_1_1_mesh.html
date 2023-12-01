@@ -129,38 +129,69 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_mesh.html',''); initResi
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="class_t_e_1_1_mesh-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TE::Mesh Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_mesh_8h_source.html">Mesh.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for TE::Mesh:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_t_e_1_1_mesh.png" usemap="#TE::Mesh_map" alt=""/>
-  <map id="TE::Mesh_map" name="TE::Mesh_map">
-<area href="class_t_e_1_1_i_component.html" title="Base class of every ECS Component. Provides some generic functions to." alt="TE::IComponent" shape="rect" coords="0,56,99,80"/>
-<area href="class_t_e_1_1_i_object.html" alt="TE::IObject" shape="rect" coords="0,0,99,24"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad28f13b6b3278cfe555ae8efc70f526b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#ad28f13b6b3278cfe555ae8efc70f526b">Mesh</a> ()</td></tr>
-<tr class="separator:ad28f13b6b3278cfe555ae8efc70f526b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6647557dc7ff07b8c908d67c72eacaf3"><td class="memItemLeft" align="right" valign="top"><a id="a6647557dc7ff07b8c908d67c72eacaf3" name="a6647557dc7ff07b8c908d67c72eacaf3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Mesh</b> (TEtypeguid typeguid)</td></tr>
+<tr class="separator:a6647557dc7ff07b8c908d67c72eacaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e690d4e376cab55fac4139028a7ec7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#a81e690d4e376cab55fac4139028a7ec7">AllocateData</a> ()</td></tr>
+<tr class="memdesc:a81e690d4e376cab55fac4139028a7ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">override as needed. Will be called on component allocate (via addcomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data.  <br /></td></tr>
+<tr class="separator:a81e690d4e376cab55fac4139028a7ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac097e3b9860ae8737235d3c9262070f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#ac097e3b9860ae8737235d3c9262070f1">DeallocateData</a> ()</td></tr>
+<tr class="memdesc:ac097e3b9860ae8737235d3c9262070f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">override as needed. Will be called on component deallocate (via removecomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data.  <br /></td></tr>
+<tr class="separator:ac097e3b9860ae8737235d3c9262070f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff6325b84f53e5d480384c63a2ba429a"><td class="memItemLeft" align="right" valign="top">rttr::instance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#aff6325b84f53e5d480384c63a2ba429a">GetRTTRInstance</a> () const</td></tr>
 <tr class="separator:aff6325b84f53e5d480384c63a2ba429a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab24706c1920364eadfa8236993514e66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#ab24706c1920364eadfa8236993514e66">Serialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
 <tr class="separator:ab24706c1920364eadfa8236993514e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a104d06e527d1e2e7e730203e0b913ab4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#a104d06e527d1e2e7e730203e0b913ab4">Deserialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
 <tr class="separator:a104d06e527d1e2e7e730203e0b913ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7f307a454cfc0fe16679017b3b391c"><td class="memItemLeft" align="right" valign="top"><a id="a8b7f307a454cfc0fe16679017b3b391c" name="a8b7f307a454cfc0fe16679017b3b391c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetObjectFile</b> (std::string string) noexcept</td></tr>
+<tr class="separator:a8b7f307a454cfc0fe16679017b3b391c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fce28693ec7cd7af2b51949856badac"><td class="memItemLeft" align="right" valign="top"><a id="a4fce28693ec7cd7af2b51949856badac" name="a4fce28693ec7cd7af2b51949856badac"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetObjectFile</b> () const noexcept</td></tr>
+<tr class="separator:a4fce28693ec7cd7af2b51949856badac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f519d0838dfd80bf19be653d98a0b6"><td class="memItemLeft" align="right" valign="top"><a id="a14f519d0838dfd80bf19be653d98a0b6" name="a14f519d0838dfd80bf19be653d98a0b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMaterialInstance</b> (std::string string) noexcept</td></tr>
+<tr class="separator:a14f519d0838dfd80bf19be653d98a0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db25c4ff9727c0dd1d87da00e780c50"><td class="memItemLeft" align="right" valign="top"><a id="a2db25c4ff9727c0dd1d87da00e780c50" name="a2db25c4ff9727c0dd1d87da00e780c50"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaterialInstance</b> () const noexcept</td></tr>
+<tr class="separator:a2db25c4ff9727c0dd1d87da00e780c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52fc2514de9605c680014b9c41354b91"><td class="memItemLeft" align="right" valign="top"><a id="a52fc2514de9605c680014b9c41354b91" name="a52fc2514de9605c680014b9c41354b91"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintRecursive</b> (<a class="el" href="struct_t_e_1_1_hierarchy_node.html">HierarchyNode</a> &amp;curNode)</td></tr>
+<tr class="separator:a52fc2514de9605c680014b9c41354b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9cdc4d36c77410460e95916dc59326"><td class="memItemLeft" align="right" valign="top"><a id="a9a9cdc4d36c77410460e95916dc59326" name="a9a9cdc4d36c77410460e95916dc59326"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowBonesInHierarchyPanel</b> ()</td></tr>
+<tr class="separator:a9a9cdc4d36c77410460e95916dc59326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c242b63197fff8db44d27274798be6"><td class="memItemLeft" align="right" valign="top"><a id="a34c242b63197fff8db44d27274798be6" name="a34c242b63197fff8db44d27274798be6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecursiveDeleteEntities</b> ()</td></tr>
+<tr class="separator:a34c242b63197fff8db44d27274798be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db11bbc205b585280942a942ab2b4ea"><td class="memItemLeft" align="right" valign="top"><a id="a9db11bbc205b585280942a942ab2b4ea" name="a9db11bbc205b585280942a942ab2b4ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecursiveCreateEntities</b> (<a class="el" href="struct_t_e_1_1_hierarchy_node.html">HierarchyNode</a> &amp;curNode, <a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> parent)</td></tr>
+<tr class="separator:a9db11bbc205b585280942a942ab2b4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4ecd54736e45a316002b75d5eed371"><td class="memItemLeft" align="right" valign="top"><a id="a4c4ecd54736e45a316002b75d5eed371" name="a4c4ecd54736e45a316002b75d5eed371"></a>
+<a class="el" href="struct_t_e_1_1_bone.html">Bone</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindBone</b> (TEstring bName, std::vector&lt; <a class="el" href="struct_t_e_1_1_bone.html">Bone</a> &gt; &amp;bList)</td></tr>
+<tr class="separator:a4c4ecd54736e45a316002b75d5eed371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee8e394dc59df701a54549579c13e21"><td class="memItemLeft" align="right" valign="top"><a id="a5ee8e394dc59df701a54549579c13e21" name="a5ee8e394dc59df701a54549579c13e21"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsBone</b> (TEstring name)</td></tr>
+<tr class="separator:a5ee8e394dc59df701a54549579c13e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a></td></tr>
-<tr class="memitem:a196c19e70f9683a57c1eff01db6c07a3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a196c19e70f9683a57c1eff01db6c07a3">IComponent</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeguid)</td></tr>
+<tr class="memitem:a196c19e70f9683a57c1eff01db6c07a3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top"><a id="a196c19e70f9683a57c1eff01db6c07a3" name="a196c19e70f9683a57c1eff01db6c07a3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IComponent</b> (TEtypeguid typeguid)</td></tr>
 <tr class="separator:a196c19e70f9683a57c1eff01db6c07a3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2ceceb6b5e92f3ad10e8e8a8ce867fe inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#ad2ceceb6b5e92f3ad10e8e8a8ce867fe">~IComponent</a> ()</td></tr>
-<tr class="separator:ad2ceceb6b5e92f3ad10e8e8a8ce867fe inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40de458d1c358ed31994e64f6404ee8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#ab40de458d1c358ed31994e64f6404ee8">AllocateData</a> ()</td></tr>
+<tr class="memdesc:ab40de458d1c358ed31994e64f6404ee8 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">override as needed. Will be called on component allocate (via addcomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data.  <br /></td></tr>
+<tr class="separator:ab40de458d1c358ed31994e64f6404ee8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4ca46fa0d498df3d6e29de39ceddb8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a2e4ca46fa0d498df3d6e29de39ceddb8">DeallocateData</a> ()</td></tr>
+<tr class="memdesc:a2e4ca46fa0d498df3d6e29de39ceddb8 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">override as needed. Will be called on component deallocate (via removecomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data.  <br /></td></tr>
+<tr class="separator:a2e4ca46fa0d498df3d6e29de39ceddb8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a639f8e495309c93d4e632595ea615da4">GetIsActive</a> () const</td></tr>
 <tr class="memdesc:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this component is active or not. Active state is determined by: internal Active state &amp;&amp; entity's active state.  <br /></td></tr>
 <tr class="separator:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,7 +201,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a90097cf522fe29daf1fa2f5ddb148191">SetIsActiveInternal</a> (bool active) noexcept</td></tr>
 <tr class="memdesc:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal active state of this component. Does not affect the state of the parent. If entity is inactive but this component is active, the resultant state of this component will still be inactive until the entity's state is changed to active.  <br /></td></tr>
 <tr class="separator:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07865b61eaa1f8404312a287ff2cad7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a07865b61eaa1f8404312a287ff2cad7b">GetEntity</a> () const</td></tr>
+<tr class="memitem:a07865b61eaa1f8404312a287ff2cad7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top"><a id="a07865b61eaa1f8404312a287ff2cad7b" name="a07865b61eaa1f8404312a287ff2cad7b"></a>
+<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntity</b> () const</td></tr>
 <tr class="separator:a07865b61eaa1f8404312a287ff2cad7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f805b5129eca4fddabecb7a77f42d54 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual rttr::instance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a9f805b5129eca4fddabecb7a77f42d54">GetRTTRInstance</a> () const</td></tr>
 <tr class="separator:a9f805b5129eca4fddabecb7a77f42d54 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,43 +211,70 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e069570ee4f25551a590e1414d465f3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a2e069570ee4f25551a590e1414d465f3">Deserialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
 <tr class="separator:a2e069570ee4f25551a590e1414d465f3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_object.html">TE::IObject</a></td></tr>
-<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#afc331476bf6217fde06f31deb161b97e">IObject</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="afc331476bf6217fde06f31deb161b97e" name="afc331476bf6217fde06f31deb161b97e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IObject</b> (TEtypeguid typeGUID)</td></tr>
 <tr class="separator:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#af1d390c81a0fd71b490d01b93042f81d">~IObject</a> ()</td></tr>
-<tr class="separator:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">GetGUID</a> () const noexcept</td></tr>
+<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aeb49f1d9760159d96df6dca959790745" name="aeb49f1d9760159d96df6dca959790745"></a>
+virtual TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetGUID</b> () const noexcept</td></tr>
 <tr class="separator:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aafeae10a462729d794db5c6da61eba08">SetGUID</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> guid) noexcept</td></tr>
+<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aafeae10a462729d794db5c6da61eba08" name="aafeae10a462729d794db5c6da61eba08"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGUID</b> (TEguid guid) noexcept</td></tr>
 <tr class="separator:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">GetTypeGUID</a> () const noexcept</td></tr>
+<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="a705d4f85c13ce4fc396ad38cfbda7cdf" name="a705d4f85c13ce4fc396ad38cfbda7cdf"></a>
+virtual TEtypeguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeGUID</b> () const noexcept</td></tr>
 <tr class="separator:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:af1f9164b86d438f9694fdb25562cceda"><td class="memItemLeft" align="right" valign="top">glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#af1f9164b86d438f9694fdb25562cceda">m_Color</a> {}</td></tr>
-<tr class="separator:af1f9164b86d438f9694fdb25562cceda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab88d44ccda82b806351b43d9087b5ac9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#ab88d44ccda82b806351b43d9087b5ac9">m_Objfile</a> {}</td></tr>
-<tr class="separator:ab88d44ccda82b806351b43d9087b5ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1010d34c3f8660d3f293171fb510d51a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#a1010d34c3f8660d3f293171fb510d51a">m_Texfile</a> {}</td></tr>
-<tr class="separator:a1010d34c3f8660d3f293171fb510d51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d6df0af03c7acebab143e8e7df95e75"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="struct_t_e_1_1_vertex.html">Vertex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#a0d6df0af03c7acebab143e8e7df95e75">m_Mesh</a> {}</td></tr>
-<tr class="separator:a0d6df0af03c7acebab143e8e7df95e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c3d3859ec342045867b2b7b35127d2e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_t_e_1_1_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#a0c3d3859ec342045867b2b7b35127d2e">m_Texture</a> {}</td></tr>
-<tr class="separator:a0c3d3859ec342045867b2b7b35127d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1402752a42b7f09212cc553a58911aa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#a1402752a42b7f09212cc553a58911aa3">m_MeshID</a> {}</td></tr>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a0ba78efee76cd093589074152f7f0fb8"><td class="memItemLeft" align="right" valign="top"><a id="a0ba78efee76cd093589074152f7f0fb8" name="a0ba78efee76cd093589074152f7f0fb8"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>SkinMesh</b></td></tr>
+<tr class="separator:a0ba78efee76cd093589074152f7f0fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5448b14b77bc0cda11a6264fc1938a"><td class="memItemLeft" align="right" valign="top"><a id="a7d5448b14b77bc0cda11a6264fc1938a" name="a7d5448b14b77bc0cda11a6264fc1938a"></a>
+glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><b>m_Color</b> {1,1,1,1}</td></tr>
+<tr class="separator:a7d5448b14b77bc0cda11a6264fc1938a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac606bd79c5fc1a7215b2328a5e53121b"><td class="memItemLeft" align="right" valign="top"><a id="ac606bd79c5fc1a7215b2328a5e53121b" name="ac606bd79c5fc1a7215b2328a5e53121b"></a>
+std::shared_ptr&lt; std::pair&lt; std::vector&lt; <a class="el" href="struct_t_e_1_1_vertex.html">Vertex</a> &gt;, std::vector&lt; <a class="el" href="struct_t_e_1_1_bone.html">Bone</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Mesh</b> {}</td></tr>
+<tr class="separator:ac606bd79c5fc1a7215b2328a5e53121b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6852d5e9dc9705bcc3922fde2e1460d"><td class="memItemLeft" align="right" valign="top"><a id="ad6852d5e9dc9705bcc3922fde2e1460d" name="ad6852d5e9dc9705bcc3922fde2e1460d"></a>
+<a class="el" href="struct_t_e_1_1_hierarchy_node.html">HierarchyNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Node</b> {}</td></tr>
+<tr class="separator:ad6852d5e9dc9705bcc3922fde2e1460d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ad411dec678a06394b52b4ccea1d7c"><td class="memItemLeft" align="right" valign="top"><a id="af8ad411dec678a06394b52b4ccea1d7c" name="af8ad411dec678a06394b52b4ccea1d7c"></a>
+TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>m_ObjectID</b> { 0 }</td></tr>
+<tr class="separator:af8ad411dec678a06394b52b4ccea1d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1402752a42b7f09212cc553a58911aa3"><td class="memItemLeft" align="right" valign="top"><a id="a1402752a42b7f09212cc553a58911aa3" name="a1402752a42b7f09212cc553a58911aa3"></a>
+TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>m_MeshID</b> { 0 }</td></tr>
 <tr class="separator:a1402752a42b7f09212cc553a58911aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad07c1f73032c0b1288a720d9d48b6765"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#ad07c1f73032c0b1288a720d9d48b6765">m_TextureID</a> {}</td></tr>
-<tr class="separator:ad07c1f73032c0b1288a720d9d48b6765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd43de25c9b6cf6405742ff452b1737a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#afd43de25c9b6cf6405742ff452b1737a">m_PrevObjfile</a> {}</td></tr>
+<tr class="memitem:ad294555ed03868c7e7fe61b0afcb6240"><td class="memItemLeft" align="right" valign="top"><a id="ad294555ed03868c7e7fe61b0afcb6240" name="ad294555ed03868c7e7fe61b0afcb6240"></a>
+TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>m_MaterialInstanceID</b> { 0 }</td></tr>
+<tr class="separator:ad294555ed03868c7e7fe61b0afcb6240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd43de25c9b6cf6405742ff452b1737a"><td class="memItemLeft" align="right" valign="top"><a id="afd43de25c9b6cf6405742ff452b1737a" name="afd43de25c9b6cf6405742ff452b1737a"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_PrevObjfile</b> {}</td></tr>
 <tr class="separator:afd43de25c9b6cf6405742ff452b1737a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ca89d032c96594e53cb98bb697dd638"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#a9ca89d032c96594e53cb98bb697dd638">m_PrevTexfile</a> {}</td></tr>
+<tr class="memitem:a9ca89d032c96594e53cb98bb697dd638"><td class="memItemLeft" align="right" valign="top"><a id="a9ca89d032c96594e53cb98bb697dd638" name="a9ca89d032c96594e53cb98bb697dd638"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_PrevTexfile</b> {}</td></tr>
 <tr class="separator:a9ca89d032c96594e53cb98bb697dd638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8713167c60966fa5435282a4036baa3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_mesh.html#a8713167c60966fa5435282a4036baa3c">m_DrawOutline</a> { false }</td></tr>
+<tr class="memitem:a8713167c60966fa5435282a4036baa3c"><td class="memItemLeft" align="right" valign="top"><a id="a8713167c60966fa5435282a4036baa3c" name="a8713167c60966fa5435282a4036baa3c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_DrawOutline</b> { false }</td></tr>
 <tr class="separator:a8713167c60966fa5435282a4036baa3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab20c4cd7aa70dafbf7abd10a0ac656"><td class="memItemLeft" align="right" valign="top"><a id="a3ab20c4cd7aa70dafbf7abd10a0ac656" name="a3ab20c4cd7aa70dafbf7abd10a0ac656"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_BoneLoad</b> { false }</td></tr>
+<tr class="separator:a3ab20c4cd7aa70dafbf7abd10a0ac656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3f5912f1b5dc447fb8c0848e00e388"><td class="memItemLeft" align="right" valign="top"><a id="acb3f5912f1b5dc447fb8c0848e00e388" name="acb3f5912f1b5dc447fb8c0848e00e388"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_LightIntensity</b> { 0.f }</td></tr>
+<tr class="separator:acb3f5912f1b5dc447fb8c0848e00e388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee8a40f72f761c05cdb7c5166df11ab"><td class="memItemLeft" align="right" valign="top"><a id="a7ee8a40f72f761c05cdb7c5166df11ab" name="a7ee8a40f72f761c05cdb7c5166df11ab"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_PrevLightIntensity</b> { 0.f }</td></tr>
+<tr class="separator:a7ee8a40f72f761c05cdb7c5166df11ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a849480923e8484a1943a8d3c4f277218"><td class="memItemLeft" align="right" valign="top"><a id="a849480923e8484a1943a8d3c4f277218" name="a849480923e8484a1943a8d3c4f277218"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_LightState</b> { true }</td></tr>
+<tr class="separator:a849480923e8484a1943a8d3c4f277218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6066bf588f56f4d9c69d2b5591805e2d"><td class="memItemLeft" align="right" valign="top"><a id="a6066bf588f56f4d9c69d2b5591805e2d" name="a6066bf588f56f4d9c69d2b5591805e2d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_PrevLightState</b> { true }</td></tr>
+<tr class="separator:a6066bf588f56f4d9c69d2b5591805e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad28f13b6b3278cfe555ae8efc70f526b" name="ad28f13b6b3278cfe555ae8efc70f526b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad28f13b6b3278cfe555ae8efc70f526b">&#9670;&#160;</a></span>Mesh()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a81e690d4e376cab55fac4139028a7ec7" name="a81e690d4e376cab55fac4139028a7ec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81e690d4e376cab55fac4139028a7ec7">&#9670;&#160;</a></span>AllocateData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,7 +283,7 @@ Data Fields</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TE::Mesh::Mesh </td>
+          <td class="memname">void TE::Mesh::AllocateData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -232,14 +291,46 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>override as needed. Will be called on component allocate (via addcomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data. </p>
+
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#ab40de458d1c358ed31994e64f6404ee8">TE::IComponent</a>.</p>
+
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac097e3b9860ae8737235d3c9262070f1" name="ac097e3b9860ae8737235d3c9262070f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac097e3b9860ae8737235d3c9262070f1">&#9670;&#160;</a></span>DeallocateData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::Mesh::DeallocateData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>override as needed. Will be called on component deallocate (via removecomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data. </p>
+
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#a2e4ca46fa0d498df3d6e29de39ceddb8">TE::IComponent</a>.</p>
+
+</div>
+</div>
 <a id="aff6325b84f53e5d480384c63a2ba429a" name="aff6325b84f53e5d480384c63a2ba429a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff6325b84f53e5d480384c63a2ba429a">&#9670;&#160;</a></span>GetRTTRInstance()</h2>
 
@@ -263,7 +354,7 @@ Data Fields</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#a9f805b5129eca4fddabecb7a77f42d54">TE::IComponent</a>.</p>
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a>.</p>
 
 </div>
 </div>
@@ -291,7 +382,7 @@ Data Fields</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#abdc3a2ae05147f4f600dc2093c52d8d3">TE::IComponent</a>.</p>
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a>.</p>
 
 </div>
 </div>
@@ -319,153 +410,13 @@ Data Fields</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#a2e069570ee4f25551a590e1414d465f3">TE::IComponent</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="af1f9164b86d438f9694fdb25562cceda" name="af1f9164b86d438f9694fdb25562cceda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1f9164b86d438f9694fdb25562cceda">&#9670;&#160;</a></span>m_Color</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">&amp; TE::Mesh::m_Color {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab88d44ccda82b806351b43d9087b5ac9" name="ab88d44ccda82b806351b43d9087b5ac9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab88d44ccda82b806351b43d9087b5ac9">&#9670;&#160;</a></span>m_Objfile</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">&amp; TE::Mesh::m_Objfile {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1010d34c3f8660d3f293171fb510d51a" name="a1010d34c3f8660d3f293171fb510d51a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1010d34c3f8660d3f293171fb510d51a">&#9670;&#160;</a></span>m_Texfile</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">&amp; TE::Mesh::m_Texfile {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0d6df0af03c7acebab143e8e7df95e75" name="a0d6df0af03c7acebab143e8e7df95e75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d6df0af03c7acebab143e8e7df95e75">&#9670;&#160;</a></span>m_Mesh</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="struct_t_e_1_1_vertex.html">Vertex</a>&gt; TE::Mesh::m_Mesh {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0c3d3859ec342045867b2b7b35127d2e" name="a0c3d3859ec342045867b2b7b35127d2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c3d3859ec342045867b2b7b35127d2e">&#9670;&#160;</a></span>m_Texture</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_t_e_1_1_texture.html">Texture</a>&gt; TE::Mesh::m_Texture {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1402752a42b7f09212cc553a58911aa3" name="a1402752a42b7f09212cc553a58911aa3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1402752a42b7f09212cc553a58911aa3">&#9670;&#160;</a></span>m_MeshID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> TE::Mesh::m_MeshID {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad07c1f73032c0b1288a720d9d48b6765" name="ad07c1f73032c0b1288a720d9d48b6765"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad07c1f73032c0b1288a720d9d48b6765">&#9670;&#160;</a></span>m_TextureID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> TE::Mesh::m_TextureID {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afd43de25c9b6cf6405742ff452b1737a" name="afd43de25c9b6cf6405742ff452b1737a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd43de25c9b6cf6405742ff452b1737a">&#9670;&#160;</a></span>m_PrevObjfile</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string TE::Mesh::m_PrevObjfile {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9ca89d032c96594e53cb98bb697dd638" name="a9ca89d032c96594e53cb98bb697dd638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ca89d032c96594e53cb98bb697dd638">&#9670;&#160;</a></span>m_PrevTexfile</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string TE::Mesh::m_PrevTexfile {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8713167c60966fa5435282a4036baa3c" name="a8713167c60966fa5435282a4036baa3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8713167c60966fa5435282a4036baa3c">&#9670;&#160;</a></span>m_DrawOutline</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">&amp; TE::Mesh::m_DrawOutline { false }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_mesh_8h_source.html">Mesh.h</a></li>
+<li><a class="el" href="_e_c_s_components_2_mesh_8h_source.html">ECSComponents/Mesh.h</a></li>
+<li>Mesh.cpp</li>
 <li><a class="el" href="_r_t_t_r___registration_8h_source.html">RTTR_Registration.h</a></li>
 </ul>
 </div><!-- contents -->

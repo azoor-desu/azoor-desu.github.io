@@ -128,32 +128,19 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_e_c_s_manager.html','');
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
-<a href="#friends">Friends</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="class_t_e_1_1_e_c_s_manager-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TE::ECSManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_e_c_s_manager_8h_source.html">ECSManager.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for TE::ECSManager:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_t_e_1_1_e_c_s_manager.png" usemap="#TE::ECSManager_map" alt=""/>
-  <map id="TE::ECSManager_map" name="TE::ECSManager_map">
-<area href="class_t_e_1_1_i_manager.html" alt="TE::IManager" shape="rect" coords="0,56,109,80"/>
-<area href="class_t_e_1_1_i_object.html" alt="TE::IObject" shape="rect" coords="0,0,109,24"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
+Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager_1_1___entity_data.html">_EntityData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the additional data of an entity. <a class="el" href="class_t_e_1_1_entity_ref.html" title="Holds a reference to an entity. Does not directly contain data of the entity. To get an entity,...">EntityRef</a> does NOT store this data. This data is instead stored in <a class="el" href="class_t_e_1_1_e_c_s_manager.html">ECSManager</a> in an array. <a class="el" href="class_t_e_1_1_entity_ref.html" title="Holds a reference to an entity. Does not directly contain data of the entity. To get an entity,...">EntityRef</a> will have functions to access this data.  <a href="class_t_e_1_1_e_c_s_manager_1_1___entity_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,35 +155,35 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a89d760701eec7002c4eed8fdbcbba781"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a89d760701eec7002c4eed8fdbcbba781">ECSManager</a> ()</td></tr>
 <tr class="memdesc:a89d760701eec7002c4eed8fdbcbba781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor.  <br /></td></tr>
 <tr class="separator:a89d760701eec7002c4eed8fdbcbba781"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0711b952aab641ef95a6657a741389e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#ad0711b952aab641ef95a6657a741389e">~ECSManager</a> ()</td></tr>
-<tr class="separator:ad0711b952aab641ef95a6657a741389e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87a16b53f090413a5e28493ac2547b78"><td class="memTemplParams" colspan="2">template&lt;typename ComponentType &gt; </td></tr>
-<tr class="memitem:a87a16b53f090413a5e28493ac2547b78"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a87a16b53f090413a5e28493ac2547b78">RegisterComponent</a> ()</td></tr>
-<tr class="memdesc:a87a16b53f090413a5e28493ac2547b78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a component to the ECS system.  <br /></td></tr>
+<tr class="memitem:a87a16b53f090413a5e28493ac2547b78"><td class="memTemplParams" colspan="2"><a id="a87a16b53f090413a5e28493ac2547b78" name="a87a16b53f090413a5e28493ac2547b78"></a>
+template&lt;typename ComponentType &gt; </td></tr>
+<tr class="memitem:a87a16b53f090413a5e28493ac2547b78"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RegisterComponent</b> ()</td></tr>
+<tr class="memdesc:a87a16b53f090413a5e28493ac2547b78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a component to the ECS system. <br /></td></tr>
 <tr class="separator:a87a16b53f090413a5e28493ac2547b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acced294c81f04761c7764007c3e1d1e7"><td class="memTemplParams" colspan="2">template&lt;typename ComponentType &gt; </td></tr>
 <tr class="memitem:acced294c81f04761c7764007c3e1d1e7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#acced294c81f04761c7764007c3e1d1e7">CheckComponentRegistered</a> () const</td></tr>
 <tr class="memdesc:acced294c81f04761c7764007c3e1d1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">For verifying components exist in ECS before proceeding with calling other ECS functions.  <br /></td></tr>
 <tr class="separator:acced294c81f04761c7764007c3e1d1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fab6a9fbd2411396a8fe7638e74a605"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a6fab6a9fbd2411396a8fe7638e74a605">CheckComponentRegistered</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> componentType) const</td></tr>
+<tr class="memitem:a6fab6a9fbd2411396a8fe7638e74a605"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a6fab6a9fbd2411396a8fe7638e74a605">CheckComponentRegistered</a> (TEtypeguid componentType) const</td></tr>
 <tr class="memdesc:a6fab6a9fbd2411396a8fe7638e74a605"><td class="mdescLeft">&#160;</td><td class="mdescRight">For verifying components exist before proceeding with calling other ECS functions. To be used for serialization mainly.  <br /></td></tr>
 <tr class="separator:a6fab6a9fbd2411396a8fe7638e74a605"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87caa2899dd19fe3f3891f6b1b0bd11a"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a87caa2899dd19fe3f3891f6b1b0bd11a">GetRegisteredComponents</a> () const</td></tr>
+<tr class="memitem:a87caa2899dd19fe3f3891f6b1b0bd11a"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; TEtypeguid &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a87caa2899dd19fe3f3891f6b1b0bd11a">GetRegisteredComponents</a> () const</td></tr>
 <tr class="memdesc:a87caa2899dd19fe3f3891f6b1b0bd11a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a vector of all currently available registered components. Each entry is a Component Type GUID.  <br /></td></tr>
 <tr class="separator:a87caa2899dd19fe3f3891f6b1b0bd11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a2017600f17fd4e86f1b03ce0e93f8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a5a2017600f17fd4e86f1b03ce0e93f8c">RegisterScriptComponent</a> (<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> monoClassType)</td></tr>
+<tr class="memitem:a5a2017600f17fd4e86f1b03ce0e93f8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a5a2017600f17fd4e86f1b03ce0e93f8c">RegisterScriptComponent</a> (MonoClassType monoClassType)</td></tr>
 <tr class="memdesc:a5a2017600f17fd4e86f1b03ce0e93f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a script component to ECS.  <br /></td></tr>
 <tr class="separator:a5a2017600f17fd4e86f1b03ce0e93f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a964482c39ff275f4ec1474b098b1ca3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a964482c39ff275f4ec1474b098b1ca3a">UnregisterScriptComponent</a> (<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> monoClassType)</td></tr>
+<tr class="memitem:a964482c39ff275f4ec1474b098b1ca3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a964482c39ff275f4ec1474b098b1ca3a">UnregisterScriptComponent</a> (MonoClassType monoClassType)</td></tr>
 <tr class="memdesc:a964482c39ff275f4ec1474b098b1ca3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters a specific script component and removes the script component container.  <br /></td></tr>
 <tr class="separator:a964482c39ff275f4ec1474b098b1ca3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b0cf13db947cb731e2ed1d531efd63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a51b0cf13db947cb731e2ed1d531efd63">UnregisterAllScriptComponents</a> ()</td></tr>
-<tr class="memdesc:a51b0cf13db947cb731e2ed1d531efd63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters all script components from ECS.  <br /></td></tr>
+<tr class="memitem:a51b0cf13db947cb731e2ed1d531efd63"><td class="memItemLeft" align="right" valign="top"><a id="a51b0cf13db947cb731e2ed1d531efd63" name="a51b0cf13db947cb731e2ed1d531efd63"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterAllScriptComponents</b> ()</td></tr>
+<tr class="memdesc:a51b0cf13db947cb731e2ed1d531efd63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters all script components from ECS. <br /></td></tr>
 <tr class="separator:a51b0cf13db947cb731e2ed1d531efd63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22218f6abcde06eaab7dc07a147b3a67"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a22218f6abcde06eaab7dc07a147b3a67">GetRegisteredScripts</a> () const</td></tr>
+<tr class="memitem:a22218f6abcde06eaab7dc07a147b3a67"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; MonoClassType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a22218f6abcde06eaab7dc07a147b3a67">GetRegisteredScripts</a> () const</td></tr>
 <tr class="memdesc:a22218f6abcde06eaab7dc07a147b3a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a vector of all currently available registered scripts. Each entry is a Mono Class Token.  <br /></td></tr>
 <tr class="separator:a22218f6abcde06eaab7dc07a147b3a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a733e9ee60f7c204b6df951d94d7dbadd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a733e9ee60f7c204b6df951d94d7dbadd">CheckScriptRegistered</a> (<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> monoClassType) const noexcept</td></tr>
+<tr class="memitem:a733e9ee60f7c204b6df951d94d7dbadd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a733e9ee60f7c204b6df951d94d7dbadd">CheckScriptRegistered</a> (MonoClassType monoClassType) const noexcept</td></tr>
 <tr class="memdesc:a733e9ee60f7c204b6df951d94d7dbadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">For verifying components exist before proceeding with calling other ECS functions. To be used for serialization mainly.  <br /></td></tr>
 <tr class="separator:a733e9ee60f7c204b6df951d94d7dbadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dbba99413e7c3d6d0438c593be0a592"><td class="memTemplParams" colspan="2">template&lt;typename SystemType &gt; </td></tr>
@@ -207,66 +194,73 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a56712cf77309e37f2d846ef4fbd49418"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a56712cf77309e37f2d846ef4fbd49418">CheckSystemRegistered</a> ()</td></tr>
 <tr class="memdesc:a56712cf77309e37f2d846ef4fbd49418"><td class="mdescLeft">&#160;</td><td class="mdescRight">For verifying system exists.  <br /></td></tr>
 <tr class="separator:a56712cf77309e37f2d846ef4fbd49418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac06e58e3e7916980afad07a049d94523"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#ac06e58e3e7916980afad07a049d94523">CreateEntity</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> existingGUID=<a class="el" href="_g_u_i_d_8h.html#aa34e6525eb1e2dff2f0226eab6b76c58">TEGUID_NULL</a>)</td></tr>
+<tr class="memitem:ac06e58e3e7916980afad07a049d94523"><td class="memItemLeft" align="right" valign="top"><a id="ac06e58e3e7916980afad07a049d94523" name="ac06e58e3e7916980afad07a049d94523"></a>
+<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateEntity</b> (TEguid existingGUID=TEGUID_NULL)</td></tr>
 <tr class="separator:ac06e58e3e7916980afad07a049d94523"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3c5960d53814ebea2ca74e00b325473"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#ad3c5960d53814ebea2ca74e00b325473">FindEntity</a> (<a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a> name) const</td></tr>
+<tr class="memitem:ad3c5960d53814ebea2ca74e00b325473"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#ad3c5960d53814ebea2ca74e00b325473">FindEntity</a> (TEstringview name) const</td></tr>
 <tr class="memdesc:ad3c5960d53814ebea2ca74e00b325473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an entity and returns a reference to the entity. Uses a name string to search. Order is NOT guranteed, so if there are multiple entities with the same name, a random one will be returned.  <br /></td></tr>
 <tr class="separator:ad3c5960d53814ebea2ca74e00b325473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3f844278edf14d5278711b968c6e362"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#af3f844278edf14d5278711b968c6e362">FindEntity</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> entityGUID) const</td></tr>
+<tr class="memitem:af3f844278edf14d5278711b968c6e362"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#af3f844278edf14d5278711b968c6e362">FindEntity</a> (TEguid entityGUID) const</td></tr>
 <tr class="memdesc:af3f844278edf14d5278711b968c6e362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an entity and returns a reference to the entity. Uses a name string to search. Order is NOT guranteed, so if there are multiple entities with the same name, a random one will be returned.  <br /></td></tr>
 <tr class="separator:af3f844278edf14d5278711b968c6e362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a6fc631ae826f7c294465f9ab8c77dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a6a6fc631ae826f7c294465f9ab8c77dd">CopyOverwriteEntity</a> (const <a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> from, <a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> to)</td></tr>
 <tr class="memdesc:a6a6fc631ae826f7c294465f9ab8c77dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">copies all components and data from one entity to another to make the target entity be exactly the same as the source. Any missing components will be added, and any extra components will be removed. does not copy over certain data like identification related data.  <br /></td></tr>
 <tr class="separator:a6a6fc631ae826f7c294465f9ab8c77dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0fc85b2507afedcfb842ae5e148539d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#aa0fc85b2507afedcfb842ae5e148539d">CreateEntityClone</a> (<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> from)</td></tr>
-<tr class="memdesc:aa0fc85b2507afedcfb842ae5e148539d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new entity and copies over all data and components into the new entity.  <br /></td></tr>
+<tr class="memitem:aa0fc85b2507afedcfb842ae5e148539d"><td class="memItemLeft" align="right" valign="top"><a id="aa0fc85b2507afedcfb842ae5e148539d" name="aa0fc85b2507afedcfb842ae5e148539d"></a>
+<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateEntityClone</b> (<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> from)</td></tr>
+<tr class="memdesc:aa0fc85b2507afedcfb842ae5e148539d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new entity and copies over all data and components into the new entity. <br /></td></tr>
 <tr class="separator:aa0fc85b2507afedcfb842ae5e148539d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac58305edbb1f2a89e082b93befc19b53"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="class_t_e_1_1_e_c_s_manager_1_1___entity_data.html">_EntityData</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#ac58305edbb1f2a89e082b93befc19b53">GetAllEntities</a> () const</td></tr>
-<tr class="memdesc:ac58305edbb1f2a89e082b93befc19b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of all entities currently in the ECS. To be used for serialization and <a class="el" href="class_t_e_1_1_scene.html" title="Describes a scene object.">Scene</a> Management Try to avoid using this.  <br /></td></tr>
+<tr class="memitem:ac58305edbb1f2a89e082b93befc19b53"><td class="memItemLeft" align="right" valign="top"><a id="ac58305edbb1f2a89e082b93befc19b53" name="ac58305edbb1f2a89e082b93befc19b53"></a>
+const std::vector&lt; <a class="el" href="class_t_e_1_1_e_c_s_manager_1_1___entity_data.html">_EntityData</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllEntities</b> () const</td></tr>
+<tr class="memdesc:ac58305edbb1f2a89e082b93befc19b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of all entities currently in the ECS. To be used for serialization and <a class="el" href="class_t_e_1_1_scene.html" title="Describes a scene object.">Scene</a> Management Try to avoid using this. <br /></td></tr>
 <tr class="separator:ac58305edbb1f2a89e082b93befc19b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38261c3c922b04aaadde9df1f6bf1e75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a38261c3c922b04aaadde9df1f6bf1e75">DestroyEntity</a> (<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> &amp;entity)</td></tr>
+<tr class="memitem:a38261c3c922b04aaadde9df1f6bf1e75"><td class="memItemLeft" align="right" valign="top"><a id="a38261c3c922b04aaadde9df1f6bf1e75" name="a38261c3c922b04aaadde9df1f6bf1e75"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyEntity</b> (<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> &amp;entity)</td></tr>
 <tr class="separator:a38261c3c922b04aaadde9df1f6bf1e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1df6f079ede8a7b2df121c966e78804b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a1df6f079ede8a7b2df121c966e78804b">DestroyAllGameEntities</a> (bool deleteDontDestroys=false, bool deletePrefabSources=false)</td></tr>
-<tr class="memdesc:a1df6f079ede8a7b2df121c966e78804b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys all entities currently in ECS. Does not destroy entities marked as "Don't destroy on load" or "Prefab Source", unless the relevant params are set to true.  <br /></td></tr>
-<tr class="separator:a1df6f079ede8a7b2df121c966e78804b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a453853cfad06e9d7804d2b9930d91981"><td class="memTemplParams" colspan="2">template&lt;typename ComponentType &gt; </td></tr>
-<tr class="memitem:a453853cfad06e9d7804d2b9930d91981"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; ComponentType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a453853cfad06e9d7804d2b9930d91981">GetComponentArray</a> ()</td></tr>
-<tr class="memdesc:a453853cfad06e9d7804d2b9930d91981"><td class="mdescLeft">&#160;</td><td class="mdescRight">For systems use. Gets the vector of components of a specific type. Systems will loop through this array and do processing on each of these components.  <br /></td></tr>
+<tr class="memitem:ac2b11eb8616c012157d7032b9b3f99ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#ac2b11eb8616c012157d7032b9b3f99ed">DestroyAllGameEntities</a> (bool deleteDontDestroys=false)</td></tr>
+<tr class="memdesc:ac2b11eb8616c012157d7032b9b3f99ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys all entities currently in ECS. Does not destroy entities marked as "Don't destroy on load" or "Prefab Source", unless the relevant params are set to true.  <br /></td></tr>
+<tr class="separator:ac2b11eb8616c012157d7032b9b3f99ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453853cfad06e9d7804d2b9930d91981"><td class="memTemplParams" colspan="2"><a id="a453853cfad06e9d7804d2b9930d91981" name="a453853cfad06e9d7804d2b9930d91981"></a>
+template&lt;typename ComponentType &gt; </td></tr>
+<tr class="memitem:a453853cfad06e9d7804d2b9930d91981"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; ComponentType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetComponentArray</b> ()</td></tr>
+<tr class="memdesc:a453853cfad06e9d7804d2b9930d91981"><td class="mdescLeft">&#160;</td><td class="mdescRight">For systems use. Gets the vector of components of a specific type. Systems will loop through this array and do processing on each of these components. <br /></td></tr>
 <tr class="separator:a453853cfad06e9d7804d2b9930d91981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a845da45a0872297703674adbdc9df564"><td class="memTemplParams" colspan="2">template&lt;typename ComponentType &gt; </td></tr>
-<tr class="memitem:a845da45a0872297703674adbdc9df564"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; ComponentType &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a845da45a0872297703674adbdc9df564">GetComponentArrayRaw</a> ()</td></tr>
-<tr class="memdesc:a845da45a0872297703674adbdc9df564"><td class="mdescLeft">&#160;</td><td class="mdescRight">For systems use. Gets the vector of components of a specific type. Systems will loop through this array and do processing on each of these components. This is the "raw" version, with direct access to the underlying vector. WARNING: Do not rely on components remaining in the same memory locations during each frame. Component order is not guranteed.  <br /></td></tr>
+<tr class="memitem:a845da45a0872297703674adbdc9df564"><td class="memTemplParams" colspan="2"><a id="a845da45a0872297703674adbdc9df564" name="a845da45a0872297703674adbdc9df564"></a>
+template&lt;typename ComponentType &gt; </td></tr>
+<tr class="memitem:a845da45a0872297703674adbdc9df564"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; ComponentType &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetComponentArrayRaw</b> ()</td></tr>
+<tr class="memdesc:a845da45a0872297703674adbdc9df564"><td class="mdescLeft">&#160;</td><td class="mdescRight">For systems use. Gets the vector of components of a specific type. Systems will loop through this array and do processing on each of these components. This is the "raw" version, with direct access to the underlying vector. WARNING: Do not rely on components remaining in the same memory locations during each frame. Component order is not guranteed. <br /></td></tr>
 <tr class="separator:a845da45a0872297703674adbdc9df564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3783d801fdce242318c3f5aa8e5bc981"><td class="memTemplParams" colspan="2">template&lt;typename ComponentType &gt; </td></tr>
-<tr class="memitem:a3783d801fdce242318c3f5aa8e5bc981"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; ComponentType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a3783d801fdce242318c3f5aa8e5bc981">FindComponent</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> componentGuid)</td></tr>
+<tr class="memitem:a3783d801fdce242318c3f5aa8e5bc981"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; ComponentType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a3783d801fdce242318c3f5aa8e5bc981">FindComponent</a> (TEguid componentGuid)</td></tr>
 <tr class="memdesc:a3783d801fdce242318c3f5aa8e5bc981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helps to locate a component of a specific type using its GUID. If no components found, returns a null component.  <br /></td></tr>
 <tr class="separator:a3783d801fdce242318c3f5aa8e5bc981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a884d2fcbfbf5441d5b65b752ae514365"><td class="memTemplParams" colspan="2">template&lt;typename ComponentType &gt; </td></tr>
-<tr class="memitem:a884d2fcbfbf5441d5b65b752ae514365"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_t_e.html#a9764e227ecfb2511f7e0d7cca56e9bf2">ComponentID</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a884d2fcbfbf5441d5b65b752ae514365">EntityToComponentID</a> (<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> entity)</td></tr>
+<tr class="memitem:a884d2fcbfbf5441d5b65b752ae514365"><td class="memTemplItemLeft" align="right" valign="top">ComponentID&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a884d2fcbfbf5441d5b65b752ae514365">EntityToComponentID</a> (<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> entity)</td></tr>
 <tr class="memdesc:a884d2fcbfbf5441d5b65b752ae514365"><td class="mdescLeft">&#160;</td><td class="mdescRight">For systems use. Converts an Entity into the ComponentID that acts as an index for the vector obtained from GetComponentArray&lt;ComponentType&gt;(). Returns ECS_COMPID_NULL if this entity has no such component.  <br /></td></tr>
 <tr class="separator:a884d2fcbfbf5441d5b65b752ae514365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa67c02c457fedf02dceaa9694d63a60"><td class="memTemplParams" colspan="2">template&lt;typename ComponentType &gt; </td></tr>
-<tr class="memitem:afa67c02c457fedf02dceaa9694d63a60"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#afa67c02c457fedf02dceaa9694d63a60">ComponentIDToEntity</a> (<a class="el" href="namespace_t_e.html#a9764e227ecfb2511f7e0d7cca56e9bf2">ComponentID</a> componentID)</td></tr>
+<tr class="memitem:afa67c02c457fedf02dceaa9694d63a60"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#afa67c02c457fedf02dceaa9694d63a60">ComponentIDToEntity</a> (ComponentID componentID)</td></tr>
 <tr class="memdesc:afa67c02c457fedf02dceaa9694d63a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">For systems use. Converts the index of a GetComponentArray&lt;ComponentType&gt;() vector into an Entity reference. Use this entity reference to access another component of this entity if required.  <br /></td></tr>
 <tr class="separator:afa67c02c457fedf02dceaa9694d63a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a101d298b86fc452f084974f3750cc24a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_mono_script.html">MonoScript</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a101d298b86fc452f084974f3750cc24a">GetScriptCompArray</a> (<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> monoClassType)</td></tr>
+<tr class="memitem:a101d298b86fc452f084974f3750cc24a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_mono_script.html">MonoScript</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a101d298b86fc452f084974f3750cc24a">GetScriptCompArray</a> (MonoClassType monoClassType)</td></tr>
 <tr class="memdesc:a101d298b86fc452f084974f3750cc24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">For systems use. Gets the vector of components of a specific type. Systems will loop through this array and do processing on each of these components. NOTE: ComponentType here should ALWAYS be <a class="el" href="class_t_e_1_1_mono_script.html">MonoScript</a>. Due to how files are structured, it is hard to use the <a class="el" href="class_t_e_1_1_mono_script.html">MonoScript</a> class declaration in this scope.  <br /></td></tr>
 <tr class="separator:a101d298b86fc452f084974f3750cc24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a792ae0d04451488f6d86775e87740eaf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_t_e_1_1_mono_script.html">MonoScript</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a792ae0d04451488f6d86775e87740eaf">GetScriptCompArrayRaw</a> (<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> monoClassType)</td></tr>
+<tr class="memitem:a792ae0d04451488f6d86775e87740eaf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_t_e_1_1_mono_script.html">MonoScript</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a792ae0d04451488f6d86775e87740eaf">GetScriptCompArrayRaw</a> (MonoClassType monoClassType)</td></tr>
 <tr class="memdesc:a792ae0d04451488f6d86775e87740eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">For systems use. Gets the vector of components of a specific type. Systems will loop through this array and do processing on each of these components. NOTE: ComponentType here should ALWAYS be <a class="el" href="class_t_e_1_1_mono_script.html">MonoScript</a>. Due to how files are structured, it is hard to use the <a class="el" href="class_t_e_1_1_mono_script.html">MonoScript</a> class declaration in this scope.  <br /></td></tr>
 <tr class="separator:a792ae0d04451488f6d86775e87740eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd68796ea24db69216be63e32529e9d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#aa04f9aaacc82fba13237e41c12320f2c">TEuint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#acd68796ea24db69216be63e32529e9d1">GetScriptStoreVersion</a> () const noexcept</td></tr>
+<tr class="memitem:acd68796ea24db69216be63e32529e9d1"><td class="memItemLeft" align="right" valign="top">TEuint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#acd68796ea24db69216be63e32529e9d1">GetScriptStoreVersion</a> () const noexcept</td></tr>
 <tr class="memdesc:acd68796ea24db69216be63e32529e9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the version of the script storage. On every register or unregister of a script, this value is incremented by 1. Allows systems to track if the script storage has been modified or not.  <br /></td></tr>
 <tr class="separator:acd68796ea24db69216be63e32529e9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc654cabc207b210cb3596c9178e3cd1"><td class="memTemplParams" colspan="2">template&lt;typename SystemType &gt; </td></tr>
-<tr class="memitem:afc654cabc207b210cb3596c9178e3cd1"><td class="memTemplItemLeft" align="right" valign="top">SystemType &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#afc654cabc207b210cb3596c9178e3cd1">GetSystem</a> ()</td></tr>
+<tr class="memitem:afc654cabc207b210cb3596c9178e3cd1"><td class="memTemplParams" colspan="2"><a id="afc654cabc207b210cb3596c9178e3cd1" name="afc654cabc207b210cb3596c9178e3cd1"></a>
+template&lt;typename SystemType &gt; </td></tr>
+<tr class="memitem:afc654cabc207b210cb3596c9178e3cd1"><td class="memTemplItemLeft" align="right" valign="top">SystemType &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetSystem</b> ()</td></tr>
 <tr class="separator:afc654cabc207b210cb3596c9178e3cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_manager.html">TE::IManager</a></td></tr>
-<tr class="memitem:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a789acfdc8c9a177bbf1ae68e25ab0ceb">IManager</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="memitem:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="a789acfdc8c9a177bbf1ae68e25ab0ceb" name="a789acfdc8c9a177bbf1ae68e25ab0ceb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IManager</b> (TEtypeguid typeGUID)</td></tr>
 <tr class="separator:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec0d542ae4fc92c784f908f8eed8457 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a9ec0d542ae4fc92c784f908f8eed8457">~IManager</a> ()</td></tr>
-<tr class="separator:a9ec0d542ae4fc92c784f908f8eed8457 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#ad528f9e9a304c9aa25d472b547242291">LoadManager</a> ()</td></tr>
+<tr class="memitem:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="ad528f9e9a304c9aa25d472b547242291" name="ad528f9e9a304c9aa25d472b547242291"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadManager</b> ()</td></tr>
 <tr class="separator:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5469d89d5f07a6890444e9d20636ac6d inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a5469d89d5f07a6890444e9d20636ac6d">InitManager</a> ()</td></tr>
 <tr class="separator:a5469d89d5f07a6890444e9d20636ac6d inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,98 +268,47 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a441c480911e78b81cf8d717dff6dcd77 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f7904d7af29ec42dc55396b522b375b inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a0f7904d7af29ec42dc55396b522b375b">ExitManager</a> ()</td></tr>
 <tr class="separator:a0f7904d7af29ec42dc55396b522b375b inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#acb0ab41892caa9bed62624156d782b21">GetRunOnlyDuringSimulation</a> ()</td></tr>
+<tr class="memitem:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="acb0ab41892caa9bed62624156d782b21" name="acb0ab41892caa9bed62624156d782b21"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetRunOnlyDuringSimulation</b> ()</td></tr>
 <tr class="separator:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_object.html">TE::IObject</a></td></tr>
-<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#afc331476bf6217fde06f31deb161b97e">IObject</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="afc331476bf6217fde06f31deb161b97e" name="afc331476bf6217fde06f31deb161b97e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IObject</b> (TEtypeguid typeGUID)</td></tr>
 <tr class="separator:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#af1d390c81a0fd71b490d01b93042f81d">~IObject</a> ()</td></tr>
-<tr class="separator:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">GetGUID</a> () const noexcept</td></tr>
+<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aeb49f1d9760159d96df6dca959790745" name="aeb49f1d9760159d96df6dca959790745"></a>
+virtual TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetGUID</b> () const noexcept</td></tr>
 <tr class="separator:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aafeae10a462729d794db5c6da61eba08">SetGUID</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> guid) noexcept</td></tr>
+<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aafeae10a462729d794db5c6da61eba08" name="aafeae10a462729d794db5c6da61eba08"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGUID</b> (TEguid guid) noexcept</td></tr>
 <tr class="separator:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">GetTypeGUID</a> () const noexcept</td></tr>
+<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="a705d4f85c13ce4fc396ad38cfbda7cdf" name="a705d4f85c13ce4fc396ad38cfbda7cdf"></a>
+virtual TEtypeguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeGUID</b> () const noexcept</td></tr>
 <tr class="separator:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac277f85a0cb48b5db57663a38b8bf31b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#ac277f85a0cb48b5db57663a38b8bf31b">CheckInstanceExists</a> ()</td></tr>
+<tr class="memitem:ac277f85a0cb48b5db57663a38b8bf31b"><td class="memItemLeft" align="right" valign="top"><a id="ac277f85a0cb48b5db57663a38b8bf31b" name="ac277f85a0cb48b5db57663a38b8bf31b"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckInstanceExists</b> ()</td></tr>
 <tr class="separator:ac277f85a0cb48b5db57663a38b8bf31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58d790442f7ba3dfe7bcafc578cc3f63"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_t_e_1_1_e_c_s_manager.html">ECSManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a58d790442f7ba3dfe7bcafc578cc3f63">GetInstanceHandle</a> ()</td></tr>
+<tr class="memitem:a58d790442f7ba3dfe7bcafc578cc3f63"><td class="memItemLeft" align="right" valign="top"><a id="a58d790442f7ba3dfe7bcafc578cc3f63" name="a58d790442f7ba3dfe7bcafc578cc3f63"></a>
+static <a class="el" href="class_t_e_1_1_e_c_s_manager.html">ECSManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstanceHandle</b> ()</td></tr>
 <tr class="separator:a58d790442f7ba3dfe7bcafc578cc3f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a8edf6131af8418d6e85fc35d72f24e5e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a8edf6131af8418d6e85fc35d72f24e5e">EntityGUIDToECSIndex</a> = std::unordered_map&lt; <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> &gt;</td></tr>
-<tr class="separator:a8edf6131af8418d6e85fc35d72f24e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2713034a4b035b300b11ef4a30a6ac52"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a2713034a4b035b300b11ef4a30a6ac52">EntityIndexFreeList</a> = std::vector&lt; <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> &gt;</td></tr>
-<tr class="separator:a2713034a4b035b300b11ef4a30a6ac52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cb3c79fe4bd1c89a9e3fe8a6beb9dc4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a2cb3c79fe4bd1c89a9e3fe8a6beb9dc4">EntityStorage</a> = std::vector&lt; <a class="el" href="class_t_e_1_1_e_c_s_manager_1_1___entity_data.html">_EntityData</a> &gt;</td></tr>
-<tr class="separator:a2cb3c79fe4bd1c89a9e3fe8a6beb9dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca193d5ec1189df6b2dd75d82cf71c82"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#aca193d5ec1189df6b2dd75d82cf71c82">ComponentStorage</a> = std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_t_e_1_1_e_c_s_manager_1_1_i_component_container.html">IComponentContainer</a> &gt; &gt;</td></tr>
-<tr class="separator:aca193d5ec1189df6b2dd75d82cf71c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4de53f199f2a23a2d0b680e799ce3f5b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a4de53f199f2a23a2d0b680e799ce3f5b">ScriptInstanceStorage</a> = std::unordered_map&lt; <a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>, std::unique_ptr&lt; <a class="el" href="class_t_e_1_1_e_c_s_manager_1_1_i_component_container.html">IComponentContainer</a> &gt; &gt;</td></tr>
-<tr class="separator:a4de53f199f2a23a2d0b680e799ce3f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d7cd065477db5cedb2ddf7ad0d3aa0e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a0d7cd065477db5cedb2ddf7ad0d3aa0e">SystemStorage</a> = std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_t_e_1_1_i_system.html">ISystem</a> &gt; &gt;</td></tr>
-<tr class="separator:a0d7cd065477db5cedb2ddf7ad0d3aa0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a7f4517892a0c2748ee8118899af63357"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a7f4517892a0c2748ee8118899af63357">_SoftCopyEntityData</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> from, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> to)</td></tr>
-<tr class="separator:a7f4517892a0c2748ee8118899af63357"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5264b3cff7417c9828fc5df8a6504676"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a5264b3cff7417c9828fc5df8a6504676">_DestroyEntity</a> (<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> entityIndex)</td></tr>
-<tr class="separator:a5264b3cff7417c9828fc5df8a6504676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ca13b15d8ee2676f27d90a7c17a79f0"><td class="memTemplParams" colspan="2">template&lt;typename ComponentType &gt; </td></tr>
-<tr class="memitem:a6ca13b15d8ee2676f27d90a7c17a79f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_e_c_s_manager_1_1_component_container.html">ComponentContainer</a>&lt; ComponentType &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a6ca13b15d8ee2676f27d90a7c17a79f0">_GetComponentContainer</a> ()</td></tr>
-<tr class="memdesc:a6ca13b15d8ee2676f27d90a7c17a79f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the component container that stores this specific ComponentType. Prefer using templated version for faster lookup.  <br /></td></tr>
-<tr class="separator:a6ca13b15d8ee2676f27d90a7c17a79f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3aa4bf681a2ee524ff7fdad3afd71a15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_e_c_s_manager_1_1_i_component_container.html">IComponentContainer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a3aa4bf681a2ee524ff7fdad3afd71a15">_GetComponentContainer</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> componentType)</td></tr>
-<tr class="memdesc:a3aa4bf681a2ee524ff7fdad3afd71a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the component container that stores this specific ComponentType. Prefer using templated version for faster lookup.  <br /></td></tr>
-<tr class="separator:a3aa4bf681a2ee524ff7fdad3afd71a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af814da9689047284bf3f4e02705e11bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_e_c_s_manager_1_1_component_container.html">ComponentContainer</a>&lt; <a class="el" href="class_t_e_1_1_mono_script.html">MonoScript</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#af814da9689047284bf3f4e02705e11bd">_GetScriptCompContainer</a> (<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> monoClassType)</td></tr>
-<tr class="memdesc:af814da9689047284bf3f4e02705e11bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the script container that stores this specific script class type.  <br /></td></tr>
-<tr class="separator:af814da9689047284bf3f4e02705e11bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a854a3d2e5b0237a6065accd19d3ed484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a854a3d2e5b0237a6065accd19d3ed484">LoadManager</a> ()</td></tr>
-<tr class="separator:a854a3d2e5b0237a6065accd19d3ed484"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26b11821e1f5cd1a5afd3e2b0e73f10b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a26b11821e1f5cd1a5afd3e2b0e73f10b">InitManager</a> ()</td></tr>
-<tr class="separator:a26b11821e1f5cd1a5afd3e2b0e73f10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4126d1897508a5dc3f72dd245532fede"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a4126d1897508a5dc3f72dd245532fede">UpdateManager</a> ()</td></tr>
-<tr class="separator:a4126d1897508a5dc3f72dd245532fede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31137c4b0851441646046fb88ae44044"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a31137c4b0851441646046fb88ae44044">ExitManager</a> ()</td></tr>
-<tr class="separator:a31137c4b0851441646046fb88ae44044"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a01d2ec4c010b136f244cd21cefa3efc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a8edf6131af8418d6e85fc35d72f24e5e">EntityGUIDToECSIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a01d2ec4c010b136f244cd21cefa3efc8">m_EntityGUIDToECSIndex</a></td></tr>
-<tr class="separator:a01d2ec4c010b136f244cd21cefa3efc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fd7a597b351f108518c3e80fb160166"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a2713034a4b035b300b11ef4a30a6ac52">EntityIndexFreeList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a5fd7a597b351f108518c3e80fb160166">m_EntityFreeList</a></td></tr>
-<tr class="separator:a5fd7a597b351f108518c3e80fb160166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1398d62cf41a2f022dc944e32513a105"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a2cb3c79fe4bd1c89a9e3fe8a6beb9dc4">EntityStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a1398d62cf41a2f022dc944e32513a105">m_EntityStorage</a></td></tr>
-<tr class="separator:a1398d62cf41a2f022dc944e32513a105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f88922057b7cb5453d8dce55f6ee235"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#aca193d5ec1189df6b2dd75d82cf71c82">ComponentStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a8f88922057b7cb5453d8dce55f6ee235">m_ComponentStorage</a></td></tr>
-<tr class="separator:a8f88922057b7cb5453d8dce55f6ee235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab779ec77c9fc2680663e6538b502ae7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a4de53f199f2a23a2d0b680e799ce3f5b">ScriptInstanceStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#ab779ec77c9fc2680663e6538b502ae7d">m_ScriptInstanceStorage</a></td></tr>
-<tr class="separator:ab779ec77c9fc2680663e6538b502ae7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d4dcf6be405c126bd22cdf13801f466"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a0d7cd065477db5cedb2ddf7ad0d3aa0e">SystemStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a1d4dcf6be405c126bd22cdf13801f466">m_SystemStorage</a></td></tr>
-<tr class="separator:a1d4dcf6be405c126bd22cdf13801f466"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad07f4d9ede592ceeecc23b928db8111b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#aa04f9aaacc82fba13237e41c12320f2c">TEuint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#ad07f4d9ede592ceeecc23b928db8111b">m_ScriptStoreVersion</a> = 0</td></tr>
-<tr class="separator:ad07f4d9ede592ceeecc23b928db8111b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:addd44cfecbf6ec39cf87f55ff2608cd1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_t_e_1_1_e_c_s_manager.html">ECSManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#addd44cfecbf6ec39cf87f55ff2608cd1">s_InstanceSingleton</a> = nullptr</td></tr>
-<tr class="separator:addd44cfecbf6ec39cf87f55ff2608cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a3e1914489e4bed4f9f23cdeab34a43dc">Engine</a></td></tr>
+<tr class="memitem:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memItemLeft" align="right" valign="top"><a id="a3e1914489e4bed4f9f23cdeab34a43dc" name="a3e1914489e4bed4f9f23cdeab34a43dc"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Engine</b></td></tr>
 <tr class="separator:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a80e4342d8290a92a00552939d649b8"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a4a80e4342d8290a92a00552939d649b8">EntityRef</a></td></tr>
+<tr class="memitem:a4a80e4342d8290a92a00552939d649b8"><td class="memItemLeft" align="right" valign="top"><a id="a4a80e4342d8290a92a00552939d649b8" name="a4a80e4342d8290a92a00552939d649b8"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>EntityRef</b></td></tr>
 <tr class="separator:a4a80e4342d8290a92a00552939d649b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafb991a55c5d724f07e00b1421f03ae6"><td class="memTemplParams" colspan="2">template&lt;typename ComponentType &gt; </td></tr>
-<tr class="memitem:aafb991a55c5d724f07e00b1421f03ae6"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#aafb991a55c5d724f07e00b1421f03ae6">ComponentRef</a></td></tr>
+<tr class="memitem:aafb991a55c5d724f07e00b1421f03ae6"><td class="memTemplParams" colspan="2"><a id="aafb991a55c5d724f07e00b1421f03ae6" name="aafb991a55c5d724f07e00b1421f03ae6"></a>
+template&lt;typename ComponentType &gt; </td></tr>
+<tr class="memitem:aafb991a55c5d724f07e00b1421f03ae6"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ComponentRef</b></td></tr>
 <tr class="separator:aafb991a55c5d724f07e00b1421f03ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5967f00b805681f810a40693fd7c07"><td class="memItemLeft" align="right" valign="top"><a id="a8b5967f00b805681f810a40693fd7c07" name="a8b5967f00b805681f810a40693fd7c07"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>PrefabManager</b></td></tr>
+<tr class="separator:a8b5967f00b805681f810a40693fd7c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main interface for ECS related things</p>
@@ -373,140 +316,7 @@ Friends</h2></td></tr>
 <p>2. Creation/deletion of Entities and Entity related manipulation (Cloning, copying)</p>
 <p>3. Getting component data (e.g. array of components) for Systems to use</p>
 <p>4, Standard Manager things (initmanager etc)</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a8edf6131af8418d6e85fc35d72f24e5e" name="a8edf6131af8418d6e85fc35d72f24e5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8edf6131af8418d6e85fc35d72f24e5e">&#9670;&#160;</a></span>EntityGUIDToECSIndex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="class_t_e_1_1_e_c_s_manager.html#a8edf6131af8418d6e85fc35d72f24e5e">TE::ECSManager::EntityGUIDToECSIndex</a> =  std::unordered_map&lt;<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2713034a4b035b300b11ef4a30a6ac52" name="a2713034a4b035b300b11ef4a30a6ac52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2713034a4b035b300b11ef4a30a6ac52">&#9670;&#160;</a></span>EntityIndexFreeList</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="class_t_e_1_1_e_c_s_manager.html#a2713034a4b035b300b11ef4a30a6ac52">TE::ECSManager::EntityIndexFreeList</a> =  std::vector&lt;<a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2cb3c79fe4bd1c89a9e3fe8a6beb9dc4" name="a2cb3c79fe4bd1c89a9e3fe8a6beb9dc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cb3c79fe4bd1c89a9e3fe8a6beb9dc4">&#9670;&#160;</a></span>EntityStorage</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="class_t_e_1_1_e_c_s_manager.html#a2cb3c79fe4bd1c89a9e3fe8a6beb9dc4">TE::ECSManager::EntityStorage</a> =  std::vector&lt;<a class="el" href="class_t_e_1_1_e_c_s_manager_1_1___entity_data.html">_EntityData</a>&gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aca193d5ec1189df6b2dd75d82cf71c82" name="aca193d5ec1189df6b2dd75d82cf71c82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca193d5ec1189df6b2dd75d82cf71c82">&#9670;&#160;</a></span>ComponentStorage</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="class_t_e_1_1_e_c_s_manager.html#aca193d5ec1189df6b2dd75d82cf71c82">TE::ECSManager::ComponentStorage</a> =  std::vector&lt;std::unique_ptr&lt;<a class="el" href="class_t_e_1_1_e_c_s_manager_1_1_i_component_container.html">IComponentContainer</a>&gt; &gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4de53f199f2a23a2d0b680e799ce3f5b" name="a4de53f199f2a23a2d0b680e799ce3f5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4de53f199f2a23a2d0b680e799ce3f5b">&#9670;&#160;</a></span>ScriptInstanceStorage</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="class_t_e_1_1_e_c_s_manager.html#a4de53f199f2a23a2d0b680e799ce3f5b">TE::ECSManager::ScriptInstanceStorage</a> =  std::unordered_map&lt;<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>, std::unique_ptr&lt;<a class="el" href="class_t_e_1_1_e_c_s_manager_1_1_i_component_container.html">IComponentContainer</a>&gt; &gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0d7cd065477db5cedb2ddf7ad0d3aa0e" name="a0d7cd065477db5cedb2ddf7ad0d3aa0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d7cd065477db5cedb2ddf7ad0d3aa0e">&#9670;&#160;</a></span>SystemStorage</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="class_t_e_1_1_e_c_s_manager.html#a0d7cd065477db5cedb2ddf7ad0d3aa0e">TE::ECSManager::SystemStorage</a> =  std::vector&lt;std::unique_ptr&lt;<a class="el" href="class_t_e_1_1_i_system.html">ISystem</a>&gt; &gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a89d760701eec7002c4eed8fdbcbba781" name="a89d760701eec7002c4eed8fdbcbba781"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89d760701eec7002c4eed8fdbcbba781">&#9670;&#160;</a></span>ECSManager()</h2>
 
@@ -527,92 +337,7 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ad0711b952aab641ef95a6657a741389e" name="ad0711b952aab641ef95a6657a741389e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0711b952aab641ef95a6657a741389e">&#9670;&#160;</a></span>~ECSManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TE::ECSManager::~ECSManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac277f85a0cb48b5db57663a38b8bf31b" name="ac277f85a0cb48b5db57663a38b8bf31b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac277f85a0cb48b5db57663a38b8bf31b">&#9670;&#160;</a></span>CheckInstanceExists()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::ECSManager::CheckInstanceExists </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a58d790442f7ba3dfe7bcafc578cc3f63" name="a58d790442f7ba3dfe7bcafc578cc3f63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58d790442f7ba3dfe7bcafc578cc3f63">&#9670;&#160;</a></span>GetInstanceHandle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_e_c_s_manager.html">ECSManager</a> &amp; TE::ECSManager::GetInstanceHandle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a87a16b53f090413a5e28493ac2547b78" name="a87a16b53f090413a5e28493ac2547b78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87a16b53f090413a5e28493ac2547b78">&#9670;&#160;</a></span>RegisterComponent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ComponentType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ECSManager::RegisterComponent</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Registers a component to the ECS system. </p>
-
-</div>
-</div>
 <a id="acced294c81f04761c7764007c3e1d1e7" name="acced294c81f04761c7764007c3e1d1e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acced294c81f04761c7764007c3e1d1e7">&#9670;&#160;</a></span>CheckComponentRegistered() <span class="overload">[1/2]</span></h2>
 
@@ -647,7 +372,7 @@ template&lt;typename ComponentType &gt; </div>
         <tr>
           <td class="memname">bool TE::ECSManager::CheckComponentRegistered </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td>
+          <td class="paramtype">TEtypeguid&#160;</td>
           <td class="paramname"><em>componentType</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -672,7 +397,7 @@ template&lt;typename ComponentType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> &gt; &amp; TE::ECSManager::GetRegisteredComponents </td>
+          <td class="memname">const std::vector&lt; TEtypeguid &gt; &amp; TE::ECSManager::GetRegisteredComponents </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -694,7 +419,7 @@ template&lt;typename ComponentType &gt; </div>
         <tr>
           <td class="memname">void TE::ECSManager::RegisterScriptComponent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>&#160;</td>
+          <td class="paramtype">MonoClassType&#160;</td>
           <td class="paramname"><em>monoClassType</em></td><td>)</td>
           <td></td>
         </tr>
@@ -720,7 +445,7 @@ template&lt;typename ComponentType &gt; </div>
         <tr>
           <td class="memname">void TE::ECSManager::UnregisterScriptComponent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>&#160;</td>
+          <td class="paramtype">MonoClassType&#160;</td>
           <td class="paramname"><em>monoClassType</em></td><td>)</td>
           <td></td>
         </tr>
@@ -737,25 +462,6 @@ template&lt;typename ComponentType &gt; </div>
 
 </div>
 </div>
-<a id="a51b0cf13db947cb731e2ed1d531efd63" name="a51b0cf13db947cb731e2ed1d531efd63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51b0cf13db947cb731e2ed1d531efd63">&#9670;&#160;</a></span>UnregisterAllScriptComponents()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ECSManager::UnregisterAllScriptComponents </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unregisters all script components from ECS. </p>
-
-</div>
-</div>
 <a id="a22218f6abcde06eaab7dc07a147b3a67" name="a22218f6abcde06eaab7dc07a147b3a67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22218f6abcde06eaab7dc07a147b3a67">&#9670;&#160;</a></span>GetRegisteredScripts()</h2>
 
@@ -763,7 +469,7 @@ template&lt;typename ComponentType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; <a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> &gt; &amp; TE::ECSManager::GetRegisteredScripts </td>
+          <td class="memname">const std::vector&lt; MonoClassType &gt; &amp; TE::ECSManager::GetRegisteredScripts </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -788,7 +494,7 @@ template&lt;typename ComponentType &gt; </div>
         <tr>
           <td class="memname">bool TE::ECSManager::CheckScriptRegistered </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>&#160;</td>
+          <td class="paramtype">MonoClassType&#160;</td>
           <td class="paramname"><em>monoClassType</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -830,6 +536,12 @@ template&lt;typename SystemType &gt; </div>
 </div><div class="memdoc">
 
 <p>Registers a system to the ECS system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">runOnlyDuringSimulation</td><td>Determines if system is reliant on simulation. If TRUE, everytime simulation starts/stops, Load/Init/Exit system will be called. If FALSE, Load, Init and Exit will be only called once.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -858,24 +570,6 @@ template&lt;typename SystemType &gt; </div>
 
 </div>
 </div>
-<a id="ac06e58e3e7916980afad07a049d94523" name="ac06e58e3e7916980afad07a049d94523"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac06e58e3e7916980afad07a049d94523">&#9670;&#160;</a></span>CreateEntity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> TE::ECSManager::CreateEntity </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
-          <td class="paramname"><em>existingGUID</em> = <code><a class="el" href="_g_u_i_d_8h.html#aa34e6525eb1e2dff2f0226eab6b76c58">TEGUID_NULL</a></code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ad3c5960d53814ebea2ca74e00b325473" name="ad3c5960d53814ebea2ca74e00b325473"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3c5960d53814ebea2ca74e00b325473">&#9670;&#160;</a></span>FindEntity() <span class="overload">[1/2]</span></h2>
 
@@ -885,7 +579,7 @@ template&lt;typename SystemType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> TE::ECSManager::FindEntity </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a>&#160;</td>
+          <td class="paramtype">TEstringview&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -911,7 +605,7 @@ template&lt;typename SystemType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> TE::ECSManager::FindEntity </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramtype">TEguid&#160;</td>
           <td class="paramname"><em>entityGUID</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -960,65 +654,8 @@ template&lt;typename SystemType &gt; </div>
 
 </div>
 </div>
-<a id="aa0fc85b2507afedcfb842ae5e148539d" name="aa0fc85b2507afedcfb842ae5e148539d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0fc85b2507afedcfb842ae5e148539d">&#9670;&#160;</a></span>CreateEntityClone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> TE::ECSManager::CreateEntityClone </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td>
-          <td class="paramname"><em>from</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates a new entity and copies over all data and components into the new entity. </p>
-
-</div>
-</div>
-<a id="ac58305edbb1f2a89e082b93befc19b53" name="ac58305edbb1f2a89e082b93befc19b53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac58305edbb1f2a89e082b93befc19b53">&#9670;&#160;</a></span>GetAllEntities()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::vector&lt; <a class="el" href="class_t_e_1_1_e_c_s_manager_1_1___entity_data.html">ECSManager::_EntityData</a> &gt; &amp; TE::ECSManager::GetAllEntities </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the list of all entities currently in the ECS. To be used for serialization and <a class="el" href="class_t_e_1_1_scene.html" title="Describes a scene object.">Scene</a> Management Try to avoid using this. </p>
-
-</div>
-</div>
-<a id="a38261c3c922b04aaadde9df1f6bf1e75" name="a38261c3c922b04aaadde9df1f6bf1e75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38261c3c922b04aaadde9df1f6bf1e75">&#9670;&#160;</a></span>DestroyEntity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ECSManager::DestroyEntity </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> &amp;&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1df6f079ede8a7b2df121c966e78804b" name="a1df6f079ede8a7b2df121c966e78804b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1df6f079ede8a7b2df121c966e78804b">&#9670;&#160;</a></span>DestroyAllGameEntities()</h2>
+<a id="ac2b11eb8616c012157d7032b9b3f99ed" name="ac2b11eb8616c012157d7032b9b3f99ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2b11eb8616c012157d7032b9b3f99ed">&#9670;&#160;</a></span>DestroyAllGameEntities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1027,18 +664,8 @@ template&lt;typename SystemType &gt; </div>
           <td class="memname">void TE::ECSManager::DestroyAllGameEntities </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>deleteDontDestroys</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>deleteDontDestroys</em> = <code>false</code></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>deletePrefabSources</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1054,193 +681,6 @@ template&lt;typename SystemType &gt; </div>
 
 </div>
 </div>
-<a id="a7f4517892a0c2748ee8118899af63357" name="a7f4517892a0c2748ee8118899af63357"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f4517892a0c2748ee8118899af63357">&#9670;&#160;</a></span>_SoftCopyEntityData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ECSManager::_SoftCopyEntityData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
-          <td class="paramname"><em>from</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
-          <td class="paramname"><em>to</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5264b3cff7417c9828fc5df8a6504676" name="a5264b3cff7417c9828fc5df8a6504676"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5264b3cff7417c9828fc5df8a6504676">&#9670;&#160;</a></span>_DestroyEntity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ECSManager::_DestroyEntity </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
-          <td class="paramname"><em>entityIndex</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6ca13b15d8ee2676f27d90a7c17a79f0" name="a6ca13b15d8ee2676f27d90a7c17a79f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ca13b15d8ee2676f27d90a7c17a79f0">&#9670;&#160;</a></span>_GetComponentContainer() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ComponentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_e_c_s_manager_1_1_component_container.html">ECSManager::ComponentContainer</a>&lt; ComponentType &gt; &amp; TE::ECSManager::_GetComponentContainer</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the component container that stores this specific ComponentType. Prefer using templated version for faster lookup. </p>
-
-</div>
-</div>
-<a id="a3aa4bf681a2ee524ff7fdad3afd71a15" name="a3aa4bf681a2ee524ff7fdad3afd71a15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3aa4bf681a2ee524ff7fdad3afd71a15">&#9670;&#160;</a></span>_GetComponentContainer() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_e_c_s_manager_1_1_i_component_container.html">ECSManager::IComponentContainer</a> &amp; TE::ECSManager::_GetComponentContainer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td>
-          <td class="paramname"><em>componentType</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the component container that stores this specific ComponentType. Prefer using templated version for faster lookup. </p>
-
-</div>
-</div>
-<a id="af814da9689047284bf3f4e02705e11bd" name="af814da9689047284bf3f4e02705e11bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af814da9689047284bf3f4e02705e11bd">&#9670;&#160;</a></span>_GetScriptCompContainer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_e_c_s_manager_1_1_component_container.html">ECSManager::ComponentContainer</a>&lt; <a class="el" href="class_t_e_1_1_mono_script.html">MonoScript</a> &gt; &amp; TE::ECSManager::_GetScriptCompContainer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>&#160;</td>
-          <td class="paramname"><em>monoClassType</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the script container that stores this specific script class type. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">monoClassType</td><td>Unique Identifier to identify mono classes</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Script container that stores a specific type of Script class</dd></dl>
-
-</div>
-</div>
-<a id="a453853cfad06e9d7804d2b9930d91981" name="a453853cfad06e9d7804d2b9930d91981"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a453853cfad06e9d7804d2b9930d91981">&#9670;&#160;</a></span>GetComponentArray()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ComponentType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; ComponentType &gt; &gt; TE::ECSManager::GetComponentArray</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>For systems use. Gets the vector of components of a specific type. Systems will loop through this array and do processing on each of these components. </p>
-
-</div>
-</div>
-<a id="a845da45a0872297703674adbdc9df564" name="a845da45a0872297703674adbdc9df564"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a845da45a0872297703674adbdc9df564">&#9670;&#160;</a></span>GetComponentArrayRaw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ComponentType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; ComponentType &gt; &amp; TE::ECSManager::GetComponentArrayRaw</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>For systems use. Gets the vector of components of a specific type. Systems will loop through this array and do processing on each of these components. This is the "raw" version, with direct access to the underlying vector. WARNING: Do not rely on components remaining in the same memory locations during each frame. Component order is not guranteed. </p>
-
-</div>
-</div>
 <a id="a3783d801fdce242318c3f5aa8e5bc981" name="a3783d801fdce242318c3f5aa8e5bc981"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3783d801fdce242318c3f5aa8e5bc981">&#9670;&#160;</a></span>FindComponent()</h2>
 
@@ -1252,7 +692,7 @@ template&lt;typename ComponentType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; ComponentType &gt; TE::ECSManager::FindComponent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td>
+          <td class="paramtype">TEguid&#160;</td>
           <td class="paramname"><em>componentGuid</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1279,7 +719,7 @@ template&lt;typename ComponentType &gt; </div>
 template&lt;typename ComponentType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_t_e.html#a9764e227ecfb2511f7e0d7cca56e9bf2">ComponentID</a> TE::ECSManager::EntityToComponentID </td>
+          <td class="memname">ComponentID TE::ECSManager::EntityToComponentID </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td>
           <td class="paramname"><em>entity</em></td><td>)</td>
@@ -1304,7 +744,7 @@ template&lt;typename ComponentType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> TE::ECSManager::ComponentIDToEntity </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_t_e.html#a9764e227ecfb2511f7e0d7cca56e9bf2">ComponentID</a>&#160;</td>
+          <td class="paramtype">ComponentID&#160;</td>
           <td class="paramname"><em>componentID</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1325,7 +765,7 @@ template&lt;typename ComponentType &gt; </div>
         <tr>
           <td class="memname">std::vector&lt; <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_mono_script.html">MonoScript</a> &gt; &gt; TE::ECSManager::GetScriptCompArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>&#160;</td>
+          <td class="paramtype">MonoClassType&#160;</td>
           <td class="paramname"><em>monoClassType</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1352,7 +792,7 @@ template&lt;typename ComponentType &gt; </div>
         <tr>
           <td class="memname">std::vector&lt; <a class="el" href="class_t_e_1_1_mono_script.html">MonoScript</a> &gt; &amp; TE::ECSManager::GetScriptCompArrayRaw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>&#160;</td>
+          <td class="paramtype">MonoClassType&#160;</td>
           <td class="paramname"><em>monoClassType</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1380,7 +820,7 @@ template&lt;typename ComponentType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#aa04f9aaacc82fba13237e41c12320f2c">TEuint32</a> TE::ECSManager::GetScriptStoreVersion </td>
+          <td class="memname">TEuint32 TE::ECSManager::GetScriptStoreVersion </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1395,376 +835,6 @@ template&lt;typename ComponentType &gt; </div>
 
 <p>Gets the version of the script storage. On every register or unregister of a script, this value is incremented by 1. Allows systems to track if the script storage has been modified or not. </p>
 <dl class="section return"><dt>Returns</dt><dd>Script store version</dd></dl>
-
-</div>
-</div>
-<a id="afc654cabc207b210cb3596c9178e3cd1" name="afc654cabc207b210cb3596c9178e3cd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc654cabc207b210cb3596c9178e3cd1">&#9670;&#160;</a></span>GetSystem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SystemType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">SystemType &amp; TE::ECSManager::GetSystem</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a854a3d2e5b0237a6065accd19d3ed484" name="a854a3d2e5b0237a6065accd19d3ed484"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a854a3d2e5b0237a6065accd19d3ed484">&#9670;&#160;</a></span>LoadManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ECSManager::LoadManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#ad528f9e9a304c9aa25d472b547242291">TE::IManager</a>.</p>
-
-</div>
-</div>
-<a id="a26b11821e1f5cd1a5afd3e2b0e73f10b" name="a26b11821e1f5cd1a5afd3e2b0e73f10b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26b11821e1f5cd1a5afd3e2b0e73f10b">&#9670;&#160;</a></span>InitManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ECSManager::InitManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a5469d89d5f07a6890444e9d20636ac6d">TE::IManager</a>.</p>
-
-</div>
-</div>
-<a id="a4126d1897508a5dc3f72dd245532fede" name="a4126d1897508a5dc3f72dd245532fede"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4126d1897508a5dc3f72dd245532fede">&#9670;&#160;</a></span>UpdateManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ECSManager::UpdateManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a441c480911e78b81cf8d717dff6dcd77">TE::IManager</a>.</p>
-
-</div>
-</div>
-<a id="a31137c4b0851441646046fb88ae44044" name="a31137c4b0851441646046fb88ae44044"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31137c4b0851441646046fb88ae44044">&#9670;&#160;</a></span>ExitManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ECSManager::ExitManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a0f7904d7af29ec42dc55396b522b375b">TE::IManager</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a3e1914489e4bed4f9f23cdeab34a43dc" name="a3e1914489e4bed4f9f23cdeab34a43dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e1914489e4bed4f9f23cdeab34a43dc">&#9670;&#160;</a></span>Engine</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_t_e_1_1_engine.html">Engine</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4a80e4342d8290a92a00552939d649b8" name="a4a80e4342d8290a92a00552939d649b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a80e4342d8290a92a00552939d649b8">&#9670;&#160;</a></span>EntityRef</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aafb991a55c5d724f07e00b1421f03ae6" name="aafb991a55c5d724f07e00b1421f03ae6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafb991a55c5d724f07e00b1421f03ae6">&#9670;&#160;</a></span>ComponentRef</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ComponentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="addd44cfecbf6ec39cf87f55ff2608cd1" name="addd44cfecbf6ec39cf87f55ff2608cd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addd44cfecbf6ec39cf87f55ff2608cd1">&#9670;&#160;</a></span>s_InstanceSingleton</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_e_c_s_manager.html">ECSManager</a> * TE::ECSManager::s_InstanceSingleton = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a01d2ec4c010b136f244cd21cefa3efc8" name="a01d2ec4c010b136f244cd21cefa3efc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01d2ec4c010b136f244cd21cefa3efc8">&#9670;&#160;</a></span>m_EntityGUIDToECSIndex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a8edf6131af8418d6e85fc35d72f24e5e">EntityGUIDToECSIndex</a> TE::ECSManager::m_EntityGUIDToECSIndex</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5fd7a597b351f108518c3e80fb160166" name="a5fd7a597b351f108518c3e80fb160166"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fd7a597b351f108518c3e80fb160166">&#9670;&#160;</a></span>m_EntityFreeList</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a2713034a4b035b300b11ef4a30a6ac52">EntityIndexFreeList</a> TE::ECSManager::m_EntityFreeList</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1398d62cf41a2f022dc944e32513a105" name="a1398d62cf41a2f022dc944e32513a105"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1398d62cf41a2f022dc944e32513a105">&#9670;&#160;</a></span>m_EntityStorage</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a2cb3c79fe4bd1c89a9e3fe8a6beb9dc4">EntityStorage</a> TE::ECSManager::m_EntityStorage</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8f88922057b7cb5453d8dce55f6ee235" name="a8f88922057b7cb5453d8dce55f6ee235"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f88922057b7cb5453d8dce55f6ee235">&#9670;&#160;</a></span>m_ComponentStorage</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#aca193d5ec1189df6b2dd75d82cf71c82">ComponentStorage</a> TE::ECSManager::m_ComponentStorage</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab779ec77c9fc2680663e6538b502ae7d" name="ab779ec77c9fc2680663e6538b502ae7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab779ec77c9fc2680663e6538b502ae7d">&#9670;&#160;</a></span>m_ScriptInstanceStorage</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a4de53f199f2a23a2d0b680e799ce3f5b">ScriptInstanceStorage</a> TE::ECSManager::m_ScriptInstanceStorage</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1d4dcf6be405c126bd22cdf13801f466" name="a1d4dcf6be405c126bd22cdf13801f466"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d4dcf6be405c126bd22cdf13801f466">&#9670;&#160;</a></span>m_SystemStorage</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_e_c_s_manager.html#a0d7cd065477db5cedb2ddf7ad0d3aa0e">SystemStorage</a> TE::ECSManager::m_SystemStorage</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad07f4d9ede592ceeecc23b928db8111b" name="ad07f4d9ede592ceeecc23b928db8111b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad07f4d9ede592ceeecc23b928db8111b">&#9670;&#160;</a></span>m_ScriptStoreVersion</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#aa04f9aaacc82fba13237e41c12320f2c">TEuint32</a> TE::ECSManager::m_ScriptStoreVersion = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

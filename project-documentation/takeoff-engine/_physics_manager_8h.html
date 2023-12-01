@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('_physics_manager_8h.html',''); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">PhysicsManager.h File Reference</div></div>
@@ -141,12 +141,40 @@ $(document).ready(function(){initNavTree('_physics_manager_8h.html',''); initRes
 <div class="textblock"><code>#include &quot;<a class="el" href="_defines_8h_source.html">Defines.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_manager_8h_source.html">IManager.h</a>&quot;</code><br />
 <code>#include &lt;glm/vec3.hpp&gt;</code><br />
-<code>#include &quot;<a class="el" href="_rigidbody_8h_source.html">ECSComponents/Rigidbody.h</a>&quot;</code><br />
+<code>#include &lt;glm/gtc/quaternion.hpp&gt;</code><br />
+<code>#include &lt;Jolt/Jolt.h&gt;</code><br />
+<code>#include &lt;Jolt/Core/TempAllocator.h&gt;</code><br />
+<code>#include &lt;Jolt/Core/JobSystemThreadPool.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/PhysicsSystem.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/PhysicsSettings.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Body/BodyID.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Body/BodyManager.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/ContactListener.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/ObjectLayer.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/BroadPhase/BroadPhaseLayer.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/BroadPhase/BroadPhase.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/RayCast.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/CastResult.h&gt;</code><br />
+<code>#include &lt;Jolt/Physics/Collision/CollisionCollectorImpl.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_rigidbody_8h_source.html">ECSComponents/Rigidbody.h</a>&quot;</code><br />
+<code>#include &quot;ECSComponents/Mesh.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_collider_8h_source.html">ECSComponents/Collider.h</a>&quot;</code><br />
 </div>
 <p><a href="_physics_manager_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_t_e_contact_listener.html">TE::TEContactListener</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ContactListener (CL) listens for collisions and call the appropriate functions as defined. Typically, the CL will be attached to an entity that has a collider. A CL is not necessary per se, but it'll likely be needed for collision response.  <a href="class_t_e_1_1_t_e_contact_listener.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_object_layer_pair_filter_impl.html">TE::ObjectLayerPairFilterImpl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that determines if two object layers can collide.  <a href="class_t_e_1_1_object_layer_pair_filter_impl.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_b_p_layer_interface_impl.html">TE::BPLayerInterfaceImpl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_object_vs_broad_phase_layer_filter_impl.html">TE::ObjectVsBroadPhaseLayerFilterImpl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that determines if an object layer can collide with a broadphase layer.  <a href="class_t_e_1_1_object_vs_broad_phase_layer_filter_impl.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_physics_manager.html">TE::PhysicsManager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -156,26 +184,19 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespace_t_e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declarations for the <a class="el" href="class_t_e_1_1_e_c_s_manager.html">ECSManager</a> class, <a class="el" href="class_t_e_1_1_entity_ref.html" title="Holds a reference to an entity. Does not directly contain data of the entity. To get an entity,...">EntityRef</a> class, <a class="el" href="class_t_e_1_1_i_component.html" title="Base class of every ECS Component. Provides some generic functions to.">IComponent</a> and <a class="el" href="class_t_e_1_1_i_system.html" title="Base class of every ECS Component.">ISystem</a> classes <br  />
  All content (c) 2022 DigiPen Institute of Technology Singapore. All rights reserved. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_t_e_1_1_layers"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e_1_1_layers.html">TE::Layers</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ae772f8d8c812fef11785f416011f443b"><td class="memItemLeft" align="right" valign="top">constexpr glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e.html#ae772f8d8c812fef11785f416011f443b">TE::GRAVITY</a> = glm::vec3(0.0f, -9.81f, 0.0f)</td></tr>
+<tr class="memitem:ae772f8d8c812fef11785f416011f443b"><td class="memItemLeft" align="right" valign="top"><a id="ae772f8d8c812fef11785f416011f443b" name="ae772f8d8c812fef11785f416011f443b"></a>
+constexpr glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>TE::GRAVITY</b> = glm::vec3(0.0f, -9.81f, 0.0f)</td></tr>
 <tr class="separator:ae772f8d8c812fef11785f416011f443b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08d516c3ce616d9c4708ec05979b9b17"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="_defines_8h.html#af700743df5693dba09a2325ae433a888">TEuint16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e_1_1_layers.html#a08d516c3ce616d9c4708ec05979b9b17">TE::Layers::NON_MOVING</a> = 0</td></tr>
-<tr class="separator:a08d516c3ce616d9c4708ec05979b9b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0af1990d32d6a174601bfbc4a2ff584"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="_defines_8h.html#af700743df5693dba09a2325ae433a888">TEuint16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e_1_1_layers.html#af0af1990d32d6a174601bfbc4a2ff584">TE::Layers::MOVING</a> = 1</td></tr>
-<tr class="separator:af0af1990d32d6a174601bfbc4a2ff584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2732b3860c9e4d797c9030c12b042a1"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="_defines_8h.html#af700743df5693dba09a2325ae433a888">TEuint16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e_1_1_layers.html#ae2732b3860c9e4d797c9030c12b042a1">TE::Layers::NUM_LAYERS</a> = 2</td></tr>
-<tr class="separator:ae2732b3860c9e4d797c9030c12b042a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Physics manager for handling physics &amp; rigidbody components. <br  />
  All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved. </p>
 <pre>
 </pre><pre>  <b>File:</b>    <a class="el" href="_physics_manager_8h.html" title="Physics manager for handling physics &amp; rigidbody components.   All content (c) 2023 DigiPen Institute...">PhysicsManager.h</a></pre><pre>
-</pre><pre>  <b>Authors:</b> Anderson Phua (%)</pre><pre>
+</pre><pre>  <b>Authors:</b> Anderson Phua (100%)</pre><pre>
 </pre><pre>  <b>Emails:</b>  <a href="mailto:a.phua@digipen.edu">a.phua@digipen.edu</a></pre><pre>
 </pre><pre>  <b>Date:</b>    05/09/2023</pre><pre>
 </pre> </div></div><!-- contents -->

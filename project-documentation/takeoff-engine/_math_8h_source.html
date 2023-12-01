@@ -130,25 +130,25 @@ $(document).ready(function(){initNavTree('_math_8h_source.html',''); initResizab
   <div class="headertitle"><div class="title">Math.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_math_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><a class="code hl_define" href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>TE_SUPRESS_START</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;glm/glm.hpp&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;glm/gtx/norm.hpp&gt;</span> <span class="comment">// glm::length2</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;glm/gtx/vector_angle.hpp&gt;</span> <span class="comment">// glm::angle</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;glm/gtx/projection.hpp&gt;</span> <span class="comment">// glm::proj</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//#include &lt;glm/gtc/noise.hpp&gt; // glm::perlin</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><a class="code hl_define" href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>TE_SUPRESS_END</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_str_8h.html">Helper/Str.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_binding.html">Binding</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>Binding {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">template</span>&lt;glm::length_t DataCount,</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">typename</span> DataType = float,</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        glm::qualifier GLMQualifier = glm::qualifier::packed_highp&gt;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespace_binding.html#a538f1b49db2212468df35a0b907618ea">   19</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_binding.html#a538f1b49db2212468df35a0b907618ea">BindVectorFuncs</a>() {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> BindVectorFuncs() {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_t_e.html">TE</a>;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">const</span> std::string val = std::to_string(DataCount);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a> valSV = val;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">const</span> TEstringview valSV = val;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        mono_add_internal_call(<a class="code hl_function" href="namespace_t_e.html#a075cefe26b58ca1c41263bff3253f406">Str_Concat</a>(<span class="stringliteral">&quot;TakeoffEngine.Vec&quot;</span>, valSV, <span class="stringliteral">&quot;::Length&quot;</span>).c_str(),</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                               <span class="keyword">static_cast&lt;</span>DataType(*)</div>
@@ -229,7 +229,7 @@ $(document).ready(function(){initNavTree('_math_8h_source.html',''); initResizab
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> DataType = float,</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        glm::qualifier GLMQualifier = glm::qualifier::packed_highp&gt;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="namespace_binding.html#a93b9125bca6dd89ae60d541d1aec9a3c">  104</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_binding.html#a93b9125bca6dd89ae60d541d1aec9a3c">BindMatrixFuncs</a>() {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">void</span> BindMatrixFuncs() {</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        mono_add_internal_call(<span class="stringliteral">&quot;TakeoffEngine.Mat3::Determinant&quot;</span>,</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                               <span class="keyword">static_cast&lt;</span>DataType(*)</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                               (glm::tmat3x3&lt;DataType&gt; const&amp;)<span class="keyword">&gt;</span></div>
@@ -256,21 +256,15 @@ $(document).ready(function(){initNavTree('_math_8h_source.html',''); initResizab
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                               (&amp;glm::transpose&lt;4, 4, DataType, GLMQualifier&gt;));</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
-<div class="ttc" id="a_defines_8h_html_a862ca704ee5aa8d744426b35e4fe23c5"><div class="ttname"><a href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a></div><div class="ttdeci">std::string_view TEstringview</div><div class="ttdef"><b>Definition:</b> Defines.h:105</div></div>
 <div class="ttc" id="a_str_8h_html"><div class="ttname"><a href="_str_8h.html">Str.h</a></div><div class="ttdoc">Contains helper code related to strings.   All content (c) 2023 DigiPen Institute of Technology Singa...</div></div>
-<div class="ttc" id="anamespace_binding_html"><div class="ttname"><a href="namespace_binding.html">Binding</a></div><div class="ttdef"><b>Definition:</b> Camera.h:6</div></div>
-<div class="ttc" id="anamespace_binding_html_a538f1b49db2212468df35a0b907618ea"><div class="ttname"><a href="namespace_binding.html#a538f1b49db2212468df35a0b907618ea">Binding::BindVectorFuncs</a></div><div class="ttdeci">void BindVectorFuncs()</div><div class="ttdef"><b>Definition:</b> Math.h:19</div></div>
-<div class="ttc" id="anamespace_binding_html_a93b9125bca6dd89ae60d541d1aec9a3c"><div class="ttname"><a href="namespace_binding.html#a93b9125bca6dd89ae60d541d1aec9a3c">Binding::BindMatrixFuncs</a></div><div class="ttdeci">void BindMatrixFuncs()</div><div class="ttdef"><b>Definition:</b> Math.h:104</div></div>
 <div class="ttc" id="anamespace_t_e_html"><div class="ttname"><a href="namespace_t_e.html">TE</a></div><div class="ttdoc">Declarations for the ECSManager class, EntityRef class, IComponent and ISystem classes   All content ...</div><div class="ttdef"><b>Definition:</b> EditorFrame.h:40</div></div>
 <div class="ttc" id="anamespace_t_e_html_a075cefe26b58ca1c41263bff3253f406"><div class="ttname"><a href="namespace_t_e.html#a075cefe26b58ca1c41263bff3253f406">TE::Str_Concat</a></div><div class="ttdeci">std::string Str_Concat(const T &amp;...args)</div><div class="ttdoc">Concatenates a bunch of strings together.</div><div class="ttdef"><b>Definition:</b> Str.h:163</div></div>
-<div class="ttc" id="apch__engine_8h_html_ad3ee3199fb189e1047207f7a4d781868"><div class="ttname"><a href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div><div class="ttdeci">#define TE_SUPRESS_START</div><div class="ttdef"><b>Definition:</b> pch_engine.h:58</div></div>
-<div class="ttc" id="apch__engine_8h_html_afa88535cb07959a98893cd5653ca39c3"><div class="ttname"><a href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div><div class="ttdeci">#define TE_SUPRESS_END</div><div class="ttdef"><b>Definition:</b> pch_engine.h:71</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ff9d562b39932b7b74f54b9fb4bb00a0.html">ProjectSolution</a></li><li class="navelem"><a class="el" href="dir_0e3d5f2d56e31468daefe438e212cfbc.html">Proj_Engine</a></li><li class="navelem"><a class="el" href="dir_0d2c0b45ba4d42e3f37ae38d7482e159.html">Source</a></li><li class="navelem"><a class="el" href="dir_f9550e09d1dd2a4e3dbffa4f55733d5e.html">Scripting</a></li><li class="navelem"><a class="el" href="dir_525d6923482f335f3a7c23e134aa79a7.html">Bindings</a></li><li class="navelem"><a class="el" href="_math_8h.html">Math.h</a></li>
+    <li class="navelem"><a class="el" href="dir_ff9d562b39932b7b74f54b9fb4bb00a0.html">ProjectSolution</a></li><li class="navelem"><a class="el" href="dir_0e3d5f2d56e31468daefe438e212cfbc.html">Proj_Engine</a></li><li class="navelem"><a class="el" href="dir_0d2c0b45ba4d42e3f37ae38d7482e159.html">Source</a></li><li class="navelem"><a class="el" href="dir_f9550e09d1dd2a4e3dbffa4f55733d5e.html">Scripting</a></li><li class="navelem"><a class="el" href="dir_525d6923482f335f3a7c23e134aa79a7.html">Bindings</a></li><li class="navelem"><b>Math.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

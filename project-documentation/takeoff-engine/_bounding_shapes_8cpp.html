@@ -133,6 +133,10 @@ $(document).ready(function(){initNavTree('_bounding_shapes_8cpp.html',''); initR
   <div class="headertitle"><div class="title">BoundingShapes.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Source file for the bounding shapes' properties and methods <br  />
+ All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="pch__engine_8h_source.html">pch_engine.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="_bounding_shapes_8h_source.html">BoundingShapes.h</a>&quot;</code><br />
 </div><table class="memberdecls">
@@ -145,14 +149,55 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac3d9c9a6a3d9f9c2b9bda14e63b3ad3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e.html#ac3d9c9a6a3d9f9c2b9bda14e63b3ad3d">TE::SqDistPointSegment</a> (Point a, Point b, Point c)</td></tr>
+<tr class="memitem:ac8c7937a01edfe2d49fbe44d685233cf"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e.html#ac8c7937a01edfe2d49fbe44d685233cf">TE::Projection</a> (const glm::vec3 &amp;a, const glm::vec3 &amp;b)</td></tr>
+<tr class="memdesc:ac8c7937a01edfe2d49fbe44d685233cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper functions.  <br /></td></tr>
+<tr class="separator:ac8c7937a01edfe2d49fbe44d685233cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dbe4092380c4b138e8c85b8a23bbd8f"><td class="memItemLeft" align="right" valign="top">TEfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e.html#a1dbe4092380c4b138e8c85b8a23bbd8f">TE::AngleBetween</a> (const Line &amp;line1, const Line &amp;line2)</td></tr>
+<tr class="memdesc:a1dbe4092380c4b138e8c85b8a23bbd8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Angle between 2 lines.  <br /></td></tr>
+<tr class="separator:a1dbe4092380c4b138e8c85b8a23bbd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93568c29d4e3dee0111b24d5de7863a3"><td class="memItemLeft" align="right" valign="top"><a id="a93568c29d4e3dee0111b24d5de7863a3" name="a93568c29d4e3dee0111b24d5de7863a3"></a>
+TEfloat&#160;</td><td class="memItemRight" valign="bottom"><b>TE::AngleBetween</b> (const Line &amp;line, const Plane &amp;plane)</td></tr>
+<tr class="separator:a93568c29d4e3dee0111b24d5de7863a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05945e88f2c15a99a9542642896231a8"><td class="memItemLeft" align="right" valign="top"><a id="a05945e88f2c15a99a9542642896231a8" name="a05945e88f2c15a99a9542642896231a8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TE::Coplanar</b> (const Line &amp;line1, const Line &amp;line2)</td></tr>
+<tr class="separator:a05945e88f2c15a99a9542642896231a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7773e4d92297f7f5e5aac3aeb5f4b3ed"><td class="memItemLeft" align="right" valign="top"><a id="a7773e4d92297f7f5e5aac3aeb5f4b3ed" name="a7773e4d92297f7f5e5aac3aeb5f4b3ed"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TE::Parallel</b> (const Line &amp;line1, const Line &amp;line2)</td></tr>
+<tr class="separator:a7773e4d92297f7f5e5aac3aeb5f4b3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028baa809ab0ad0b928806a38ff494d5"><td class="memItemLeft" align="right" valign="top"><a id="a028baa809ab0ad0b928806a38ff494d5" name="a028baa809ab0ad0b928806a38ff494d5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TE::Parallel</b> (const glm::vec3 &amp;v1, const glm::vec3 &amp;v2)</td></tr>
+<tr class="separator:a028baa809ab0ad0b928806a38ff494d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe822c2291ee324918425f8d96fb6982"><td class="memItemLeft" align="right" valign="top"><a id="abe822c2291ee324918425f8d96fb6982" name="abe822c2291ee324918425f8d96fb6982"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TE::Parallel</b> (const Line &amp;line, const Plane &amp;plane)</td></tr>
+<tr class="separator:abe822c2291ee324918425f8d96fb6982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e0c58f3177e0a22f3c370c854bdc832"><td class="memItemLeft" align="right" valign="top"><a id="a6e0c58f3177e0a22f3c370c854bdc832" name="a6e0c58f3177e0a22f3c370c854bdc832"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TE::Perpendicular</b> (const Line &amp;line1, const Line &amp;line2)</td></tr>
+<tr class="separator:a6e0c58f3177e0a22f3c370c854bdc832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4b76c02c5d42aff368a1a6775fc384"><td class="memItemLeft" align="right" valign="top"><a id="aed4b76c02c5d42aff368a1a6775fc384" name="aed4b76c02c5d42aff368a1a6775fc384"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TE::Perpendicular</b> (const glm::vec3 &amp;v1, const glm::vec3 &amp;v2)</td></tr>
+<tr class="separator:aed4b76c02c5d42aff368a1a6775fc384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa08a0db83e21304f6ef71d1a73b8863e"><td class="memItemLeft" align="right" valign="top"><a id="aa08a0db83e21304f6ef71d1a73b8863e" name="aa08a0db83e21304f6ef71d1a73b8863e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TE::Perpendicular</b> (const Line &amp;line, const Plane &amp;plane)</td></tr>
+<tr class="separator:aa08a0db83e21304f6ef71d1a73b8863e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1146e566986d4bc79f5a1ea905267ef9"><td class="memItemLeft" align="right" valign="top"><a id="a1146e566986d4bc79f5a1ea905267ef9" name="a1146e566986d4bc79f5a1ea905267ef9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TE::Intersects</b> (const Line &amp;line, const Plane &amp;plane, TEfloat *rt)</td></tr>
+<tr class="separator:a1146e566986d4bc79f5a1ea905267ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d9c9a6a3d9f9c2b9bda14e63b3ad3d"><td class="memItemLeft" align="right" valign="top">TEfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e.html#ac3d9c9a6a3d9f9c2b9bda14e63b3ad3d">TE::SqDistPointSegment</a> (Point a, Point b, Point c)</td></tr>
 <tr class="memdesc:ac3d9c9a6a3d9f9c2b9bda14e63b3ad3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the squared distance between a point and a line segment.  <br /></td></tr>
 <tr class="separator:ac3d9c9a6a3d9f9c2b9bda14e63b3ad3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3104c4716729bab7434dcb032d4d70dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e.html#a3104c4716729bab7434dcb032d4d70dc">TE::ClosestPtSegmentSegment</a> (Point p1, Point q1, Point p2, Point q2, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> &amp;s, <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> &amp;t, Point &amp;c1, Point &amp;c2)</td></tr>
+<tr class="memitem:a3104c4716729bab7434dcb032d4d70dc"><td class="memItemLeft" align="right" valign="top">TEfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_e.html#a3104c4716729bab7434dcb032d4d70dc">TE::ClosestPtSegmentSegment</a> (Point p1, Point q1, Point p2, Point q2, TEfloat &amp;s, TEfloat &amp;t, Point &amp;c1, Point &amp;c2)</td></tr>
 <tr class="memdesc:a3104c4716729bab7434dcb032d4d70dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the closest point on a line segment to a point.  <br /></td></tr>
 <tr class="separator:a3104c4716729bab7434dcb032d4d70dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Source file for the bounding shapes' properties and methods <br  />
+ All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved. </p>
+<pre>
+</pre><pre>  <b>File:</b>    <a class="el" href="_bounding_shapes_8cpp.html" title="Source file for the bounding shapes&#39; properties and methods   All content (c) 2023 DigiPen Institute ...">BoundingShapes.cpp</a></pre><pre>
+</pre><pre>  <b>Authors:</b> Anderson Phua (100%)</pre><pre>
+</pre><pre>  <b>Emails:</b>  <a href="mailto:a.phua@digipen.edu">a.phua@digipen.edu</a></pre><pre>
+</pre><pre>  <b>Date:</b>    10/09/2023</pre><pre>
+</pre> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -128,8 +128,10 @@ $(document).ready(function(){initNavTree('_camera_component_8h.html',''); initRe
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">CameraComponent.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -138,13 +140,14 @@ $(document).ready(function(){initNavTree('_camera_component_8h.html',''); initRe
  All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;Engine.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="_e_c_s_manager_8h_source.html">Core/ECSManager.h</a>&quot;</code><br />
+<code>#include &quot;Core/ECSManager.h&quot;</code><br />
 <code>#include &lt;glm/glm.hpp&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
 </div>
 <p><a href="_camera_component_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
+Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_camera.html">TE::Camera</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_camera_1_1_viewport_rect.html">TE::Camera::ViewportRect</a></td></tr>
@@ -156,6 +159,25 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespace_t_e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declarations for the <a class="el" href="class_t_e_1_1_e_c_s_manager.html">ECSManager</a> class, <a class="el" href="class_t_e_1_1_entity_ref.html" title="Holds a reference to an entity. Does not directly contain data of the entity. To get an entity,...">EntityRef</a> class, <a class="el" href="class_t_e_1_1_i_component.html" title="Base class of every ECS Component. Provides some generic functions to.">IComponent</a> and <a class="el" href="class_t_e_1_1_i_system.html" title="Base class of every ECS Component.">ISystem</a> classes <br  />
  All content (c) 2022 DigiPen Institute of Technology Singapore. All rights reserved. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ab6cf0208e61728c5a9f4de17da7a697e"><td class="memItemLeft" align="right" valign="top"><a id="ab6cf0208e61728c5a9f4de17da7a697e" name="ab6cf0208e61728c5a9f4de17da7a697e"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Cameras</b> : size_t { <br />
+&#160;&#160;<b>CAMERA_INVALID</b> = std::numeric_limits&lt;size_t&gt;::max()
+, <b>SCENE_CAMERA</b> = 0
+, <b>GAME_CAMERA</b>
+, <b>MAT_CAMERA</b>
+, <br />
+&#160;&#160;<b>CAMERA_MAX</b>
+<br />
+ }</td></tr>
+<tr class="separator:ab6cf0208e61728c5a9f4de17da7a697e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9962e160f02a7fda05961a76c54688d5"><td class="memItemLeft" align="right" valign="top"><a id="a9962e160f02a7fda05961a76c54688d5" name="a9962e160f02a7fda05961a76c54688d5"></a>
+Cameras &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>TE::operator++</b> (Cameras &amp;enumData)</td></tr>
+<tr class="separator:a9962e160f02a7fda05961a76c54688d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Includes data required to render using the camera attached to an object. <br  />

@@ -128,13 +128,11 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_engine.html',''); initRe
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="class_t_e_1_1_engine-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TE::Engine Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -145,7 +143,7 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_engine.html',''); initRe
 <p><code>#include &lt;<a class="el" href="_engine_8h_source.html">Engine.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
+Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine_1_1_engine_settings.html">EngineSettings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Small encapsualtion of engine settings to be set on the creation of an engine object. All values here MUST have values initialized for running the GAME APPLICATION.  <a href="class_t_e_1_1_engine_1_1_engine_settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,18 +153,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa52cfbdca87c81ab2175c6968fe70a88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#aa52cfbdca87c81ab2175c6968fe70a88">Engine</a> (const <a class="el" href="class_t_e_1_1_engine_1_1_engine_settings.html">EngineSettings</a> &amp;settings=<a class="el" href="class_t_e_1_1_engine_1_1_engine_settings.html">EngineSettings</a>())</td></tr>
 <tr class="memdesc:aa52cfbdca87c81ab2175c6968fe70a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor determines if engine is for EDITOR or GAME. Do not call more than once.  <br /></td></tr>
 <tr class="separator:aa52cfbdca87c81ab2175c6968fe70a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46e809c6239b9cfd048c4021eb9015d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a46e809c6239b9cfd048c4021eb9015d5">Load</a> ()</td></tr>
+<tr class="memitem:a46e809c6239b9cfd048c4021eb9015d5"><td class="memItemLeft" align="right" valign="top"><a id="a46e809c6239b9cfd048c4021eb9015d5" name="a46e809c6239b9cfd048c4021eb9015d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> ()</td></tr>
 <tr class="separator:a46e809c6239b9cfd048c4021eb9015d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa326c552843e13ce64b0ecf404de9671"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#aa326c552843e13ce64b0ecf404de9671">Init</a> ()</td></tr>
+<tr class="memitem:aa326c552843e13ce64b0ecf404de9671"><td class="memItemLeft" align="right" valign="top"><a id="aa326c552843e13ce64b0ecf404de9671" name="aa326c552843e13ce64b0ecf404de9671"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
 <tr class="separator:aa326c552843e13ce64b0ecf404de9671"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d87da175b5bdb2b2b9f43dd0fbf2e7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a1d87da175b5bdb2b2b9f43dd0fbf2e7b">Update</a> ()</td></tr>
-<tr class="memdesc:a1d87da175b5bdb2b2b9f43dd0fbf2e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">On each call, will call the Update functions of all the engine's systems ONCE.  <br /></td></tr>
+<tr class="memitem:a1d87da175b5bdb2b2b9f43dd0fbf2e7b"><td class="memItemLeft" align="right" valign="top"><a id="a1d87da175b5bdb2b2b9f43dd0fbf2e7b" name="a1d87da175b5bdb2b2b9f43dd0fbf2e7b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
+<tr class="memdesc:a1d87da175b5bdb2b2b9f43dd0fbf2e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">On each call, will call the Update functions of all the engine's systems ONCE. <br /></td></tr>
 <tr class="separator:a1d87da175b5bdb2b2b9f43dd0fbf2e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa50bf244b0610ab2a46ffd1032b383d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#aa50bf244b0610ab2a46ffd1032b383d1">Draw</a> ()</td></tr>
-<tr class="memdesc:aa50bf244b0610ab2a46ffd1032b383d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends draw cals to the GPU to draw engine related objects.  <br /></td></tr>
+<tr class="memitem:aa50bf244b0610ab2a46ffd1032b383d1"><td class="memItemLeft" align="right" valign="top"><a id="aa50bf244b0610ab2a46ffd1032b383d1" name="aa50bf244b0610ab2a46ffd1032b383d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Draw</b> ()</td></tr>
+<tr class="memdesc:aa50bf244b0610ab2a46ffd1032b383d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends draw cals to the GPU to draw engine related objects. <br /></td></tr>
 <tr class="separator:aa50bf244b0610ab2a46ffd1032b383d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e2ed84106d7b9c6a21762a01cc93110"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a2e2ed84106d7b9c6a21762a01cc93110">Exit</a> ()</td></tr>
-<tr class="memdesc:a2e2ed84106d7b9c6a21762a01cc93110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up engine and exits immediately. Don't use this for editor/engine systems. Use <a class="el" href="class_t_e_1_1_engine.html#a3f914b050c2029e6fcf5caed41f090bb" title="Call this from anywhere at anytime to close app, and the engine will close at the end of the frame an...">ExitNicely()</a> instead.  <br /></td></tr>
+<tr class="memitem:a2e2ed84106d7b9c6a21762a01cc93110"><td class="memItemLeft" align="right" valign="top"><a id="a2e2ed84106d7b9c6a21762a01cc93110" name="a2e2ed84106d7b9c6a21762a01cc93110"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Exit</b> ()</td></tr>
+<tr class="memdesc:a2e2ed84106d7b9c6a21762a01cc93110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up engine and exits immediately. Don't use this for editor/engine systems. Use <a class="el" href="class_t_e_1_1_engine.html#a3f914b050c2029e6fcf5caed41f090bb" title="Call this from anywhere at anytime to close app, and the engine will close at the end of the frame an...">ExitNicely()</a> instead. <br /></td></tr>
 <tr class="separator:a2e2ed84106d7b9c6a21762a01cc93110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dd5e4b4db12ed4438a7ffa59d17c040"><td class="memTemplParams" colspan="2">template&lt;typename ManagerType &gt; </td></tr>
 <tr class="memitem:a5dd5e4b4db12ed4438a7ffa59d17c040"><td class="memTemplItemLeft" align="right" valign="top">ManagerType &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a5dd5e4b4db12ed4438a7ffa59d17c040">GetManager</a> ()</td></tr>
@@ -185,67 +188,71 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7edf7c2bb06be4ce7bb3b147345ef3aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a7edf7c2bb06be4ce7bb3b147345ef3aa">IsEngineSimulatePaused</a> ()</td></tr>
 <tr class="memdesc:a7edf7c2bb06be4ce7bb3b147345ef3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the engine currently in the middle of simulation but paused? Can only be set via editor.  <br /></td></tr>
 <tr class="separator:a7edf7c2bb06be4ce7bb3b147345ef3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c1bde28cc6d72fbcb7b95104ccbedbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a6c1bde28cc6d72fbcb7b95104ccbedbc">StartEngineSimulation</a> ()</td></tr>
-<tr class="memdesc:a6c1bde28cc6d72fbcb7b95104ccbedbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">For <a class="el" href="namespace_editor.html">Editor</a> to call. If simulation is not running, call this to start engine simulation.  <br /></td></tr>
+<tr class="memitem:a6c1bde28cc6d72fbcb7b95104ccbedbc"><td class="memItemLeft" align="right" valign="top"><a id="a6c1bde28cc6d72fbcb7b95104ccbedbc" name="a6c1bde28cc6d72fbcb7b95104ccbedbc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartEngineSimulation</b> ()</td></tr>
+<tr class="memdesc:a6c1bde28cc6d72fbcb7b95104ccbedbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">For Editor to call. If simulation is not running, call this to start engine simulation. <br /></td></tr>
 <tr class="separator:a6c1bde28cc6d72fbcb7b95104ccbedbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02d7ef7e205272ff0413fc8bf94c64c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a02d7ef7e205272ff0413fc8bf94c64c4">StopEngineSimulation</a> ()</td></tr>
-<tr class="memdesc:a02d7ef7e205272ff0413fc8bf94c64c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">For <a class="el" href="namespace_editor.html">Editor</a> to call. If simulation is running or paused, call this to stop engine simulation.  <br /></td></tr>
+<tr class="memitem:a02d7ef7e205272ff0413fc8bf94c64c4"><td class="memItemLeft" align="right" valign="top"><a id="a02d7ef7e205272ff0413fc8bf94c64c4" name="a02d7ef7e205272ff0413fc8bf94c64c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StopEngineSimulation</b> ()</td></tr>
+<tr class="memdesc:a02d7ef7e205272ff0413fc8bf94c64c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">For Editor to call. If simulation is running or paused, call this to stop engine simulation. <br /></td></tr>
 <tr class="separator:a02d7ef7e205272ff0413fc8bf94c64c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc846b6f17fadfeabe6d3820a169442c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#acc846b6f17fadfeabe6d3820a169442c">PauseEngineSimulation</a> ()</td></tr>
-<tr class="memdesc:acc846b6f17fadfeabe6d3820a169442c"><td class="mdescLeft">&#160;</td><td class="mdescRight">For <a class="el" href="namespace_editor.html">Editor</a> to call. If simulation is running, call this to pause engine simulation.  <br /></td></tr>
+<tr class="memitem:acc846b6f17fadfeabe6d3820a169442c"><td class="memItemLeft" align="right" valign="top"><a id="acc846b6f17fadfeabe6d3820a169442c" name="acc846b6f17fadfeabe6d3820a169442c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PauseEngineSimulation</b> ()</td></tr>
+<tr class="memdesc:acc846b6f17fadfeabe6d3820a169442c"><td class="mdescLeft">&#160;</td><td class="mdescRight">For Editor to call. If simulation is running, call this to pause engine simulation. <br /></td></tr>
 <tr class="separator:acc846b6f17fadfeabe6d3820a169442c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f914b050c2029e6fcf5caed41f090bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a3f914b050c2029e6fcf5caed41f090bb">ExitNicely</a> ()</td></tr>
-<tr class="memdesc:a3f914b050c2029e6fcf5caed41f090bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this from anywhere at anytime to close app, and the engine will close at the end of the frame and do all necessary cleanups. Use this instead of <a class="el" href="class_t_e_1_1_engine.html#a2e2ed84106d7b9c6a21762a01cc93110" title="Cleans up engine and exits immediately. Don&#39;t use this for editor/engine systems. Use ExitNicely() in...">Exit()</a>.  <br /></td></tr>
+<tr class="memitem:a3f914b050c2029e6fcf5caed41f090bb"><td class="memItemLeft" align="right" valign="top"><a id="a3f914b050c2029e6fcf5caed41f090bb" name="a3f914b050c2029e6fcf5caed41f090bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExitNicely</b> ()</td></tr>
+<tr class="memdesc:a3f914b050c2029e6fcf5caed41f090bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this from anywhere at anytime to close app, and the engine will close at the end of the frame and do all necessary cleanups. Use this instead of <a class="el" href="class_t_e_1_1_engine.html#a2e2ed84106d7b9c6a21762a01cc93110" title="Cleans up engine and exits immediately. Don&#39;t use this for editor/engine systems. Use ExitNicely() in...">Exit()</a>. <br /></td></tr>
 <tr class="separator:a3f914b050c2029e6fcf5caed41f090bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7236a11d1f89c51c8eae8aba95f12321"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a7236a11d1f89c51c8eae8aba95f12321">ShouldEngineUpdate</a> (bool isEngineActive=<a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a>)</td></tr>
+<tr class="memitem:a7236a11d1f89c51c8eae8aba95f12321"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a7236a11d1f89c51c8eae8aba95f12321">ShouldEngineUpdate</a> (bool isEngineActive=true)</td></tr>
 <tr class="memdesc:a7236a11d1f89c51c8eae8aba95f12321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the engine should run updates or not. Acts as a framerate control for the engine. To be used in a while loop e.g. while (engine.IsEngineRunning()) { if(ShouldEngineUpdate()) { ... } }.  <br /></td></tr>
 <tr class="separator:a7236a11d1f89c51c8eae8aba95f12321"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b357f8e27888a84b6745c4cb5a3cb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#aa7b357f8e27888a84b6745c4cb5a3cb7">SetTargetFramerate</a> (<a class="el" href="_defines_8h.html#a8027ff42e46dc4dc7cad2de70fb53a51">TEuint</a> maxRate)</td></tr>
+<tr class="memitem:aa7b357f8e27888a84b6745c4cb5a3cb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#aa7b357f8e27888a84b6745c4cb5a3cb7">SetTargetFramerate</a> (TEuint maxRate)</td></tr>
 <tr class="memdesc:aa7b357f8e27888a84b6745c4cb5a3cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the desired framerate to run the game at. Has no impact on physics. Acts as a framerate cap. This value may be changed freely during runtime. Default value is 60 frames per second.  <br /></td></tr>
 <tr class="separator:aa7b357f8e27888a84b6745c4cb5a3cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34ff84d38593f86c925e5d449387487a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a34ff84d38593f86c925e5d449387487a">GetTargetFramerate</a> ()</td></tr>
+<tr class="memitem:a34ff84d38593f86c925e5d449387487a"><td class="memItemLeft" align="right" valign="top">TEfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a34ff84d38593f86c925e5d449387487a">GetTargetFramerate</a> ()</td></tr>
 <tr class="memdesc:a34ff84d38593f86c925e5d449387487a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current framerate cap.  <br /></td></tr>
 <tr class="separator:a34ff84d38593f86c925e5d449387487a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8d1ed08c65c66a9fbe36c1b1ef34f39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#ae8d1ed08c65c66a9fbe36c1b1ef34f39">GetFramerate</a> ()</td></tr>
+<tr class="memitem:ae8d1ed08c65c66a9fbe36c1b1ef34f39"><td class="memItemLeft" align="right" valign="top">TEfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#ae8d1ed08c65c66a9fbe36c1b1ef34f39">GetFramerate</a> ()</td></tr>
 <tr class="memdesc:ae8d1ed08c65c66a9fbe36c1b1ef34f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the framerate of the previous frame.  <br /></td></tr>
 <tr class="separator:ae8d1ed08c65c66a9fbe36c1b1ef34f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25bc5510609c5e14f65a6b0662789ce6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a25bc5510609c5e14f65a6b0662789ce6">SetTargetSimulationRate</a> (<a class="el" href="_defines_8h.html#a8027ff42e46dc4dc7cad2de70fb53a51">TEuint</a> maxRate)</td></tr>
+<tr class="memitem:a25bc5510609c5e14f65a6b0662789ce6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a25bc5510609c5e14f65a6b0662789ce6">SetTargetSimulationRate</a> (TEuint maxRate)</td></tr>
 <tr class="memdesc:a25bc5510609c5e14f65a6b0662789ce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the desired simulation rate. The actual simulation calls will happen at a regular rate defined by this value. It is advised not to change this value during runtime, as physics may behave differently at different rates. Defaults to 30 simulations per second.  <br /></td></tr>
 <tr class="separator:a25bc5510609c5e14f65a6b0662789ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23dfd13038585bd0b33d80e4fbdf10ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a23dfd13038585bd0b33d80e4fbdf10ea">GetTargetSimulationRate</a> ()</td></tr>
+<tr class="memitem:a23dfd13038585bd0b33d80e4fbdf10ea"><td class="memItemLeft" align="right" valign="top">TEfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a23dfd13038585bd0b33d80e4fbdf10ea">GetTargetSimulationRate</a> ()</td></tr>
 <tr class="memdesc:a23dfd13038585bd0b33d80e4fbdf10ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the target simulation rate the engine is currently using.  <br /></td></tr>
 <tr class="separator:a23dfd13038585bd0b33d80e4fbdf10ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad76294ee97075847f16bb2dcaa4a14e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#ad76294ee97075847f16bb2dcaa4a14e8">GetDT</a> ()</td></tr>
+<tr class="memitem:ad76294ee97075847f16bb2dcaa4a14e8"><td class="memItemLeft" align="right" valign="top">TEdouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#ad76294ee97075847f16bb2dcaa4a14e8">GetDT</a> ()</td></tr>
 <tr class="memdesc:ad76294ee97075847f16bb2dcaa4a14e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time since last frame in REAL TIME. Mainly used in conjuntion with <a class="el" href="class_t_e_1_1_engine.html#a1d87da175b5bdb2b2b9f43dd0fbf2e7b" title="On each call, will call the Update functions of all the engine&#39;s systems ONCE.">Update()</a>  <br /></td></tr>
 <tr class="separator:ad76294ee97075847f16bb2dcaa4a14e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade7fddafb22c610de8dac21ab0656b6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#ade7fddafb22c610de8dac21ab0656b6c">GetFixedDT</a> ()</td></tr>
+<tr class="memitem:ade7fddafb22c610de8dac21ab0656b6c"><td class="memItemLeft" align="right" valign="top">TEdouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#ade7fddafb22c610de8dac21ab0656b6c">GetFixedDT</a> ()</td></tr>
 <tr class="memdesc:ade7fddafb22c610de8dac21ab0656b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time interval per simulation (FixedUpdate) in GAME (SCALED) TIME. This value will not change unless <a class="el" href="class_t_e_1_1_engine.html#a25bc5510609c5e14f65a6b0662789ce6" title="Sets the desired simulation rate. The actual simulation calls will happen at a regular rate defined b...">SetTargetSimulationRate()</a> is called. Use this in FixedUpdate(). Not very accurate if used like <a class="el" href="class_t_e_1_1_engine.html#ad76294ee97075847f16bb2dcaa4a14e8" title="Time since last frame in REAL TIME. Mainly used in conjuntion with Update()">GetDT()</a> in <a class="el" href="class_t_e_1_1_engine.html#a1d87da175b5bdb2b2b9f43dd0fbf2e7b" title="On each call, will call the Update functions of all the engine&#39;s systems ONCE.">Update()</a>, as each time FixedUpdate is called, it is not likely to perfectly fall on the desired timestep. Use <a class="el" href="class_t_e_1_1_engine.html#ac94ff6719a80868146361b9ba9d57874" title="Time since the last simulation (FixedUpdate) call in GAME TIME. Can be used in FixedUpdate() to provi...">GetSimulationDT()</a> instead.  <br /></td></tr>
 <tr class="separator:ade7fddafb22c610de8dac21ab0656b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac94ff6719a80868146361b9ba9d57874"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#ac94ff6719a80868146361b9ba9d57874">GetSimulationDT</a> ()</td></tr>
+<tr class="memitem:ac94ff6719a80868146361b9ba9d57874"><td class="memItemLeft" align="right" valign="top">TEdouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#ac94ff6719a80868146361b9ba9d57874">GetSimulationDT</a> ()</td></tr>
 <tr class="memdesc:ac94ff6719a80868146361b9ba9d57874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time since the last simulation (FixedUpdate) call in GAME TIME. Can be used in FixedUpdate() to provide a more accurate delta time for simulations.  <br /></td></tr>
 <tr class="separator:ac94ff6719a80868146361b9ba9d57874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87f71efb51bdf710b52b70c9212906c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a87f71efb51bdf710b52b70c9212906c1">GetTimeElapsed</a> ()</td></tr>
+<tr class="memitem:a87f71efb51bdf710b52b70c9212906c1"><td class="memItemLeft" align="right" valign="top">TEdouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a87f71efb51bdf710b52b70c9212906c1">GetTimeElapsed</a> ()</td></tr>
 <tr class="memdesc:a87f71efb51bdf710b52b70c9212906c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current in-game time that has elapsed since the engine started updating. Time scale will affect this time. Simulation ticks skipped will affect this timing.  <br /></td></tr>
 <tr class="separator:a87f71efb51bdf710b52b70c9212906c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa3b4863ef391aace4b2d6abc65ef0b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#afa3b4863ef391aace4b2d6abc65ef0b5">GetRealTimeElapsed</a> ()</td></tr>
+<tr class="memitem:afa3b4863ef391aace4b2d6abc65ef0b5"><td class="memItemLeft" align="right" valign="top">TEdouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#afa3b4863ef391aace4b2d6abc65ef0b5">GetRealTimeElapsed</a> ()</td></tr>
 <tr class="memdesc:afa3b4863ef391aace4b2d6abc65ef0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current real-world time that has elapsed since the engine started updating.  <br /></td></tr>
 <tr class="separator:afa3b4863ef391aace4b2d6abc65ef0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a831ba50a8af9fb710d9b2c01a731157c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a831ba50a8af9fb710d9b2c01a731157c">SetTimeScale</a> (<a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> scale)</td></tr>
+<tr class="memitem:a831ba50a8af9fb710d9b2c01a731157c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a831ba50a8af9fb710d9b2c01a731157c">SetTimeScale</a> (TEdouble scale)</td></tr>
 <tr class="memdesc:a831ba50a8af9fb710d9b2c01a731157c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the time scale of the in-game time. Default is 1.0 Set to 0 to pause all in-game time. Setting below 0 is not allowed. Setting too high such that too many simulations have to run per frame is also not allowed. Values will be clamped to their min/max possible values.  <br /></td></tr>
 <tr class="separator:a831ba50a8af9fb710d9b2c01a731157c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac36ec4b21297214ea40dbdf338f2a51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#aac36ec4b21297214ea40dbdf338f2a51">GetTimeScale</a> ()</td></tr>
+<tr class="memitem:aac36ec4b21297214ea40dbdf338f2a51"><td class="memItemLeft" align="right" valign="top">TEdouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#aac36ec4b21297214ea40dbdf338f2a51">GetTimeScale</a> ()</td></tr>
 <tr class="memdesc:aac36ec4b21297214ea40dbdf338f2a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current time scale the engine is running on.  <br /></td></tr>
 <tr class="separator:aac36ec4b21297214ea40dbdf338f2a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a783a9100ef8905a46489f1d6b2be797b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8027ff42e46dc4dc7cad2de70fb53a51">TEuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a783a9100ef8905a46489f1d6b2be797b">PhySimsThisFrame</a> ()</td></tr>
+<tr class="memitem:a783a9100ef8905a46489f1d6b2be797b"><td class="memItemLeft" align="right" valign="top">TEuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a783a9100ef8905a46489f1d6b2be797b">PhySimsThisFrame</a> ()</td></tr>
 <tr class="memdesc:a783a9100ef8905a46489f1d6b2be797b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For physics system use. How many times should Physics simulate (run FixedUpdate) this frame.  <br /></td></tr>
 <tr class="separator:a783a9100ef8905a46489f1d6b2be797b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a84cbed8053a435534b9a8c6297e973"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a6a84cbed8053a435534b9a8c6297e973">PhyInterpolateAmount</a> ()</td></tr>
+<tr class="memitem:a6a84cbed8053a435534b9a8c6297e973"><td class="memItemLeft" align="right" valign="top">TEfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a6a84cbed8053a435534b9a8c6297e973">PhyInterpolateAmount</a> ()</td></tr>
 <tr class="memdesc:a6a84cbed8053a435534b9a8c6297e973"><td class="mdescLeft">&#160;</td><td class="mdescRight">For physics system use. Given the last target simulated time, and next target simulation time, returns the ratio of how far away this current frame is from the last target simulated time. Value is normalized to 0-1.f.  <br /></td></tr>
 <tr class="separator:a6a84cbed8053a435534b9a8c6297e973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4a016b21b7f7c89b3faadddfb52d8636"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a4a016b21b7f7c89b3faadddfb52d8636">ExecuteExternalCommand</a> (<a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a> command)</td></tr>
+<tr class="memitem:a4a016b21b7f7c89b3faadddfb52d8636"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a4a016b21b7f7c89b3faadddfb52d8636">ExecuteExternalCommand</a> (TEstringview command)</td></tr>
 <tr class="memdesc:a4a016b21b7f7c89b3faadddfb52d8636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes an external command in the form of calling a CMD command.  <br /></td></tr>
 <tr class="separator:a4a016b21b7f7c89b3faadddfb52d8636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af90e2d601cc18f4fb448db3a8e6d1d8c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_t_e_1_1_engine.html">Engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#af90e2d601cc18f4fb448db3a8e6d1d8c">GetInstanceHandle</a> ()</td></tr>
@@ -253,63 +260,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:af90e2d601cc18f4fb448db3a8e6d1d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:af0865deaee70841868accc82598caa27"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_t_e_1_1_engine_1_1_engine_settings.html">EngineSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#af0865deaee70841868accc82598caa27">m_Settings</a></td></tr>
+Public Attributes</h2></td></tr>
+<tr class="memitem:af0865deaee70841868accc82598caa27"><td class="memItemLeft" align="right" valign="top"><a id="af0865deaee70841868accc82598caa27" name="af0865deaee70841868accc82598caa27"></a>
+const <a class="el" href="class_t_e_1_1_engine_1_1_engine_settings.html">EngineSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Settings</b></td></tr>
 <tr class="separator:af0865deaee70841868accc82598caa27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aaebf916a616687438d88a87b4dd50b9c"><td class="memTemplParams" colspan="2">template&lt;class ManagerType &gt; </td></tr>
-<tr class="memitem:aaebf916a616687438d88a87b4dd50b9c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#aaebf916a616687438d88a87b4dd50b9c">_AddManager</a> (bool runOnlyDuringSimulation=false)</td></tr>
-<tr class="memdesc:aaebf916a616687438d88a87b4dd50b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Manager system to the engine.  <br /></td></tr>
-<tr class="separator:aaebf916a616687438d88a87b4dd50b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac53c4db3b122520ff8666af2efb7bd67"><td class="memTemplParams" colspan="2">template&lt;typename ManagerType &gt; </td></tr>
-<tr class="memitem:ac53c4db3b122520ff8666af2efb7bd67"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#ac53c4db3b122520ff8666af2efb7bd67">_RemoveManager</a> ()</td></tr>
-<tr class="separator:ac53c4db3b122520ff8666af2efb7bd67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf6e3bff520b95bc50f691377c9677ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#aaf6e3bff520b95bc50f691377c9677ef">_RemoveAllManagers</a> ()</td></tr>
-<tr class="separator:aaf6e3bff520b95bc50f691377c9677ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc67420c226e3086929e1af0425cbd22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#adc67420c226e3086929e1af0425cbd22">TE_STATIC_ASSERT</a> (<a class="el" href="class_t_e_1_1_engine.html#acd7c884abc27cd65b8864f19e84b8060">m_MaxSimPerFrame</a> &gt;=2)</td></tr>
-<tr class="separator:adc67420c226e3086929e1af0425cbd22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a8cc48f8a9d0c23a5eea90d7a25dd6599"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>, <a class="el" href="class_t_e_1_1_i_manager.html">IManager</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a8cc48f8a9d0c23a5eea90d7a25dd6599">m_Managers</a></td></tr>
-<tr class="separator:a8cc48f8a9d0c23a5eea90d7a25dd6599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58b7eba4263f9ae7298244439cb6d7f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a58b7eba4263f9ae7298244439cb6d7f9">m_IsEngineRunning</a> = <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a></td></tr>
-<tr class="separator:a58b7eba4263f9ae7298244439cb6d7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25391808007494500ec66cd3129d9dce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a25391808007494500ec66cd3129d9dce">m_IsEngineSimulating</a> = <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a></td></tr>
-<tr class="separator:a25391808007494500ec66cd3129d9dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26c2af284a6665c2f95be123ab808fa5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a26c2af284a6665c2f95be123ab808fa5">m_IsEngineSimulatePasued</a> = false</td></tr>
-<tr class="separator:a26c2af284a6665c2f95be123ab808fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5076d654094be80862d512efae82c6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#ae5076d654094be80862d512efae82c6c">m_TargetFrameTime</a> = 1. / 60</td></tr>
-<tr class="separator:ae5076d654094be80862d512efae82c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61bed8db67884f94341ca7cefbd522cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a61bed8db67884f94341ca7cefbd522cf">m_TargetFixedTime</a> = 1. / <a class="el" href="class_t_e_1_1_engine.html#a94ae68a9a35f9301a71a51258014e9c3">m_TargetFixedRate</a></td></tr>
-<tr class="separator:a61bed8db67884f94341ca7cefbd522cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94ae68a9a35f9301a71a51258014e9c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a94ae68a9a35f9301a71a51258014e9c3">m_TargetFixedRate</a> = 30.</td></tr>
-<tr class="separator:a94ae68a9a35f9301a71a51258014e9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e039f3e2f423ab72bf503d13239f7c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a2e039f3e2f423ab72bf503d13239f7c8">m_MaxSimDt</a> = <a class="el" href="class_t_e_1_1_engine.html#acd7c884abc27cd65b8864f19e84b8060">m_MaxSimPerFrame</a> * <a class="el" href="class_t_e_1_1_engine.html#a61bed8db67884f94341ca7cefbd522cf">m_TargetFixedTime</a></td></tr>
-<tr class="separator:a2e039f3e2f423ab72bf503d13239f7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a113fbe61bb88ab41fbc93e2bc91ccefd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a113fbe61bb88ab41fbc93e2bc91ccefd">m_Dt</a> = 0.</td></tr>
-<tr class="separator:a113fbe61bb88ab41fbc93e2bc91ccefd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad44a624ea701bad85690fdd968b57e29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#ad44a624ea701bad85690fdd968b57e29">m_SimulationDT</a> = 0</td></tr>
-<tr class="separator:ad44a624ea701bad85690fdd968b57e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60d03d2668aa47d99d53d3efc741f105"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a60d03d2668aa47d99d53d3efc741f105">m_TimeElapsed</a> = 0.</td></tr>
-<tr class="separator:a60d03d2668aa47d99d53d3efc741f105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00ca87d3b42f0910155e63936a21ccd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a00ca87d3b42f0910155e63936a21ccd5">m_RealTimeElapsed</a> = 0.</td></tr>
-<tr class="separator:a00ca87d3b42f0910155e63936a21ccd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeab041e398ce8dba3949a37820323ce3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#aeab041e398ce8dba3949a37820323ce3">m_TimeScale</a> = 1.</td></tr>
-<tr class="separator:aeab041e398ce8dba3949a37820323ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a040220240f4cbe3fb16ed7fb778f7d0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a8027ff42e46dc4dc7cad2de70fb53a51">TEuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a040220240f4cbe3fb16ed7fb778f7d0b">m_PhyFrameSimCount</a> = 1</td></tr>
-<tr class="separator:a040220240f4cbe3fb16ed7fb778f7d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4df8cfa96f489223e5cf28fcc8018c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#ab4df8cfa96f489223e5cf28fcc8018c8">m_PhyInterpAmt</a> = 0.f</td></tr>
-<tr class="separator:ab4df8cfa96f489223e5cf28fcc8018c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a246640630501598a335731cd08f5c773"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_t_e_1_1_engine.html">Engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#a246640630501598a335731cd08f5c773">s_EngineInstance</a> = nullptr</td></tr>
-<tr class="separator:a246640630501598a335731cd08f5c773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd7c884abc27cd65b8864f19e84b8060"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="_defines_8h.html#a8027ff42e46dc4dc7cad2de70fb53a51">TEuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_engine.html#acd7c884abc27cd65b8864f19e84b8060">m_MaxSimPerFrame</a> = 4</td></tr>
-<tr class="separator:acd7c884abc27cd65b8864f19e84b8060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main interface for accessing <a class="el" href="class_t_e_1_1_engine.html" title="Main interface for accessing Engine functionalities. Engine internally will add/remove managers....">Engine</a> functionalities. <a class="el" href="class_t_e_1_1_engine.html" title="Main interface for accessing Engine functionalities. Engine internally will add/remove managers....">Engine</a> internally will add/remove managers. Externally, others can grab Manager handles, or get framerate data from <a class="el" href="class_t_e_1_1_engine.html" title="Main interface for accessing Engine functionalities. Engine internally will add/remove managers....">Engine</a> class. </p>
@@ -341,97 +295,6 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a46e809c6239b9cfd048c4021eb9015d5" name="a46e809c6239b9cfd048c4021eb9015d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46e809c6239b9cfd048c4021eb9015d5">&#9670;&#160;</a></span>Load()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Engine::Load </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa326c552843e13ce64b0ecf404de9671" name="aa326c552843e13ce64b0ecf404de9671"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa326c552843e13ce64b0ecf404de9671">&#9670;&#160;</a></span>Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Engine::Init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1d87da175b5bdb2b2b9f43dd0fbf2e7b" name="a1d87da175b5bdb2b2b9f43dd0fbf2e7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d87da175b5bdb2b2b9f43dd0fbf2e7b">&#9670;&#160;</a></span>Update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Engine::Update </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>On each call, will call the Update functions of all the engine's systems ONCE. </p>
-
-</div>
-</div>
-<a id="aa50bf244b0610ab2a46ffd1032b383d1" name="aa50bf244b0610ab2a46ffd1032b383d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa50bf244b0610ab2a46ffd1032b383d1">&#9670;&#160;</a></span>Draw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Engine::Draw </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sends draw cals to the GPU to draw engine related objects. </p>
-
-</div>
-</div>
-<a id="a2e2ed84106d7b9c6a21762a01cc93110" name="a2e2ed84106d7b9c6a21762a01cc93110"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e2ed84106d7b9c6a21762a01cc93110">&#9670;&#160;</a></span>Exit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Engine::Exit </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Cleans up engine and exits immediately. Don't use this for editor/engine systems. Use <a class="el" href="class_t_e_1_1_engine.html#a3f914b050c2029e6fcf5caed41f090bb" title="Call this from anywhere at anytime to close app, and the engine will close at the end of the frame an...">ExitNicely()</a> instead. </p>
-
-</div>
-</div>
 <a id="a5dd5e4b4db12ed4438a7ffa59d17c040" name="a5dd5e4b4db12ed4438a7ffa59d17c040"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5dd5e4b4db12ed4438a7ffa59d17c040">&#9670;&#160;</a></span>GetManager()</h2>
 
@@ -542,82 +405,6 @@ template&lt;typename ManagerType &gt; </div>
 
 </div>
 </div>
-<a id="a6c1bde28cc6d72fbcb7b95104ccbedbc" name="a6c1bde28cc6d72fbcb7b95104ccbedbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c1bde28cc6d72fbcb7b95104ccbedbc">&#9670;&#160;</a></span>StartEngineSimulation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Engine::StartEngineSimulation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>For <a class="el" href="namespace_editor.html">Editor</a> to call. If simulation is not running, call this to start engine simulation. </p>
-
-</div>
-</div>
-<a id="a02d7ef7e205272ff0413fc8bf94c64c4" name="a02d7ef7e205272ff0413fc8bf94c64c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02d7ef7e205272ff0413fc8bf94c64c4">&#9670;&#160;</a></span>StopEngineSimulation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Engine::StopEngineSimulation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>For <a class="el" href="namespace_editor.html">Editor</a> to call. If simulation is running or paused, call this to stop engine simulation. </p>
-
-</div>
-</div>
-<a id="acc846b6f17fadfeabe6d3820a169442c" name="acc846b6f17fadfeabe6d3820a169442c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc846b6f17fadfeabe6d3820a169442c">&#9670;&#160;</a></span>PauseEngineSimulation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Engine::PauseEngineSimulation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>For <a class="el" href="namespace_editor.html">Editor</a> to call. If simulation is running, call this to pause engine simulation. </p>
-
-</div>
-</div>
-<a id="a3f914b050c2029e6fcf5caed41f090bb" name="a3f914b050c2029e6fcf5caed41f090bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f914b050c2029e6fcf5caed41f090bb">&#9670;&#160;</a></span>ExitNicely()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Engine::ExitNicely </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Call this from anywhere at anytime to close app, and the engine will close at the end of the frame and do all necessary cleanups. Use this instead of <a class="el" href="class_t_e_1_1_engine.html#a2e2ed84106d7b9c6a21762a01cc93110" title="Cleans up engine and exits immediately. Don&#39;t use this for editor/engine systems. Use ExitNicely() in...">Exit()</a>. </p>
-
-</div>
-</div>
 <a id="a4a016b21b7f7c89b3faadddfb52d8636" name="a4a016b21b7f7c89b3faadddfb52d8636"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a016b21b7f7c89b3faadddfb52d8636">&#9670;&#160;</a></span>ExecuteExternalCommand()</h2>
 
@@ -630,7 +417,7 @@ template&lt;typename ManagerType &gt; </div>
         <tr>
           <td class="memname">bool TE::Engine::ExecuteExternalCommand </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a862ca704ee5aa8d744426b35e4fe23c5">TEstringview</a>&#160;</td>
+          <td class="paramtype">TEstringview&#160;</td>
           <td class="paramname"><em>command</em></td><td>)</td>
           <td></td>
         </tr>
@@ -681,97 +468,6 @@ template&lt;typename ManagerType &gt; </div>
 
 </div>
 </div>
-<a id="aaebf916a616687438d88a87b4dd50b9c" name="aaebf916a616687438d88a87b4dd50b9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaebf916a616687438d88a87b4dd50b9c">&#9670;&#160;</a></span>_AddManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ManagerType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Engine::_AddManager </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>runOnlyDuringSimulation</em> = <code>false</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Registers a Manager system to the engine. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">ManagerType</td><td>The manager to create an instance of and add to engine</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">runOnlyDuringSimulation</td><td>if true, marks this manager to peform update only when editor/game is in "play" mode.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac53c4db3b122520ff8666af2efb7bd67" name="ac53c4db3b122520ff8666af2efb7bd67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac53c4db3b122520ff8666af2efb7bd67">&#9670;&#160;</a></span>_RemoveManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ManagerType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Engine::_RemoveManager</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaf6e3bff520b95bc50f691377c9677ef" name="aaf6e3bff520b95bc50f691377c9677ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf6e3bff520b95bc50f691377c9677ef">&#9670;&#160;</a></span>_RemoveAllManagers()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Engine::_RemoveAllManagers </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a7236a11d1f89c51c8eae8aba95f12321" name="a7236a11d1f89c51c8eae8aba95f12321"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7236a11d1f89c51c8eae8aba95f12321">&#9670;&#160;</a></span>ShouldEngineUpdate()</h2>
 
@@ -782,7 +478,7 @@ template&lt;typename ManagerType &gt; </div>
           <td class="memname">bool TE::Engine::ShouldEngineUpdate </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isEngineActive</em> = <code><a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a></code></td><td>)</td>
+          <td class="paramname"><em>isEngineActive</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -808,7 +504,7 @@ template&lt;typename ManagerType &gt; </div>
         <tr>
           <td class="memname">void TE::Engine::SetTargetFramerate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a8027ff42e46dc4dc7cad2de70fb53a51">TEuint</a>&#160;</td>
+          <td class="paramtype">TEuint&#160;</td>
           <td class="paramname"><em>maxRate</em></td><td>)</td>
           <td></td>
         </tr>
@@ -832,7 +528,7 @@ template&lt;typename ManagerType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> TE::Engine::GetTargetFramerate </td>
+          <td class="memname">TEfloat TE::Engine::GetTargetFramerate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -852,7 +548,7 @@ template&lt;typename ManagerType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> TE::Engine::GetFramerate </td>
+          <td class="memname">TEfloat TE::Engine::GetFramerate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -874,7 +570,7 @@ template&lt;typename ManagerType &gt; </div>
         <tr>
           <td class="memname">void TE::Engine::SetTargetSimulationRate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a8027ff42e46dc4dc7cad2de70fb53a51">TEuint</a>&#160;</td>
+          <td class="paramtype">TEuint&#160;</td>
           <td class="paramname"><em>maxRate</em></td><td>)</td>
           <td></td>
         </tr>
@@ -898,7 +594,7 @@ template&lt;typename ManagerType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> TE::Engine::GetTargetSimulationRate </td>
+          <td class="memname">TEfloat TE::Engine::GetTargetSimulationRate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -918,7 +614,7 @@ template&lt;typename ManagerType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::GetDT </td>
+          <td class="memname">TEdouble TE::Engine::GetDT </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -938,7 +634,7 @@ template&lt;typename ManagerType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::GetFixedDT </td>
+          <td class="memname">TEdouble TE::Engine::GetFixedDT </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -958,7 +654,7 @@ template&lt;typename ManagerType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::GetSimulationDT </td>
+          <td class="memname">TEdouble TE::Engine::GetSimulationDT </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -978,7 +674,7 @@ template&lt;typename ManagerType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::GetTimeElapsed </td>
+          <td class="memname">TEdouble TE::Engine::GetTimeElapsed </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -998,7 +694,7 @@ template&lt;typename ManagerType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::GetRealTimeElapsed </td>
+          <td class="memname">TEdouble TE::Engine::GetRealTimeElapsed </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1020,7 +716,7 @@ template&lt;typename ManagerType &gt; </div>
         <tr>
           <td class="memname">void TE::Engine::SetTimeScale </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a>&#160;</td>
+          <td class="paramtype">TEdouble&#160;</td>
           <td class="paramname"><em>scale</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1044,7 +740,7 @@ template&lt;typename ManagerType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::GetTimeScale </td>
+          <td class="memname">TEdouble TE::Engine::GetTimeScale </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1064,7 +760,7 @@ template&lt;typename ManagerType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8027ff42e46dc4dc7cad2de70fb53a51">TEuint</a> TE::Engine::PhySimsThisFrame </td>
+          <td class="memname">TEuint TE::Engine::PhySimsThisFrame </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1084,7 +780,7 @@ template&lt;typename ManagerType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> TE::Engine::PhyInterpolateAmount </td>
+          <td class="memname">TEfloat TE::Engine::PhyInterpolateAmount </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1094,421 +790,6 @@ template&lt;typename ManagerType &gt; </div>
 
 <p>For physics system use. Given the last target simulated time, and next target simulation time, returns the ratio of how far away this current frame is from the last target simulated time. Value is normalized to 0-1.f. </p>
 <dl class="section return"><dt>Returns</dt><dd>How much should object positions be interpolated between last target simulated time and next target simulation time.</dd></dl>
-
-</div>
-</div>
-<a id="adc67420c226e3086929e1af0425cbd22" name="adc67420c226e3086929e1af0425cbd22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc67420c226e3086929e1af0425cbd22">&#9670;&#160;</a></span>TE_STATIC_ASSERT()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TE::Engine::TE_STATIC_ASSERT </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_t_e_1_1_engine.html#acd7c884abc27cd65b8864f19e84b8060">m_MaxSimPerFrame</a> &gt;=&#160;</td>
-          <td class="paramname"><em>2</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="af0865deaee70841868accc82598caa27" name="af0865deaee70841868accc82598caa27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0865deaee70841868accc82598caa27">&#9670;&#160;</a></span>m_Settings</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_t_e_1_1_engine_1_1_engine_settings.html">EngineSettings</a> TE::Engine::m_Settings</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8cc48f8a9d0c23a5eea90d7a25dd6599" name="a8cc48f8a9d0c23a5eea90d7a25dd6599"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cc48f8a9d0c23a5eea90d7a25dd6599">&#9670;&#160;</a></span>m_Managers</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::pair&lt;<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>, <a class="el" href="class_t_e_1_1_i_manager.html">IManager</a>*&gt; &gt; TE::Engine::m_Managers</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a246640630501598a335731cd08f5c773" name="a246640630501598a335731cd08f5c773"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a246640630501598a335731cd08f5c773">&#9670;&#160;</a></span>s_EngineInstance</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_engine.html">Engine</a> * TE::Engine::s_EngineInstance = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a58b7eba4263f9ae7298244439cb6d7f9" name="a58b7eba4263f9ae7298244439cb6d7f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58b7eba4263f9ae7298244439cb6d7f9">&#9670;&#160;</a></span>m_IsEngineRunning</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::Engine::m_IsEngineRunning = <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a25391808007494500ec66cd3129d9dce" name="a25391808007494500ec66cd3129d9dce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25391808007494500ec66cd3129d9dce">&#9670;&#160;</a></span>m_IsEngineSimulating</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::Engine::m_IsEngineSimulating = <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a26c2af284a6665c2f95be123ab808fa5" name="a26c2af284a6665c2f95be123ab808fa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26c2af284a6665c2f95be123ab808fa5">&#9670;&#160;</a></span>m_IsEngineSimulatePasued</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::Engine::m_IsEngineSimulatePasued = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae5076d654094be80862d512efae82c6c" name="ae5076d654094be80862d512efae82c6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5076d654094be80862d512efae82c6c">&#9670;&#160;</a></span>m_TargetFrameTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::m_TargetFrameTime = 1. / 60</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a61bed8db67884f94341ca7cefbd522cf" name="a61bed8db67884f94341ca7cefbd522cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61bed8db67884f94341ca7cefbd522cf">&#9670;&#160;</a></span>m_TargetFixedTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::m_TargetFixedTime = 1. / <a class="el" href="class_t_e_1_1_engine.html#a94ae68a9a35f9301a71a51258014e9c3">m_TargetFixedRate</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a94ae68a9a35f9301a71a51258014e9c3" name="a94ae68a9a35f9301a71a51258014e9c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94ae68a9a35f9301a71a51258014e9c3">&#9670;&#160;</a></span>m_TargetFixedRate</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::m_TargetFixedRate = 30.</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2e039f3e2f423ab72bf503d13239f7c8" name="a2e039f3e2f423ab72bf503d13239f7c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e039f3e2f423ab72bf503d13239f7c8">&#9670;&#160;</a></span>m_MaxSimDt</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::m_MaxSimDt = <a class="el" href="class_t_e_1_1_engine.html#acd7c884abc27cd65b8864f19e84b8060">m_MaxSimPerFrame</a> * <a class="el" href="class_t_e_1_1_engine.html#a61bed8db67884f94341ca7cefbd522cf">m_TargetFixedTime</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acd7c884abc27cd65b8864f19e84b8060" name="acd7c884abc27cd65b8864f19e84b8060"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd7c884abc27cd65b8864f19e84b8060">&#9670;&#160;</a></span>m_MaxSimPerFrame</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="_defines_8h.html#a8027ff42e46dc4dc7cad2de70fb53a51">TEuint</a> TE::Engine::m_MaxSimPerFrame = 4</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a113fbe61bb88ab41fbc93e2bc91ccefd" name="a113fbe61bb88ab41fbc93e2bc91ccefd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a113fbe61bb88ab41fbc93e2bc91ccefd">&#9670;&#160;</a></span>m_Dt</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::m_Dt = 0.</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad44a624ea701bad85690fdd968b57e29" name="ad44a624ea701bad85690fdd968b57e29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad44a624ea701bad85690fdd968b57e29">&#9670;&#160;</a></span>m_SimulationDT</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::m_SimulationDT = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a60d03d2668aa47d99d53d3efc741f105" name="a60d03d2668aa47d99d53d3efc741f105"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60d03d2668aa47d99d53d3efc741f105">&#9670;&#160;</a></span>m_TimeElapsed</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::m_TimeElapsed = 0.</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a00ca87d3b42f0910155e63936a21ccd5" name="a00ca87d3b42f0910155e63936a21ccd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00ca87d3b42f0910155e63936a21ccd5">&#9670;&#160;</a></span>m_RealTimeElapsed</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::m_RealTimeElapsed = 0.</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeab041e398ce8dba3949a37820323ce3" name="aeab041e398ce8dba3949a37820323ce3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeab041e398ce8dba3949a37820323ce3">&#9670;&#160;</a></span>m_TimeScale</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8cc40518e711fbf84c4af8cf2f131310">TEdouble</a> TE::Engine::m_TimeScale = 1.</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a040220240f4cbe3fb16ed7fb778f7d0b" name="a040220240f4cbe3fb16ed7fb778f7d0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a040220240f4cbe3fb16ed7fb778f7d0b">&#9670;&#160;</a></span>m_PhyFrameSimCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a8027ff42e46dc4dc7cad2de70fb53a51">TEuint</a> TE::Engine::m_PhyFrameSimCount = 1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab4df8cfa96f489223e5cf28fcc8018c8" name="ab4df8cfa96f489223e5cf28fcc8018c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4df8cfa96f489223e5cf28fcc8018c8">&#9670;&#160;</a></span>m_PhyInterpAmt</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> TE::Engine::m_PhyInterpAmt = 0.f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

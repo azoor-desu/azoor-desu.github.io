@@ -14,6 +14,5 @@ var _str_8h =
     [ "Str_ToLower", "_str_8h.html#ab4962a0ee0b870e105fb5ac603571f11", null ],
     [ "Str_StartsWith", "_str_8h.html#af7e2c256a13cac8ad64748bc6d5f92fc", null ],
     [ "Str_EndsWith", "_str_8h.html#a137b84b5da8ddcb7950a7c4ec2028498", null ],
-    [ "Str_Concat", "_str_8h.html#a075cefe26b58ca1c41263bff3253f406", null ],
-    [ "WHITESPACE_CHARS", "_str_8h.html#a7731c50978806b5d3e13de012d344969", null ]
+    [ "Str_Concat", "_str_8h.html#a075cefe26b58ca1c41263bff3253f406", null ]
 ];

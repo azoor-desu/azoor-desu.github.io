@@ -130,98 +130,71 @@ $(document).ready(function(){initNavTree('class_editor_1_1_viewport.html',''); i
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="class_editor_1_1_viewport-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Editor::Viewport Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_editor___viewport_8h_source.html">Editor_Viewport.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abf99487d751245bec019db30cd811737"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_viewport.html#abf99487d751245bec019db30cd811737">VPSTYLE</a> { <a class="el" href="class_editor_1_1_viewport.html#abf99487d751245bec019db30cd811737ae39523e6c02d17b730b0836782229065">DEFAULT</a>
-, <a class="el" href="class_editor_1_1_viewport.html#abf99487d751245bec019db30cd811737a7af2155ad19d8dbefda5570fad32b312">FOCUS</a>
-, <a class="el" href="class_editor_1_1_viewport.html#abf99487d751245bec019db30cd811737a829fa3e206d2ae55bff4009034e0db72">GAMEONLY</a>
-, <a class="el" href="class_editor_1_1_viewport.html#abf99487d751245bec019db30cd811737a27ab1a56db99f97665e19091fe7e3e6a">FULLSCREEN</a>
+<tr class="memitem:abf99487d751245bec019db30cd811737"><td class="memItemLeft" align="right" valign="top"><a id="abf99487d751245bec019db30cd811737" name="abf99487d751245bec019db30cd811737"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>VPSTYLE</b> { <b>DEFAULT</b>
+, <b>FOCUS</b>
+, <b>GAMEONLY</b>
+, <b>FULLSCREEN</b>
  }</td></tr>
 <tr class="separator:abf99487d751245bec019db30cd811737"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa19d5bfc1eb036029dbb97ef795ef425"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_viewport.html#aa19d5bfc1eb036029dbb97ef795ef425">Viewport</a> ()</td></tr>
-<tr class="memdesc:aa19d5bfc1eb036029dbb97ef795ef425"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <br /></td></tr>
+<tr class="memitem:aa19d5bfc1eb036029dbb97ef795ef425"><td class="memItemLeft" align="right" valign="top"><a id="aa19d5bfc1eb036029dbb97ef795ef425" name="aa19d5bfc1eb036029dbb97ef795ef425"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Viewport</b> ()</td></tr>
+<tr class="memdesc:aa19d5bfc1eb036029dbb97ef795ef425"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor <br /></td></tr>
 <tr class="separator:aa19d5bfc1eb036029dbb97ef795ef425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a051e83fcaea0004e92886d3edd060975"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_viewport.html#a051e83fcaea0004e92886d3edd060975">MainViewportUpdate</a> (const char *label)</td></tr>
 <tr class="memdesc:a051e83fcaea0004e92886d3edd060975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the update loop of all Viewports and toolbar.  <br /></td></tr>
 <tr class="separator:a051e83fcaea0004e92886d3edd060975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebf4e2e8e7a19964338c75a9921bd041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_viewport.html#aebf4e2e8e7a19964338c75a9921bd041">SceneViewportUpdate</a> (const char *label, bool *windowOpen, ImGuiIO &amp;io)</td></tr>
-<tr class="memdesc:aebf4e2e8e7a19964338c75a9921bd041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the update loop of the <a class="el" href="namespace_editor.html">Editor</a>'s editable Scene <a class="el" href="class_editor_1_1_viewport.html">Viewport</a>.  <br /></td></tr>
+<tr class="memdesc:aebf4e2e8e7a19964338c75a9921bd041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the update loop of the Editor's editable Scene <a class="el" href="class_editor_1_1_viewport.html">Viewport</a>.  <br /></td></tr>
 <tr class="separator:aebf4e2e8e7a19964338c75a9921bd041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad903665027d0ae94e45ab88fa4a12106"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_viewport.html#ad903665027d0ae94e45ab88fa4a12106">GameViewportUpdate</a> (const char *label, bool *windowOpen)</td></tr>
-<tr class="memdesc:ad903665027d0ae94e45ab88fa4a12106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the update loop of the <a class="el" href="namespace_editor.html">Editor</a>'s Game <a class="el" href="class_editor_1_1_viewport.html">Viewport</a>.  <br /></td></tr>
+<tr class="memdesc:ad903665027d0ae94e45ab88fa4a12106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the update loop of the Editor's Game <a class="el" href="class_editor_1_1_viewport.html">Viewport</a>.  <br /></td></tr>
 <tr class="separator:ad903665027d0ae94e45ab88fa4a12106"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7267518f50216ca65811e70f1aa8fa38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_viewport.html#a7267518f50216ca65811e70f1aa8fa38">SceneControllerUpdate</a> ()</td></tr>
-<tr class="memdesc:a7267518f50216ca65811e70f1aa8fa38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the update loop of the <a class="el" href="namespace_editor.html">Editor</a>'s Pause-Play and other buttons for controlling the Viewports.  <br /></td></tr>
+<tr class="memitem:a7267518f50216ca65811e70f1aa8fa38"><td class="memItemLeft" align="right" valign="top"><a id="a7267518f50216ca65811e70f1aa8fa38" name="a7267518f50216ca65811e70f1aa8fa38"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SceneControllerUpdate</b> ()</td></tr>
+<tr class="memdesc:a7267518f50216ca65811e70f1aa8fa38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the update loop of the Editor's Pause-Play and other buttons for controlling the Viewports. <br /></td></tr>
 <tr class="separator:a7267518f50216ca65811e70f1aa8fa38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a17bedd9feae9fb9b48129694f2c3fe0d"><td class="memItemLeft" align="right" valign="top">ImVec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_viewport.html#a17bedd9feae9fb9b48129694f2c3fe0d">sceneWindowSize</a> = {}</td></tr>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a17bedd9feae9fb9b48129694f2c3fe0d"><td class="memItemLeft" align="right" valign="top"><a id="a17bedd9feae9fb9b48129694f2c3fe0d" name="a17bedd9feae9fb9b48129694f2c3fe0d"></a>
+ImVec2&#160;</td><td class="memItemRight" valign="bottom"><b>sceneWindowSize</b> = {}</td></tr>
 <tr class="separator:a17bedd9feae9fb9b48129694f2c3fe0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedec598583f4efa05fdb32d0bc8f4cb6"><td class="memItemLeft" align="right" valign="top">ImVec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_viewport.html#aedec598583f4efa05fdb32d0bc8f4cb6">sceneViewportBounds</a> [2]</td></tr>
+<tr class="memitem:aedec598583f4efa05fdb32d0bc8f4cb6"><td class="memItemLeft" align="right" valign="top"><a id="aedec598583f4efa05fdb32d0bc8f4cb6" name="aedec598583f4efa05fdb32d0bc8f4cb6"></a>
+ImVec2&#160;</td><td class="memItemRight" valign="bottom"><b>sceneViewportBounds</b> [2]</td></tr>
 <tr class="separator:aedec598583f4efa05fdb32d0bc8f4cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6462bc9f27f7c98a7caaad2fac068d28"><td class="memItemLeft" align="right" valign="top">ImVec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_viewport.html#a6462bc9f27f7c98a7caaad2fac068d28">gameWindowSize</a> = {}</td></tr>
+<tr class="memitem:ad0417e7def590286f32fa899482922b6"><td class="memItemLeft" align="right" valign="top"><a id="ad0417e7def590286f32fa899482922b6" name="ad0417e7def590286f32fa899482922b6"></a>
+ImTextureID&#160;</td><td class="memItemRight" valign="bottom"><b>scenetextureid</b></td></tr>
+<tr class="separator:ad0417e7def590286f32fa899482922b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6462bc9f27f7c98a7caaad2fac068d28"><td class="memItemLeft" align="right" valign="top"><a id="a6462bc9f27f7c98a7caaad2fac068d28" name="a6462bc9f27f7c98a7caaad2fac068d28"></a>
+ImVec2&#160;</td><td class="memItemRight" valign="bottom"><b>gameWindowSize</b> = {}</td></tr>
 <tr class="separator:a6462bc9f27f7c98a7caaad2fac068d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa36669b11c2b5f50cdd743f6ee16266d"><td class="memItemLeft" align="right" valign="top">ImVec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_viewport.html#aa36669b11c2b5f50cdd743f6ee16266d">gameViewportBounds</a> [2]</td></tr>
+<tr class="memitem:aa36669b11c2b5f50cdd743f6ee16266d"><td class="memItemLeft" align="right" valign="top"><a id="aa36669b11c2b5f50cdd743f6ee16266d" name="aa36669b11c2b5f50cdd743f6ee16266d"></a>
+ImVec2&#160;</td><td class="memItemRight" valign="bottom"><b>gameViewportBounds</b> [2]</td></tr>
 <tr class="separator:aa36669b11c2b5f50cdd743f6ee16266d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ff74ce555c06b6099139594eb576686"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_viewport.html#a2ff74ce555c06b6099139594eb576686">editorPlay</a> = false</td></tr>
+<tr class="memitem:aba4042fc98670dfb0ea29fac9546e1cb"><td class="memItemLeft" align="right" valign="top"><a id="aba4042fc98670dfb0ea29fac9546e1cb" name="aba4042fc98670dfb0ea29fac9546e1cb"></a>
+ImTextureID&#160;</td><td class="memItemRight" valign="bottom"><b>gametextureid</b></td></tr>
+<tr class="separator:aba4042fc98670dfb0ea29fac9546e1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff74ce555c06b6099139594eb576686"><td class="memItemLeft" align="right" valign="top"><a id="a2ff74ce555c06b6099139594eb576686" name="a2ff74ce555c06b6099139594eb576686"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>editorPlay</b> = false</td></tr>
 <tr class="separator:a2ff74ce555c06b6099139594eb576686"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231e0b4d414644ecb5ea7f907b1832ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_viewport.html#a231e0b4d414644ecb5ea7f907b1832ed">editorPause</a> = <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a></td></tr>
+<tr class="memitem:a231e0b4d414644ecb5ea7f907b1832ed"><td class="memItemLeft" align="right" valign="top"><a id="a231e0b4d414644ecb5ea7f907b1832ed" name="a231e0b4d414644ecb5ea7f907b1832ed"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>editorPause</b> = true</td></tr>
 <tr class="separator:a231e0b4d414644ecb5ea7f907b1832ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d5610d467af3ce657a40b8669631119"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_editor_1_1_viewport.html#abf99487d751245bec019db30cd811737">VPSTYLE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_viewport.html#a6d5610d467af3ce657a40b8669631119">currentStyle</a> = <a class="el" href="class_editor_1_1_viewport.html#abf99487d751245bec019db30cd811737ae39523e6c02d17b730b0836782229065">DEFAULT</a></td></tr>
+<tr class="memitem:a6d5610d467af3ce657a40b8669631119"><td class="memItemLeft" align="right" valign="top"><a id="a6d5610d467af3ce657a40b8669631119" name="a6d5610d467af3ce657a40b8669631119"></a>
+VPSTYLE&#160;</td><td class="memItemRight" valign="bottom"><b>currentStyle</b> = DEFAULT</td></tr>
 <tr class="separator:a6d5610d467af3ce657a40b8669631119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="abf99487d751245bec019db30cd811737" name="abf99487d751245bec019db30cd811737"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf99487d751245bec019db30cd811737">&#9670;&#160;</a></span>VPSTYLE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_editor_1_1_viewport.html#abf99487d751245bec019db30cd811737">Editor::Viewport::VPSTYLE</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abf99487d751245bec019db30cd811737ae39523e6c02d17b730b0836782229065" name="abf99487d751245bec019db30cd811737ae39523e6c02d17b730b0836782229065"></a>DEFAULT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abf99487d751245bec019db30cd811737a7af2155ad19d8dbefda5570fad32b312" name="abf99487d751245bec019db30cd811737a7af2155ad19d8dbefda5570fad32b312"></a>FOCUS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abf99487d751245bec019db30cd811737a829fa3e206d2ae55bff4009034e0db72" name="abf99487d751245bec019db30cd811737a829fa3e206d2ae55bff4009034e0db72"></a>GAMEONLY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abf99487d751245bec019db30cd811737a27ab1a56db99f97665e19091fe7e3e6a" name="abf99487d751245bec019db30cd811737a27ab1a56db99f97665e19091fe7e3e6a"></a>FULLSCREEN&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa19d5bfc1eb036029dbb97ef795ef425" name="aa19d5bfc1eb036029dbb97ef795ef425"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa19d5bfc1eb036029dbb97ef795ef425">&#9670;&#160;</a></span>Viewport()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Editor::Viewport::Viewport </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>default constructor </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a051e83fcaea0004e92886d3edd060975" name="a051e83fcaea0004e92886d3edd060975"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a051e83fcaea0004e92886d3edd060975">&#9670;&#160;</a></span>MainViewportUpdate()</h2>
@@ -285,7 +258,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Runs the update loop of the <a class="el" href="namespace_editor.html">Editor</a>'s editable Scene <a class="el" href="class_editor_1_1_viewport.html">Viewport</a>. </p>
+<p>Runs the update loop of the Editor's editable Scene <a class="el" href="class_editor_1_1_viewport.html">Viewport</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">label</td><td>Name of the window </td></tr>
@@ -323,7 +296,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Runs the update loop of the <a class="el" href="namespace_editor.html">Editor</a>'s Game <a class="el" href="class_editor_1_1_viewport.html">Viewport</a>. </p>
+<p>Runs the update loop of the Editor's Game <a class="el" href="class_editor_1_1_viewport.html">Viewport</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">label</td><td>Name of the window </td></tr>
@@ -331,124 +304,6 @@ Data Fields</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a7267518f50216ca65811e70f1aa8fa38" name="a7267518f50216ca65811e70f1aa8fa38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7267518f50216ca65811e70f1aa8fa38">&#9670;&#160;</a></span>SceneControllerUpdate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Editor::Viewport::SceneControllerUpdate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Runs the update loop of the <a class="el" href="namespace_editor.html">Editor</a>'s Pause-Play and other buttons for controlling the Viewports. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a17bedd9feae9fb9b48129694f2c3fe0d" name="a17bedd9feae9fb9b48129694f2c3fe0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17bedd9feae9fb9b48129694f2c3fe0d">&#9670;&#160;</a></span>sceneWindowSize</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ImVec2 Editor::Viewport::sceneWindowSize = {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aedec598583f4efa05fdb32d0bc8f4cb6" name="aedec598583f4efa05fdb32d0bc8f4cb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedec598583f4efa05fdb32d0bc8f4cb6">&#9670;&#160;</a></span>sceneViewportBounds</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ImVec2 Editor::Viewport::sceneViewportBounds[2]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6462bc9f27f7c98a7caaad2fac068d28" name="a6462bc9f27f7c98a7caaad2fac068d28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6462bc9f27f7c98a7caaad2fac068d28">&#9670;&#160;</a></span>gameWindowSize</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ImVec2 Editor::Viewport::gameWindowSize = {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa36669b11c2b5f50cdd743f6ee16266d" name="aa36669b11c2b5f50cdd743f6ee16266d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa36669b11c2b5f50cdd743f6ee16266d">&#9670;&#160;</a></span>gameViewportBounds</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ImVec2 Editor::Viewport::gameViewportBounds[2]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2ff74ce555c06b6099139594eb576686" name="a2ff74ce555c06b6099139594eb576686"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ff74ce555c06b6099139594eb576686">&#9670;&#160;</a></span>editorPlay</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Editor::Viewport::editorPlay = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a231e0b4d414644ecb5ea7f907b1832ed" name="a231e0b4d414644ecb5ea7f907b1832ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a231e0b4d414644ecb5ea7f907b1832ed">&#9670;&#160;</a></span>editorPause</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Editor::Viewport::editorPause = <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6d5610d467af3ce657a40b8669631119" name="a6d5610d467af3ce657a40b8669631119"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d5610d467af3ce657a40b8669631119">&#9670;&#160;</a></span>currentStyle</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_editor_1_1_viewport.html#abf99487d751245bec019db30cd811737">VPSTYLE</a> Editor::Viewport::currentStyle = <a class="el" href="class_editor_1_1_viewport.html#abf99487d751245bec019db30cd811737ae39523e6c02d17b730b0836782229065">DEFAULT</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -461,7 +316,7 @@ Data Fields</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_editor.html">Editor</a></li><li class="navelem"><a class="el" href="class_editor_1_1_viewport.html">Viewport</a></li>
+    <li class="navelem"><b>Editor</b></li><li class="navelem"><a class="el" href="class_editor_1_1_viewport.html">Viewport</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

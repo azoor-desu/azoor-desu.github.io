@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('_vulkan_manager_8h.html',''); initResi
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">VulkanManager.h File Reference</div></div>
@@ -139,25 +139,22 @@ $(document).ready(function(){initNavTree('_vulkan_manager_8h.html',''); initResi
  All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
 <code>#include &lt;vulkan/vulkan.h&gt;</code><br />
 <code>#include &lt;GLFW/glfw3.h&gt;</code><br />
 <code>#include &lt;glm/glm.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="_camera_component_8h_source.html">ECSComponents/CameraComponent.h</a>&quot;</code><br />
+<code>#include &quot;ECSComponents/LightComponent.h&quot;</code><br />
 </div>
 <p><a href="_vulkan_manager_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
+Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_vulkan_manager.html">TE::VulkanManager</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_vulkan_manager_1_1_vulkan_texture.html">TE::VulkanManager::VulkanTexture</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_vulkan_manager_1_1_vulkan_pipeline.html">TE::VulkanManager::VulkanPipeline</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_vulkan_manager_1_1_vertex_data.html">TE::VulkanManager::VertexData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_vulkan_manager_1_1_constants_data.html">TE::VulkanManager::ConstantsData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_vulkan_manager_1_1_vulkan_settings.html">TE::VulkanManager::VulkanSettings</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_vulkan_manager_1_1_vulkan_load_texture_settings.html">TE::VulkanManager::VulkanLoadTextureSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_vulkan_manager_1_1_vulkan_data.html">TE::VulkanManager::VulkanData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,11 +165,6 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespace_t_e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declarations for the <a class="el" href="class_t_e_1_1_e_c_s_manager.html">ECSManager</a> class, <a class="el" href="class_t_e_1_1_entity_ref.html" title="Holds a reference to an entity. Does not directly contain data of the entity. To get an entity,...">EntityRef</a> class, <a class="el" href="class_t_e_1_1_i_component.html" title="Base class of every ECS Component. Provides some generic functions to.">IComponent</a> and <a class="el" href="class_t_e_1_1_i_system.html" title="Base class of every ECS Component.">ISystem</a> classes <br  />
  All content (c) 2022 DigiPen Institute of Technology Singapore. All rights reserved. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:aea22151c1df842d43772ec5f931d2600"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_vulkan_manager_8h.html#aea22151c1df842d43772ec5f931d2600">VK_USE_PLATFORM_WIN32_KHR</a></td></tr>
-<tr class="separator:aea22151c1df842d43772ec5f931d2600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulation of vulkan backend for renderings <br  />
@@ -182,22 +174,7 @@ Macros</h2></td></tr>
 </pre><pre>  <b>Authors:</b> Ng Zheng Wei (100%)</pre><pre>
 </pre><pre>  <b>Emails:</b>  <a href="mailto:zhengwei.ng@digipen.edu">zhengwei.ng@digipen.edu</a></pre><pre>
 </pre><pre>  <b>Date:</b>    29/09/2023</pre><pre>
-</pre> </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="aea22151c1df842d43772ec5f931d2600" name="aea22151c1df842d43772ec5f931d2600"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea22151c1df842d43772ec5f931d2600">&#9670;&#160;</a></span>VK_USE_PLATFORM_WIN32_KHR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VK_USE_PLATFORM_WIN32_KHR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+</pre> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

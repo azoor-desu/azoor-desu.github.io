@@ -128,23 +128,22 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_hash_creator.html',''); 
 
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="class_t_e_1_1_hash_creator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TE::HashCreator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_g_u_i_d_8h_source.html">GUID.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:affcf128b96f5abb3e6d1b5843b140354"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:affcf128b96f5abb3e6d1b5843b140354"><td class="memTemplItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_hash_creator.html#affcf128b96f5abb3e6d1b5843b140354">HashStr</a> (const T &amp;...args)</td></tr>
-<tr class="memdesc:affcf128b96f5abb3e6d1b5843b140354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hashes multiple string types into a single size_t value. WARN: Has a bug where if the last 64 characters are the exact same as another string, the result of the hash would come out the same regardless of what was before the last 64 characters.  <br /></td></tr>
-<tr class="separator:affcf128b96f5abb3e6d1b5843b140354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce98f1d4c37df0168225c28d2d089ca"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:a5ce98f1d4c37df0168225c28d2d089ca"><td class="memTemplItemLeft" align="right" valign="top">static constexpr TEguid&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_hash_creator.html#a5ce98f1d4c37df0168225c28d2d089ca">HashStr</a> (const T &amp;...args)</td></tr>
+<tr class="memdesc:a5ce98f1d4c37df0168225c28d2d089ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hashes multiple string types into a single size_t value.  <br /></td></tr>
+<tr class="separator:a5ce98f1d4c37df0168225c28d2d089ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="affcf128b96f5abb3e6d1b5843b140354" name="affcf128b96f5abb3e6d1b5843b140354"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affcf128b96f5abb3e6d1b5843b140354">&#9670;&#160;</a></span>HashStr()</h2>
+<a id="a5ce98f1d4c37df0168225c28d2d089ca" name="a5ce98f1d4c37df0168225c28d2d089ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ce98f1d4c37df0168225c28d2d089ca">&#9670;&#160;</a></span>HashStr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,7 +154,7 @@ template&lt;typename... T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static constexpr std::size_t TE::HashCreator::HashStr </td>
+          <td class="memname">static constexpr TEguid TE::HashCreator::HashStr </td>
           <td>(</td>
           <td class="paramtype">const T &amp;...&#160;</td>
           <td class="paramname"><em>args</em></td><td>)</td>
@@ -169,10 +168,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Hashes multiple string types into a single size_t value. WARN: Has a bug where if the last 64 characters are the exact same as another string, the result of the hash would come out the same regardless of what was before the last 64 characters. </p>
-<p>printf("Hash 1: %llu\n", <a class="el" href="class_t_e_1_1_hash_creator.html#affcf128b96f5abb3e6d1b5843b140354" title="Hashes multiple string types into a single size_t value. WARN: Has a bug where if the last 64 charact...">HashCreator::HashStr</a>("qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq")); // hashes to 94</p>
-<p>printf("Hash 2: %llu\n", <a class="el" href="class_t_e_1_1_hash_creator.html#affcf128b96f5abb3e6d1b5843b140354" title="Hashes multiple string types into a single size_t value. WARN: Has a bug where if the last 64 charact...">HashCreator::HashStr</a>("456qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq")); // hashes to some big number</p>
-<p>printf("Hash 3: %llu\n", <a class="el" href="class_t_e_1_1_hash_creator.html#affcf128b96f5abb3e6d1b5843b140354" title="Hashes multiple string types into a single size_t value. WARN: Has a bug where if the last 64 charact...">HashCreator::HashStr</a>("789qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq")); // hashes to 94 too, last 64 'q's are the same as first hash</p>
+<p>Hashes multiple string types into a single size_t value. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">...T</td><td></td></tr>

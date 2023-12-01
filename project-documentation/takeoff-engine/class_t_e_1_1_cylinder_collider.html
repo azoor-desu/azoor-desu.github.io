@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Takeoff Engine: TE::CylinderCollider Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://github.com/Noa-Ara/gam-300 -->
+<a href="https://github.com/Noa-Ara/gam-300" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Takeoff Engine
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Takeoff Engine API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_t_e_1_1_cylinder_collider.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="class_t_e_1_1_cylinder_collider-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">TE::CylinderCollider Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0d597a7cb3c931ce843b07e2a0ce09ea"><td class="memItemLeft" align="right" valign="top"><a id="a0d597a7cb3c931ce843b07e2a0ce09ea" name="a0d597a7cb3c931ce843b07e2a0ce09ea"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CylinderCollider</b> (const glm::vec3 &amp;nCenter, TEfloat nRadius, TEfloat nHeight)</td></tr>
+<tr class="separator:a0d597a7cb3c931ce843b07e2a0ce09ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee27bde8fe070f4a7efdf7a97d0359e2"><td class="memItemLeft" align="right" valign="top">rttr::instance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_cylinder_collider.html#aee27bde8fe070f4a7efdf7a97d0359e2">GetRTTRInstance</a> () const</td></tr>
+<tr class="separator:aee27bde8fe070f4a7efdf7a97d0359e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949b8ab206bc9da8c133e3ed5a068494"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_cylinder_collider.html#a949b8ab206bc9da8c133e3ed5a068494">Serialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
+<tr class="separator:a949b8ab206bc9da8c133e3ed5a068494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1aab7a5ff7cdcd691589d3ad4dc994d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_cylinder_collider.html#af1aab7a5ff7cdcd691589d3ad4dc994d">Deserialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
+<tr class="separator:af1aab7a5ff7cdcd691589d3ad4dc994d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee63faa13bfce84d02a6fffbe5dd17c"><td class="memItemLeft" align="right" valign="top">const glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_cylinder_collider.html#a4ee63faa13bfce84d02a6fffbe5dd17c">GetSize</a> () const</td></tr>
+<tr class="memdesc:a4ee63faa13bfce84d02a6fffbe5dd17c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dimensions of the cylinder collider.  <br /></td></tr>
+<tr class="separator:a4ee63faa13bfce84d02a6fffbe5dd17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1132b5edda7ac5996af32e1e17a8068"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_cylinder_collider.html#af1132b5edda7ac5996af32e1e17a8068">SetSize</a> (const glm::vec3 nSize)</td></tr>
+<tr class="memdesc:af1132b5edda7ac5996af32e1e17a8068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the dimensions of the cylinder collider.  <br /></td></tr>
+<tr class="separator:af1132b5edda7ac5996af32e1e17a8068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1822b418b3cee1a2aae5cda28f431981"><td class="memItemLeft" align="right" valign="top"><a id="a1822b418b3cee1a2aae5cda28f431981" name="a1822b418b3cee1a2aae5cda28f431981"></a>
+const TEfloat &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRadius</b> () const</td></tr>
+<tr class="separator:a1822b418b3cee1a2aae5cda28f431981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad5d8b19d2412b65481d66f6083ddd1"><td class="memItemLeft" align="right" valign="top"><a id="a5ad5d8b19d2412b65481d66f6083ddd1" name="a5ad5d8b19d2412b65481d66f6083ddd1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRadius</b> (const TEfloat &amp;nRadius)</td></tr>
+<tr class="separator:a5ad5d8b19d2412b65481d66f6083ddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae26796ad5af9a09d76fba570f5df7f"><td class="memItemLeft" align="right" valign="top"><a id="afae26796ad5af9a09d76fba570f5df7f" name="afae26796ad5af9a09d76fba570f5df7f"></a>
+const TEfloat &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetHalfHeight</b> () const</td></tr>
+<tr class="separator:afae26796ad5af9a09d76fba570f5df7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca01dd79128d2042110e311b3299e14e"><td class="memItemLeft" align="right" valign="top"><a id="aca01dd79128d2042110e311b3299e14e" name="aca01dd79128d2042110e311b3299e14e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHalfHeight</b> (const TEfloat &amp;nHeight)</td></tr>
+<tr class="separator:aca01dd79128d2042110e311b3299e14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_t_e_1_1_collider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_collider')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_collider.html">TE::Collider</a></td></tr>
+<tr class="memitem:afeaf78f0462087e63fecb8e079b914ce inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="afeaf78f0462087e63fecb8e079b914ce" name="afeaf78f0462087e63fecb8e079b914ce"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Collider</b> (TEtypeguid typeguid)</td></tr>
+<tr class="separator:afeaf78f0462087e63fecb8e079b914ce inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8204ab8d1322bdb5646cf089057a42fd inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top">rttr::instance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_collider.html#a8204ab8d1322bdb5646cf089057a42fd">GetRTTRInstance</a> () const</td></tr>
+<tr class="separator:a8204ab8d1322bdb5646cf089057a42fd inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46cb7a563e3de7569e2eb19d9111b183 inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top">ColliderType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_collider.html#a46cb7a563e3de7569e2eb19d9111b183">GetColliderType</a> () const noexcept</td></tr>
+<tr class="memdesc:a46cb7a563e3de7569e2eb19d9111b183 inherit pub_methods_class_t_e_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the type of collider this is.  <br /></td></tr>
+<tr class="separator:a46cb7a563e3de7569e2eb19d9111b183 inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09efc13b92e8bbf9f6ba7f464d5e1633 inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_collider.html#a09efc13b92e8bbf9f6ba7f464d5e1633">SetColliderType</a> (ColliderType nColliderType) noexcept</td></tr>
+<tr class="memdesc:a09efc13b92e8bbf9f6ba7f464d5e1633 inherit pub_methods_class_t_e_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the type of collider this is.  <br /></td></tr>
+<tr class="separator:a09efc13b92e8bbf9f6ba7f464d5e1633 inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34df03bbf5140857630ec40c345f4b99 inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top">const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_collider.html#a34df03bbf5140857630ec40c345f4b99">GetCenter</a> () const noexcept</td></tr>
+<tr class="memdesc:a34df03bbf5140857630ec40c345f4b99 inherit pub_methods_class_t_e_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the center of the collider.  <br /></td></tr>
+<tr class="separator:a34df03bbf5140857630ec40c345f4b99 inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa175bb748d8e88a8557d46a08cdd29e6 inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_collider.html#aa175bb748d8e88a8557d46a08cdd29e6">SetCenter</a> (const glm::vec3 &amp;nCenter) noexcept</td></tr>
+<tr class="memdesc:aa175bb748d8e88a8557d46a08cdd29e6 inherit pub_methods_class_t_e_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the center position of the collider.  <br /></td></tr>
+<tr class="separator:aa175bb748d8e88a8557d46a08cdd29e6 inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a535c500f09a124198cc610d3c68e93f3 inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a535c500f09a124198cc610d3c68e93f3" name="a535c500f09a124198cc610d3c68e93f3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetTrigger</b> () const noexcept</td></tr>
+<tr class="separator:a535c500f09a124198cc610d3c68e93f3 inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2882ec9f429dc3774c8de79ca82540 inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a3d2882ec9f429dc3774c8de79ca82540" name="a3d2882ec9f429dc3774c8de79ca82540"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTrigger</b> (bool nIsTrigger) noexcept</td></tr>
+<tr class="separator:a3d2882ec9f429dc3774c8de79ca82540 inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae89015278aeb357236c19e6e773b8062 inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="ae89015278aeb357236c19e6e773b8062" name="ae89015278aeb357236c19e6e773b8062"></a>
+const JPH::BodyID &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBodyID</b> () const noexcept</td></tr>
+<tr class="separator:ae89015278aeb357236c19e6e773b8062 inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e6058ce073a3a7a3f0d9812d4aa737 inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a77e6058ce073a3a7a3f0d9812d4aa737" name="a77e6058ce073a3a7a3f0d9812d4aa737"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBodyID</b> (const JPH::BodyID &amp;nBodyID) noexcept</td></tr>
+<tr class="separator:a77e6058ce073a3a7a3f0d9812d4aa737 inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f38501b7ed7c7d14dabee4c6f1699c inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a58f38501b7ed7c7d14dabee4c6f1699c" name="a58f38501b7ed7c7d14dabee4c6f1699c"></a>
+const JPH::BodyCreationSettings&#160;</td><td class="memItemRight" valign="bottom"><b>GetSettings</b> () const noexcept</td></tr>
+<tr class="separator:a58f38501b7ed7c7d14dabee4c6f1699c inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281c862c145ffaf0d7cad4000d6e9236 inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a281c862c145ffaf0d7cad4000d6e9236" name="a281c862c145ffaf0d7cad4000d6e9236"></a>
+JPH::BodyCreationSettings &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSettings</b> () noexcept</td></tr>
+<tr class="separator:a281c862c145ffaf0d7cad4000d6e9236 inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc53b5a547b69fffd29db14ee0d829d1 inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="abc53b5a547b69fffd29db14ee0d829d1" name="abc53b5a547b69fffd29db14ee0d829d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSettings</b> (const JPH::BodyCreationSettings &amp;nSettings) noexcept</td></tr>
+<tr class="separator:abc53b5a547b69fffd29db14ee0d829d1 inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5979f3d167ca826886e848993d6ca86f inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a5979f3d167ca826886e848993d6ca86f" name="a5979f3d167ca826886e848993d6ca86f"></a>
+JPH::EActivation&#160;</td><td class="memItemRight" valign="bottom"><b>GetActivationState</b> () const noexcept</td></tr>
+<tr class="separator:a5979f3d167ca826886e848993d6ca86f inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47204fedcc3ccaf1d7068016c099dff0 inherit pub_methods_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a47204fedcc3ccaf1d7068016c099dff0" name="a47204fedcc3ccaf1d7068016c099dff0"></a>
+JPH::ShapeRefC&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateShape</b> (ShapeSettings &amp;sSettings) const noexcept</td></tr>
+<tr class="separator:a47204fedcc3ccaf1d7068016c099dff0 inherit pub_methods_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_t_e_1_1_i_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a></td></tr>
+<tr class="memitem:a196c19e70f9683a57c1eff01db6c07a3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top"><a id="a196c19e70f9683a57c1eff01db6c07a3" name="a196c19e70f9683a57c1eff01db6c07a3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IComponent</b> (TEtypeguid typeguid)</td></tr>
+<tr class="separator:a196c19e70f9683a57c1eff01db6c07a3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40de458d1c358ed31994e64f6404ee8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#ab40de458d1c358ed31994e64f6404ee8">AllocateData</a> ()</td></tr>
+<tr class="memdesc:ab40de458d1c358ed31994e64f6404ee8 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">override as needed. Will be called on component allocate (via addcomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data.  <br /></td></tr>
+<tr class="separator:ab40de458d1c358ed31994e64f6404ee8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4ca46fa0d498df3d6e29de39ceddb8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a2e4ca46fa0d498df3d6e29de39ceddb8">DeallocateData</a> ()</td></tr>
+<tr class="memdesc:a2e4ca46fa0d498df3d6e29de39ceddb8 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">override as needed. Will be called on component deallocate (via removecomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data.  <br /></td></tr>
+<tr class="separator:a2e4ca46fa0d498df3d6e29de39ceddb8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a639f8e495309c93d4e632595ea615da4">GetIsActive</a> () const</td></tr>
+<tr class="memdesc:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this component is active or not. Active state is determined by: internal Active state &amp;&amp; entity's active state.  <br /></td></tr>
+<tr class="separator:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9355bcc94eb70ec778fcaf9635d2ce7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a9355bcc94eb70ec778fcaf9635d2ce7b">GetIsActiveInternal</a> () const noexcept</td></tr>
+<tr class="memdesc:a9355bcc94eb70ec778fcaf9635d2ce7b inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the internal active state of this component. Does not check if entity is active or not. Do not use this to determine if this component is usable or not. Use <a class="el" href="class_t_e_1_1_i_component.html#a639f8e495309c93d4e632595ea615da4" title="Checks whether this component is active or not. Active state is determined by: internal Active state ...">GetIsActive()</a> instead.  <br /></td></tr>
+<tr class="separator:a9355bcc94eb70ec778fcaf9635d2ce7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a90097cf522fe29daf1fa2f5ddb148191">SetIsActiveInternal</a> (bool active) noexcept</td></tr>
+<tr class="memdesc:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal active state of this component. Does not affect the state of the parent. If entity is inactive but this component is active, the resultant state of this component will still be inactive until the entity's state is changed to active.  <br /></td></tr>
+<tr class="separator:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07865b61eaa1f8404312a287ff2cad7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top"><a id="a07865b61eaa1f8404312a287ff2cad7b" name="a07865b61eaa1f8404312a287ff2cad7b"></a>
+<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntity</b> () const</td></tr>
+<tr class="separator:a07865b61eaa1f8404312a287ff2cad7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f805b5129eca4fddabecb7a77f42d54 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual rttr::instance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a9f805b5129eca4fddabecb7a77f42d54">GetRTTRInstance</a> () const</td></tr>
+<tr class="separator:a9f805b5129eca4fddabecb7a77f42d54 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc3a2ae05147f4f600dc2093c52d8d3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#abdc3a2ae05147f4f600dc2093c52d8d3">Serialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
+<tr class="separator:abdc3a2ae05147f4f600dc2093c52d8d3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e069570ee4f25551a590e1414d465f3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a2e069570ee4f25551a590e1414d465f3">Deserialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
+<tr class="separator:a2e069570ee4f25551a590e1414d465f3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_t_e_1_1_i_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_object.html">TE::IObject</a></td></tr>
+<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="afc331476bf6217fde06f31deb161b97e" name="afc331476bf6217fde06f31deb161b97e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IObject</b> (TEtypeguid typeGUID)</td></tr>
+<tr class="separator:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aeb49f1d9760159d96df6dca959790745" name="aeb49f1d9760159d96df6dca959790745"></a>
+virtual TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetGUID</b> () const noexcept</td></tr>
+<tr class="separator:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aafeae10a462729d794db5c6da61eba08" name="aafeae10a462729d794db5c6da61eba08"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGUID</b> (TEguid guid) noexcept</td></tr>
+<tr class="separator:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="a705d4f85c13ce4fc396ad38cfbda7cdf" name="a705d4f85c13ce4fc396ad38cfbda7cdf"></a>
+virtual TEtypeguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeGUID</b> () const noexcept</td></tr>
+<tr class="separator:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a18226ef62b00996ff0bbd28c3482460c"><td class="memItemLeft" align="right" valign="top"><a id="a18226ef62b00996ff0bbd28c3482460c" name="a18226ef62b00996ff0bbd28c3482460c"></a>
+CylinderShapeSettings&#160;</td><td class="memItemRight" valign="bottom"><b>cylinderSettings</b></td></tr>
+<tr class="separator:a18226ef62b00996ff0bbd28c3482460c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_t_e_1_1_collider"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_t_e_1_1_collider')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_t_e_1_1_collider.html">TE::Collider</a></td></tr>
+<tr class="memitem:a0d07ace0ac4a33a3b7ab9d7aae27f372 inherit pub_attribs_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a0d07ace0ac4a33a3b7ab9d7aae27f372" name="a0d07ace0ac4a33a3b7ab9d7aae27f372"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>initPosition</b> = false</td></tr>
+<tr class="separator:a0d07ace0ac4a33a3b7ab9d7aae27f372 inherit pub_attribs_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_t_e_1_1_collider"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_t_e_1_1_collider')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_t_e_1_1_collider.html">TE::Collider</a></td></tr>
+<tr class="memitem:a3c6a3ec4e06bed1e23a6239e8cb8d79a inherit pro_attribs_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a3c6a3ec4e06bed1e23a6239e8cb8d79a" name="a3c6a3ec4e06bed1e23a6239e8cb8d79a"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>center</b></td></tr>
+<tr class="separator:a3c6a3ec4e06bed1e23a6239e8cb8d79a inherit pro_attribs_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dfa8188c1f5907657029b90b2cf076e inherit pro_attribs_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a3dfa8188c1f5907657029b90b2cf076e" name="a3dfa8188c1f5907657029b90b2cf076e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTrigger</b></td></tr>
+<tr class="separator:a3dfa8188c1f5907657029b90b2cf076e inherit pro_attribs_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7246c47598a613bc1e16f29a11ac739d inherit pro_attribs_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a7246c47598a613bc1e16f29a11ac739d" name="a7246c47598a613bc1e16f29a11ac739d"></a>
+ColliderType&#160;</td><td class="memItemRight" valign="bottom"><b>colliderType</b> = ColliderType::None</td></tr>
+<tr class="separator:a7246c47598a613bc1e16f29a11ac739d inherit pro_attribs_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60fc27316a9d9f7b5e4ee0ebf7407de4 inherit pro_attribs_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a60fc27316a9d9f7b5e4ee0ebf7407de4" name="a60fc27316a9d9f7b5e4ee0ebf7407de4"></a>
+JPH::BodyID&#160;</td><td class="memItemRight" valign="bottom"><b>m_BodyID</b></td></tr>
+<tr class="separator:a60fc27316a9d9f7b5e4ee0ebf7407de4 inherit pro_attribs_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c232d7b243b6b44dfb50321ee798b0 inherit pro_attribs_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a42c232d7b243b6b44dfb50321ee798b0" name="a42c232d7b243b6b44dfb50321ee798b0"></a>
+JPH::BodyCreationSettings&#160;</td><td class="memItemRight" valign="bottom"><b>colliderSettings</b></td></tr>
+<tr class="separator:a42c232d7b243b6b44dfb50321ee798b0 inherit pro_attribs_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd39bb0c031c84b4991d950e9e640264 inherit pro_attribs_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="acd39bb0c031c84b4991d950e9e640264" name="acd39bb0c031c84b4991d950e9e640264"></a>
+JPH::EActivation&#160;</td><td class="memItemRight" valign="bottom"><b>mActivationState</b> = JPH::EActivation::Activate</td></tr>
+<tr class="separator:acd39bb0c031c84b4991d950e9e640264 inherit pro_attribs_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf7f9bdaba0cb94e1ca208fb471cf33 inherit pro_attribs_class_t_e_1_1_collider"><td class="memItemLeft" align="right" valign="top"><a id="a0cf7f9bdaba0cb94e1ca208fb471cf33" name="a0cf7f9bdaba0cb94e1ca208fb471cf33"></a>
+JPH::ObjectLayer&#160;</td><td class="memItemRight" valign="bottom"><b>mLayer</b> = TE::Layer::NON_MOVING</td></tr>
+<tr class="separator:a0cf7f9bdaba0cb94e1ca208fb471cf33 inherit pro_attribs_class_t_e_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aee27bde8fe070f4a7efdf7a97d0359e2" name="aee27bde8fe070f4a7efdf7a97d0359e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee27bde8fe070f4a7efdf7a97d0359e2">&#9670;&#160;</a></span>GetRTTRInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rttr::instance TE::CylinderCollider::GetRTTRInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_collider.html">TE::Collider</a>.</p>
+
+</div>
+</div>
+<a id="a949b8ab206bc9da8c133e3ed5a068494" name="a949b8ab206bc9da8c133e3ed5a068494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949b8ab206bc9da8c133e3ed5a068494">&#9670;&#160;</a></span>Serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::CylinderCollider::Serialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a>.</p>
+
+</div>
+</div>
+<a id="af1aab7a5ff7cdcd691589d3ad4dc994d" name="af1aab7a5ff7cdcd691589d3ad4dc994d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1aab7a5ff7cdcd691589d3ad4dc994d">&#9670;&#160;</a></span>Deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::CylinderCollider::Deserialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a>.</p>
+
+</div>
+</div>
+<a id="a4ee63faa13bfce84d02a6fffbe5dd17c" name="a4ee63faa13bfce84d02a6fffbe5dd17c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee63faa13bfce84d02a6fffbe5dd17c">&#9670;&#160;</a></span>GetSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const glm::vec3 TE::CylinderCollider::GetSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the dimensions of the cylinder collider. </p>
+<dl class="section return"><dt>Returns</dt><dd>the dimensions of the cylinder collider </dd></dl>
+
+</div>
+</div>
+<a id="af1132b5edda7ac5996af32e1e17a8068" name="af1132b5edda7ac5996af32e1e17a8068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1132b5edda7ac5996af32e1e17a8068">&#9670;&#160;</a></span>SetSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::CylinderCollider::SetSize </td>
+          <td>(</td>
+          <td class="paramtype">const glm::vec3&#160;</td>
+          <td class="paramname"><em>nSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the dimensions of the cylinder collider. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nSize</td><td>the new dimensions of the cylinder collider </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_e_c_s_components_2_cylinder_collider_8h_source.html">ECSComponents/CylinderCollider.h</a></li>
+<li><a class="el" href="_cylinder_collider_8cpp.html">CylinderCollider.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_t_e.html">TE</a></li><li class="navelem"><a class="el" href="class_t_e_1_1_cylinder_collider.html">CylinderCollider</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

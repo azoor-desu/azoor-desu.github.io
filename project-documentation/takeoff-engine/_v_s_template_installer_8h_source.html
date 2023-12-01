@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('_v_s_template_installer_8h_source.html
   <div class="headertitle"><div class="title">VSTemplateInstaller.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_v_s_template_installer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
@@ -138,19 +138,19 @@ $(document).ready(function(){initNavTree('_v_s_template_installer_8h_source.html
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_file_sys_8h.html">Helper/FileSys.h</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_helper_2_debug_8h.html">Helper/Debug.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="namespace_editor.html">    9</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_editor.html">Editor</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>Editor {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">// Forcing default c# templates onto user&#39;s PC lol</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespace_editor.html#a6116b402804d7f9873a2c856cf9c180b">   11</a></span>    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_editor.html#a6116b402804d7f9873a2c856cf9c180b">InstallTemplate</a>() {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> InstallTemplate() {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="comment">// Forcing default c# game script templates onto user&#39;s PC lol</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        std::string documentFolderPath = TE::FileSys_GetFolderPath&lt;TE::FolderType::DOCUMENTS&gt;();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        std::string test = <a class="code hl_function" href="namespace_t_e.html#adf07a92fcc964362a26b0462f571395f">TE::FileSys_AppendFolderPath</a>(documentFolderPath, <span class="stringliteral">&quot;Visual Studio 2022&quot;</span>, <span class="stringliteral">&quot;Templates&quot;</span>, <span class="stringliteral">&quot;ItemTemplates&quot;</span>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        std::string test = TE::FileSys_AppendFolderPath(documentFolderPath, <span class="stringliteral">&quot;Visual Studio 2022&quot;</span>, <span class="stringliteral">&quot;Templates&quot;</span>, <span class="stringliteral">&quot;ItemTemplates&quot;</span>);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">if</span> (!std::filesystem::exists(test))</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            printf(<span class="stringliteral">&quot;Unable to install C# script template into %s, folder not found.\n&quot;</span>, test.c_str());</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!std::filesystem::exists(<span class="stringliteral">&quot;./tools/GameScriptTemplate.zip&quot;</span>)) </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            printf(<span class="stringliteral">&quot;C# Script template not installed, could not find: %s&quot;</span>, <span class="stringliteral">&quot;./tools/GameScriptTemplate.zip\n&quot;</span>);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            test = <a class="code hl_function" href="namespace_t_e.html#adf07a92fcc964362a26b0462f571395f">TE::FileSys_AppendFolderPath</a>(test, <span class="stringliteral">&quot;GameScriptTemplate.zip&quot;</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            test = TE::FileSys_AppendFolderPath(test, <span class="stringliteral">&quot;GameScriptTemplate.zip&quot;</span>);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keywordflow">if</span> (std::filesystem::exists(test)) {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                <span class="comment">// NOTE: std::filesystem::last_write_time is not very good to use to check if file is old/new. Alternative is force a copy every time editor starts.</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                <span class="comment">//if (std::filesystem::last_write_time(&quot;./tools/GameScriptTemplate.zip&quot;) == std::filesystem::last_write_time(test))</span></div>
@@ -169,15 +169,12 @@ $(document).ready(function(){initNavTree('_v_s_template_installer_8h_source.html
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
 <div class="ttc" id="a_file_sys_8h_html"><div class="ttname"><a href="_file_sys_8h.html">FileSys.h</a></div><div class="ttdoc">Contains helper code related to filesystems, directories and path manipulation.   All content (c) 202...</div></div>
 <div class="ttc" id="a_helper_2_debug_8h_html"><div class="ttname"><a href="_helper_2_debug_8h.html">Debug.h</a></div><div class="ttdoc">Contains the declarations of debugging tools: Memleak checker, Assert and Logging....</div></div>
-<div class="ttc" id="anamespace_editor_html"><div class="ttname"><a href="namespace_editor.html">Editor</a></div><div class="ttdef"><b>Definition:</b> VSTemplateInstaller.h:9</div></div>
-<div class="ttc" id="anamespace_editor_html_a6116b402804d7f9873a2c856cf9c180b"><div class="ttname"><a href="namespace_editor.html#a6116b402804d7f9873a2c856cf9c180b">Editor::InstallTemplate</a></div><div class="ttdeci">static void InstallTemplate()</div><div class="ttdef"><b>Definition:</b> VSTemplateInstaller.h:11</div></div>
-<div class="ttc" id="anamespace_t_e_html_adf07a92fcc964362a26b0462f571395f"><div class="ttname"><a href="namespace_t_e.html#adf07a92fcc964362a26b0462f571395f">TE::FileSys_AppendFolderPath</a></div><div class="ttdeci">static std::string FileSys_AppendFolderPath(const T &amp;...args)</div><div class="ttdoc">Concatenates a bunch of strings together. Adds a backslash '\' between each string to concatenate.</div><div class="ttdef"><b>Definition:</b> FileSys.h:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ff9d562b39932b7b74f54b9fb4bb00a0.html">ProjectSolution</a></li><li class="navelem"><a class="el" href="dir_49c17524d428d5cc12669521da6ef3e9.html">Proj_Editor</a></li><li class="navelem"><a class="el" href="dir_c84b3d9b8ebc94b96888f1918258ee9b.html">Source</a></li><li class="navelem"><a class="el" href="dir_ead3dc514e47475f2c831ea9395cd28e.html">CustomScripts</a></li><li class="navelem"><a class="el" href="_v_s_template_installer_8h.html">VSTemplateInstaller.h</a></li>
+    <li class="navelem"><a class="el" href="dir_ff9d562b39932b7b74f54b9fb4bb00a0.html">ProjectSolution</a></li><li class="navelem"><a class="el" href="dir_49c17524d428d5cc12669521da6ef3e9.html">Proj_Editor</a></li><li class="navelem"><a class="el" href="dir_c84b3d9b8ebc94b96888f1918258ee9b.html">Source</a></li><li class="navelem"><a class="el" href="dir_ead3dc514e47475f2c831ea9395cd28e.html">CustomScripts</a></li><li class="navelem"><b>VSTemplateInstaller.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

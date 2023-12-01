@@ -128,8 +128,7 @@ $(document).ready(function(){initNavTree('_editor_helper_8h.html',''); initResiz
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">EditorHelper.h File Reference</div></div>
 </div><!--header-->
@@ -139,6 +138,7 @@ $(document).ready(function(){initNavTree('_editor_helper_8h.html',''); initResiz
  All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_defines_8h_source.html">Defines.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_vulkan_manager_8h_source.html">Core/VulkanManager.h</a>&quot;</code><br />
 <code>#include &lt;imgui.h&gt;</code><br />
 <code>#include &quot;imgui_internal.h&quot;</code><br />
 <code>#include &lt;rttr/registration.h&gt;</code><br />
@@ -147,23 +147,26 @@ $(document).ready(function(){initNavTree('_editor_helper_8h.html',''); initResiz
 <p><a href="_editor_helper_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html">Editor::EditorHelper</a></td></tr>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_editor_1_1_im_gui___impl_vulkan_h___frame_render_buffers.html">Editor::ImGui_ImplVulkanH_FrameRenderBuffers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_editor"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html">Editor</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_editor_1_1_im_gui___impl_vulkan_h___window_render_buffers.html">Editor::ImGui_ImplVulkanH_WindowRenderBuffers</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_editor_1_1_im_gui___impl_vulkan___viewport_data.html">Editor::ImGui_ImplVulkan_ViewportData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_editor_1_1_im_gui___impl_vulkan___data.html">Editor::ImGui_ImplVulkan_Data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_1_1_editor_helper.html">Editor::EditorHelper</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0a193c927f3a1d9a04ea7e55ca829580"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a0a193c927f3a1d9a04ea7e55ca829580"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a0a193c927f3a1d9a04ea7e55ca829580">Editor::OnlyFilename</a> (T const &amp;path, T const &amp;delims=&quot;/\\&quot;)</td></tr>
+<tr class="memitem:a0a193c927f3a1d9a04ea7e55ca829580"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_editor_helper_8h.html#a0a193c927f3a1d9a04ea7e55ca829580">Editor::OnlyFilename</a> (T const &amp;path, T const &amp;delims=&quot;/\\&quot;)</td></tr>
 <tr class="memdesc:a0a193c927f3a1d9a04ea7e55ca829580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helps convert full file path to just the file name.  <br /></td></tr>
 <tr class="separator:a0a193c927f3a1d9a04ea7e55ca829580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a875d10822c2179c54f43eab5998849a5"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a875d10822c2179c54f43eab5998849a5"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a875d10822c2179c54f43eab5998849a5">Editor::RemoveFileExtension</a> (T const &amp;filename)</td></tr>
+<tr class="memitem:a875d10822c2179c54f43eab5998849a5"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_editor_helper_8h.html#a875d10822c2179c54f43eab5998849a5">Editor::RemoveFileExtension</a> (T const &amp;filename)</td></tr>
 <tr class="memdesc:a875d10822c2179c54f43eab5998849a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the extension from a file name.  <br /></td></tr>
 <tr class="separator:a875d10822c2179c54f43eab5998849a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -178,7 +181,77 @@ Functions</h2></td></tr>
 </pre><pre>  <b>Emails:</b>      <a href="mailto:noahalastair.ng@digipen.edu">noahalastair.ng@digipen.edu</a></pre><pre>
 
 </pre><pre>  <b>Date:</b>        2/09/2023</pre><pre>
-</pre> </div></div><!-- contents -->
+</pre> </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a0a193c927f3a1d9a04ea7e55ca829580" name="a0a193c927f3a1d9a04ea7e55ca829580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a193c927f3a1d9a04ea7e55ca829580">&#9670;&#160;</a></span>OnlyFilename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T Editor::OnlyFilename </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>delims</em> = <code>&quot;/\\&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helps convert full file path to just the file name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>the file path</td></tr>
+    <tr><td class="paramname">delims</td><td>characters to filter</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns only the name of the file, without all extensions </dd></dl>
+
+</div>
+</div>
+<a id="a875d10822c2179c54f43eab5998849a5" name="a875d10822c2179c54f43eab5998849a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a875d10822c2179c54f43eab5998849a5">&#9670;&#160;</a></span>RemoveFileExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T Editor::RemoveFileExtension </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the extension from a file name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the file name</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns only the name of the file, without all extensions </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

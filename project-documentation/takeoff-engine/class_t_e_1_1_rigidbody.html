@@ -129,36 +129,27 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_rigidbody.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="class_t_e_1_1_rigidbody-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TE::Rigidbody Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_rigidbody_8h_source.html">Rigidbody.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for TE::Rigidbody:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_t_e_1_1_rigidbody.png" usemap="#TE::Rigidbody_map" alt=""/>
-  <map id="TE::Rigidbody_map" name="TE::Rigidbody_map">
-<area href="class_t_e_1_1_i_component.html" title="Base class of every ECS Component. Provides some generic functions to." alt="TE::IComponent" shape="rect" coords="0,56,99,80"/>
-<area href="class_t_e_1_1_i_object.html" alt="TE::IObject" shape="rect" coords="0,0,99,24"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a081ef8ceb561637870cc4b1ba312c33b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a081ef8ceb561637870cc4b1ba312c33b">Rigidbody</a> ()</td></tr>
-<tr class="separator:a081ef8ceb561637870cc4b1ba312c33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d51c936430abe02eb8a965f73075bfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a2d51c936430abe02eb8a965f73075bfe">~Rigidbody</a> ()</td></tr>
-<tr class="separator:a2d51c936430abe02eb8a965f73075bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd21d97082c90370f20c0b19d9d1e3c5"><td class="memItemLeft" align="right" valign="top">rttr::instance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#afd21d97082c90370f20c0b19d9d1e3c5">GetRTTRInstance</a> () const</td></tr>
 <tr class="separator:afd21d97082c90370f20c0b19d9d1e3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebae24a2053fcb72372fc38924a00a34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#aebae24a2053fcb72372fc38924a00a34">Serialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
 <tr class="separator:aebae24a2053fcb72372fc38924a00a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dcfd90acd4fac729d27dfc5ed8720b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a6dcfd90acd4fac729d27dfc5ed8720b4">Deserialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
 <tr class="separator:a6dcfd90acd4fac729d27dfc5ed8720b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a847c0255a5e522e45b78651573ef24bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a847c0255a5e522e45b78651573ef24bf">Update</a> (<a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> dt)</td></tr>
+<tr class="memitem:a41976efb31e59547699d9e55df2da5c2"><td class="memItemLeft" align="right" valign="top"><a id="a41976efb31e59547699d9e55df2da5c2" name="a41976efb31e59547699d9e55df2da5c2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSleeping</b> () const noexcept</td></tr>
+<tr class="separator:a41976efb31e59547699d9e55df2da5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de71bd587cb3e0ff59894a962e1b448"><td class="memItemLeft" align="right" valign="top"><a id="a6de71bd587cb3e0ff59894a962e1b448" name="a6de71bd587cb3e0ff59894a962e1b448"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSleeping</b> (bool sleeping) noexcept</td></tr>
+<tr class="separator:a6de71bd587cb3e0ff59894a962e1b448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847c0255a5e522e45b78651573ef24bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a847c0255a5e522e45b78651573ef24bf">Update</a> (TEfloat dt)</td></tr>
 <tr class="memdesc:a847c0255a5e522e45b78651573ef24bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the physics of this rigidbody.  <br /></td></tr>
 <tr class="separator:a847c0255a5e522e45b78651573ef24bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ebcd2d31b107b2e72769638c9f12642"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a0ebcd2d31b107b2e72769638c9f12642">AddForce</a> (const glm::vec3 &amp;force)</td></tr>
@@ -170,14 +161,82 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8552d7107f46d5a0a196e3eb3df89ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#ab8552d7107f46d5a0a196e3eb3df89ba">AddTorque</a> (const glm::vec3 &amp;torque)</td></tr>
 <tr class="memdesc:ab8552d7107f46d5a0a196e3eb3df89ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a force to the angular velocity of the rigidbody.  <br /></td></tr>
 <tr class="separator:ab8552d7107f46d5a0a196e3eb3df89ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27eb605538d50c4e9de4557be69bf393"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a27eb605538d50c4e9de4557be69bf393">TerminalVelocity</a> (const <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> <a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">mass</a>, const <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> gravity, const <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> dragCoefficient) const noexcept</td></tr>
+<tr class="memitem:a27eb605538d50c4e9de4557be69bf393"><td class="memItemLeft" align="right" valign="top">const TEfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a27eb605538d50c4e9de4557be69bf393">TerminalVelocity</a> (const TEfloat mass, const TEfloat gravity, const TEfloat dragCoefficient) const noexcept</td></tr>
 <tr class="memdesc:a27eb605538d50c4e9de4557be69bf393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the terminal velocity of the rigidbody. Terminal velocity is the maximum vertical velocity a rigidbody can reach.  <br /></td></tr>
 <tr class="separator:a27eb605538d50c4e9de4557be69bf393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559c8e7cec6d390dbfc187a4a14d89af"><td class="memItemLeft" align="right" valign="top"><a id="a559c8e7cec6d390dbfc187a4a14d89af" name="a559c8e7cec6d390dbfc187a4a14d89af"></a>
+JPH::Body *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBody</b> () const noexcept</td></tr>
+<tr class="separator:a559c8e7cec6d390dbfc187a4a14d89af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78536c4ecab3c0d042e993f590b98440"><td class="memItemLeft" align="right" valign="top"><a id="a78536c4ecab3c0d042e993f590b98440" name="a78536c4ecab3c0d042e993f590b98440"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBody</b> (JPH::Body *nBody) noexcept</td></tr>
+<tr class="separator:a78536c4ecab3c0d042e993f590b98440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa39ef8bf36729cd018970dd3e5c062be"><td class="memItemLeft" align="right" valign="top"><a id="aa39ef8bf36729cd018970dd3e5c062be" name="aa39ef8bf36729cd018970dd3e5c062be"></a>
+JPH::BodyCreationSettings&#160;</td><td class="memItemRight" valign="bottom"><b>GetBodySettings</b> () const noexcept</td></tr>
+<tr class="separator:aa39ef8bf36729cd018970dd3e5c062be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dfda8f2cf56fa30dede8aa04005be08"><td class="memItemLeft" align="right" valign="top"><a id="a7dfda8f2cf56fa30dede8aa04005be08" name="a7dfda8f2cf56fa30dede8aa04005be08"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBodySettings</b> (JPH::BodyCreationSettings settings) noexcept</td></tr>
+<tr class="separator:a7dfda8f2cf56fa30dede8aa04005be08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328277a582afdc9a8f255067b2afd02c"><td class="memItemLeft" align="right" valign="top"><a id="a328277a582afdc9a8f255067b2afd02c" name="a328277a582afdc9a8f255067b2afd02c"></a>
+JPH::BodyID&#160;</td><td class="memItemRight" valign="bottom"><b>GetBodyID</b> () const noexcept</td></tr>
+<tr class="separator:a328277a582afdc9a8f255067b2afd02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479257903e0a25cda86da3203c5d3a2c"><td class="memItemLeft" align="right" valign="top"><a id="a479257903e0a25cda86da3203c5d3a2c" name="a479257903e0a25cda86da3203c5d3a2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBodyID</b> (const JPH::BodyID &amp;id) noexcept</td></tr>
+<tr class="separator:a479257903e0a25cda86da3203c5d3a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67832299711929326d41a5004110e6c"><td class="memItemLeft" align="right" valign="top"><a id="ad67832299711929326d41a5004110e6c" name="ad67832299711929326d41a5004110e6c"></a>
+TEfloat&#160;</td><td class="memItemRight" valign="bottom"><b>GetMass</b> () const noexcept</td></tr>
+<tr class="separator:ad67832299711929326d41a5004110e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2502ebca526b12b7ff281bde1074036"><td class="memItemLeft" align="right" valign="top"><a id="aa2502ebca526b12b7ff281bde1074036" name="aa2502ebca526b12b7ff281bde1074036"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMass</b> (TEfloat nMass) noexcept</td></tr>
+<tr class="separator:aa2502ebca526b12b7ff281bde1074036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44707ac5a3df67cbddfffd21b99f064"><td class="memItemLeft" align="right" valign="top">const TEfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#ae44707ac5a3df67cbddfffd21b99f064">InverseMass</a> () const noexcept</td></tr>
+<tr class="memdesc:ae44707ac5a3df67cbddfffd21b99f064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the inverse mass of this rigidbody. For static rigidbodies, the inverse mass is 0. Dynamic, inverse mass is 1/mass.  <br /></td></tr>
+<tr class="separator:ae44707ac5a3df67cbddfffd21b99f064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ad65cf922689c501df2db7f06d4469"><td class="memItemLeft" align="right" valign="top"><a id="a05ad65cf922689c501df2db7f06d4469" name="a05ad65cf922689c501df2db7f06d4469"></a>
+RigidbodyType&#160;</td><td class="memItemRight" valign="bottom"><b>GetType</b> () const noexcept</td></tr>
+<tr class="separator:a05ad65cf922689c501df2db7f06d4469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5780bfd56a502031e02eac0e1372bfe"><td class="memItemLeft" align="right" valign="top"><a id="ad5780bfd56a502031e02eac0e1372bfe" name="ad5780bfd56a502031e02eac0e1372bfe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetType</b> (RigidbodyType nType) noexcept</td></tr>
+<tr class="separator:ad5780bfd56a502031e02eac0e1372bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9065feb76ead1118420fac73286c4aa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a9065feb76ead1118420fac73286c4aa7">SetPositionRigidbody</a> (const glm::vec3 &amp;nPos) noexcept</td></tr>
+<tr class="memdesc:a9065feb76ead1118420fac73286c4aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directly sets the position of the rigidbody, inside of the Jolt Physics <a class="el" href="class_t_e_1_1_engine.html" title="Main interface for accessing Engine functionalities. Engine internally will add/remove managers....">Engine</a>.  <br /></td></tr>
+<tr class="separator:a9065feb76ead1118420fac73286c4aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a7be916cd92170d2cdb2609aa04a48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a29a7be916cd92170d2cdb2609aa04a48">SetRotationRigidbody</a> (const glm::quat &amp;nRot) noexcept</td></tr>
+<tr class="memdesc:a29a7be916cd92170d2cdb2609aa04a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directly sets the rotation of the rigidbody, inside of the Jolt Physics <a class="el" href="class_t_e_1_1_engine.html" title="Main interface for accessing Engine functionalities. Engine internally will add/remove managers....">Engine</a>.  <br /></td></tr>
+<tr class="separator:a29a7be916cd92170d2cdb2609aa04a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93e962fcbe313d76d5bf023b31eec3b8"><td class="memItemLeft" align="right" valign="top"><a id="a93e962fcbe313d76d5bf023b31eec3b8" name="a93e962fcbe313d76d5bf023b31eec3b8"></a>
+TEfloat&#160;</td><td class="memItemRight" valign="bottom"><b>GetRestitution</b> () const noexcept</td></tr>
+<tr class="separator:a93e962fcbe313d76d5bf023b31eec3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4f011f778b81fc660093725c1aafa0"><td class="memItemLeft" align="right" valign="top"><a id="a1b4f011f778b81fc660093725c1aafa0" name="a1b4f011f778b81fc660093725c1aafa0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRestitution</b> (TEfloat nRestitution) noexcept</td></tr>
+<tr class="separator:a1b4f011f778b81fc660093725c1aafa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f06ead45fabc8d981f94f87614d30aa"><td class="memItemLeft" align="right" valign="top"><a id="a5f06ead45fabc8d981f94f87614d30aa" name="a5f06ead45fabc8d981f94f87614d30aa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>UseGravity</b> () const noexcept</td></tr>
+<tr class="separator:a5f06ead45fabc8d981f94f87614d30aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c44d8fa67bae31105ac321f9558db09"><td class="memItemLeft" align="right" valign="top"><a id="a8c44d8fa67bae31105ac321f9558db09" name="a8c44d8fa67bae31105ac321f9558db09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ToggleGravity</b> (bool nGravity) noexcept</td></tr>
+<tr class="separator:a8c44d8fa67bae31105ac321f9558db09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b3efc40b16d48c508911f40bf96578"><td class="memItemLeft" align="right" valign="top"><a id="ae2b3efc40b16d48c508911f40bf96578" name="ae2b3efc40b16d48c508911f40bf96578"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>GetVelocity</b> () const noexcept</td></tr>
+<tr class="separator:ae2b3efc40b16d48c508911f40bf96578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af243e75b6170e069f2f04333277905d7"><td class="memItemLeft" align="right" valign="top"><a id="af243e75b6170e069f2f04333277905d7" name="af243e75b6170e069f2f04333277905d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVelocity</b> (glm::vec3 nVel) noexcept</td></tr>
+<tr class="separator:af243e75b6170e069f2f04333277905d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa59909e40fabc307511ae183acfeccd"><td class="memItemLeft" align="right" valign="top"><a id="aaa59909e40fabc307511ae183acfeccd" name="aaa59909e40fabc307511ae183acfeccd"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>GetAngularVelocity</b> () const noexcept</td></tr>
+<tr class="separator:aaa59909e40fabc307511ae183acfeccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a53faffedcbe111b1a263876d255734"><td class="memItemLeft" align="right" valign="top"><a id="a5a53faffedcbe111b1a263876d255734" name="a5a53faffedcbe111b1a263876d255734"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAngularVelocity</b> (glm::vec3 nVel) noexcept</td></tr>
+<tr class="separator:a5a53faffedcbe111b1a263876d255734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a></td></tr>
-<tr class="memitem:a196c19e70f9683a57c1eff01db6c07a3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a196c19e70f9683a57c1eff01db6c07a3">IComponent</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeguid)</td></tr>
+<tr class="memitem:a196c19e70f9683a57c1eff01db6c07a3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top"><a id="a196c19e70f9683a57c1eff01db6c07a3" name="a196c19e70f9683a57c1eff01db6c07a3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IComponent</b> (TEtypeguid typeguid)</td></tr>
 <tr class="separator:a196c19e70f9683a57c1eff01db6c07a3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2ceceb6b5e92f3ad10e8e8a8ce867fe inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#ad2ceceb6b5e92f3ad10e8e8a8ce867fe">~IComponent</a> ()</td></tr>
-<tr class="separator:ad2ceceb6b5e92f3ad10e8e8a8ce867fe inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40de458d1c358ed31994e64f6404ee8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#ab40de458d1c358ed31994e64f6404ee8">AllocateData</a> ()</td></tr>
+<tr class="memdesc:ab40de458d1c358ed31994e64f6404ee8 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">override as needed. Will be called on component allocate (via addcomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data.  <br /></td></tr>
+<tr class="separator:ab40de458d1c358ed31994e64f6404ee8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4ca46fa0d498df3d6e29de39ceddb8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a2e4ca46fa0d498df3d6e29de39ceddb8">DeallocateData</a> ()</td></tr>
+<tr class="memdesc:a2e4ca46fa0d498df3d6e29de39ceddb8 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">override as needed. Will be called on component deallocate (via removecomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data.  <br /></td></tr>
+<tr class="separator:a2e4ca46fa0d498df3d6e29de39ceddb8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a639f8e495309c93d4e632595ea615da4">GetIsActive</a> () const</td></tr>
 <tr class="memdesc:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this component is active or not. Active state is determined by: internal Active state &amp;&amp; entity's active state.  <br /></td></tr>
 <tr class="separator:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +246,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a90097cf522fe29daf1fa2f5ddb148191">SetIsActiveInternal</a> (bool active) noexcept</td></tr>
 <tr class="memdesc:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal active state of this component. Does not affect the state of the parent. If entity is inactive but this component is active, the resultant state of this component will still be inactive until the entity's state is changed to active.  <br /></td></tr>
 <tr class="separator:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07865b61eaa1f8404312a287ff2cad7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a07865b61eaa1f8404312a287ff2cad7b">GetEntity</a> () const</td></tr>
+<tr class="memitem:a07865b61eaa1f8404312a287ff2cad7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top"><a id="a07865b61eaa1f8404312a287ff2cad7b" name="a07865b61eaa1f8404312a287ff2cad7b"></a>
+<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntity</b> () const</td></tr>
 <tr class="separator:a07865b61eaa1f8404312a287ff2cad7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f805b5129eca4fddabecb7a77f42d54 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual rttr::instance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a9f805b5129eca4fddabecb7a77f42d54">GetRTTRInstance</a> () const</td></tr>
 <tr class="separator:a9f805b5129eca4fddabecb7a77f42d54 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,90 +256,74 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e069570ee4f25551a590e1414d465f3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a2e069570ee4f25551a590e1414d465f3">Deserialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
 <tr class="separator:a2e069570ee4f25551a590e1414d465f3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_object.html">TE::IObject</a></td></tr>
-<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#afc331476bf6217fde06f31deb161b97e">IObject</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="afc331476bf6217fde06f31deb161b97e" name="afc331476bf6217fde06f31deb161b97e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IObject</b> (TEtypeguid typeGUID)</td></tr>
 <tr class="separator:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#af1d390c81a0fd71b490d01b93042f81d">~IObject</a> ()</td></tr>
-<tr class="separator:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">GetGUID</a> () const noexcept</td></tr>
+<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aeb49f1d9760159d96df6dca959790745" name="aeb49f1d9760159d96df6dca959790745"></a>
+virtual TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetGUID</b> () const noexcept</td></tr>
 <tr class="separator:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aafeae10a462729d794db5c6da61eba08">SetGUID</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> guid) noexcept</td></tr>
+<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aafeae10a462729d794db5c6da61eba08" name="aafeae10a462729d794db5c6da61eba08"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGUID</b> (TEguid guid) noexcept</td></tr>
 <tr class="separator:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">GetTypeGUID</a> () const noexcept</td></tr>
+<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="a705d4f85c13ce4fc396ad38cfbda7cdf" name="a705d4f85c13ce4fc396ad38cfbda7cdf"></a>
+virtual TEtypeguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeGUID</b> () const noexcept</td></tr>
 <tr class="separator:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a7613e1391660d0c898d60c655ca10052"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6">RigidbodyType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a7613e1391660d0c898d60c655ca10052">type</a> = <a class="el" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a93e9591fea7ac815ac95bf5c6a90b279">RigidbodyType::Static</a></td></tr>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a7613e1391660d0c898d60c655ca10052"><td class="memItemLeft" align="right" valign="top"><a id="a7613e1391660d0c898d60c655ca10052" name="a7613e1391660d0c898d60c655ca10052"></a>
+RigidbodyType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = RigidbodyType::Static</td></tr>
 <tr class="separator:a7613e1391660d0c898d60c655ca10052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a460e7fa00ab9cb6c8a1444cfa235fa34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a460e7fa00ab9cb6c8a1444cfa235fa34">drag</a> = 0.0f</td></tr>
+<tr class="memitem:a460e7fa00ab9cb6c8a1444cfa235fa34"><td class="memItemLeft" align="right" valign="top"><a id="a460e7fa00ab9cb6c8a1444cfa235fa34" name="a460e7fa00ab9cb6c8a1444cfa235fa34"></a>
+TEfloat&#160;</td><td class="memItemRight" valign="bottom"><b>drag</b> = 0.0f</td></tr>
 <tr class="separator:a460e7fa00ab9cb6c8a1444cfa235fa34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3b120cd0d84a7f5955c10c87c6899f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#af3b120cd0d84a7f5955c10c87c6899f7">angularDrag</a> = 0.0f</td></tr>
+<tr class="memitem:af3b120cd0d84a7f5955c10c87c6899f7"><td class="memItemLeft" align="right" valign="top"><a id="af3b120cd0d84a7f5955c10c87c6899f7" name="af3b120cd0d84a7f5955c10c87c6899f7"></a>
+TEfloat&#160;</td><td class="memItemRight" valign="bottom"><b>angularDrag</b> = 0.0f</td></tr>
 <tr class="separator:af3b120cd0d84a7f5955c10c87c6899f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89094eae56dd3d637f7fd767a89f52e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a89094eae56dd3d637f7fd767a89f52e4">restitution</a> = 0.0f</td></tr>
-<tr class="memdesc:a89094eae56dd3d637f7fd767a89f52e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restitution (dimensionless number, usually between 0 and 1.  <br /></td></tr>
+<tr class="memitem:ae72e37b4b30a3a938c9cd3f13be67244"><td class="memItemLeft" align="right" valign="top"><a id="ae72e37b4b30a3a938c9cd3f13be67244" name="ae72e37b4b30a3a938c9cd3f13be67244"></a>
+glm::mat4x4&#160;</td><td class="memItemRight" valign="bottom"><b>inertiaTensor</b> = glm::mat4x4(1.0f)</td></tr>
+<tr class="separator:ae72e37b4b30a3a938c9cd3f13be67244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89094eae56dd3d637f7fd767a89f52e4"><td class="memItemLeft" align="right" valign="top"><a id="a89094eae56dd3d637f7fd767a89f52e4" name="a89094eae56dd3d637f7fd767a89f52e4"></a>
+TEfloat&#160;</td><td class="memItemRight" valign="bottom"><b>restitution</b> = 0.0f</td></tr>
+<tr class="memdesc:a89094eae56dd3d637f7fd767a89f52e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restitution (dimensionless number, usually between 0 and 1. <br /></td></tr>
 <tr class="separator:a89094eae56dd3d637f7fd767a89f52e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d56dc72b490deff5469355532dd92b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a3d56dc72b490deff5469355532dd92b2">mass</a> = 1.0f</td></tr>
+<tr class="memitem:a3d56dc72b490deff5469355532dd92b2"><td class="memItemLeft" align="right" valign="top"><a id="a3d56dc72b490deff5469355532dd92b2" name="a3d56dc72b490deff5469355532dd92b2"></a>
+TEfloat&#160;</td><td class="memItemRight" valign="bottom"><b>mass</b> = 1.0f</td></tr>
 <tr class="separator:a3d56dc72b490deff5469355532dd92b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaabf2cd3fe9a2944d518ecb9e63026bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#aaabf2cd3fe9a2944d518ecb9e63026bf">inverseMass</a> = 1.0f</td></tr>
-<tr class="separator:aaabf2cd3fe9a2944d518ecb9e63026bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c41f12e5cb80ddab82fe31872f63212"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a2c41f12e5cb80ddab82fe31872f63212">velocity</a> = glm::vec3(0.0f)</td></tr>
+<tr class="memitem:a2c41f12e5cb80ddab82fe31872f63212"><td class="memItemLeft" align="right" valign="top"><a id="a2c41f12e5cb80ddab82fe31872f63212" name="a2c41f12e5cb80ddab82fe31872f63212"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>velocity</b> = glm::vec3(0.0f)</td></tr>
 <tr class="separator:a2c41f12e5cb80ddab82fe31872f63212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fb92ac06c6aca70d2665494d9a0bce7"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a9fb92ac06c6aca70d2665494d9a0bce7">angularVelocity</a> = glm::vec3(0.0f)</td></tr>
+<tr class="memitem:a9fb92ac06c6aca70d2665494d9a0bce7"><td class="memItemLeft" align="right" valign="top"><a id="a9fb92ac06c6aca70d2665494d9a0bce7" name="a9fb92ac06c6aca70d2665494d9a0bce7"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>angularVelocity</b> = glm::vec3(0.0f)</td></tr>
 <tr class="separator:a9fb92ac06c6aca70d2665494d9a0bce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d840e1ec1967c5b2862d9828e8bef22"><td class="memItemLeft" align="right" valign="top">glm::quat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a2d840e1ec1967c5b2862d9828e8bef22">orientation</a> = glm::quat(1.0f, 0.0f, 0.0f, 0.0f)</td></tr>
-<tr class="separator:a2d840e1ec1967c5b2862d9828e8bef22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a729864d8a6481194c6bcbe5926090f30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a729864d8a6481194c6bcbe5926090f30">useGravity</a> = false</td></tr>
+<tr class="memitem:a729864d8a6481194c6bcbe5926090f30"><td class="memItemLeft" align="right" valign="top"><a id="a729864d8a6481194c6bcbe5926090f30" name="a729864d8a6481194c6bcbe5926090f30"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>useGravity</b> = false</td></tr>
 <tr class="separator:a729864d8a6481194c6bcbe5926090f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd67995cf6fc0d1b84299e20b654fb72"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#abd67995cf6fc0d1b84299e20b654fb72">isSleeping</a> = false</td></tr>
+<tr class="memitem:abd67995cf6fc0d1b84299e20b654fb72"><td class="memItemLeft" align="right" valign="top"><a id="abd67995cf6fc0d1b84299e20b654fb72" name="abd67995cf6fc0d1b84299e20b654fb72"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSleeping</b> = false</td></tr>
 <tr class="separator:abd67995cf6fc0d1b84299e20b654fb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a996cb84812c782e001199f2385271181"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a996cb84812c782e001199f2385271181">freezePositionX</a> = false</td></tr>
+<tr class="memitem:a0244c38b6b862c7001bdaf69eb6496fe"><td class="memItemLeft" align="right" valign="top"><a id="a0244c38b6b862c7001bdaf69eb6496fe" name="a0244c38b6b862c7001bdaf69eb6496fe"></a>
+TEfloat&#160;</td><td class="memItemRight" valign="bottom"><b>gravityScale</b> = 1.0f</td></tr>
+<tr class="separator:a0244c38b6b862c7001bdaf69eb6496fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996cb84812c782e001199f2385271181"><td class="memItemLeft" align="right" valign="top"><a id="a996cb84812c782e001199f2385271181" name="a996cb84812c782e001199f2385271181"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>freezePositionX</b> = false</td></tr>
 <tr class="separator:a996cb84812c782e001199f2385271181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a214c398e643f9a9886c6a5d13df929a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a214c398e643f9a9886c6a5d13df929a6">freezePositionY</a> = false</td></tr>
+<tr class="memitem:a214c398e643f9a9886c6a5d13df929a6"><td class="memItemLeft" align="right" valign="top"><a id="a214c398e643f9a9886c6a5d13df929a6" name="a214c398e643f9a9886c6a5d13df929a6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>freezePositionY</b> = false</td></tr>
 <tr class="separator:a214c398e643f9a9886c6a5d13df929a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c13112b2a89fc914d99f700414dc355"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a8c13112b2a89fc914d99f700414dc355">freezePositionZ</a> = false</td></tr>
+<tr class="memitem:a8c13112b2a89fc914d99f700414dc355"><td class="memItemLeft" align="right" valign="top"><a id="a8c13112b2a89fc914d99f700414dc355" name="a8c13112b2a89fc914d99f700414dc355"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>freezePositionZ</b> = false</td></tr>
 <tr class="separator:a8c13112b2a89fc914d99f700414dc355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa8de259955d66e3b2ca62fbd763efb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#acfa8de259955d66e3b2ca62fbd763efb">freezeRotationX</a> = false</td></tr>
+<tr class="memitem:acfa8de259955d66e3b2ca62fbd763efb"><td class="memItemLeft" align="right" valign="top"><a id="acfa8de259955d66e3b2ca62fbd763efb" name="acfa8de259955d66e3b2ca62fbd763efb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>freezeRotationX</b> = false</td></tr>
 <tr class="separator:acfa8de259955d66e3b2ca62fbd763efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8149d1bc733c4cc998baecf483124335"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a8149d1bc733c4cc998baecf483124335">freezeRotationY</a> = false</td></tr>
+<tr class="memitem:a8149d1bc733c4cc998baecf483124335"><td class="memItemLeft" align="right" valign="top"><a id="a8149d1bc733c4cc998baecf483124335" name="a8149d1bc733c4cc998baecf483124335"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>freezeRotationY</b> = false</td></tr>
 <tr class="separator:a8149d1bc733c4cc998baecf483124335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76d19ad8ae2ad8a12431363c72c822d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_rigidbody.html#a76d19ad8ae2ad8a12431363c72c822d6">freezeRotationZ</a> = false</td></tr>
+<tr class="memitem:a76d19ad8ae2ad8a12431363c72c822d6"><td class="memItemLeft" align="right" valign="top"><a id="a76d19ad8ae2ad8a12431363c72c822d6" name="a76d19ad8ae2ad8a12431363c72c822d6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>freezeRotationZ</b> = false</td></tr>
 <tr class="separator:a76d19ad8ae2ad8a12431363c72c822d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a081ef8ceb561637870cc4b1ba312c33b" name="a081ef8ceb561637870cc4b1ba312c33b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a081ef8ceb561637870cc4b1ba312c33b">&#9670;&#160;</a></span>Rigidbody()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TE::Rigidbody::Rigidbody </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2d51c936430abe02eb8a965f73075bfe" name="a2d51c936430abe02eb8a965f73075bfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d51c936430abe02eb8a965f73075bfe">&#9670;&#160;</a></span>~Rigidbody()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TE::Rigidbody::~Rigidbody </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="afd21d97082c90370f20c0b19d9d1e3c5" name="afd21d97082c90370f20c0b19d9d1e3c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd21d97082c90370f20c0b19d9d1e3c5">&#9670;&#160;</a></span>GetRTTRInstance()</h2>
@@ -304,7 +348,7 @@ Data Fields</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#a9f805b5129eca4fddabecb7a77f42d54">TE::IComponent</a>.</p>
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a>.</p>
 
 </div>
 </div>
@@ -332,7 +376,7 @@ Data Fields</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#abdc3a2ae05147f4f600dc2093c52d8d3">TE::IComponent</a>.</p>
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a>.</p>
 
 </div>
 </div>
@@ -360,7 +404,7 @@ Data Fields</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#a2e069570ee4f25551a590e1414d465f3">TE::IComponent</a>.</p>
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a>.</p>
 
 </div>
 </div>
@@ -373,7 +417,7 @@ Data Fields</h2></td></tr>
         <tr>
           <td class="memname">void TE::Rigidbody::Update </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">TEfloat&#160;</td>
           <td class="paramname"><em>dt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -489,21 +533,21 @@ Data Fields</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> TE::Rigidbody::TerminalVelocity </td>
+          <td class="memname">const TEfloat TE::Rigidbody::TerminalVelocity </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">const TEfloat&#160;</td>
           <td class="paramname"><em>_mass</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">const TEfloat&#160;</td>
           <td class="paramname"><em>gravity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td>
+          <td class="paramtype">const TEfloat&#160;</td>
           <td class="paramname"><em>dragCoefficient</em>&#160;</td>
         </tr>
         <tr>
@@ -532,250 +576,106 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a7613e1391660d0c898d60c655ca10052" name="a7613e1391660d0c898d60c655ca10052"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7613e1391660d0c898d60c655ca10052">&#9670;&#160;</a></span>type</h2>
+<a id="ae44707ac5a3df67cbddfffd21b99f064" name="ae44707ac5a3df67cbddfffd21b99f064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae44707ac5a3df67cbddfffd21b99f064">&#9670;&#160;</a></span>InverseMass()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6">RigidbodyType</a> TE::Rigidbody::type = <a class="el" href="namespace_t_e.html#a4b3c112e14d24ba06ef63f84295999a6a93e9591fea7ac815ac95bf5c6a90b279">RigidbodyType::Static</a></td>
+          <td class="memname">const TEfloat TE::Rigidbody::InverseMass </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Gets the inverse mass of this rigidbody. For static rigidbodies, the inverse mass is 0. Dynamic, inverse mass is 1/mass. </p>
+<dl class="section return"><dt>Returns</dt><dd>The inverse mass of the rigidbody </dd></dl>
 
 </div>
 </div>
-<a id="a460e7fa00ab9cb6c8a1444cfa235fa34" name="a460e7fa00ab9cb6c8a1444cfa235fa34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a460e7fa00ab9cb6c8a1444cfa235fa34">&#9670;&#160;</a></span>drag</h2>
+<a id="a9065feb76ead1118420fac73286c4aa7" name="a9065feb76ead1118420fac73286c4aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9065feb76ead1118420fac73286c4aa7">&#9670;&#160;</a></span>SetPositionRigidbody()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> TE::Rigidbody::drag = 0.0f</td>
+          <td class="memname">void TE::Rigidbody::SetPositionRigidbody </td>
+          <td>(</td>
+          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
+          <td class="paramname"><em>nPos</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Directly sets the position of the rigidbody, inside of the Jolt Physics <a class="el" href="class_t_e_1_1_engine.html" title="Main interface for accessing Engine functionalities. Engine internally will add/remove managers....">Engine</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nPos</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="af3b120cd0d84a7f5955c10c87c6899f7" name="af3b120cd0d84a7f5955c10c87c6899f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3b120cd0d84a7f5955c10c87c6899f7">&#9670;&#160;</a></span>angularDrag</h2>
+<a id="a29a7be916cd92170d2cdb2609aa04a48" name="a29a7be916cd92170d2cdb2609aa04a48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a7be916cd92170d2cdb2609aa04a48">&#9670;&#160;</a></span>SetRotationRigidbody()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> TE::Rigidbody::angularDrag = 0.0f</td>
+          <td class="memname">void TE::Rigidbody::SetRotationRigidbody </td>
+          <td>(</td>
+          <td class="paramtype">const glm::quat &amp;&#160;</td>
+          <td class="paramname"><em>nRot</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a89094eae56dd3d637f7fd767a89f52e4" name="a89094eae56dd3d637f7fd767a89f52e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89094eae56dd3d637f7fd767a89f52e4">&#9670;&#160;</a></span>restitution</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> TE::Rigidbody::restitution = 0.0f</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Restitution (dimensionless number, usually between 0 and 1. </p>
-
-</div>
-</div>
-<a id="a3d56dc72b490deff5469355532dd92b2" name="a3d56dc72b490deff5469355532dd92b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d56dc72b490deff5469355532dd92b2">&#9670;&#160;</a></span>mass</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> TE::Rigidbody::mass = 1.0f</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaabf2cd3fe9a2944d518ecb9e63026bf" name="aaabf2cd3fe9a2944d518ecb9e63026bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaabf2cd3fe9a2944d518ecb9e63026bf">&#9670;&#160;</a></span>inverseMass</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> TE::Rigidbody::inverseMass = 1.0f</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2c41f12e5cb80ddab82fe31872f63212" name="a2c41f12e5cb80ddab82fe31872f63212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c41f12e5cb80ddab82fe31872f63212">&#9670;&#160;</a></span>velocity</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">glm::vec3 TE::Rigidbody::velocity = glm::vec3(0.0f)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9fb92ac06c6aca70d2665494d9a0bce7" name="a9fb92ac06c6aca70d2665494d9a0bce7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fb92ac06c6aca70d2665494d9a0bce7">&#9670;&#160;</a></span>angularVelocity</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">glm::vec3 TE::Rigidbody::angularVelocity = glm::vec3(0.0f)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2d840e1ec1967c5b2862d9828e8bef22" name="a2d840e1ec1967c5b2862d9828e8bef22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d840e1ec1967c5b2862d9828e8bef22">&#9670;&#160;</a></span>orientation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">glm::quat TE::Rigidbody::orientation = glm::quat(1.0f, 0.0f, 0.0f, 0.0f)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a729864d8a6481194c6bcbe5926090f30" name="a729864d8a6481194c6bcbe5926090f30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a729864d8a6481194c6bcbe5926090f30">&#9670;&#160;</a></span>useGravity</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::Rigidbody::useGravity = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abd67995cf6fc0d1b84299e20b654fb72" name="abd67995cf6fc0d1b84299e20b654fb72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd67995cf6fc0d1b84299e20b654fb72">&#9670;&#160;</a></span>isSleeping</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::Rigidbody::isSleeping = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a996cb84812c782e001199f2385271181" name="a996cb84812c782e001199f2385271181"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a996cb84812c782e001199f2385271181">&#9670;&#160;</a></span>freezePositionX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::Rigidbody::freezePositionX = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a214c398e643f9a9886c6a5d13df929a6" name="a214c398e643f9a9886c6a5d13df929a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a214c398e643f9a9886c6a5d13df929a6">&#9670;&#160;</a></span>freezePositionY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::Rigidbody::freezePositionY = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8c13112b2a89fc914d99f700414dc355" name="a8c13112b2a89fc914d99f700414dc355"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c13112b2a89fc914d99f700414dc355">&#9670;&#160;</a></span>freezePositionZ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::Rigidbody::freezePositionZ = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acfa8de259955d66e3b2ca62fbd763efb" name="acfa8de259955d66e3b2ca62fbd763efb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfa8de259955d66e3b2ca62fbd763efb">&#9670;&#160;</a></span>freezeRotationX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::Rigidbody::freezeRotationX = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8149d1bc733c4cc998baecf483124335" name="a8149d1bc733c4cc998baecf483124335"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8149d1bc733c4cc998baecf483124335">&#9670;&#160;</a></span>freezeRotationY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::Rigidbody::freezeRotationY = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a76d19ad8ae2ad8a12431363c72c822d6" name="a76d19ad8ae2ad8a12431363c72c822d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76d19ad8ae2ad8a12431363c72c822d6">&#9670;&#160;</a></span>freezeRotationZ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::Rigidbody::freezeRotationZ = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Directly sets the rotation of the rigidbody, inside of the Jolt Physics <a class="el" href="class_t_e_1_1_engine.html" title="Main interface for accessing Engine functionalities. Engine internally will add/remove managers....">Engine</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nRot</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_rigidbody_8h_source.html">Rigidbody.h</a></li>
+<li><a class="el" href="_e_c_s_components_2_rigidbody_8h_source.html">ECSComponents/Rigidbody.h</a></li>
 <li><a class="el" href="_rigidbody_8cpp.html">Rigidbody.cpp</a></li>
+<li><a class="el" href="_r_t_t_r___registration_8h_source.html">RTTR_Registration.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

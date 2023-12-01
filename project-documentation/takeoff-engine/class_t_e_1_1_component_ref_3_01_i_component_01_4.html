@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_component_ref_3_01_i_com
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a>  </div>
+<a href="class_t_e_1_1_component_ref_3_01_i_component_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TE::ComponentRef&lt; IComponent &gt; Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -141,11 +141,12 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_component_ref_3_01_i_com
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a42a52af2b7a53f8746d2cb473f73a4e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_component_ref_3_01_i_component_01_4.html#a42a52af2b7a53f8746d2cb473f73a4e1">ComponentRef</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGuid=<a class="el" href="_g_u_i_d_8h.html#aefb6933d12d9c15295874615b54b414b">TETYPEGUID_NULL</a>, <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> <a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>=<a class="el" href="namespace_t_e.html#a3a6a32cbd064efcb342353106dbb313d">ECS_INDEX_NULL</a>)</td></tr>
+<tr class="memitem:a42a52af2b7a53f8746d2cb473f73a4e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_component_ref_3_01_i_component_01_4.html#a42a52af2b7a53f8746d2cb473f73a4e1">ComponentRef</a> (TEtypeguid typeGuid=TETYPEGUID_NULL, ECSIndex ECSIndex=ECS_INDEX_NULL)</td></tr>
 <tr class="memdesc:a42a52af2b7a53f8746d2cb473f73a4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Component reference of this type that is binded to an entity. If no ECSIndex is provided then this <a class="el" href="class_t_e_1_1_component_ref.html" title="Holds a reference to a component. Does not directly contain data of the component....">ComponentRef</a> is null.  <br /></td></tr>
 <tr class="separator:a42a52af2b7a53f8746d2cb473f73a4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f044d63816557c1179ca611a7132d79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_i_component.html">IComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_component_ref_3_01_i_component_01_4.html#a3f044d63816557c1179ca611a7132d79">operator-&gt;</a> () const</td></tr>
-<tr class="memdesc:a3f044d63816557c1179ca611a7132d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grants access to the underlying component this class is referring to. WARNING: Do not save this pointer, as components may be shifted to another memory location and the pointer will be pointing at the wrong location if that happens.  <br /></td></tr>
+<tr class="memitem:a3f044d63816557c1179ca611a7132d79"><td class="memItemLeft" align="right" valign="top"><a id="a3f044d63816557c1179ca611a7132d79" name="a3f044d63816557c1179ca611a7132d79"></a>
+<a class="el" href="class_t_e_1_1_i_component.html">IComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const</td></tr>
+<tr class="memdesc:a3f044d63816557c1179ca611a7132d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grants access to the underlying component this class is referring to. WARNING: Do not save this pointer, as components may be shifted to another memory location and the pointer will be pointing at the wrong location if that happens. <br /></td></tr>
 <tr class="separator:a3f044d63816557c1179ca611a7132d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a307528d368f8b157c2310adb97cb8c88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_component_ref_3_01_i_component_01_4.html#a307528d368f8b157c2310adb97cb8c88">operator==</a> (const <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_i_component.html">IComponent</a> &gt; &amp;cmp) const noexcept</td></tr>
 <tr class="memdesc:a307528d368f8b157c2310adb97cb8c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares and sees if 2 ComponentRefs are referring to the same component or not. If both ComponentRefs are nuull, comparison will return true.  <br /></td></tr>
@@ -156,20 +157,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8d56bccd5dd9cb6ec3f049a7afe0e4cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_i_component.html">IComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_component_ref_3_01_i_component_01_4.html#a8d56bccd5dd9cb6ec3f049a7afe0e4cb">get</a> () const</td></tr>
 <tr class="memdesc:a8d56bccd5dd9cb6ec3f049a7afe0e4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the underlying <a class="el" href="class_t_e_1_1_i_component.html" title="Base class of every ECS Component. Provides some generic functions to.">IComponent</a> pointer. WARNING: Do not save this pointer, as components may be shifted to another memory location and the pointer will be pointing at the wrong location if that happens.  <br /></td></tr>
 <tr class="separator:a8d56bccd5dd9cb6ec3f049a7afe0e4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9492cdfa6fb9b9ad36538344b1f0bc05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_component_ref_3_01_i_component_01_4.html#a9492cdfa6fb9b9ad36538344b1f0bc05">operator bool</a> () const</td></tr>
+<tr class="memitem:a9492cdfa6fb9b9ad36538344b1f0bc05"><td class="memItemLeft" align="right" valign="top"><a id="a9492cdfa6fb9b9ad36538344b1f0bc05" name="a9492cdfa6fb9b9ad36538344b1f0bc05"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>operator bool</b> () const</td></tr>
 <tr class="memdesc:a9492cdfa6fb9b9ad36538344b1f0bc05"><td class="mdescLeft">&#160;</td><td class="mdescRight">op bool overload allows to check if comp ref is null or not. Allows <a class="el" href="class_t_e_1_1_component_ref.html" title="Holds a reference to a component. Does not directly contain data of the component....">ComponentRef</a> to be used as a bool. <br  />
-  <br /></td></tr>
+ <br /></td></tr>
 <tr class="separator:a9492cdfa6fb9b9ad36538344b1f0bc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4870527ed881675b6e33e1a17d682c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_component_ref_3_01_i_component_01_4.html#ae4870527ed881675b6e33e1a17d682c5">IsNull</a> () const</td></tr>
 <tr class="memdesc:ae4870527ed881675b6e33e1a17d682c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this Ref is attached to an entity or not. Also checks if entity exists or not, and if the entity actually has this component or not.  <br /></td></tr>
 <tr class="separator:ae4870527ed881675b6e33e1a17d682c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a358f5e57ae4ee3a7cbb7a6d35e46d9cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_component_ref_3_01_i_component_01_4.html#a358f5e57ae4ee3a7cbb7a6d35e46d9cb">m_ECSIndex</a></td></tr>
-<tr class="separator:a358f5e57ae4ee3a7cbb7a6d35e46d9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a559709da193d05c4d81002459c3ca20c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_component_ref_3_01_i_component_01_4.html#a559709da193d05c4d81002459c3ca20c">m_ComponentTypeGuid</a></td></tr>
-<tr class="separator:a559709da193d05c4d81002459c3ca20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Specialization for <a class="el" href="class_t_e_1_1_i_component.html" title="Base class of every ECS Component. Provides some generic functions to.">IComponent</a>, to be used for returning generic <a class="el" href="class_t_e_1_1_i_component.html" title="Base class of every ECS Component. Provides some generic functions to.">IComponent</a> components. </p>
@@ -183,14 +178,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="class_t_e_1_1_component_ref.html">TE::ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_i_component.html">IComponent</a> &gt;::ComponentRef </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td>
-          <td class="paramname"><em>typeGuid</em> = <code><a class="el" href="_g_u_i_d_8h.html#aefb6933d12d9c15295874615b54b414b">TETYPEGUID_NULL</a></code>, </td>
+          <td class="paramtype">TEtypeguid&#160;</td>
+          <td class="paramname"><em>typeGuid</em> = <code>TETYPEGUID_NULL</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td>
-          <td class="paramname"><em>ECSIndex</em> = <code><a class="el" href="namespace_t_e.html#a3a6a32cbd064efcb342353106dbb313d">ECS_INDEX_NULL</a></code>&#160;</td>
+          <td class="paramtype">ECSIndex&#160;</td>
+          <td class="paramname"><em>ECSIndex</em> = <code>ECS_INDEX_NULL</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -212,25 +207,6 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3f044d63816557c1179ca611a7132d79" name="a3f044d63816557c1179ca611a7132d79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f044d63816557c1179ca611a7132d79">&#9670;&#160;</a></span>operator-&gt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_i_component.html">IComponent</a> * <a class="el" href="class_t_e_1_1_component_ref.html">TE::ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_i_component.html">IComponent</a> &gt;::operator-&gt; </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Grants access to the underlying component this class is referring to. WARNING: Do not save this pointer, as components may be shifted to another memory location and the pointer will be pointing at the wrong location if that happens. </p>
-
-</div>
-</div>
 <a id="a307528d368f8b157c2310adb97cb8c88" name="a307528d368f8b157c2310adb97cb8c88"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a307528d368f8b157c2310adb97cb8c88">&#9670;&#160;</a></span>operator==()</h2>
 
@@ -309,26 +285,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9492cdfa6fb9b9ad36538344b1f0bc05" name="a9492cdfa6fb9b9ad36538344b1f0bc05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9492cdfa6fb9b9ad36538344b1f0bc05">&#9670;&#160;</a></span>operator bool()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_component_ref.html">TE::ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_i_component.html">IComponent</a> &gt;::operator bool </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>op bool overload allows to check if comp ref is null or not. Allows <a class="el" href="class_t_e_1_1_component_ref.html" title="Holds a reference to a component. Does not directly contain data of the component....">ComponentRef</a> to be used as a bool. <br  />
- </p>
-
-</div>
-</div>
 <a id="ae4870527ed881675b6e33e1a17d682c5" name="ae4870527ed881675b6e33e1a17d682c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4870527ed881675b6e33e1a17d682c5">&#9670;&#160;</a></span>IsNull()</h2>
 
@@ -346,51 +302,6 @@ Private Attributes</h2></td></tr>
 
 <p>Checks if this Ref is attached to an entity or not. Also checks if entity exists or not, and if the entity actually has this component or not. </p>
 <dl class="section return"><dt>Returns</dt><dd>true or not</dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a358f5e57ae4ee3a7cbb7a6d35e46d9cb" name="a358f5e57ae4ee3a7cbb7a6d35e46d9cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a358f5e57ae4ee3a7cbb7a6d35e46d9cb">&#9670;&#160;</a></span>m_ECSIndex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> <a class="el" href="class_t_e_1_1_component_ref.html">TE::ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_i_component.html">IComponent</a> &gt;::m_ECSIndex</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a559709da193d05c4d81002459c3ca20c" name="a559709da193d05c4d81002459c3ca20c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a559709da193d05c4d81002459c3ca20c">&#9670;&#160;</a></span>m_ComponentTypeGuid</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> <a class="el" href="class_t_e_1_1_component_ref.html">TE::ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_i_component.html">IComponent</a> &gt;::m_ComponentTypeGuid</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

@@ -128,7 +128,8 @@ $(document).ready(function(){initNavTree('_editor___asset_browser_8cpp.html','')
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Editor_AssetBrowser.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -137,14 +138,29 @@ $(document).ready(function(){initNavTree('_editor___asset_browser_8cpp.html','')
  All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="pch__editor_8h_source.html">pch_editor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_editor___asset_browser_8h_source.html">Editor_AssetBrowser.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_editor_helper_8h_source.html">EditorHelper.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_editor___asset_browser_8h_source.html">Editor_AssetBrowser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_editor___inspector_8h_source.html">Editor_Inspector.h</a>&quot;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;shellapi.h&gt;</code><br />
+<code>#include &quot;Engine.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_file_sys_8h_source.html">Helper/FileSys.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_manager_8h_source.html">Core/SceneManager.h</a>&quot;</code><br />
+<code>#include &quot;Helper/ResourceManager.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_vulkan_manager_8h_source.html">Core/VulkanManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_material_8h_source.html">ECSComponents/Material.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_editor"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html">Editor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1a3d995e1641f70527ded5b03eeea964"><td class="memItemLeft" align="right" valign="top"><a id="a1a3d995e1641f70527ded5b03eeea964" name="a1a3d995e1641f70527ded5b03eeea964"></a>
+ImTextureID&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::ImageButtonAssetBrowser</b> (TEstring str)</td></tr>
+<tr class="separator:a1a3d995e1641f70527ded5b03eeea964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aff823c62c88b91327b88469e151461c5"><td class="memItemLeft" align="right" valign="top"><a id="aff823c62c88b91327b88469e151461c5" name="aff823c62c88b91327b88469e151461c5"></a>
+std::unordered_map&lt; std::string, ImTextureID &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::imageTextureIDMap</b></td></tr>
+<tr class="separator:aff823c62c88b91327b88469e151461c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains functions for the asset browser in the editor <br  />

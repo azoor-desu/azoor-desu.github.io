@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('_editor___main_menu_bar_8cpp.html','')
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Editor_MainMenuBar.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -140,21 +140,28 @@ $(document).ready(function(){initNavTree('_editor___main_menu_bar_8cpp.html','')
 <code>#include &quot;<a class="el" href="_editor___main_menu_bar_8h_source.html">Editor_MainMenuBar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_editor___console_logger_8h_source.html">Editor_ConsoleLogger.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_editor_helper_8h_source.html">EditorHelper.h</a>&quot;</code><br />
+<code>#include &lt;filesystem&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;shellapi.h&gt;</code><br />
 <code>#include &quot;Engine.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="_e_c_s_manager_8h_source.html">Core/ECSManager.h</a>&quot;</code><br />
+<code>#include &quot;Core/ECSManager.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_scene_manager_8h_source.html">Core/SceneManager.h</a>&quot;</code><br />
+<code>#include &quot;Core/PrefabManager.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_script_manager_8h_source.html">Scripting/ScriptManager.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_mesh_8h_source.html">ECSComponents/Mesh.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_rigidbody_8h_source.html">ECSComponents/Rigidbody.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_box_collider_8h_source.html">ECSComponents/BoxCollider.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_sphere_collider_8h_source.html">ECSComponents/SphereCollider.h</a>&quot;</code><br />
+<code>#include &quot;ECSComponents/Mesh.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_rigidbody_8h_source.html">ECSComponents/Rigidbody.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_box_collider_8h_source.html">ECSComponents/BoxCollider.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_sphere_collider_8h_source.html">ECSComponents/SphereCollider.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_capsule_collider_8h_source.html">ECSComponents/CapsuleCollider.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_camera_component_8h_source.html">ECSComponents/CameraComponent.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_material_8h_source.html">ECSComponents/Material.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_audio_source_8h_source.html">ECSComponents/AudioSource.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_editor"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html">Editor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a86dc6f8e4259e3b0688a6406ec58adfb"><td class="memItemLeft" align="right" valign="top"><a id="a86dc6f8e4259e3b0688a6406ec58adfb" name="a86dc6f8e4259e3b0688a6406ec58adfb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::openMaterialWindow</b> = false</td></tr>
+<tr class="separator:a86dc6f8e4259e3b0688a6406ec58adfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains functions for the Main Menu Bar in the editor <br  />

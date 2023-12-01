@@ -25,16 +25,8 @@ var class_t_e_1_1_entity_ref =
     [ "SetEntityLayerMask", "class_t_e_1_1_entity_ref.html#a0949900455848da5e5ed00dbaa11d567", null ],
     [ "SetEntityLayerMask", "class_t_e_1_1_entity_ref.html#a99b56645b4d0d43b84c8805c85f58808", null ],
     [ "IsNull", "class_t_e_1_1_entity_ref.html#ae5257cbf30de4847552660058edff560", null ],
-    [ "GetDontDestroyOnLoad", "class_t_e_1_1_entity_ref.html#a334569c4660f07d07bba97becddc533a", null ],
-    [ "SetDontDestroyOnLoad", "class_t_e_1_1_entity_ref.html#a5de56b0f43c9958f492271f6ea558f0b", null ],
     [ "GetIsActive", "class_t_e_1_1_entity_ref.html#ab2aafd8b30ac823ad0504680c448ea49", null ],
     [ "GetIsActiveInternal", "class_t_e_1_1_entity_ref.html#a8c2c56e5e8c74d881d3f3b5400110fe2", null ],
     [ "SetIsActiveInternal", "class_t_e_1_1_entity_ref.html#a4890691a18986de37979b7811e54f46e", null ],
-    [ "GetECSIndex", "class_t_e_1_1_entity_ref.html#af0d5765996b9610d71a7583f48b49cbc", null ],
-    [ "Serialize", "class_t_e_1_1_entity_ref.html#a34a47cdaae4bd8440af30488b995c993", null ],
-    [ "Deserialize", "class_t_e_1_1_entity_ref.html#a28c03bf241eae0eb35b21895826a86a2", null ],
-    [ "IComponent", "class_t_e_1_1_entity_ref.html#a5ff52d239b68a851c87a767a9d9a3c55", null ],
-    [ "ISystem", "class_t_e_1_1_entity_ref.html#a2d11529d5b2ef33932c3c3c449db1e91", null ],
-    [ "ECSManager", "class_t_e_1_1_entity_ref.html#aa05b6c01906ea55c68aee3910bb6bbc0", null ],
-    [ "m_EntityECSIndex", "class_t_e_1_1_entity_ref.html#acafd9329021bb187863e52146604da2e", null ]
+    [ "GetECSIndex", "class_t_e_1_1_entity_ref.html#af0d5765996b9610d71a7583f48b49cbc", null ]
 ];

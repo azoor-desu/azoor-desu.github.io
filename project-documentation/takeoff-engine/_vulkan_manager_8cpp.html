@@ -147,10 +147,12 @@ $(document).ready(function(){initNavTree('_vulkan_manager_8cpp.html',''); initRe
 <code>#include &lt;GLFW/glfw3.h&gt;</code><br />
 <code>#include &lt;GLFW/glfw3native.h&gt;</code><br />
 <code>#include &lt;glm/glm.hpp&gt;</code><br />
-<code>#include &quot;Shaders/VertexShader.sprv&quot;</code><br />
-<code>#include &quot;Shaders/FragmentShader.sprv&quot;</code><br />
-<code>#include &quot;Shaders/LineVertexShader.sprv&quot;</code><br />
-<code>#include &quot;Shaders/LineFragmentShader.sprv&quot;</code><br />
+<code>#include &quot;Shaders\VertexShader.sprv&quot;</code><br />
+<code>#include &quot;Shaders\FragmentShader.sprv&quot;</code><br />
+<code>#include &quot;Shaders\LineVertexShader.sprv&quot;</code><br />
+<code>#include &quot;Shaders\LineFragmentShader.sprv&quot;</code><br />
+<code>#include &quot;Shaders\TextureVertexShader.sprv&quot;</code><br />
+<code>#include &quot;Shaders\TextureFragmentShader.sprv&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -158,13 +160,6 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespace_t_e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declarations for the <a class="el" href="class_t_e_1_1_e_c_s_manager.html">ECSManager</a> class, <a class="el" href="class_t_e_1_1_entity_ref.html" title="Holds a reference to an entity. Does not directly contain data of the entity. To get an entity,...">EntityRef</a> class, <a class="el" href="class_t_e_1_1_i_component.html" title="Base class of every ECS Component. Provides some generic functions to.">IComponent</a> and <a class="el" href="class_t_e_1_1_i_system.html" title="Base class of every ECS Component.">ISystem</a> classes <br  />
  All content (c) 2022 DigiPen Institute of Technology Singapore. All rights reserved. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:aea22151c1df842d43772ec5f931d2600"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_vulkan_manager_8cpp.html#aea22151c1df842d43772ec5f931d2600">VK_USE_PLATFORM_WIN32_KHR</a></td></tr>
-<tr class="separator:aea22151c1df842d43772ec5f931d2600"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7226e54815f41685fdc9df544352957e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_vulkan_manager_8cpp.html#a7226e54815f41685fdc9df544352957e">GLFW_EXPOSE_NATIVE_WIN32</a></td></tr>
-<tr class="separator:a7226e54815f41685fdc9df544352957e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulation of vulkan backend for renderings <br  />
@@ -174,36 +169,7 @@ Macros</h2></td></tr>
 </pre><pre>  <b>Authors:</b> Ng Zheng Wei (100%)</pre><pre>
 </pre><pre>  <b>Emails:</b>  <a href="mailto:zhengwei.ng@digipen.edu">zhengwei.ng@digipen.edu</a></pre><pre>
 </pre><pre>  <b>Date:</b>    29/09/2023</pre><pre>
-</pre> </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="aea22151c1df842d43772ec5f931d2600" name="aea22151c1df842d43772ec5f931d2600"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea22151c1df842d43772ec5f931d2600">&#9670;&#160;</a></span>VK_USE_PLATFORM_WIN32_KHR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VK_USE_PLATFORM_WIN32_KHR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7226e54815f41685fdc9df544352957e" name="a7226e54815f41685fdc9df544352957e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7226e54815f41685fdc9df544352957e">&#9670;&#160;</a></span>GLFW_EXPOSE_NATIVE_WIN32</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GLFW_EXPOSE_NATIVE_WIN32</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+</pre> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

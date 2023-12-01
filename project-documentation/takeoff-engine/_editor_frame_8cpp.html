@@ -128,7 +128,6 @@ $(document).ready(function(){initNavTree('_editor_frame_8cpp.html',''); initResi
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">EditorFrame.cpp File Reference</div></div>
 </div><!--header-->
@@ -139,28 +138,24 @@ $(document).ready(function(){initNavTree('_editor_frame_8cpp.html',''); initResi
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="pch__editor_8h_source.html">pch_editor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_editor_frame_8h_source.html">EditorFrame.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_vulkan_manager_8h_source.html">Core/VulkanManager.h</a>&quot;</code><br />
 <code>#include &quot;Engine.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="_e_c_s_manager_8h_source.html">Core/ECSManager.h</a>&quot;</code><br />
+<code>#include &quot;Core/ECSManager.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_scene_manager_8h_source.html">Core/SceneManager.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_mesh_8h_source.html">ECSComponents/Mesh.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_rigidbody_8h_source.html">ECSComponents/Rigidbody.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_box_collider_8h_source.html">ECSComponents/BoxCollider.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_sphere_collider_8h_source.html">ECSComponents/SphereCollider.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_vulkan_manager_8h_source.html">Core/VulkanManager.h</a>&quot;</code><br />
+<code>#include &quot;Helper/ResourceManager.h&quot;</code><br />
+<code>#include &quot;ECSComponents/Mesh.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_rigidbody_8h_source.html">ECSComponents/Rigidbody.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_box_collider_8h_source.html">ECSComponents/BoxCollider.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_sphere_collider_8h_source.html">ECSComponents/SphereCollider.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_capsule_collider_8h_source.html">ECSComponents/CapsuleCollider.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_camera_component_8h_source.html">ECSComponents/CameraComponent.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_material_8h_source.html">ECSComponents/Material.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_editor"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html">Editor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a92a7098675c5c54e3ce5048447800873"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a92a7098675c5c54e3ce5048447800873">Editor::firstrun</a> = <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a></td></tr>
+<tr class="memitem:a92a7098675c5c54e3ce5048447800873"><td class="memItemLeft" align="right" valign="top"><a id="a92a7098675c5c54e3ce5048447800873" name="a92a7098675c5c54e3ce5048447800873"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::firstrun</b> = true</td></tr>
 <tr class="separator:a92a7098675c5c54e3ce5048447800873"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d22a2e376d1c1b8a27a28eaa1e95be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#ad8d22a2e376d1c1b8a27a28eaa1e95be">Editor::lastLoadedScene</a> = <a class="el" href="_g_u_i_d_8h.html#aa34e6525eb1e2dff2f0226eab6b76c58">TEGUID_NULL</a></td></tr>
-<tr class="separator:ad8d22a2e376d1c1b8a27a28eaa1e95be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains the main runtime logic of the editor. Governs all windows that the editor will show to the user and tracks user io <br  />

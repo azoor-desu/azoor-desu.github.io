@@ -128,33 +128,36 @@ $(document).ready(function(){initNavTree('_collision_manager_8h.html',''); initR
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">CollisionManager.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Collision management for handling collision detection &amp; resolution between entities. <br  />
+<p>Collision management for handling collision detection &amp; resolution between entities. Unlikely to be updated ever since switching to Jolt Physics. <br  />
  All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_defines_8h_source.html">Defines.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_manager_8h_source.html">IManager.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_broad_phase_tree_8h_source.html">BroadPhaseTree.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_collider_8h_source.html">ECSComponents/Collider.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_box_collider_8h_source.html">ECSComponents/BoxCollider.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_box_collider_8h_source.html">ECSComponents/BoxCollider.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_capsule_collider_8h_source.html">ECSComponents/CapsuleCollider.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_sphere_collider_8h_source.html">ECSComponents/SphereCollider.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_sphere_collider_8h_source.html">ECSComponents/SphereCollider.h</a>&quot;</code><br />
+<code>#include &quot;ECSComponents/CylinderCollider.h&quot;</code><br />
+<code>#include &quot;ECSComponents/MeshCollider.h&quot;</code><br />
 </div>
 <p><a href="_collision_manager_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
+Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_contact.html">TE::Contact</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_collision.html">TE::Collision</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_ray_cast_t.html">TE::RayCastT&lt; Vec, Mat, RayCastType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Adapated from Jolt/Physics) Structure that holds a single ray cast  <a href="struct_t_e_1_1_ray_cast_t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_e_1_1_ray_cast.html">TE::RayCast</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_collision_manager.html">TE::CollisionManager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,11 +170,11 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Collision management for handling collision detection &amp; resolution between entities. <br  />
+<div class="textblock"><p>Collision management for handling collision detection &amp; resolution between entities. Unlikely to be updated ever since switching to Jolt Physics. <br  />
  All content (c) 2023 DigiPen Institute of Technology Singapore. All rights reserved. </p>
 <pre>
 </pre><pre>  <b>File:</b>    <a class="el" href="_collision_manager_8h.html" title="Collision management for handling collision detection &amp; resolution between entities....">CollisionManager.h</a></pre><pre>
-</pre><pre>  <b>Authors:</b> Anderson Phua (%)</pre><pre>
+</pre><pre>  <b>Authors:</b> Anderson Phua (100%)</pre><pre>
 </pre><pre>  <b>Emails:</b>  <a href="mailto:a.phua@digipen.edu">a.phua@digipen.edu</a></pre><pre>
 </pre><pre>  <b>Date:</b>    05/09/2023</pre><pre>
 </pre> </div></div><!-- contents -->

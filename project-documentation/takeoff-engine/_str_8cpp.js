@@ -1,7 +1,5 @@
 var _str_8cpp =
 [
-    [ "WIN32_LEAN_AND_MEAN", "_str_8cpp.html#ac7bef5d85e3dcd73eef56ad39ffc84a9", null ],
-    [ "NOMINMAX", "_str_8cpp.html#a9f918755b601cf4bffca775992e6fb90", null ],
     [ "Str_ConvertWstrToStr", "_str_8cpp.html#a3addf9d799ece65bd2508f4e82f7e646", null ],
     [ "Str_ConvertStrToWstr", "_str_8cpp.html#a8e313dec06ee96e865f12e2ecdb0d26b", null ],
     [ "Str_Replace", "_str_8cpp.html#a437af2d18fd0c8e3aaf6024aa686fba9", null ],

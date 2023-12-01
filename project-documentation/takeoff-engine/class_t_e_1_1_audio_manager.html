@@ -129,10 +129,10 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_audio_manager.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#friends">Friends</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="class_t_e_1_1_audio_manager-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TE::AudioManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -141,22 +141,16 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_audio_manager.html','');
  <a href="class_t_e_1_1_audio_manager.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_audio_manager_8h_source.html">AudioManager.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for TE::AudioManager:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_t_e_1_1_audio_manager.png" usemap="#TE::AudioManager_map" alt=""/>
-  <map id="TE::AudioManager_map" name="TE::AudioManager_map">
-<area href="class_t_e_1_1_i_manager.html" alt="TE::IManager" shape="rect" coords="0,56,117,80"/>
-<area href="class_t_e_1_1_i_object.html" alt="TE::IObject" shape="rect" coords="0,0,117,24"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9c830f3c6bc47413ca0b8deb60f4fe6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a9c830f3c6bc47413ca0b8deb60f4fe6e">AudioManager</a> ()</td></tr>
-<tr class="memdesc:a9c830f3c6bc47413ca0b8deb60f4fe6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="class_t_e_1_1_audio_manager.html" title="Main interface that contains the fmod_system, channel groups and channels for playback isDown whether...">AudioManager</a>, and gets a unique GUID for it upon construction.  <br /></td></tr>
+<tr class="memitem:a9c830f3c6bc47413ca0b8deb60f4fe6e"><td class="memItemLeft" align="right" valign="top"><a id="a9c830f3c6bc47413ca0b8deb60f4fe6e" name="a9c830f3c6bc47413ca0b8deb60f4fe6e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AudioManager</b> ()</td></tr>
+<tr class="memdesc:a9c830f3c6bc47413ca0b8deb60f4fe6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="class_t_e_1_1_audio_manager.html" title="Main interface that contains the fmod_system, channel groups and channels for playback isDown whether...">AudioManager</a>, and gets a unique GUID for it upon construction. <br /></td></tr>
 <tr class="separator:a9c830f3c6bc47413ca0b8deb60f4fe6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40a939c37b86de3f5ef2bd8d56ca5b2"><td class="memItemLeft" align="right" valign="top"><a id="ae40a939c37b86de3f5ef2bd8d56ca5b2" name="ae40a939c37b86de3f5ef2bd8d56ca5b2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Set3DListenerAttribute</b> (glm::vec3 pos, glm::vec3 fwd, glm::vec3 up)</td></tr>
+<tr class="separator:ae40a939c37b86de3f5ef2bd8d56ca5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1358352ddecab8a3a66e960071c5ffa8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a1358352ddecab8a3a66e960071c5ffa8">GetSoundFilePath</a> (std::string sound_hdl)</td></tr>
 <tr class="memdesc:a1358352ddecab8a3a66e960071c5ffa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a TEMPORARY solution where the sound handle returns the file path string to the fmod::sound.  <br /></td></tr>
 <tr class="separator:a1358352ddecab8a3a66e960071c5ffa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,27 +163,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1bf54bfa95dee868beea34d86cdc62fa"><td class="memItemLeft" align="right" valign="top">FMOD::Channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a1bf54bfa95dee868beea34d86cdc62fa">GetChannelByIDX</a> (int idx)</td></tr>
 <tr class="memdesc:a1bf54bfa95dee868beea34d86cdc62fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a TEMPORARY solution where the idx returns the fmod::channel which is available to use for playback.  <br /></td></tr>
 <tr class="separator:a1bf54bfa95dee868beea34d86cdc62fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a341685a877ecba4b09fd01c081d09acf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a341685a877ecba4b09fd01c081d09acf">StopAllChannels</a> ()</td></tr>
-<tr class="memdesc:a341685a877ecba4b09fd01c081d09acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function stops ALL channels from playing.  <br /></td></tr>
-<tr class="separator:a341685a877ecba4b09fd01c081d09acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ccc0e5d0dd445039436a6734e1bf18c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a0ccc0e5d0dd445039436a6734e1bf18c">PlayBGM_MONO</a> (FMOD::Sound *bgm_sounds, int *channel_idx)</td></tr>
-<tr class="memdesc:a0ccc0e5d0dd445039436a6734e1bf18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the BGM sound via MONO_BGM Channel group and returns the index of the channel it is playing on.  <br /></td></tr>
-<tr class="separator:a0ccc0e5d0dd445039436a6734e1bf18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3beda69884616ae0634f11b097b9519"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#ab3beda69884616ae0634f11b097b9519">PlaySFX_MONO</a> (FMOD::Sound *sfx_sound, int *channel_idx)</td></tr>
-<tr class="memdesc:ab3beda69884616ae0634f11b097b9519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the BGM sound via MONO_SFX Channel group and returns the index of the channel it is playing on.  <br /></td></tr>
-<tr class="separator:ab3beda69884616ae0634f11b097b9519"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affe658457369381233ea91e149bd7c1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#affe658457369381233ea91e149bd7c1e">Play3D_SPATIAL</a> (FMOD::Sound *spatial_sound, int *channel_idx)</td></tr>
-<tr class="memdesc:affe658457369381233ea91e149bd7c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function stops ALL channels from playing.  <br /></td></tr>
-<tr class="separator:affe658457369381233ea91e149bd7c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21939fd128105241782466e93aca6f18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a21939fd128105241782466e93aca6f18">CrossfadeBGM_MONO</a> (FMOD::Sound *bgm_sound, float seconds_duration)</td></tr>
-<tr class="memdesc:a21939fd128105241782466e93aca6f18"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a WIP function that crossfades an existing channel over a certain duration.  <br /></td></tr>
-<tr class="separator:a21939fd128105241782466e93aca6f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca4a867456d8cdd9902f9727a148b52"><td class="memItemLeft" align="right" valign="top"><a id="a3ca4a867456d8cdd9902f9727a148b52" name="a3ca4a867456d8cdd9902f9727a148b52"></a>
+FMOD::System *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFMODSystem</b> ()</td></tr>
+<tr class="separator:a3ca4a867456d8cdd9902f9727a148b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a4819c9954ddb02455788b66fd67c0"><td class="memItemLeft" align="right" valign="top"><a id="a62a4819c9954ddb02455788b66fd67c0" name="a62a4819c9954ddb02455788b66fd67c0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetAvailableChannelIDX</b> ()</td></tr>
+<tr class="separator:a62a4819c9954ddb02455788b66fd67c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108959da0241d387c7f41db3a33721f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a108959da0241d387c7f41db3a33721f0">SimulationPauseStop</a> ()</td></tr>
+<tr class="memdesc:a108959da0241d387c7f41db3a33721f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the BGM sound via MONO_BGM Channel group and returns the index of the channel it is playing on.  <br /></td></tr>
+<tr class="separator:a108959da0241d387c7f41db3a33721f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_manager.html">TE::IManager</a></td></tr>
-<tr class="memitem:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a789acfdc8c9a177bbf1ae68e25ab0ceb">IManager</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="memitem:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="a789acfdc8c9a177bbf1ae68e25ab0ceb" name="a789acfdc8c9a177bbf1ae68e25ab0ceb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IManager</b> (TEtypeguid typeGUID)</td></tr>
 <tr class="separator:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec0d542ae4fc92c784f908f8eed8457 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a9ec0d542ae4fc92c784f908f8eed8457">~IManager</a> ()</td></tr>
-<tr class="separator:a9ec0d542ae4fc92c784f908f8eed8457 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#ad528f9e9a304c9aa25d472b547242291">LoadManager</a> ()</td></tr>
+<tr class="memitem:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="ad528f9e9a304c9aa25d472b547242291" name="ad528f9e9a304c9aa25d472b547242291"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadManager</b> ()</td></tr>
 <tr class="separator:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5469d89d5f07a6890444e9d20636ac6d inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a5469d89d5f07a6890444e9d20636ac6d">InitManager</a> ()</td></tr>
 <tr class="separator:a5469d89d5f07a6890444e9d20636ac6d inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,218 +185,47 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a441c480911e78b81cf8d717dff6dcd77 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f7904d7af29ec42dc55396b522b375b inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a0f7904d7af29ec42dc55396b522b375b">ExitManager</a> ()</td></tr>
 <tr class="separator:a0f7904d7af29ec42dc55396b522b375b inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#acb0ab41892caa9bed62624156d782b21">GetRunOnlyDuringSimulation</a> ()</td></tr>
+<tr class="memitem:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="acb0ab41892caa9bed62624156d782b21" name="acb0ab41892caa9bed62624156d782b21"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetRunOnlyDuringSimulation</b> ()</td></tr>
 <tr class="separator:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_object.html">TE::IObject</a></td></tr>
-<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#afc331476bf6217fde06f31deb161b97e">IObject</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="afc331476bf6217fde06f31deb161b97e" name="afc331476bf6217fde06f31deb161b97e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IObject</b> (TEtypeguid typeGUID)</td></tr>
 <tr class="separator:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#af1d390c81a0fd71b490d01b93042f81d">~IObject</a> ()</td></tr>
-<tr class="separator:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">GetGUID</a> () const noexcept</td></tr>
+<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aeb49f1d9760159d96df6dca959790745" name="aeb49f1d9760159d96df6dca959790745"></a>
+virtual TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetGUID</b> () const noexcept</td></tr>
 <tr class="separator:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aafeae10a462729d794db5c6da61eba08">SetGUID</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> guid) noexcept</td></tr>
+<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aafeae10a462729d794db5c6da61eba08" name="aafeae10a462729d794db5c6da61eba08"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGUID</b> (TEguid guid) noexcept</td></tr>
 <tr class="separator:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">GetTypeGUID</a> () const noexcept</td></tr>
+<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="a705d4f85c13ce4fc396ad38cfbda7cdf" name="a705d4f85c13ce4fc396ad38cfbda7cdf"></a>
+virtual TEtypeguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeGUID</b> () const noexcept</td></tr>
 <tr class="separator:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:adcabbabe55d34be7b4b162db10363f68"><td class="memItemLeft" align="right" valign="top"><a id="adcabbabe55d34be7b4b162db10363f68" name="adcabbabe55d34be7b4b162db10363f68"></a>
+FMOD::Channel *&#160;</td><td class="memItemRight" valign="bottom"><b>Channels</b> [40] { nullptr }</td></tr>
+<tr class="separator:adcabbabe55d34be7b4b162db10363f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa32e6f0fc6f642ebb8700f81c256fc6"><td class="memItemLeft" align="right" valign="top"><a id="afa32e6f0fc6f642ebb8700f81c256fc6" name="afa32e6f0fc6f642ebb8700f81c256fc6"></a>
+std::map&lt; std::string, FMOD::ChannelGroup * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ChannelGroup_Map</b></td></tr>
+<tr class="separator:afa32e6f0fc6f642ebb8700f81c256fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a0496363bd51f71244cadfd21e3363181"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_t_e_1_1_audio_manager.html">AudioManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a0496363bd51f71244cadfd21e3363181">audio_manager</a></td></tr>
+<tr class="memitem:a0496363bd51f71244cadfd21e3363181"><td class="memItemLeft" align="right" valign="top"><a id="a0496363bd51f71244cadfd21e3363181" name="a0496363bd51f71244cadfd21e3363181"></a>
+static <a class="el" href="class_t_e_1_1_audio_manager.html">AudioManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>audio_manager</b></td></tr>
 <tr class="separator:a0496363bd51f71244cadfd21e3363181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a947ea9bc676daa51d2d5b2bf55f00162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a947ea9bc676daa51d2d5b2bf55f00162">InitManager</a> ()</td></tr>
-<tr class="memdesc:a947ea9bc676daa51d2d5b2bf55f00162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation Function for the <a class="el" href="class_t_e_1_1_audio_manager.html" title="Main interface that contains the fmod_system, channel groups and channels for playback isDown whether...">AudioManager</a>.  <br /></td></tr>
-<tr class="separator:a947ea9bc676daa51d2d5b2bf55f00162"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60b29d0f798408689a69f8cb46d7d511"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a60b29d0f798408689a69f8cb46d7d511">UpdateManager</a> ()</td></tr>
-<tr class="memdesc:a60b29d0f798408689a69f8cb46d7d511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update Function for the <a class="el" href="class_t_e_1_1_audio_manager.html" title="Main interface that contains the fmod_system, channel groups and channels for playback isDown whether...">AudioManager</a>.  <br /></td></tr>
-<tr class="separator:a60b29d0f798408689a69f8cb46d7d511"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e11d3fd971079cce3a1cbcfcebbd82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a35e11d3fd971079cce3a1cbcfcebbd82">ExitManager</a> ()</td></tr>
-<tr class="memdesc:a35e11d3fd971079cce3a1cbcfcebbd82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit Function for the <a class="el" href="class_t_e_1_1_audio_manager.html" title="Main interface that contains the fmod_system, channel groups and channels for playback isDown whether...">AudioManager</a>, called upon when engine is to be closed.  <br /></td></tr>
-<tr class="separator:a35e11d3fd971079cce3a1cbcfcebbd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b8e60c9c3dfba326ce83a284d047f7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a7b8e60c9c3dfba326ce83a284d047f7e">SetVolumeByChannelIndexes</a> (float vol, int begin, int end)</td></tr>
-<tr class="memdesc:a7b8e60c9c3dfba326ce83a284d047f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a private helper function that sets all the volumes of a range channels.  <br /></td></tr>
-<tr class="separator:a7b8e60c9c3dfba326ce83a284d047f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2911852c2e86d831d3c7299cf6594f16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a2911852c2e86d831d3c7299cf6594f16">Crossfade_Update</a> ()</td></tr>
-<tr class="memdesc:a2911852c2e86d831d3c7299cf6594f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crossfade_Update helps to reduce and increase the channel volumes of the 2 channels that are cross fading.  <br /></td></tr>
-<tr class="separator:a2911852c2e86d831d3c7299cf6594f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8b3cb54e4ea87e7c790ef356a7eaef1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#ab8b3cb54e4ea87e7c790ef356a7eaef1">SetupFMODSystem</a> ()</td></tr>
-<tr class="memdesc:ab8b3cb54e4ea87e7c790ef356a7eaef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a wrapper function to set up the fmod_system upon init.  <br /></td></tr>
-<tr class="separator:ab8b3cb54e4ea87e7c790ef356a7eaef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f46c8f930a6ce26bc6b60b309df07e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a1f46c8f930a6ce26bc6b60b309df07e9">SetupChannelGroups</a> ()</td></tr>
-<tr class="memdesc:a1f46c8f930a6ce26bc6b60b309df07e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a wrapper function to set up the channel groups upon init.  <br /></td></tr>
-<tr class="separator:a1f46c8f930a6ce26bc6b60b309df07e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5f83a9a331b869cc0a68066533b6667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#ad5f83a9a331b869cc0a68066533b6667">TESTSetUpSpatial</a> ()</td></tr>
-<tr class="memdesc:ad5f83a9a331b869cc0a68066533b6667"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a WIP wrapper function to set up the various channels, sounds and channel groups for 3D spatial sound.  <br /></td></tr>
-<tr class="separator:ad5f83a9a331b869cc0a68066533b6667"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a89c64d1da2319cfa80f01746c0ae6201"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a89c64d1da2319cfa80f01746c0ae6201">TOTAL_ChannelsCount</a> = 10</td></tr>
-<tr class="separator:a89c64d1da2319cfa80f01746c0ae6201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f980dba5fd0cfb9697df28e48699d7b"><td class="memItemLeft" align="right" valign="top">FMOD::System *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a7f980dba5fd0cfb9697df28e48699d7b">fmod_system</a> { nullptr }</td></tr>
-<tr class="separator:a7f980dba5fd0cfb9697df28e48699d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa32e6f0fc6f642ebb8700f81c256fc6"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, FMOD::ChannelGroup * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#afa32e6f0fc6f642ebb8700f81c256fc6">ChannelGroup_Map</a></td></tr>
-<tr class="separator:afa32e6f0fc6f642ebb8700f81c256fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8ba8c28b5c677b40adc456fee09ba06"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, FMOD::ChannelGroup * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#ae8ba8c28b5c677b40adc456fee09ba06">ChannelGroups</a></td></tr>
-<tr class="separator:ae8ba8c28b5c677b40adc456fee09ba06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af23e0f882a8e102d4432797aa0c6678c"><td class="memItemLeft" align="right" valign="top">FMOD::Channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#af23e0f882a8e102d4432797aa0c6678c">Channels</a> [10] {nullptr}</td></tr>
-<tr class="separator:af23e0f882a8e102d4432797aa0c6678c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b39a5095b508aeb25fc583a68d03e22"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a7b39a5095b508aeb25fc583a68d03e22">master_vol</a> = 0.5f</td></tr>
-<tr class="separator:a7b39a5095b508aeb25fc583a68d03e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8009f7ad754f177c842b6be31b82997c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a8009f7ad754f177c842b6be31b82997c">bgm_vol</a> = 0.69f</td></tr>
-<tr class="separator:a8009f7ad754f177c842b6be31b82997c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add6c03ac32d9536fc7fa483eb382f9e6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#add6c03ac32d9536fc7fa483eb382f9e6">sfx_vol</a> = 0.42f</td></tr>
-<tr class="separator:add6c03ac32d9536fc7fa483eb382f9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6650d707a24c1b82baf4905c5684bef0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a6650d707a24c1b82baf4905c5684bef0">spatial_vol</a> = 1.f</td></tr>
-<tr class="separator:a6650d707a24c1b82baf4905c5684bef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad102cb83a165f0b2fdeacd51a110f3e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#ad102cb83a165f0b2fdeacd51a110f3e8">is_crossfading</a> = false</td></tr>
-<tr class="separator:ad102cb83a165f0b2fdeacd51a110f3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba2f97b26372f5abffab3030c9772ea7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#aba2f97b26372f5abffab3030c9772ea7">crossfade_vol_delta</a> = 0.f</td></tr>
-<tr class="separator:aba2f97b26372f5abffab3030c9772ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd0ccc626b5f330e9790db591ddbd193"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#abd0ccc626b5f330e9790db591ddbd193">channel_idx_incre_decre</a> = {0,0}</td></tr>
-<tr class="separator:abd0ccc626b5f330e9790db591ddbd193"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef37b18047b48ea1e4e909245aa22308"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#aef37b18047b48ea1e4e909245aa22308">Sound_Filepath_map</a></td></tr>
-<tr class="separator:aef37b18047b48ea1e4e909245aa22308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a479a1f8a0f71a0a77c43c6a1d94a6bb4"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, FMOD::Sound * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a479a1f8a0f71a0a77c43c6a1d94a6bb4">Sound_map</a></td></tr>
-<tr class="separator:a479a1f8a0f71a0a77c43c6a1d94a6bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8945a1d6cf8302f658586b0feacee54"><td class="memItemLeft" align="right" valign="top">FMOD_VECTOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#ae8945a1d6cf8302f658586b0feacee54">listenerPosition</a> = { 0, 0, 0 }</td></tr>
-<tr class="separator:ae8945a1d6cf8302f658586b0feacee54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae53f0bd4b6d0d3597102170a7302a38f"><td class="memItemLeft" align="right" valign="top">FMOD_VECTOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#ae53f0bd4b6d0d3597102170a7302a38f">listenerVelocity</a> = { 0, 0, 0 }</td></tr>
-<tr class="separator:ae53f0bd4b6d0d3597102170a7302a38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd49ba8cfef9fe037e341e1d47494ef0"><td class="memItemLeft" align="right" valign="top">FMOD_VECTOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#abd49ba8cfef9fe037e341e1d47494ef0">listenerForward</a> = { 0, 0, -1 }</td></tr>
-<tr class="separator:abd49ba8cfef9fe037e341e1d47494ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa31e6d8842fd64641ffc6732320d5d49"><td class="memItemLeft" align="right" valign="top">FMOD_VECTOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#aa31e6d8842fd64641ffc6732320d5d49">listenerUp</a> = { 0, 1, 0 }</td></tr>
-<tr class="separator:aa31e6d8842fd64641ffc6732320d5d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3086ea09968430170b696e897f1131b9"><td class="memItemLeft" align="right" valign="top">FMOD_VECTOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a3086ea09968430170b696e897f1131b9">emitter_position</a> = { -1, 0, 0 }</td></tr>
-<tr class="separator:a3086ea09968430170b696e897f1131b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00802fbd42ba4feab05399e3bd69ef19"><td class="memItemLeft" align="right" valign="top">FMOD_VECTOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a00802fbd42ba4feab05399e3bd69ef19">emitter_velocity</a> = { 0, 0, 0 }</td></tr>
-<tr class="separator:a00802fbd42ba4feab05399e3bd69ef19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_audio_manager.html#a3e1914489e4bed4f9f23cdeab34a43dc">Engine</a></td></tr>
+<tr class="memitem:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memItemLeft" align="right" valign="top"><a id="a3e1914489e4bed4f9f23cdeab34a43dc" name="a3e1914489e4bed4f9f23cdeab34a43dc"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Engine</b></td></tr>
 <tr class="separator:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main interface that contains the fmod_system, channel groups and channels for playback isDown whether the specific key or button is pressed down triggered for whether the key has already been triggered or not. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9c830f3c6bc47413ca0b8deb60f4fe6e" name="a9c830f3c6bc47413ca0b8deb60f4fe6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c830f3c6bc47413ca0b8deb60f4fe6e">&#9670;&#160;</a></span>AudioManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TE::AudioManager::AudioManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constructor for the <a class="el" href="class_t_e_1_1_audio_manager.html" title="Main interface that contains the fmod_system, channel groups and channels for playback isDown whether...">AudioManager</a>, and gets a unique GUID for it upon construction. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a947ea9bc676daa51d2d5b2bf55f00162" name="a947ea9bc676daa51d2d5b2bf55f00162"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a947ea9bc676daa51d2d5b2bf55f00162">&#9670;&#160;</a></span>InitManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::AudioManager::InitManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Initialisation Function for the <a class="el" href="class_t_e_1_1_audio_manager.html" title="Main interface that contains the fmod_system, channel groups and channels for playback isDown whether...">AudioManager</a>. </p>
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a5469d89d5f07a6890444e9d20636ac6d">TE::IManager</a>.</p>
-
-</div>
-</div>
-<a id="a60b29d0f798408689a69f8cb46d7d511" name="a60b29d0f798408689a69f8cb46d7d511"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60b29d0f798408689a69f8cb46d7d511">&#9670;&#160;</a></span>UpdateManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::AudioManager::UpdateManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Update Function for the <a class="el" href="class_t_e_1_1_audio_manager.html" title="Main interface that contains the fmod_system, channel groups and channels for playback isDown whether...">AudioManager</a>. </p>
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a441c480911e78b81cf8d717dff6dcd77">TE::IManager</a>.</p>
-
-</div>
-</div>
-<a id="a35e11d3fd971079cce3a1cbcfcebbd82" name="a35e11d3fd971079cce3a1cbcfcebbd82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35e11d3fd971079cce3a1cbcfcebbd82">&#9670;&#160;</a></span>ExitManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::AudioManager::ExitManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Exit Function for the <a class="el" href="class_t_e_1_1_audio_manager.html" title="Main interface that contains the fmod_system, channel groups and channels for playback isDown whether...">AudioManager</a>, called upon when engine is to be closed. </p>
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a0f7904d7af29ec42dc55396b522b375b">TE::IManager</a>.</p>
-
-</div>
-</div>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1358352ddecab8a3a66e960071c5ffa8" name="a1358352ddecab8a3a66e960071c5ffa8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1358352ddecab8a3a66e960071c5ffa8">&#9670;&#160;</a></span>GetSoundFilePath()</h2>
 
@@ -513,47 +330,17 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a341685a877ecba4b09fd01c081d09acf" name="a341685a877ecba4b09fd01c081d09acf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a341685a877ecba4b09fd01c081d09acf">&#9670;&#160;</a></span>StopAllChannels()</h2>
+<a id="a108959da0241d387c7f41db3a33721f0" name="a108959da0241d387c7f41db3a33721f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108959da0241d387c7f41db3a33721f0">&#9670;&#160;</a></span>SimulationPauseStop()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TE::AudioManager::StopAllChannels </td>
+          <td class="memname">void TE::AudioManager::SimulationPauseStop </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function stops ALL channels from playing. </p>
-
-</div>
-</div>
-<a id="a0ccc0e5d0dd445039436a6734e1bf18c" name="a0ccc0e5d0dd445039436a6734e1bf18c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ccc0e5d0dd445039436a6734e1bf18c">&#9670;&#160;</a></span>PlayBGM_MONO()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::AudioManager::PlayBGM_MONO </td>
-          <td>(</td>
-          <td class="paramtype">FMOD::Sound *&#160;</td>
-          <td class="paramname"><em>bgm_sounds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>channel_idx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -566,36 +353,7 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ab3beda69884616ae0634f11b097b9519" name="ab3beda69884616ae0634f11b097b9519"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3beda69884616ae0634f11b097b9519">&#9670;&#160;</a></span>PlaySFX_MONO()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::AudioManager::PlaySFX_MONO </td>
-          <td>(</td>
-          <td class="paramtype">FMOD::Sound *&#160;</td>
-          <td class="paramname"><em>sfx_sound</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>channel_idx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Plays the BGM sound via MONO_SFX Channel group and returns the index of the channel it is playing on. </p>
+<p>Plays the BGM sound via MONO_SFX Channel group and returns the index of the channel it is playing on</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sfx_sound</td><td>The sound to play.</td></tr>
@@ -603,36 +361,7 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="affe658457369381233ea91e149bd7c1e" name="affe658457369381233ea91e149bd7c1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affe658457369381233ea91e149bd7c1e">&#9670;&#160;</a></span>Play3D_SPATIAL()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::AudioManager::Play3D_SPATIAL </td>
-          <td>(</td>
-          <td class="paramtype">FMOD::Sound *&#160;</td>
-          <td class="paramname"><em>spatial_sound</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>channel_idx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function stops ALL channels from playing. </p>
+<p>This function stops ALL channels from playing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">spatial_sound</td><td>The sound to play.</td></tr>
@@ -640,36 +369,7 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a21939fd128105241782466e93aca6f18" name="a21939fd128105241782466e93aca6f18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21939fd128105241782466e93aca6f18">&#9670;&#160;</a></span>CrossfadeBGM_MONO()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::AudioManager::CrossfadeBGM_MONO </td>
-          <td>(</td>
-          <td class="paramtype">FMOD::Sound *&#160;</td>
-          <td class="paramname"><em>bgm_sound</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>seconds_duration</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This is a WIP function that crossfades an existing channel over a certain duration. </p>
+<p>This is a WIP function that crossfades an existing channel over a certain duration</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bgm_sound</td><td>The string that maps to the filepath.</td></tr>
@@ -677,652 +377,6 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a7b8e60c9c3dfba326ce83a284d047f7e" name="a7b8e60c9c3dfba326ce83a284d047f7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b8e60c9c3dfba326ce83a284d047f7e">&#9670;&#160;</a></span>SetVolumeByChannelIndexes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::AudioManager::SetVolumeByChannelIndexes </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>vol</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>end</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This is a private helper function that sets all the volumes of a range channels. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vol</td><td>The volume to set to</td></tr>
-    <tr><td class="paramname">begin</td><td>The starting(inclusive) index of target channel</td></tr>
-    <tr><td class="paramname">end</td><td>The ending(exclusive) index of target channel</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2911852c2e86d831d3c7299cf6594f16" name="a2911852c2e86d831d3c7299cf6594f16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2911852c2e86d831d3c7299cf6594f16">&#9670;&#160;</a></span>Crossfade_Update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::AudioManager::Crossfade_Update </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Crossfade_Update helps to reduce and increase the channel volumes of the 2 channels that are cross fading. </p>
-
-</div>
-</div>
-<a id="ab8b3cb54e4ea87e7c790ef356a7eaef1" name="ab8b3cb54e4ea87e7c790ef356a7eaef1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8b3cb54e4ea87e7c790ef356a7eaef1">&#9670;&#160;</a></span>SetupFMODSystem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::AudioManager::SetupFMODSystem </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This is a wrapper function to set up the fmod_system upon init. </p>
-
-</div>
-</div>
-<a id="a1f46c8f930a6ce26bc6b60b309df07e9" name="a1f46c8f930a6ce26bc6b60b309df07e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f46c8f930a6ce26bc6b60b309df07e9">&#9670;&#160;</a></span>SetupChannelGroups()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::AudioManager::SetupChannelGroups </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This is a wrapper function to set up the channel groups upon init. </p>
-
-</div>
-</div>
-<a id="ad5f83a9a331b869cc0a68066533b6667" name="ad5f83a9a331b869cc0a68066533b6667"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5f83a9a331b869cc0a68066533b6667">&#9670;&#160;</a></span>TESTSetUpSpatial()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::AudioManager::TESTSetUpSpatial </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This is a WIP wrapper function to set up the various channels, sounds and channel groups for 3D spatial sound. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a3e1914489e4bed4f9f23cdeab34a43dc" name="a3e1914489e4bed4f9f23cdeab34a43dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e1914489e4bed4f9f23cdeab34a43dc">&#9670;&#160;</a></span>Engine</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_t_e_1_1_engine.html">Engine</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a0496363bd51f71244cadfd21e3363181" name="a0496363bd51f71244cadfd21e3363181"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0496363bd51f71244cadfd21e3363181">&#9670;&#160;</a></span>audio_manager</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_audio_manager.html">AudioManager</a>* TE::AudioManager::audio_manager</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a89c64d1da2319cfa80f01746c0ae6201" name="a89c64d1da2319cfa80f01746c0ae6201"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89c64d1da2319cfa80f01746c0ae6201">&#9670;&#160;</a></span>TOTAL_ChannelsCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TE::AudioManager::TOTAL_ChannelsCount = 10</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7f980dba5fd0cfb9697df28e48699d7b" name="a7f980dba5fd0cfb9697df28e48699d7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f980dba5fd0cfb9697df28e48699d7b">&#9670;&#160;</a></span>fmod_system</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FMOD::System* TE::AudioManager::fmod_system { nullptr }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afa32e6f0fc6f642ebb8700f81c256fc6" name="afa32e6f0fc6f642ebb8700f81c256fc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa32e6f0fc6f642ebb8700f81c256fc6">&#9670;&#160;</a></span>ChannelGroup_Map</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt;std::string, FMOD::ChannelGroup*&gt; TE::AudioManager::ChannelGroup_Map</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae8ba8c28b5c677b40adc456fee09ba06" name="ae8ba8c28b5c677b40adc456fee09ba06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8ba8c28b5c677b40adc456fee09ba06">&#9670;&#160;</a></span>ChannelGroups</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::pair&lt;std::string, FMOD::ChannelGroup* &gt; &gt; TE::AudioManager::ChannelGroups</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af23e0f882a8e102d4432797aa0c6678c" name="af23e0f882a8e102d4432797aa0c6678c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af23e0f882a8e102d4432797aa0c6678c">&#9670;&#160;</a></span>Channels</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FMOD::Channel* TE::AudioManager::Channels[10] {nullptr}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7b39a5095b508aeb25fc583a68d03e22" name="a7b39a5095b508aeb25fc583a68d03e22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b39a5095b508aeb25fc583a68d03e22">&#9670;&#160;</a></span>master_vol</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float TE::AudioManager::master_vol = 0.5f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8009f7ad754f177c842b6be31b82997c" name="a8009f7ad754f177c842b6be31b82997c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8009f7ad754f177c842b6be31b82997c">&#9670;&#160;</a></span>bgm_vol</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float TE::AudioManager::bgm_vol = 0.69f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="add6c03ac32d9536fc7fa483eb382f9e6" name="add6c03ac32d9536fc7fa483eb382f9e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add6c03ac32d9536fc7fa483eb382f9e6">&#9670;&#160;</a></span>sfx_vol</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float TE::AudioManager::sfx_vol = 0.42f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6650d707a24c1b82baf4905c5684bef0" name="a6650d707a24c1b82baf4905c5684bef0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6650d707a24c1b82baf4905c5684bef0">&#9670;&#160;</a></span>spatial_vol</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float TE::AudioManager::spatial_vol = 1.f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad102cb83a165f0b2fdeacd51a110f3e8" name="ad102cb83a165f0b2fdeacd51a110f3e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad102cb83a165f0b2fdeacd51a110f3e8">&#9670;&#160;</a></span>is_crossfading</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::AudioManager::is_crossfading = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aba2f97b26372f5abffab3030c9772ea7" name="aba2f97b26372f5abffab3030c9772ea7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba2f97b26372f5abffab3030c9772ea7">&#9670;&#160;</a></span>crossfade_vol_delta</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#acd4c1ca77ef20a04bd21f334e37bc639">TEfloat</a> TE::AudioManager::crossfade_vol_delta = 0.f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abd0ccc626b5f330e9790db591ddbd193" name="abd0ccc626b5f330e9790db591ddbd193"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd0ccc626b5f330e9790db591ddbd193">&#9670;&#160;</a></span>channel_idx_incre_decre</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::pair&lt;int, int&gt; TE::AudioManager::channel_idx_incre_decre = {0,0}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aef37b18047b48ea1e4e909245aa22308" name="aef37b18047b48ea1e4e909245aa22308"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef37b18047b48ea1e4e909245aa22308">&#9670;&#160;</a></span>Sound_Filepath_map</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt;std::string, std::string&gt; TE::AudioManager::Sound_Filepath_map</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a479a1f8a0f71a0a77c43c6a1d94a6bb4" name="a479a1f8a0f71a0a77c43c6a1d94a6bb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a479a1f8a0f71a0a77c43c6a1d94a6bb4">&#9670;&#160;</a></span>Sound_map</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt;std::string, FMOD::Sound*&gt; TE::AudioManager::Sound_map</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae8945a1d6cf8302f658586b0feacee54" name="ae8945a1d6cf8302f658586b0feacee54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8945a1d6cf8302f658586b0feacee54">&#9670;&#160;</a></span>listenerPosition</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FMOD_VECTOR TE::AudioManager::listenerPosition = { 0, 0, 0 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae53f0bd4b6d0d3597102170a7302a38f" name="ae53f0bd4b6d0d3597102170a7302a38f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae53f0bd4b6d0d3597102170a7302a38f">&#9670;&#160;</a></span>listenerVelocity</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FMOD_VECTOR TE::AudioManager::listenerVelocity = { 0, 0, 0 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abd49ba8cfef9fe037e341e1d47494ef0" name="abd49ba8cfef9fe037e341e1d47494ef0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd49ba8cfef9fe037e341e1d47494ef0">&#9670;&#160;</a></span>listenerForward</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FMOD_VECTOR TE::AudioManager::listenerForward = { 0, 0, -1 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa31e6d8842fd64641ffc6732320d5d49" name="aa31e6d8842fd64641ffc6732320d5d49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa31e6d8842fd64641ffc6732320d5d49">&#9670;&#160;</a></span>listenerUp</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FMOD_VECTOR TE::AudioManager::listenerUp = { 0, 1, 0 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3086ea09968430170b696e897f1131b9" name="a3086ea09968430170b696e897f1131b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3086ea09968430170b696e897f1131b9">&#9670;&#160;</a></span>emitter_position</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FMOD_VECTOR TE::AudioManager::emitter_position = { -1, 0, 0 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a00802fbd42ba4feab05399e3bd69ef19" name="a00802fbd42ba4feab05399e3bd69ef19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00802fbd42ba4feab05399e3bd69ef19">&#9670;&#160;</a></span>emitter_velocity</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FMOD_VECTOR TE::AudioManager::emitter_velocity = { 0, 0, 0 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

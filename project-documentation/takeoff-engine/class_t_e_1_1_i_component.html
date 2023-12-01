@@ -129,8 +129,8 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_i_component.html',''); i
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#friends">Friends</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="class_t_e_1_1_i_component-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TE::IComponent Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -139,32 +139,18 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_i_component.html',''); i
  <a href="class_t_e_1_1_i_component.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_e_c_s_manager_8h_source.html">ECSManager.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for TE::IComponent:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_t_e_1_1_i_component.png" usemap="#TE::IComponent_map" alt=""/>
-  <map id="TE::IComponent_map" name="TE::IComponent_map">
-<area href="class_t_e_1_1_i_object.html" alt="TE::IObject" shape="rect" coords="399,0,522,24"/>
-<area href="class_t_e_1_1_audio_source.html" title="The AudioSource component is specifically for entities that has to play sounds that affect player wou..." alt="TE::AudioSource" shape="rect" coords="0,112,123,136"/>
-<area href="class_t_e_1_1_camera.html" alt="TE::Camera" shape="rect" coords="133,112,256,136"/>
-<area href="class_t_e_1_1_collider.html" alt="TE::Collider" shape="rect" coords="266,112,389,136"/>
-<area href="class_t_e_1_1_mesh.html" alt="TE::Mesh" shape="rect" coords="399,112,522,136"/>
-<area href="class_t_e_1_1_mono_script.html" alt="TE::MonoScript" shape="rect" coords="532,112,655,136"/>
-<area href="class_t_e_1_1_rigidbody.html" alt="TE::Rigidbody" shape="rect" coords="665,112,788,136"/>
-<area href="class_t_e_1_1_transform.html" alt="TE::Transform" shape="rect" coords="798,112,921,136"/>
-<area href="class_t_e_1_1_box_collider.html" alt="TE::BoxCollider" shape="rect" coords="133,168,256,192"/>
-<area href="class_t_e_1_1_capsule_collider.html" alt="TE::CapsuleCollider" shape="rect" coords="266,168,389,192"/>
-<area href="class_t_e_1_1_sphere_collider.html" alt="TE::SphereCollider" shape="rect" coords="399,168,522,192"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a196c19e70f9683a57c1eff01db6c07a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a196c19e70f9683a57c1eff01db6c07a3">IComponent</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeguid)</td></tr>
+<tr class="memitem:a196c19e70f9683a57c1eff01db6c07a3"><td class="memItemLeft" align="right" valign="top"><a id="a196c19e70f9683a57c1eff01db6c07a3" name="a196c19e70f9683a57c1eff01db6c07a3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IComponent</b> (TEtypeguid typeguid)</td></tr>
 <tr class="separator:a196c19e70f9683a57c1eff01db6c07a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2ceceb6b5e92f3ad10e8e8a8ce867fe"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#ad2ceceb6b5e92f3ad10e8e8a8ce867fe">~IComponent</a> ()</td></tr>
-<tr class="separator:ad2ceceb6b5e92f3ad10e8e8a8ce867fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40de458d1c358ed31994e64f6404ee8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#ab40de458d1c358ed31994e64f6404ee8">AllocateData</a> ()</td></tr>
+<tr class="memdesc:ab40de458d1c358ed31994e64f6404ee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">override as needed. Will be called on component allocate (via addcomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data.  <br /></td></tr>
+<tr class="separator:ab40de458d1c358ed31994e64f6404ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4ca46fa0d498df3d6e29de39ceddb8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a2e4ca46fa0d498df3d6e29de39ceddb8">DeallocateData</a> ()</td></tr>
+<tr class="memdesc:a2e4ca46fa0d498df3d6e29de39ceddb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">override as needed. Will be called on component deallocate (via removecomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data.  <br /></td></tr>
+<tr class="separator:a2e4ca46fa0d498df3d6e29de39ceddb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a639f8e495309c93d4e632595ea615da4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a639f8e495309c93d4e632595ea615da4">GetIsActive</a> () const</td></tr>
 <tr class="memdesc:a639f8e495309c93d4e632595ea615da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this component is active or not. Active state is determined by: internal Active state &amp;&amp; entity's active state.  <br /></td></tr>
 <tr class="separator:a639f8e495309c93d4e632595ea615da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,7 +160,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a90097cf522fe29daf1fa2f5ddb148191"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a90097cf522fe29daf1fa2f5ddb148191">SetIsActiveInternal</a> (bool active) noexcept</td></tr>
 <tr class="memdesc:a90097cf522fe29daf1fa2f5ddb148191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal active state of this component. Does not affect the state of the parent. If entity is inactive but this component is active, the resultant state of this component will still be inactive until the entity's state is changed to active.  <br /></td></tr>
 <tr class="separator:a90097cf522fe29daf1fa2f5ddb148191"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07865b61eaa1f8404312a287ff2cad7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a07865b61eaa1f8404312a287ff2cad7b">GetEntity</a> () const</td></tr>
+<tr class="memitem:a07865b61eaa1f8404312a287ff2cad7b"><td class="memItemLeft" align="right" valign="top"><a id="a07865b61eaa1f8404312a287ff2cad7b" name="a07865b61eaa1f8404312a287ff2cad7b"></a>
+<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntity</b> () const</td></tr>
 <tr class="separator:a07865b61eaa1f8404312a287ff2cad7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f805b5129eca4fddabecb7a77f42d54"><td class="memItemLeft" align="right" valign="top">virtual rttr::instance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a9f805b5129eca4fddabecb7a77f42d54">GetRTTRInstance</a> () const</td></tr>
 <tr class="separator:a9f805b5129eca4fddabecb7a77f42d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,59 +170,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e069570ee4f25551a590e1414d465f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a2e069570ee4f25551a590e1414d465f3">Deserialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
 <tr class="separator:a2e069570ee4f25551a590e1414d465f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_object.html">TE::IObject</a></td></tr>
-<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#afc331476bf6217fde06f31deb161b97e">IObject</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="afc331476bf6217fde06f31deb161b97e" name="afc331476bf6217fde06f31deb161b97e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IObject</b> (TEtypeguid typeGUID)</td></tr>
 <tr class="separator:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#af1d390c81a0fd71b490d01b93042f81d">~IObject</a> ()</td></tr>
-<tr class="separator:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">GetGUID</a> () const noexcept</td></tr>
+<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aeb49f1d9760159d96df6dca959790745" name="aeb49f1d9760159d96df6dca959790745"></a>
+virtual TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetGUID</b> () const noexcept</td></tr>
 <tr class="separator:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aafeae10a462729d794db5c6da61eba08">SetGUID</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> guid) noexcept</td></tr>
+<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aafeae10a462729d794db5c6da61eba08" name="aafeae10a462729d794db5c6da61eba08"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGUID</b> (TEguid guid) noexcept</td></tr>
 <tr class="separator:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">GetTypeGUID</a> () const noexcept</td></tr>
+<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="a705d4f85c13ce4fc396ad38cfbda7cdf" name="a705d4f85c13ce4fc396ad38cfbda7cdf"></a>
+virtual TEtypeguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeGUID</b> () const noexcept</td></tr>
 <tr class="separator:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aac2227a57400d63059b75d1bcdf7b79d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#aac2227a57400d63059b75d1bcdf7b79d">m_BindedEntityIndex</a> = <a class="el" href="namespace_t_e.html#a3a6a32cbd064efcb342353106dbb313d">ECS_INDEX_NULL</a></td></tr>
-<tr class="separator:aac2227a57400d63059b75d1bcdf7b79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3454121400963e3c8601ef56e445a54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#aa3454121400963e3c8601ef56e445a54">m_IsActive</a>: 1 = <a class="el" href="_r_t_t_r___registration_8h.html#af47838688c48ee8921c10d0ab3065713">true</a></td></tr>
-<tr class="separator:aa3454121400963e3c8601ef56e445a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a2d11529d5b2ef33932c3c3c449db1e91"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a2d11529d5b2ef33932c3c3c449db1e91">ISystem</a></td></tr>
+<tr class="memitem:a2d11529d5b2ef33932c3c3c449db1e91"><td class="memItemLeft" align="right" valign="top"><a id="a2d11529d5b2ef33932c3c3c449db1e91" name="a2d11529d5b2ef33932c3c3c449db1e91"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>ISystem</b></td></tr>
 <tr class="separator:a2d11529d5b2ef33932c3c3c449db1e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa05b6c01906ea55c68aee3910bb6bbc0"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#aa05b6c01906ea55c68aee3910bb6bbc0">ECSManager</a></td></tr>
+<tr class="memitem:aa05b6c01906ea55c68aee3910bb6bbc0"><td class="memItemLeft" align="right" valign="top"><a id="aa05b6c01906ea55c68aee3910bb6bbc0" name="aa05b6c01906ea55c68aee3910bb6bbc0"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>ECSManager</b></td></tr>
 <tr class="separator:aa05b6c01906ea55c68aee3910bb6bbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafb991a55c5d724f07e00b1421f03ae6"><td class="memTemplParams" colspan="2">template&lt;typename ComponentType &gt; </td></tr>
-<tr class="memitem:aafb991a55c5d724f07e00b1421f03ae6"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#aafb991a55c5d724f07e00b1421f03ae6">ComponentRef</a></td></tr>
+<tr class="memitem:aafb991a55c5d724f07e00b1421f03ae6"><td class="memTemplParams" colspan="2"><a id="aafb991a55c5d724f07e00b1421f03ae6" name="aafb991a55c5d724f07e00b1421f03ae6"></a>
+template&lt;typename ComponentType &gt; </td></tr>
+<tr class="memitem:aafb991a55c5d724f07e00b1421f03ae6"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ComponentRef</b></td></tr>
 <tr class="separator:aafb991a55c5d724f07e00b1421f03ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab393b9e30b15c138ce3156e588c6c9"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a6ab393b9e30b15c138ce3156e588c6c9">MonoScript</a></td></tr>
+<tr class="memitem:a6ab393b9e30b15c138ce3156e588c6c9"><td class="memItemLeft" align="right" valign="top"><a id="a6ab393b9e30b15c138ce3156e588c6c9" name="a6ab393b9e30b15c138ce3156e588c6c9"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>MonoScript</b></td></tr>
 <tr class="separator:a6ab393b9e30b15c138ce3156e588c6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class of every ECS Component. Provides some generic functions to. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a196c19e70f9683a57c1eff01db6c07a3" name="a196c19e70f9683a57c1eff01db6c07a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a196c19e70f9683a57c1eff01db6c07a3">&#9670;&#160;</a></span>IComponent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TE::IComponent::IComponent </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td>
-          <td class="paramname"><em>typeguid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad2ceceb6b5e92f3ad10e8e8a8ce867fe" name="ad2ceceb6b5e92f3ad10e8e8a8ce867fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2ceceb6b5e92f3ad10e8e8a8ce867fe">&#9670;&#160;</a></span>~IComponent()</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab40de458d1c358ed31994e64f6404ee8" name="ab40de458d1c358ed31994e64f6404ee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab40de458d1c358ed31994e64f6404ee8">&#9670;&#160;</a></span>AllocateData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +212,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TE::IComponent::~IComponent </td>
+          <td class="memname">void TE::IComponent::AllocateData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -252,14 +220,46 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>override as needed. Will be called on component allocate (via addcomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data. </p>
+
+<p>Reimplemented in <a class="el" href="class_t_e_1_1_mesh.html#a81e690d4e376cab55fac4139028a7ec7">TE::Mesh</a>.</p>
+
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2e4ca46fa0d498df3d6e29de39ceddb8" name="a2e4ca46fa0d498df3d6e29de39ceddb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e4ca46fa0d498df3d6e29de39ceddb8">&#9670;&#160;</a></span>DeallocateData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::IComponent::DeallocateData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>override as needed. Will be called on component deallocate (via removecomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data. </p>
+
+<p>Reimplemented in <a class="el" href="class_t_e_1_1_mesh.html#ac097e3b9860ae8737235d3c9262070f1">TE::Mesh</a>.</p>
+
+</div>
+</div>
 <a id="a639f8e495309c93d4e632595ea615da4" name="a639f8e495309c93d4e632595ea615da4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a639f8e495309c93d4e632595ea615da4">&#9670;&#160;</a></span>GetIsActive()</h2>
 
@@ -342,23 +342,6 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a07865b61eaa1f8404312a287ff2cad7b" name="a07865b61eaa1f8404312a287ff2cad7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07865b61eaa1f8404312a287ff2cad7b">&#9670;&#160;</a></span>GetEntity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> TE::IComponent::GetEntity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9f805b5129eca4fddabecb7a77f42d54" name="a9f805b5129eca4fddabecb7a77f42d54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f805b5129eca4fddabecb7a77f42d54">&#9670;&#160;</a></span>GetRTTRInstance()</h2>
 
@@ -382,7 +365,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_t_e_1_1_audio_source.html#ac3879c330ad9845720be8a1bdae63c01">TE::AudioSource</a>, <a class="el" href="class_t_e_1_1_box_collider.html#a7e0d500f7365b8514e6c0a58c7a1b7c2">TE::BoxCollider</a>, <a class="el" href="class_t_e_1_1_camera.html#ad50fa4a0a284059c4b6d466c00ae3246">TE::Camera</a>, <a class="el" href="class_t_e_1_1_capsule_collider.html#af2945283bd9517e517cdcaa92178c03b">TE::CapsuleCollider</a>, <a class="el" href="class_t_e_1_1_collider.html#a8204ab8d1322bdb5646cf089057a42fd">TE::Collider</a>, <a class="el" href="class_t_e_1_1_mesh.html#aff6325b84f53e5d480384c63a2ba429a">TE::Mesh</a>, <a class="el" href="class_t_e_1_1_rigidbody.html#afd21d97082c90370f20c0b19d9d1e3c5">TE::Rigidbody</a>, <a class="el" href="class_t_e_1_1_sphere_collider.html#ae8f1efe719196c99f5fd4b216adc0400">TE::SphereCollider</a>, and <a class="el" href="class_t_e_1_1_transform.html#acfdc0ac4d942194780637a1a4d590187">TE::Transform</a>.</p>
+<p>Reimplemented in <a class="el" href="class_t_e_1_1_animation.html#a1793f364b77c626942338900dfe081ce">TE::Animation</a>, <a class="el" href="class_t_e_1_1_audio_listener.html#afc9a79df596cb162f3c6a859f061dec0">TE::AudioListener</a>, <a class="el" href="class_t_e_1_1_audio_source.html#ac3879c330ad9845720be8a1bdae63c01">TE::AudioSource</a>, <a class="el" href="class_t_e_1_1_button.html#acb46e18be04f76ec081bf9ef0d6f3997">TE::Button</a>, <a class="el" href="class_t_e_1_1_canvas.html#a476f296928019611095c874471d19f5f">TE::Canvas</a>, <a class="el" href="class_t_e_1_1_image.html#a885aa7044df15633e67be50f444a5c33">TE::Image</a>, <a class="el" href="class_t_e_1_1_rect_transform.html#a146fd3887a838c49e9cf5985b9fe3154">TE::RectTransform</a>, and <a class="el" href="class_t_e_1_1_text.html#aeabad7add987a60182c33c7afb7a8c06">TE::Text</a>.</p>
 
 </div>
 </div>
@@ -410,7 +393,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_t_e_1_1_audio_source.html#ae826b6a12194507fc683d197233db1ec">TE::AudioSource</a>, <a class="el" href="class_t_e_1_1_box_collider.html#a6046113e34067f2982680a61bbc432cc">TE::BoxCollider</a>, <a class="el" href="class_t_e_1_1_camera.html#a35fcc13439883031eef72f595653fcb4">TE::Camera</a>, <a class="el" href="class_t_e_1_1_capsule_collider.html#a51897ad6a8498088d1428d110b54c90f">TE::CapsuleCollider</a>, <a class="el" href="class_t_e_1_1_mesh.html#ab24706c1920364eadfa8236993514e66">TE::Mesh</a>, <a class="el" href="class_t_e_1_1_mono_script.html#af55cdfd310487e4d78810b729014c463">TE::MonoScript</a>, <a class="el" href="class_t_e_1_1_rigidbody.html#aebae24a2053fcb72372fc38924a00a34">TE::Rigidbody</a>, <a class="el" href="class_t_e_1_1_sphere_collider.html#a71cbebeffd55ecab0484bbe52060308f">TE::SphereCollider</a>, and <a class="el" href="class_t_e_1_1_transform.html#adcae0c5771741d2b402996c66d731c86">TE::Transform</a>.</p>
+<p>Reimplemented in <a class="el" href="class_t_e_1_1_animation.html#aba849980151d4162d6b23de1e572dcc5">TE::Animation</a>, <a class="el" href="class_t_e_1_1_audio_listener.html#a000bff8a1e085d0f0dc46f9f46d106e2">TE::AudioListener</a>, <a class="el" href="class_t_e_1_1_audio_source.html#ae826b6a12194507fc683d197233db1ec">TE::AudioSource</a>, <a class="el" href="class_t_e_1_1_camera.html#a35fcc13439883031eef72f595653fcb4">TE::Camera</a>, <a class="el" href="class_t_e_1_1_light.html#a901e877348113d6ed7e429777ea1e15b">TE::Light</a>, <a class="el" href="class_t_e_1_1_button.html#afede15a79f5390038f8380bf57548f1d">TE::Button</a>, <a class="el" href="class_t_e_1_1_canvas.html#aea7e378da5c027c2d341f20d8b7e118a">TE::Canvas</a>, <a class="el" href="class_t_e_1_1_image.html#ac53cf273c77489a88092ce91ebb440f5">TE::Image</a>, <a class="el" href="class_t_e_1_1_rect_transform.html#aed5dd834bac97e470b72f18c850a0d0f">TE::RectTransform</a>, and <a class="el" href="class_t_e_1_1_text.html#ab8c0486d8638e24c6bae305d238ac49a">TE::Text</a>.</p>
 
 </div>
 </div>
@@ -438,143 +421,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_t_e_1_1_audio_source.html#ada9c06f8e5ed90795e7720968a3f81ac">TE::AudioSource</a>, <a class="el" href="class_t_e_1_1_box_collider.html#a032a2635b27cd1b8bcb1ff5a69ecac4d">TE::BoxCollider</a>, <a class="el" href="class_t_e_1_1_camera.html#ab1d7bd64bea001b229bc9806a062b7e8">TE::Camera</a>, <a class="el" href="class_t_e_1_1_capsule_collider.html#ae682a44245d88e8dd473dc1a35882726">TE::CapsuleCollider</a>, <a class="el" href="class_t_e_1_1_mesh.html#a104d06e527d1e2e7e730203e0b913ab4">TE::Mesh</a>, <a class="el" href="class_t_e_1_1_mono_script.html#a7eb3c1da653e7be4fc1c2435958cec10">TE::MonoScript</a>, <a class="el" href="class_t_e_1_1_rigidbody.html#a6dcfd90acd4fac729d27dfc5ed8720b4">TE::Rigidbody</a>, <a class="el" href="class_t_e_1_1_sphere_collider.html#a482e9e499b9a097e0df2bc22d0d70011">TE::SphereCollider</a>, and <a class="el" href="class_t_e_1_1_transform.html#ac18648d4e7939c0e2f94ddd19628b4d0">TE::Transform</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a2d11529d5b2ef33932c3c3c449db1e91" name="a2d11529d5b2ef33932c3c3c449db1e91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d11529d5b2ef33932c3c3c449db1e91">&#9670;&#160;</a></span>ISystem</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_t_e_1_1_i_system.html">ISystem</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa05b6c01906ea55c68aee3910bb6bbc0" name="aa05b6c01906ea55c68aee3910bb6bbc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa05b6c01906ea55c68aee3910bb6bbc0">&#9670;&#160;</a></span>ECSManager</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_t_e_1_1_e_c_s_manager.html">ECSManager</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aafb991a55c5d724f07e00b1421f03ae6" name="aafb991a55c5d724f07e00b1421f03ae6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafb991a55c5d724f07e00b1421f03ae6">&#9670;&#160;</a></span>ComponentRef</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ComponentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6ab393b9e30b15c138ce3156e588c6c9" name="a6ab393b9e30b15c138ce3156e588c6c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ab393b9e30b15c138ce3156e588c6c9">&#9670;&#160;</a></span>MonoScript</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_t_e_1_1_mono_script.html">MonoScript</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="aac2227a57400d63059b75d1bcdf7b79d" name="aac2227a57400d63059b75d1bcdf7b79d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac2227a57400d63059b75d1bcdf7b79d">&#9670;&#160;</a></span>m_BindedEntityIndex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_t_e.html#a0e26faa26409db776c79adca071113a4">ECSIndex</a> TE::IComponent::m_BindedEntityIndex = <a class="el" href="namespace_t_e.html#a3a6a32cbd064efcb342353106dbb313d">ECS_INDEX_NULL</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa3454121400963e3c8601ef56e445a54" name="aa3454121400963e3c8601ef56e445a54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3454121400963e3c8601ef56e445a54">&#9670;&#160;</a></span>m_IsActive</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TE::IComponent::m_IsActive</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Reimplemented in <a class="el" href="class_t_e_1_1_animation.html#ae7ecff195dadc9badfe18db667100155">TE::Animation</a>, <a class="el" href="class_t_e_1_1_audio_listener.html#a45041bc389df5bb9a94e031bff349c7c">TE::AudioListener</a>, <a class="el" href="class_t_e_1_1_audio_source.html#ada9c06f8e5ed90795e7720968a3f81ac">TE::AudioSource</a>, <a class="el" href="class_t_e_1_1_camera.html#ab1d7bd64bea001b229bc9806a062b7e8">TE::Camera</a>, <a class="el" href="class_t_e_1_1_light.html#a7d9daa8082e06ec6a819fa0d7fd97e6c">TE::Light</a>, <a class="el" href="class_t_e_1_1_button.html#a1d226ebf5e167b9f82b364ae732b848d">TE::Button</a>, <a class="el" href="class_t_e_1_1_canvas.html#ab710d36aa9b4433656f474830a8f859f">TE::Canvas</a>, <a class="el" href="class_t_e_1_1_image.html#a92b0345ce47ec916c895b6502714647a">TE::Image</a>, <a class="el" href="class_t_e_1_1_rect_transform.html#af55be934f5b88d3bc70a22382ee05a8d">TE::RectTransform</a>, and <a class="el" href="class_t_e_1_1_text.html#abffba76e31e99497c4a489aff2f7a2cf">TE::Text</a>.</p>
 
 </div>
 </div>

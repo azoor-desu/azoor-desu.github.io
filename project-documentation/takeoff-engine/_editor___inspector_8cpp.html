@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('_editor___inspector_8cpp.html',''); in
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Editor_Inspector.cpp File Reference</div></div>
@@ -141,36 +141,65 @@ $(document).ready(function(){initNavTree('_editor___inspector_8cpp.html',''); in
 <div class="textblock"><code>#include &quot;<a class="el" href="pch__editor_8h_source.html">pch_editor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_editor_helper_8h_source.html">EditorHelper.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_editor___inspector_8h_source.html">Editor_Inspector.h</a>&quot;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;commdlg.h&gt;</code><br />
+<code>#include &lt;filesystem&gt;</code><br />
 <code>#include &quot;Engine.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="_e_c_s_manager_8h_source.html">Core/ECSManager.h</a>&quot;</code><br />
+<code>#include &quot;Core/ECSManager.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_vulkan_manager_8h_source.html">Core/VulkanManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_scene_manager_8h_source.html">Core/SceneManager.h</a>&quot;</code><br />
+<code>#include &quot;Core/PrefabManager.h&quot;</code><br />
 <code>#include &quot;rttr/enumeration.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_script_manager_8h_source.html">Scripting/ScriptManager.h</a>&quot;</code><br />
+<code>#include &quot;Helper/ResourceManager.h&quot;</code><br />
+<code>#include &lt;mono/metadata/blob.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="_e_c_s_components_2_transform_8h_source.html">ECSComponents/Transform.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_mesh_8h_source.html">ECSComponents/Mesh.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_rigidbody_8h_source.html">ECSComponents/Rigidbody.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_box_collider_8h_source.html">ECSComponents/BoxCollider.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_sphere_collider_8h_source.html">ECSComponents/SphereCollider.h</a>&quot;</code><br />
+<code>#include &quot;ECSComponents/Mesh.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_rigidbody_8h_source.html">ECSComponents/Rigidbody.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_box_collider_8h_source.html">ECSComponents/BoxCollider.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_sphere_collider_8h_source.html">ECSComponents/SphereCollider.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_capsule_collider_8h_source.html">ECSComponents/CapsuleCollider.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_camera_component_8h_source.html">ECSComponents/CameraComponent.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_e_c_s_components_2_mono_script_8h_source.html">ECSComponents/MonoScript.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_animation_component_8h_source.html">ECSComponents/AnimationComponent.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_c_s_components_2_audio_source_8h_source.html">ECSComponents/AudioSource.h</a>&quot;</code><br />
+<code>#include &quot;ECSComponents/UI/Canvas.h&quot;</code><br />
+<code>#include &quot;ECSComponents/UI/Text.h&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_editor"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html">Editor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa32361a586dd2f8f82de3df3043ca7c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#aa32361a586dd2f8f82de3df3043ca7c7">Editor::DisplayEnumerator</a> (const <a class="el" href="_r_t_t_r___registration_8h.html#a4a7462fc6021672b56b868ee087da92d">rttr::property</a> &amp;prop, rttr::instance &amp;compInstance, <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> id)</td></tr>
+<tr class="memitem:ad56d8dfe68ed77bcc1afa587770f0414"><td class="memItemLeft" align="right" valign="top"><a id="ad56d8dfe68ed77bcc1afa587770f0414" name="ad56d8dfe68ed77bcc1afa587770f0414"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::Inspector_VectorStruct_AnimList</b> (const TEchar *label, std::vector&lt; Animation::AnimationClip &gt; *state)</td></tr>
+<tr class="separator:ad56d8dfe68ed77bcc1afa587770f0414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad805fd0c5bdf31892e3f9b8e523aea48"><td class="memTemplParams" colspan="2"><a id="ad805fd0c5bdf31892e3f9b8e523aea48" name="ad805fd0c5bdf31892e3f9b8e523aea48"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad805fd0c5bdf31892e3f9b8e523aea48"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Editor::PrefabModifiedName</b> (std::string &amp;name, ComponentRef&lt; IComponent &gt; compRef, size_t propertyHash, const T &amp;val)</td></tr>
+<tr class="separator:ad805fd0c5bdf31892e3f9b8e523aea48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32361a586dd2f8f82de3df3043ca7c7"><td class="memItemLeft" align="right" valign="top"><a id="aa32361a586dd2f8f82de3df3043ca7c7" name="aa32361a586dd2f8f82de3df3043ca7c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::DisplayEnumerator</b> (const rttr::property &amp;prop, rttr::instance &amp;compInstance, TEguid id)</td></tr>
 <tr class="separator:aa32361a586dd2f8f82de3df3043ca7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a810d935eeb2d065878950ffb9dfec779"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#a810d935eeb2d065878950ffb9dfec779">Editor::DisplayProperty</a> (const <a class="el" href="_r_t_t_r___registration_8h.html#a4a7462fc6021672b56b868ee087da92d">rttr::property</a> &amp;prop, rttr::instance &amp;compInstance, <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> id)</td></tr>
-<tr class="separator:a810d935eeb2d065878950ffb9dfec779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ffb23e6728ed088908dc3be38207626"><td class="memTemplParams" colspan="2"><a id="a7ffb23e6728ed088908dc3be38207626" name="a7ffb23e6728ed088908dc3be38207626"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a7ffb23e6728ed088908dc3be38207626"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Editor::ReadOnlyPropType</b> (const rttr::property &amp;prop, rttr::instance &amp;compInstance, T val)</td></tr>
+<tr class="separator:a7ffb23e6728ed088908dc3be38207626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9d0bed5830db674e3ee4fc38453a42"><td class="memItemLeft" align="right" valign="top"><a id="a2a9d0bed5830db674e3ee4fc38453a42" name="a2a9d0bed5830db674e3ee4fc38453a42"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::DisplayProperty</b> (const rttr::property &amp;prop, rttr::instance &amp;compInstance, TEguid id, ComponentRef&lt; IComponent &gt; compRef)</td></tr>
+<tr class="separator:a2a9d0bed5830db674e3ee4fc38453a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ae799fbb39b6a1cf6909e7da9d75972e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_editor.html#ae799fbb39b6a1cf6909e7da9d75972e7">Editor::isLocal</a> = false</td></tr>
+<tr class="memitem:ae799fbb39b6a1cf6909e7da9d75972e7"><td class="memItemLeft" align="right" valign="top"><a id="ae799fbb39b6a1cf6909e7da9d75972e7" name="ae799fbb39b6a1cf6909e7da9d75972e7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::isLocal</b> = false</td></tr>
 <tr class="separator:ae799fbb39b6a1cf6909e7da9d75972e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d1b9fe1c5476bfabde0d3583bd9f711"><td class="memItemLeft" align="right" valign="top"><a id="a6d1b9fe1c5476bfabde0d3583bd9f711" name="a6d1b9fe1c5476bfabde0d3583bd9f711"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::text2</b> [256] {}</td></tr>
+<tr class="separator:a6d1b9fe1c5476bfabde0d3583bd9f711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f1a46196f171a4fd089e824c5b69f6"><td class="memItemLeft" align="right" valign="top"><a id="aa5f1a46196f171a4fd089e824c5b69f6" name="aa5f1a46196f171a4fd089e824c5b69f6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::mat</b> = 0</td></tr>
+<tr class="separator:aa5f1a46196f171a4fd089e824c5b69f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafda2e20de899881b8508da8f5110e74"><td class="memItemLeft" align="right" valign="top"><a id="aafda2e20de899881b8508da8f5110e74" name="aafda2e20de899881b8508da8f5110e74"></a>
+ImVec2&#160;</td><td class="memItemRight" valign="bottom"><b>Editor::DragDelta</b></td></tr>
+<tr class="separator:aafda2e20de899881b8508da8f5110e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains functions for the inspector window in the editor Shows all components that is attached on a gameobject and allows for addition/ reduction of components, transformation and data <br  />

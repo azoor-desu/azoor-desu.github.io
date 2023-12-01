@@ -130,37 +130,24 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_script_manager.html','')
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#friends">Friends</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="class_t_e_1_1_script_manager-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TE::ScriptManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_script_manager_8h_source.html">ScriptManager.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for TE::ScriptManager:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_t_e_1_1_script_manager.png" usemap="#TE::ScriptManager_map" alt=""/>
-  <map id="TE::ScriptManager_map" name="TE::ScriptManager_map">
-<area href="class_t_e_1_1_i_manager.html" alt="TE::IManager" shape="rect" coords="0,56,117,80"/>
-<area href="class_t_e_1_1_i_object.html" alt="TE::IObject" shape="rect" coords="0,0,117,24"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6de302f6387db96d9b732f46e9c49549"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a6de302f6387db96d9b732f46e9c49549">ScriptManager</a> ()</td></tr>
-<tr class="separator:a6de302f6387db96d9b732f46e9c49549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45d8ae45ced503c1d7c06ecb5d177707"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a45d8ae45ced503c1d7c06ecb5d177707">CompileCSharpAssembly</a> ()</td></tr>
-<tr class="memdesc:a45d8ae45ced503c1d7c06ecb5d177707"><td class="mdescLeft">&#160;</td><td class="mdescRight">compiles a CSharp project into an assembly, and outputs it into a specific path  <br /></td></tr>
+<tr class="memitem:a45d8ae45ced503c1d7c06ecb5d177707"><td class="memItemLeft" align="right" valign="top"><a id="a45d8ae45ced503c1d7c06ecb5d177707" name="a45d8ae45ced503c1d7c06ecb5d177707"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CompileCSharpAssembly</b> ()</td></tr>
+<tr class="memdesc:a45d8ae45ced503c1d7c06ecb5d177707"><td class="mdescLeft">&#160;</td><td class="mdescRight">compiles a CSharp project into an assembly, and outputs it into a specific path <br /></td></tr>
 <tr class="separator:a45d8ae45ced503c1d7c06ecb5d177707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff3c3fdb49deb80c1e11acaf679e1a5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#aff3c3fdb49deb80c1e11acaf679e1a5c">LoadCSharpAssembly</a> ()</td></tr>
-<tr class="memdesc:aff3c3fdb49deb80c1e11acaf679e1a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the CSharp Assembly onto the mono backend. <a class="el" href="class_t_e_1_1_script_manager.html#a3ee2b93cfa166ea3a9b595126bbcf94d" title="Loads the assembly image data into m_MonoClasses container for internal engine use....">_LoadMonoClasses()</a> and <a class="el" href="class_t_e_1_1_script_manager.html#a51552fd23b0aa14647affbd5706fde82" title="Registers new Mono Classes to ECS as script containers, and unregisters non-existent script container...">_RegisterToECS()</a> will be called after this.  <br /></td></tr>
+<tr class="memdesc:aff3c3fdb49deb80c1e11acaf679e1a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the CSharp Assembly onto the mono backend. _LoadMonoClasses() and _RegisterToECS() will be called after this.  <br /></td></tr>
 <tr class="separator:aff3c3fdb49deb80c1e11acaf679e1a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad343a0873b72e2fc4b8469007c4fde67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#ad343a0873b72e2fc4b8469007c4fde67">UnloadCSharpAssembly</a> ()</td></tr>
-<tr class="memdesc:ad343a0873b72e2fc4b8469007c4fde67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up all MonoObject instances created, and then removes the loaded assembly image.  <br /></td></tr>
+<tr class="memitem:ad343a0873b72e2fc4b8469007c4fde67"><td class="memItemLeft" align="right" valign="top"><a id="ad343a0873b72e2fc4b8469007c4fde67" name="ad343a0873b72e2fc4b8469007c4fde67"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnloadCSharpAssembly</b> ()</td></tr>
+<tr class="memdesc:ad343a0873b72e2fc4b8469007c4fde67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up all MonoObject instances created, and then removes the loaded assembly image. <br /></td></tr>
 <tr class="separator:ad343a0873b72e2fc4b8469007c4fde67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a234f83107d68b9e2ecdfcb85c9f6fdea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a234f83107d68b9e2ecdfcb85c9f6fdea">CheckAssemblyLoaded</a> () const</td></tr>
 <tr class="memdesc:a234f83107d68b9e2ecdfcb85c9f6fdea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an assembly has been loaded or not.  <br /></td></tr>
@@ -168,25 +155,45 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a934aa3b6a1ada792623773ea49414585"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a934aa3b6a1ada792623773ea49414585">GarbageCollect</a> (int generation_count=-1)</td></tr>
 <tr class="memdesc:a934aa3b6a1ada792623773ea49414585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly call for garbage collection. Used when loading between scenes or there is a downtime where GC can happen.  <br /></td></tr>
 <tr class="separator:a934aa3b6a1ada792623773ea49414585"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9427376e55f2fcaa2e86d85ef7155ada"><td class="memItemLeft" align="right" valign="top">_MonoDomain *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a9427376e55f2fcaa2e86d85ef7155ada">GetScriptDomain</a> () const noexcept</td></tr>
+<tr class="memitem:a9427376e55f2fcaa2e86d85ef7155ada"><td class="memItemLeft" align="right" valign="top"><a id="a9427376e55f2fcaa2e86d85ef7155ada" name="a9427376e55f2fcaa2e86d85ef7155ada"></a>
+_MonoDomain *&#160;</td><td class="memItemRight" valign="bottom"><b>GetScriptDomain</b> () const noexcept</td></tr>
 <tr class="separator:a9427376e55f2fcaa2e86d85ef7155ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadac909828c8dc0f4094db834097fccc"><td class="memItemLeft" align="right" valign="top">_MonoImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#aadac909828c8dc0f4094db834097fccc">GetScriptImage</a> () const noexcept</td></tr>
+<tr class="memitem:aadac909828c8dc0f4094db834097fccc"><td class="memItemLeft" align="right" valign="top"><a id="aadac909828c8dc0f4094db834097fccc" name="aadac909828c8dc0f4094db834097fccc"></a>
+_MonoImage *&#160;</td><td class="memItemRight" valign="bottom"><b>GetScriptImage</b> () const noexcept</td></tr>
 <tr class="separator:aadac909828c8dc0f4094db834097fccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77e9655155124f60fc8fa9f1f47ce811"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_t_e.html#aa33d1217c42acc9e09447f37f816a2b8">MonoClasses</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a77e9655155124f60fc8fa9f1f47ce811">GetMonoClasses</a> () const</td></tr>
+<tr class="memitem:a77e9655155124f60fc8fa9f1f47ce811"><td class="memItemLeft" align="right" valign="top">const MonoClasses &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a77e9655155124f60fc8fa9f1f47ce811">GetMonoClasses</a> () const</td></tr>
 <tr class="memdesc:a77e9655155124f60fc8fa9f1f47ce811"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal m_MonoClasses map as a read only map.  <br /></td></tr>
 <tr class="separator:a77e9655155124f60fc8fa9f1f47ce811"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae43032e96d2739368fe3118fc31acd42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#ae43032e96d2739368fe3118fc31acd42">CheckMonoClassExists</a> (<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> monoClassType) const</td></tr>
+<tr class="memitem:ae43032e96d2739368fe3118fc31acd42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#ae43032e96d2739368fe3118fc31acd42">CheckMonoClassExists</a> (MonoClassType monoClassType) const</td></tr>
 <tr class="memdesc:ae43032e96d2739368fe3118fc31acd42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if the mono class exists in the engine or not.  <br /></td></tr>
 <tr class="separator:ae43032e96d2739368fe3118fc31acd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16bfc6b34e107a67283d27bff25025a9"><td class="memItemLeft" align="right" valign="top">_MonoObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a16bfc6b34e107a67283d27bff25025a9">CreateMonoObject</a> (<a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a> monoClassType)</td></tr>
+<tr class="memitem:a16bfc6b34e107a67283d27bff25025a9"><td class="memItemLeft" align="right" valign="top">_MonoObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a16bfc6b34e107a67283d27bff25025a9">CreateMonoObject</a> (MonoClassType monoClassType)</td></tr>
 <tr class="memdesc:a16bfc6b34e107a67283d27bff25025a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a Mono Object in mono backend and returns a pointer to the object. This object is not yet initialized, and the GC handle is also not set. This object is safe to discard without freeing, uness a GC handle has been set for it.  <br /></td></tr>
 <tr class="separator:a16bfc6b34e107a67283d27bff25025a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14478e6ecf3f613ca890a53499140cb6"><td class="memItemLeft" align="right" valign="top"><a id="a14478e6ecf3f613ca890a53499140cb6" name="a14478e6ecf3f613ca890a53499140cb6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeOnTriggerEnter</b> (<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> entity, <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_collider.html">Collider</a> &gt; collider)</td></tr>
+<tr class="separator:a14478e6ecf3f613ca890a53499140cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2725c7f8c5a67d6bb13d52dbb1175cb"><td class="memItemLeft" align="right" valign="top"><a id="ad2725c7f8c5a67d6bb13d52dbb1175cb" name="ad2725c7f8c5a67d6bb13d52dbb1175cb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeOnTriggerStay</b> (<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> entity, <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_collider.html">Collider</a> &gt; collider)</td></tr>
+<tr class="separator:ad2725c7f8c5a67d6bb13d52dbb1175cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5228477f1df6692ca2fa231fa5e5a1a5"><td class="memItemLeft" align="right" valign="top"><a id="a5228477f1df6692ca2fa231fa5e5a1a5" name="a5228477f1df6692ca2fa231fa5e5a1a5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeOnTriggerExit</b> (<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> entity, <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_collider.html">Collider</a> &gt; collider)</td></tr>
+<tr class="separator:a5228477f1df6692ca2fa231fa5e5a1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517354c7d98a341570af10d26acef8e2"><td class="memItemLeft" align="right" valign="top"><a id="a517354c7d98a341570af10d26acef8e2" name="a517354c7d98a341570af10d26acef8e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeOnColliderEnter</b> (<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> entity, <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_collider.html">Collider</a> &gt; collider)</td></tr>
+<tr class="separator:a517354c7d98a341570af10d26acef8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa83dbf212b07dd486930d26e7db24ff"><td class="memItemLeft" align="right" valign="top"><a id="afa83dbf212b07dd486930d26e7db24ff" name="afa83dbf212b07dd486930d26e7db24ff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeOnColliderStay</b> (<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> entity, <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_collider.html">Collider</a> &gt; collider)</td></tr>
+<tr class="separator:afa83dbf212b07dd486930d26e7db24ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab13bc39705e442faf194c64c20e6d997"><td class="memItemLeft" align="right" valign="top"><a id="ab13bc39705e442faf194c64c20e6d997" name="ab13bc39705e442faf194c64c20e6d997"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeOnColliderExit</b> (<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> entity, <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_collider.html">Collider</a> &gt; collider)</td></tr>
+<tr class="separator:ab13bc39705e442faf194c64c20e6d997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_manager.html">TE::IManager</a></td></tr>
-<tr class="memitem:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a789acfdc8c9a177bbf1ae68e25ab0ceb">IManager</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="memitem:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="a789acfdc8c9a177bbf1ae68e25ab0ceb" name="a789acfdc8c9a177bbf1ae68e25ab0ceb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IManager</b> (TEtypeguid typeGUID)</td></tr>
 <tr class="separator:a789acfdc8c9a177bbf1ae68e25ab0ceb inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec0d542ae4fc92c784f908f8eed8457 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a9ec0d542ae4fc92c784f908f8eed8457">~IManager</a> ()</td></tr>
-<tr class="separator:a9ec0d542ae4fc92c784f908f8eed8457 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#ad528f9e9a304c9aa25d472b547242291">LoadManager</a> ()</td></tr>
+<tr class="memitem:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="ad528f9e9a304c9aa25d472b547242291" name="ad528f9e9a304c9aa25d472b547242291"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadManager</b> ()</td></tr>
 <tr class="separator:ad528f9e9a304c9aa25d472b547242291 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5469d89d5f07a6890444e9d20636ac6d inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a5469d89d5f07a6890444e9d20636ac6d">InitManager</a> ()</td></tr>
 <tr class="separator:a5469d89d5f07a6890444e9d20636ac6d inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,18 +201,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a441c480911e78b81cf8d717dff6dcd77 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f7904d7af29ec42dc55396b522b375b inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#a0f7904d7af29ec42dc55396b522b375b">ExitManager</a> ()</td></tr>
 <tr class="separator:a0f7904d7af29ec42dc55396b522b375b inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_manager.html#acb0ab41892caa9bed62624156d782b21">GetRunOnlyDuringSimulation</a> ()</td></tr>
+<tr class="memitem:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="acb0ab41892caa9bed62624156d782b21" name="acb0ab41892caa9bed62624156d782b21"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetRunOnlyDuringSimulation</b> ()</td></tr>
 <tr class="separator:acb0ab41892caa9bed62624156d782b21 inherit pub_methods_class_t_e_1_1_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_object.html">TE::IObject</a></td></tr>
-<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#afc331476bf6217fde06f31deb161b97e">IObject</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="afc331476bf6217fde06f31deb161b97e" name="afc331476bf6217fde06f31deb161b97e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IObject</b> (TEtypeguid typeGUID)</td></tr>
 <tr class="separator:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#af1d390c81a0fd71b490d01b93042f81d">~IObject</a> ()</td></tr>
-<tr class="separator:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">GetGUID</a> () const noexcept</td></tr>
+<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aeb49f1d9760159d96df6dca959790745" name="aeb49f1d9760159d96df6dca959790745"></a>
+virtual TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetGUID</b> () const noexcept</td></tr>
 <tr class="separator:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aafeae10a462729d794db5c6da61eba08">SetGUID</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> guid) noexcept</td></tr>
+<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aafeae10a462729d794db5c6da61eba08" name="aafeae10a462729d794db5c6da61eba08"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGUID</b> (TEguid guid) noexcept</td></tr>
 <tr class="separator:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">GetTypeGUID</a> () const noexcept</td></tr>
+<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="a705d4f85c13ce4fc396ad38cfbda7cdf" name="a705d4f85c13ce4fc396ad38cfbda7cdf"></a>
+virtual TEtypeguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeGUID</b> () const noexcept</td></tr>
 <tr class="separator:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -213,196 +223,42 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac318e07192a2cb1d848dbb72e45d1270"><td class="memItemLeft" align="right" valign="top">static _MonoObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#ac318e07192a2cb1d848dbb72e45d1270">InvokeMethod</a> (const <a class="el" href="class_t_e_1_1_mono_method_container.html">MonoMethodContainer</a> &amp;monoMethod, _MonoObject *objectInstance, void **params=nullptr)</td></tr>
 <tr class="memdesc:ac318e07192a2cb1d848dbb72e45d1270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses the MonoMethod provided to invoke a method in the C# managed code. If the target method is static, objectInstance should be null. If the monoMethod has a unmanaged thunk version, the function will call that instead.  <br /></td></tr>
 <tr class="separator:ac318e07192a2cb1d848dbb72e45d1270"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ad9e362da18bf57db71df92115f958f0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#ad9e362da18bf57db71df92115f958f0a">LoadManager</a> ()</td></tr>
-<tr class="separator:ad9e362da18bf57db71df92115f958f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0812c6a907ac33bff9cdd7557d60e96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#ae0812c6a907ac33bff9cdd7557d60e96">InitManager</a> ()</td></tr>
-<tr class="separator:ae0812c6a907ac33bff9cdd7557d60e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af89a036691e9c2089420e87dd4cd69e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#af89a036691e9c2089420e87dd4cd69e2">UpdateManager</a> ()</td></tr>
-<tr class="separator:af89a036691e9c2089420e87dd4cd69e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4df51f3126694d9a274773e01481d66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#ad4df51f3126694d9a274773e01481d66">ExitManager</a> ()</td></tr>
-<tr class="separator:ad4df51f3126694d9a274773e01481d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ee2b93cfa166ea3a9b595126bbcf94d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a3ee2b93cfa166ea3a9b595126bbcf94d">_LoadMonoClasses</a> ()</td></tr>
-<tr class="memdesc:a3ee2b93cfa166ea3a9b595126bbcf94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the assembly image data into m_MonoClasses container for internal engine use. Requires <a class="el" href="class_t_e_1_1_script_manager.html#aff3c3fdb49deb80c1e11acaf679e1a5c" title="Loads the CSharp Assembly onto the mono backend. _LoadMonoClasses() and _RegisterToECS() will be call...">LoadCSharpAssembly()</a> to be called prior. <a class="el" href="class_t_e_1_1_script_manager.html#a51552fd23b0aa14647affbd5706fde82" title="Registers new Mono Classes to ECS as script containers, and unregisters non-existent script container...">_RegisterToECS()</a> will be called after this.  <br /></td></tr>
-<tr class="separator:a3ee2b93cfa166ea3a9b595126bbcf94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51552fd23b0aa14647affbd5706fde82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a51552fd23b0aa14647affbd5706fde82">_RegisterToECS</a> ()</td></tr>
-<tr class="memdesc:a51552fd23b0aa14647affbd5706fde82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers new Mono Classes to ECS as script containers, and unregisters non-existent script containers from ECS. Requires <a class="el" href="class_t_e_1_1_script_manager.html#aff3c3fdb49deb80c1e11acaf679e1a5c" title="Loads the CSharp Assembly onto the mono backend. _LoadMonoClasses() and _RegisterToECS() will be call...">LoadCSharpAssembly()</a> and <a class="el" href="class_t_e_1_1_script_manager.html#a3ee2b93cfa166ea3a9b595126bbcf94d" title="Loads the assembly image data into m_MonoClasses container for internal engine use....">_LoadMonoClasses()</a> to be called prior.  <br /></td></tr>
-<tr class="separator:a51552fd23b0aa14647affbd5706fde82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a857b4157c39d949aaa0984ad57e4cd9f"><td class="memItemLeft" align="right" valign="top">_MonoDomain *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a857b4157c39d949aaa0984ad57e4cd9f">m_RootDomain</a> = nullptr</td></tr>
-<tr class="separator:a857b4157c39d949aaa0984ad57e4cd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0d0f7210f56c0fd2b68f8b32548d43b"><td class="memItemLeft" align="right" valign="top">_MonoDomain *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#ae0d0f7210f56c0fd2b68f8b32548d43b">m_ScriptDomain</a> = nullptr</td></tr>
-<tr class="separator:ae0d0f7210f56c0fd2b68f8b32548d43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa02a66ae4f4912861f45f8074206f33c"><td class="memItemLeft" align="right" valign="top">_MonoImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#aa02a66ae4f4912861f45f8074206f33c">m_ScriptImage</a> = nullptr</td></tr>
-<tr class="separator:aa02a66ae4f4912861f45f8074206f33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad213511ab44d16053f872b0f381e7cc4"><td class="memItemLeft" align="right" valign="top">_MonoAssembly *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#ad213511ab44d16053f872b0f381e7cc4">m_ScriptAssembly</a> = nullptr</td></tr>
-<tr class="separator:ad213511ab44d16053f872b0f381e7cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0646af28d2d6b131a975931e8e50861c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_t_e.html#aa33d1217c42acc9e09447f37f816a2b8">MonoClasses</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a0646af28d2d6b131a975931e8e50861c">m_MonoClasses</a> {}</td></tr>
-<tr class="separator:a0646af28d2d6b131a975931e8e50861c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2370beb4064a0b853644172769f3307"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
+<tr class="memitem:ad2370beb4064a0b853644172769f3307"><td class="memTemplItemLeft" align="right" valign="top">static DataType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#ad2370beb4064a0b853644172769f3307">GetMonoFieldValue</a> (_MonoObject *objectInstance, const <a class="el" href="class_t_e_1_1_mono_field_container.html">MonoFieldContainer</a> &amp;fieldContainer)</td></tr>
+<tr class="memdesc:ad2370beb4064a0b853644172769f3307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Universal function to make it easier to get data from mono.  <br /></td></tr>
+<tr class="separator:ad2370beb4064a0b853644172769f3307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412a9897dba38520899e4b12d712dd49"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
+<tr class="memitem:a412a9897dba38520899e4b12d712dd49"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a412a9897dba38520899e4b12d712dd49">SetMonoFieldValue</a> (_MonoObject *objectInstance, const <a class="el" href="class_t_e_1_1_mono_field_container.html">MonoFieldContainer</a> &amp;fieldContainer, const DataType &amp;value)</td></tr>
+<tr class="memdesc:a412a9897dba38520899e4b12d712dd49"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to wrap the mono_field_set_value function  <br /></td></tr>
+<tr class="separator:a412a9897dba38520899e4b12d712dd49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff286c6f4d56fd7c9eedd1f7ddd85d4"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
+<tr class="memitem:a8ff286c6f4d56fd7c9eedd1f7ddd85d4"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a8ff286c6f4d56fd7c9eedd1f7ddd85d4">CheckMonoFieldTypeIncompatible</a> (MonoFieldType monoFieldType)</td></tr>
+<tr class="memdesc:a8ff286c6f4d56fd7c9eedd1f7ddd85d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies that the given monoFieldType and DataType type is compatible. If compatible, data of DatType is guranteed to be able to set and get from the MonoClassField that this monoFieldType belongs to.  <br /></td></tr>
+<tr class="separator:a8ff286c6f4d56fd7c9eedd1f7ddd85d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28299d2db35d91afe6a220243f2dab4"><td class="memItemLeft" align="right" valign="top"><a id="ab28299d2db35d91afe6a220243f2dab4" name="ab28299d2db35d91afe6a220243f2dab4"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:ab28299d2db35d91afe6a220243f2dab4"><td class="memTemplItemLeft" align="right" valign="top">TEstring&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetMonoFieldValue</b> (_MonoObject *objectInstance, const <a class="el" href="class_t_e_1_1_mono_field_container.html">MonoFieldContainer</a> &amp;fieldContainer)</td></tr>
+<tr class="separator:ab28299d2db35d91afe6a220243f2dab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70b3a7be051459ebf2eddc7f48ee94c"><td class="memItemLeft" align="right" valign="top"><a id="ac70b3a7be051459ebf2eddc7f48ee94c" name="ac70b3a7be051459ebf2eddc7f48ee94c"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:ac70b3a7be051459ebf2eddc7f48ee94c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetMonoFieldValue</b> (_MonoObject *objectInstance, const <a class="el" href="class_t_e_1_1_mono_field_container.html">MonoFieldContainer</a> &amp;fieldContainer, const TEstring &amp;value)</td></tr>
+<tr class="separator:ac70b3a7be051459ebf2eddc7f48ee94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c271f27cc7b6c98de6879a5b6c281e8"><td class="memItemLeft" align="right" valign="top"><a id="a9c271f27cc7b6c98de6879a5b6c281e8" name="a9c271f27cc7b6c98de6879a5b6c281e8"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a9c271f27cc7b6c98de6879a5b6c281e8"><td class="memTemplItemLeft" align="right" valign="top">TEstring&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetMonoFieldValue</b> (_MonoObject *objectInstance, const <a class="el" href="class_t_e_1_1_mono_field_container.html">MonoFieldContainer</a> &amp;fieldContainer)</td></tr>
+<tr class="separator:a9c271f27cc7b6c98de6879a5b6c281e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70b3a7be051459ebf2eddc7f48ee94c"><td class="memItemLeft" align="right" valign="top"><a id="ac70b3a7be051459ebf2eddc7f48ee94c" name="ac70b3a7be051459ebf2eddc7f48ee94c"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:ac70b3a7be051459ebf2eddc7f48ee94c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetMonoFieldValue</b> (_MonoObject *objectInstance, const <a class="el" href="class_t_e_1_1_mono_field_container.html">MonoFieldContainer</a> &amp;fieldContainer, const TEstring &amp;value)</td></tr>
+<tr class="separator:ac70b3a7be051459ebf2eddc7f48ee94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_script_manager.html#a3e1914489e4bed4f9f23cdeab34a43dc">Engine</a></td></tr>
+<tr class="memitem:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memItemLeft" align="right" valign="top"><a id="a3e1914489e4bed4f9f23cdeab34a43dc" name="a3e1914489e4bed4f9f23cdeab34a43dc"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Engine</b></td></tr>
 <tr class="separator:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6de302f6387db96d9b732f46e9c49549" name="a6de302f6387db96d9b732f46e9c49549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6de302f6387db96d9b732f46e9c49549">&#9670;&#160;</a></span>ScriptManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TE::ScriptManager::ScriptManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad9e362da18bf57db71df92115f958f0a" name="ad9e362da18bf57db71df92115f958f0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9e362da18bf57db71df92115f958f0a">&#9670;&#160;</a></span>LoadManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ScriptManager::LoadManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#ad528f9e9a304c9aa25d472b547242291">TE::IManager</a>.</p>
-
-</div>
-</div>
-<a id="ae0812c6a907ac33bff9cdd7557d60e96" name="ae0812c6a907ac33bff9cdd7557d60e96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0812c6a907ac33bff9cdd7557d60e96">&#9670;&#160;</a></span>InitManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ScriptManager::InitManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a5469d89d5f07a6890444e9d20636ac6d">TE::IManager</a>.</p>
-
-</div>
-</div>
-<a id="af89a036691e9c2089420e87dd4cd69e2" name="af89a036691e9c2089420e87dd4cd69e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af89a036691e9c2089420e87dd4cd69e2">&#9670;&#160;</a></span>UpdateManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ScriptManager::UpdateManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a441c480911e78b81cf8d717dff6dcd77">TE::IManager</a>.</p>
-
-</div>
-</div>
-<a id="ad4df51f3126694d9a274773e01481d66" name="ad4df51f3126694d9a274773e01481d66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4df51f3126694d9a274773e01481d66">&#9670;&#160;</a></span>ExitManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ScriptManager::ExitManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_manager.html#a0f7904d7af29ec42dc55396b522b375b">TE::IManager</a>.</p>
-
-</div>
-</div>
-<a id="a45d8ae45ced503c1d7c06ecb5d177707" name="a45d8ae45ced503c1d7c06ecb5d177707"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45d8ae45ced503c1d7c06ecb5d177707">&#9670;&#160;</a></span>CompileCSharpAssembly()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ScriptManager::CompileCSharpAssembly </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>compiles a CSharp project into an assembly, and outputs it into a specific path </p>
-
-</div>
-</div>
 <a id="aff3c3fdb49deb80c1e11acaf679e1a5c" name="aff3c3fdb49deb80c1e11acaf679e1a5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff3c3fdb49deb80c1e11acaf679e1a5c">&#9670;&#160;</a></span>LoadCSharpAssembly()</h2>
 
@@ -418,81 +274,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Loads the CSharp Assembly onto the mono backend. <a class="el" href="class_t_e_1_1_script_manager.html#a3ee2b93cfa166ea3a9b595126bbcf94d" title="Loads the assembly image data into m_MonoClasses container for internal engine use....">_LoadMonoClasses()</a> and <a class="el" href="class_t_e_1_1_script_manager.html#a51552fd23b0aa14647affbd5706fde82" title="Registers new Mono Classes to ECS as script containers, and unregisters non-existent script container...">_RegisterToECS()</a> will be called after this. </p>
+<p>Loads the CSharp Assembly onto the mono backend. _LoadMonoClasses() and _RegisterToECS() will be called after this. </p>
 <dl class="section return"><dt>Returns</dt><dd>if an assembly has been loaded or not</dd></dl>
-
-</div>
-</div>
-<a id="a3ee2b93cfa166ea3a9b595126bbcf94d" name="a3ee2b93cfa166ea3a9b595126bbcf94d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ee2b93cfa166ea3a9b595126bbcf94d">&#9670;&#160;</a></span>_LoadMonoClasses()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ScriptManager::_LoadMonoClasses </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Loads the assembly image data into m_MonoClasses container for internal engine use. Requires <a class="el" href="class_t_e_1_1_script_manager.html#aff3c3fdb49deb80c1e11acaf679e1a5c" title="Loads the CSharp Assembly onto the mono backend. _LoadMonoClasses() and _RegisterToECS() will be call...">LoadCSharpAssembly()</a> to be called prior. <a class="el" href="class_t_e_1_1_script_manager.html#a51552fd23b0aa14647affbd5706fde82" title="Registers new Mono Classes to ECS as script containers, and unregisters non-existent script container...">_RegisterToECS()</a> will be called after this. </p>
-
-</div>
-</div>
-<a id="a51552fd23b0aa14647affbd5706fde82" name="a51552fd23b0aa14647affbd5706fde82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51552fd23b0aa14647affbd5706fde82">&#9670;&#160;</a></span>_RegisterToECS()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ScriptManager::_RegisterToECS </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Registers new Mono Classes to ECS as script containers, and unregisters non-existent script containers from ECS. Requires <a class="el" href="class_t_e_1_1_script_manager.html#aff3c3fdb49deb80c1e11acaf679e1a5c" title="Loads the CSharp Assembly onto the mono backend. _LoadMonoClasses() and _RegisterToECS() will be call...">LoadCSharpAssembly()</a> and <a class="el" href="class_t_e_1_1_script_manager.html#a3ee2b93cfa166ea3a9b595126bbcf94d" title="Loads the assembly image data into m_MonoClasses container for internal engine use....">_LoadMonoClasses()</a> to be called prior. </p>
-
-</div>
-</div>
-<a id="ad343a0873b72e2fc4b8469007c4fde67" name="ad343a0873b72e2fc4b8469007c4fde67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad343a0873b72e2fc4b8469007c4fde67">&#9670;&#160;</a></span>UnloadCSharpAssembly()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::ScriptManager::UnloadCSharpAssembly </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Cleans up all MonoObject instances created, and then removes the loaded assembly image. </p>
 
 </div>
 </div>
@@ -542,56 +325,6 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a9427376e55f2fcaa2e86d85ef7155ada" name="a9427376e55f2fcaa2e86d85ef7155ada"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9427376e55f2fcaa2e86d85ef7155ada">&#9670;&#160;</a></span>GetScriptDomain()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">MonoDomain * TE::ScriptManager::GetScriptDomain </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aadac909828c8dc0f4094db834097fccc" name="aadac909828c8dc0f4094db834097fccc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadac909828c8dc0f4094db834097fccc">&#9670;&#160;</a></span>GetScriptImage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">MonoImage * TE::ScriptManager::GetScriptImage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a77e9655155124f60fc8fa9f1f47ce811" name="a77e9655155124f60fc8fa9f1f47ce811"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77e9655155124f60fc8fa9f1f47ce811">&#9670;&#160;</a></span>GetMonoClasses()</h2>
 
@@ -599,7 +332,7 @@ Friends</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespace_t_e.html#aa33d1217c42acc9e09447f37f816a2b8">MonoClasses</a> &amp; TE::ScriptManager::GetMonoClasses </td>
+          <td class="memname">const MonoClasses &amp; TE::ScriptManager::GetMonoClasses </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -621,7 +354,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bool TE::ScriptManager::CheckMonoClassExists </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>&#160;</td>
+          <td class="paramtype">MonoClassType&#160;</td>
           <td class="paramname"><em>monoClassType</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -686,6 +419,151 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ad2370beb4064a0b853644172769f3307" name="ad2370beb4064a0b853644172769f3307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2370beb4064a0b853644172769f3307">&#9670;&#160;</a></span>GetMonoFieldValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static DataType TE::ScriptManager::GetMonoFieldValue </td>
+          <td>(</td>
+          <td class="paramtype">_MonoObject *&#160;</td>
+          <td class="paramname"><em>objectInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_t_e_1_1_mono_field_container.html">MonoFieldContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>fieldContainer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Universal function to make it easier to get data from mono. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">objectInstance</td><td>MonoObject to get value from</td></tr>
+    <tr><td class="paramname">classField</td><td>which field to get value</td></tr>
+    <tr><td class="paramname">value</td><td>pointer to extracted value</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a412a9897dba38520899e4b12d712dd49" name="a412a9897dba38520899e4b12d712dd49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a412a9897dba38520899e4b12d712dd49">&#9670;&#160;</a></span>SetMonoFieldValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::ScriptManager::SetMonoFieldValue </td>
+          <td>(</td>
+          <td class="paramtype">_MonoObject *&#160;</td>
+          <td class="paramname"><em>objectInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_t_e_1_1_mono_field_container.html">MonoFieldContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>fieldContainer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DataType &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>function to wrap the mono_field_set_value function </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">objectInstance</td><td>MonoObject to get value from</td></tr>
+    <tr><td class="paramname">classField</td><td>which field to get value</td></tr>
+    <tr><td class="paramname">value</td><td>pointer to value to set</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8ff286c6f4d56fd7c9eedd1f7ddd85d4" name="a8ff286c6f4d56fd7c9eedd1f7ddd85d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff286c6f4d56fd7c9eedd1f7ddd85d4">&#9670;&#160;</a></span>CheckMonoFieldTypeIncompatible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TE::ScriptManager::CheckMonoFieldTypeIncompatible </td>
+          <td>(</td>
+          <td class="paramtype">MonoFieldType&#160;</td>
+          <td class="paramname"><em>monoFieldType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Verifies that the given monoFieldType and DataType type is compatible. If compatible, data of DatType is guranteed to be able to set and get from the MonoClassField that this monoFieldType belongs to. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">DataType</td><td>The type to verify against hte mono field type</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">monoFieldType</td><td>the mono field type to check</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>if the 2 given parameters are incompatible or not.</dd></dl>
+
+</div>
+</div>
 <a id="a16bfc6b34e107a67283d27bff25025a9" name="a16bfc6b34e107a67283d27bff25025a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a16bfc6b34e107a67283d27bff25025a9">&#9670;&#160;</a></span>CreateMonoObject()</h2>
 
@@ -695,7 +573,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">MonoObject * TE::ScriptManager::CreateMonoObject </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_t_e.html#a3e7f89c235a748c566bda0ba5ed87296">MonoClassType</a>&#160;</td>
+          <td class="paramtype">MonoClassType&#160;</td>
           <td class="paramname"><em>monoClassType</em></td><td>)</td>
           <td></td>
         </tr>
@@ -710,140 +588,6 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the newly allocated Mono Object</dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a3e1914489e4bed4f9f23cdeab34a43dc" name="a3e1914489e4bed4f9f23cdeab34a43dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e1914489e4bed4f9f23cdeab34a43dc">&#9670;&#160;</a></span>Engine</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_t_e_1_1_engine.html">Engine</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a857b4157c39d949aaa0984ad57e4cd9f" name="a857b4157c39d949aaa0984ad57e4cd9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a857b4157c39d949aaa0984ad57e4cd9f">&#9670;&#160;</a></span>m_RootDomain</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">_MonoDomain* TE::ScriptManager::m_RootDomain = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae0d0f7210f56c0fd2b68f8b32548d43b" name="ae0d0f7210f56c0fd2b68f8b32548d43b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0d0f7210f56c0fd2b68f8b32548d43b">&#9670;&#160;</a></span>m_ScriptDomain</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">_MonoDomain* TE::ScriptManager::m_ScriptDomain = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa02a66ae4f4912861f45f8074206f33c" name="aa02a66ae4f4912861f45f8074206f33c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa02a66ae4f4912861f45f8074206f33c">&#9670;&#160;</a></span>m_ScriptImage</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">_MonoImage* TE::ScriptManager::m_ScriptImage = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad213511ab44d16053f872b0f381e7cc4" name="ad213511ab44d16053f872b0f381e7cc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad213511ab44d16053f872b0f381e7cc4">&#9670;&#160;</a></span>m_ScriptAssembly</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">_MonoAssembly* TE::ScriptManager::m_ScriptAssembly = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0646af28d2d6b131a975931e8e50861c" name="a0646af28d2d6b131a975931e8e50861c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0646af28d2d6b131a975931e8e50861c">&#9670;&#160;</a></span>m_MonoClasses</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_t_e.html#aa33d1217c42acc9e09447f37f816a2b8">MonoClasses</a> TE::ScriptManager::m_MonoClasses {}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

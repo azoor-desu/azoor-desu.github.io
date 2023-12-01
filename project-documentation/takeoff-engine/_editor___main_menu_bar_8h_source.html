@@ -133,35 +133,30 @@ $(document).ready(function(){initNavTree('_editor___main_menu_bar_8h_source.html
 <a href="_editor___main_menu_bar_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_defines_8h.html">Defines.h</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><a class="code hl_define" href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>TE_SUPRESS_START</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;imgui.h&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;imgui_internal.h&quot;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_define" href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>TE_SUPRESS_END</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_editor.html">Editor</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span>Editor {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_editor_1_1_main_menu_bar.html">   24</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_editor_1_1_main_menu_bar.html">MainMenuBar</a> {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_editor_1_1_main_menu_bar.html#a2a9806c9bfd208c5af1ba3101842421c">MainMenuBarUpdate</a>(<a class="code hl_typedef" href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a> selectedAssetPath, std::vector&lt;std::pair&lt;bool*, const char*&gt;&gt; states);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_editor_1_1_main_menu_bar.html#a2a9806c9bfd208c5af1ba3101842421c">MainMenuBarUpdate</a>(TEstring selectedAssetPath, std::vector&lt;std::pair&lt;bool*, const char*&gt;&gt; states);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_editor_1_1_main_menu_bar.html#a6d48f16c52de050333c640d35270b76a">   37</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_editor_1_1_main_menu_bar.html#a6d48f16c52de050333c640d35270b76a">debugWindow</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">bool</span> debugWindow = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">bool</span> buildWindow = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    };</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 <div class="ttc" id="a_defines_8h_html"><div class="ttname"><a href="_defines_8h.html">Defines.h</a></div><div class="ttdoc">Defines some common math constants and typedefs   All content (c) 2022 DigiPen Institute of Technolog...</div></div>
-<div class="ttc" id="a_defines_8h_html_a28bc8b020e9269ccd59a6023b93a5db9"><div class="ttname"><a href="_defines_8h.html#a28bc8b020e9269ccd59a6023b93a5db9">TEstring</a></div><div class="ttdeci">std::string TEstring</div><div class="ttdef"><b>Definition:</b> Defines.h:97</div></div>
 <div class="ttc" id="aclass_editor_1_1_main_menu_bar_html"><div class="ttname"><a href="class_editor_1_1_main_menu_bar.html">Editor::MainMenuBar</a></div><div class="ttdef"><b>Definition:</b> Editor_MainMenuBar.h:24</div></div>
-<div class="ttc" id="aclass_editor_1_1_main_menu_bar_html_a2a9806c9bfd208c5af1ba3101842421c"><div class="ttname"><a href="class_editor_1_1_main_menu_bar.html#a2a9806c9bfd208c5af1ba3101842421c">Editor::MainMenuBar::MainMenuBarUpdate</a></div><div class="ttdeci">bool MainMenuBarUpdate(TEstring selectedAssetPath, std::vector&lt; std::pair&lt; bool *, const char * &gt; &gt; states)</div><div class="ttdoc">Runs the update loop of the Editor's Main Menu Bar.</div><div class="ttdef"><b>Definition:</b> Editor_MainMenuBar.cpp:36</div></div>
-<div class="ttc" id="aclass_editor_1_1_main_menu_bar_html_a6d48f16c52de050333c640d35270b76a"><div class="ttname"><a href="class_editor_1_1_main_menu_bar.html#a6d48f16c52de050333c640d35270b76a">Editor::MainMenuBar::debugWindow</a></div><div class="ttdeci">bool debugWindow</div><div class="ttdef"><b>Definition:</b> Editor_MainMenuBar.h:37</div></div>
-<div class="ttc" id="anamespace_editor_html"><div class="ttname"><a href="namespace_editor.html">Editor</a></div><div class="ttdef"><b>Definition:</b> VSTemplateInstaller.h:9</div></div>
-<div class="ttc" id="apch__engine_8h_html_ad3ee3199fb189e1047207f7a4d781868"><div class="ttname"><a href="pch__engine_8h.html#ad3ee3199fb189e1047207f7a4d781868">TE_SUPRESS_START</a></div><div class="ttdeci">#define TE_SUPRESS_START</div><div class="ttdef"><b>Definition:</b> pch_engine.h:58</div></div>
-<div class="ttc" id="apch__engine_8h_html_afa88535cb07959a98893cd5653ca39c3"><div class="ttname"><a href="pch__engine_8h.html#afa88535cb07959a98893cd5653ca39c3">TE_SUPRESS_END</a></div><div class="ttdeci">#define TE_SUPRESS_END</div><div class="ttdef"><b>Definition:</b> pch_engine.h:71</div></div>
+<div class="ttc" id="aclass_editor_1_1_main_menu_bar_html_a2a9806c9bfd208c5af1ba3101842421c"><div class="ttname"><a href="class_editor_1_1_main_menu_bar.html#a2a9806c9bfd208c5af1ba3101842421c">Editor::MainMenuBar::MainMenuBarUpdate</a></div><div class="ttdeci">bool MainMenuBarUpdate(TEstring selectedAssetPath, std::vector&lt; std::pair&lt; bool *, const char * &gt; &gt; states)</div><div class="ttdoc">Runs the update loop of the Editor's Main Menu Bar.</div><div class="ttdef"><b>Definition:</b> Editor_MainMenuBar.cpp:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -130,38 +130,32 @@ $(document).ready(function(){initNavTree('class_t_e_1_1_transform.html',''); ini
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a> &#124;
-<a href="#friends">Friends</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="class_t_e_1_1_transform-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TE::Transform Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_e_c_s_components_2_transform_8h_source.html">Transform.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for TE::Transform:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_t_e_1_1_transform.png" usemap="#TE::Transform_map" alt=""/>
-  <map id="TE::Transform_map" name="TE::Transform_map">
-<area href="class_t_e_1_1_i_component.html" title="Base class of every ECS Component. Provides some generic functions to." alt="TE::IComponent" shape="rect" coords="0,56,99,80"/>
-<area href="class_t_e_1_1_i_object.html" alt="TE::IObject" shape="rect" coords="0,0,99,24"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aca3a1763c784d5a8ede3f8e4f4f3d268"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#aca3a1763c784d5a8ede3f8e4f4f3d268">Flags</a> { <a class="el" href="class_t_e_1_1_transform.html#aca3a1763c784d5a8ede3f8e4f4f3d268ab2bd583fe2c5eecabcbe2007e90689b7">UpdatePos</a> = 0
-, <a class="el" href="class_t_e_1_1_transform.html#aca3a1763c784d5a8ede3f8e4f4f3d268a3e3c3ebdb1c0dd4c04106e27db406269">UpdateRot</a>
-, <a class="el" href="class_t_e_1_1_transform.html#aca3a1763c784d5a8ede3f8e4f4f3d268a487f22e3f810a0933b14e56505a58f0d">UpdateScale</a>
-, <a class="el" href="class_t_e_1_1_transform.html#aca3a1763c784d5a8ede3f8e4f4f3d268a432667fb27b22637409d46a52b5d418f">FlagCount</a>
+<tr class="memitem:aca3a1763c784d5a8ede3f8e4f4f3d268"><td class="memItemLeft" align="right" valign="top"><a id="aca3a1763c784d5a8ede3f8e4f4f3d268" name="aca3a1763c784d5a8ede3f8e4f4f3d268"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#aca3a1763c784d5a8ede3f8e4f4f3d268">Flags</a> { <br />
+&#160;&#160;<b>UpdatePos</b> = 0
+, <b>UpdateRot</b>
+, <b>UpdateScale</b>
+, <b>UpdateMatrix</b>
+, <br />
+&#160;&#160;<b>FlagCount</b>
+<br />
  }</td></tr>
-<tr class="memdesc:aca3a1763c784d5a8ede3f8e4f4f3d268"><td class="mdescLeft">&#160;</td><td class="mdescRight">to be used with <a class="el" href="class_t_e_1_1_transform.html#a63c1c2feb38151ef38ba420bdf3723df" title="Set flag in all descendent and this.">SetFlagAllChildren()</a>. If flag is set to TRUE means update required. FALSE means flag is up-to-date  <a href="class_t_e_1_1_transform.html#aca3a1763c784d5a8ede3f8e4f4f3d268">More...</a><br /></td></tr>
+<tr class="memdesc:aca3a1763c784d5a8ede3f8e4f4f3d268"><td class="mdescLeft">&#160;</td><td class="mdescRight">to be used with <a class="el" href="class_t_e_1_1_transform.html#a63c1c2feb38151ef38ba420bdf3723df" title="Set flag in all descendent and this.">SetFlagAllChildren()</a>. If flag is set to TRUE means update required. FALSE means flag is up-to-date <br /></td></tr>
 <tr class="separator:aca3a1763c784d5a8ede3f8e4f4f3d268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a415368cfa80df2cc238f802c1c5852e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a415368cfa80df2cc238f802c1c5852e0">Transform</a> ()</td></tr>
-<tr class="separator:a415368cfa80df2cc238f802c1c5852e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a269fb7a11624295736ee9c8bd4e614"><td class="memItemLeft" align="right" valign="top"><a id="a4a269fb7a11624295736ee9c8bd4e614" name="a4a269fb7a11624295736ee9c8bd4e614"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Transform</b> (bool addSceneRoot=true)</td></tr>
+<tr class="separator:a4a269fb7a11624295736ee9c8bd4e614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfdc0ac4d942194780637a1a4d590187"><td class="memItemLeft" align="right" valign="top">rttr::instance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#acfdc0ac4d942194780637a1a4d590187">GetRTTRInstance</a> () const</td></tr>
 <tr class="separator:acfdc0ac4d942194780637a1a4d590187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcae0c5771741d2b402996c66d731c86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#adcae0c5771741d2b402996c66d731c86">Serialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
@@ -171,8 +165,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a61c0c0bd61f7d86492e85a5548a0b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a7a61c0c0bd61f7d86492e85a5548a0b0">DeleteTransformRecursion</a> (<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a> entity)</td></tr>
 <tr class="memdesc:a7a61c0c0bd61f7d86492e85a5548a0b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively delete child entities when a transform is deleting Remove itself from parent/sceneroot childs Only called from ecs -&gt; Calls scene/ecs to sequentially delete.  <br /></td></tr>
 <tr class="separator:a7a61c0c0bd61f7d86492e85a5548a0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22a7961e6829f636810a83bfd0ca2c7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a22a7961e6829f636810a83bfd0ca2c7c">AddToSceneRoot</a> ()</td></tr>
-<tr class="memdesc:a22a7961e6829f636810a83bfd0ca2c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">To add to sceneroot upon a generation of a transform To be delayed due to order of boot/load.  <br /></td></tr>
+<tr class="memitem:a22a7961e6829f636810a83bfd0ca2c7c"><td class="memItemLeft" align="right" valign="top"><a id="a22a7961e6829f636810a83bfd0ca2c7c" name="a22a7961e6829f636810a83bfd0ca2c7c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddToSceneRoot</b> ()</td></tr>
+<tr class="memdesc:a22a7961e6829f636810a83bfd0ca2c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">To add to sceneroot upon a generation of a transform To be delayed due to order of boot/load. <br /></td></tr>
 <tr class="separator:a22a7961e6829f636810a83bfd0ca2c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad950c8c9e1ab17ec390c796e68d2a18e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_transform.html">Transform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#ad950c8c9e1ab17ec390c796e68d2a18e">GetParent</a> () const</td></tr>
 <tr class="memdesc:ad950c8c9e1ab17ec390c796e68d2a18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get parent transform, returns ECS_INDEX_NULL if no parent.  <br /></td></tr>
@@ -186,10 +181,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a21a3ed5b9f7510980aa88a36ae7a36f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_transform.html">Transform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a21a3ed5b9f7510980aa88a36ae7a36f7">GetChild</a> (size_t index=0) const noexcept</td></tr>
 <tr class="memdesc:a21a3ed5b9f7510980aa88a36ae7a36f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get child transform from sibling index.  <br /></td></tr>
 <tr class="separator:a21a3ed5b9f7510980aa88a36ae7a36f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a129fca17b3ea903e6d0739dde5b74b82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_t_e.html#a1a387b331bf57f34346571b4db0f7563">TransformRefs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a129fca17b3ea903e6d0739dde5b74b82">GetChildren</a> () const noexcept</td></tr>
+<tr class="memitem:a129fca17b3ea903e6d0739dde5b74b82"><td class="memItemLeft" align="right" valign="top">TransformRefs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a129fca17b3ea903e6d0739dde5b74b82">GetChildren</a> () const noexcept</td></tr>
 <tr class="memdesc:a129fca17b3ea903e6d0739dde5b74b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get vector of direct child transforms.  <br /></td></tr>
 <tr class="separator:a129fca17b3ea903e6d0739dde5b74b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a186f5bba160342d6c571bab620751544"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_t_e.html#a1a387b331bf57f34346571b4db0f7563">TransformRefs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a186f5bba160342d6c571bab620751544">GetAllChildren</a> () const</td></tr>
+<tr class="memitem:a186f5bba160342d6c571bab620751544"><td class="memItemLeft" align="right" valign="top">TransformRefs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a186f5bba160342d6c571bab620751544">GetAllChildren</a> () const</td></tr>
 <tr class="memdesc:a186f5bba160342d6c571bab620751544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get vector of descendent transforms.  <br /></td></tr>
 <tr class="separator:a186f5bba160342d6c571bab620751544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe7f66a365192652c2a7ec4cf8ecb94b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#abe7f66a365192652c2a7ec4cf8ecb94b">IsParent</a> () const noexcept</td></tr>
@@ -219,6 +214,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a99fccf5ab7690e6336d6895eacfed957"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a99fccf5ab7690e6336d6895eacfed957">GetSiblingIndex</a> ()</td></tr>
 <tr class="memdesc:a99fccf5ab7690e6336d6895eacfed957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sibling position.  <br /></td></tr>
 <tr class="separator:a99fccf5ab7690e6336d6895eacfed957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8be50c9fefcaff6c917018de7fbbf06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#aa8be50c9fefcaff6c917018de7fbbf06">Translate</a> (const glm::vec3 &amp;delta)</td></tr>
+<tr class="memdesc:aa8be50c9fefcaff6c917018de7fbbf06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate global position.  <br /></td></tr>
+<tr class="separator:aa8be50c9fefcaff6c917018de7fbbf06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d45f0ad4830cb7e08cce92c0d5c9856"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a4d45f0ad4830cb7e08cce92c0d5c9856">Rotate</a> (const glm::vec3 &amp;delta)</td></tr>
+<tr class="memdesc:a4d45f0ad4830cb7e08cce92c0d5c9856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate global rotation.  <br /></td></tr>
+<tr class="separator:a4d45f0ad4830cb7e08cce92c0d5c9856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7967b3168249cc105709841da1614902"><td class="memItemLeft" align="right" valign="top"><a id="a7967b3168249cc105709841da1614902" name="a7967b3168249cc105709841da1614902"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Lerp</b> (const glm::vec3 &amp;pos1, const glm::quat &amp;rot1, const glm::vec3 &amp;pos2, const glm::quat &amp;rot2, float t)</td></tr>
+<tr class="separator:a7967b3168249cc105709841da1614902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17bc377b14a542f89f7aca95e03f071"><td class="memItemLeft" align="right" valign="top"><a id="ad17bc377b14a542f89f7aca95e03f071" name="ad17bc377b14a542f89f7aca95e03f071"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Lerp</b> (const glm::vec3 &amp;pos1, const glm::vec3 &amp;rot1, const glm::vec3 &amp;pos2, const glm::vec3 &amp;rot2, float t)</td></tr>
+<tr class="separator:ad17bc377b14a542f89f7aca95e03f071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68655dca7f58e31a844d03ee5f8c2aed"><td class="memItemLeft" align="right" valign="top"><a id="a68655dca7f58e31a844d03ee5f8c2aed" name="a68655dca7f58e31a844d03ee5f8c2aed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Lerp</b> (const <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_transform.html">Transform</a> &gt; &amp;t1, const <a class="el" href="class_t_e_1_1_component_ref.html">ComponentRef</a>&lt; <a class="el" href="class_t_e_1_1_transform.html">Transform</a> &gt; &amp;t2, float t)</td></tr>
+<tr class="separator:a68655dca7f58e31a844d03ee5f8c2aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6489bbc2f780ed0edb0501424a2e88b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a6489bbc2f780ed0edb0501424a2e88b1">SetPosition</a> (const glm::vec3 &amp;position)</td></tr>
 <tr class="memdesc:a6489bbc2f780ed0edb0501424a2e88b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global position.  <br /></td></tr>
 <tr class="separator:a6489bbc2f780ed0edb0501424a2e88b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,6 +238,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6e1fb3e7cc58d31c99c061020d1b8136"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a6e1fb3e7cc58d31c99c061020d1b8136">SetRotation</a> (const glm::vec3 &amp;angles)</td></tr>
 <tr class="memdesc:a6e1fb3e7cc58d31c99c061020d1b8136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global rotation.  <br /></td></tr>
 <tr class="separator:a6e1fb3e7cc58d31c99c061020d1b8136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f6b46bf5c1c39b783f0fd090c414a5"><td class="memItemLeft" align="right" valign="top"><a id="af7f6b46bf5c1c39b783f0fd090c414a5" name="af7f6b46bf5c1c39b783f0fd090c414a5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetQuaternion</b> (const glm::quat &amp;quat)</td></tr>
+<tr class="separator:af7f6b46bf5c1c39b783f0fd090c414a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ccc1879cc477c6824379a0bec4db45e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a6ccc1879cc477c6824379a0bec4db45e">SetLocalRotation</a> (const glm::vec3 &amp;angles)</td></tr>
 <tr class="memdesc:a6ccc1879cc477c6824379a0bec4db45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set local rotation.  <br /></td></tr>
 <tr class="separator:a6ccc1879cc477c6824379a0bec4db45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,24 +250,41 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a00d3d7d934b8d57032b5d991f158c598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a00d3d7d934b8d57032b5d991f158c598">SetLocalScale</a> (const glm::vec3 &amp;scale)</td></tr>
 <tr class="memdesc:a00d3d7d934b8d57032b5d991f158c598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set local scale.  <br /></td></tr>
 <tr class="separator:a00d3d7d934b8d57032b5d991f158c598"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9175e1b454949490cfda85ffd208340"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#ad9175e1b454949490cfda85ffd208340">SetLocalMatrix</a> ()</td></tr>
-<tr class="memdesc:ad9175e1b454949490cfda85ffd208340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct local matrix from local transform.  <br /></td></tr>
+<tr class="memitem:ad9175e1b454949490cfda85ffd208340"><td class="memItemLeft" align="right" valign="top"><a id="ad9175e1b454949490cfda85ffd208340" name="ad9175e1b454949490cfda85ffd208340"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLocalMatrix</b> ()</td></tr>
+<tr class="memdesc:ad9175e1b454949490cfda85ffd208340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct local matrix from local transform. <br /></td></tr>
 <tr class="separator:ad9175e1b454949490cfda85ffd208340"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af20392506759c6abc1718371346d469d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#af20392506759c6abc1718371346d469d">SetWorldMatrix</a> ()</td></tr>
-<tr class="memdesc:af20392506759c6abc1718371346d469d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct world matrix from local and parent transforms.  <br /></td></tr>
+<tr class="memitem:af20392506759c6abc1718371346d469d"><td class="memItemLeft" align="right" valign="top"><a id="af20392506759c6abc1718371346d469d" name="af20392506759c6abc1718371346d469d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorldMatrix</b> ()</td></tr>
+<tr class="memdesc:af20392506759c6abc1718371346d469d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct world matrix from local and parent transforms. <br /></td></tr>
 <tr class="separator:af20392506759c6abc1718371346d469d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61044ddea0f0270428b909b65a7c3bd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a61044ddea0f0270428b909b65a7c3bd1">UpdatePosition</a> ()</td></tr>
-<tr class="memdesc:a61044ddea0f0270428b909b65a7c3bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update global position.  <br /></td></tr>
+<tr class="memitem:a61044ddea0f0270428b909b65a7c3bd1"><td class="memItemLeft" align="right" valign="top"><a id="a61044ddea0f0270428b909b65a7c3bd1" name="a61044ddea0f0270428b909b65a7c3bd1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePosition</b> ()</td></tr>
+<tr class="memdesc:a61044ddea0f0270428b909b65a7c3bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update global position. <br /></td></tr>
 <tr class="separator:a61044ddea0f0270428b909b65a7c3bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bb59fe8b03661880f88c582a8e5de5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a7bb59fe8b03661880f88c582a8e5de5d">UpdateRotation</a> ()</td></tr>
-<tr class="memdesc:a7bb59fe8b03661880f88c582a8e5de5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update global rotation.  <br /></td></tr>
+<tr class="memitem:a7bb59fe8b03661880f88c582a8e5de5d"><td class="memItemLeft" align="right" valign="top"><a id="a7bb59fe8b03661880f88c582a8e5de5d" name="a7bb59fe8b03661880f88c582a8e5de5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateRotation</b> ()</td></tr>
+<tr class="memdesc:a7bb59fe8b03661880f88c582a8e5de5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update global rotation. <br /></td></tr>
 <tr class="separator:a7bb59fe8b03661880f88c582a8e5de5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4430c132ef76f7640c8b2169055ad43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#ad4430c132ef76f7640c8b2169055ad43">UpdateScale</a> ()</td></tr>
-<tr class="memdesc:ad4430c132ef76f7640c8b2169055ad43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update global scale.  <br /></td></tr>
+<tr class="memitem:ad4430c132ef76f7640c8b2169055ad43"><td class="memItemLeft" align="right" valign="top"><a id="ad4430c132ef76f7640c8b2169055ad43" name="ad4430c132ef76f7640c8b2169055ad43"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateScale</b> ()</td></tr>
+<tr class="memdesc:ad4430c132ef76f7640c8b2169055ad43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update global scale. <br /></td></tr>
 <tr class="separator:ad4430c132ef76f7640c8b2169055ad43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adde7ae053fa71b8924614ba81dc35b8b"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#adde7ae053fa71b8924614ba81dc35b8b">EulerAngleOptimal</a> (const glm::vec3 &amp;angles) const noexcept</td></tr>
-<tr class="memdesc:adde7ae053fa71b8924614ba81dc35b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts euler angles to quaternion to eular angles. Auto clamps. Use to help streamline euler and quaternion usage.  <br /></td></tr>
-<tr class="separator:adde7ae053fa71b8924614ba81dc35b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b3a199bba9bbf51e68f96e4e103c98"><td class="memItemLeft" align="right" valign="top"><a id="a92b3a199bba9bbf51e68f96e4e103c98" name="a92b3a199bba9bbf51e68f96e4e103c98"></a>
+const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRight</b> () const noexcept</td></tr>
+<tr class="separator:a92b3a199bba9bbf51e68f96e4e103c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab828c485d369326eab44ec6bdd829483"><td class="memItemLeft" align="right" valign="top"><a id="ab828c485d369326eab44ec6bdd829483" name="ab828c485d369326eab44ec6bdd829483"></a>
+const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUp</b> () const noexcept</td></tr>
+<tr class="separator:ab828c485d369326eab44ec6bdd829483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7d923de31ae05f20d7d8f7f5249b22"><td class="memItemLeft" align="right" valign="top"><a id="a3c7d923de31ae05f20d7d8f7f5249b22" name="a3c7d923de31ae05f20d7d8f7f5249b22"></a>
+const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetForward</b> () const noexcept</td></tr>
+<tr class="separator:a3c7d923de31ae05f20d7d8f7f5249b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250fa51cfb5c89bc77605dedecea5136"><td class="memItemLeft" align="right" valign="top"><a id="a250fa51cfb5c89bc77605dedecea5136" name="a250fa51cfb5c89bc77605dedecea5136"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LookAt</b> (const glm::vec3 &amp;forward, const glm::vec3 &amp;up)</td></tr>
+<tr class="separator:a250fa51cfb5c89bc77605dedecea5136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9eaeb2ef79d3b7c0bf4c05ea978a7a"><td class="memItemLeft" align="right" valign="top"><a id="abb9eaeb2ef79d3b7c0bf4c05ea978a7a" name="abb9eaeb2ef79d3b7c0bf4c05ea978a7a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LookAt</b> (const glm::vec3 &amp;pos, float speed)</td></tr>
+<tr class="separator:abb9eaeb2ef79d3b7c0bf4c05ea978a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1c164d536d3ef30f9ae20b0400bbc04"><td class="memItemLeft" align="right" valign="top">const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#aa1c164d536d3ef30f9ae20b0400bbc04">GetPosition</a> () const noexcept</td></tr>
 <tr class="memdesc:aa1c164d536d3ef30f9ae20b0400bbc04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get global position.  <br /></td></tr>
 <tr class="separator:aa1c164d536d3ef30f9ae20b0400bbc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +294,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a09a6a591183ef4d515616f8e4b229515"><td class="memItemLeft" align="right" valign="top">const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a09a6a591183ef4d515616f8e4b229515">GetRotation</a> () const noexcept</td></tr>
 <tr class="memdesc:a09a6a591183ef4d515616f8e4b229515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get global rotation.  <br /></td></tr>
 <tr class="separator:a09a6a591183ef4d515616f8e4b229515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb0b163323076c26ccbf2a14dc505b3"><td class="memItemLeft" align="right" valign="top"><a id="a5eb0b163323076c26ccbf2a14dc505b3" name="a5eb0b163323076c26ccbf2a14dc505b3"></a>
+const glm::quat &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetQuaternion</b> () const noexcept</td></tr>
+<tr class="separator:a5eb0b163323076c26ccbf2a14dc505b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd8b75a93f3fd9bd68a082f9e317ae2"><td class="memItemLeft" align="right" valign="top">const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a3fd8b75a93f3fd9bd68a082f9e317ae2">GetLocalRotation</a> () const noexcept</td></tr>
 <tr class="memdesc:a3fd8b75a93f3fd9bd68a082f9e317ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get local rotation.  <br /></td></tr>
 <tr class="separator:a3fd8b75a93f3fd9bd68a082f9e317ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,14 +306,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aede2fc1eda7743e931189d1f4e2ab17a"><td class="memItemLeft" align="right" valign="top">const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#aede2fc1eda7743e931189d1f4e2ab17a">GetLocalScale</a> () const noexcept</td></tr>
 <tr class="memdesc:aede2fc1eda7743e931189d1f4e2ab17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get local scale.  <br /></td></tr>
 <tr class="separator:aede2fc1eda7743e931189d1f4e2ab17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63c1c2feb38151ef38ba420bdf3723df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a63c1c2feb38151ef38ba420bdf3723df">SetFlagAllChildren</a> (size_t bitpos, bool <a class="el" href="_r_t_t_r___registration_8h.html#a473617892249d2d182a4e04f8ad275cd">value</a>)</td></tr>
+<tr class="memitem:a63c1c2feb38151ef38ba420bdf3723df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a63c1c2feb38151ef38ba420bdf3723df">SetFlagAllChildren</a> (size_t bitpos, bool value)</td></tr>
 <tr class="memdesc:a63c1c2feb38151ef38ba420bdf3723df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set flag in all descendent and this.  <br /></td></tr>
 <tr class="separator:a63c1c2feb38151ef38ba420bdf3723df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a></td></tr>
-<tr class="memitem:a196c19e70f9683a57c1eff01db6c07a3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a196c19e70f9683a57c1eff01db6c07a3">IComponent</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeguid)</td></tr>
+<tr class="memitem:a196c19e70f9683a57c1eff01db6c07a3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top"><a id="a196c19e70f9683a57c1eff01db6c07a3" name="a196c19e70f9683a57c1eff01db6c07a3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IComponent</b> (TEtypeguid typeguid)</td></tr>
 <tr class="separator:a196c19e70f9683a57c1eff01db6c07a3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2ceceb6b5e92f3ad10e8e8a8ce867fe inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#ad2ceceb6b5e92f3ad10e8e8a8ce867fe">~IComponent</a> ()</td></tr>
-<tr class="separator:ad2ceceb6b5e92f3ad10e8e8a8ce867fe inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40de458d1c358ed31994e64f6404ee8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#ab40de458d1c358ed31994e64f6404ee8">AllocateData</a> ()</td></tr>
+<tr class="memdesc:ab40de458d1c358ed31994e64f6404ee8 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">override as needed. Will be called on component allocate (via addcomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data.  <br /></td></tr>
+<tr class="separator:ab40de458d1c358ed31994e64f6404ee8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4ca46fa0d498df3d6e29de39ceddb8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a2e4ca46fa0d498df3d6e29de39ceddb8">DeallocateData</a> ()</td></tr>
+<tr class="memdesc:a2e4ca46fa0d498df3d6e29de39ceddb8 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">override as needed. Will be called on component deallocate (via removecomponent). Use this to allocate component related data, instead of using the Constructor and Deconstructor to allocate and deallocate data.  <br /></td></tr>
+<tr class="separator:a2e4ca46fa0d498df3d6e29de39ceddb8 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a639f8e495309c93d4e632595ea615da4">GetIsActive</a> () const</td></tr>
 <tr class="memdesc:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this component is active or not. Active state is determined by: internal Active state &amp;&amp; entity's active state.  <br /></td></tr>
 <tr class="separator:a639f8e495309c93d4e632595ea615da4 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,7 +328,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a90097cf522fe29daf1fa2f5ddb148191">SetIsActiveInternal</a> (bool active) noexcept</td></tr>
 <tr class="memdesc:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal active state of this component. Does not affect the state of the parent. If entity is inactive but this component is active, the resultant state of this component will still be inactive until the entity's state is changed to active.  <br /></td></tr>
 <tr class="separator:a90097cf522fe29daf1fa2f5ddb148191 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07865b61eaa1f8404312a287ff2cad7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a07865b61eaa1f8404312a287ff2cad7b">GetEntity</a> () const</td></tr>
+<tr class="memitem:a07865b61eaa1f8404312a287ff2cad7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top"><a id="a07865b61eaa1f8404312a287ff2cad7b" name="a07865b61eaa1f8404312a287ff2cad7b"></a>
+<a class="el" href="class_t_e_1_1_entity_ref.html">EntityRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntity</b> () const</td></tr>
 <tr class="separator:a07865b61eaa1f8404312a287ff2cad7b inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f805b5129eca4fddabecb7a77f42d54 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual rttr::instance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a9f805b5129eca4fddabecb7a77f42d54">GetRTTRInstance</a> () const</td></tr>
 <tr class="separator:a9f805b5129eca4fddabecb7a77f42d54 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,105 +338,74 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e069570ee4f25551a590e1414d465f3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_component.html#a2e069570ee4f25551a590e1414d465f3">Deserialize</a> (<a class="el" href="class_t_e_1_1_serializer.html">Serializer</a> &amp;s)</td></tr>
 <tr class="separator:a2e069570ee4f25551a590e1414d465f3 inherit pub_methods_class_t_e_1_1_i_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_t_e_1_1_i_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_t_e_1_1_i_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_t_e_1_1_i_object.html">TE::IObject</a></td></tr>
-<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#afc331476bf6217fde06f31deb161b97e">IObject</a> (<a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a> typeGUID)</td></tr>
+<tr class="memitem:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="afc331476bf6217fde06f31deb161b97e" name="afc331476bf6217fde06f31deb161b97e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IObject</b> (TEtypeguid typeGUID)</td></tr>
 <tr class="separator:afc331476bf6217fde06f31deb161b97e inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#af1d390c81a0fd71b490d01b93042f81d">~IObject</a> ()</td></tr>
-<tr class="separator:af1d390c81a0fd71b490d01b93042f81d inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aeb49f1d9760159d96df6dca959790745">GetGUID</a> () const noexcept</td></tr>
+<tr class="memitem:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aeb49f1d9760159d96df6dca959790745" name="aeb49f1d9760159d96df6dca959790745"></a>
+virtual TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetGUID</b> () const noexcept</td></tr>
 <tr class="separator:aeb49f1d9760159d96df6dca959790745 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#aafeae10a462729d794db5c6da61eba08">SetGUID</a> (<a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> guid) noexcept</td></tr>
+<tr class="memitem:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="aafeae10a462729d794db5c6da61eba08" name="aafeae10a462729d794db5c6da61eba08"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGUID</b> (TEguid guid) noexcept</td></tr>
 <tr class="separator:aafeae10a462729d794db5c6da61eba08 inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_u_i_d_8h.html#a56f2af257962e156c0889c572b7fae02">TEtypeguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_i_object.html#a705d4f85c13ce4fc396ad38cfbda7cdf">GetTypeGUID</a> () const noexcept</td></tr>
+<tr class="memitem:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memItemLeft" align="right" valign="top"><a id="a705d4f85c13ce4fc396ad38cfbda7cdf" name="a705d4f85c13ce4fc396ad38cfbda7cdf"></a>
+virtual TEtypeguid&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeGUID</b> () const noexcept</td></tr>
 <tr class="separator:a705d4f85c13ce4fc396ad38cfbda7cdf inherit pub_methods_class_t_e_1_1_i_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a25893faf28574fa58d154928777afe18"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a25893faf28574fa58d154928777afe18">m_Pos</a> {}</td></tr>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a25893faf28574fa58d154928777afe18"><td class="memItemLeft" align="right" valign="top"><a id="a25893faf28574fa58d154928777afe18" name="a25893faf28574fa58d154928777afe18"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_Pos</b> {}</td></tr>
 <tr class="separator:a25893faf28574fa58d154928777afe18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaf78f37b031d70d0b77c139efe8ca4e"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#acaf78f37b031d70d0b77c139efe8ca4e">m_Rot</a> {}</td></tr>
+<tr class="memitem:acaf78f37b031d70d0b77c139efe8ca4e"><td class="memItemLeft" align="right" valign="top"><a id="acaf78f37b031d70d0b77c139efe8ca4e" name="acaf78f37b031d70d0b77c139efe8ca4e"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_Rot</b> {}</td></tr>
 <tr class="separator:acaf78f37b031d70d0b77c139efe8ca4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29ef9d22433ea31a28093d4ef5160c92"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a29ef9d22433ea31a28093d4ef5160c92">m_Scale</a> { 1,1,1 }</td></tr>
+<tr class="memitem:a29ef9d22433ea31a28093d4ef5160c92"><td class="memItemLeft" align="right" valign="top"><a id="a29ef9d22433ea31a28093d4ef5160c92" name="a29ef9d22433ea31a28093d4ef5160c92"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_Scale</b> { 1,1,1 }</td></tr>
 <tr class="separator:a29ef9d22433ea31a28093d4ef5160c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6032ccb4024430cfd0c581c149a685a0"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a6032ccb4024430cfd0c581c149a685a0">m_localPos</a> {}</td></tr>
+<tr class="memitem:a6032ccb4024430cfd0c581c149a685a0"><td class="memItemLeft" align="right" valign="top"><a id="a6032ccb4024430cfd0c581c149a685a0" name="a6032ccb4024430cfd0c581c149a685a0"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_localPos</b> {}</td></tr>
 <tr class="separator:a6032ccb4024430cfd0c581c149a685a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a255f259977338ed24447b9122db98c92"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a255f259977338ed24447b9122db98c92">m_localRot</a> {}</td></tr>
+<tr class="memitem:a255f259977338ed24447b9122db98c92"><td class="memItemLeft" align="right" valign="top"><a id="a255f259977338ed24447b9122db98c92" name="a255f259977338ed24447b9122db98c92"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_localRot</b> {}</td></tr>
 <tr class="separator:a255f259977338ed24447b9122db98c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac99d186570b0c96da7c1c4396961c1a3"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#ac99d186570b0c96da7c1c4396961c1a3">m_localScale</a> { 1,1,1 }</td></tr>
+<tr class="memitem:ac99d186570b0c96da7c1c4396961c1a3"><td class="memItemLeft" align="right" valign="top"><a id="ac99d186570b0c96da7c1c4396961c1a3" name="ac99d186570b0c96da7c1c4396961c1a3"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_localScale</b> { 1,1,1 }</td></tr>
 <tr class="separator:ac99d186570b0c96da7c1c4396961c1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f7962a72f5fdd79ff637c0af5cb41b2"><td class="memItemLeft" align="right" valign="top">glm::mat4x4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a8f7962a72f5fdd79ff637c0af5cb41b2">localMat</a> {}</td></tr>
+<tr class="memitem:a8f7962a72f5fdd79ff637c0af5cb41b2"><td class="memItemLeft" align="right" valign="top"><a id="a8f7962a72f5fdd79ff637c0af5cb41b2" name="a8f7962a72f5fdd79ff637c0af5cb41b2"></a>
+glm::mat4x4&#160;</td><td class="memItemRight" valign="bottom"><b>localMat</b> {}</td></tr>
 <tr class="separator:a8f7962a72f5fdd79ff637c0af5cb41b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d5a114269dd63120e3337fd2ff9b73f"><td class="memItemLeft" align="right" valign="top">glm::mat4x4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a5d5a114269dd63120e3337fd2ff9b73f">worldMat</a> {}</td></tr>
+<tr class="memitem:a5d5a114269dd63120e3337fd2ff9b73f"><td class="memItemLeft" align="right" valign="top"><a id="a5d5a114269dd63120e3337fd2ff9b73f" name="a5d5a114269dd63120e3337fd2ff9b73f"></a>
+glm::mat4x4&#160;</td><td class="memItemRight" valign="bottom"><b>worldMat</b> {}</td></tr>
 <tr class="separator:a5d5a114269dd63120e3337fd2ff9b73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a462079635351fe3faaab6940f072d152"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a462079635351fe3faaab6940f072d152">parentID</a> = <a class="el" href="_g_u_i_d_8h.html#aa34e6525eb1e2dff2f0226eab6b76c58">TEGUID_NULL</a></td></tr>
+<tr class="memitem:a44d81ca90f43008a443876b9d2acf2d8"><td class="memItemLeft" align="right" valign="top"><a id="a44d81ca90f43008a443876b9d2acf2d8" name="a44d81ca90f43008a443876b9d2acf2d8"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_forward</b> {0,0,1}</td></tr>
+<tr class="separator:a44d81ca90f43008a443876b9d2acf2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2be388a937421ab18f9bf54662d9b09"><td class="memItemLeft" align="right" valign="top"><a id="ac2be388a937421ab18f9bf54662d9b09" name="ac2be388a937421ab18f9bf54662d9b09"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_up</b> { 0,1,0 }</td></tr>
+<tr class="separator:ac2be388a937421ab18f9bf54662d9b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c388fb0ef211cb167be64bc670e65b"><td class="memItemLeft" align="right" valign="top"><a id="ae3c388fb0ef211cb167be64bc670e65b" name="ae3c388fb0ef211cb167be64bc670e65b"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_right</b> { 1,0,0 }</td></tr>
+<tr class="separator:ae3c388fb0ef211cb167be64bc670e65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace8dd67fa94afc322dbda24a53b6670a"><td class="memItemLeft" align="right" valign="top"><a id="ace8dd67fa94afc322dbda24a53b6670a" name="ace8dd67fa94afc322dbda24a53b6670a"></a>
+glm::quat&#160;</td><td class="memItemRight" valign="bottom"><b>m_quaternion</b> { {0,0,0} }</td></tr>
+<tr class="separator:ace8dd67fa94afc322dbda24a53b6670a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462079635351fe3faaab6940f072d152"><td class="memItemLeft" align="right" valign="top"><a id="a462079635351fe3faaab6940f072d152" name="a462079635351fe3faaab6940f072d152"></a>
+TEguid&#160;</td><td class="memItemRight" valign="bottom"><b>parentID</b> = TEGUID_NULL</td></tr>
 <tr class="separator:a462079635351fe3faaab6940f072d152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72fee9b7f8518bcc7247f5b6cc8c2d79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_t_e.html#a1a387b331bf57f34346571b4db0f7563">TransformRefs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a72fee9b7f8518bcc7247f5b6cc8c2d79">childTrans</a> {}</td></tr>
+<tr class="memitem:a72fee9b7f8518bcc7247f5b6cc8c2d79"><td class="memItemLeft" align="right" valign="top"><a id="a72fee9b7f8518bcc7247f5b6cc8c2d79" name="a72fee9b7f8518bcc7247f5b6cc8c2d79"></a>
+TransformRefs&#160;</td><td class="memItemRight" valign="bottom"><b>childTrans</b> {}</td></tr>
 <tr class="separator:a72fee9b7f8518bcc7247f5b6cc8c2d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04f80a20f1e074bb29975034dd879631"><td class="memItemLeft" align="right" valign="top">std::bitset&lt;(size_t) <a class="el" href="class_t_e_1_1_transform.html#aca3a1763c784d5a8ede3f8e4f4f3d268a432667fb27b22637409d46a52b5d418f">Flags::FlagCount</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#a04f80a20f1e074bb29975034dd879631">flags</a> {std::string(&quot;1111&quot;)}</td></tr>
-<tr class="memdesc:a04f80a20f1e074bb29975034dd879631"><td class="mdescLeft">&#160;</td><td class="mdescRight">to be used with <a class="el" href="class_t_e_1_1_transform.html#a63c1c2feb38151ef38ba420bdf3723df" title="Set flag in all descendent and this.">SetFlagAllChildren()</a>. If flag is set to TRUE means update required. FALSE means flag is up-to-date  <br /></td></tr>
+<tr class="memitem:a04f80a20f1e074bb29975034dd879631"><td class="memItemLeft" align="right" valign="top"><a id="a04f80a20f1e074bb29975034dd879631" name="a04f80a20f1e074bb29975034dd879631"></a>
+std::bitset&lt;(size_t) Flags::FlagCount &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> {std::string(&quot;1111&quot;)}</td></tr>
+<tr class="memdesc:a04f80a20f1e074bb29975034dd879631"><td class="mdescLeft">&#160;</td><td class="mdescRight">to be used with <a class="el" href="class_t_e_1_1_transform.html#a63c1c2feb38151ef38ba420bdf3723df" title="Set flag in all descendent and this.">SetFlagAllChildren()</a>. If flag is set to TRUE means update required. FALSE means flag is up-to-date <br /></td></tr>
 <tr class="separator:a04f80a20f1e074bb29975034dd879631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:af8572af468f8203a406b59bf057ecf09"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_e_1_1_transform.html#af8572af468f8203a406b59bf057ecf09">ECSManager::ComponentContainer&lt; Transform &gt;</a></td></tr>
+<tr class="memitem:af8572af468f8203a406b59bf057ecf09"><td class="memItemLeft" align="right" valign="top"><a id="af8572af468f8203a406b59bf057ecf09" name="af8572af468f8203a406b59bf057ecf09"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>ECSManager::ComponentContainer&lt; Transform &gt;</b></td></tr>
 <tr class="separator:af8572af468f8203a406b59bf057ecf09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="aca3a1763c784d5a8ede3f8e4f4f3d268" name="aca3a1763c784d5a8ede3f8e4f4f3d268"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca3a1763c784d5a8ede3f8e4f4f3d268">&#9670;&#160;</a></span>Flags</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum class <a class="el" href="class_t_e_1_1_transform.html#aca3a1763c784d5a8ede3f8e4f4f3d268">TE::Transform::Flags</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>to be used with <a class="el" href="class_t_e_1_1_transform.html#a63c1c2feb38151ef38ba420bdf3723df" title="Set flag in all descendent and this.">SetFlagAllChildren()</a>. If flag is set to TRUE means update required. FALSE means flag is up-to-date </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aca3a1763c784d5a8ede3f8e4f4f3d268ab2bd583fe2c5eecabcbe2007e90689b7" name="aca3a1763c784d5a8ede3f8e4f4f3d268ab2bd583fe2c5eecabcbe2007e90689b7"></a>UpdatePos&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aca3a1763c784d5a8ede3f8e4f4f3d268a3e3c3ebdb1c0dd4c04106e27db406269" name="aca3a1763c784d5a8ede3f8e4f4f3d268a3e3c3ebdb1c0dd4c04106e27db406269"></a>UpdateRot&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aca3a1763c784d5a8ede3f8e4f4f3d268a487f22e3f810a0933b14e56505a58f0d" name="aca3a1763c784d5a8ede3f8e4f4f3d268a487f22e3f810a0933b14e56505a58f0d"></a>UpdateScale&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aca3a1763c784d5a8ede3f8e4f4f3d268a432667fb27b22637409d46a52b5d418f" name="aca3a1763c784d5a8ede3f8e4f4f3d268a432667fb27b22637409d46a52b5d418f"></a>FlagCount&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a415368cfa80df2cc238f802c1c5852e0" name="a415368cfa80df2cc238f802c1c5852e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a415368cfa80df2cc238f802c1c5852e0">&#9670;&#160;</a></span>Transform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TE::Transform::Transform </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="acfdc0ac4d942194780637a1a4d590187" name="acfdc0ac4d942194780637a1a4d590187"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acfdc0ac4d942194780637a1a4d590187">&#9670;&#160;</a></span>GetRTTRInstance()</h2>
@@ -422,7 +430,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#a9f805b5129eca4fddabecb7a77f42d54">TE::IComponent</a>.</p>
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a>.</p>
 
 </div>
 </div>
@@ -450,7 +458,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#abdc3a2ae05147f4f600dc2093c52d8d3">TE::IComponent</a>.</p>
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a>.</p>
 
 </div>
 </div>
@@ -478,7 +486,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html#a2e069570ee4f25551a590e1414d465f3">TE::IComponent</a>.</p>
+<p>Reimplemented from <a class="el" href="class_t_e_1_1_i_component.html">TE::IComponent</a>.</p>
 
 </div>
 </div>
@@ -505,25 +513,6 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a22a7961e6829f636810a83bfd0ca2c7c" name="a22a7961e6829f636810a83bfd0ca2c7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22a7961e6829f636810a83bfd0ca2c7c">&#9670;&#160;</a></span>AddToSceneRoot()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Transform::AddToSceneRoot </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>To add to sceneroot upon a generation of a transform To be delayed due to order of boot/load. </p>
 
 </div>
 </div>
@@ -640,7 +629,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_t_e.html#a1a387b331bf57f34346571b4db0f7563">TransformRefs</a> TE::Transform::GetChildren </td>
+          <td class="memname">TransformRefs TE::Transform::GetChildren </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -665,7 +654,7 @@ Friends</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_t_e.html#a1a387b331bf57f34346571b4db0f7563">TransformRefs</a> TE::Transform::GetAllChildren </td>
+          <td class="memname">TransformRefs TE::Transform::GetAllChildren </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -909,6 +898,58 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="aa8be50c9fefcaff6c917018de7fbbf06" name="aa8be50c9fefcaff6c917018de7fbbf06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8be50c9fefcaff6c917018de7fbbf06">&#9670;&#160;</a></span>Translate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::Transform::Translate </td>
+          <td>(</td>
+          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Translate global position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td>Vec3 delta move position</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4d45f0ad4830cb7e08cce92c0d5c9856" name="a4d45f0ad4830cb7e08cce92c0d5c9856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d45f0ad4830cb7e08cce92c0d5c9856">&#9670;&#160;</a></span>Rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TE::Transform::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rotate global rotation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td>Vec3 delta degree angle</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6489bbc2f780ed0edb0501424a2e88b1" name="a6489bbc2f780ed0edb0501424a2e88b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6489bbc2f780ed0edb0501424a2e88b1">&#9670;&#160;</a></span>SetPosition()</h2>
 
@@ -1062,136 +1103,6 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ad9175e1b454949490cfda85ffd208340" name="ad9175e1b454949490cfda85ffd208340"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9175e1b454949490cfda85ffd208340">&#9670;&#160;</a></span>SetLocalMatrix()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Transform::SetLocalMatrix </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct local matrix from local transform. </p>
-
-</div>
-</div>
-<a id="af20392506759c6abc1718371346d469d" name="af20392506759c6abc1718371346d469d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af20392506759c6abc1718371346d469d">&#9670;&#160;</a></span>SetWorldMatrix()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Transform::SetWorldMatrix </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct world matrix from local and parent transforms. </p>
-
-</div>
-</div>
-<a id="a61044ddea0f0270428b909b65a7c3bd1" name="a61044ddea0f0270428b909b65a7c3bd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61044ddea0f0270428b909b65a7c3bd1">&#9670;&#160;</a></span>UpdatePosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Transform::UpdatePosition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update global position. </p>
-
-</div>
-</div>
-<a id="a7bb59fe8b03661880f88c582a8e5de5d" name="a7bb59fe8b03661880f88c582a8e5de5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bb59fe8b03661880f88c582a8e5de5d">&#9670;&#160;</a></span>UpdateRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Transform::UpdateRotation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update global rotation. </p>
-
-</div>
-</div>
-<a id="ad4430c132ef76f7640c8b2169055ad43" name="ad4430c132ef76f7640c8b2169055ad43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4430c132ef76f7640c8b2169055ad43">&#9670;&#160;</a></span>UpdateScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TE::Transform::UpdateScale </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update global scale. </p>
-
-</div>
-</div>
-<a id="adde7ae053fa71b8924614ba81dc35b8b" name="adde7ae053fa71b8924614ba81dc35b8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adde7ae053fa71b8924614ba81dc35b8b">&#9670;&#160;</a></span>EulerAngleOptimal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">glm::vec3 TE::Transform::EulerAngleOptimal </td>
-          <td>(</td>
-          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
-          <td class="paramname"><em>angles</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Converts euler angles to quaternion to eular angles. Auto clamps. Use to help streamline euler and quaternion usage. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">angles</td><td>Vec3 euler angles</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -1400,190 +1311,9 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="af8572af468f8203a406b59bf057ecf09" name="af8572af468f8203a406b59bf057ecf09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8572af468f8203a406b59bf057ecf09">&#9670;&#160;</a></span>ECSManager::ComponentContainer&lt; Transform &gt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_t_e_1_1_e_c_s_manager_1_1_component_container.html">ECSManager::ComponentContainer</a>&lt; <a class="el" href="class_t_e_1_1_transform.html">Transform</a> &gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a25893faf28574fa58d154928777afe18" name="a25893faf28574fa58d154928777afe18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25893faf28574fa58d154928777afe18">&#9670;&#160;</a></span>m_Pos</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">glm::vec3 TE::Transform::m_Pos {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acaf78f37b031d70d0b77c139efe8ca4e" name="acaf78f37b031d70d0b77c139efe8ca4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acaf78f37b031d70d0b77c139efe8ca4e">&#9670;&#160;</a></span>m_Rot</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">glm::vec3 TE::Transform::m_Rot {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a29ef9d22433ea31a28093d4ef5160c92" name="a29ef9d22433ea31a28093d4ef5160c92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29ef9d22433ea31a28093d4ef5160c92">&#9670;&#160;</a></span>m_Scale</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">glm::vec3 TE::Transform::m_Scale { 1,1,1 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6032ccb4024430cfd0c581c149a685a0" name="a6032ccb4024430cfd0c581c149a685a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6032ccb4024430cfd0c581c149a685a0">&#9670;&#160;</a></span>m_localPos</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">glm::vec3 TE::Transform::m_localPos {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a255f259977338ed24447b9122db98c92" name="a255f259977338ed24447b9122db98c92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a255f259977338ed24447b9122db98c92">&#9670;&#160;</a></span>m_localRot</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">glm::vec3 TE::Transform::m_localRot {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac99d186570b0c96da7c1c4396961c1a3" name="ac99d186570b0c96da7c1c4396961c1a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac99d186570b0c96da7c1c4396961c1a3">&#9670;&#160;</a></span>m_localScale</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">glm::vec3 TE::Transform::m_localScale { 1,1,1 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8f7962a72f5fdd79ff637c0af5cb41b2" name="a8f7962a72f5fdd79ff637c0af5cb41b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f7962a72f5fdd79ff637c0af5cb41b2">&#9670;&#160;</a></span>localMat</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">glm::mat4x4 TE::Transform::localMat {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5d5a114269dd63120e3337fd2ff9b73f" name="a5d5a114269dd63120e3337fd2ff9b73f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d5a114269dd63120e3337fd2ff9b73f">&#9670;&#160;</a></span>worldMat</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">glm::mat4x4 TE::Transform::worldMat {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a462079635351fe3faaab6940f072d152" name="a462079635351fe3faaab6940f072d152"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a462079635351fe3faaab6940f072d152">&#9670;&#160;</a></span>parentID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_g_u_i_d_8h.html#aef3ae7842623aa698afbc4725430b7c6">TEguid</a> TE::Transform::parentID = <a class="el" href="_g_u_i_d_8h.html#aa34e6525eb1e2dff2f0226eab6b76c58">TEGUID_NULL</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a72fee9b7f8518bcc7247f5b6cc8c2d79" name="a72fee9b7f8518bcc7247f5b6cc8c2d79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72fee9b7f8518bcc7247f5b6cc8c2d79">&#9670;&#160;</a></span>childTrans</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_t_e.html#a1a387b331bf57f34346571b4db0f7563">TransformRefs</a> TE::Transform::childTrans {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a04f80a20f1e074bb29975034dd879631" name="a04f80a20f1e074bb29975034dd879631"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04f80a20f1e074bb29975034dd879631">&#9670;&#160;</a></span>flags</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::bitset&lt;(size_t)<a class="el" href="class_t_e_1_1_transform.html#aca3a1763c784d5a8ede3f8e4f4f3d268a432667fb27b22637409d46a52b5d418f">Flags::FlagCount</a>&gt; TE::Transform::flags {std::string(&quot;1111&quot;)}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>to be used with <a class="el" href="class_t_e_1_1_transform.html#a63c1c2feb38151ef38ba420bdf3723df" title="Set flag in all descendent and this.">SetFlagAllChildren()</a>. If flag is set to TRUE means update required. FALSE means flag is up-to-date </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_e_c_s_components_2_transform_8h_source.html">ECSComponents/Transform.h</a></li>
-<li><a class="el" href="_r_t_t_r___registration_8h_source.html">RTTR_Registration.h</a></li>
-<li><a class="el" href="_transform_8cpp.html">Transform.cpp</a></li>
+<li>Transform.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
