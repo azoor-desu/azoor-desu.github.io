@@ -53,6 +53,18 @@
     {
       "title": "posts",
       "path": "[[workspace]]/_posts"
+    },
+    {
+      "title": "custom pages",
+      "path": "[[workspace]]/custom-pages"
+    },
+    {
+      "title": "tabs",
+      "path": "[[workspace]]/_tabs"
+    },
+    {
+      "title": "data",
+      "path": "[[workspace]]/_data"
     }
   ]
 }
