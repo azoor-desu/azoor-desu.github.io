@@ -65,22 +65,3 @@
     });
   })();
 </script>
-<!-- Attempting to change color of giscus input text but access denied :(
-<script type="text/javascript">
-	(async function () {
-		console.log("doing color");
-		let count = document.querySelectorAll('iframe.giscus-frame').length;
-		console.log(count);
-		
-		while(document.querySelectorAll('iframe.giscus-frame').length == 0) {
-			console.log("waiting");
-			await new Promise(r => setTimeout(r, 500));
-		}
-		console.log("there is color now");
-		var windoe = document.querySelector('iframe.giscus-frame').contentWindow;
-		var doc = windoe? windoe: windoe.document;
-		doc.getElementsByClass("form-control input-contrast gsc-comment-box-textarea ").length;
-		console.log(count);
-	})();
-</script>
--->
