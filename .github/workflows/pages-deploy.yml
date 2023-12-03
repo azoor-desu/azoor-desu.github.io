@@ -9,7 +9,7 @@ on:
       - .gitignore
       - README.md
       - LICENSE
-      - assets/**
+      - 'assets/**'
       - '**/*.draft.*'
       - '**/*.ignore.*'
 
