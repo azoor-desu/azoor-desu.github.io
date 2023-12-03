@@ -73,7 +73,7 @@ theme_mode: dark # [light|dark]
 #img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "https://avatars.githubusercontent.com/u/31021840?v=4"
+avatar: "/assets/img/favicons/android-chrome-192x192.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -97,7 +97,7 @@ comments:
     input_position: "top" # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`
     reactions_enabled: 1 # optional, default to the value of `1`
-    theme: # leave blank to auto toggle light and dark
+    #theme: # leave blank to auto toggle light and dark
     loading: lazy
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
