@@ -97,7 +97,6 @@ comments:
     input_position: "top" # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`
     reactions_enabled: 1 # optional, default to the value of `1`
-    #theme: # leave blank to auto toggle light and dark
     loading: lazy
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
