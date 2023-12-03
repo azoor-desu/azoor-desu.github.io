@@ -1,5 +1,5 @@
 ---
-title: Entity Component System Eggsblained
+title: Entity Component System
 description: "ECS is for you n' me! :)"
 date: 2023-12-02T10:37:58.771Z
 preview: ""
@@ -8,7 +8,7 @@ categories: ["Programming"]
 image: /assets/img/ecs/preview.png
 ---
 
-## Introduction
+## **Introduction**
 If you're here for the juicy deets, skip to the next section(s).  
 
 This post aims to bring forth a complete guide of an ECS implementation, in the context of a game engine. I will not go in-depth about the details of "what is an ECS", because the [first](https://www.guru99.com/entity-component-system.html) [few](https://www.simplilearn.com/entity-component-system-introductory-guide-article) [results](https://medium.com/@niitwork0921/what-is-entity-component-system-9ba3f06e9d82) on google already covers "what is an ECS". While great for someone not looking to engineer an ECS on their own, these clickbaity articles give little to no information about the actual implementation of an ECS. 
@@ -26,10 +26,10 @@ If you're still keen on learning more about ECS, do keep reading!
 Why is the references here? Well, because my explanations may not be in-depth enough (ironically). For those that want MORE DEETS, here are the articles before I waste too much of your time. I'm not an expert, so here's the list of references I think are god-tier and explains stuff much better than i ever could.
 
 [Austin Morlan's simple ECS implementation in C++](https://austinmorlan.com/posts/entity_component_system/)  
-- Most popular resource for creating an ECS "back in my day".
 - Disclaimer: This is a SIMPLE ECS. It is one way to implement an ECS, but it may not be the best.
+- Most popular resource for creating an ECS "back in my day". The "basic b***h" of ECSes.
 - Provides lots of code snippets and implementation in C++, making it very clear how it is implemented. ~~Also makes it very easy for people to copy-pasta the code into a project with zero understanding and have no idea how to fix or modify it~~
-- Lacks PiCtUrEs and has too many words so my smooth brain struggles to read it to the end. Not the author's fault, I just ate too much glue.
+- Lacks PiCtUrEs and has too many words so my smooth brain struggles to read it to the end. Not the author's fault, I just ate too much glue as a kid.
 
 [Hexops ECS implementation in Zig](https://devlog.hexops.com/2022/lets-build-ecs-part-1/#next-up-starting-our-ecs-implementation)  
 - Has (some) pictures! And code snippets!
@@ -51,7 +51,7 @@ Why is the references here? Well, because my explanations may not be in-depth en
 - Too advanced for my smooth brain to implement (maybe one day)
 - Nice pictures to explain how they organize components in memory to achieve **MAXIMUM SPEED**
 
-## Prerequisite Knowledge
+## **Prerequisite Knowledge**
 - Basic to Intermediate knowledge of some data structures (Arrays and stuff)
 - Somewhat good understanding of lower-level concepts of computer memory (contiguous memory good)
 - Basic understanding of what it takes to make code run faster
@@ -59,7 +59,7 @@ Why is the references here? Well, because my explanations may not be in-depth en
 - Basic knowledge of how game engines work (game objects, components, decent knowledge in game engines)
 - A brain and some thinking capabilities
 
-## The Problem
+## **The Problem**
 Aite so you are tasked by your professor to "just make a game engine".  
 Ok, sounds great.  
 Being the genius you are, you proceed to work on the engine, and soon you are faced with multiple issues:
@@ -68,7 +68,7 @@ Being the genius you are, you proceed to work on the engine, and soon you are fa
 - What kind of data do the entities need to store? Would you be adding more data as you develop the engine?
 - How are entities going to store data?
 
-## Naive solution
+## **Naive solution**
 Let's start with a class that holds data for one entity. We'll throw in some irrelevant data for now.  
 ![ent](/assets/img/ecs/entityclass.svg){: .center }  
 We'll make an array of entities from this class. Tada, we can represent entities in the game!  
@@ -85,26 +85,70 @@ We will assume that Entity1 is our player, and is the only thing that moves in t
 
 What do? Make a modular architecture to handle all that data! ECS is the perfect architecture to solve all of the aforementioned issues!
 
-## Entity Component System: Eggsblained
-The core concept of ECS is to be able to split the [Entity](#the-entity-pt-1) and the [Component](#the-component) (a bunch of data together) apart. [The System](#the-system) is also an essential part of the architecture, but we will go through that in detail in a later portion.
+## **Entity Component System: Eggsblained**
+
+ECS is an amazing architecture that provides multiple solutions:
+1. A nice storage solution for all data to be used by all entities
+2. A modular way to add and remove data on a per-entity basis
+3. Cache-friendly iteration over data when trying to process data
+
+The core concept of ECS is to be able to split the [Entity](#the-entity) and the [Component](#the-component) (a bunch of data together) apart. [The System](#the-system) is also an essential part of the architecture, but we will go through that in detail in a later portion.
 ![ent-comp](/assets/img/ecs/entity-component.png){: .center }  
 We will separate and group common data together to make a **component**, and split off the **entity** portion to be on its own. The final idea we are working towards will be to store all these data into multiple smaller arrays instead of one huge Entity Monster Array. Just by doing so, we can improve on the [spatial locality](https://en.wikipedia.org/wiki/Locality_of_reference) of data, slightly improving cache performance.
 
-### The Entity (Pt 1)
-"But Azoor", you may ask, "what data is in the Entity portion?" Great Question! I don't know! (because it depends on your implementation!)  
-If you have looked around online, articles say "[the entity is a tangible thing](https://www.simplilearn.com/entity-component-system-introductory-guide-article)" or "[has not actual data or behaviour](https://www.guru99.com/entity-component-system.html#2)". If you went "huh?", don't worry bud, me too!  
+### **The Entity**
+You may notice that I split "Entity" away from the data.  
+What does this mean? What is Entity?  
+Entity is nothing. There is no data in the Entity block. Yet, the Entity is there, in spirit. Like a ghost. Observing the creature covered in flesh beyond the screen, head in arms, trying to understand what it means to be present but non-existent. 
 
-The general idea of an Entity is that Entities do not carry data. However, this is counter-intuitive for someone with a background in using Unity. "Where does the entity name go? Where does the IsActive bool go? Where does entity-specific data go??" Right now, let's not worry about the data in Entity. It will be explained in [The Entity (Pt 2)](#the-entity-pt-2).  
+Moving on.
 
-Let us assume we have 10 entities in the game. We can label them one by one, using the indices 0 to 9.  
+The general idea of an Entity is that Entities are akin to an "Identification Number".  
+Let's say we are a factory, building Swiss Army Knives.  
+![ent-comp](/assets/img/ecs/swissknife-full.jpg){: .center }  
+We are to build 10 of them, but each one is a custom order with custom parts. The customers are peculiar, and they want many combinations of these parts.  
+
+![ent-comp](/assets/img/ecs/swissknife-full.jpg)
+_Some may want the full set.._  
+
+![ent-comp](/assets/img/ecs/swissknife-two.jpg)
+_...and some may only want a few parts_  
+
+![ent-comp](/assets/img/ecs/swissknife-nohandle.jpg)
+_... and some may not even want the handle!_  
+
+We start out our production with 10 slots for these... products. Let's label them with indices, from 0 to 9.
 ![ent-comp](/assets/img/ecs/entity-array.svg){: .center }  
-Great! But they have no data. That's no good. These guys right now are just imaginary numbers and nothing more, they don't exist anywhere. Not in an array, not in the cloud, it exists only in your head... Hold this thought for now, it will (hopefully) make sense in the next section.  
-Just know that we have 10 numbers to dish out, 1 for each entity, but they don't live anywhere but in your head.
+The idea is that, each "Entity" is an Index to identify the group of "components", in this case, collection of parts.  
+We can refer to each specific product using this Index, and that represents an "Entity".  
 
-### The Component
+This raises some more questions:
+> What if there are _no_ parts in that specific factory slot? In terms of ECS, what if there are _no_ components in an entity?  
+
+Some may argue that the entity still exists, but has no data. Others may argue that this is impractical in an actual implementation, and that the entity should not exist. It depends.
+
+In my implementation of ECS, I want every entity to have _some_ data, like the Entity Name and stuffs. It makes more sense for me, coming from a background in Unity. This means that each Entity _must_ come with some data stored somewhere! So where should that data be, if the "Entity" should not contain any data?? I'll explain this in the [Understanding The Entity Component](#understanding-the-entity-component) section below. Hint: it's in a component!
+
+### **The Component**
 Alright, this is the real meat of the entire system! Each component is a *collection of data* that are grouped together based on function. In other words, we group data with similar purpose together. Data like Position, Rotation and Scale all describe an Object in 2D/3D space, hence they can be grouped together into a component called "Transform". Rinse and repeat for all other data, and you have a bunch of components!  
+![ent-comp](/assets/img/ecs/entity-split.svg){: .center }  
 
-Now throw them all into an array
+Notice that we have split the huge Entity class into 4 distinct components now, and the Entity class is no more. 
+
+#### **Understanding The Entity Component**
+However, you may notice that I have dumped the Entity related data into "Entity Component". "So is that the entity?" you excitedly ask, light gleaming in your eyes. I put on my most condescending tone, and with my index finger up in the air, I let out the words: _"Erhm, ackchyually hor..."_  
+
+I apologize for that. Moving on.  
+
+The Entity is a collection of components. Without Components, an Entity does not exist. (because it physically has nothing!)  
+![ent-comp](/assets/img/ecs/entity-spirit.svg){: .center }  
+This kind of means that as long as there is 1 component, an entity should exist.  
+![ent-comp](/assets/img/ecs/entity-spirit-tsfm.svg){: .center }  
+However, in practice, this isn't very practical in a game engine.
+
+#### **Understanding The Regular Component**
+
+#### **Components in an array**
 
 ### The Entity (Pt 2)
 

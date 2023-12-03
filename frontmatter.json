@@ -65,6 +65,10 @@
     {
       "title": "data",
       "path": "[[workspace]]/_data"
+    },
+    {
+      "title": "Drafts",
+      "path": "[[workspace]]/_drafts"
     }
   ]
 }
