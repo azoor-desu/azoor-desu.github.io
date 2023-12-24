@@ -52,24 +52,34 @@ Why is the references here? Well, because my explanations may not be in-depth en
 - Nice pictures to explain how they organize components in memory to achieve **MAXIMUM SPEED**
 
 ## **Prerequisite Knowledge**
+For a bare-minimum ECS:
+- Basic experience working with game engines (adding/removing components from game objects etc)
 - Basic to Intermediate knowledge of some data structures (Arrays and stuff)
-- Somewhat good understanding of lower-level concepts of computer memory (contiguous memory good)
-- Basic understanding of what it takes to make code run faster
+
+For optimizing the ECS further, or to make it easier to use:
 - Intermediate to advanced C++ knowledge, including pointers and templates.
-- Basic knowledge of how game engines work (game objects, components, decent knowledge in game engines)
-- A brain and some thinking capabilities
+- Somewhat good understanding of lower-level concepts of computer memory (contiguous memory good, many loop bad)
 
 ## **The Problem**
 Aite so you are tasked by your professor to "just make a game engine".  
-Ok, sounds great.  
-Being the genius you are, you proceed to work on the engine, and soon you are faced with multiple issues:
+Ok, sounds great. (no it doesen't)  
+Being the genius you are, you proceed to work on the engine.
+But there's a few things that stump you as you develop the engine:
 - How are you going to represent Game Objects/Entities in your code?
 - How are they going to be stored and accessed?
 - What kind of data do the entities need to store? Would you be adding more data as you develop the engine?
 - How are entities going to store data?
+- How to solve all of those issues above, _and_ make the system modular, easy to use, and _fast_?
 
 ## **Naive solution**
-Let's start with a class that holds data for one entity. We'll throw in some irrelevant data for now.  
+Let's start with just trying to come up with _some kind of basic solution_ first, so that we have a foundation to work with.  
+
+We will have a bunch of objects in our world. We will call each object an "Entity". Each entity should hold some data so that we can describe this entity. Each entity should hold basic data like its name, unique identifier number, position, size, rotation etc. Using this data, we can do many things to each entity, such as rendering the entities, moving them around, give them colors, give them names etc.  
+
+To store this data, we can just make an array of entities, with each slot in the array describing one entity.
+
+
+Let's make a class that holds data for one entity. We'll throw in some irrelevant data for now.  
 ![ent](/assets/img/ecs/entityclass.svg){: .center }  
 We'll make an array of entities from this class. Tada, we can represent entities in the game!  
 But wait, that's not useful. We have barely any data to work with. Let's throw in position data that represents the x, y and z coordinates.  
