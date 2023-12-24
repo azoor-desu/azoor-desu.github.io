@@ -92,7 +92,7 @@ ECS is an amazing architecture that provides multiple solutions:
 2. A modular way to add and remove data on a per-entity basis
 3. Cache-friendly iteration over data when trying to process data
 
-The core concept of ECS is to be able to split the [Entity](#the-entity) and the [Component](#the-component) (a bunch of data together) apart. [The System](#the-system) is also an essential part of the architecture, but we will go through that in detail in a later portion.
+The core concept of ECS is to be able to split the [Entity](#the-entity) and the [Component](#the-component) (a bunch of data together) apart. [The System](#the-system) is also an essential part of the archit ecture, but we will go through that in detail in a later portion.
 ![ent-comp](/assets/img/ecs/entity-component.png){: .center }  
 We will separate and group common data together to make a **component**, and split off the **entity** portion to be on its own. The final idea we are working towards will be to store all these data into multiple smaller arrays instead of one huge Entity Monster Array. Just by doing so, we can improve on the [spatial locality](https://en.wikipedia.org/wiki/Locality_of_reference) of data, slightly improving cache performance.
 
