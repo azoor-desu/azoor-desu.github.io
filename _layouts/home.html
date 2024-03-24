@@ -40,11 +40,13 @@ refactor: true
   {% endfor %}
 {% endif %}
 
+<!-- Add custom message to front page -->
 {% if paginator.page == 1 %}
 {% capture homepagemsg %}{% include_relative custom-pages/homepage-message.md %}{% endcapture %}
 {{homepagemsg | markdownify}}
 {% endif %}
 
+<!-- Main posts area -->
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
     <article class="card-wrapper card">
