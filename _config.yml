@@ -14,12 +14,12 @@ timezone: Asia/Singapore
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Rant Corner # the main title
+title: Azoor's stuff # the main title
 
-tagline: Blog and stuff # it will display as the sub-title
+tagline: Blogs, projects and stuff # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Blogs and stuffs
+  Blogs, projects and stuff
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
