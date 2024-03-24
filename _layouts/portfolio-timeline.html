@@ -14,7 +14,7 @@ refactor: false
 
   <!-- Put pinned posts at the top. -->
   {% if pinned_posts.size > 0 %}
-    <p style="font-size:30px;font-weight:bold;">Featured Projects</p>
+    <p style="font-size:35px;font-weight:bold; text-align: center;">Featured Projects</p>
   {% endif %}
   {% for post in pinned_posts %}
     <article class="card-wrapper card">
@@ -58,6 +58,8 @@ refactor: false
                 <!-- posted date -->
                 <i class="far fa-calendar fa-fw me-1"></i>
                 {{post.date | date: "%b %Y" }}
+                <i class="fa-solid fa-clock" style="padding: 3px;"></i>
+                {{ post.duration_months }} months
               </div>
 
               {% if post.portfolio_pin %}
@@ -76,6 +78,7 @@ refactor: false
   {% endfor %}
 
   <!-- Put all posts after the pinned ones, with the pinned ones being repeated too -->
+  <p style="font-size:35px;font-weight:bold; text-align: center;">All Projects</p>
   {% for post in all_posts %}
       <!-- Appends a year at the top of each section -->
       {% assign cur_year = post.date | date: '%Y' %}
@@ -127,6 +130,8 @@ refactor: false
                   <!-- posted date -->
                   <i class="far fa-calendar fa-fw me-1"></i>
                   {{post.date | date: "%b %Y" }}
+                  <i class="fa-solid fa-clock" style="padding: 3px;"></i>
+                  {{ post.duration_months }} months
                 </div>
 
                 {% if post.portfolio_pin %}

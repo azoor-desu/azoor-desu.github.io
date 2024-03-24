@@ -1,17 +1,18 @@
 ---
-title: Puppeteer 
-description: "Polytechnic Final Year Project - VR Horror"
-date: 2018-04-01T10:37:58.771Z
+title: A very scary game 
+description: "Polytechnic Y3 Project - Unreal Engine Game"
+date: 2021-10-01T10:37:58.771Z
+duration_months: 1.5
 preview: ""
-tags: ["portfolio", "Unity", "VR"]
+tags: ["portfolio", "Unreal"]
 categories: ["Projects"]
 image: /assets/img/portfolio/puppeteer/preview.jpg
 show_in_portfolio: true
-portfolio_pin: true
+portfolio_pin: false
 ---
 
 ## **Project Description**
-Puppeteer is a VR Horror game set in a realistic traditional chinese house. You play as a ghost excorcist, and your job is to excorsise the house of evil. Use your trusty Talisman to ward off evil beings, and your Ba Gua to help you locate the next area of interest. Play through a series of puzzles and uncover the hidden dangers of the house!  
+
 
 ## **Roles and Responsibilities**
 Producer | Tech Lead | Gameplay Programmer  
@@ -19,14 +20,12 @@ Producer | Tech Lead | Gameplay Programmer
 ## **Project Details**
 Created with Unity3D for HTC Vive/similar VR headsets  
 Worked in a 7 person team  
-Project spanned 12 months (Apr 2018 - Apr 2019)  
+Project spanned 1.5 months  
 Worked on designing game, puzzles, implementing core mechanics and managing team.  
 
 ## **Showcase**
 #### Videos  
-{% include embed/youtube.html id='fpAcsam2WSE' %}  
-{% include embed/youtube.html id='VqlS8e2GtV0' %}  
-{% include embed/youtube.html id='mnW0P-Fh1p8' %}  
+No video demo yet
 
 #### Images  
 ![](/assets/img/portfolio/puppeteer/1696666444632.jpg){: h="400" }  
