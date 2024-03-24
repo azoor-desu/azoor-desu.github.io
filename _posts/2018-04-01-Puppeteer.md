@@ -42,3 +42,4 @@ Worked on designing game, puzzles, implementing core mechanics and managing team
  2. Navigate into the folder directory and run the executable
  3. For this VR game, you will require SteamVR and a proper VR setup to play this game in VR. This game is developed using the HTC Vive.
 4. It is possible to play this game without any VR equipment. After launching the game, please refer to the control instructions on the top-left of the screen.
+
