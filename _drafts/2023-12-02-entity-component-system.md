@@ -6,6 +6,7 @@ preview: ""
 tags: ["game engine", "c++", "architecture"]
 categories: ["Programming"]
 image: /assets/img/ecs/preview.png
+pin: false
 ---
 
 ## **Introduction**

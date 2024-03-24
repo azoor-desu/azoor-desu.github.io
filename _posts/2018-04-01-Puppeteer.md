@@ -1,12 +1,13 @@
 ---
-title: Polytechnic Year 3 Project - Puppeteer
-description: "School Project - Polytechnic Year 3 Final Year Project"
+title: Puppeteer 
+description: "Polytechnic Final Year Project - VR Horror"
 date: 2018-04-01T10:37:58.771Z
 preview: ""
 tags: ["portfolio", "Unity", "VR"]
 categories: ["Projects"]
 image: /assets/img/portfolio/puppeteer/preview.jpg
 show_in_portfolio: true
+portfolio_pin: true
 ---
 
 ## **Project Description**
