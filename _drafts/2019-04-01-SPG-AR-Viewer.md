@@ -1,11 +1,11 @@
 ---
-title: Puppeteer 
-description: "Polytechnic Final Year Project - VR Horror"
-date: 2018-04-01T10:37:58.771Z
+title: SPG AR Viewer 
+description: "Client Project - AR "
+date: 2019-04-01T10:37:58.771Z
 preview: ""
-tags: ["portfolio", "Unity", "VR"]
+tags: ["portfolio", "Unity", "AR", "Vuforia"]
 categories: ["Projects"]
-image: /assets/img/portfolio/puppeteer/preview.jpg
+image: /assets/img/portfolio/SPGARViewer/preview.jpg
 show_in_portfolio: true
 portfolio_pin: true
 ---
@@ -19,14 +19,11 @@ Producer | Tech Lead | Gameplay Programmer
 ## **Project Details**
 Created with Unity3D for HTC Vive/similar VR headsets  
 Worked in a 7 person team  
-Project spanned 12 months (Apr 2018 - Apr 2019)  
-Worked on designing game, puzzles, implementing core mechanics and managing team.  
+Project spanned 12 months (Apr 2018 - Apr 2019)
 
 ## **Showcase**
 #### Videos  
-{% include embed/youtube.html id='fpAcsam2WSE' %}  
-{% include embed/youtube.html id='VqlS8e2GtV0' %}  
-{% include embed/youtube.html id='mnW0P-Fh1p8' %}  
+{% include embed/youtube.html id='7WstF1NKju0' %}  
 
 #### Images  
 ![](/assets/img/portfolio/puppeteer/1696666444632.jpg){: h="400" }  
