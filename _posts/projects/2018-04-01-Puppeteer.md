@@ -1,10 +1,10 @@
 ---
 title: Puppeteer 
-description: "Polytechnic Final Year Project - VR Horror"
+description: "VR Horror Escape Room [Polytechnic]"
 date: 2018-04-01T10:37:58.771Z
 duration_months: 12
 preview: ""
-tags: ["portfolio", "Unity", "VR"]
+tags: ["Unity", "VR"]
 categories: ["Projects"]
 image: /assets/img/portfolio/puppeteer/preview.webp
 show_in_portfolio: true
@@ -18,10 +18,19 @@ Puppeteer is a VR Horror game set in a realistic traditional chinese house. You 
 Producer | Tech Lead | Gameplay Programmer  
 
 ## **Project Details**
-Created with Unity3D for HTC Vive/similar VR headsets  
-Worked in a 7 person team  
-Project spanned 12 months  
-Worked on designing game, puzzles, implementing core mechanics and managing team.  
+Project Duration: {{page.duration_months}} months  
+Tools/Platform: Unity3D, VRTK  
+Team size: 7  
+
+## Features completed  
+- VR interactions with environment
+- Multiple puzzles to be solved
+- Ba Gua Compass guides player to next nearest puzzle as a hint
+- Talisman illuminates environment and acts as a ~~murder~~ tool against the evil things
+- Mannequins spawn and roam around the map, and increase in frequency as game goes on
+- Design of 3 puzles: Clock puzzle, Mannequin puzzle, and Photo puzzle
+- Successfully jump scared many people
+- One casualty during game testing because the person ran into a physical table when people told him to run
 
 ## **Showcase**
 #### Videos  
