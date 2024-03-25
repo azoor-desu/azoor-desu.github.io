@@ -1,10 +1,10 @@
 ---
 title: Puppeteer 
 description: "VR Horror Escape Room [Polytechnic]"
-date: 2018-04-01T10:37:58.771Z
+date: 2018-04-01
 duration_months: 12
 preview: ""
-tags: ["Unity", "VR"]
+tags: ["Game Dev", "Unity", "VR", "CSharp"]
 categories: ["Projects"]
 image: /assets/img/portfolio/puppeteer/preview.webp
 show_in_portfolio: true
@@ -19,7 +19,7 @@ Producer | Tech Lead | Gameplay Programmer
 
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  
-Tools/Platform: Unity3D, VRTK  
+Tools/Platform: Unity3D, VRTK, C#  
 Team size: 7  
 
 ## Features completed  

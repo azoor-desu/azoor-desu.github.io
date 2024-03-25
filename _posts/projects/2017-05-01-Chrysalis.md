@@ -1,10 +1,10 @@
 ---
 title: Chrysalis 
 description: "Client Project - 2D Rhythm Game [Polytechnic]"
-date: 2017-05-01T10:37:58.771Z
+date: 2017-05-01
 duration_months: 4
 preview: ""
-tags: ["Unity"]
+tags: ["Game Dev", "Unity", "CSharp"]
 categories: ["Projects"]
 image: /assets/img/portfolio/chrysalis/1.webp
 show_in_portfolio: true

@@ -1,10 +1,10 @@
 ---
 title: SPG AR Viewer 
 description: "Client Project - AR Wine Bottle viewer [Polytechnic]"
-date: 2018-06-01T10:37:58.771Z
+date: 2018-06-01
 duration_months: 8
 preview: ""
-tags: ["Unity", "AR", "Vuforia"]
+tags: ["Unity", "AR", "Vuforia", "CSharp"]
 categories: ["Projects"]
 image: /assets/img/portfolio/SPGARViewer/preview.webp
 show_in_portfolio: true
@@ -19,7 +19,7 @@ Programmer
 
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  
-Tools/Platform: Unity3D, Vuforia  
+Tools/Platform: Unity3D, Vuforia, C#  
 Team size: 2  
 
 ## Features completed  
