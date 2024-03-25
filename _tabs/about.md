@@ -8,10 +8,11 @@ order: 1
 I'm a guy that likes to make things.  
 
 I like memes.  
-![](/assets/img/about/happy-cat.gif){: .normal }  
+{% include webm.html filepath="/assets/img/about/happy-cat.webm" %}
+  
 
 I like games. Pew pew games are my favourite because i can turn off my brain.  
-![](/assets/img/about/csgo-dance.gif){: .normal }  
+{% include webm.html filepath="/assets/img/about/csgo-dance.webm" %}
 
 I do coding.  
 I make games.  
