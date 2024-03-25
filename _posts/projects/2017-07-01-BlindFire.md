@@ -12,10 +12,10 @@ portfolio_pin: false
 ---
 
 ## **Project Description**
-
+Play against a friend in this slipt screen shooter. However, you won't be able to see your enemy on your own screen! You will have to rely on looking at your friend's screen, or look at the radar. The enemy will be visible for a brief period when hit, so take the chance to keep shooting!
 
 ## **Roles and Responsibilities**
-Tech Lead | Gameplay Programmer  
+Tech Lead | Game Programmer  
 
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  

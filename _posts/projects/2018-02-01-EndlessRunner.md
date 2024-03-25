@@ -15,7 +15,7 @@ portfolio_pin: false
 Love Temple Runner? I don't paticularly love or hate it. This is a game with the same mechanics. Endlessly run foward at an increasing pace, while avoiding running into obstacles or falling into pitfalls. Collect as many coins as possible. Pick up power up items such as Coin Magnet, Time Bend etc to help you not die so quickly and set a high(er) score.
 
 ## **Roles and Responsibilities**
-Gameplay Programmer | Game Designer 
+Game Programmer | Game Designer 
 
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  

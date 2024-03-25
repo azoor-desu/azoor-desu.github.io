@@ -1,6 +1,6 @@
 ---
 title: Prototype Intern game 
-date: 2018-06-01T10:37:58.771Z
+date: 2018-06-01
 duration_months: 3
 preview: ""
 tags: ["Unity"]

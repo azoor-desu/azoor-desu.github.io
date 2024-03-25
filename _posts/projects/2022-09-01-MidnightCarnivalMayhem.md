@@ -1,7 +1,7 @@
 ---
 title: Midnight Carnival Mayhem 
 description: "2D Platformer Combat Game [DigiPen]"
-date: 2022-09-01T10:37:58.771Z
+date: 2022-09-01
 duration_months: 8
 preview: ""
 tags: ["Game Dev", "Custom Engine", "CPP", "CSharp"]
@@ -15,7 +15,7 @@ portfolio_pin: false
 Alfie wanders into a mysterious circus and gets trapped. Armed with a hammer and juggling balls, she must defeat the Ringmaster in order to escape back to her own reality.
 
 ## **Roles and Responsibilities**
-Product Lead | Tech Lead | Engine Programmer | Gameplay Programmer  
+Product Lead | Tech Lead | Engine Programmer | Game Programmer  
 
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  

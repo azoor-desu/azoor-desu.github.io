@@ -17,7 +17,7 @@ Do you love whackign your friends? Then just do it. Whack your friends is a loca
 Unfortunately may not work with more than 2 players due to technical issues.
 
 ## **Roles and Responsibilities**
-Gameplay Programmer | Game Designer  
+Game Programmer | Game Designer  
 
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  

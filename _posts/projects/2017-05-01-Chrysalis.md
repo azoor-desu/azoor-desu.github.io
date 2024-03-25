@@ -15,7 +15,7 @@ portfolio_pin: false
 A 2D rythm game with heavy anime influence, created for showcase at C3 AFA (Anime Festival Asia) 2017. The game is a mix of a Visual Novel and Rythm Game. Play as Seika, an aspiring idol, while she performs on various stages to gain popularity and fame. And there's the blue girl too I forgot what she does.
 
 ## **Roles and Responsibilities**
-Tech Lead | Design Lead | Gameplay Programmer  
+Tech Lead | Design Lead | Game Programmer  
 
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  
