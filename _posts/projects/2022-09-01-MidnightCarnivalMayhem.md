@@ -3,6 +3,7 @@ title: Midnight Carnival Mayhem
 description: "2D Platformer Combat Game [DigiPen]"
 date: 2022-09-01
 duration_months: 8
+team_size: 8
 preview: ""
 tags: ["Game Dev", "Custom Engine", "CPP", "CSharp"]
 categories: ["Projects"]
@@ -20,7 +21,7 @@ Product Lead | Tech Lead | Engine Programmer | Game Programmer
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  
 Tools/Platform: Custom Engine (Luna Engine), C++, C#  
-Team size: 8  
+Team size: {{page.team_size}}  
 
 ## Features completed (Game Engine)  
 - Managed tasks, deadlines and schedules for 5 programmers

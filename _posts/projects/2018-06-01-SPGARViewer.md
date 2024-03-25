@@ -3,6 +3,7 @@ title: SPG AR Viewer
 description: "Client Project - AR Wine Bottle viewer [Polytechnic]"
 date: 2018-06-01
 duration_months: 8
+team_size: 2
 preview: ""
 tags: ["Unity Engine", "AR", "Vuforia", "CSharp"]
 categories: ["Projects"]
@@ -20,7 +21,7 @@ Programmer
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  
 Tools/Platform: Unity3D, Vuforia, C#  
-Team size: 2  
+Team size: {{page.team_size}}  
 
 ## Features completed  
 - Able to scan labels on wine bottles and have a vide player come out

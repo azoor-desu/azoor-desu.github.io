@@ -2,6 +2,7 @@
 title: Prototype Intern game 
 date: 2018-06-01
 duration_months: 3
+team_size: 1
 preview: ""
 tags: ["Unity"]
 categories: ["Projects"]

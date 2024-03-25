@@ -3,6 +3,7 @@ title: Whack Your Friends
 description: "Local Network Multiplayer Party Game [Polytechnic]"
 date: 2019-02-01
 duration_months: 2
+team_size: 2
 preview: ""
 tags: ["Game Dev", "Unity Engine", "Multiplayer", "Networking", "Mobile", "CSharp"]
 categories: ["Projects"]
@@ -12,7 +13,7 @@ portfolio_pin: false
 ---
 
 ## **Project Description**
-Do you love whackign your friends? Then just do it. Whack your friends is a local network multiplayer game that can be played on either PC (Windows) or mobile (Android). You play against your friends in multiple game modes, designed to be short, fast, and fun. After a few rounds of games, the player with the highest score will be the best(est) friend whacker. 
+Do you love whacking your friends? Then just do it. Whack your friends is a local network multiplayer game that can be played on either PC (Windows) or mobile (Android). You play against your friends in multiple game modes, designed to be short, fast, and fun. After a few rounds of games, the player with the highest score will be the best(est) friend whacker. 
 
 Unfortunately may not work with more than 2 players due to technical issues.
 
@@ -22,7 +23,7 @@ Game Programmer | Game Designer
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  
 Tools/Platform: Unity3D, C#  
-Team size: 2  
+Team size: {{page.team_size}}  
 
 ## Features completed  
 - Cross-platform (Windows and Android) with Unity Engine

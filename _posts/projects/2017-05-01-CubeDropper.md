@@ -3,6 +3,7 @@ title: Cube Dropper
 description: "3D Cube-based Puzzle Game [Polytechnic]"
 date: 2017-05-01
 duration_months: 2
+team_size: 1
 preview: ""
 tags: ["Game Dev", "Unity Engine", "CSharp"]
 categories: ["Projects"]
@@ -20,7 +21,7 @@ Game Programmer | Game Designer
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  
 Tools/Platform: Unity3D  
-Team size: Solo  
+Team size: {{page.team_size}}  
 
 ## Features completed  
 - Cubes drop after being rolled over a few times

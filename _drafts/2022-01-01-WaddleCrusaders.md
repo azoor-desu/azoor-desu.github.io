@@ -3,6 +3,7 @@ title: Waddle Crusaders
 description: "Polytechnic Y3 Project - Unreal Engine Game"
 date: 2022-01-01
 duration_months: 4
+team_size: 5
 preview: ""
 tags: ["portfolio", "Unreal"]
 categories: ["Projects"]

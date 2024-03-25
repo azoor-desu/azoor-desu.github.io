@@ -3,6 +3,7 @@ title: Blind Fire
 description: "2D Local Split-screen Multiplayer Shooter [Polytechnic]"
 date: 2017-07-01
 duration_months: 2
+team_size: 1
 preview: ""
 tags: ["Game Dev", "Unity Engine", "Multiplayer", "CSharp"]
 categories: ["Projects"]
@@ -12,7 +13,7 @@ portfolio_pin: false
 ---
 
 ## **Project Description**
-Play against a friend in this slipt screen shooter. However, you won't be able to see your enemy on your own screen! You will have to rely on looking at your friend's screen, or look at the radar. The enemy will be visible for a brief period when hit, so take the chance to keep shooting!
+Play against a friend in this split screen shooter. However, you won't be able to see your enemy on your own screen! You will have to rely on looking at your friend's screen, or look at the mini map. The enemy will be visible for a brief period when hit, so take the chance to keep shooting!
 
 ## **Roles and Responsibilities**
 Tech Lead | Game Programmer  
@@ -20,7 +21,7 @@ Tech Lead | Game Programmer
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  
 Tools/Platform: Unity3D, C#  
-Team size: Solo  
+Team size: {{page.team_size}}  
 
 ## Features completed  
 - Local split screen multiplayer

@@ -3,6 +3,7 @@ title: A very scary game
 description: "Polytechnic Y3 Project - Unreal Engine Game"
 date: 2021-10-01
 duration_months: 1.5
+team_size: 5
 preview: ""
 tags: ["portfolio", "Unreal"]
 categories: ["Projects"]

@@ -3,6 +3,7 @@ title: Chrysalis
 description: "Client Project - 2D Rhythm Game [Polytechnic]"
 date: 2017-05-01
 duration_months: 4
+team_size: 4
 preview: ""
 tags: ["Game Dev", "Unity Engine", "CSharp"]
 categories: ["Projects"]
@@ -20,7 +21,7 @@ Tech Lead | Design Lead | Game Programmer
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  
 Tools/Platform: Unity2D  
-Team size: 4 (Solo Programmer)  
+Team size: {{page.team_size}}  
 
 ## Features completed  
 - Song map loading and management during runtime

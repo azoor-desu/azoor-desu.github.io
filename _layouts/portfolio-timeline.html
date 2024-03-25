@@ -58,8 +58,12 @@ refactor: false
                 <!-- posted date -->
                 <i class="far fa-calendar fa-fw me-1"></i>
                 {{post.date | date: "%b %Y" }}
-                <i class="fa-solid fa-clock" style="padding: 3px;"></i>
+                <i class="fa-solid fa-clock" style="padding-right: 3px;"></i>
                 {{ post.duration_months }} months
+                {% if post.team_size %}
+                  <i class="fa-solid fa-user" style="padding-right: 4px;"></i>
+                  {{ post.team_size }}
+                {% endif %}
               </div>
 
               {% if post.portfolio_pin %}
@@ -132,6 +136,10 @@ refactor: false
                   {{post.date | date: "%b %Y" }}
                   <i class="fa-solid fa-clock" style="padding: 3px;"></i>
                   {{ post.duration_months }} months
+                  {% if post.team_size %}
+                    <i class="fa-solid fa-user" style="padding-right: 4px;"></i>
+                    {{ post.team_size }}
+                  {% endif %}
                 </div>
 
                 {% if post.portfolio_pin %}

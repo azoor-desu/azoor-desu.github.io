@@ -3,6 +3,7 @@ title: Endless Runner
 description: "Unreal Engine endless running game [Polytechnic]"
 date: 2018-02-01
 duration_months: 2
+team_size: 1
 preview: ""
 tags: ["Game Dev", "Unreal Engine"]
 categories: ["Projects"]
@@ -20,7 +21,7 @@ Game Programmer | Game Designer
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  
 Tools/Platform: Unreal Engine, C#  
-Team size: Solo  
+Team size: {{page.team_size}}  
 
 ## Features completed  
 - Infinite map generation as player keeps running
