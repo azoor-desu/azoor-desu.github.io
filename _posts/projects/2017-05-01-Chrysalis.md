@@ -4,7 +4,7 @@ description: "Client Project - 2D Rhythm Game [Polytechnic]"
 date: 2017-05-01
 duration_months: 4
 preview: ""
-tags: ["Game Dev", "Unity", "CSharp"]
+tags: ["Game Dev", "Unity Engine", "CSharp"]
 categories: ["Projects"]
 image: /assets/img/portfolio/chrysalis/1.webp
 show_in_portfolio: true
@@ -15,7 +15,7 @@ portfolio_pin: false
 A 2D rythm game with heavy anime influence, created for showcase at C3 AFA (Anime Festival Asia) 2017. The game is a mix of a Visual Novel and Rythm Game. Play as Seika, an aspiring idol, while she performs on various stages to gain popularity and fame. And there's the blue girl too I forgot what she does.
 
 ## **Roles and Responsibilities**
-Tech Lead | Gameplay Programmer  
+Tech Lead | Design Lead | Gameplay Programmer  
 
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  

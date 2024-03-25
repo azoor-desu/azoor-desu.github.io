@@ -4,7 +4,7 @@ description: "Client Project - AR Wine Bottle viewer [Polytechnic]"
 date: 2018-06-01
 duration_months: 8
 preview: ""
-tags: ["Unity", "AR", "Vuforia", "CSharp"]
+tags: ["Unity Engine", "AR", "Vuforia", "CSharp"]
 categories: ["Projects"]
 image: /assets/img/portfolio/SPGARViewer/preview.webp
 show_in_portfolio: true

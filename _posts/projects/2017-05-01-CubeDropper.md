@@ -4,7 +4,7 @@ description: "3D Cube-based Puzzle Game [Polytechnic]"
 date: 2017-05-01
 duration_months: 2
 preview: ""
-tags: ["Game Dev", "Unity", "CSharp"]
+tags: ["Game Dev", "Unity Engine", "CSharp"]
 categories: ["Projects"]
 image: /assets/img/portfolio/cubedropper/1.webp
 show_in_portfolio: true
@@ -15,7 +15,7 @@ portfolio_pin: false
 3D cube puzzle game where you can only roll onto each cube a set number of times. The cube will drop after being stepped on too many times. You have to clear every cube from the screen while making it to the end goal.
 
 ## **Roles and Responsibilities**
-Programmer  
+Game Programmer | Game Designer  
 
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  

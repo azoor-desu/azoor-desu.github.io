@@ -8,7 +8,7 @@ tags: ["Game Dev", "Custom Engine", "CPP", "CSharp"]
 categories: ["Projects"]
 image: /assets/img/portfolio/mcm/5.webp
 show_in_portfolio: true
-portfolio_pin: true
+portfolio_pin: false
 ---
 
 ## **Project Description**
@@ -38,7 +38,7 @@ Team size: 8
 {% include embed/youtube.html id='lj_YywGTK1Q' %}  
 
 #### Engine Demo  
-No video yet 
+{% include embed/youtube.html id='1xs3wpY_FlE' %}  
 
 #### Images  
 ![](/assets/img/portfolio/mcm/1.webp)  
