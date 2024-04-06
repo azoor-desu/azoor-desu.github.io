@@ -1,6 +1,6 @@
 ---
 title: Midnight Carnival Mayhem 
-description: "2D Platformer Combat Game [DigiPen]"
+description: "2D Platformer Combat Game with Custom Game Engine [DigiPen]"
 date: 2022-09-01
 duration_months: 8
 team_size: 8
