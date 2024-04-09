@@ -49,7 +49,7 @@ Team size: {{page.team_size}}
 ![](/assets/img/portfolio/mcm/5.webp)  
 
 ## **Download**
-[Download link](https://drive.google.com/file/d/1bI09hRrFn5VdHTvSNgKCFBEsK6EWxQfi/view?usp=drive_link)  
+[Download link](https://drive.google.com/file/d/1bI09hRrFn5VdHTvSNgKCFBEsK6EWxQfi/view?usp=sharing)  
 
  Instructions:
  1. Download and run the setup
