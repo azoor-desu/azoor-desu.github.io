@@ -2,10 +2,12 @@
 title: Migrating to Linux
 description: "Adventures ond documentations of moving from Windows to Linux"
 date: 2024-05-14T15:27:39.304Z
-preview: "/assets/img/blog/migrating-to-linux/windoes.webp"
-tags: []
-categories: []
+preview: ""
+tags: ["Linux", "OS"]
+categories: ["Blog"]
 type: default
+image: /assets/img/blog/migrating-to-linux/windoes.webp
+pin: false
 ---
 # Things to clarify
 This post is about my journey transitioning from Windows to Linux, and a brief documentation of the processes I went through to live happily ever after on my new OS environment. It is by no means a smooth transition, and this post is definitely not to convince anyone to do the same as I did. However, if you're somewhat interested in what it takes to make the leap, this post may contain some useful tips to keep in mind, especially for someone moving from Windows.
@@ -113,7 +115,7 @@ Unfortunately, Windows _can't_ natively read an EXT4 formatted drive. I will go 
 **HOLD ON!** If you nuke the drive right now, you're not going to be able to boot into Windows!
 I need to move the Windows boot partition from Windows 10 to Windows 11. When the PC boots, it will look for boot partitions. If there are none for windows, windows may be unable to boot at all. I have to make a boot partition on the 500GB SSD where Windows 11 is currently installed.
 
-![](/assets/img/blog/migrating-to-linux/partition.webp)
+![](/assets/img/blog/migrating-to-linux/partition.webp){: .normal}
 Following this [guide](https://superuser.com/a/1536486) on stackoverflow, I managed to move the partition.
 
 Now, I could nuke the 2TB main drive and install openSuse on it. Following the install instructions for openSuse was pretty straightforward. Tada, openSuse is installed.
@@ -122,8 +124,8 @@ Now, I could nuke the 2TB main drive and install openSuse on it. Following the i
 Why? Because sometimes, on Windows, I may want to access my music or other files on the storage drive. This drive is formatted in EXT4, which can't be read natively by Windows. Windows Subsystem for Linux can act as a bridge for this.
 
 These following guides are for reference:  
-https://learn.microsoft.com/en-us/windows/wsl/wsl2-mount-disk  
-https://medium.com/nerd-for-tech/windows-11-shenanigans-how-to-mount-any-linux-filesystem-in-windows-e63a60aebb05
+[https://learn.microsoft.com/en-us/windows/wsl/wsl2-mount-disk](https://learn.microsoft.com/en-us/windows/wsl/wsl2-mount-disk)  
+[https://medium.com/nerd-for-tech/windows-11-shenanigans-how-to-mount-any-linux-filesystem-in-windows-e63a60aebb05](https://medium.com/nerd-for-tech/windows-11-shenanigans-how-to-mount-any-linux-filesystem-in-windows-e63a60aebb05)
 
 First, you will have to install WSL. Using Ubuntu here is fine. It's the default distro for WSL. Make sure WSL is run at least once first. Set up the commands to mount and dismount the drive using WSL, and dump these commands into a .bat file that will get called during Windows start and shutdown. Task Scheduler can automatically run scripts on startup and shutdown.
 
@@ -136,10 +138,6 @@ First, you will have to install WSL. Using Ubuntu here is fine. It's the default
 - \<Filesystem\> Optional. The type of filesystem that you are mounting. Defaults to `ext4`
   - `blkid -k` in WSL/linux will list out all possible file systems. For BTRFS, do `--type btrfs`
 - \<MountOptions\> Optional. Additional options for mounting, specific to the type of filesystem (btrfs, ext4 etc)
-  - https://btrfs.readthedocs.io/en/latest/ch-mount-options.html
-  - should be in example format: `autodefrag,noacl,commit=15,nossd,clear_cache,space_cache=v2,noatime`
-  - https://www.reddit.com/r/btrfs/comments/hiqetu/what_are_optimal_btrfs_mount_options_best/ TLDR: Leave as default is best.
-
 ### Unmounting
 `wsl --unmount <DiskPath>`
 >NOTE: Unmounting is highly recommended before shutting down to prevent bad things from happening!
@@ -147,9 +145,9 @@ First, you will have to install WSL. Using Ubuntu here is fine. It's the default
 ### Accessing the folder
 You can access the mounted folder directly via the little "Linux" folder in your Winodws File Explorer sidebar.  
 You'd have to navigate into the corresponding folder that holds your mounted drive. For example, a possible path would be `\\wsl$\Ubuntu\mnt\wsl\PHYSICALDRIVE2p1`  
-![alt text](/assets/img/blog/migrating-to-linux/folder1.webp)  
+![alt text](/assets/img/blog/migrating-to-linux/folder1.webp){: .normal}  
 To make it easier to access your folder, you can add this folder to your File Explorer by adding a new "Network Location", and using the same URL mentiled above. Not to be confused with "Map network drive", that option only allows you to map the `\\wsl$\Ubuntu` folder and not any more folders nested under this one.  
-![alt text](/assets/img/blog/migrating-to-linux/folder2.webp)  
+![alt text](/assets/img/blog/migrating-to-linux/folder2.webp){: .normal}  
 
 >NOTE: Some caveats include certain applications not playing well with accessing network locations. For example, a music player may want access to a folder to your music. Some applications work ok with network paths, some don't. Your mileage may vary.
 
@@ -184,7 +182,7 @@ If you love Microsoft fonts, install them:
 sudo zypper in fetchmsttfonts
 ```
 For any other things you may want to install/uninstall, browse YaST > Software Management. Click on the "Patterns" tab, and you will find many common packages grouped according to their use-case. Once you're satisfied with the things you want to install and uninstall,  click "Accept" to apply the changes.  
-![](https://en.opensuse.org/images/6/6a/500px-Yast-software-installation2.png)  
+![](https://en.opensuse.org/images/6/6a/500px-Yast-software-installation2.png){: .normal}  
 _This is an old screenshot without the "patterns" tab yet..._
 >I HECKIN' LOVE GUIS HECK YEAH
 
@@ -199,23 +197,23 @@ Set method to manual, add DNS, add static IP.
 
 ## Reducing bootloader timeout
 The bootloader is the part during booting where it allows you to choose which Operating System to boot. You can pick openSuse, Windows, or pick an older snapshot to boot when something gets borked.  
-![](https://lh3.googleusercontent.com/-dak7FrDQNG0/YFtRiHsqejI/AAAAAAAAe2k/GHEnJPTi0Hs5zkO-MvAhPMjjeYoTY5digCLcBGAsYHQ/opensuse-finished-bootloader.png)  
+![](https://lh3.googleusercontent.com/-dak7FrDQNG0/YFtRiHsqejI/AAAAAAAAe2k/GHEnJPTi0Hs5zkO-MvAhPMjjeYoTY5digCLcBGAsYHQ/opensuse-finished-bootloader.png){: .normal}  
 Anyway, to reduce the time spent on this menu (for slightly faster bootup times), go to YaST > Bootloader > Bootloader Options.
 You can set the timeout to however long you want. I set mine to 1 second. 0 seconds skips this menu entirely. If you want to boot into windows, you might not want to set this time to 0.
 
 ## Fixing slow Zypper (not really)
-Explanation on why zypper is slow: https://github.com/openSUSE/zypper/issues/104  
-A (partial) solution: https://github.com/Firstyear/mirrorsorcerer  
+Explanation on why zypper is slow: [https://github.com/openSUSE/zypper/issues/104](https://github.com/openSUSE/zypper/issues/104)  
+A (partial) solution: [https://github.com/Firstyear/mirrorsorcerer](https://github.com/Firstyear/mirrorsorcerer)  
 Use mirror sorcerer to auto-set fastest mirrors on pc start. Avoids the need to connect to the main server to obtain a mirror.
 
 Try to use the default settings on mirror sorcerer. Adding custom third-party mirrors is not a good idea, stick to the official mirrors.
 
-See also https://en.opensuse.org/openSUSE:Mirrors for mirror stuffs.
+See also [https://en.opensuse.org/openSUSE:Mirrors](https://en.opensuse.org/openSUSE:Mirrors) for more info on openSuse mirrors.
 
 ## Setting up RGB using OpenRGB
-Install via this link: https://software.opensuse.org/download.html?project=hardware&package=OpenRGB
+Install [OpenRGB for openSuse](https://software.opensuse.org/download.html?project=hardware&package=OpenRGB).  
 OpenRGB and the corresponding udev rules should be installed. A new repositorey should have been added too.  
-However, right now, OpenRGB won't be able to detect stuff like RAM lighting and USB device lighting. Follow https://openrgb-wiki.readthedocs.io/en/latest/ to fix these issues.  
+However, right now, OpenRGB won't be able to detect stuff like RAM lighting and USB device lighting, because it isn't running with admin priviledges. Follow [the OpenRGB documentation](https://openrgb-wiki.readthedocs.io/en/latest/) to fix these issues.  
 If, for whatever reason, you need to run a `sudo` command on PC start, you can do that via a cronjob as root.  
 Run `sudo crontab -e`, you'll be using `vim` to edit the cronjob. Add the line `@reboot sudo <your command here>` to run the command as sudo on reboot.  
 Hint: Save and quit vim with :wq
@@ -223,7 +221,7 @@ Hint: Save and quit vim with :wq
 ### RGB with Razer devices
 If OpenRGB does not sufficiently control the RGB on your Razer devices, you can install [openrazer](https://openrazer.github.io) to get some RGB control, as well as DPI control.  
 
-Download and install: https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta
+Download and install [openrazer for openSuse](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta)
 Then run `sudo gpasswd -a $USER plugdev`
 Then reboot!!
 
