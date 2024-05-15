@@ -170,7 +170,7 @@ Switch system packages to packman:
 sudo zypper dup --from packman --allow-vendor-change
 ```
 
-If possible, use a [packman mirror](http://packman.links2linux.org/mirrors) closer to you. Change the repository URL via YaST > Software Repositories.  
+If possible, use a packman mirror http://packman.links2linux.org/mirrors closer to you. Change the repository URL via YaST > Software Repositories.  
 Add the [wine repo](https://download.opensuse.org/repositories/Emulators:/Wine/openSUSE_Tumbleweed/) if you're planning to play games outside of Steam, or use Windows applications (that hopefully won't break with wine)  
 
 Install codecs to allow playback of different multimedia formats
