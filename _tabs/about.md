@@ -9,7 +9,6 @@ I'm a guy that likes to make things.
 
 I like memes.  
 {% include webm.html filepath="/assets/img/memes/happy-cat.webm" %}
-  
 
 I like games. Pew pew games are my favourite because i can turn off my brain.  
 {% include webm.html filepath="/assets/img/memes/csgo-dance.webm" %}

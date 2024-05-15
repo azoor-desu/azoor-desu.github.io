@@ -154,7 +154,7 @@ To make it easier to access your folder, you can add this folder to your File Ex
 ## Setting up openSuse
 ### General setup
 Some references:  
-[https://www.techhut.tv/opensuse-5-things-you-must-do-after-installing/](https://www.techhut.tv/opensuse-5-things-you-must-do-after-installing/0
+[https://www.techhut.tv/opensuse-5-things-you-must-do-after-installing/](https://www.techhut.tv/opensuse-5-things-you-must-do-after-installing/0)
 
 If you have Nvidia GPU, ensure the Nvidia drivers are installed. Make sure the proprietary drivers are installed instead of the open-source ones (called nouveau). The open-source ones are wonky.
 
