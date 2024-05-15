@@ -7,3 +7,7 @@ gem "jekyll-theme-chirpy", "~> 7.0"
 group :test do
   gem "html-proofer", "~> 5.0"
 end
+
+# idk gets rid of some warnings
+gem "csv"
+gem "base64"
