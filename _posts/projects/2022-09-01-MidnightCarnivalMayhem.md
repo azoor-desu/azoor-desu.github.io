@@ -13,10 +13,22 @@ portfolio_pin: false
 ---
 
 ## **Project Description**
-Alfie wanders into a mysterious circus and gets trapped. Armed with a hammer and juggling balls, she must defeat the Ringmaster in order to escape back to her own reality.
+2D platformer game where the player has to combat an evil circus ringmaster to defeat it and return home.  
+The game is built using a custom made real-time 2D engine.  
+Luna Engine is written using C++, with gameplay scripts written in C#.  
+
 
 ## **Roles and Responsibilities**
-Product Lead | Tech Lead | Engine Programmer | Game Programmer  
+Product Lead/Producer | Tech Lead | Engine Programmer | Gameplay Programmer  
+- Setup project structure, documentation, code architecture and feature requirements for Engine, with focus on proper organization of the codebase and files
+- Implemented C# game scripting into C++ game engine using Mono
+- Implemented timing system with fixed delta time for physics system use
+- Implemented Game Editor for creating and modifying game files for game development using ImGUI
+- Implemented scene management (loading/unloading of levels)
+- Implemented serialization using rapidJSON
+- Implemented integration of Game Editor's Inspector window with Engine to allow it to display an object's properties with RTTI
+- Assisted in creating Game Editor by authoring the base architecture to work with the Game Engine
+- Assisted with various Game Editor features and bug fixes
 
 ## **Project Details**
 Project Duration: {{page.duration_months}} months  

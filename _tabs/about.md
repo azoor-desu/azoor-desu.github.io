@@ -5,15 +5,21 @@ order: 1
 ---
 
 ## Hi there
-I'm a guy that likes to make things.  
+I'm a programmer that started out doing Game programming on Unity, and am now writing game engines from scratch.  
+I have been persuing programming as a hobby and now as a career. I like creating tools for people to use.  
+Am currently searching for a specialized career path to work towards.  
 
-I like memes.  
-{% include webm.html filepath="/assets/img/memes/happy-cat.webm" %}
+Knowledge:
+- C/C++, adaptable to other languages (Python, Java, C#)
+- Real time engine development (2D/3D)
+- CUDA, HLSL
+- OpenGL
+- Operating Systems, low level optimization, multi-threading, memory management
+- Linear Algebra
+- Gameplay Programming
+- Engine/Software development
 
-I like games. Pew pew games are my favourite because i can turn off my brain.  
-{% include webm.html filepath="/assets/img/memes/csgo-dance.webm" %}
-
-I do coding.  
-I make games.  
-
-Thank you and goodbye.
+Some of my skills:
+- Familiar with working with huge codebases
+- Familiar with GPU programming
+- Interest in low-level optimization
