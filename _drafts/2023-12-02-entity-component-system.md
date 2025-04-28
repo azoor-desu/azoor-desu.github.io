@@ -3,7 +3,7 @@ title: Entity Component System (Part 1)
 description: "ECS is for you n' me! :)"
 date: 2023-12-02T10:37:58.771Z
 preview: ""
-tags: ["game engine", "c++", "architecture"]
+tags: ["game engine", "cpp", "architecture"]
 categories: ["Programming"]
 image: /assets/img/ecs/preview.png
 pin: false
